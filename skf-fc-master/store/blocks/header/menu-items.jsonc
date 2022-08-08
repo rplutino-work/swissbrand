@@ -5,18 +5,37 @@
       "experimentalOptimizeRendering": true
     },
     "children": [
-      //"menu-item#home",
-      "menu-item#living",
-      "menu-item#comedor",
-      "menu-item#dormitorio",
-      //"menu-item#dormitorio-single",
-      "menu-item#oficina",
-      //"menu-item#oficina-single",
-      "menu-item#jardin",
-      "menu-item#electro",
-      "menu-item#deco hogar"
-      //"menu-item#liquidacion"
+      "menu-item#estandar",
+      "menu-item#estandar",
+      "menu-item#estandar",
+      "menu-item#estandar",
+      "menu-item#estandar",
+      "menu-item#estandar",
+      "menu-item#estandar",
+      "menu-item#estandar",
+      "menu-item#estandar"
     ]
+  },
+
+  "menu-item#estandar": {
+    "props": {
+      "blockClass": "department",
+      "id": "estandar",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "Categoria",
+        "type": "internal",
+        "href": "#"
+      },
+      "iconProps": {
+        "id": "nav-caret--down",
+        "size": 10
+      },
+      "iconPosition": "right"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#estandar"]
   },
 
   "menu-item#living": {
@@ -37,7 +56,7 @@
       },
       "iconPosition": "right"
     },
-    "blocks": ["vtex.menu@2.x:submenu#living"]
+    "blocks": ["vtex.menu@2.x:submenu#estandar"]
   },
   "menu-item#comedor": {
     "props": {
@@ -60,7 +79,7 @@
       },
       "iconPosition": "right"
     },
-    "blocks": ["vtex.menu@2.x:submenu#comedor"]
+    "blocks": ["vtex.menu@2.x:submenu#estandar"]
   },
 
   "menu-item#dormitorio": {
@@ -83,7 +102,7 @@
       },
       "iconPosition": "right"
     },
-    "blocks": ["vtex.menu@2.x:submenu#dormitorio"]
+    "blocks": ["vtex.menu@2.x:submenu#estandar"]
   },
 
   "menu-item#oficina": {
@@ -106,7 +125,7 @@
       },
       "iconPosition": "right"
     },
-    "blocks": ["vtex.menu@2.x:submenu#oficina"]
+    "blocks": ["vtex.menu@2.x:submenu#estandar"]
   },
 
   "menu-item#jardin": {
@@ -128,7 +147,7 @@
       },
       "iconPosition": "right"
     },
-    "blocks": ["vtex.menu@2.x:submenu#jardin"]
+    "blocks": ["vtex.menu@2.x:submenu#estandar"]
   },
 
   "menu-item#electro": {
@@ -150,7 +169,7 @@
       },
       "iconPosition": "right"
     },
-    "blocks": ["vtex.menu@2.x:submenu#electro"]
+    "blocks": ["vtex.menu@2.x:submenu#estandar"]
   },
 
   "menu-item#deco hogar": {
@@ -173,7 +192,7 @@
       },
       "iconPosition": "right"
     },
-    "blocks": ["vtex.menu@2.x:submenu#deco-hogar"]
+    "blocks": ["vtex.menu@2.x:submenu#estandar"]
   },
 
   "menu-item#liquidacion": {

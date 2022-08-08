@@ -1,0 +1,522 @@
+{
+    "vtex.menu@2.x:submenu#estandar": {
+      "children": ["flex-layout.row#estandar", "image#estandar-banner"],
+      "props": {
+        "blockClass": "submenu"
+      }
+    },
+  
+    "flex-layout.row#estandar": {
+      "props": {
+        "blockClass": "categories-wrapper",
+        "colSizing": "auto",
+        "colGap": 3
+      },
+  
+      "children": [
+        "vtex.menu@2.x:menu#estandar-column-1",
+        "vtex.menu@2.x:menu#estandar-column-2",
+        "vtex.menu@2.x:menu#estandar-column-3"
+      ]
+    },
+  
+    /* BANNER MENU */
+    "image#estandar-banner": {
+      "props": {
+        "blockClass": "submenu-banner",
+        "src": "https://placehold.jp/430x240.png",
+        "link": true
+      }
+    },
+  
+    /* COLUMN 1 */
+    "vtex.menu@2.x:menu#estandar-column-1": {
+      "props": {
+        "blockClass": "categories"
+      },
+      "children": [
+        "menu-item#estandar-1",
+        "vtex.menu@2.x:menu#submenu-estandar-1"
+      ]
+    },
+    "vtex.menu@2.x:menu#submenu-estandar-1": {
+      "props": {
+        "blockClass": "custom-dropdown-submenu",
+        "items": [
+          {
+            "id": "estandar-1",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "noFollow": false,
+              "text": "Categoria",
+              "tagTitle": "Categoria"
+            }
+          },
+          {
+            "id": "estandar-1",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "noFollow": false,
+              "text": "Categoria",
+              "tagTitle": "Categoria"
+            }
+          },
+          {
+            "id": "estandar-1",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "noFollow": false,
+              "text": "Categoria",
+              "tagTitle": "Categoria"
+            }
+          },
+          {
+            "id": "estandar-1",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "noFollow": false,
+              "text": "Categoria",
+              "tagTitle": "Categoria"
+            }
+          },
+          {
+            "id": "estandar-1",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "noFollow": false,
+              "text": "Categoria",
+              "tagTitle": "Categoria"
+            }
+          },
+          {
+            "id": "estandar-1",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "noFollow": false,
+              "text": "Categoria",
+              "tagTitle": "Categoria"
+            }
+          },
+          {
+            "id": "estandar-1",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "noFollow": false,
+              "text": "Categoria",
+              "tagTitle": "Categoria"
+            }
+          },
+          {
+            "id": "estandar-1",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "noFollow": false,
+              "text": "Categoria",
+              "tagTitle": "Categoria"
+            }
+          },
+          {
+            "id": "estandar-1",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "noFollow": false,
+              "text": "Categoria",
+              "tagTitle": "Categoria"
+            }
+          },
+          {
+            "id": "estandar-1",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "noFollow": false,
+              "text": "Categoria",
+              "tagTitle": "Categoria"
+            }
+          }
+        ]
+      }
+    },
+    "menu-item#estandar-1": {
+      "props": {
+        "blockClass": "category",
+        "id": "estandar-1",
+        "type": "custom",
+  
+        "itemProps": {
+          //"categoryId": 1,
+          "text": "Titulo categoria",
+          "tagTitle": "Titulo categoria",
+          "type": "internal",
+          "noFollow": false,
+          "href": "#"
+        }
+      }
+    },
+  
+    /* COLUMN 2 */
+    "vtex.menu@2.x:menu#estandar-column-2": {
+        "props": {
+          "blockClass": "categories"
+        },
+        "children": [
+          "menu-item#estandar-2",
+          "vtex.menu@2.x:menu#submenu-estandar-2"
+        ]
+      },
+      "vtex.menu@2.x:menu#submenu-estandar-2": {
+        "props": {
+          "blockClass": "custom-dropdown-submenu",
+          "items": [
+            {
+              "id": "estandar-2",
+              "type": "custom",
+              "iconId": null,
+              "highlight": false,
+              "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "noFollow": false,
+                "text": "Categoria",
+                "tagTitle": "Categoria"
+              }
+            },
+            {
+                "id": "estandar-2",
+                "type": "custom",
+                "iconId": null,
+                "highlight": false,
+                "itemProps": {
+                  "type": "internal",
+                  "href": "#",
+                  "noFollow": false,
+                  "text": "Categoria",
+                  "tagTitle": "Categoria"
+                }
+            },
+            {
+                "id": "estandar-2",
+                "type": "custom",
+                "iconId": null,
+                "highlight": false,
+                "itemProps": {
+                  "type": "internal",
+                  "href": "#",
+                  "noFollow": false,
+                  "text": "Categoria",
+                  "tagTitle": "Categoria"
+                }
+            },
+            {
+                "id": "estandar-2",
+                "type": "custom",
+                "iconId": null,
+                "highlight": false,
+                "itemProps": {
+                  "type": "internal",
+                  "href": "#",
+                  "noFollow": false,
+                  "text": "Categoria",
+                  "tagTitle": "Categoria"
+                }
+            },
+            {
+                "id": "estandar-2",
+                "type": "custom",
+                "iconId": null,
+                "highlight": false,
+                "itemProps": {
+                  "type": "internal",
+                  "href": "#",
+                  "noFollow": false,
+                  "text": "Categoria",
+                  "tagTitle": "Categoria"
+                }
+            },
+            {
+                "id": "estandar-2",
+                "type": "custom",
+                "iconId": null,
+                "highlight": false,
+                "itemProps": {
+                  "type": "internal",
+                  "href": "#",
+                  "noFollow": false,
+                  "text": "Categoria",
+                  "tagTitle": "Categoria"
+                }
+            },
+            {
+                "id": "estandar-2",
+                "type": "custom",
+                "iconId": null,
+                "highlight": false,
+                "itemProps": {
+                  "type": "internal",
+                  "href": "#",
+                  "noFollow": false,
+                  "text": "Categoria",
+                  "tagTitle": "Categoria"
+                }
+            },
+            {
+                "id": "estandar-2",
+                "type": "custom",
+                "iconId": null,
+                "highlight": false,
+                "itemProps": {
+                  "type": "internal",
+                  "href": "#",
+                  "noFollow": false,
+                  "text": "Categoria",
+                  "tagTitle": "Categoria"
+                }
+            },
+            {
+                "id": "estandar-2",
+                "type": "custom",
+                "iconId": null,
+                "highlight": false,
+                "itemProps": {
+                  "type": "internal",
+                  "href": "#",
+                  "noFollow": false,
+                  "text": "Categoria",
+                  "tagTitle": "Categoria"
+                }
+            },
+            {
+                "id": "estandar-2",
+                "type": "custom",
+                "iconId": null,
+                "highlight": false,
+                "itemProps": {
+                  "type": "internal",
+                  "href": "#",
+                  "noFollow": false,
+                  "text": "Categoria",
+                  "tagTitle": "Categoria"
+                }
+            }
+          ]
+        }
+      },
+      "menu-item#estandar-2": {
+        "props": {
+          "blockClass": "category",
+          "id": "estandar-2",
+          "type": "custom",
+    
+          "itemProps": {
+            //"categoryId": 1,
+            "text": "Titulo categoria",
+            "tagTitle": "Titulo categoria",
+            "type": "internal",
+            "noFollow": false,
+            "href": "#"
+          }
+        }
+      },
+    /* COLUMN 3 */
+    "vtex.menu@2.x:menu#estandar-column-3": {
+        "props": {
+          "blockClass": "categories"
+        },
+        "children": [
+          "menu-item#estandar-3",
+          "vtex.menu@2.x:menu#submenu-estandar-3"
+        ]
+      },
+      "vtex.menu@2.x:menu#submenu-estandar-3": {
+        "props": {
+          "blockClass": "custom-dropdown-submenu",
+          "items": [
+            {
+              "id": "estandar-3",
+              "type": "custom",
+              "iconId": null,
+              "highlight": false,
+              "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "noFollow": false,
+                "text": "Categoria",
+                "tagTitle": "Categoria"
+              }
+            },
+            {
+                "id": "estandar-3",
+                "type": "custom",
+                "iconId": null,
+                "highlight": false,
+                "itemProps": {
+                  "type": "internal",
+                  "href": "#",
+                  "noFollow": false,
+                  "text": "Categoria",
+                  "tagTitle": "Categoria"
+                }
+            },
+            {
+                "id": "estandar-3",
+                "type": "custom",
+                "iconId": null,
+                "highlight": false,
+                "itemProps": {
+                  "type": "internal",
+                  "href": "#",
+                  "noFollow": false,
+                  "text": "Categoria",
+                  "tagTitle": "Categoria"
+                }
+            },
+            {
+                "id": "estandar-3",
+                "type": "custom",
+                "iconId": null,
+                "highlight": false,
+                "itemProps": {
+                  "type": "internal",
+                  "href": "#",
+                  "noFollow": false,
+                  "text": "Categoria",
+                  "tagTitle": "Categoria"
+                }
+            },
+            {
+                "id": "estandar-3",
+                "type": "custom",
+                "iconId": null,
+                "highlight": false,
+                "itemProps": {
+                  "type": "internal",
+                  "href": "#",
+                  "noFollow": false,
+                  "text": "Categoria",
+                  "tagTitle": "Categoria"
+                }
+            },
+            {
+                "id": "estandar-3",
+                "type": "custom",
+                "iconId": null,
+                "highlight": false,
+                "itemProps": {
+                  "type": "internal",
+                  "href": "#",
+                  "noFollow": false,
+                  "text": "Categoria",
+                  "tagTitle": "Categoria"
+                }
+            },
+            {
+                "id": "estandar-3",
+                "type": "custom",
+                "iconId": null,
+                "highlight": false,
+                "itemProps": {
+                  "type": "internal",
+                  "href": "#",
+                  "noFollow": false,
+                  "text": "Categoria",
+                  "tagTitle": "Categoria"
+                }
+            },
+            {
+                "id": "estandar-3",
+                "type": "custom",
+                "iconId": null,
+                "highlight": false,
+                "itemProps": {
+                  "type": "internal",
+                  "href": "#",
+                  "noFollow": false,
+                  "text": "Categoria",
+                  "tagTitle": "Categoria"
+                }
+            },
+            {
+                "id": "estandar-3",
+                "type": "custom",
+                "iconId": null,
+                "highlight": false,
+                "itemProps": {
+                  "type": "internal",
+                  "href": "#",
+                  "noFollow": false,
+                  "text": "Categoria",
+                  "tagTitle": "Categoria"
+                }
+            },
+            {
+                "id": "estandar-3",
+                "type": "custom",
+                "iconId": null,
+                "highlight": false,
+                "itemProps": {
+                  "type": "internal",
+                  "href": "#",
+                  "noFollow": false,
+                  "text": "Categoria",
+                  "tagTitle": "Categoria"
+                }
+            }
+          ]
+        }
+      },
+      "menu-item#estandar-3": {
+        "props": {
+          "blockClass": "category",
+          "id": "estandar-3",
+          "type": "custom",
+    
+          "itemProps": {
+            //"categoryId": 1,
+            "text": "Titulo categoria",
+            "tagTitle": "Titulo categoria",
+            "type": "internal",
+            "noFollow": false,
+            "href": "#"
+          }
+        }
+      }
+  }

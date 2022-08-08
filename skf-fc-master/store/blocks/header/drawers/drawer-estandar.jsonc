@@ -1,0 +1,151 @@
+{
+    "drawer#estandar": {
+      "props": {
+        "blockClass": ["mobile-menu", "secondary-tab"]
+      },
+  
+      "blocks": ["drawer-trigger#estandar"],
+      "children": ["menu#estandar"]
+    },
+  
+    "drawer-trigger#estandar": {
+      "children": ["rich-text#estandar"]
+    },
+  
+    "rich-text#estandar": {
+      "props": {
+        "blockClass": "mobile-menu-item",
+        "text": "estandar"
+      }
+    },
+  
+    "menu#estandar": {
+      "props": {
+        "blockClass": "mobile-menu",
+        "orientation": "vertical"
+      },
+  
+      "children": [
+        "drawer#estandar-1",
+        "drawer#estandar-2",
+        "menu-item#estandar-see-all"
+      ]
+    },
+  
+    "drawer#estandar-1": {
+      "props": {
+        "blockClass": ["mobile-menu", "secondary-tab"]
+      },
+  
+      "blocks": ["drawer-trigger#estandar-1"],
+      "children": ["menu#estandar-1"]
+    },
+  
+    "drawer-trigger#estandar-1": {
+      "children": ["rich-text#estandar-1"]
+    },
+  
+    "rich-text#estandar-1": {
+      "props": {
+        "blockClass": "mobile-menu-item",
+        "text": "1"
+      }
+    },
+  
+    "menu#estandar-1": {
+      "props": {
+        "blockClass": "mobile-menu",
+        "orientation": "vertical"
+      },
+  
+      "children": [
+        "vtex.menu@2.x:menu#submenu-estandar-1",
+        "menu-item#estandar-1-see-all"
+      ]
+    },
+  
+    "drawer#estandar-2": {
+      "props": {
+        "blockClass": ["mobile-menu", "secondary-tab"]
+      },
+  
+      "blocks": ["drawer-trigger#estandar-2"],
+      "children": ["menu#estandar-2"]
+    },
+  
+    "drawer-trigger#estandar-2": {
+      "children": ["rich-text#estandar-2"]
+    },
+  
+    "rich-text#estandar-2": {
+      "props": {
+        "blockClass": "mobile-menu-item",
+        "text": "2"
+      }
+    },
+  
+    "menu#estandar-2": {
+      "props": {
+        "blockClass": "mobile-menu",
+        "orientation": "vertical"
+      },
+  
+      "children": [
+        "vtex.menu@2.x:menu#submenu-estandar-2",
+        "menu-item#estandar-2-see-all"
+      ]
+    },
+  
+    //ver todo
+    "menu-item#estandar-see-all": {
+      "props": {
+        "blockClass": ["department", "see-all"],
+        "id": "estandar-see-all",
+        "type": "custom",
+  
+        "itemProps": {
+          "categoryId": 2,
+          "type": "internal",
+          "noFollow": true,
+          "href": "/estandar",
+          "tagTitle": "ver todo estandar",
+          "text": "ver todo estandar"
+        }
+      }
+    },
+  
+    "menu-item#estandar-1-see-all": {
+      "props": {
+        "blockClass": ["department", "see-all"],
+        "id": "estandar-1-see-all",
+        "type": "custom",
+  
+        "itemProps": {
+          "categoryId": 7,
+          "href": "/estandar/1",
+          "type": "internal",
+          "noFollow": true,
+          "tagTitle": "ver todo 1",
+          "text": "ver todo 1"
+        }
+      }
+    },
+  
+    "menu-item#estandar-2-see-all": {
+      "props": {
+        "blockClass": ["department", "see-all"],
+        "id": "2-see-all",
+        "type": "custom",
+  
+        "itemProps": {
+          "categoryId": 8,
+          "type": "internal",
+          "href": "/estandar/2",
+          "noFollow": true,
+          "tagTitle": "ver todo 2",
+          "text": "ver todo 2"
+        }
+      }
+    }
+  }
+  

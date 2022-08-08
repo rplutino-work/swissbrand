@@ -17,16 +17,13 @@
   },
   "menu#mobile-menu": {
     "children": [
-      "drawer#living",
-      "drawer#comedor",
-      "drawer#dormitorio",
-      //"link#dormitorio",
-      "drawer#oficina",
-      //"link#oficina",
-      "drawer#jardin",
-      "drawer#electro",
-      "drawer#deco-hogar"
-      //"link#liquidacion"
+      "drawer#estandar",
+      "drawer#estandar",
+      "drawer#estandar",
+      "drawer#estandar",
+      "drawer#estandar",
+      "drawer#estandar",
+      "drawer#estandar"
     ],
     "props": {
       "orientation": "vertical",

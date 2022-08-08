@@ -38,11 +38,12 @@
           },
   
           "children": [
-              "rich-text#arrepentimiento-form-text",
-              "custom-script#arrepentimiento"
+              "rich-text#arrepentimiento-form-text"
+              //"custom-script#arrepentimiento"
       ]
-      },
+      }
   
+      /*
       "custom-script#arrepentimiento": {
           "props": {
               "blockClass": "contact-form",
@@ -50,4 +51,5 @@
               "div": "<div class='elfsight-app-df280f0f-48b7-419f-8948-437ed3dfe484'></div>"
           }
       }
+      */
   }

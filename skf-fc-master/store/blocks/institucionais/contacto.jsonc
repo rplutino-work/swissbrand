@@ -38,11 +38,12 @@
         },
 
         "children": [
-            "rich-text#contacto-form-text",
-            "custom-script#contacto"
+            "rich-text#contacto-form-text"
+            //"custom-script#contacto"
     ]
-    },
+    }
 
+    /*
     "custom-script#contacto": {
         "props": {
             "blockClass": "contact-form",
@@ -50,4 +51,5 @@
             "div": "<div class='elfsight-app-10b756f1-cb12-4656-a02d-6ea354654b1a'></div>"
         }
     }
+    */
 }

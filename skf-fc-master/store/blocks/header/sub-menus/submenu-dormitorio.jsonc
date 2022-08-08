@@ -24,7 +24,7 @@
   "image#dormitorio-banner": {
     "props": {
       "blockClass": "submenu-banner",
-      "src": "assets/imgs/tienda-fc-dormitorio.jpg",
+      "src": "https://placehold.jp/430x240.png",
       "link": true
     }
   },

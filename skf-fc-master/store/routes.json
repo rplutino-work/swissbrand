@@ -1,41 +1,4 @@
 {
-  "store.custom#quienes-somos": {
-    "path": "/quienes-somos"
-  },
-
-  "store.custom#como-comprar": {
-    "path": "/como-comprar"
-  },
-
-  "store.custom#formas-de-pago": {
-    "path": "/formas-de-pago"
-  },
-
-  "store.custom#plazo-de-entrega": {
-    "path": "/plazo-de-entrega"
-  },
-
-  "store.custom#cambios-y-devoluciones": {
-    "path": "/cambios-y-devoluciones"
-  },
-
-  "store.custom#preguntas-frecuentes": {
-    "path": "/preguntas-frecuentes"
-  },
-
-  "store.custom#terminos-y-condiciones": {
-    "path": "/terminos-y-condiciones"
-  },
-
-  "store.custom#politicas-de-privacidad": {
-    "path": "/politicas-de-privacidad"
-  },
-  "store.custom#arrepentimiento": {
-    "path": "/arrepentimiento"
-  },
-  "store.custom#contacto": {
-    "path": "/contacto"
-  },
   "store.search#department": {
     "path": "/_v/segment/routing/vtex.store@2.x/department/:id/:department(/*terms)",
     "canonical": "/:department",

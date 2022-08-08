@@ -1,3 +1,3 @@
-# VTEXIO-TIENDA-FC
+# VTEXIO-SKF
 
-Tema VTEX IO da loja Tienda FC - 23/12/2020.
+Tema VTEX IO da loja SKF.

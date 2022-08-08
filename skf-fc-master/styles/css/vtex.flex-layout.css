@@ -102,48 +102,6 @@
   width: 100% !important;
 }
 
-/* -- */
-.flexRow--fc-form {
-  max-width: 1126px;
-  margin: 0 auto;
-  margin-bottom: 135px;
-}
-.flexCol--fc-form-items :global(.vtex-input__label)::after,
-.flexCol--fc-form-items :global(.vtex-dropdown__label)::after {
-  content: "*";
-  display: inline-block;
-  color: #a70505;
-}
-.flexCol--fc-form-items :global(.vtex-input__label),
-.flexCol--fc-form-items :global(.vtex-dropdown__label) {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 13px;
-  line-height: 20px;
-  color: #666666;
-}
-.flexCol--fc-form-items :global(.vtex-button) {
-  float: right;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 16px;
-  text-align: center;
-  text-transform: capitalize;
-  color: #ffffff;
-  margin-top: 56px;
-}
-.flexCol--fc-form-items :global(.vtex-input-prefix__group) {
-  margin-bottom: 13px;
-}
-
-.flexCol--fc-form-items {
-  max-width: 694px;
-  padding: 29px 15px;
-  box-shadow: 0px 1px 2px rgba(34, 36, 38, 0.15);
-  border: 1px solid rgba(34, 36, 38, 0.15);
-  border-radius: 4px;
-}
-
 .flexRow--drawer-bottom-content {
   margin-top: 12px;
   border-top: 1px solid #fff;
@@ -1504,107 +1462,6 @@ padding: 0 15px;
   }  
 }
 
-/* JOS - GENERAL*/
-.flexRowContent--jos-wrapper,
-.flexRowContent--jos-content {
-  flex-direction: column;
-}
-.flexRow--jos-content {
-  max-width: 1200px;
-}
-.flexRow--jos-wrapper :global(.vtex-store-components-3-x-container) {
-  padding: 0;
-}
-
-/* JOS - INTRO */
-.flexRowContent--jos-intro-wrapper .stretchChildrenWidth {
-  justify-content: flex-start;
-}
-.flexCol--jos-intro-text-wrapper {
-  max-width: 100%;
-}
-.flexRow--jos-intro-wrapper {
-  background-color: #e8e8e8;
-}
-.flexRowContent--jos-intro-wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 60px 15px;
-}
-@media(min-width: 1024px){
-  .flexCol--jos-intro-text-wrapper {
-    max-width: 80%;
-  }
-}
-
-/* JOS - MOSAICO */
-.flexRow--jos-content {
-  margin: 40px 0;
-}
-@media(min-width: 1024px){
-  .flexRow--jos-content {
-    margin: 60px 0;
-  }  
-}
-
-/* JOS - TESTIMONIALS */
-.flexRow--testimonials-wrapper {
-  max-width: 1200px;
-}
-.flexRowContent--jos-content-fluid {
-  justify-content: center;
-  padding: 60px 0;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-image: url("assets/imgs/tienda-fc-juntos-o-solos-personas.jpg");
-}
-@media(min-width: 1024px){
-  .flexRowContent--jos-content-fluid {
-    padding: 100px 0;
-  } 
-  .flexRowContent--jos-intro-wrapper .stretchChildrenWidth {
-    justify-content: center;
-  }
-}
-
-/* JOS - NEWSPAPER */
-.flexRowContent--jos-content-fluid-2 {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.flexRow--jos-content-fluid-2 {
-  background: #e8e8e8;
-  margin-bottom: 60px;
-}
-.flexRow--jos-content {
-  margin: 40px 0;
-}
-.flexRow--jos-newspaper-wrapper {
-  margin: 60px 0;
-  padding: 0 15px
-}
-.flexRowContent--jos-newspaper-wrapper {
-  flex-direction: column;
-}
-.flexRowContent--jos-newspaper-wrapper .stretchChildrenWidth {
-  width: 100% !important;
-}
-@media(min-width: 1024px){
-  .flexRow--jos-newspaper-wrapper {
-    margin: 60px 0 80px 0;
-    padding: 0 7px;
-  }
-  .flexRow--jos-content {
-    margin: 60px 0;
-  }  
-}
-
-/* JOS - NEWSLETTER */
-.flexRowContent--jos-wrapper .flexRow--newsletter :global(.vtex-store-components-3-x-container) {
-  align-items: flex-end;
-}
-
 /* LIST HOME */
 .flexRow--list-home-wrapper {
   background: #F6F6F6;
@@ -1681,11 +1538,15 @@ padding: 0 15px;
 }
 
 /* HOME INFO */
+.flexRow--skf-info-home-wrapper {
+  margin-bottom: 60px;
+}
 .flexRowContent--skf-info-home-row {
   flex-direction: column;
 }
 .flexRow--skf-info-home-row {
   margin: 0 15px;
+  height: 100%;
 }
 
 .flexRowContent--skf-info-home-wrapper {
@@ -1699,4 +1560,5 @@ padding: 0 15px;
   align-items: flex-start;
   background: #ECECE0;
   padding: 30px;
+  height: 100%;
 }

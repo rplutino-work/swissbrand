@@ -318,7 +318,7 @@
     "props": {
       "blockClass": ["skf-info-home-title"],
       "font": "t-body",
-      "text": "Puntos de venta"
+      "text": "### Puntos de venta"
     }
   },
   "rich-text#skf-info-text-1": {
@@ -358,7 +358,7 @@
     "props": {
       "blockClass": ["skf-info-home-title"],
       "font": "t-body",
-      "text": "Preguntas frecuentes"
+      "text": "### Preguntas frecuentes"
     }
   },
   "rich-text#skf-info-text-2": {
@@ -398,7 +398,7 @@
     "props": {
       "blockClass": ["skf-info-home-title"],
       "font": "t-body",
-      "text": "Atención a clientes"
+      "text": "### Atención a clientes"
     }
   },
   "rich-text#skf-info-text-3": {

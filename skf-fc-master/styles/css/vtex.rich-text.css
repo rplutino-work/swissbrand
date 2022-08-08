@@ -330,6 +330,21 @@
   line-height: 20px;
 }
 
+.headingLevel3--skf-info-home-title {
+  font-weight: 300;
+  font-size: 33px;
+  letter-spacing: -1px;
+  margin: 0;
+  color: #485A64;
+}
+
+.vtex-rich-text-0-x-paragraph--skf-info-home-text {
+  color: #485A64;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: .5px;
+}
+
 /* PRODUCT SPECIFICATION */
 .wrapper--specification-title {
   width: 100%;
