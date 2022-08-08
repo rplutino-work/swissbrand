@@ -1,0 +1,267 @@
+{
+  "vtex.menu@2.x:menu#category-menu": {
+    "props": {
+      "blockClass": "departments",
+      "experimentalOptimizeRendering": true
+    },
+    "children": [
+      //"menu-item#home",
+      "menu-item#living",
+      "menu-item#comedor",
+      "menu-item#dormitorio",
+      //"menu-item#dormitorio-single",
+      "menu-item#oficina",
+      //"menu-item#oficina-single",
+      "menu-item#jardin",
+      "menu-item#electro",
+      "menu-item#deco hogar"
+      //"menu-item#liquidacion"
+    ]
+  },
+
+  "menu-item#living": {
+    "props": {
+      "blockClass": "department",
+      "id": "living",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "Living",
+        "type": "internal",
+        "href": "/living"
+      },
+      "iconProps": {
+        "id": "nav-caret--down",
+        "size": 10
+      },
+      "iconPosition": "right"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#living"]
+  },
+  "menu-item#comedor": {
+    "props": {
+      "blockClass": "department",
+      "id": "comedor",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "Comedor",
+        "tagTitle": "Comedor",
+        "type": "internal",
+        "href": "/comedor",
+        "noFollow": false
+      },
+
+      "iconProps": {
+        "id": "nav-caret--down",
+        "size": 10
+      },
+      "iconPosition": "right"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#comedor"]
+  },
+
+  "menu-item#dormitorio": {
+    "props": {
+      "blockClass": "department",
+      "id": "dormitorio",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "Dormitorio",
+        "tagTitle": "Niños",
+        "type": "internal",
+        "href": "/dormitorio",
+        "noFollow": false
+      },
+      "iconProps": {
+        "id": "nav-caret--down",
+        "size": 10
+      },
+      "iconPosition": "right"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#dormitorio"]
+  },
+
+  "menu-item#oficina": {
+    "props": {
+      "blockClass": "department",
+      "id": "oficina",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "Oficina",
+        "tagTitle": "Oficina",
+        "type": "internal",
+        "href": "/oficina",
+        "noFollow": false
+      },
+      "iconProps": {
+        "id": "nav-caret--down",
+        "size": 10
+      },
+      "iconPosition": "right"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#oficina"]
+  },
+
+  "menu-item#jardin": {
+    "props": {
+      "blockClass": "department",
+      "id": "jardin",
+      "type": "custom",
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "jardin",
+        "tagTitle": "jardin",
+        "type": "internal",
+        "href": "/jardin",
+        "noFollow": false
+      },
+      "iconProps": {
+        "id": "nav-caret--down",
+        "size": 10
+      },
+      "iconPosition": "right"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#jardin"]
+  },
+
+  "menu-item#electro": {
+    "props": {
+      "blockClass": "department",
+      "id": "electro",
+      "type": "custom",
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "electro",
+        "tagTitle": "electro",
+        "type": "internal",
+        "href": "/electro",
+        "noFollow": false
+      },
+      "iconProps": {
+        "id": "nav-caret--down",
+        "size": 10
+      },
+      "iconPosition": "right"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#electro"]
+  },
+
+  "menu-item#deco hogar": {
+    "props": {
+      "blockClass": "department",
+      "id": "deco-hogar",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "deco hogar",
+        "tagTitle": "deco hogar",
+        "type": "internal",
+        "href": "/deco-hogar",
+        "noFollow": false
+      },
+      "iconProps": {
+        "id": "nav-caret--down",
+        "size": 10
+      },
+      "iconPosition": "right"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#deco-hogar"]
+  },
+
+  "menu-item#liquidacion": {
+    "props": {
+      "blockClass": "department",
+      "id": "liquidacion",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "liquidacion",
+        "tagTitle": "liquidacion",
+        "type": "internal",
+        "href": "/liquidacion",
+        "noFollow": false
+      }
+    }
+  },
+
+  "menu-item#dormitorio-single": {
+    "props": {
+      "blockClass": "department",
+      "id": "dormitorio",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "Dormitorio",
+        "tagTitle": "liquidacion",
+        "type": "internal",
+        "href": "/dormitorio",
+        "noFollow": false
+      }
+    }
+  },
+
+  "menu-item#oficina-single": {
+    "props": {
+      "blockClass": "department",
+      "id": "oficina",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "Oficina",
+        "tagTitle": "oficina",
+        "type": "internal",
+        "href": "/oficina",
+        "noFollow": false
+      }
+    }
+  },
+
+  "menu-item#home": {
+    "props": {
+      "blockClass": "department",
+      "id": "home",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "Home",
+        "tagTitle": "home",
+        "type": "internal",
+        "href": "/",
+        "noFollow": false
+      }
+    }
+  },
+
+  /*Mobile*/
+
+  /* bottom LINKS (MOBILE)*/
+
+  "menu-item#my-orders": {
+    "props": {
+      "blockClass": "mis-pedidos",
+      "id": "menu-item-my-orders",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/my-orders",
+        "noFollow": true,
+        "tagTitle": "/my-orders",
+        "text": "MIS PEDIDOS"
+      }
+    }
+  }
+}

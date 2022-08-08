@@ -1,0 +1,15 @@
+.buttonDataContainer {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #fff;
+}
+
+.tooltipLabelText{
+  font-size: 0;
+}
+.tooltipLabelText::after{
+  content: 'Por favor seleccionar un talle';
+  font-size: 14px;
+}

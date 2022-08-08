@@ -1,0 +1,353 @@
+{
+  "vtex.menu@2.x:submenu#equipos": {
+    "children": ["flex-layout.row#equipos", "image#equipos-banner"],
+    "props": {
+      "blockClass": "submenu"
+    }
+  },
+
+  "flex-layout.row#equipos": {
+    "props": {
+      "blockClass": "categories-wrapper",
+      "colSizing": "auto",
+      "colGap": 3
+    },
+
+    "children": [
+      "vtex.menu@2.x:menu#equipos-locales-column",
+      "vtex.menu@2.x:menu#equipos-internacionales-column",
+      "vtex.menu@2.x:menu#equipos-sellecciones-column"
+    ]
+  },
+
+  /* BANNER MENU */
+  "image#equipos-banner": {
+    "props": {
+      "blockClass": "submenu-banner",
+      "src": "assets/imgs/banner-megamenu-equipos.png",
+      "link": true
+    }
+  },
+
+  /* LOCALES COLUMN */
+  "vtex.menu@2.x:menu#equipos-locales-column": {
+    "props": {
+      "blockClass": "categories"
+    },
+    "children": [
+      "menu-item#equipos-locales",
+      "vtex.menu@2.x:menu#submenu-equipos-locales"
+    ]
+  },
+  "vtex.menu@2.x:menu#submenu-equipos-locales": {
+    "props": {
+      "blockClass": "custom-dropdown-submenu",
+      "items": [
+        {
+          "id": "equipos-river",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "",
+            "noFollow": false,
+            "text": "River",
+            "tagTitle": "river"
+          }
+        },
+        {
+          "id": "equipos-boca",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "",
+            "noFollow": false,
+            "text": "Boca",
+            "tagTitle": "boca"
+          }
+        },
+        {
+          "id": "equipos-velez",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "",
+            "noFollow": false,
+            "text": "Velez",
+            "tagTitle": "Velez"
+          }
+        },
+        {
+          "id": "equipos-aldosivi",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "",
+            "noFollow": false,
+            "text": "Aldosivi",
+            "tagTitle": "Aldosivi"
+          }
+        },
+        {
+          "id": "equipos-racing",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "",
+            "noFollow": false,
+            "text": "Racing",
+            "tagTitle": "Racing"
+          }
+        },
+        {
+          "id": "equipos-independiente",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "",
+            "noFollow": false,
+            "text": "Independiente",
+            "tagTitle": "independiente"
+          }
+        },
+        {
+          "id": "equipos-belgrano",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "",
+            "noFollow": false,
+            "text": "Belgrano",
+            "tagTitle": "belgrano"
+          }
+        },
+        {
+          "id": "equipos-union",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "",
+            "noFollow": false,
+            "text": "Unión",
+            "tagTitle": "unión"
+          }
+        }
+      ]
+    }
+  },
+
+  "menu-item#equipos-locales": {
+    "props": {
+      "blockClass": "category",
+      "id": "equipos-locales",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "Locales",
+        "tagTitle": "Locales",
+        "type": "internal",
+        "noFollow": false
+      }
+    }
+  },
+
+  /* INTERNACIONALES COLUMN */
+  "vtex.menu@2.x:menu#equipos-internacionales-column": {
+    "props": {
+      "blockClass": "categories"
+    },
+    "children": [
+      "menu-item#equipos-internacionales",
+      "vtex.menu@2.x:menu#submenu-equipos-internacionales"
+    ]
+  },
+  "vtex.menu@2.x:menu#submenu-equipos-internacionales": {
+    "props": {
+      "blockClass": "custom-dropdown-submenu",
+      "items": [
+        {
+          "id": "equipos-real",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "",
+            "noFollow": false,
+            "text": "Real Madrid",
+            "tagTitle": "real-madrid"
+          }
+        },
+        {
+          "id": "equipos-arsenal",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "",
+            "noFollow": false,
+            "text": "Arsenal",
+            "tagTitle": "arsenal"
+          }
+        },
+        {
+          "id": "equipos-manchester-united",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "",
+            "noFollow": false,
+            "text": "Manchester United",
+            "tagTitle": "manchester-united"
+          }
+        },
+        {
+          "id": "equipos-juventus",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "",
+            "noFollow": false,
+            "text": "Juventus",
+            "tagTitle": "juventus"
+          }
+        },
+        {
+          "id": "equipos-bayern",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "",
+            "noFollow": false,
+            "text": "Bayern",
+            "tagTitle": "bayern"
+          }
+        }
+      ]
+    }
+  },
+
+  "menu-item#equipos-internacionales": {
+    "props": {
+      "blockClass": "category",
+      "id": "equipos-internacionales",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "Internacionales",
+        "tagTitle": "internacionales",
+        "type": "internal",
+        "noFollow": false
+      }
+    }
+  },
+  // SELLECCIONES MENU
+  "vtex.menu@2.x:menu#equipos-sellecciones-column": {
+    "props": {
+      "blockClass": "categories"
+    },
+    "children": [
+      "menu-item#equipos-sellecciones",
+      "vtex.menu@2.x:menu#submenu-equipos-sellecciones"
+    ]
+  },
+  "vtex.menu@2.x:menu#submenu-equipos-sellecciones": {
+    "props": {
+      "blockClass": "custom-dropdown-submenu",
+      "items": [
+        {
+          "id": "equipos-alemania",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "",
+            "noFollow": false,
+            "text": "Alemania",
+            "tagTitle": "alemania"
+          }
+        },
+        {
+          "id": "equipos-argentina",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "",
+            "noFollow": false,
+            "text": "Argentina",
+            "tagTitle": "argentina"
+          }
+        },
+        {
+          "id": "equipos-espana",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "",
+            "noFollow": false,
+            "text": "España",
+            "tagTitle": "espana"
+          }
+        },
+        {
+          "id": "equipos-rusia",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "",
+            "noFollow": false,
+            "text": "Rusia",
+            "tagTitle": "rusia"
+          }
+        }
+      ]
+    }
+  },
+
+  "menu-item#equipos-sellecciones": {
+    "props": {
+      "blockClass": "category",
+      "id": "equipos-sellecciones",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "Sellecciones",
+        "tagTitle": "sellecciones",
+        "type": "internal",
+        "noFollow": false
+      }
+    }
+  }
+}

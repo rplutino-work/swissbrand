@@ -1,0 +1,11 @@
+{
+  "store.not-found#product": {
+    "blocks": ["flex-layout.row#product-not-found"]
+  },
+  "flex-layout.row#product-not-found": {
+    "props": {
+      "blockClass": "not-found-row"
+    },
+    "children": []
+  }
+}

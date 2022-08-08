@@ -1,0 +1,20 @@
+{
+  "flex-layout.row#newsletter": {
+    "props": {
+      "blockClass": "newsletter"
+    },
+    "title": "Newsletter",
+    "children": [
+      "newsletter#footer-newsletter"
+    ]
+  },
+  "newsletter#footer-newsletter": {
+    "props": {
+      "blockClass": "footer-newsletter",
+      "label": "Enteráte de las últimas novedades",
+      "placeholder": "Ingresá tu mail",
+      "submit": "ENVIAR"
+    },
+    "title": "Textos"
+  }
+}

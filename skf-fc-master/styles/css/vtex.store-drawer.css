@@ -1,0 +1,135 @@
+/* Menu */
+
+.openIconContainer {
+  padding: 0;
+  flex: 1;
+}
+
+.openIconContainer :global(.vtex-store-drawer-0-x-drawerTriggerContainer) {
+  outline: none;
+}
+
+.drawer--mobile-menu {
+  padding: 0;
+  background: #0f58d6;
+}
+
+.closeIconContainer--mobile-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #0f58d6;
+  padding: 0 0 0 15px;
+  border-bottom: 1px solid #fff;
+}
+
+.closeIconContainer--primary-tab::before {
+  content: "";
+  width: 120px;
+  height: 28px;
+  background: url("assets/svgs/skf-logo.svg") center no-repeat;
+}
+
+.closeIconButton--mobile-menu {
+  display: flex;
+  align-items: center;
+  padding: 17px 0;
+  outline: none;
+  padding-right: 12px;
+}
+.closeIconButton--mobile-menu .closeIcon--mobile-menu {
+  color: #fff;
+  transform: scale(1.2);
+}
+
+.closeIconButton--secondary-tab::before {
+  content: "";
+  width: 4px;
+  height: 8px;
+  padding-left: 4px;
+  background: url("assets/svgs/arrow-right-blue.svg") left center no-repeat;
+  transform: rotate(180deg);
+  margin-right: 8px;
+  margin-bottom: 1px;
+  filter: invert(1);
+}
+.closeIconButton--secondary-tab::after {
+  content: "VOLVER";
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+  font-family: 'Skf';
+}
+
+.closeIcon--mobile-menu {
+  display: block;
+  width: 26px;
+  height: 26px;
+}
+
+.closeIcon--secondary-tab {
+  display: none;
+}
+
+.childrenContainer :global(.vtex-button) {
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+.childrenContainer :global(.vtex-button)::after {
+  content: "INGRESAR";
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+  padding: 15px;
+}
+
+.childrenContainer :global(.vtex-button__label) {
+  padding: 0 30px 0 0;
+  background-position: left;
+}
+
+.overlay {
+  background: #000000;
+}
+
+/**/
+
+/* Custom Brands Menu (Adidas, Reebok)*/
+
+.drawer--mobile-menu-brands {
+  background-color: #313131;
+}
+
+.closeIconContainer--mobile-menu-brands {
+  border-color: white;
+}
+
+.closeIconContainer--mobile-menu-adidas::before {
+  content: "";
+  width: 82px;
+  height: 39px;
+  background: url("assets/svgs/brand-adidas-white.svg") center no-repeat;
+}
+
+.closeIconContainer--mobile-menu-reebok::before {
+  content: "";
+  width: 116px;
+  height: 56px;
+  background: url("assets/svgs/brand-reebok-white.svg") center no-repeat;
+}
+
+.closeIcon--mobile-menu-brands {
+  filter: invert(100%);
+}
+
+.childrenContainer--mobile-menu {
+  display: flex;
+  flex-direction: column;
+}
+.drawerContent--primary-tab {
+  overflow-y: hidden !important;
+}

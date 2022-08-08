@@ -1,0 +1,238 @@
+{
+  "drawer#living": {
+    "props": {
+      "blockClass": ["mobile-menu", "secondary-tab"]
+    },
+
+    "blocks": ["drawer-trigger#living"],
+    "children": ["menu#living"]
+  },
+
+  "drawer-trigger#living": {
+    "children": ["rich-text#living"]
+  },
+
+  "rich-text#living": {
+    "props": {
+      "blockClass": "mobile-menu-item",
+      "text": "Living"
+    }
+  },
+
+  "menu#living": {
+    "props": {
+      "blockClass": "mobile-menu",
+      "orientation": "vertical"
+    },
+
+    "children": [
+      "drawer#living-sillones",
+      "drawer#living-sofas",
+      "drawer#living-rinconeros",
+      "drawer#living-muebles",
+      "menu-item#living-see-all"
+    ]
+  },
+
+  "drawer#living-sillones": {
+    "props": {
+      "blockClass": ["mobile-menu", "secondary-tab"]
+    },
+
+    "blocks": ["drawer-trigger#living-sillones"],
+    "children": ["menu#living-sillones"]
+  },
+ 
+  "drawer-trigger#living-sillones": {
+    "children": ["rich-text#living-sillones"]
+  },
+
+  "rich-text#living-sillones": {
+    "props": {
+      "blockClass": "mobile-menu-item",
+      "text": "Sillones"
+    }
+  },
+
+  "menu#living-sillones": {
+    "props": {
+      "blockClass": "mobile-menu",
+      "orientation": "vertical"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#submenu-living-sillones",
+      "menu-item#sillones-see-all"
+    ]
+  },
+
+  "drawer#living-sofas": {
+    "props": {
+      "blockClass": ["mobile-menu", "secondary-tab"]
+    },
+
+    "blocks": ["drawer-trigger#living-sofas"],
+    "children": ["menu#living-sofas"]
+  },
+
+  "drawer-trigger#living-sofas": {
+    "children": ["rich-text#living-sofas"]
+  },
+
+  "rich-text#living-sofas": {
+    "props": {
+      "blockClass": "mobile-menu-item",
+      "text": "Sofás"
+    }
+  },
+
+  "menu#living-sofas": {
+    "props": {
+      "blockClass": "mobile-menu",
+      "orientation": "vertical"
+    },
+
+    "children": [
+      "vtex.menu@2.x:menu#submenu-living-sofas",
+      "menu-item#sofas-see-all"
+    ]
+  },
+
+  "drawer#living-rinconeros": {
+    "props": {
+      "blockClass": ["mobile-menu", "secondary-tab"]
+    },
+
+    "blocks": ["drawer-trigger#living-rinconeros"],
+    "children": ["menu#living-rinconeros"]
+  },
+ 
+  "drawer-trigger#living-rinconeros": {
+    "children": ["rich-text#living-rinconeros"]
+  },
+
+  "rich-text#living-rinconeros": {
+    "props": {
+      "blockClass": "mobile-menu-item",
+      "text": "Rinconeros"
+    }
+  },
+
+  "menu#living-rinconeros": {
+    "props": {
+      "blockClass": "mobile-menu",
+      "orientation": "vertical"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#submenu-living-rinconeros",
+      "menu-item#rinconeros-see-all"
+    ]
+  },
+
+  "drawer#living-muebles": {
+    "props": {
+      "blockClass": ["mobile-menu", "secondary-tab"]
+    },
+
+    "blocks": ["drawer-trigger#living-muebles"],
+    "children": ["menu#living-muebles"]
+  },
+ 
+  "drawer-trigger#living-muebles": {
+    "children": ["rich-text#living-muebles"]
+  },
+
+  "rich-text#living-muebles": {
+    "props": {
+      "blockClass": "mobile-menu-item",
+      "text": "Muebles"
+    }
+  },
+
+  "menu#living-muebles": {
+    "props": {
+      "blockClass": "mobile-menu",
+      "orientation": "vertical"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#submenu-living-muebles",
+      "menu-item#muebles-see-all"
+    ]
+  },
+
+  //Ver Todo
+  "menu-item#living-see-all": {
+    "props": {
+      "blockClass": ["department", "see-all"],
+      "id": "living-see-all",
+      "type": "custom",
+      "itemProps": {
+        //"categoryId": 1,
+        "href": "/living",
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Ver todo living",
+        "text": "Ver todo living"
+      }
+    }
+  },
+
+  "menu-item#sillones-see-all": {
+    "props": {
+      "blockClass": ["department", "see-all"],
+      "id": "sillones-see-all",
+      "type": "custom",
+      "itemProps": {
+        "href": "/living/sillones",
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Ver todo sillones",
+        "text": "ver todo sillones"
+      }
+    }
+  },
+
+  "menu-item#sofas-see-all": {
+    "props": {
+      "blockClass": ["department", "see-all"],
+      "id": "sofas-see-all",
+      "type": "custom",
+      "itemProps": {
+        "href": "/living/sofas",
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Ver todo sofas",
+        "text": "ver todo sofas"
+      }
+    }
+  },
+
+  "menu-item#rinconeros-see-all": {
+    "props": {
+      "blockClass": ["department", "see-all"],
+      "id": "rinconeros-see-all",
+      "type": "custom",
+      "itemProps": {
+        "href": "/living/rinconeros",
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "ver todo rinconeros",
+        "text": "ver todo rinconeros"
+      }
+    }
+  },
+
+  "menu-item#muebles-see-all": {
+    "props": {
+      "blockClass": ["department", "see-all"],
+      "id": "muebles-see-all",
+      "type": "custom",
+      "itemProps": {
+        "href": "/living/muebles",
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "ver todo muebles",
+        "text": "ver todo muebles"
+      }
+    }
+  }
+}

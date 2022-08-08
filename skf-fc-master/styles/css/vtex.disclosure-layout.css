@@ -1,0 +1,11 @@
+.trigger {
+    width: 100%;
+    border: 0;
+    border-radius: 0;
+    background: #EBECEE;
+    border-bottom: 2px solid #AAAFB8;
+    padding: 0 25px;
+}
+.content--product-info-text-disclosure {
+    padding: 18px;
+}

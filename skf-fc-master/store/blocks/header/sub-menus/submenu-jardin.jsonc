@@ -1,0 +1,73 @@
+{
+    "vtex.menu@2.x:submenu#jardin": {
+        "props": {
+            "blockClass": "short-submenu"
+        },
+
+        "children": ["vtex.menu@2.x:menu#jardin-wrapper"]
+    },
+
+    "vtex.menu@2.x:menu#jardin-wrapper": {
+        "props": {
+            "blockClass": "categories",
+            "items": [
+                {
+                    "id": "jardin-reposeras",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        //"categoryId": 2,
+                        "href": "/jardin/reposeras",
+                        "text": "Reposoeras",
+                        "tagTitle": "Reposoeras",
+                        "type": "internal",
+                        "noFollow": false
+                    }
+                },
+                {
+                    "id": "jardin-set-exterior",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        //"categoryId": 2,
+                        "href": "/jardin/set-de-exterior",
+                        "text": "Set de exterior",
+                        "tagTitle": "Set de exterior",
+                        "type": "internal",
+                        "noFollow": false
+                    }
+                },
+                {
+                    "id": "jardin-sombrillas",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        //"categoryId": 2,
+                        "href": "/jardin/sombrillas",
+                        "text": "Sombrillas",
+                        "tagTitle": "Sombrillas",
+                        "type": "internal",
+                        "noFollow": false
+                    }
+                },
+                {
+                    "id": "jardin-piletas",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        //"categoryId": 2,
+                        "href": "/jardin/piletas",
+                        "text": "Piletas",
+                        "tagTitle": "Piletas",
+                        "type": "internal",
+                        "noFollow": false
+                    }
+                }
+            ]
+        }
+    }
+}

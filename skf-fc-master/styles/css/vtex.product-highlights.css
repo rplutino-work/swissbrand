@@ -1,0 +1,45 @@
+.productHighlightText--shelf-product {
+  display: block;
+  box-sizing: border-box;
+  min-width: 60px;
+  max-width: 60px;
+  padding: 4px 0;
+  font-size: 12px;
+  font-weight: 700;
+  color: #191919;
+  background: #fff;
+  text-transform: uppercase;
+  border: 1px solid #0f58d6;
+}
+
+.productHighlightText--free-shipping {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  background: #46962B;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 1px 5px;
+  margin-right: 15px;
+  line-height: 16px;
+  margin-top: 1px;
+}
+
+/**/
+.productHighlightText-span--badge-cash {
+  background: #0F58D6;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 1px 5px;
+  margin-right: 10px;
+}
+
+.productHighlightText--pdp-badge{
+  margin: 12px 0;
+}

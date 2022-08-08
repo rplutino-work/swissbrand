@@ -1,0 +1,50 @@
+{
+  "drawer#jardin": {
+    "props": {
+      "blockClass": ["mobile-menu", "secondary-tab"]
+    },
+
+    "blocks": ["drawer-trigger#jardin"],
+    "children": ["menu#jardin"]
+  },
+
+  "drawer-trigger#jardin": {
+    "children": ["rich-text#jardin"]
+  },
+
+  "rich-text#jardin": {
+    "props": {
+      "blockClass": "mobile-menu-item",
+      "text": "jardin"
+    }
+  },
+
+  "menu#jardin": {
+    "props": {
+      "blockClass": "mobile-menu",
+      "orientation": "vertical"
+    },
+
+    "children": [
+      "vtex.menu@2.x:menu#jardin-wrapper",
+      "menu-item#jardin-see-all"
+    ]
+  },
+
+  //  Ver Todo
+  "menu-item#jardin-see-all": {
+    "props": {
+      "blockClass": ["department", "see-all"],
+      "id": "jardin-see-all",
+      "type": "custom",
+      "itemProps": {
+        "href": "/jardin",
+        "categoryId": 4,
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "ver todo jardin",
+        "text": "ver todo jardin"
+      }
+    }
+  }
+}

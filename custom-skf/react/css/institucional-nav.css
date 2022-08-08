@@ -1,0 +1,12 @@
+.link{
+  color: #707070;
+  display: block;
+  font-size: 15px;
+  padding: 10px 16px;
+  text-decoration: unset;
+}
+
+.link--ativo{
+  background: #282783;
+  color: white;
+}

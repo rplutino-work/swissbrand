@@ -1,0 +1,89 @@
+/* Minicart */
+
+.productImage {
+  display: block;
+  border-radius: 0;
+}
+
+.productName {
+  font-family: "Skf";
+  font-size: 12px;
+  font-weight: 400;
+  color: #525252;
+}
+
+.removeButton {
+  padding: 0;
+  outline: none;
+}
+
+.productVariationsContainer {
+  display: flex;
+  align-items: center;
+}
+
+.productVariationsItem {
+  margin-right: 18px;
+  font-size: 10px;
+  color: #313131;
+}
+
+.quantitySelectorContainer :global(.vtex-dropdown__container) {
+  margin-right: 16px;
+  border: none;
+  border-radius: 0;
+}
+
+.quantitySelectorContainer :global(.vtex-dropdown__caption) {
+  font-size: 15px;
+  color: #6a6a6b;
+}
+
+.quantitySelectorContainer :global(.vtex-dropdown__arrow) {
+  color: #272727;
+}
+
+.currencyContainer {
+  font-size: 12px;
+  font-family: "Skf";
+  font-weight: 400;
+  color: #525252;
+}
+
+.unitListPrice .currencyContainer--skf-minicart-price {
+  font-family: "Skf";
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0px;
+  color: #525252;
+}
+
+.unitPricePerUnitCurrency .currencyContainer--skf-minicart-price {
+  font-family: "Skf";
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0px;
+  color: #525252;
+}
+
+.unitPriceMeasurementUnit {
+  display: none;
+}
+
+.productPrice {
+  font-family: "Skf";
+  font-size: 18px;
+  font-weight: bold;
+  color: #525252;
+}
+
+.productVariationsItem{
+  display: none;
+}
+
+.productVariationsItem:first-child{
+  display: block;
+}
+
+/**/

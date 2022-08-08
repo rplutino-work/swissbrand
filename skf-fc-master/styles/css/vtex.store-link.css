@@ -1,0 +1,380 @@
+.link--top-bar {
+  font-family: "NeoSansPro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  width: fit-content;
+  margin: 7px 0;
+}
+
+.link--buy-with-cnpj {
+  font-family: "NeoSansStd";
+  font-style: normal;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #ffffff;
+  line-height: 37px;
+  padding: 0 16px;
+  position: relative;
+}
+
+.link--buy-with-cnpj::after {
+  content: "";
+  display: block;
+  height: 23px;
+  width: 1px;
+  background: #ffffff;
+  position: absolute;
+  top: 9px;
+  right: 0;
+}
+
+.label--mobile-menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 12px 4px;
+  text-transform: uppercase;
+  line-height: 17px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #191919;
+  text-decoration: none;
+}
+.link--mobile-menu-item {
+  text-decoration: none;
+}
+
+/* Not Found */
+
+.link--not-found-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 160px;
+  height: 40px;
+  margin: 0 auto;
+  text-decoration: none;
+  background: #313131;
+  transition: background 0.2s linear;
+  border-radius: 6px;
+}
+
+.link--not-found-button:hover {
+  background: #313131;
+}
+
+.link--not-found-button:active {
+  background: #313131;
+}
+
+.label--not-found-button {
+  line-height: 16px;
+  letter-spacing: 0.56px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+/**/
+
+.link--whatsapp-link {
+  display: block;
+  height: 35px;
+  width: 35px;
+  background: url(assets/svgs/whatsapp.svg) no-repeat center center !important;
+  background-size: contain;
+  position: fixed;
+  bottom: 80px;
+  right: 14px;
+}
+
+.buttonLink--inst-nav {
+  font-family: "NeoSansPro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 16px;
+  font-variant: small-caps;
+  color: #7d7d7d;
+  border: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  background: none;
+  border-radius: unset;
+}
+
+.buttonLink--inst-nav:active,
+.buttonLink--inst-nav:hover {
+  background: #313131;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 16px;
+}
+
+.link--pedidos-antigos {
+  font-family: "NeoSansPro";
+  position: absolute;
+  top: 31px;
+  right: 33px;
+  color: #fff;
+  background: #313131;
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 10px;
+  line-height: 42px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 1026px) {
+  .link--pedidos-antigos {
+    position: static;
+    float: right;
+  }
+}
+
+/* HOME - ENCONTRALO POR DEPORTE */
+
+.link--encontralo-link {
+  text-decoration: none !important;
+}
+
+/* MENU MOBILE*/
+.link--mobile-menu-solo-link {
+  text-decoration: none !important;
+}
+
+/* SHELF 02 */
+
+.link--see-more {
+  color: #313131;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: "Skf";
+  padding: 2px 8px;
+  text-decoration: none !important;
+  border-bottom: 1px solid #313131;
+}
+
+.link--see-more:hover {
+  color: black;
+  border-color: black;
+}
+.link--shelf-see-more-footer {
+  text-align: center;
+  text-decoration: none;
+  color: #313131;
+  border-bottom: 1px solid #313131;
+  font: normal normal bold 12px/18px Poppins;
+  max-width: 70px;
+  margin-top: 22px;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+/* BREADCRUMB (ACCOUNT) */
+
+.link--breadcrumb-home {
+  display: block;
+  text-decoration: none;
+}
+
+.label--breadcrumb-home {
+  display: block;
+  line-height: 12px;
+  font-size: 10px;
+  font-weight: 500;
+  color: #b8b8b8;
+  transition: color 0.2s linear;
+}
+
+.label--breadcrumb-home:hover {
+  color: #707070;
+}
+
+/* FOOTER (Me arrepenti) */
+
+/* .label--arrepenti {
+} */
+
+.link--arrepenti {
+  color: #fff;
+  font-size: 11px;
+  line-height: 13px;
+  font-weight: 300;
+  max-width: 120px;
+  cursor: default;
+  text-align: left;
+  text-decoration: none;
+}
+
+.link--arrepenti:hover {
+  color: #fff;
+}
+
+/* LANDING KITLOOK */
+.label--kitlook-ver {
+  background: #FCBC3C;
+  color: #000;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 14px 160px;
+  display: inline-block;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  transition: .3s all;
+  -webkit-transition: .3s all;
+  -moz-transition: .3s all;
+  -ms-transition: .3s all;
+  -o-transition: .3s all;
+}
+
+.label--kitlook-ver:hover {
+  color: #fff;
+  background: #000;
+}
+
+.link--kitlook-ver {
+  text-decoration: none;
+}
+
+@media (max-width: 1024px){
+  .label--kitlook-ver {
+      padding: 14px 0;
+      width: 100%;
+  }  
+  .label--kitlook-ver {
+    margin-bottom: 10px;
+  }
+}
+
+/* KITLOOK DETAILS */
+.label--kitlook-buy {
+  background: #FCBC3C;
+  color: #000;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 14px 160px;
+  display: inline-block;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  transition: .3s all;
+  -webkit-transition: .3s all;
+  -moz-transition: .3s all;
+  -ms-transition: .3s all;
+  -o-transition: .3s all;
+}
+
+@media(max-width: 1024px){
+  .label--kitlook-buy {
+      width: 100%;
+      text-align: center;
+      padding: 14px 0;
+  }  
+}
+
+/* EVENT PAGE - SHELF PRODUCTS */
+.label--shelf-link {
+  background: #ea5531;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 9px 30px;
+  border-radius: 5px;
+  font-family: 'Hola-Zozo';
+}
+.link--shelf-link {
+  text-decoration: none;
+  text-align: center;
+  margin: 50px 0 30px 0;
+  display: block;
+}
+
+/* EVENT PAGE - SALE */
+.label--event-page-sale-info-link {
+  color: #191919;
+  font-size: 13px;
+}
+
+.link--event-page-sale-info-link {
+  background: #fff;
+  border-radius: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 170px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 1025px){
+  .link--event-page-sale-info-link {
+    margin-bottom: 270px;
+  }  
+  .link--shelf-link {
+    margin: 40px 0 30px 0;
+  }
+}
+
+/* JOS - BUTTON */
+.link--jos-button {
+  margin: auto 0 0;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  background: #313131;
+  transition: background-color 0.2s linear;
+  width: 100%;
+  min-height: 40px;
+}
+.label--jos-button {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.56px;
+  color: #fff;
+}
+.link--jos-button:hover {
+  background: #0f58d6;
+  color: #313131;
+}
+.link--jos-button:hover .label--jos-button {
+  color: #313131;
+}
+@media (min-width: 1024px){
+  .link--jos-button {
+    width: 40%;
+  }
+}
+
+/* HOME INFO */
+.link--skf-info-home-button {
+  background: #88C008;
+  text-decoration: none;
+  width: 130px !important;
+  text-transform: uppercase;
+  color: #fff;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

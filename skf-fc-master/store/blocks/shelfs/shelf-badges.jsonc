@@ -1,0 +1,59 @@
+
+{
+  "flex-layout.row#shelf-product-bottom-badges": {
+    "props": {
+      "blockClass": ["shelf-product-badges", "shelf-product-bottom-badges", "pdp-badge"],
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": true
+    },
+    "children": [
+      "vtex.product-highlights@2.x:product-highlights#envio-gratis",
+      "stock-flag"
+    ]
+  },
+
+  "vtex.product-highlights@2.x:product-highlights#envio-gratis": {
+    "props": {
+      "type": "collection",
+
+      "filter": {
+        "type": "show",
+        "highlightNames": ["Envio Gratis"]
+      }
+    },
+
+    "children": ["product-highlight-text#envio-gratis"]
+  },
+
+  "product-highlight-text#envio-gratis": {
+    "props": {
+      "blockClass": ["free-shipping","pdp-badge"],
+      "message": "{highlightName}"
+    }
+  },
+
+  "stock-flag": {
+    "props": {
+      "blockClass": ["product-badge","pdp-badge"],
+      "unavailableText": "Agotado"
+    }
+  },
+
+  "flex-layout.row#shelf-product-extra-badge": {
+    "props": {
+      "blockClass": ["shelf-product-extra-badges"],
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": true
+    },
+
+    "children": ["product-price-savings#product-badge"]
+  },
+
+  "product-price-savings#product-badge": {
+    "props": {
+      "blockClass": ["product-badge","pdp-badge"],
+      "markers": ["discount"],
+      "message": "<discount>{savingsPercentage} OFF</discount>"
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "drawer#mobile-menu": {
+    "props": {
+      "blockClass": ["mobile-menu", "primary-tab"]
+    },
+    "blocks": ["drawer-trigger#menu-button"],
+    "children": ["menu#mobile-menu", "flex-layout.row#drawer-bottom"]
+  },
+  "drawer-trigger#menu-button": {
+    "children": ["image#menu-button"]
+  },
+  "image#menu-button": {
+    "props": {
+      "src": "assets/svgs/skf-icon-menu.svg",
+      "height": 23
+    }
+  },
+  "menu#mobile-menu": {
+    "children": [
+      "drawer#living",
+      "drawer#comedor",
+      "drawer#dormitorio",
+      //"link#dormitorio",
+      "drawer#oficina",
+      //"link#oficina",
+      "drawer#jardin",
+      "drawer#electro",
+      "drawer#deco-hogar"
+      //"link#liquidacion"
+    ],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "mobile-menu"
+    }
+  },
+  "flex-layout.row#drawer-bottom": {
+    "children": ["flex-layout.col#drawer-bottom-links"],
+    "props": {
+      "sticky": true,
+      "blockClass": "drawer-bottom-content"
+    }
+  },
+  "flex-layout.col#drawer-bottom-links": {
+    "children": ["login#mobile", "menu-item#my-orders"],
+    "props": {
+      "sticky": true,
+      "blockClass": "mobile-links-container"
+    }
+  },
+  "link#liquidacion": {
+    "props": {
+      "href": "/liquidacion",
+      "blockClass": "mobile-menu-item",
+      "label": "liquidacion"
+    }
+  },
+  "link#dormitorio": {
+    "props": {
+      "href": "/dormitorio",
+      "blockClass": "mobile-menu-item",
+      "label": "dormitorio"
+    }
+  },
+  "link#oficina": {
+    "props": {
+      "href": "/oficina",
+      "blockClass": "mobile-menu-item",
+      "label": "oficina"
+    }
+  }
+}

@@ -1,0 +1,179 @@
+{
+  "flex-layout.row#deals": {
+    "children": ["slider-layout"],
+    "props": {
+      "blockClass":  ["store-container", "deals"]
+    }
+  },
+  "slider-layout": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "never",
+      "blockClass": "deals-carousel"
+    },
+    "children": [
+      "flex-layout.col#deals1",
+      "flex-layout.col#deals2",
+      "flex-layout.col#deals3",
+      "flex-layout.col#deals4"
+    ]
+  },
+
+  "flex-layout.col#deals1": {
+    "children": ["flex-layout.row#deals1", "flex-layout.row#deals1-2"],
+    "props": {
+      "blockClass": "deals-col"
+    }
+  },
+  "flex-layout.row#deals1": {
+    "children": ["image#deals1"],
+    "props": {
+      "blockClass": "deals-row-warapper"
+    }
+  },
+  "flex-layout.row#deals1-2": {
+    "children": ["rich-text#deals1", "rich-text#deals1-2"],
+    "props": {
+      "blockClass": "deals-row-content",
+      "colSizing": "auto"
+    }
+  },
+  "image#deals1": {
+    "props": {
+      "src": "assets/svgs/skf-icon-products-selection.svg"
+    }
+  },
+  "rich-text#deals1": {
+    "props": {
+      "text": "Selección de productos",
+      "blockClass": "deals-title",
+      "textAlignment": "LEFT"
+    }
+  },
+  "rich-text#deals1-2": {
+    "props": {
+      "text": "Compra rápida y sencilla.",
+      "blockClass": "deals-subtitle",
+      "textAlignment": "LEFT"
+    }
+  },
+  "flex-layout.col#deals2": {
+    "children": ["flex-layout.row#deals2", "flex-layout.row#deals2-2"],
+    "props": {
+      "blockClass": "deals-col"
+    }
+  },
+  "flex-layout.row#deals2": {
+    "children": ["image#deals2"],
+    "props": {
+      "blockClass": "deals-row-warapper"
+    }
+  },
+  "flex-layout.row#deals2-2": {
+    "children": ["rich-text#deals2", "rich-text#deals2-2"],
+    "props": {
+      "blockClass": "deals-row-content",
+      "colSizing": "auto"
+    }
+  },
+  "image#deals2": {
+    "props": {
+      "src": "assets/svgs/skf-icon-card.svg"
+    }
+  },
+  "rich-text#deals2": {
+    "props": {
+      "text": "Financiación",
+      "blockClass": "deals-title",
+      "textAlignment": "LEFT"
+    }
+  },
+  "rich-text#deals2-2": {
+    "props": {
+      "text": "Hasta 6 cuotas sin interés.",
+      "blockClass": "deals-subtitle",
+      "textAlignment": "LEFT"
+    }
+  },
+  "flex-layout.col#deals3": {
+    "children": ["flex-layout.row#deals3", "flex-layout.row#deals3-2"],
+    "props": {
+      "blockClass": "deals-col"
+    }
+  },
+  "flex-layout.row#deals3": {
+    "children": ["image#deals3"],
+    "props": {
+      "blockClass": "deals-row-warapper"
+    }
+  },
+  "flex-layout.row#deals3-2": {
+    "children": ["rich-text#deals3", "rich-text#deals3-2"],
+    "props": {
+      "blockClass": "deals-row-content",
+      "colSizing": "auto"
+    }
+  },
+  "image#deals3": {
+    "props": {
+      "src": "assets/svgs/skf-icon-shipping.svg"
+    }
+  },
+  "rich-text#deals3": {
+    "props": {
+      "text": "Envíos gratis",
+      "blockClass": "deals-title",
+      "textAlignment": "LEFT"
+    }
+  },
+  "rich-text#deals3-2": {
+    "props": {
+      "text": "Envíos gratis a todo el país.",
+      "blockClass": "deals-subtitle",
+      "textAlignment": "LEFT"
+    }
+  },
+  "flex-layout.col#deals4": {
+    "children": ["flex-layout.row#deals4", "flex-layout.row#deals4-2"],
+    "props": {
+      "blockClass": "deals-col"
+    }
+  },
+  "flex-layout.row#deals4": {
+    "children": ["image#deals4"],
+    "props": {
+      "blockClass": "deals-row-warapper"
+    }
+  },
+  "flex-layout.row#deals4-2": {
+    "children": ["rich-text#deals4", "rich-text#deals4-2"],
+    "props": {
+      "blockClass": "deals-row-content",
+      "colSizing": "auto"
+    }
+  },
+  "image#deals4": {
+    "props": {
+      "src": "assets/svgs/skf-icon-quality.svg"
+    }
+  },
+  "rich-text#deals4": {
+    "props": {
+      "text": "Calidad",
+      "blockClass": "deals-title",
+      "textAlignment": "LEFT"
+    }
+  },
+  "rich-text#deals4-2": {
+    "props": {
+      "text": "Respaldo y garantía de un líder.",
+      "blockClass": "deals-subtitle",
+      "textAlignment": "LEFT"
+    }
+  }
+}

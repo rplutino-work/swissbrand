@@ -1,0 +1,11 @@
+/* Product */
+
+.product-identifier__label,
+.product-identifier__value,
+.product-identifier__separator {
+  line-height: 12px;
+  font-size: 20px;
+  color: #808895;
+}
+
+/**/

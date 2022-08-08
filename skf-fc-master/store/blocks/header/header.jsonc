@@ -1,0 +1,173 @@
+{
+  // "header": {
+  //   "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  // },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+
+  /* DESKTOP */
+
+  "header-layout.desktop": {
+    "children": [
+      //"header-row#top-bar",
+      "header-row#1-desktop",
+      "header-row#2-desktop",
+      "telemarketing"
+    ]
+  },
+
+  /*DESKTOP - ROW 1 */
+  "header-row#1-desktop": {
+    "children": [
+      "logo#desktop",
+      "search-bar",
+      "login",
+      "minicart.v2"
+    ],
+    "props": {
+      "sticky": true,
+      "blockClass": "main-header"
+    }
+  },
+  "logo#desktop": {
+    "props": {
+      "title": "SKF Logo",
+      "href": "/",
+      "url": "assets/svgs/skf-logo.svg",
+      "width": "120"
+    }
+  },
+  "rich-text#cuotas": {
+    "props": {
+      "text": "",
+      "blockClass": "main-header__cuotas"
+    }
+  },
+  "search-bar": {
+    "blocks": ["autocomplete-result-list.v2"],
+    "props": {
+      "openAutocompleteOnFocus": true,
+      "maxWidth": "548px",
+      "placeholder": "¿Que estás buscando?",
+      "displayMode": "clear-button"
+    }
+  },
+  "login": {
+    "props": {
+      "optionsTitle": "Escoja una opción para ingresar",
+      "providerPasswordButtonLabel": "INGRESAR CON E-MAIL",
+      "accessCodeTitle": "Recibir código de acceso por mail",
+      "emailAndPasswordTitle": "Ingrese con e-mail y contraseña",
+      "emailPlaceholder": "Ej: ejemplo@empleo.com.ar",
+      "passwordPlaceholder": "Contraseña",
+      "showPasswordVerificationIntoTooltip": true,
+      "hasGoogleOneTap": false,
+      "hideIconLabel": true
+    }
+  },
+
+  /*DESKTOP - ROW 2 */
+  "header-row#2-desktop": {
+    "children": ["vtex.menu@2.x:menu#category-menu"],
+    "props": {
+      "sticky": true,
+      "blockClass": "main-header-menu"
+    }
+  },
+
+  /* Mobile */
+
+  "header-layout.mobile": {
+    "children": [
+      "header-row#1-mobile",
+      "header-row#2-mobile",
+      "close-menu-overlay"
+    ],
+    "props": {
+      "blockClass": "mobile-header"
+    }
+  },
+
+  "header-row#1-mobile": {
+    "children": [
+      "drawer#mobile-menu",
+      "logo#mobile",
+      "flex-layout.row#user-items"
+    ],
+    "props": {
+      "sticky": true,
+      "blockClass": "main-header-mobile"
+    }
+  },
+
+  "flex-layout.row#user-items": {
+    "props": {
+      "colSizing": "auto",
+      "blockClass": "user-items",
+      "preserveLayoutOnMobile": true
+    },
+
+    "children": ["image#login-mobile", "minicart.v2"]
+  },
+
+  "logo#mobile": {
+    "props": {
+      "title": "JustForSport Logo",
+      "href": "/",
+      "url": "assets/svgs/skf-logo.svg",
+      "width": "143"
+    }
+  },
+
+  "image#login-mobile": {
+    "props": {
+      "blockClass": "login-mobile",
+      "src": "assets/svgs/skf-icon-user.svg",
+      "maxHeight": 20,
+      "link": {
+        "url": "/login?returnUrl=%2F",
+        "attributeTitle": "account"
+      }
+    }
+  },
+
+  "login#mobile": {
+    "props": {
+      // "logInButtonBehavior":"link",
+      "mirrorTooltipToRight": true,
+      "blockClass": "mobile",
+      "emailAndPasswordTitle": "LOG-IN",
+      "accessCodeTitle": "Receber código de acesso por e-mail",
+      "emailPraceholder": "e-mail",
+      "passwordPlaceholder": "password",
+      "showPasswordVerificationIntoTooltip": true
+    }
+  },
+
+  "header-row#2-mobile": {
+    "children": ["search-bar#mobile"],
+    "props": {
+      "sticky": true,
+      "blockClass": ["mobile-search"]
+    }
+  },
+
+  "search-bar#mobile": {
+    "blocks": ["autocomplete-result-list.v2"],
+    "props": {
+      "openAutocompleteOnFocus": true,
+      "maxWidth": "342px",
+      "placeholder": "¿Que estás buscando?",
+      "displayMode": "clear-button"
+    }
+  },
+
+  "autocomplete-result-list.v2": {
+    "blocks": ["product-summary.shelf#shelf-product"],
+    "props": {
+      "__unstableProductOriginVtex": true,
+      "maxSuggestedProducts": 2
+    }
+  }
+}

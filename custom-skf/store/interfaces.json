@@ -1,0 +1,61 @@
+{
+  "error-page": {
+    "component": "ErrorPage"
+  },
+  "size-table": {
+    "component": "SizeTable",
+    "composition": "children"
+  },
+  "institucional-nav": {
+    "component": "InstitucionalNav"
+  },
+  "stock-flag": {
+    "component": "StockFlag"
+  },
+  "brand-flag": {
+    "component": "BrandFlag"
+  },
+  "custom-prices": {
+    "component": "CustomPrices",
+    "composition": "children"
+  },
+  "custom-price-product": {
+    "component": "CustomPriceProduct",
+    "composition": "children"
+  },
+  "shelf-tabs": {
+    "component": "ShelfTabs",
+    "composition": "children"
+  },
+  "close-menu-overlay": {
+    "component": "CloseMenuOverlay",
+    "composition": "children"
+  },
+  "similar-products": {
+    "component": "SimilarProducts",
+    "composition": "children"
+  },
+  "me-arrepenti": {
+    "component": "MeArrepenti"
+  },
+  "nuestras-sucursales": {
+    "component": "NuestrasSucursales"
+  },
+  "contacto": {
+    "component": "Contacto"
+  },
+  "talle-agotado": {
+    "component": "TalleAgotado"
+  },
+  "custom-script": {
+    "component": "CustomScript"
+  },
+  "skf-flex-layout": {
+    "component": "FlexLayout",
+    "composition": "children"
+  },
+  "skf-flex-layout-item": {
+    "component": "FlexLayoutItem",
+    "composition": "children"
+  }
+}

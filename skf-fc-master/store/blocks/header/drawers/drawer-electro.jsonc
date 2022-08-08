@@ -1,0 +1,50 @@
+{
+  "drawer#electro": {
+    "props": {
+      "blockClass": ["mobile-menu", "secondary-tab"]
+    },
+
+    "blocks": ["drawer-trigger#electro"],
+    "children": ["menu#electro"]
+  },
+
+  "drawer-trigger#electro": {
+    "children": ["rich-text#electro"]
+  },
+
+  "rich-text#electro": {
+    "props": {
+      "blockClass": "mobile-menu-item",
+      "text": "electro"
+    }
+  },
+
+  "menu#electro": {
+    "props": {
+      "blockClass": "mobile-menu",
+      "orientation": "vertical"
+    },
+
+    "children": [
+      "vtex.menu@2.x:menu#electro-wrapper",
+      "menu-item#electro-see-all"
+    ]
+  },
+
+  //  Ver Todo
+  "menu-item#electro-see-all": {
+    "props": {
+      "blockClass": ["department", "see-all"],
+      "id": "electro-see-all",
+      "type": "custom",
+      "itemProps": {
+        "href": "/electro",
+        "categoryId": 4,
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "ver todo electro",
+        "text": "ver todo electro"
+      }
+    }
+  }
+}

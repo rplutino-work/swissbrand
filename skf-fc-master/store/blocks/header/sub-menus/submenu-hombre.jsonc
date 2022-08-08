@@ -1,0 +1,255 @@
+{
+  "vtex.menu@2.x:submenu#hombre": {
+    "children": ["flex-layout.row#hombre", "image#hombre-banner"],
+    "props": {
+      "blockClass": "submenu"
+    }
+  },
+
+  "flex-layout.row#hombre": {
+    "props": {
+      "blockClass": "categories-wrapper",
+      "colSizing": "auto",
+      "colGap": 9
+    },
+
+    "children": [
+      "vtex.menu@2.x:menu#hombre-indumentaria-column",
+      "vtex.menu@2.x:menu#hombre-calzado-column"
+    ]
+  },
+
+  /* BANNER MENU */
+  "image#hombre-banner": {
+    "props": {
+      "blockClass": "submenu-banner",
+      "src": "https://placehold.jp/430x240.png",
+      "link": true
+    }
+  },
+
+  /* INDUMENTARIA COLUMN */
+  "vtex.menu@2.x:menu#hombre-indumentaria-column": {
+    "props": {
+      "blockClass": "categories"
+    },
+    "children": [
+      "menu-item#hombre-indumentaria",
+      "vtex.menu@2.x:menu#submenu-hombre-indumentaria"
+    ]
+  },
+  "vtex.menu@2.x:menu#submenu-hombre-indumentaria": {
+    "props": {
+      "blockClass": "custom-dropdown-submenu",
+      "items": [
+        {
+          "id": "sillones",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            //"categoryId": 30,
+            "type": "internal",
+            "href": "/sillones",
+            "noFollow": false,
+            "text": "Sillones",
+            "tagTitle": "Sillones"
+          }
+        },
+        {
+          "id": "hombre-buzos-camisetas",
+          "type": "category",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "categoryId": 24,
+            "type": "internal",
+            // "href": "",
+            "noFollow": false
+            // "text": "Buzos Livianos",
+            // "tagTitle": "buzos-livianos"
+          }
+        },
+        {
+          "id": "hombre-chombas",
+          "type": "category",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "categoryId": 25,
+            "type": "internal",
+            // "href": "",
+            "noFollow": false
+            // "text": "Calzas",
+            // "tagTitle": "calzas"
+          }
+        },
+        {
+          "id": "hombre-conjuntos",
+          "type": "category",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "categoryId": 29,
+            "type": "internal",
+            // "href": "",
+            "noFollow": false
+            // "text": "Camisetas",
+            // "tagTitle": "camisetas"
+          }
+        },
+        {
+          "id": "hombre-muscolosas",
+          "type": "category",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "categoryId": 23,
+            "type": "internal",
+            // "href": "",
+            "noFollow": false
+            // "text": "Camperas-Chalecos",
+            // "tagTitle": "camperas-chalecos"
+          }
+        },
+        {
+          "id": "hombre-pantajones",
+          "type": "category",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "categoryId": 26,
+            "type": "internal",
+            // "href": "",
+            "noFollow": false
+            // "text": "Conjuntos",
+            // "tagTitle": "Conjuntos"
+          }
+        },
+        {
+          "id": "hombre-remeras",
+          "type": "category",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "categoryId": 22,
+            "type": "internal",
+            // "href": "",
+            "noFollow": false
+            // "text": "Musculosas",
+            // "tagTitle": "Musculosas"
+          }
+        },
+        {
+          "id": "hombre-shorts",
+          "type": "category",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "categoryId": 27,
+            "type": "internal",
+            // "href": "",
+            "noFollow": false
+            // "text": "Pantalones",
+            // "tagTitle": "Pantalones"
+          }
+        },
+        {
+          "id": "hombre-trajes-de-bano",
+          "type": "category",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "categoryId": 27,
+            "type": "internal",
+            // "href": "",
+            "noFollow": false
+            // "text": "Rompivientos",
+            // "tagTitle": "Rompivientos"
+          }
+        }
+      ]
+    }
+  },
+  "menu-item#hombre-indumentaria": {
+    "props": {
+      "blockClass": "category",
+      "id": "hombre-indumentaria",
+      "type": "category",
+
+      "itemProps": {
+        "categoryId": 5,
+        // "text": "Indumentaria",
+        // "tagTitle": "Indumentaria",
+        "type": "internal",
+        "noFollow": false
+      }
+    }
+  },
+
+  /* CALZADOS COLUMN */
+  "vtex.menu@2.x:menu#hombre-calzado-column": {
+    "props": {
+      "blockClass": "categories"
+    },
+    "children": [
+      "menu-item#hombre-calzado",
+      "vtex.menu@2.x:menu#submenu-hombre-calzado"
+    ]
+  },
+  "vtex.menu@2.x:menu#submenu-hombre-calzado": {
+    "props": {
+      "blockClass": "custom-dropdown-submenu",
+      "items": [
+        {
+          "id": "hombre-botines",
+          "type": "category",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "categoryId": 32,
+            "type": "internal",
+            "noFollow": false
+          }
+        },
+        {
+          "id": "hombre-sandalias-ojotas",
+          "type": "category",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "categoryId": 33,
+            "type": "internal",
+            "noFollow": false
+          }
+        },
+        {
+          "id": "hombre-zapatillas",
+          "type": "category",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "categoryId": 31,
+            "type": "internal",
+            "noFollow": false
+          }
+        }
+      ]
+    }
+  },
+  "menu-item#hombre-calzado": {
+    "props": {
+      "blockClass": "category",
+      "id": "hombre-calzado",
+      "type": "category",
+
+      "itemProps": {
+        "categoryId": 6,
+        // "text": "calzado",
+        // "tagTitle": "calzado",
+        "type": "internal",
+        "noFollow": false
+      }
+    }
+  }
+}

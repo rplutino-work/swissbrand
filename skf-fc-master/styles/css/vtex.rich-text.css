@@ -1,0 +1,346 @@
+/* TOP-BAR */
+
+.paragraph--top-bar__text {
+  font-family: "Skf";
+  font-size: 10px;
+  color: #313131;
+  margin: 0;
+}
+
+.paragraph--top-bar__text .link--top-bar__text {
+  text-decoration: none;
+  color: #313131;
+}
+
+/* DEALS */
+.paragraph--deals-title {
+  color: #0F58D6;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.paragraph--deals-subtitle {
+  color: #808895;
+  font-size: 14px;
+  font-weight: 300;
+  margin: 0;
+}
+
+/* HEADER */
+
+.paragraph--main-header__cuotas {
+  font-family: "Skf";
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  max-width: 168px;
+  color: white;
+}
+
+@media only screen and (max-width: 1025px) {
+  .paragraph--main-header__cuotas {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 20px;
+    max-width: 100%;
+    margin: 4px 0;
+  }
+}
+
+/* MENU */
+.wrapper--mobile-menu-item {
+  flex: 1;
+}
+
+.paragraph--mobile-menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 12px 4px;
+  text-transform: uppercase;
+  line-height: 17px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.paragraph--mobile-menu-item::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: url("assets/svgs/arrow-right-menu.svg") right center no-repeat;
+  filter: invert(1);
+}
+
+.paragraph--mobile-menu-item-solo {
+  margin: 0;
+  width: 100%;
+  padding: 12px 4px;
+  border: none;
+  line-height: 17px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/* SHELF TITLE  */
+/* ------------------------------------------------------------------------ */
+.heading--block-title {
+  margin: 0 0 18px 7px;
+  line-height: 30px;
+  font-size: 33px;
+  font-family: "Skf";
+  font-weight: 400;
+  color: #485A64;
+}
+
+.paragraph--block-title {
+  font-family: "Skf";
+  font-weight: 500;
+  line-height: 20px;
+  font-size: 14px;
+  letter-spacing: 0.28px;
+  color: #313131;
+  max-width: 504px;
+  margin: 0 0 20px;
+}
+
+.paragraph--block-text {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.6px;
+}
+
+/* --- */
+
+/* BRANDS HEADING   */
+/* ------------------------------------------------------------------------------------ */
+
+.paragraph--brands-carousel-heading {
+  font-family: "Skf";
+  font-weight: 500;
+  color: #313131;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* Footer */
+
+.heading--footer-title {
+  margin: 0 0 14px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.paragraph--footer-paragraph {
+  margin: 0;
+  font-family: 'Skf';
+  font-weight: 500;
+  font-size: 12px;
+  color: #fff;
+  letter-spacing: .3px;
+}
+
+.paragraph--footer-copyright {
+  margin-left: 14px;
+}
+
+/**/
+
+/* ENCONTRALO POR DEPORTE */
+
+.paragraph--encontralo-txt {
+  margin: 0;
+  text-decoration: none;
+  letter-spacing: 0.56px;
+  color: #313131;
+  font-family: "Skf";
+  font-size: 14px;
+}
+
+/* Institutional  */
+
+.paragraph--breadcrumb {
+  margin: 0;
+  line-height: 12px;
+  font-size: 10px;
+  font-weight: 500;
+  color: #b8b8b8;
+}
+
+.container--institutional-content {
+  width: 100%;
+  max-width: 676px;
+}
+
+.heading--institutional-content {
+  margin: 0 0 24px;
+  line-height: 28px;
+  font-size: 23px;
+  font-weight: 400;
+  color: #313131;
+}
+
+.headingLevel4--institutional-content {
+  font-size: 18px;
+}
+.headingLevel5--institutional-content {
+  font-size: 18px;
+}
+.headingLevel6--institutional-content {
+  font-size: 15px;
+  font-weight: 600;
+  color: #e9a427;
+}
+
+.paragraph--institutional-content {
+  margin: 0 0 16px;
+  line-height: 18px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.list--institutional-content .listItem--institutional-content {
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 1025px) {
+  .container--institutional-content {
+    padding-top: 0px;
+  }
+
+  .heading--institutional-content {
+    margin: 0 0 16px;
+  }
+}
+
+@media only screen and (min-width: 1026px) {
+  .container--institutional-content {
+    padding: 0 15px;
+  }
+}
+
+/**/
+/* ACCOUNT */
+
+.container--account-title {
+  justify-content: center;
+  max-width: 1024px;
+  margin: 56px auto 24px;
+  padding-bottom: 24px;
+  border-bottom: 0.5px solid #31313180;
+}
+
+@media only screen and (max-width: 576px) {
+  .container--account-title {
+    max-width: 95%;
+  }
+}
+
+.heading--account-title {
+  margin: 0;
+  text-align: center;
+  font-family: "Skf";
+  font-size: 23px;
+  font-weight: 400;
+  color: #272727;
+}
+
+/**/
+
+/* BREADRUMB (ACCOUNT) */
+.paragraph--breadcrumb {
+  margin: 0;
+  line-height: 12px;
+  font-size: 10px;
+  font-weight: 500;
+  color: #b8b8b8;
+}
+/* ----*/
+
+/* Not Found */
+
+.heading--not-found-title {
+  margin: 0 0 8px;
+  line-height: 22px;
+  font-size: 18px;
+  font-weight: normal;
+  color: #000000;
+}
+
+.heading--not-found-subtitle {
+  margin: 0 0 24px;
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.paragraph--not-found-description {
+  margin: 0 0 60px;
+  line-height: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+}
+
+/* CATEGORY */
+.wrapper--slider-brand__text {
+  width: 100%;
+  text-align: center;
+}
+.link--slider-brand__text {
+  color: #131313;
+  text-decoration: none;
+  font-size: 13px;
+  text-transform: uppercase;
+  transition: 0.2s all;
+}
+.paragraph--slider-brand__text {
+  margin: 0;
+}
+
+/* PRODUCT INFO */
+.paragraph--product-info-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 0 0 0 20px;
+  color: #485A64;
+}
+
+.paragraph--product-info-text {
+  margin: 5px 0 0 20px;
+  font-size: 12px;
+  line-height: 10px;
+  color: #808895;
+}
+
+.paragraph--help-shipping {
+  margin: 0 0 5px 0;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+/* PRODUCT SPECIFICATION */
+.wrapper--specification-title {
+  width: 100%;
+}
+
+.wrapper--specification-title .heading-level-3 {
+  font-size: 18px;
+  color: #313131;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-bottom: 1px solid #d2d2d2;
+  width: 100%;
+  padding-bottom: 10px;
+}

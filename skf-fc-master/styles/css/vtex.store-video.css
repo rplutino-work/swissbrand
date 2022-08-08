@@ -1,0 +1,7 @@
+/* JOS - VIDEO */
+@media (max-width: 1024px){
+    .videoElement--jos-intro-video {
+        width: 100%;
+        height: 200px;
+    }
+}

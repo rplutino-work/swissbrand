@@ -1,0 +1,67 @@
+// {
+//   "link#outlet-mobile": {
+//     "props": {
+//       "href": "/outlet",
+//       "blockClass": "mobile-menu-solo-link"
+//     },
+//     "children": ["rich-text#outlet"]
+//   },
+
+//   "rich-text#outlet": {
+//     "props": {
+//       "blockClass": "mobile-menu-item-solo",
+//       "text": "Outlet"
+//     }
+//   }
+// }
+
+{
+  "drawer#outlet": {
+    "props": {
+      "blockClass": ["mobile-menu", "secondary-tab"]
+    },
+
+    "blocks": ["drawer-trigger#outlet"],
+    "children": ["menu#outlet"]
+  },
+
+  "drawer-trigger#outlet": {
+    "children": ["rich-text#outlet"]
+  },
+
+  "rich-text#outlet": {
+    "props": {
+      "blockClass": "mobile-menu-item",
+      "text": "Outlet"
+    }
+  },
+
+  "menu#outlet": {
+    "props": {
+      "blockClass": "mobile-menu",
+      "orientation": "vertical"
+    },
+
+    "children": [
+      "vtex.menu@2.x:menu#submenu-outlet",
+      "menu-item#outlet-see-all"
+    ]
+  },
+
+  //  Ver Todo
+  "menu-item#outlet-see-all": {
+    "props": {
+      "blockClass": ["department", "see-all"],
+      "id": "outlet-see-all",
+      "type": "custom",
+      "itemProps": {
+        // "categoryId": 4,
+        "type": "internal",
+        "noFollow": true,
+        "href": "",
+        "tagTitle": "ver todo outlet",
+        "text": "ver todo outlet"
+      }
+    }
+  }
+}

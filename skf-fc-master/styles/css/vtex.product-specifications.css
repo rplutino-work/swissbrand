@@ -1,0 +1,24 @@
+.specificationName {
+  color: #313131;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 15px;
+  display: block;
+  margin-bottom: 2px;
+}
+.specificationValue {
+  font-size: 15px;
+  color: #505050;
+  font-weight: 400;
+  display: block;
+}
+
+@media only screen and (max-width: 1025px) {
+  .specificationValue {
+    font-size: 14px;
+    color: #505050;
+    font-weight: 400;
+    display: block;
+    line-height: 23px;
+  }
+}

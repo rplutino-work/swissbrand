@@ -1,0 +1,46 @@
+/* JFS HOME SHELF */
+{
+  "flex-layout.row#shelf-home": {
+    "props": {
+      "blockClass": ["shelf", "shelfWithBackground", "shelf-slider"]
+    },
+    "children": ["flex-layout.col#shelf-home"]
+  },
+  "flex-layout.col#shelf-home": {
+    "props": {
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "rich-text#shelf-home-title",
+      "list-context.product-list#home-shelf"
+    ]
+  },
+  "rich-text#shelf-home-title": {
+    "props": {
+      "blockClass": "block-title",
+      "text": "## Lorem ipsum",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT"
+    }
+  },
+  "list-context.product-list#home-shelf": {
+    "props": {
+      "categoryId": "9"
+    },
+    "blocks": ["product-summary.shelf#shelf-product"],
+    "children": ["slider-layout#shelf-products-slide"]
+  },
+  "slider-layout#shelf-products-slide": {
+    "props": {
+      "blockClass": ["shelf", "shelf-slider"],
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "always",
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 2
+      }
+    }
+  }
+}

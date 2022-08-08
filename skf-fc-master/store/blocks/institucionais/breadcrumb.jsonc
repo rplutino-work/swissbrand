@@ -1,0 +1,37 @@
+{
+  "flex-layout.row#breadcrumb": {
+    "props": {
+      "blockClass": "breadcrumb",
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": true
+    },
+
+    "children": [
+      // "link#breadcrumb-home",
+      // "image#breadcrumb-arrow",
+      "rich-text#breadcrumb"
+    ]
+  },
+
+  "link#breadcrumb-home": {
+    "props": {
+      "blockClass": "breadcrumb-home",
+      "label": "HOME",
+      "href": "/"
+    }
+  },
+
+  "image#breadcrumb-arrow": {
+    "props": {
+      "blockClass": "breadcrumb-arrow",
+      "src": "assets/svgs/breadcrumb-arrow-icon.svg"
+    }
+  },
+
+  "rich-text#breadcrumb": {
+    "props": {
+      "blockClass": "breadcrumb",
+      "text": "INFORMACIÓN"
+    }
+  }
+}

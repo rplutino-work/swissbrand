@@ -1,0 +1,400 @@
+{
+  "vtex.menu@2.x:submenu#marcas": {
+    "props": {
+      "blockClass": "submenu"
+    },
+
+    "children": ["vtex.menu@2.x:menu#marcas-wrapper", "image#marcas-banner"]
+  },
+
+  /* BANNER MENU */
+  "image#marcas-banner": {
+    "props": {
+      "blockClass": "submenu-banner",
+      "src": "https://placehold.jp/430x240.png",
+      "link": true
+    }
+  },
+
+  "vtex.menu@2.x:menu#marcas-wrapper": {
+    "props": {
+      "blockClass": "categories"
+    },
+
+    "children": ["vtex.menu@2.x:menu#submenu-marcas"]
+  },
+  "vtex.menu@2.x:menu#submenu-marcas": {
+    "props": {
+      "blockClass": "custom-dropdown-submenu",
+      "items": [
+        {
+          "id": "marca-361",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "",
+            "noFollow": false,
+            "text": "361",
+            "tagTitle": "361"
+          }
+        },
+        {
+          "id": "marca-adidas",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "",
+            "noFollow": false,
+            "text": "Adidas",
+            "tagTitle": "adidas"
+          }
+        },
+        {
+          "id": "marca-asics",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "",
+            "noFollow": false,
+            "text": "Asics",
+            "tagTitle": "asics"
+          }
+        },
+        {
+          "id": "marca-crocs",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "",
+            "noFollow": false,
+            "text": "Crocs",
+            "tagTitle": "crocs"
+          }
+        },
+        {
+          "id": "marca-head",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "",
+            "noFollow": false,
+            "text": "Head",
+            "tagTitle": "head"
+          }
+        },
+        {
+          "id": "marca-kappa",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "",
+            "noFollow": false,
+            "text": "Kappa",
+            "tagTitle": "kappa"
+          }
+        },
+        {
+          "id": "marca-kappa-authentic",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "",
+            "noFollow": false,
+            "text": "Kappa authentic",
+            "tagTitle": "kappa-authentic"
+          }
+        },
+        {
+          "id": "marca-le-coq-sportif",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "",
+            "noFollow": false,
+            "text": "Le Coq Sportif",
+            "tagTitle": "le-coq-sportif"
+          }
+        },
+        {
+          "id": "marca-procer",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "",
+            "noFollow": false,
+            "text": "Procer",
+            "tagTitle": "procer"
+          }
+        },
+        {
+          "id": "marca-puma",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "",
+            "noFollow": false,
+            "text": "Puma",
+            "tagTitle": "puma"
+          }
+        },
+        {
+          "id": "marca-reebok",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "",
+            "noFollow": false,
+            "text": "Reebok",
+            "tagTitle": "reebok"
+          }
+        },
+        {
+          "id": "marca-speed",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "",
+            "noFollow": false,
+            "text": "Speed",
+            "tagTitle": "speed"
+          }
+        },
+        {
+          "id": "marca-superga",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "",
+            "noFollow": false,
+            "text": "Superga",
+            "tagTitle": "superga"
+          }
+        }
+      ]
+    }
+  },
+
+  "menu-item#marcas-adidas": {
+    "props": {
+      "blockClass": "subcategory",
+      "id": "marcas-adidas",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "href": "/adidas",
+        "text": "Adidas",
+        "tagTitle": "Adidas",
+        "type": "internal",
+        "noFollow": false
+      }
+    }
+  },
+  "menu-item#marcas-asics": {
+    "props": {
+      "blockClass": "subcategory",
+      "id": "marcas-asics",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "Asics",
+        "tagTitle": "Asics",
+        "type": "internal",
+        "noFollow": false
+      }
+    }
+  },
+  "menu-item#marcas-asics-sportstyle": {
+    "props": {
+      "blockClass": "subcategory",
+      "id": "marcas-asics-sportstyle",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "Asics Sportstyle",
+        "tagTitle": "asics-sportstyle",
+        "type": "internal",
+        "noFollow": false
+      }
+    }
+  },
+  "menu-item#marcas-crocs": {
+    "props": {
+      "blockClass": "subcategory",
+      "id": "marcas-crocs",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "Crocs",
+        "tagTitle": "Crocs",
+        "type": "internal",
+        "noFollow": false
+      }
+    }
+  },
+  "menu-item#marcas-head": {
+    "props": {
+      "blockClass": "subcategory",
+      "id": "marcas-head",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "Head",
+        "tagTitle": "Head",
+        "type": "internal",
+        "noFollow": false
+      }
+    }
+  },
+  "menu-item#marcas-kappa": {
+    "props": {
+      "blockClass": "subcategory",
+      "id": "marcas-kappa",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "Kappa",
+        "tagTitle": "Kappa",
+        "type": "internal",
+        "noFollow": false
+      }
+    }
+  },
+  "menu-item#marcas-kappa-authentic": {
+    "props": {
+      "blockClass": "subcategory",
+      "id": "marcas-kappa-authentic",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "Kappa Authentic",
+        "tagTitle": "kappa-authentic",
+        "type": "internal",
+        "noFollow": false
+      }
+    }
+  },
+  "menu-item#marcas-le-coq-sportif": {
+    "props": {
+      "blockClass": "subcategory",
+      "id": "marcas-le-coq-sportif",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "Le Coq Sportif",
+        "tagTitle": "le-coq-sportif",
+        "type": "internal",
+        "noFollow": false
+      }
+    }
+  },
+  "menu-item#marcas-puma": {
+    "props": {
+      "blockClass": "subcategory",
+      "id": "marcas-puma",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "Puma",
+        "tagTitle": "Puma",
+        "type": "internal",
+        "noFollow": false
+      }
+    }
+  },
+  "menu-item#marcas-procer": {
+    "props": {
+      "blockClass": "subcategory",
+      "id": "marcas-procer",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "Procer",
+        "tagTitle": "Procer",
+        "type": "internal",
+        "noFollow": false
+      }
+    }
+  },
+  "menu-item#marcas-reebok": {
+    "props": {
+      "blockClass": "subcategory",
+      "id": "marcas-reebok",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "href": "/reebok",
+        "text": "Reebok",
+        "tagTitle": "Reebok",
+        "type": "internal",
+        "noFollow": false
+      }
+    }
+  },
+  "menu-item#marcas-superga": {
+    "props": {
+      "blockClass": "subcategory",
+      "id": "marcas-superga",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "Superga",
+        "tagTitle": "Superga",
+        "type": "internal",
+        "noFollow": false
+      }
+    }
+  },
+  "menu-item#marcas-speed": {
+    "props": {
+      "blockClass": "subcategory",
+      "id": "marcas-Speed",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "Speed",
+        "tagTitle": "Speed",
+        "type": "internal",
+        "noFollow": false
+      }
+    }
+  }
+}

@@ -1,0 +1,418 @@
+{
+  "store.home": {
+    "parent": {
+      "challenge": "challenge.trade-policy-condition"
+    },
+
+    "blocks": [
+      "list-context.image-list#main-gallery",
+      "flex-layout.row#deals",
+      "flex-layout.row#list-home",
+      "flex-layout.row#shelf-home",
+      "flex-layout.row#banner-home",
+      "flex-layout.row#skf-info-home"
+    ]
+  },
+
+  /* POLICY CONDITION */
+  "challenge.trade-policy-condition": {
+    "props": {
+      "redirectPath": "/registration",
+      "defaultContentVisibility": "hidden"
+    }
+  },
+
+  /* BANNER PRINCIPAL(MAIN-GALLERY) */
+  "list-context.image-list#main-gallery": {
+    "props": {
+      "blockClass": "main-gallery",
+      "autoplay": true,
+      "slideTransition": 400,
+      "images": [
+        {
+          "image": "https://placehold.jp/1920x400.png",
+          "mobileImage": "https://placehold.jp/768x768.png",
+          "link": "/"
+        },
+
+        {
+          "image": "https://placehold.jp/1920x400.png",
+          "mobileImage": "https://placehold.jp/768x768.png",
+          "link": "/"
+        },
+
+        {
+          "image": "https://placehold.jp/1920x400.png",
+          "mobileImage": "https://placehold.jp/768x768.png",
+          "link": "/"
+        }
+      ]
+    },
+
+    "children": ["slider-layout#main-gallery-slider"]
+  },
+
+  "slider-layout#main-gallery-slider": {
+    "props": {
+      "blockClass": "main-gallery",
+      "infinite": true,
+
+      "autoplay": {
+        "timeout": 3000,
+        "stopOnHover": true
+      },
+
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      }
+    }
+  },
+
+  // LIST HOME
+  "flex-layout.row#list-home": {
+    "children": [
+      "rich-text#list-home-title",
+      "list-context.info-card-list#list-home"
+    ],
+    "props": {
+      "blockClass": ["list-home-wrapper"],
+      "colSizing": "auto"
+    }
+  },
+
+  "rich-text#list-home-title": {
+    "props": {
+      "blockClass": "block-title",
+      "text": "## Lorem ipsum",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT"
+    }
+  },
+
+  "list-context.info-card-list#list-home": {
+    "children": [
+      "slider-layout#list-home"
+    ],
+    "props": {
+      "blockClass": ["list-home"],
+      "infoCards": [
+        {
+          "id": "list-home-1",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "https://placehold.jp/226x195.png",
+          "callToActionUrl": "/",
+          "blockClass": ["list-home-item-1"],
+          "callToActionMode": "link",
+          "callToActionText": "Lorem ipsum dolor sit amet, consetetur",
+          "textAlignment": "left"
+        },
+        {
+          "id": "list-home-1",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "https://placehold.jp/226x195.png",
+          "callToActionUrl": "/",
+          "blockClass": ["list-home-item-1"],
+          "callToActionMode": "link",
+          "callToActionText": "Lorem ipsum dolor sit amet, consetetur",
+          "textAlignment": "left"
+        },
+        {
+          "id": "list-home-1",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "https://placehold.jp/226x195.png",
+          "callToActionUrl": "/",
+          "blockClass": ["list-home-item-1"],
+          "callToActionMode": "link",
+          "callToActionText": "Lorem ipsum dolor sit amet, consetetur",
+          "textAlignment": "left"
+        },
+        {
+          "id": "list-home-1",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "https://placehold.jp/226x195.png",
+          "callToActionUrl": "/",
+          "blockClass": ["list-home-item-1"],
+          "callToActionMode": "link",
+          "callToActionText": "Lorem ipsum dolor sit amet, consetetur",
+          "textAlignment": "left"
+        },
+        {
+          "id": "list-home-1",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "https://placehold.jp/226x195.png",
+          "callToActionUrl": "/",
+          "blockClass": ["list-home-item-1"],
+          "callToActionMode": "link",
+          "callToActionText": "Lorem ipsum dolor sit amet, consetetur",
+          "textAlignment": "left"
+        },
+        {
+          "id": "list-home-1",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "https://placehold.jp/226x195.png",
+          "callToActionUrl": "/",
+          "blockClass": ["list-home-item-1"],
+          "callToActionMode": "link",
+          "callToActionText": "Lorem ipsum dolor sit amet, consetetur",
+          "textAlignment": "left"
+        },
+        {
+          "id": "list-home-1",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "https://placehold.jp/226x195.png",
+          "callToActionUrl": "/",
+          "blockClass": ["list-home-item-1"],
+          "callToActionMode": "link",
+          "callToActionText": "Lorem ipsum dolor sit amet, consetetur",
+          "textAlignment": "left"
+        },
+        {
+          "id": "list-home-1",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "https://placehold.jp/226x195.png",
+          "callToActionUrl": "/",
+          "blockClass": ["list-home-item-1"],
+          "callToActionMode": "link",
+          "callToActionText": "Lorem ipsum dolor sit amet, consetetur",
+          "textAlignment": "left"
+        },
+        {
+          "id": "list-home-1",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "https://placehold.jp/226x195.png",
+          "callToActionUrl": "/",
+          "blockClass": ["list-home-item-1"],
+          "callToActionMode": "link",
+          "callToActionText": "Lorem ipsum dolor sit amet, consetetur",
+          "textAlignment": "left"
+        },
+        {
+          "id": "list-home-1",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "https://placehold.jp/226x195.png",
+          "callToActionUrl": "/",
+          "blockClass": ["list-home-item-1"],
+          "callToActionMode": "link",
+          "callToActionText": "Lorem ipsum dolor sit amet, consetetur",
+          "textAlignment": "left"
+        }
+      ]
+    }
+  },
+
+  "slider-layout#list-home": {
+    "props": {
+      "blockClass": ["list-home-item"],
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true
+    }
+  },
+
+  // BANNER HOME
+  "flex-layout.row#banner-home": {
+    "children": [
+      "flex-layout.row#banner-home-row-1",
+      "flex-layout.row#banner-home-row-2"
+    ],
+    "props": {
+      "blockClass": ["banner-home-wrapper"],
+      "colSizing": "auto"
+    }
+  },
+
+  "flex-layout.row#banner-home-row-1": {
+    "children": [
+      "info-card#banner-home-1"
+    ],
+    "props": {
+      "blockClass": ["banner-home-row-1"]
+    }
+  },
+
+  "flex-layout.row#banner-home-row-2": {
+    "children": [
+      "info-card#banner-home-2"
+    ],
+    "props": {
+      "blockClass": ["banner-home-row-2"]
+    }
+  },
+
+  "info-card#banner-home-1": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://placehold.jp/702x460.png",
+      "headline": "Lorem ipsum dolor sit amet, consetetur um",
+      "subhead":"Lorem ipsum dolor sit amet, consetetur um dolor sit amet, consetetur Lorem ipsum dolor sit amet, consetetur um dolor sit met, consetetur Lorem ipsum dolor sit met, onsetetur um dolor sit amet, consetetur",
+      "callToActionText": "Comprar",
+      "callToActionUrl": "/",
+      "blockClass": ["banner-home","banner-home-row-1"],
+      "textAlignment": "left"
+    }
+  },
+
+  "info-card#banner-home-2": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://placehold.jp/702x460.png",
+      "headline": "Lorem ipsum dolor sit amet, consetetur um",
+      "subhead":"Lorem ipsum dolor sit amet, consetetur um dolor sit amet, consetetur Lorem ipsum dolor sit amet, consetetur um dolor sit met, consetetur Lorem ipsum dolor sit met, onsetetur um dolor sit amet, consetetur",
+      "callToActionText": "Comprar",
+      "callToActionUrl": "/",
+      "blockClass": ["banner-home","banner-home-row-2"],
+      "textAlignment": "left"
+    }
+  },
+
+  /* INFO GENERICA */
+  "flex-layout.row#skf-info-home": {
+    "children": [
+      "flex-layout.col#skf-info-home-1",
+      "flex-layout.col#skf-info-home-2",
+      "flex-layout.col#skf-info-home-3"
+    ],
+    "props": {
+      "blockClass": ["skf-info-home-wrapper"]
+    }
+  },
+  "flex-layout.col#skf-info-home-1": {
+    "children": [
+      "flex-layout.row#skf-info-home-column-row-1"
+    ],
+    "props": {
+      "blockClass": ["skf-info-home-column"]
+    }
+  },
+  "flex-layout.row#skf-info-home-column-row-1": {
+    "children": [
+      "rich-text#skf-info-title-1",
+      "rich-text#skf-info-text-1",
+      "link#skf-info-link-1"
+    ],
+    "props": {
+      "blockClass": ["skf-info-home-row"],
+      "colSizing": "auto"
+    }
+  },
+  "rich-text#skf-info-title-1": {
+    "props": {
+      "blockClass": ["skf-info-home-title"],
+      "font": "t-body",
+      "text": "Puntos de venta"
+    }
+  },
+  "rich-text#skf-info-text-1": {
+    "props": {
+      "blockClass": ["skf-info-home-text"],
+      "font": "t-body",
+      "text": "La seguridad del vehículo es una prioridad para SKF y nuestras piezas de alta calidad están diseñadas para hacer reparaciones seguras y duraderas."
+    }
+  },
+  "link#skf-info-link-1": {
+    "props": {
+      "href": "/",
+      "label": "Ver más",
+      "blockClass": "skf-info-home-button"
+    }
+  },
+  "flex-layout.col#skf-info-home-2": {
+    "children": [
+      "flex-layout.row#skf-info-home-column-row-2"
+    ],
+    "props": {
+      "blockClass": ["skf-info-home-column"]
+    }
+  },
+  "flex-layout.row#skf-info-home-column-row-2": {
+    "children": [
+      "rich-text#skf-info-title-2",
+      "rich-text#skf-info-text-2",
+      "link#skf-info-link-2"
+    ],
+    "props": {
+      "blockClass": ["skf-info-home-row"],
+      "colSizing": "auto"
+    }
+  },
+  "rich-text#skf-info-title-2": {
+    "props": {
+      "blockClass": ["skf-info-home-title"],
+      "font": "t-body",
+      "text": "Preguntas frecuentes"
+    }
+  },
+  "rich-text#skf-info-text-2": {
+    "props": {
+      "blockClass": ["skf-info-home-text"],
+      "font": "t-body",
+      "text": "El producto debe ser instalado por mecánicos experimentados que usen las herramientas apropiadas y cumplan estrictamente con las instrucciones de SKF y las instrucciones de montaje del vehículo."
+    }
+  },
+  "link#skf-info-link-2": {
+    "props": {
+      "href": "/",
+      "label": "Ver más",
+      "blockClass": "skf-info-home-button"
+    }
+  },
+  "flex-layout.col#skf-info-home-3": {
+    "children": [
+      "flex-layout.row#skf-info-home-column-row-3"
+    ],
+    "props": {
+      "blockClass": ["skf-info-home-column"]
+    }
+  },
+  "flex-layout.row#skf-info-home-column-row-3": {
+    "children": [
+      "rich-text#skf-info-title-3",
+      "rich-text#skf-info-text-3",
+      "link#skf-info-link-3"
+    ],
+    "props": {
+      "blockClass": ["skf-info-home-row"],
+      "colSizing": "auto"
+    }
+  },
+  "rich-text#skf-info-title-3": {
+    "props": {
+      "blockClass": ["skf-info-home-title"],
+      "font": "t-body",
+      "text": "Atención a clientes"
+    }
+  },
+  "rich-text#skf-info-text-3": {
+    "props": {
+      "blockClass": ["skf-info-home-text"],
+      "font": "t-body",
+      "text": "Escanee el código QR en la etiqueta de la caja del producto para acceder a las instrucciones y la información más detallada y técnica del producto SKF."
+    }
+  },
+  "link#skf-info-link-3": {
+    "props": {
+      "href": "/",
+      "label": "Ver más",
+      "blockClass": "skf-info-home-button"
+    }
+  }
+}

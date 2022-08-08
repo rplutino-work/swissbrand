@@ -1,0 +1,53 @@
+{
+    "store.custom#arrepentimiento": {
+        "blocks": ["flex-layout.row#breadcrumb", "flex-layout.row#arrepentimiento"]
+    },
+  
+    "flex-layout.row#arrepentimiento": {
+        "props": {
+            "blockClass": ["institutional-wrapper","contact-wrapper"],
+            "colSizing": "auto"
+        },
+  
+        "children": [
+            "rich-text#arrepentimiento-content",
+            "flex-layout.row#arrepentimiento-form"
+      ]
+    },
+  
+    "rich-text#arrepentimiento-content": {
+        "props": {
+            "blockClass": "institutional-content",
+            "text": "# Arrepentimiento de la compra",
+            "width": "grow"
+        }
+    },
+  
+    "rich-text#arrepentimiento-form-text": {
+      "props": {
+          "blockClass": "contact-form-text",
+          "text": "Por favor indicanos tus datos de compra para solicitar el cancelamiento de la compra.",
+          "width": "grow"
+      }
+  },
+  
+    "flex-layout.row#arrepentimiento-form": {
+          "props": {
+              "blockClass": "contact-form-wrapper",
+              "colSizing": "auto"
+          },
+  
+          "children": [
+              "rich-text#arrepentimiento-form-text",
+              "custom-script#arrepentimiento"
+      ]
+      },
+  
+      "custom-script#arrepentimiento": {
+          "props": {
+              "blockClass": "contact-form",
+              "script": "https://apps.elfsight.com/p/platform.js",
+              "div": "<div class='elfsight-app-df280f0f-48b7-419f-8948-437ed3dfe484'></div>"
+          }
+      }
+  }

@@ -1,0 +1,390 @@
+{
+  "vtex.menu@2.x:submenu#comedor": {
+    "children": ["flex-layout.row#comedor", "image#comedor-banner"],
+    "props": {
+      "blockClass": "submenu"
+    }
+  },
+
+  "flex-layout.row#comedor": {
+    "props": {
+      "blockClass": "categories-wrapper",
+      "colSizing": "auto",
+      "colGap": 3
+    },
+
+    "children": [
+      "vtex.menu@2.x:menu#comedor-sillas-column",
+      "vtex.menu@2.x:menu#comedor-mesas-column",
+      "vtex.menu@2.x:menu#comedor-banquetas-column",
+      "vtex.menu@2.x:menu#comedor-barras-column",
+      "vtex.menu@2.x:menu#comedor-muebles-column"
+    ]
+  },
+
+  /* BANNER MENU */
+  "image#comedor-banner": {
+    "props": {
+      "blockClass": "submenu-banner",
+      "src": "https://placehold.jp/430x240.png",
+      "link": true
+    }
+  },
+
+  /* LOCALES COLUMN */
+  "vtex.menu@2.x:menu#comedor-sillas-column": {
+    "props": {
+      "blockClass": "categories"
+    },
+    "children": [
+      "menu-item#comedor-sillas",
+      "vtex.menu@2.x:menu#submenu-comedor-sillas"
+    ]
+  },
+  "vtex.menu@2.x:menu#submenu-comedor-sillas": {
+    "props": {
+      "blockClass": "custom-dropdown-submenu",
+      "items": [
+        {
+          "id": "sillas-madera",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/comedor/sillas/madera?fuzzy=0&initialMap=c,c&initialQuery=comedor/sillas&map=category-1,category-2,material&operator=and",
+            "noFollow": false,
+            "text": "Madera",
+            "tagTitle": "Madera"
+          }
+        },
+        {
+            "id": "sillas-hierro",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "/comedor/sillas/hierro?fuzzy=0&initialMap=c,c&initialQuery=comedor/sillas&map=category-1,category-2,material&operator=and",
+              "noFollow": false,
+              "text": "Hierro",
+              "tagTitle": "Hierro"
+            }
+        }
+        /*
+        {
+            "id": "sillas-cromo",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "",
+              "noFollow": false,
+              "text": "Cromo",
+              "tagTitle": "Cromo"
+            }
+        },
+        {
+            "id": "sillas-pvc",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "",
+              "noFollow": false,
+              "text": "PVC",
+              "tagTitle": "PVC"
+            }
+        }*/
+      ]
+    }
+  },
+
+  "menu-item#comedor-sillas": {
+    "props": {
+      "blockClass": "category",
+      "id": "comedor-sillas",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "sillas",
+        "tagTitle": "sillas",
+        "type": "internal",
+        "href": "/comedor/sillas",
+        "noFollow": false
+      }
+    }
+  },
+
+  /* INTERNACIONALES COLUMN */
+  "vtex.menu@2.x:menu#comedor-mesas-column": {
+    "props": {
+      "blockClass": "categories"
+    },
+    "children": [
+      "menu-item#comedor-mesas",
+      "vtex.menu@2.x:menu#submenu-comedor-mesas"
+    ]
+  },
+  "vtex.menu@2.x:menu#submenu-comedor-mesas": {
+    "props": {
+      "blockClass": "custom-dropdown-submenu",
+      "items": [
+        {
+          "id": "mesas-rectangulares",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/comedor/mesas/rectangulares?fuzzy=0&initialMap=c&initialQuery=comedor&map=category-1,category-2,tipo&operator=and",
+            "noFollow": false,
+            "text": "Rectangulares",
+            "tagTitle": "Rectangulares"
+          }
+        },
+        {
+            "id": "mesas-cuadrada",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "/comedor/mesas/cuadrada?fuzzy=0&initialMap=c&initialQuery=comedor&map=category-1,category-2,tipo&operator=and",
+              "noFollow": false,
+              "text": "Cuadrada",
+              "tagTitle": "Cuadrada"
+            }
+        },
+        {
+            "id": "mesas-redonda",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "/comedor/mesas/redonda?fuzzy=0&initialMap=c&initialQuery=comedor&map=category-1,category-2,tipo&operator=and",
+              "noFollow": false,
+              "text": "Redonda",
+              "tagTitle": "Redonda"
+            }
+        },
+        {
+          "id": "mesas-barras",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/comedor/barras",
+            "noFollow": false,
+            "text": "Barras",
+            "tagTitle": "Barras"
+          }
+        }
+      ]
+    }
+  },
+
+  "menu-item#comedor-mesas": {
+    "props": {
+      "blockClass": "category",
+      "id": "comedor-mesas",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "Mesas",
+        "tagTitle": "Mesas",
+        "type": "internal",
+        "href": "/comedor/mesas",
+        "noFollow": false
+      }
+    }
+  },
+
+  /* INTERNACIONALES COLUMN */
+  "vtex.menu@2.x:menu#comedor-banquetas-column": {
+    "props": {
+      "blockClass": "categories"
+    },
+    "children": [
+      "menu-item#comedor-banquetas",
+      "vtex.menu@2.x:menu#submenu-comedor-banquetas"
+    ]
+  },
+  "vtex.menu@2.x:menu#submenu-comedor-banquetas": {
+    "props": {
+      "blockClass": "custom-dropdown-submenu",
+      "items": [
+        {
+          "id": "banquetas-fijas",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/comedor/banquetas",
+            "noFollow": false,
+            "text": "Fijas",
+            "tagTitle": "Fijas"
+          }
+        },
+        {
+          "id": "banquetas-regulables",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/comedor/banquetas",
+            "noFollow": false,
+            "text": "Regulabes",
+            "tagTitle": "Regulabes"
+          }
+        }
+      ]
+    }
+  },
+
+  "menu-item#comedor-banquetas": {
+    "props": {
+      "blockClass": "category",
+      "id": "comedor-banquetas",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "Banquetas",
+        "tagTitle": "Banquetas",
+        "type": "internal",
+        "href": "/comedor/banquetas",
+        "noFollow": false
+      }
+    }
+  },
+  
+  // SELLECCIONES MENU
+  "vtex.menu@2.x:menu#comedor-muebles-column": {
+    "props": {
+      "blockClass": "categories"
+    },
+    "children": [
+      "menu-item#comedor-muebles",
+      "vtex.menu@2.x:menu#submenu-comedor-muebles"
+    ]
+  },
+  "vtex.menu@2.x:menu#submenu-comedor-muebles": {
+    "props": {
+      "blockClass": "custom-dropdown-submenu",
+      "items": [
+        {
+          "id": "bahiut",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/comedor/muebles/bahiut",
+            "noFollow": false,
+            "text": "Bahiut",
+            "tagTitle": "Bahiut"
+          }
+        },
+        {
+          "id": "estanterias",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "",
+            "noFollow": false,
+            "text": "Estanterias",
+            "tagTitle": "Estanterias"
+          }
+        }
+      ]
+    }
+  },
+
+  "menu-item#comedor-muebles": {
+    "props": {
+      "blockClass": "category",
+      "id": "comedor-muebles",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "Muebles",
+        "tagTitle": "Muebles",
+        "type": "internal",
+        "href": "/comedor/muebles",
+        "noFollow": false
+      }
+    }
+  },
+
+  "vtex.menu@2.x:menu#comedor-barras-column": {
+    "props": {
+      "blockClass": "categories"
+    },
+    "children": [
+      "menu-item#comedor-barras",
+      "vtex.menu@2.x:menu#submenu-comedor-barras"
+    ]
+  },
+  "vtex.menu@2.x:menu#submenu-comedor-barras": {
+    "props": {
+      "blockClass": "custom-dropdown-submenu",
+      "items": [
+        {
+          "id": "barra-hierro",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/comedor/barras/hierro?fuzzy=0&initialMap=c,c&initialQuery=comedor/barras&map=category-1,category-2,material&operator=and",
+            "noFollow": false,
+            "text": "Hierro",
+            "tagTitle": "Hierro"
+          }
+        },
+        {
+          "id": "barra-madera",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/comedor/barras/madera?fuzzy=0&initialMap=c,c&initialQuery=comedor/barras&map=category-1,category-2,material&operator=and",
+            "noFollow": false,
+            "text": "Madera",
+            "tagTitle": "Madera"
+          }
+        }
+      ]
+    }
+  },
+
+  "menu-item#comedor-barras": {
+    "props": {
+      "blockClass": "category",
+      "id": "comedor-barras",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "Barras",
+        "tagTitle": "Barras",
+        "type": "internal",
+        "href": "/comedor/barras",
+        "noFollow": false
+      }
+    }
+  }
+}

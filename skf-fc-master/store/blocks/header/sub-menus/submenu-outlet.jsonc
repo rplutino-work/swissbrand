@@ -1,0 +1,69 @@
+{
+  "vtex.menu@2.x:submenu#outlet": {
+    "props": {
+      "blockClass": "submenu"
+    },
+
+    "children": ["vtex.menu@2.x:menu#outlet-wrapper", "image#outlet-banner"]
+  },
+
+  /* BANNER MENU */
+  "image#outlet-banner": {
+    "props": {
+      "blockClass": "submenu-banner",
+      "src": "https://placehold.jp/430x240.png",
+      "link": true
+    }
+  },
+
+  "vtex.menu@2.x:menu#outlet-wrapper": {
+    "props": {
+      "blockClass": "categories"
+    },
+
+    "children": ["vtex.menu@2.x:menu#submenu-outlet"]
+  },
+  "vtex.menu@2.x:menu#submenu-outlet": {
+    "props": {
+      "blockClass": "custom-dropdown-submenu",
+      "items": [
+        {
+          "id": "outlet-hombre",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "text": "Hombre",
+            "href": "",
+            "type": "internal",
+            "noFollow": false
+          }
+        },
+        {
+          "id": "outlet-mujer",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "text": "Mujer",
+            "href": "",
+            "type": "internal",
+            "noFollow": false
+          }
+        },
+        {
+          "id": "outlet-nino",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "text": "Niño",
+            "href": "",
+            "type": "internal",
+            "noFollow": false
+          }
+        }
+      ]
+    }
+  }
+}

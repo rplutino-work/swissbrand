@@ -1,0 +1,423 @@
+.caretIcon {
+  opacity: 2;
+}
+
+.paginationDotsContainer {
+  align-items: center;
+}
+.paginationDot {
+  background: #ffffff;
+  height: 8px !important;
+  width: 8px !important;
+  border: 1px solid #485A64;
+}
+
+.paginationDot--isActive {
+  background: #485A64;
+  border: 1px solid #485A64;
+  height: 11px !important;
+  width: 11px !important;
+}
+
+/* HOME MAIN SLIDER */
+/* ---------------------------------------------------------------------------------------- */
+
+.sliderLayoutContainer--main-gallery {
+  margin-bottom: 0px;
+  background: #485A64;
+}
+
+.paginationDotsContainer--main-gallery {
+  bottom: 15px;
+}
+
+@media only screen and (max-width: 1025px) {
+  .paginationDotsContainer--main-gallery {
+    bottom: 20px;
+  }
+  .sliderLayoutContainer--main-gallery {
+    margin-bottom: 0px !important;
+  }
+}
+
+/* HOME TOP-GALLERY (MOBILE) */
+
+.sliderLayoutContainer--top-gallery-mobile {
+  max-width: calc(100% - 32px);
+  margin: 0 auto 50px;
+}
+
+.sliderLeftArrow--top-gallery-mobile {
+  transform: translateX(-100%) scale(0.7);
+}
+
+.sliderRightArrow--top-gallery-mobile {
+  transform: translateX(100%) scale(0.7);
+}
+
+.caretIcon--top-gallery-mobile {
+  color: #485A64;
+}
+
+.paginationDotsContainer--top-gallery-mobile  {
+  bottom: -25px;
+}
+
+.paginationDot--top-gallery-mobile {
+  background: #485A64;
+}
+
+.paginationDot--top-gallery-mobile--isActive {
+  border-color: #485A64;
+  background: transparent;
+}
+
+
+/*HOME BRANDS SLIDE */
+
+.sliderLeftArrow--brands-carousel-slide {
+  transform: translateX(-100%) scale(0.7);
+}
+
+.sliderRightArrow--brands-carousel-slide {
+  transform: translateX(100%) scale(0.7);
+}
+
+.paginationDotsContainer--brands-carousel-slide {
+  bottom: -25px;
+}
+
+.paginationDot--brands-carousel-slide {
+  background: #485A64;
+}
+
+.paginationDot--brands-carousel-slide--isActive {
+  border-color: #485A64;
+  background: transparent;
+}
+
+@media only screen and (min-width: 376px) {
+  .paginationDotsContainer--brands-carousel-slide {
+    display: none;
+  }
+}
+
+/* SHELF SLIDER  */
+
+.sliderTrack--shelf {
+  padding: 8px 0;
+}
+
+.sliderLeftArrow--shelf {
+  transform: translateX(-100%) scale(0.7);
+}
+
+.sliderRightArrow--shelf {
+  transform: translateX(100%) scale(0.7);
+}
+
+.caretIcon--shelf {
+  color: #485A64;
+}
+
+@media only screen and (max-width: 1024px){
+  .slide--shelf{
+    margin: 0 6px;
+  }
+  .slide--firstVisible {
+    margin-left: 0;
+  }
+  .slide--lastVisible {
+    margin-right: 0;
+  }
+  .sliderLayoutContainer {
+    margin-bottom: 30px;
+  }
+}
+.paginationDotsContainer--shelf {
+  bottom: -16px;
+}
+
+.paginationDot--shelf {
+  background: #fff;
+}
+
+.paginationDot--shelf--isActive {
+  border: 1px solid #485A64;
+  background: #485A64;
+}
+
+.sliderLeftArrow--main-gallery, 
+.sliderRightArrow--main-gallery {
+  padding: 0;
+}
+
+@media only screen and (max-width: 1025px) {
+  .sliderLeftArrow--shelf,
+  .sliderLeftArrow--brands-carousel-slide,
+  .sliderLeftArrow--top-gallery-mobile {
+    padding: 0;
+    margin: 0;
+    left: 6px;
+  }
+
+  .sliderRightArrow--shelf,
+  .sliderRightArrow--brands-carousel-slide,
+  .sliderRightArrow--top-gallery-mobile {
+    padding: 0;
+    margin: 0;
+    right: 6px;
+  }
+}
+
+/**/
+.sliderFrame {
+  padding: 8px 0;
+}
+
+/* BRANDS CUSTOM PAGE(ADIDAS, REEBOK) */
+
+.sliderLayoutContainer--brands-main-gallery {
+  margin-bottom: 32px;
+}
+
+.paginationDotsContainer--brands-main-gallery {
+  bottom: 50px;
+}
+
+@media only screen and (max-width: 1025px) {
+  .paginationDotsContainer--brands-main-gallery {
+    bottom: 20px;
+  }
+
+  .sliderLeftArrow--brands-main-gallery {
+    display: block;
+    background: url(assets/svgs/arrow-left-white.svg) no-repeat center center !important;
+    background-size: contain;
+    transform: translateX(calc(0% + 6px));
+  }
+
+  .sliderRightArrow--brands-main-gallery {
+    display: block;
+    background: url(assets/svgs/arrow-right-white.svg) no-repeat center center !important;
+    background-size: contain;
+    transform: translateX(calc(0% - 6px));
+  }
+}
+
+/* BRAND CATEGORY */
+.sliderLayoutContainer--advantages{
+  padding: 0 15px !important;
+  margin-bottom: 30px;
+}
+@media only screen and (min-width: 1026px) {
+  .sliderLayoutContainer--advantages{
+    width: 1200px;
+    margin: 60px auto 80px;
+    padding: 0 !important;
+  }
+  .flexRowContent--slider-brand__item:hover .link--slider-brand__text {
+    color: #e9a427;
+  }
+  .flexRowContent--slider-brand__item:hover .imageElement--slider-brand__img {
+    transform: scale(1.5);
+  }
+}
+
+/* DEALS */
+.sliderLayoutContainer--deals-carousel{
+  margin-bottom: 0;
+}
+
+/* SHELF PDL */
+.sliderLayoutContainer--shelf-slider-pdl {
+  max-width: 910px;
+}
+
+/* JOS - SHELF */
+.slideChildrenContainer--shelf-jos :global(.vtex-product-highlights-2-x-productHighlightWrapper--shelf-product-promo) {
+  background-image: url(assets/imgs/tienda-fc-juntos-o-solos-logo.svg) !important;
+  background-repeat: no-repeat;
+  font-size: 0;
+  width: 65px !important;
+  height: 35px;
+  margin-top: 5px;
+  margin-right: 5px;
+  padding: 0;
+  background-color: #fff;
+}
+.sliderLayoutContainer--shelf-jos {
+  padding: 0 15px;
+}
+@media(min-width: 1024px){
+  .slideChildrenContainer--shelf-jos :global(.vtex-product-highlights-2-x-productHighlightWrapper--shelf-product-promo) {
+    width: 95px!important;
+    height: 80px;
+    padding: 0;
+  }
+  .sliderLayoutContainer--shelf-jos {
+    padding: 0;
+  } 
+}
+
+/* JOS - NEWSPAPER */
+.infoCardContainer--collections-home {
+  flex-direction: column;
+}
+.infoCardTextContainer--collections-home {
+  width: 100%;
+  order: 2;
+}
+.infoCardImageContainer--collections-home {
+  width: 100%;
+  order: 1;
+}
+.infoCardContainer--jos-newspaper {
+  padding: 0;
+  margin: 0px;
+  border-radius: 10px;
+  display: flex;
+}
+.infoCardHeadline--jos-newspaper {
+  font-size: 19px;
+  line-height: 25px;
+  margin: 15px 0;
+  height: 70px;
+}
+
+.infoCardTextContainer--jos-newspaper {
+  padding: 0 15px 15px 15px;
+}
+
+.infoCardSubhead--jos-newspaper {
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 0;
+  height: 105px;
+}
+
+.infoCardCallActionContainer--jos-newspaper :global(.vtex-button) {
+  margin: auto 0 0;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  background: #313131;
+  transition: background-color 0.2s linear;
+  min-height: 35px;
+}
+
+.infoCardCallActionContainer--jos-newspaper :global(.vtex-button__label) {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.56px;
+  color: #fff;
+  padding: 10px 40px;
+}
+
+.infoCardCallActionContainer--jos-newspaper {
+  margin: 15px 0 0 0;
+}
+
+.paginationDotsContainer--jos-newspaper {
+  bottom: -35px;
+}
+
+@media(min-width: 1024px){
+  .slideChildrenContainer--jos-newspaper {
+    margin: 0 7px;
+  }
+}
+
+/* DEALS */
+.slideChildrenContainer--deals-carousel {
+  border-left: 1px solid #485A64;
+  padding-left: 15px;
+}
+.slide--firstVisible .slideChildrenContainer--deals-carousel {
+  border-left: 0;
+}
+
+/* HOME LIST */
+.sliderTrackContainer--list-home-item {
+  max-width: 1210px;
+  padding-bottom: 25px;
+}
+
+.sliderRightArrow--list-home-item {
+  right: -8px;
+}
+
+.sliderLeftArrow--list-home-item {
+  left: -8px;
+}
+
+.slide--list-home-item {
+  padding: 0 7px;
+}
+.infoCardContainer--list-home-item {
+  flex-direction: column-reverse;
+  padding: 0;
+  display: flex;
+}
+.infoCardTextContainer--list-home-item, 
+.infoCardImageContainer--list-home-item {
+  width: 100%;
+}
+.infoCardTextContainer--list-home-item, .infoCardImageContainer--list-home-item {
+  width: 100%;
+}
+
+.infoCardImageContainer--list-home-item {
+  border-top-right-radius: 5px;
+  line-height: 0;
+}
+
+.infoCardImage--list-home-item {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.infoCardCallActionContainer--list-home-item {
+  text-decoration: none;
+  color: #0F58D6;
+  margin: 0;
+  padding: 15px;
+}
+
+.infoCardCallActionText--list-home-item {
+  margin: 0;
+  color: #0F58D6;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.infoCardTextContainer--list-home-item {
+  padding: 0px;
+}
+
+.caretIcon--list-home-item {
+  width: 17px;
+  color: #485A64;
+}
+
+.sliderArrows--list-home-item {
+  margin: 0;
+  padding: 0;
+}
+
+@media(min-width: 1024px){
+  .sliderTrackContainer--list-home-item {
+    padding-bottom: 40px;
+  }
+  .sliderRightArrow--list-home-item {
+    right: -25px;
+  }
+  
+  .sliderLeftArrow--list-home-item {
+    left: -25px;
+  }  
+}

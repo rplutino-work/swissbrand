@@ -1,0 +1,22 @@
+{
+  "store.custom#plazo-de-entrega": {
+    "blocks": ["flex-layout.row#breadcrumb", "flex-layout.row#plazo-de-entrega"]
+  },
+
+  "flex-layout.row#plazo-de-entrega": {
+    "props": {
+      "blockClass": "institutional-wrapper",
+      "colSizing": "auto"
+    },
+
+    "children": ["rich-text#plazo-de-entrega-content"]
+  },
+
+  "rich-text#plazo-de-entrega-content": {
+    "props": {
+      "blockClass": "institutional-content",
+      "text": "# PLAZOS DE ENTREGA \n\n ###### Envíos y tiempo de entrega \n\n Todas las entregas se realizarán una vez confirmada la operación de pago. Se realizarán en el domicilio que el comprador indique. La validez de la información de entrega que nos provea es de su exclusiva responsabilidad. Todas las entregas en C.A.B.A. y Gran Bs.As. se realizarán de Lunes a Viernes de 9:00hs a 17:00hs sin excepción. \n\n El tiempo de entrega dependerá de la disponibilidad del producto, del tiempo de envío y de la aprobación del medio de pago. Los días que se indiquen son estimativos. Los envíos se realizan, sin excepción, en toda la República Argentina. Al realizar una compra, el Usuario recibe en su casilla de correo electrónico una confirmación de que la orden de pedido ha sido aceptada. El tiempo de envío varía según el destino donde se solicite la entrega. Al momento de hacer la compra, el Usuario podrá optar el modo de entrega, y conocer allí el costo de envío. \n\n La dirección en donde se entregará el producto será la que el Usuario indique. Podrá no coincidir con su domicilio. Es responsabilidad del Usuario completar y revisar cuidadosamen- te la información relacionada con la entrega, para que el envío de la compra se haga de manera efectiva y puntual. \n\n ###### Envíos \n\n El Usuario será claramente informado de los costos de entrega antes de realizar la compra. Estos costos son calculados en función del peso total y/o el volumen total del envío, y tam- bién dependen de la zona del domicilio de entrega, y el medio de entrega elegido. Los costos de envío serán discriminados como ítem separado dentro de la factura. Dichos costos, pro- mociones y políticas de envío se hallan sujetos a cambio sin previo aviso. \n\n ###### Envíos al interior \n\n Los envíos al interior se realizan mediante empresas tercerizadas como Cruz del Sur y Vía Cargo, u otra indicada por nuestros clientes luego de confirmada la compra. El traslado del producto al transporte podrá incluir un costo adicional el cual se informará antes de concluir la compra en el sitio; el costo correspondiente hasta la localidad de destino se abona al reci- birlo. Los productos de fácil armado podrán ser entregados sin armar con el objetivo de abaratar sus costos logísticos. \n\n ###### Condiciones de entrega \n\n No será necesario que el titular de la cuenta esté al momento de la entrega, en caso de no encontrarse podrá recibirlo cualquier otra persona autorizada, mayor de edad con su DNI. En caso de que en el día de entrega no encontremos en el domicilio al titular habilitado para la recepción o autorizado se volverá a coordinar otra fecha de entrega teniendo que abonar un nuevo envió. \n\n En caso de que FC no pudiese cumplir con los tiempos de entrega dispuestos por dificulta- des imprevistas, según plazos por zona geográfica, tratará de darle aviso lo más pronto posi- ble coordinando una nueva entrega sin que ello devengue ningún cargo adicional para el Usuario. \n\n FC se compromete a realizar el seguimiento del envío, a pedido expreso del Cliente. El Clien- te será responsable por las demoras y/o mayores costos que se pudieren derivar en /por haber omitido y/o declarado erróneamente la información relativa al domicilio de entrega al momento de la compra.",
+      "width": "grow"
+    }
+  }
+}

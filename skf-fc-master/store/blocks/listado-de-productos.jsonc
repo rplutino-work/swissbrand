@@ -1,0 +1,73 @@
+{
+    "store.custom#listado-de-productos": {
+        "blocks": [
+            "flex-layout.row#banner",
+            "search-result-layout.customQuery"
+        ]
+    },
+    "search-result-layout.customQuery": {
+        "props": {
+            "querySchema": {
+                "maxItemsPerPage": 48,
+                "orderByField": "OrderByScoreDESC",
+                "hideUnavailableItems": true,
+                "facetsBehavior": "Dynamic",
+                "skusFilter": "FIRST_AVAILABLE",
+                "simulationBehavior": "skip",
+                "installmentCriteria": "MAX_WITHOUT_INTEREST",
+                "__unstableProductOriginVtex": true,
+                "queryField": "Sofa",
+                "mapField": "ft"
+            }
+        },
+        "blocks": [
+            "search-result-layout.mobile",
+            "search-result-layout.desktop",
+            "search-not-found-layout"
+        ]
+    },
+    "flex-layout.row#banner": {
+        "props": {
+            "title": "Banner categoria",
+            "blockClass": "banner-custom-category",
+            "fullWidth": true
+        },
+
+        "children": ["flex-layout.col#bottom-banner-content"]
+    },
+
+    "flex-layout.col#bottom-banner-content": {
+        "props": {
+            "title": "Mobile",
+            "preventVerticalStretch": true
+        },
+
+        "children": [
+            "responsive-layout.mobile#pdl-custom-banner",
+            "responsive-layout.desktop#pdl-custom-banner"
+        ]
+    },
+
+    "responsive-layout.mobile#pdl-custom-banner": {
+        "children": ["image#mobile-pdl-custom-banner"]
+    },
+
+    "image#mobile-pdl-custom-banner": {
+        "props": {
+            "title": "Desktop",
+            "blockClass": "banner-custom-category-mobile",
+            "src": "assets/imgs/department-hogar--mobile.jpg"
+        }
+    },
+
+    "responsive-layout.desktop#pdl-custom-banner": {
+        "children": ["image#pdl-custom-banner"]
+    },
+
+    "image#pdl-custom-banner": {
+        "props": {
+            "blockClass": "banner-custom-category",
+            "src": "assets/imgs/department-hogar.jpg"
+        }
+    }
+}

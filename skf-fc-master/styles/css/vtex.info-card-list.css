@@ -1,0 +1,32 @@
+.jos-newspaper-item-infobae :global(.vtex-slider-layout-0-x-infoCardHeadline--jos-newspaper)::before {
+    content: '';
+    background-image: url("assets/imgs/tienda-fc-juntos-o-solos-infobae.png");
+    display: block;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+}
+
+.jos-newspaper-item-clarin :global(.vtex-slider-layout-0-x-infoCardHeadline--jos-newspaper)::before {
+    content: '';
+    background-image: url("assets/imgs/tienda-fc-juntos-o-solos-clarin.png");
+    display: block;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+}
+
+.jos-newspaper-item-cronista :global(.vtex-slider-layout-0-x-infoCardHeadline--jos-newspaper)::before {
+    content: '';
+    background-image: url("assets/imgs/tienda-fc-juntos-o-solos-cronista.png");
+    display: block;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+    background-color: #3D939B;
+    width: 100px;
+    padding: 0px 9px;
+}

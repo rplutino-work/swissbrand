@@ -1,0 +1,118 @@
+.emailInputContainer--popup-email :global(.vtex-input__error),
+.nameInputContainer--popup-name :global(.vtex-input__error){
+    background: #ee2d21;
+    font-weight: 500;
+    color: #fff;
+    display: inline-block;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 50px;
+}
+
+.newsletterForm--event-newsletter-wrapper {
+    background: #2d334d;
+    padding: 25px;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  
+  .emailInputContainer {
+    width: 240px;
+    display: inline-block;
+    border: 0;
+  }
+  
+  .nameInputContainer {
+    width: 240px;
+    display: inline-block;
+  }
+  
+  .formSubmitContainer {
+    width: 160px;
+    display: inline-block;
+  }
+  
+  .formSubmitContainer :global(.vtex-button) {
+        border: 0;
+        border-radius: 5px;
+        font-size: 13px;
+        color: #fff;
+        font-weight: 600;
+        background: rgb(255,199,0);
+        background: -moz-linear-gradient(95deg,rgba(255,199,0,1) 0%,rgba(236,32,35,1) 100%);
+        background: -webkit-linear-gradient(95deg,rgba(255,199,0,1) 0%,rgba(236,32,35,1) 100%);
+        background: linear-gradient(95deg,rgba(255,199,0,1) 0%,rgba(236,32,35,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffc700",endColorstr="#ec2023",GradientType=1);
+  }
+  
+  .formSubmitContainer :global(.vtex-button__label) {
+    position: relative;
+}
+
+  .emailInputContainer :global(.vtex-input-prefix__group) {
+    border-radius: 5px;
+    border: 1px solid #707070;
+    margin-right: 10px;
+    width: 240px;
+  }
+  
+  .nameInputContainer :global(.vtex-input-prefix__group) {
+    border-radius: 5px;
+    border: 1px solid #707070;
+    margin-right: 10px;
+    width: 240px;
+  }
+
+  .nameInputContainer :global(.vtex-styleguide-9-x-input)::placeholder {
+    color: #191919 !important;
+    font-size: 13px !important;
+  }
+
+  .emailInputContainer :global(.vtex-styleguide-9-x-input)::placeholder {
+    color: #191919 !important;
+    font-size: 13px !important;
+  }
+
+  .defaultSuccessMessage--event-newsletter-wrapper {
+    background: #2d334d;
+    padding: 25px;
+    justify-content: center;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+  @media(max-width: 1024px){
+    .emailInputContainer :global(.vtex-input-prefix__group),
+    .nameInputContainer :global(.vtex-input-prefix__group){
+      margin: 0 0 10px 0;
+    }
+    .nameInputContainer :global(.vtex-styleguide-9-x-input)::placeholder,
+    .emailInputContainer :global(.vtex-styleguide-9-x-input)::placeholder{
+      font-weight: 500;
+    }
+    .formSubmitContainer :global(.vtex-button){
+      width: 100%;
+    }
+    .emailInputContainer :global(.vtex-input-prefix__group) {
+      width: 100%;
+      border: 0;
+    }
+    .nameInputContainer :global(.vtex-input-prefix__group) {
+      width: 100%;
+    }
+    .formSubmitContainer :global(.vtex-input-prefix__group) {
+      width: 100%;
+    }
+  }
+
+  .emailInputContainer--popup-email {width: 100%;display: flex;flex-direction: column;}
+
+.formSubmitContainer--popup-submit {width: 100%;display: block;}
+
+.nameInputContainer--popup-name {width: 100%;}
+
+.formSubmitContainer--popup-submit .formSubmitContainer--popup-submit {background: transparent !important;}

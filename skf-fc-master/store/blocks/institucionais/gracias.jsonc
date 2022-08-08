@@ -1,0 +1,231 @@
+{
+    "store.custom#gracias": {
+        "blocks": ["flex-layout.row#breadcrumb", "flex-layout.row#gracias"]
+    },
+  
+    "flex-layout.row#gracias": {
+        "props": {
+            "blockClass": ["institutional-wrapper","gracias-wrapper"],
+            "colSizing": "auto"
+        },
+  
+        "children": [
+            "flex-layout.row#gracias-form"
+      ]
+    },
+  
+    "rich-text#gracias-content": {
+        "props": {
+            "blockClass": "gracias-form-text",
+            "text": "# ¡Su mensaje fue enviado correctamente!",
+            "width": "grow"
+        }
+    },
+  
+    "rich-text#gracias-form-text": {
+      "props": {
+          "blockClass": "gracias-form-text",
+          "text": "Su mensaje fue enviado correctamente.<br>Nos estaremos contacto con vos para brindarte una respuesta",
+          "width": "grow"
+      }
+  },
+
+  "flex-layout.row#gracias-text": {
+    "props": {
+        "blockClass": ["gracias-text-wrapper"],
+        "colSizing": "auto"
+    },
+
+    "children": [
+            "rich-text#gracias-content",
+            "rich-text#gracias-form-text"
+  ]
+},
+  
+    "flex-layout.row#gracias-form": {
+          "props": {
+              "blockClass": "gracias-form-wrapper",
+              "colSizing": "auto"
+          },
+  
+          "children": [
+                "flex-layout.row#gracias-text",
+                "flex-layout.row#gracias-banner-title",
+                "responsive-layout.desktop#gracias-banner-desktop",
+                "responsive-layout.mobile#gracias-banner-mobile"
+      ]
+    },
+
+    
+      "flex-layout.row#gracias-banner-title": {
+        "props": {
+          "blockClass": ["shelf", "shelfWithBackground"]
+        },
+        "children": ["flex-layout.col#gracias-banner-title"]
+      },
+    
+      "flex-layout.col#gracias-banner-title": {
+        "props": {
+          "preventVerticalStretch": true
+        },
+    
+        "children": [
+          "rich-text#gracias-banner-title"
+        ]
+      },
+    
+      "rich-text#gracias-banner-title": {
+        "props": {
+          "blockClass": "shelf-title",
+          "text": "## ELEGÍ QUE AMBIENTE VAS A RENOVAR HOY",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER"
+        }
+      },
+      "responsive-layout.desktop#gracias-banner-desktop": {
+        "children": ["flex-layout.row#gracias-banner-desktop"]
+      },
+    
+      "flex-layout.row#gracias-banner-desktop": {
+        "props": {
+          "blockClass": "top-gallery"
+        },
+    
+        "children": ["flex-layout.col#gracias-banner-desktop-content"]
+      },
+    
+      "flex-layout.col#gracias-banner-desktop-content": {
+        "props": {
+          "preventVerticalStretch": true,
+          "rowGap": 5
+        },
+    
+        "children": ["flex-layout.row#gracias-banner-desktop-banners"]
+      },
+    
+      "flex-layout.row#gracias-banner-desktop-banners": {
+        "props": {
+          "blockClass": "top-gallery-row",
+          "colSizing": "auto",
+          "colGap": 0
+        },
+    
+        "children": ["image#gracias-banner-01", "image#gracias-banner-02", "image#gracias-banner-03"]
+      },
+    
+      "image#gracias-banner-01": {
+        "props": {
+          "blockClass": "top-gallery-banner",
+          "title": "Hombre",
+          "src": "assets/imgs/banner-x-3.jpg",
+          "link": {
+            "url": "/living",
+            "attributeTitle": "Hombre"
+          }
+        }
+      },
+    
+      "image#gracias-banner-02": {
+        "props": {
+          "blockClass": "top-gallery-banner",
+          "title": "Mujer",
+          "src": "assets/imgs/banner-x-3-1.jpg",
+    
+          "link": {
+            "url": "/comedor",
+            "attributeTitle": "Mujer"
+          }
+        }
+      },
+    
+      "image#gracias-banner-03": {
+        "props": {
+          "blockClass": "top-gallery-banner",
+          "title": "Mujer",
+          "src": "assets/imgs/banner-x-3-2.jpg",
+    
+          "link": {
+            "url": "/dormitorio",
+            "attributeTitle": "Mujer"
+          }
+        }
+      },
+    
+      /* MOBILE TOP GALLERY */
+      "responsive-layout.mobile#gracias-banner-mobile": {
+        "children": ["list-context.image-list#gracias-banner-mobile"]
+      },
+    
+      "list-context.image-list#gracias-banner-mobile": {
+        "props": {
+          "height": "fit-content",
+    
+          "images": [
+            {
+              "mobileImage": "assets/imgs/banner-x3-640x640-a-0.jpg",
+              "link": {
+                "url": "/living",
+                "attributeTitle": "Hombre"
+              }
+            },
+    
+            {
+              "mobileImage": "assets/imgs/banner-x3-640x640-a-1.jpg",
+              "link": {
+                "url": "/comedor",
+                "attributeTitle": "Mujer"
+              }
+            },
+    
+            {
+              "mobileImage": "assets/imgs/banner-x3-640x640-a-2.jpg",
+              "link": {
+                "url": "/dormitorio",
+                "attributeTitle": "Mujer"
+              }
+            }
+          ]
+        },
+    
+        "children": ["slider-layout#gracias-banner-mobile-slider"]
+      },
+    
+      "slider-layout#gracias-banner-mobile-slider": {
+        "props": {
+          "blockClass": "top-gallery-mobile",
+          "infinite": true,
+          "showNavigationArrows": "never",
+          "arrowSize": 10,
+          "itemsPerPage": {
+            "tablet": 2,
+            "phone": 1
+          }
+        }
+      },
+      
+      "flex-layout.row#gracias-banner-mobile-title": {
+        "props": {
+          "blockClass": ["shelf", "shelfWithBackground"]
+        },
+        "children": ["flex-layout.col#gracias-banner-mobile-title"]
+      },
+    
+      "flex-layout.col#gracias-banner-mobile-title": {
+        "props": {
+          "preventVerticalStretch": true
+        },
+    
+        "children": [
+          "rich-text#gracias-banner-mobile-title"
+        ]
+      },
+    
+      "rich-text#gracias-banner-mobile-title": {
+        "props": {
+          "blockClass": "shelf-title",
+          "text": "## ELEGÍ TU ESTILO",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER"
+        }
+      }
+  }

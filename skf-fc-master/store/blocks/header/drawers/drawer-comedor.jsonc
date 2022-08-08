@@ -1,0 +1,299 @@
+{
+  "drawer#comedor": {
+    "props": {
+      "blockClass": ["mobile-menu", "secondary-tab"]
+    },
+
+    "blocks": ["drawer-trigger#comedor"],
+    "children": ["menu#comedor"]
+  },
+
+  "drawer-trigger#comedor": {
+    "children": ["rich-text#comedor"]
+  },
+
+  "rich-text#comedor": {
+    "props": {
+      "blockClass": "mobile-menu-item",
+      "text": "Comedor"
+    }
+  },
+
+  "menu#comedor": {
+    "props": {
+      "blockClass": "mobile-menu",
+      "orientation": "vertical"
+    },
+
+    "children": [
+      "drawer#comedor-sillas",
+      "drawer#comedor-mesas",
+      "drawer#comedor-banquetas",
+      "drawer#comedor-muebles",
+      "drawer#comedor-barras",
+      "menu-item#comedor-see-all"
+    ]
+  },
+
+  "drawer#comedor-sillas": {
+    "props": {
+      "blockClass": ["mobile-menu", "secondary-tab"]
+    },
+
+    "blocks": ["drawer-trigger#comedor-sillas"],
+    "children": ["menu#comedor-sillas"]
+  },
+
+  "drawer-trigger#comedor-sillas": {
+    "children": ["rich-text#comedor-sillas"]
+  },
+
+  "rich-text#comedor-sillas": {
+    "props": {
+      "blockClass": "mobile-menu-item",
+      "text": "Sillas"
+    }
+  },
+
+  "menu#comedor-sillas": {
+    "props": {
+      "blockClass": "mobile-menu",
+      "orientation": "vertical"
+    },
+
+    "children": [
+      "vtex.menu@2.x:menu#submenu-comedor-sillas",
+      "menu-item#comedor-sillas-see-all"
+    ]
+  },
+
+  "drawer#comedor-mesas": {
+    "props": {
+      "blockClass": ["mobile-menu", "secondary-tab"]
+    },
+
+    "blocks": ["drawer-trigger#comedor-mesas"],
+    "children": ["menu#comedor-mesas"]
+  },
+
+  "drawer-trigger#comedor-mesas": {
+    "children": ["rich-text#comedor-mesas"]
+  },
+
+  "rich-text#comedor-mesas": {
+    "props": {
+      "blockClass": "mobile-menu-item",
+      "text": "Mesas"
+    }
+  },
+
+  "menu#comedor-mesas": {
+    "props": {
+      "blockClass": "mobile-menu",
+      "orientation": "vertical"
+    },
+
+    "children": [
+      "vtex.menu@2.x:menu#submenu-comedor-mesas",
+      "menu-item#mesas-see-all"
+    ]
+  },
+
+  "drawer#comedor-banquetas": {
+    "props": {
+      "blockClass": ["mobile-menu", "secondary-tab"]
+    },
+
+    "blocks": ["drawer-trigger#comedor-banquetas"],
+    "children": ["menu#comedor-banquetas"]
+  },
+
+  "drawer-trigger#comedor-banquetas": {
+    "children": ["rich-text#comedor-banquetas"]
+  },
+
+  "rich-text#comedor-banquetas": {
+    "props": {
+      "blockClass": "mobile-menu-item",
+      "text": "banquetas"
+    }
+  },
+
+  "menu#comedor-banquetas": {
+    "props": {
+      "blockClass": "mobile-menu",
+      "orientation": "vertical"
+    },
+
+    "children": [
+      "vtex.menu@2.x:menu#submenu-comedor-banquetas",
+      "menu-item#comedor-banquetas-see-all"
+    ]
+  },
+
+  "drawer#comedor-muebles": {
+    "props": {
+      "blockClass": ["mobile-menu", "secondary-tab"]
+    },
+
+    "blocks": ["drawer-trigger#comedor-muebles"],
+    "children": ["menu#comedor-muebles"]
+  },
+
+  "drawer-trigger#comedor-muebles": {
+    "children": ["rich-text#comedor-muebles"]
+  },
+
+  "rich-text#comedor-muebles": {
+    "props": {
+      "blockClass": "mobile-menu-item",
+      "text": "muebles"
+    }
+  },
+
+  "menu#comedor-muebles": {
+    "props": {
+      "blockClass": "mobile-menu",
+      "orientation": "vertical"
+    },
+
+    "children": [
+      "vtex.menu@2.x:menu#submenu-comedor-muebles",
+      "menu-item#comedor-muebles-see-all"
+    ]
+  },
+
+  "drawer#comedor-barras": {
+    "props": {
+      "blockClass": ["mobile-menu", "secondary-tab"]
+    },
+
+    "blocks": ["drawer-trigger#comedor-barras"],
+    "children": ["menu#comedor-barras"]
+  },
+
+  "drawer-trigger#comedor-barras": {
+    "children": ["rich-text#comedor-barras"]
+  },
+
+  "rich-text#comedor-barras": {
+    "props": {
+      "blockClass": "mobile-menu-item",
+      "text": "barras"
+    }
+  },
+
+  "menu#comedor-barras": {
+    "props": {
+      "blockClass": "mobile-menu",
+      "orientation": "vertical"
+    },
+
+    "children": [
+      "vtex.menu@2.x:menu#submenu-comedor-barras",
+      "menu-item#comedor-barras-see-all"
+    ]
+  },
+
+  //ver todo
+  "menu-item#comedor-see-all": {
+    "props": {
+      "blockClass": ["department", "see-all"],
+      "id": "comedor-see-all",
+      "type": "custom",
+
+      "itemProps": {
+        "categoryId": 2,
+        "type": "internal",
+        "noFollow": true,
+        "href": "/comedor",
+        "tagTitle": "ver todo comedor",
+        "text": "ver todo comedor"
+      }
+    }
+  },
+
+  "menu-item#comedor-sillas-see-all": {
+    "props": {
+      "blockClass": ["department", "see-all"],
+      "id": "comedor-sillas-see-all",
+      "type": "custom",
+
+      "itemProps": {
+        "categoryId": 7,
+        "href": "/comedor/sillas",
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "ver todo sillas",
+        "text": "ver todo sillas"
+      }
+    }
+  },
+
+  "menu-item#mesas-see-all": {
+    "props": {
+      "blockClass": ["department", "see-all"],
+      "id": "mesas-see-all",
+      "type": "custom",
+
+      "itemProps": {
+        "categoryId": 8,
+        "type": "internal",
+        "href": "/comedor/mesas",
+        "noFollow": true,
+        "tagTitle": "ver todo mesas",
+        "text": "ver todo mesas"
+      }
+    }
+  },
+
+  "menu-item#comedor-banquetas-see-all": {
+    "props": {
+      "blockClass": ["department", "see-all"],
+      "id": "banquetas-see-all",
+      "type": "custom",
+
+      "itemProps": {
+        "categoryId": 8,
+        "type": "internal",
+        "href": "/comedor/banquetas",
+        "noFollow": true,
+        "tagTitle": "ver todo banquetas",
+        "text": "ver todo banquetas"
+      }
+    }
+  },
+
+  "menu-item#comedor-muebles-see-all": {
+    "props": {
+      "blockClass": ["department", "see-all"],
+      "id": "muebles-see-all",
+      "type": "custom",
+
+      "itemProps": {
+        "categoryId": 8,
+        "type": "internal",
+        "href": "/comedor/muebles",
+        "noFollow": true,
+        "tagTitle": "ver todo muebles",
+        "text": "ver todo muebles"
+      }
+    }
+  },
+  "menu-item#comedor-barras-see-all": {
+    "props": {
+      "blockClass": ["department", "see-all"],
+      "id": "barras-see-all",
+      "type": "custom",
+
+      "itemProps": {
+        "categoryId": 2,
+        "type": "internal",
+        "noFollow": true,
+        "href": "/comedor/barras",
+        "tagTitle": "Ver todo barras",
+        "text": "Ver todo barras"
+      }
+    }
+  }
+}

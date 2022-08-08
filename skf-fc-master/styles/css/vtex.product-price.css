@@ -1,0 +1,89 @@
+/* Shelf */
+
+.savings-discount--shelf-product {
+  display: block;
+  padding: 2px 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  background: #e10713;
+}
+
+.sellingPrice--shelf-product {
+  line-height: 22px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #313131;
+  width: auto;
+}
+
+.listPrice--shelf-product {
+  font-weight: 400;
+  width: auto;
+  color: #AAAFB8;
+  font-size: 14px;
+  padding-bottom: 2px;
+}
+
+.installments--shelf-product {
+  text-align: left;
+  display: block;
+  font-weight: 500;
+  color: #808895;
+  font-size: 12px;
+  width: auto;
+}
+
+.savings-discount--product-badge {
+  background: #0F58D6;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 1px 5px;
+  margin-right: 10px;
+}
+
+.sellingPriceValue--shelf-product {
+  color: #485A64;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 1025px) {
+  .savings-discount--shelf-product {
+    font-size: 12px;
+  }
+}
+
+/**/
+
+/* Product */
+.listPrice--product {
+  color: #AAAFB8;
+  font-size: 18px;
+  font-weight: 400;
+  margin-right: 10px;
+}
+
+.sellingPrice--product {
+  color: #485A64;
+  font-size: 18px;
+}
+
+.installments--product {
+  font-size: 13px;
+  font-weight: 500;
+  color: #808895;
+}
+
+.installmentsNumber--product,
+.installmentValue--product {
+  margin: 0 2px;
+}
+
+.currencyLiteral--product {
+  display: none;
+}
+
+.savings--pdp-badge{
+  margin: 12px 0;
+}
