@@ -1,7 +1,7 @@
 {
   "name": "skf-custom-search-result",
   "vendor": "skfarg",
-  "version": "0.0.21",
+  "version": "0.0.22",
   "title": "VTEX Search Result",
   "description": "A search result wrapper component",
   "mustUpdateAt": "2019-04-25",
