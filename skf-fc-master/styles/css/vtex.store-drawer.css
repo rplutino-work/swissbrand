@@ -97,39 +97,3 @@
 }
 
 /**/
-
-/* Custom Brands Menu (Adidas, Reebok)*/
-
-.drawer--mobile-menu-brands {
-  background-color: #313131;
-}
-
-.closeIconContainer--mobile-menu-brands {
-  border-color: white;
-}
-
-.closeIconContainer--mobile-menu-adidas::before {
-  content: "";
-  width: 82px;
-  height: 39px;
-  background: url("assets/svgs/brand-adidas-white.svg") center no-repeat;
-}
-
-.closeIconContainer--mobile-menu-reebok::before {
-  content: "";
-  width: 116px;
-  height: 56px;
-  background: url("assets/svgs/brand-reebok-white.svg") center no-repeat;
-}
-
-.closeIcon--mobile-menu-brands {
-  filter: invert(100%);
-}
-
-.childrenContainer--mobile-menu {
-  display: flex;
-  flex-direction: column;
-}
-.drawerContent--primary-tab {
-  overflow-y: hidden !important;
-}

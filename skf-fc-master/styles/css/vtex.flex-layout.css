@@ -1419,7 +1419,6 @@
 /* 404 */
 .flexColChild--not-found-row-info:first-child{
   height: 100%;
-  background-image: url(assets/imgs/banner-categoria-1.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -1454,7 +1453,7 @@ padding: 0 15px;
 }
 @media(min-width: 1024px){
   .flexColChild--not-found-row-info:first-child{
-    background-image: url(assets/imgs/banner-categoria.jpg);
+
   }
   .ProductErrorPage--wrapper,
   .PageErrorPage--wrapper {

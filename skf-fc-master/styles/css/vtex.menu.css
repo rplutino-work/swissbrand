@@ -381,15 +381,12 @@
     height: 44px;
     padding: 0;
     outline: none;
-    background: url(assets/imgs/mercado-pago-icon.png) center no-repeat;
     background-size: cover;
   }
   .menuItem--footer-menu-item-visa--mobile {
     width: 31px;
     height: 20px;
     padding: 0;
-    outline: none;
-    background: url(assets/imgs/visa-icon.png) center no-repeat;
     background-size: cover;
   }
   .menuItem--footer-menu-item-mastercard--mobile {
@@ -397,7 +394,6 @@
     height: 20px;
     padding: 0;
     outline: none;
-    background: url(assets/imgs/mastercard-icon.png) center no-repeat;
     background-size: cover;
   }
   .menuItem--footer-menu-item-amex--mobile {
@@ -405,7 +401,6 @@
     height: 20px;
     padding: 0;
     outline: none;
-    background: url(assets/imgs/amex-icon.png) center no-repeat;
     background-size: cover;
   }
   .menuItem--footer-menu-item-banelco--mobile {
@@ -413,7 +408,6 @@
     height: 20px;
     padding: 0;
     outline: none;
-    background: url(assets/imgs/banelco-icon.png) center no-repeat;
     background-size: cover;
   }
   .menuItem--footer-menu-item-link--mobile {
@@ -421,7 +415,6 @@
     height: 20px;
     padding: 0;
     outline: none;
-    background: url(assets/imgs/link-icon.png) center no-repeat;
     background-size: cover;
   }
   .menuItem--footer-menu-item-mercado-pago--mobile :first-child,

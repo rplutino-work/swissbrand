@@ -24,7 +24,6 @@
   "image#equipos-banner": {
     "props": {
       "blockClass": "submenu-banner",
-      "src": "assets/imgs/banner-megamenu-equipos.png",
       "link": true
     }
   },
