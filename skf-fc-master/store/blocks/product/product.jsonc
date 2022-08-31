@@ -491,7 +491,7 @@
   },
   "tab-content.item#home2": {
     "children": [
-        "product-specification-group#table"
+      "product-specification-group#aplicaciones"
     ],
     "props": {
       "tabId": "home2"
@@ -499,7 +499,7 @@
   },
   "tab-content.item#home3": {
     "children": [
-
+      "product-specification-group#informacion-tecnica"
     ],
     "props": {
       "tabId": "home3"

@@ -1,0 +1,66 @@
+{
+    "product-specification-group#aplicaciones": {
+        "props": {      
+            "filter": {      
+              "specificationGroups":["Aplicaciones"],                      
+                  "type": "show"     
+              }   
+          },
+      "children": [
+        "flex-layout.row#specification-pdpaplicaciones"
+      ]
+    },
+    "flex-layout.row#specification-pdpaplicaciones": {
+      "props": {
+        "blockClass": ["productSpecificationGroup","pdl-specification-pdpaplicaciones-specification-wrapper"]
+      },
+      "children": [
+        "flex-layout.col#specification-pdpaplicaciones"
+      ]
+    },
+    "flex-layout.col#specification-pdpaplicaciones": {
+      "children": [
+        "product-specification#specification-pdpaplicaciones"
+      ]
+    },
+    "flex-layout.row#spec-group-name": {
+      "props": {
+        "blockClass": "productSpecificationGroupName"
+      },
+      "children": [
+        
+      ]
+    },
+    "product-specification#specification-pdpaplicaciones": {
+      "children": [
+        "flex-layout.row#spec-item-specification-pdpaplicaciones"
+      ]
+    },
+    "flex-layout.row#spec-item-specification-pdpaplicaciones": {
+      "props": {
+        "blockClass": "productSpecification"
+      },
+      "children": [
+        "flex-layout.col#spec-value-specification-pdpaplicaciones"
+      ]
+    },
+    "flex-layout.col#spec-value-specification-pdpaplicaciones": {
+      "props": {
+        "blockClass": "productSpecificationValue"
+      },
+      "children": [
+        "product-specification-values#specification-pdpaplicaciones"
+      ]
+    },
+    "product-specification-values#specification-pdpaplicaciones": {
+      "children": [
+        "product-specification-text#value-specification-pdpaplicaciones"
+      ]
+    },
+    "product-specification-text#value-specification-pdpaplicaciones": {
+      "props": {
+        "message": "{specificationValue}"
+      }
+    }
+  }
+  
