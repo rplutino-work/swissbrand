@@ -1,0 +1,69 @@
+{
+    "vtex.menu@2.x:submenu#merchandasing": {
+        "props": {
+            "blockClass": "short-submenu"
+        },
+
+        "children": ["vtex.menu@2.x:menu#merchandasing"]
+    },
+
+    "vtex.menu@2.x:menu#merchandasing": {
+        "props": {
+            "blockClass": "categories",
+            "items": [
+                {
+                    "id": "marcas-1",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                      "type": "internal",
+                      "href": "#",
+                      "noFollow": false,
+                      "text": "Categoria",
+                      "tagTitle": "Categoria"
+                    }
+                },
+                {
+                    "id": "marcas-1",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                      "type": "internal",
+                      "href": "#",
+                      "noFollow": false,
+                      "text": "Categoria",
+                      "tagTitle": "Categoria"
+                    }
+                },
+                {
+                    "id": "marcas-1",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                      "type": "internal",
+                      "href": "#",
+                      "noFollow": false,
+                      "text": "Categoria",
+                      "tagTitle": "Categoria"
+                    }
+                },
+                {
+                    "id": "marcas-1",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                      "type": "internal",
+                      "href": "#",
+                      "noFollow": false,
+                      "text": "Categoria",
+                      "tagTitle": "Categoria"
+                    }
+                }
+            ]
+        }
+    }
+}

@@ -1,12 +1,12 @@
 {
-    "vtex.menu@2.x:submenu#marcas": {
-      "children": ["flex-layout.row#marcas"],
+    "vtex.menu@2.x:submenu#repuestos": {
+      "children": ["flex-layout.row#repuestos", "image#repuestos-banner"],
       "props": {
         "blockClass": "submenu"
       }
     },
   
-    "flex-layout.row#marcas": {
+    "flex-layout.row#repuestos": {
       "props": {
         "blockClass": "categories-wrapper",
         "colSizing": "auto",
@@ -14,31 +14,39 @@
       },
   
       "children": [
-        "vtex.menu@2.x:menu#marcas-column-1",
-        "vtex.menu@2.x:menu#marcas-column-2",
-        "vtex.menu@2.x:menu#marcas-column-3",
-        "vtex.menu@2.x:menu#marcas-column-4",
-        "vtex.menu@2.x:menu#marcas-column-5",
-        "vtex.menu@2.x:menu#marcas-column-6",
-        "vtex.menu@2.x:menu#marcas-column-7"
+        "vtex.menu@2.x:menu#repuestos-column-1",
+        "vtex.menu@2.x:menu#repuestos-column-2",
+        "vtex.menu@2.x:menu#repuestos-column-3",
+        "vtex.menu@2.x:menu#repuestos-column-4",
+        "vtex.menu@2.x:menu#repuestos-column-5"
       ]
     },
   
+    /* BANNER MENU */
+    "image#repuestos-banner": {
+      "props": {
+        "blockClass": "submenu-banner",
+        "src": "https://placehold.jp/430x240.png",
+        "link": true
+      }
+    },
+  
     /* COLUMN 1 */
-    "vtex.menu@2.x:menu#marcas-column-1": {
+    "vtex.menu@2.x:menu#repuestos-column-1": {
       "props": {
         "blockClass": "categories"
       },
       "children": [
-        "vtex.menu@2.x:menu#submenu-marcas-1"
+        "menu-item#repuestos-1",
+        "vtex.menu@2.x:menu#submenu-repuestos-1"
       ]
     },
-    "vtex.menu@2.x:menu#submenu-marcas-1": {
+    "vtex.menu@2.x:menu#submenu-repuestos-1": {
       "props": {
         "blockClass": "custom-dropdown-submenu",
         "items": [
           {
-            "id": "marcas-1",
+            "id": "repuestos-1",
             "type": "custom",
             "iconId": null,
             "highlight": false,
@@ -51,7 +59,7 @@
             }
           },
           {
-            "id": "marcas-1",
+            "id": "repuestos-1",
             "type": "custom",
             "iconId": null,
             "highlight": false,
@@ -64,7 +72,7 @@
             }
           },
           {
-            "id": "marcas-1",
+            "id": "repuestos-1",
             "type": "custom",
             "iconId": null,
             "highlight": false,
@@ -77,7 +85,7 @@
             }
           },
           {
-            "id": "marcas-1",
+            "id": "repuestos-1",
             "type": "custom",
             "iconId": null,
             "highlight": false,
@@ -90,7 +98,7 @@
             }
           },
           {
-            "id": "marcas-1",
+            "id": "repuestos-1",
             "type": "custom",
             "iconId": null,
             "highlight": false,
@@ -103,7 +111,7 @@
             }
           },
           {
-            "id": "marcas-1",
+            "id": "repuestos-1",
             "type": "custom",
             "iconId": null,
             "highlight": false,
@@ -116,7 +124,7 @@
             }
           },
           {
-            "id": "marcas-1",
+            "id": "repuestos-1",
             "type": "custom",
             "iconId": null,
             "highlight": false,
@@ -129,7 +137,7 @@
             }
           },
           {
-            "id": "marcas-1",
+            "id": "repuestos-1",
             "type": "custom",
             "iconId": null,
             "highlight": false,
@@ -142,7 +150,7 @@
             }
           },
           {
-            "id": "marcas-1",
+            "id": "repuestos-1",
             "type": "custom",
             "iconId": null,
             "highlight": false,
@@ -155,7 +163,7 @@
             }
           },
           {
-            "id": "marcas-1",
+            "id": "repuestos-1",
             "type": "custom",
             "iconId": null,
             "highlight": false,
@@ -170,22 +178,39 @@
         ]
       }
     },
+    "menu-item#repuestos-1": {
+      "props": {
+        "blockClass": "category",
+        "id": "repuestos-1",
+        "type": "custom",
+  
+        "itemProps": {
+          //"categoryId": 1,
+          "text": "Titulo categoria",
+          "tagTitle": "Titulo categoria",
+          "type": "internal",
+          "noFollow": false,
+          "href": "#"
+        }
+      }
+    },
   
     /* COLUMN 2 */
-    "vtex.menu@2.x:menu#marcas-column-2": {
+    "vtex.menu@2.x:menu#repuestos-column-2": {
         "props": {
           "blockClass": "categories"
         },
         "children": [
-          "vtex.menu@2.x:menu#submenu-marcas-2"
+          "menu-item#repuestos-2",
+          "vtex.menu@2.x:menu#submenu-repuestos-2"
         ]
       },
-      "vtex.menu@2.x:menu#submenu-marcas-2": {
+      "vtex.menu@2.x:menu#submenu-repuestos-2": {
         "props": {
           "blockClass": "custom-dropdown-submenu",
           "items": [
             {
-              "id": "marcas-2",
+              "id": "repuestos-2",
               "type": "custom",
               "iconId": null,
               "highlight": false,
@@ -198,7 +223,7 @@
               }
             },
             {
-                "id": "marcas-2",
+                "id": "repuestos-2",
                 "type": "custom",
                 "iconId": null,
                 "highlight": false,
@@ -211,7 +236,7 @@
                 }
             },
             {
-                "id": "marcas-2",
+                "id": "repuestos-2",
                 "type": "custom",
                 "iconId": null,
                 "highlight": false,
@@ -224,7 +249,7 @@
                 }
             },
             {
-                "id": "marcas-2",
+                "id": "repuestos-2",
                 "type": "custom",
                 "iconId": null,
                 "highlight": false,
@@ -237,7 +262,7 @@
                 }
             },
             {
-                "id": "marcas-2",
+                "id": "repuestos-2",
                 "type": "custom",
                 "iconId": null,
                 "highlight": false,
@@ -250,7 +275,7 @@
                 }
             },
             {
-                "id": "marcas-2",
+                "id": "repuestos-2",
                 "type": "custom",
                 "iconId": null,
                 "highlight": false,
@@ -263,7 +288,7 @@
                 }
             },
             {
-                "id": "marcas-2",
+                "id": "repuestos-2",
                 "type": "custom",
                 "iconId": null,
                 "highlight": false,
@@ -276,7 +301,7 @@
                 }
             },
             {
-                "id": "marcas-2",
+                "id": "repuestos-2",
                 "type": "custom",
                 "iconId": null,
                 "highlight": false,
@@ -289,7 +314,7 @@
                 }
             },
             {
-                "id": "marcas-2",
+                "id": "repuestos-2",
                 "type": "custom",
                 "iconId": null,
                 "highlight": false,
@@ -302,7 +327,7 @@
                 }
             },
             {
-                "id": "marcas-2",
+                "id": "repuestos-2",
                 "type": "custom",
                 "iconId": null,
                 "highlight": false,
@@ -315,23 +340,40 @@
                 }
             }
           ]
+        }
+      },
+      "menu-item#repuestos-2": {
+        "props": {
+          "blockClass": "category",
+          "id": "repuestos-2",
+          "type": "custom",
+    
+          "itemProps": {
+            //"categoryId": 1,
+            "text": "Titulo categoria",
+            "tagTitle": "Titulo categoria",
+            "type": "internal",
+            "noFollow": false,
+            "href": "#"
+          }
         }
       },
     /* COLUMN 3 */
-    "vtex.menu@2.x:menu#marcas-column-3": {
+    "vtex.menu@2.x:menu#repuestos-column-3": {
         "props": {
           "blockClass": "categories"
         },
         "children": [
-          "vtex.menu@2.x:menu#submenu-marcas-3"
+          "menu-item#repuestos-3",
+          "vtex.menu@2.x:menu#submenu-repuestos-3"
         ]
       },
-      "vtex.menu@2.x:menu#submenu-marcas-3": {
+      "vtex.menu@2.x:menu#submenu-repuestos-3": {
         "props": {
           "blockClass": "custom-dropdown-submenu",
           "items": [
             {
-              "id": "marcas-3",
+              "id": "repuestos-3",
               "type": "custom",
               "iconId": null,
               "highlight": false,
@@ -344,7 +386,7 @@
               }
             },
             {
-                "id": "marcas-3",
+                "id": "repuestos-3",
                 "type": "custom",
                 "iconId": null,
                 "highlight": false,
@@ -357,7 +399,7 @@
                 }
             },
             {
-                "id": "marcas-3",
+                "id": "repuestos-3",
                 "type": "custom",
                 "iconId": null,
                 "highlight": false,
@@ -370,7 +412,7 @@
                 }
             },
             {
-                "id": "marcas-3",
+                "id": "repuestos-3",
                 "type": "custom",
                 "iconId": null,
                 "highlight": false,
@@ -383,7 +425,7 @@
                 }
             },
             {
-                "id": "marcas-3",
+                "id": "repuestos-3",
                 "type": "custom",
                 "iconId": null,
                 "highlight": false,
@@ -396,7 +438,7 @@
                 }
             },
             {
-                "id": "marcas-3",
+                "id": "repuestos-3",
                 "type": "custom",
                 "iconId": null,
                 "highlight": false,
@@ -409,7 +451,7 @@
                 }
             },
             {
-                "id": "marcas-3",
+                "id": "repuestos-3",
                 "type": "custom",
                 "iconId": null,
                 "highlight": false,
@@ -422,7 +464,7 @@
                 }
             },
             {
-                "id": "marcas-3",
+                "id": "repuestos-3",
                 "type": "custom",
                 "iconId": null,
                 "highlight": false,
@@ -435,7 +477,7 @@
                 }
             },
             {
-                "id": "marcas-3",
+                "id": "repuestos-3",
                 "type": "custom",
                 "iconId": null,
                 "highlight": false,
@@ -448,7 +490,7 @@
                 }
             },
             {
-                "id": "marcas-3",
+                "id": "repuestos-3",
                 "type": "custom",
                 "iconId": null,
                 "highlight": false,
@@ -461,23 +503,40 @@
                 }
             }
           ]
+        }
+      },
+      "menu-item#repuestos-3": {
+        "props": {
+          "blockClass": "category",
+          "id": "repuestos-3",
+          "type": "custom",
+    
+          "itemProps": {
+            //"categoryId": 1,
+            "text": "Titulo categoria",
+            "tagTitle": "Titulo categoria",
+            "type": "internal",
+            "noFollow": false,
+            "href": "#"
+          }
         }
       },
     /* COLUMN 3 */
-    "vtex.menu@2.x:menu#marcas-column-4": {
+    "vtex.menu@2.x:menu#repuestos-column-4": {
         "props": {
           "blockClass": "categories"
         },
         "children": [
-          "vtex.menu@2.x:menu#submenu-marcas-4"
+          "menu-item#repuestos-4",
+          "vtex.menu@2.x:menu#submenu-repuestos-4"
         ]
       },
-      "vtex.menu@2.x:menu#submenu-marcas-4": {
+      "vtex.menu@2.x:menu#submenu-repuestos-4": {
         "props": {
           "blockClass": "custom-dropdown-submenu",
           "items": [
             {
-              "id": "marcas-4",
+              "id": "repuestos-4",
               "type": "custom",
               "iconId": null,
               "highlight": false,
@@ -490,7 +549,7 @@
               }
             },
             {
-                "id": "marcas-4",
+                "id": "repuestos-4",
                 "type": "custom",
                 "iconId": null,
                 "highlight": false,
@@ -503,7 +562,7 @@
                 }
             },
             {
-                "id": "marcas-4",
+                "id": "repuestos-4",
                 "type": "custom",
                 "iconId": null,
                 "highlight": false,
@@ -516,7 +575,7 @@
                 }
             },
             {
-                "id": "marcas-4",
+                "id": "repuestos-4",
                 "type": "custom",
                 "iconId": null,
                 "highlight": false,
@@ -529,7 +588,7 @@
                 }
             },
             {
-                "id": "marcas-4",
+                "id": "repuestos-4",
                 "type": "custom",
                 "iconId": null,
                 "highlight": false,
@@ -542,7 +601,7 @@
                 }
             },
             {
-                "id": "marcas-4",
+                "id": "repuestos-4",
                 "type": "custom",
                 "iconId": null,
                 "highlight": false,
@@ -555,7 +614,7 @@
                 }
             },
             {
-                "id": "marcas-4",
+                "id": "repuestos-4",
                 "type": "custom",
                 "iconId": null,
                 "highlight": false,
@@ -568,7 +627,7 @@
                 }
             },
             {
-                "id": "marcas-4",
+                "id": "repuestos-4",
                 "type": "custom",
                 "iconId": null,
                 "highlight": false,
@@ -581,7 +640,7 @@
                 }
             },
             {
-                "id": "marcas-4",
+                "id": "repuestos-4",
                 "type": "custom",
                 "iconId": null,
                 "highlight": false,
@@ -594,7 +653,7 @@
                 }
             },
             {
-                "id": "marcas-4",
+                "id": "repuestos-4",
                 "type": "custom",
                 "iconId": null,
                 "highlight": false,
@@ -607,23 +666,40 @@
                 }
             }
           ]
+        }
+      },
+      "menu-item#repuestos-4": {
+        "props": {
+          "blockClass": "category",
+          "id": "repuestos-4",
+          "type": "custom",
+    
+          "itemProps": {
+            //"categoryId": 1,
+            "text": "Titulo categoria",
+            "tagTitle": "Titulo categoria",
+            "type": "internal",
+            "noFollow": false,
+            "href": "#"
+          }
         }
       },
     /* COLUMN 3 */
-    "vtex.menu@2.x:menu#marcas-column-5": {
+    "vtex.menu@2.x:menu#repuestos-column-5": {
         "props": {
           "blockClass": "categories"
         },
         "children": [
-          "vtex.menu@2.x:menu#submenu-marcas-5"
+          "menu-item#repuestos-5",
+          "vtex.menu@2.x:menu#submenu-repuestos-5"
         ]
       },
-      "vtex.menu@2.x:menu#submenu-marcas-5": {
+      "vtex.menu@2.x:menu#submenu-repuestos-5": {
         "props": {
           "blockClass": "custom-dropdown-submenu",
           "items": [
             {
-              "id": "marcas-5",
+              "id": "repuestos-5",
               "type": "custom",
               "iconId": null,
               "highlight": false,
@@ -636,7 +712,7 @@
               }
             },
             {
-                "id": "marcas-5",
+                "id": "repuestos-5",
                 "type": "custom",
                 "iconId": null,
                 "highlight": false,
@@ -649,7 +725,7 @@
                 }
             },
             {
-                "id": "marcas-5",
+                "id": "repuestos-5",
                 "type": "custom",
                 "iconId": null,
                 "highlight": false,
@@ -662,7 +738,7 @@
                 }
             },
             {
-                "id": "marcas-5",
+                "id": "repuestos-5",
                 "type": "custom",
                 "iconId": null,
                 "highlight": false,
@@ -675,7 +751,7 @@
                 }
             },
             {
-                "id": "marcas-5",
+                "id": "repuestos-5",
                 "type": "custom",
                 "iconId": null,
                 "highlight": false,
@@ -688,7 +764,7 @@
                 }
             },
             {
-                "id": "marcas-5",
+                "id": "repuestos-5",
                 "type": "custom",
                 "iconId": null,
                 "highlight": false,
@@ -701,7 +777,7 @@
                 }
             },
             {
-                "id": "marcas-5",
+                "id": "repuestos-5",
                 "type": "custom",
                 "iconId": null,
                 "highlight": false,
@@ -714,7 +790,7 @@
                 }
             },
             {
-                "id": "marcas-5",
+                "id": "repuestos-5",
                 "type": "custom",
                 "iconId": null,
                 "highlight": false,
@@ -727,7 +803,7 @@
                 }
             },
             {
-                "id": "marcas-5",
+                "id": "repuestos-5",
                 "type": "custom",
                 "iconId": null,
                 "highlight": false,
@@ -740,7 +816,7 @@
                 }
             },
             {
-                "id": "marcas-5",
+                "id": "repuestos-5",
                 "type": "custom",
                 "iconId": null,
                 "highlight": false,
@@ -755,296 +831,20 @@
           ]
         }
       },
-    /* COLUMN 3 */
-    "vtex.menu@2.x:menu#marcas-column-6": {
+      "menu-item#repuestos-5": {
         "props": {
-          "blockClass": "categories"
-        },
-        "children": [
-          "vtex.menu@2.x:menu#submenu-marcas-6"
-        ]
-      },
-      "vtex.menu@2.x:menu#submenu-marcas-6": {
-        "props": {
-          "blockClass": "custom-dropdown-submenu",
-          "items": [
-            {
-              "id": "marcas-6",
-              "type": "custom",
-              "iconId": null,
-              "highlight": false,
-              "itemProps": {
-                "type": "internal",
-                "href": "#",
-                "noFollow": false,
-                "text": "Categoria",
-                "tagTitle": "Categoria"
-              }
-            },
-            {
-                "id": "marcas-6",
-                "type": "custom",
-                "iconId": null,
-                "highlight": false,
-                "itemProps": {
-                  "type": "internal",
-                  "href": "#",
-                  "noFollow": false,
-                  "text": "Categoria",
-                  "tagTitle": "Categoria"
-                }
-            },
-            {
-                "id": "marcas-6",
-                "type": "custom",
-                "iconId": null,
-                "highlight": false,
-                "itemProps": {
-                  "type": "internal",
-                  "href": "#",
-                  "noFollow": false,
-                  "text": "Categoria",
-                  "tagTitle": "Categoria"
-                }
-            },
-            {
-                "id": "marcas-6",
-                "type": "custom",
-                "iconId": null,
-                "highlight": false,
-                "itemProps": {
-                  "type": "internal",
-                  "href": "#",
-                  "noFollow": false,
-                  "text": "Categoria",
-                  "tagTitle": "Categoria"
-                }
-            },
-            {
-                "id": "marcas-6",
-                "type": "custom",
-                "iconId": null,
-                "highlight": false,
-                "itemProps": {
-                  "type": "internal",
-                  "href": "#",
-                  "noFollow": false,
-                  "text": "Categoria",
-                  "tagTitle": "Categoria"
-                }
-            },
-            {
-                "id": "marcas-6",
-                "type": "custom",
-                "iconId": null,
-                "highlight": false,
-                "itemProps": {
-                  "type": "internal",
-                  "href": "#",
-                  "noFollow": false,
-                  "text": "Categoria",
-                  "tagTitle": "Categoria"
-                }
-            },
-            {
-                "id": "marcas-6",
-                "type": "custom",
-                "iconId": null,
-                "highlight": false,
-                "itemProps": {
-                  "type": "internal",
-                  "href": "#",
-                  "noFollow": false,
-                  "text": "Categoria",
-                  "tagTitle": "Categoria"
-                }
-            },
-            {
-                "id": "marcas-6",
-                "type": "custom",
-                "iconId": null,
-                "highlight": false,
-                "itemProps": {
-                  "type": "internal",
-                  "href": "#",
-                  "noFollow": false,
-                  "text": "Categoria",
-                  "tagTitle": "Categoria"
-                }
-            },
-            {
-                "id": "marcas-6",
-                "type": "custom",
-                "iconId": null,
-                "highlight": false,
-                "itemProps": {
-                  "type": "internal",
-                  "href": "#",
-                  "noFollow": false,
-                  "text": "Categoria",
-                  "tagTitle": "Categoria"
-                }
-            },
-            {
-                "id": "marcas-6",
-                "type": "custom",
-                "iconId": null,
-                "highlight": false,
-                "itemProps": {
-                  "type": "internal",
-                  "href": "#",
-                  "noFollow": false,
-                  "text": "Categoria",
-                  "tagTitle": "Categoria"
-                }
-            }
-          ]
-        }
-      },
-      /* COLUMN 3 */
-    "vtex.menu@2.x:menu#marcas-column-7": {
-        "props": {
-          "blockClass": "categories"
-        },
-        "children": [
-          "vtex.menu@2.x:menu#submenu-marcas-7"
-        ]
-      },
-      "vtex.menu@2.x:menu#submenu-marcas-7": {
-        "props": {
-          "blockClass": "custom-dropdown-submenu",
-          "items": [
-            {
-              "id": "marcas-7",
-              "type": "custom",
-              "iconId": null,
-              "highlight": false,
-              "itemProps": {
-                "type": "internal",
-                "href": "#",
-                "noFollow": false,
-                "text": "Categoria",
-                "tagTitle": "Categoria"
-              }
-            },
-            {
-                "id": "marcas-7",
-                "type": "custom",
-                "iconId": null,
-                "highlight": false,
-                "itemProps": {
-                  "type": "internal",
-                  "href": "#",
-                  "noFollow": false,
-                  "text": "Categoria",
-                  "tagTitle": "Categoria"
-                }
-            },
-            {
-                "id": "marcas-7",
-                "type": "custom",
-                "iconId": null,
-                "highlight": false,
-                "itemProps": {
-                  "type": "internal",
-                  "href": "#",
-                  "noFollow": false,
-                  "text": "Categoria",
-                  "tagTitle": "Categoria"
-                }
-            },
-            {
-                "id": "marcas-7",
-                "type": "custom",
-                "iconId": null,
-                "highlight": false,
-                "itemProps": {
-                  "type": "internal",
-                  "href": "#",
-                  "noFollow": false,
-                  "text": "Categoria",
-                  "tagTitle": "Categoria"
-                }
-            },
-            {
-                "id": "marcas-7",
-                "type": "custom",
-                "iconId": null,
-                "highlight": false,
-                "itemProps": {
-                  "type": "internal",
-                  "href": "#",
-                  "noFollow": false,
-                  "text": "Categoria",
-                  "tagTitle": "Categoria"
-                }
-            },
-            {
-                "id": "marcas-7",
-                "type": "custom",
-                "iconId": null,
-                "highlight": false,
-                "itemProps": {
-                  "type": "internal",
-                  "href": "#",
-                  "noFollow": false,
-                  "text": "Categoria",
-                  "tagTitle": "Categoria"
-                }
-            },
-            {
-                "id": "marcas-7",
-                "type": "custom",
-                "iconId": null,
-                "highlight": false,
-                "itemProps": {
-                  "type": "internal",
-                  "href": "#",
-                  "noFollow": false,
-                  "text": "Categoria",
-                  "tagTitle": "Categoria"
-                }
-            },
-            {
-                "id": "marcas-7",
-                "type": "custom",
-                "iconId": null,
-                "highlight": false,
-                "itemProps": {
-                  "type": "internal",
-                  "href": "#",
-                  "noFollow": false,
-                  "text": "Categoria",
-                  "tagTitle": "Categoria"
-                }
-            },
-            {
-                "id": "marcas-7",
-                "type": "custom",
-                "iconId": null,
-                "highlight": false,
-                "itemProps": {
-                  "type": "internal",
-                  "href": "#",
-                  "noFollow": false,
-                  "text": "Categoria",
-                  "tagTitle": "Categoria"
-                }
-            },
-            {
-                "id": "marcas-7",
-                "type": "custom",
-                "iconId": null,
-                "highlight": false,
-                "itemProps": {
-                  "type": "internal",
-                  "href": "#",
-                  "noFollow": false,
-                  "text": "Categoria",
-                  "tagTitle": "Categoria"
-                }
-            }
-          ]
+          "blockClass": "category",
+          "id": "repuestos-5",
+          "type": "custom",
+    
+          "itemProps": {
+            //"categoryId": 1,
+            "text": "Titulo categoria",
+            "tagTitle": "Titulo categoria",
+            "type": "internal",
+            "noFollow": false,
+            "href": "#"
+          }
         }
       }
   }

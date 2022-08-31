@@ -1,0 +1,522 @@
+{
+    "vtex.menu@2.x:submenu#herramientas": {
+      "children": ["flex-layout.row#herramientas", "image#herramientas-banner"],
+      "props": {
+        "blockClass": "submenu"
+      }
+    },
+  
+    "flex-layout.row#herramientas": {
+      "props": {
+        "blockClass": "categories-wrapper",
+        "colSizing": "auto",
+        "colGap": 3
+      },
+  
+      "children": [
+        "vtex.menu@2.x:menu#herramientas-column-1",
+        "vtex.menu@2.x:menu#herramientas-column-2",
+        "vtex.menu@2.x:menu#herramientas-column-3"
+      ]
+    },
+  
+    /* BANNER MENU */
+    "image#herramientas-banner": {
+      "props": {
+        "blockClass": "submenu-banner",
+        "src": "https://placehold.jp/430x240.png",
+        "link": true
+      }
+    },
+  
+    /* COLUMN 1 */
+    "vtex.menu@2.x:menu#herramientas-column-1": {
+      "props": {
+        "blockClass": "categories"
+      },
+      "children": [
+        "menu-item#herramientas-1",
+        "vtex.menu@2.x:menu#submenu-herramientas-1"
+      ]
+    },
+    "vtex.menu@2.x:menu#submenu-herramientas-1": {
+      "props": {
+        "blockClass": "custom-dropdown-submenu",
+        "items": [
+          {
+            "id": "herramientas-1",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "/herramientas",
+              "noFollow": false,
+              "text": "Herramientas",
+              "tagTitle": "Categoria"
+            }
+          },
+          {
+            "id": "herramientas-1",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "noFollow": false,
+              "text": "Categoria",
+              "tagTitle": "Categoria"
+            }
+          },
+          {
+            "id": "herramientas-1",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "noFollow": false,
+              "text": "Categoria",
+              "tagTitle": "Categoria"
+            }
+          },
+          {
+            "id": "herramientas-1",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "noFollow": false,
+              "text": "Categoria",
+              "tagTitle": "Categoria"
+            }
+          },
+          {
+            "id": "herramientas-1",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "noFollow": false,
+              "text": "Categoria",
+              "tagTitle": "Categoria"
+            }
+          },
+          {
+            "id": "herramientas-1",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "noFollow": false,
+              "text": "Categoria",
+              "tagTitle": "Categoria"
+            }
+          },
+          {
+            "id": "herramientas-1",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "noFollow": false,
+              "text": "Categoria",
+              "tagTitle": "Categoria"
+            }
+          },
+          {
+            "id": "herramientas-1",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "noFollow": false,
+              "text": "Categoria",
+              "tagTitle": "Categoria"
+            }
+          },
+          {
+            "id": "herramientas-1",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "noFollow": false,
+              "text": "Categoria",
+              "tagTitle": "Categoria"
+            }
+          },
+          {
+            "id": "herramientas-1",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "noFollow": false,
+              "text": "Categoria",
+              "tagTitle": "Categoria"
+            }
+          }
+        ]
+      }
+    },
+    "menu-item#herramientas-1": {
+      "props": {
+        "blockClass": "category",
+        "id": "herramientas-1",
+        "type": "custom",
+  
+        "itemProps": {
+          //"categoryId": 1,
+          "text": "Titulo categoria",
+          "tagTitle": "Titulo categoria",
+          "type": "internal",
+          "noFollow": false,
+          "href": "#"
+        }
+      }
+    },
+  
+    /* COLUMN 2 */
+    "vtex.menu@2.x:menu#herramientas-column-2": {
+        "props": {
+          "blockClass": "categories"
+        },
+        "children": [
+          "menu-item#herramientas-2",
+          "vtex.menu@2.x:menu#submenu-herramientas-2"
+        ]
+      },
+      "vtex.menu@2.x:menu#submenu-herramientas-2": {
+        "props": {
+          "blockClass": "custom-dropdown-submenu",
+          "items": [
+            {
+              "id": "herramientas-2",
+              "type": "custom",
+              "iconId": null,
+              "highlight": false,
+              "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "noFollow": false,
+                "text": "Categoria",
+                "tagTitle": "Categoria"
+              }
+            },
+            {
+                "id": "herramientas-2",
+                "type": "custom",
+                "iconId": null,
+                "highlight": false,
+                "itemProps": {
+                  "type": "internal",
+                  "href": "#",
+                  "noFollow": false,
+                  "text": "Categoria",
+                  "tagTitle": "Categoria"
+                }
+            },
+            {
+                "id": "herramientas-2",
+                "type": "custom",
+                "iconId": null,
+                "highlight": false,
+                "itemProps": {
+                  "type": "internal",
+                  "href": "#",
+                  "noFollow": false,
+                  "text": "Categoria",
+                  "tagTitle": "Categoria"
+                }
+            },
+            {
+                "id": "herramientas-2",
+                "type": "custom",
+                "iconId": null,
+                "highlight": false,
+                "itemProps": {
+                  "type": "internal",
+                  "href": "#",
+                  "noFollow": false,
+                  "text": "Categoria",
+                  "tagTitle": "Categoria"
+                }
+            },
+            {
+                "id": "herramientas-2",
+                "type": "custom",
+                "iconId": null,
+                "highlight": false,
+                "itemProps": {
+                  "type": "internal",
+                  "href": "#",
+                  "noFollow": false,
+                  "text": "Categoria",
+                  "tagTitle": "Categoria"
+                }
+            },
+            {
+                "id": "herramientas-2",
+                "type": "custom",
+                "iconId": null,
+                "highlight": false,
+                "itemProps": {
+                  "type": "internal",
+                  "href": "#",
+                  "noFollow": false,
+                  "text": "Categoria",
+                  "tagTitle": "Categoria"
+                }
+            },
+            {
+                "id": "herramientas-2",
+                "type": "custom",
+                "iconId": null,
+                "highlight": false,
+                "itemProps": {
+                  "type": "internal",
+                  "href": "#",
+                  "noFollow": false,
+                  "text": "Categoria",
+                  "tagTitle": "Categoria"
+                }
+            },
+            {
+                "id": "herramientas-2",
+                "type": "custom",
+                "iconId": null,
+                "highlight": false,
+                "itemProps": {
+                  "type": "internal",
+                  "href": "#",
+                  "noFollow": false,
+                  "text": "Categoria",
+                  "tagTitle": "Categoria"
+                }
+            },
+            {
+                "id": "herramientas-2",
+                "type": "custom",
+                "iconId": null,
+                "highlight": false,
+                "itemProps": {
+                  "type": "internal",
+                  "href": "#",
+                  "noFollow": false,
+                  "text": "Categoria",
+                  "tagTitle": "Categoria"
+                }
+            },
+            {
+                "id": "herramientas-2",
+                "type": "custom",
+                "iconId": null,
+                "highlight": false,
+                "itemProps": {
+                  "type": "internal",
+                  "href": "#",
+                  "noFollow": false,
+                  "text": "Categoria",
+                  "tagTitle": "Categoria"
+                }
+            }
+          ]
+        }
+      },
+      "menu-item#herramientas-2": {
+        "props": {
+          "blockClass": "category",
+          "id": "herramientas-2",
+          "type": "custom",
+    
+          "itemProps": {
+            //"categoryId": 1,
+            "text": "Titulo categoria",
+            "tagTitle": "Titulo categoria",
+            "type": "internal",
+            "noFollow": false,
+            "href": "#"
+          }
+        }
+      },
+    /* COLUMN 3 */
+    "vtex.menu@2.x:menu#herramientas-column-3": {
+        "props": {
+          "blockClass": "categories"
+        },
+        "children": [
+          "menu-item#herramientas-3",
+          "vtex.menu@2.x:menu#submenu-herramientas-3"
+        ]
+      },
+      "vtex.menu@2.x:menu#submenu-herramientas-3": {
+        "props": {
+          "blockClass": "custom-dropdown-submenu",
+          "items": [
+            {
+              "id": "herramientas-3",
+              "type": "custom",
+              "iconId": null,
+              "highlight": false,
+              "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "noFollow": false,
+                "text": "Categoria",
+                "tagTitle": "Categoria"
+              }
+            },
+            {
+                "id": "herramientas-3",
+                "type": "custom",
+                "iconId": null,
+                "highlight": false,
+                "itemProps": {
+                  "type": "internal",
+                  "href": "#",
+                  "noFollow": false,
+                  "text": "Categoria",
+                  "tagTitle": "Categoria"
+                }
+            },
+            {
+                "id": "herramientas-3",
+                "type": "custom",
+                "iconId": null,
+                "highlight": false,
+                "itemProps": {
+                  "type": "internal",
+                  "href": "#",
+                  "noFollow": false,
+                  "text": "Categoria",
+                  "tagTitle": "Categoria"
+                }
+            },
+            {
+                "id": "herramientas-3",
+                "type": "custom",
+                "iconId": null,
+                "highlight": false,
+                "itemProps": {
+                  "type": "internal",
+                  "href": "#",
+                  "noFollow": false,
+                  "text": "Categoria",
+                  "tagTitle": "Categoria"
+                }
+            },
+            {
+                "id": "herramientas-3",
+                "type": "custom",
+                "iconId": null,
+                "highlight": false,
+                "itemProps": {
+                  "type": "internal",
+                  "href": "#",
+                  "noFollow": false,
+                  "text": "Categoria",
+                  "tagTitle": "Categoria"
+                }
+            },
+            {
+                "id": "herramientas-3",
+                "type": "custom",
+                "iconId": null,
+                "highlight": false,
+                "itemProps": {
+                  "type": "internal",
+                  "href": "#",
+                  "noFollow": false,
+                  "text": "Categoria",
+                  "tagTitle": "Categoria"
+                }
+            },
+            {
+                "id": "herramientas-3",
+                "type": "custom",
+                "iconId": null,
+                "highlight": false,
+                "itemProps": {
+                  "type": "internal",
+                  "href": "#",
+                  "noFollow": false,
+                  "text": "Categoria",
+                  "tagTitle": "Categoria"
+                }
+            },
+            {
+                "id": "herramientas-3",
+                "type": "custom",
+                "iconId": null,
+                "highlight": false,
+                "itemProps": {
+                  "type": "internal",
+                  "href": "#",
+                  "noFollow": false,
+                  "text": "Categoria",
+                  "tagTitle": "Categoria"
+                }
+            },
+            {
+                "id": "herramientas-3",
+                "type": "custom",
+                "iconId": null,
+                "highlight": false,
+                "itemProps": {
+                  "type": "internal",
+                  "href": "#",
+                  "noFollow": false,
+                  "text": "Categoria",
+                  "tagTitle": "Categoria"
+                }
+            },
+            {
+                "id": "herramientas-3",
+                "type": "custom",
+                "iconId": null,
+                "highlight": false,
+                "itemProps": {
+                  "type": "internal",
+                  "href": "#",
+                  "noFollow": false,
+                  "text": "Categoria",
+                  "tagTitle": "Categoria"
+                }
+            }
+          ]
+        }
+      },
+      "menu-item#herramientas-3": {
+        "props": {
+          "blockClass": "category",
+          "id": "herramientas-3",
+          "type": "custom",
+    
+          "itemProps": {
+            //"categoryId": 1,
+            "text": "Titulo categoria",
+            "tagTitle": "Titulo categoria",
+            "type": "internal",
+            "noFollow": false,
+            "href": "#"
+          }
+        }
+      }
+  }

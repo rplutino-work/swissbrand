@@ -10,12 +10,16 @@
 
 .menuContainer--departments {
   align-items: stretch;
-  justify-content: space-between;
+  justify-content: center;
   height: 100%;
 }
 
 .menuContainer--mobile-menu {
   padding: 15px;
+}
+
+.menuItem--department {
+  margin: 0 10px;
 }
 
 .styledLinkContainer--department,
@@ -129,16 +133,6 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .menuContainer--custom-dropdown-submenu {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 20px;
-    grid-template-rows: repeat(9, 1fr);
-    grid-auto-flow: column;
-  }
-  .menuContainer--custom-dropdown-submenu-dropdown {
-    display: grid;
-  }
 }
 
 .styledLinkContainer--custom-dropdown-submenu-links-heading,
@@ -438,6 +432,7 @@
 
 .menuItem--see-all {
   order: 2;
+  margin: 0;
 }
 
 @media only screen and (min-width: 1026px) {

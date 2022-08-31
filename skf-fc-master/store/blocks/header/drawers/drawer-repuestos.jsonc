@@ -1,0 +1,302 @@
+{
+    "drawer#repuestos": {
+      "props": {
+        "blockClass": ["mobile-menu", "secondary-tab"]
+      },
+  
+      "blocks": ["drawer-trigger#repuestos"],
+      "children": ["menu#repuestos"]
+    },
+  
+    "drawer-trigger#repuestos": {
+      "children": ["rich-text#repuestos"]
+    },
+  
+    "rich-text#repuestos": {
+      "props": {
+        "blockClass": "mobile-menu-item",
+        "text": "repuestos"
+      }
+    },
+  
+    "menu#repuestos": {
+      "props": {
+        "blockClass": "mobile-menu",
+        "orientation": "vertical"
+      },
+  
+      "children": [
+        "drawer#repuestos-1",
+        "drawer#repuestos-2",
+        "drawer#repuestos-3",
+        "drawer#repuestos-4",
+        "drawer#repuestos-5",
+        "menu-item#repuestos-see-all"
+      ]
+    },
+  
+    "drawer#repuestos-1": {
+      "props": {
+        "blockClass": ["mobile-menu", "secondary-tab"]
+      },
+  
+      "blocks": ["drawer-trigger#repuestos-1"],
+      "children": ["menu#repuestos-1"]
+    },
+  
+    "drawer-trigger#repuestos-1": {
+      "children": ["rich-text#repuestos-1"]
+    },
+  
+    "rich-text#repuestos-1": {
+      "props": {
+        "blockClass": "mobile-menu-item",
+        "text": "1"
+      }
+    },
+  
+    "menu#repuestos-1": {
+      "props": {
+        "blockClass": "mobile-menu",
+        "orientation": "vertical"
+      },
+  
+      "children": [
+        "vtex.menu@2.x:menu#submenu-repuestos-1",
+        "menu-item#repuestos-1-see-all"
+      ]
+    },
+  
+    "drawer#repuestos-2": {
+      "props": {
+        "blockClass": ["mobile-menu", "secondary-tab"]
+      },
+  
+      "blocks": ["drawer-trigger#repuestos-2"],
+      "children": ["menu#repuestos-2"]
+    },
+  
+    "drawer-trigger#repuestos-2": {
+      "children": ["rich-text#repuestos-2"]
+    },
+  
+    "rich-text#repuestos-2": {
+      "props": {
+        "blockClass": "mobile-menu-item",
+        "text": "2"
+      }
+    },
+  
+    "menu#repuestos-2": {
+      "props": {
+        "blockClass": "mobile-menu",
+        "orientation": "vertical"
+      },
+  
+      "children": [
+        "vtex.menu@2.x:menu#submenu-repuestos-2",
+        "menu-item#repuestos-2-see-all"
+      ]
+    },
+
+    "drawer#repuestos-3": {
+        "props": {
+          "blockClass": ["mobile-menu", "secondary-tab"]
+        },
+    
+        "blocks": ["drawer-trigger#repuestos-3"],
+        "children": ["menu#repuestos-3"]
+      },
+    
+      "drawer-trigger#repuestos-3": {
+        "children": ["rich-text#repuestos-3"]
+      },
+    
+      "rich-text#repuestos-3": {
+        "props": {
+          "blockClass": "mobile-menu-item",
+          "text": "2"
+        }
+      },
+    
+      "menu#repuestos-3": {
+        "props": {
+          "blockClass": "mobile-menu",
+          "orientation": "vertical"
+        },
+    
+        "children": [
+          "vtex.menu@2.x:menu#submenu-repuestos-3",
+          "menu-item#repuestos-3-see-all"
+        ]
+      },
+
+      "drawer#repuestos-4": {
+        "props": {
+          "blockClass": ["mobile-menu", "secondary-tab"]
+        },
+    
+        "blocks": ["drawer-trigger#repuestos-4"],
+        "children": ["menu#repuestos-4"]
+      },
+    
+      "drawer-trigger#repuestos-4": {
+        "children": ["rich-text#repuestos-4"]
+      },
+    
+      "rich-text#repuestos-4": {
+        "props": {
+          "blockClass": "mobile-menu-item",
+          "text": "2"
+        }
+      },
+    
+      "menu#repuestos-4": {
+        "props": {
+          "blockClass": "mobile-menu",
+          "orientation": "vertical"
+        },
+    
+        "children": [
+          "vtex.menu@2.x:menu#submenu-repuestos-4",
+          "menu-item#repuestos-4-see-all"
+        ]
+      },
+
+      "drawer#repuestos-5": {
+        "props": {
+          "blockClass": ["mobile-menu", "secondary-tab"]
+        },
+    
+        "blocks": ["drawer-trigger#repuestos-5"],
+        "children": ["menu#repuestos-5"]
+      },
+    
+      "drawer-trigger#repuestos-5": {
+        "children": ["rich-text#repuestos-5"]
+      },
+    
+      "rich-text#repuestos-5": {
+        "props": {
+          "blockClass": "mobile-menu-item",
+          "text": "2"
+        }
+      },
+    
+      "menu#repuestos-5": {
+        "props": {
+          "blockClass": "mobile-menu",
+          "orientation": "vertical"
+        },
+    
+        "children": [
+          "vtex.menu@2.x:menu#submenu-repuestos-5",
+          "menu-item#repuestos-5-see-all"
+        ]
+      },
+
+  
+    //ver todo
+    "menu-item#repuestos-see-all": {
+      "props": {
+        "blockClass": ["department", "see-all"],
+        "id": "repuestos-see-all",
+        "type": "custom",
+  
+        "itemProps": {
+          "categoryId": 2,
+          "type": "internal",
+          "noFollow": true,
+          "href": "/repuestos",
+          "tagTitle": "ver todo repuestos",
+          "text": "ver todo repuestos"
+        }
+      }
+    },
+  
+    "menu-item#repuestos-1-see-all": {
+      "props": {
+        "blockClass": ["department", "see-all"],
+        "id": "repuestos-1-see-all",
+        "type": "custom",
+  
+        "itemProps": {
+          "categoryId": 7,
+          "href": "/repuestos/1",
+          "type": "internal",
+          "noFollow": true,
+          "tagTitle": "ver todo 1",
+          "text": "ver todo 1"
+        }
+      }
+    },
+  
+    "menu-item#repuestos-2-see-all": {
+      "props": {
+        "blockClass": ["department", "see-all"],
+        "id": "2-see-all",
+        "type": "custom",
+  
+        "itemProps": {
+          "categoryId": 8,
+          "type": "internal",
+          "href": "/repuestos/2",
+          "noFollow": true,
+          "tagTitle": "ver todo 2",
+          "text": "ver todo 2"
+        }
+      }
+    },
+
+    "menu-item#repuestos-3-see-all": {
+        "props": {
+          "blockClass": ["department", "see-all"],
+          "id": "2-see-all",
+          "type": "custom",
+    
+          "itemProps": {
+            "categoryId": 8,
+            "type": "internal",
+            "href": "/repuestos/2",
+            "noFollow": true,
+            "tagTitle": "ver todo 3",
+            "text": "ver todo 3"
+          }
+        }
+      },
+
+      "menu-item#repuestos-4-see-all": {
+        "props": {
+          "blockClass": ["department", "see-all"],
+          "id": "2-see-all",
+          "type": "custom",
+    
+          "itemProps": {
+            "categoryId": 8,
+            "type": "internal",
+            "href": "/repuestos/2",
+            "noFollow": true,
+            "tagTitle": "ver todo 2",
+            "text": "ver todo 2"
+          }
+        }
+      },
+
+      "menu-item#repuestos-5-see-all": {
+        "props": {
+          "blockClass": ["department", "see-all"],
+          "id": "2-see-all",
+          "type": "custom",
+    
+          "itemProps": {
+            "categoryId": 8,
+            "type": "internal",
+            "href": "/repuestos/2",
+            "noFollow": true,
+            "tagTitle": "ver todo 2",
+            "text": "ver todo 2"
+          }
+        }
+      }
+  }
+  

@@ -96,4 +96,8 @@
   background: #000000;
 }
 
+.childrenContainer--mobile-menu {
+  flex-direction: column;
+}
+
 /**/

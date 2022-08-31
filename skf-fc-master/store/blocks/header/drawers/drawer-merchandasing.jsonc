@@ -1,0 +1,52 @@
+{
+    "drawer#merchandasing": {
+      "props": {
+        "blockClass": ["mobile-menu", "secondary-tab"]
+      },
+  
+      "blocks": ["drawer-trigger#merchandasing"],
+      "children": ["menu#merchandasing-mobile"]
+    },
+  
+    "drawer-trigger#merchandasing": {
+      "children": ["rich-text#merchandasing"]
+    },
+  
+    "rich-text#merchandasing": {
+      "props": {
+        "blockClass": "mobile-menu-item",
+        "text": "merchandasing"
+      }
+    },
+  
+    "menu#merchandasing-mobile": {
+      "props": {
+        "blockClass": "mobile-menu",
+        "orientation": "vertical"
+      },
+  
+      "children": [
+        "vtex.menu@2.x:menu#merchandasing",
+        "menu-item#merchandasing-see-all"
+      ]
+    },
+  
+    //ver todo
+    "menu-item#merchandasing-see-all": {
+      "props": {
+        "blockClass": ["department", "see-all"],
+        "id": "merchandasing-see-all",
+        "type": "custom",
+  
+        "itemProps": {
+          "categoryId": 2,
+          "type": "internal",
+          "noFollow": true,
+          "href": "/merchandasing",
+          "tagTitle": "ver todo merchandasing",
+          "text": "ver todo merchandasing"
+        }
+      }
+    }
+  }
+  

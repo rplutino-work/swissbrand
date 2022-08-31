@@ -418,7 +418,7 @@
 /* MENU */
 .flexRow--categories-wrapper
   :global(.vtex-flex-layout-0-x-stretchChildrenWidth):not(:first-child) {
-    padding: 0 10px
+    padding: 0 30px
 }
 .flexCol--subcategory-column01 {
   grid-area: column01;

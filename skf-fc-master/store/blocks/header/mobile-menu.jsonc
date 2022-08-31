@@ -17,13 +17,10 @@
   },
   "menu#mobile-menu": {
     "children": [
-      "drawer#estandar",
-      "drawer#estandar",
-      "drawer#estandar",
-      "drawer#estandar",
-      "drawer#estandar",
-      "drawer#estandar",
-      "drawer#estandar"
+      "drawer#repuestos",
+      "drawer#marcas",
+      "drawer#herramientas",
+      "drawer#merchandasing"
     ],
     "props": {
       "orientation": "vertical",

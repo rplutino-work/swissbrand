@@ -1,0 +1,201 @@
+{
+    "drawer#herramientas": {
+      "props": {
+        "blockClass": ["mobile-menu", "secondary-tab"]
+      },
+  
+      "blocks": ["drawer-trigger#herramientas"],
+      "children": ["menu#herramientas"]
+    },
+  
+    "drawer-trigger#herramientas": {
+      "children": ["rich-text#herramientas"]
+    },
+  
+    "rich-text#herramientas": {
+      "props": {
+        "blockClass": "mobile-menu-item",
+        "text": "herramientas"
+      }
+    },
+  
+    "menu#herramientas": {
+      "props": {
+        "blockClass": "mobile-menu",
+        "orientation": "vertical"
+      },
+  
+      "children": [
+        "drawer#herramientas-1",
+        "drawer#herramientas-2",
+        "drawer#herramientas-3",
+        "menu-item#herramientas-see-all"
+      ]
+    },
+  
+    "drawer#herramientas-1": {
+      "props": {
+        "blockClass": ["mobile-menu", "secondary-tab"]
+      },
+  
+      "blocks": ["drawer-trigger#herramientas-1"],
+      "children": ["menu#herramientas-1"]
+    },
+  
+    "drawer-trigger#herramientas-1": {
+      "children": ["rich-text#herramientas-1"]
+    },
+  
+    "rich-text#herramientas-1": {
+      "props": {
+        "blockClass": "mobile-menu-item",
+        "text": "1"
+      }
+    },
+  
+    "menu#herramientas-1": {
+      "props": {
+        "blockClass": "mobile-menu",
+        "orientation": "vertical"
+      },
+  
+      "children": [
+        "vtex.menu@2.x:menu#submenu-herramientas-1",
+        "menu-item#herramientas-1-see-all"
+      ]
+    },
+  
+    "drawer#herramientas-2": {
+      "props": {
+        "blockClass": ["mobile-menu", "secondary-tab"]
+      },
+  
+      "blocks": ["drawer-trigger#herramientas-2"],
+      "children": ["menu#herramientas-2"]
+    },
+  
+    "drawer-trigger#herramientas-2": {
+      "children": ["rich-text#herramientas-2"]
+    },
+  
+    "rich-text#herramientas-2": {
+      "props": {
+        "blockClass": "mobile-menu-item",
+        "text": "2"
+      }
+    },
+  
+    "menu#herramientas-2": {
+      "props": {
+        "blockClass": "mobile-menu",
+        "orientation": "vertical"
+      },
+  
+      "children": [
+        "vtex.menu@2.x:menu#submenu-herramientas-2",
+        "menu-item#herramientas-2-see-all"
+      ]
+    },
+  
+    "drawer#herramientas-3": {
+        "props": {
+          "blockClass": ["mobile-menu", "secondary-tab"]
+        },
+    
+        "blocks": ["drawer-trigger#herramientas-3"],
+        "children": ["menu#herramientas-3"]
+      },
+    
+      "drawer-trigger#herramientas-3": {
+        "children": ["rich-text#herramientas-3"]
+      },
+    
+      "rich-text#herramientas-3": {
+        "props": {
+          "blockClass": "mobile-menu-item",
+          "text": "1"
+        }
+      },
+    
+      "menu#herramientas-3": {
+        "props": {
+          "blockClass": "mobile-menu",
+          "orientation": "vertical"
+        },
+    
+        "children": [
+          "vtex.menu@2.x:menu#submenu-herramientas-3",
+          "menu-item#herramientas-3-see-all"
+        ]
+      },
+
+    //ver todo
+    "menu-item#herramientas-see-all": {
+      "props": {
+        "blockClass": ["department", "see-all"],
+        "id": "herramientas-see-all",
+        "type": "custom",
+  
+        "itemProps": {
+          "categoryId": 2,
+          "type": "internal",
+          "noFollow": true,
+          "href": "/herramientas",
+          "tagTitle": "ver todo herramientas",
+          "text": "ver todo herramientas"
+        }
+      }
+    },
+  
+    "menu-item#herramientas-1-see-all": {
+      "props": {
+        "blockClass": ["department", "see-all"],
+        "id": "herramientas-1-see-all",
+        "type": "custom",
+  
+        "itemProps": {
+          "categoryId": 7,
+          "href": "/herramientas/1",
+          "type": "internal",
+          "noFollow": true,
+          "tagTitle": "ver todo 1",
+          "text": "ver todo 1"
+        }
+      }
+    },
+  
+    "menu-item#herramientas-2-see-all": {
+      "props": {
+        "blockClass": ["department", "see-all"],
+        "id": "2-see-all",
+        "type": "custom",
+  
+        "itemProps": {
+          "categoryId": 8,
+          "type": "internal",
+          "href": "/herramientas/2",
+          "noFollow": true,
+          "tagTitle": "ver todo 2",
+          "text": "ver todo 2"
+        }
+      }
+    },
+
+    "menu-item#herramientas-3-see-all": {
+        "props": {
+          "blockClass": ["department", "see-all"],
+          "id": "2-see-all",
+          "type": "custom",
+    
+          "itemProps": {
+            "categoryId": 8,
+            "type": "internal",
+            "href": "/herramientas/2",
+            "noFollow": true,
+            "tagTitle": "ver todo 2",
+            "text": "ver todo 2"
+          }
+        }
+      }
+  }
+  

@@ -1,0 +1,155 @@
+{
+    "drawer#marcas": {
+      "props": {
+        "blockClass": ["mobile-menu", "secondary-tab"]
+      },
+  
+      "blocks": ["drawer-trigger#marcas"],
+      "children": ["menu#marcas"]
+    },
+  
+    "drawer-trigger#marcas": {
+      "children": ["rich-text#marcas"]
+    },
+  
+    "rich-text#marcas": {
+      "props": {
+        "blockClass": "mobile-menu-item",
+        "text": "marcas"
+      }
+    },
+  
+    "menu#marcas": {
+      "props": {
+        "blockClass": "mobile-menu",
+        "orientation": "vertical"
+      },
+  
+      "children": [
+        "vtex.menu@2.x:menu#submenu-marcas-1",
+        "vtex.menu@2.x:menu#submenu-marcas-2",
+        "vtex.menu@2.x:menu#submenu-marcas-3",
+        "vtex.menu@2.x:menu#submenu-marcas-4",
+        "vtex.menu@2.x:menu#submenu-marcas-5",
+        "vtex.menu@2.x:menu#submenu-marcas-6",
+        "menu-item#marcas-see-all"
+      ]
+    },
+  
+    "drawer#marcas-1": {
+      "props": {
+        "blockClass": ["mobile-menu", "secondary-tab"]
+      },
+  
+      "blocks": ["drawer-trigger#marcas-1"],
+      "children": ["menu#marcas-1"]
+    },
+  
+    "drawer-trigger#marcas-1": {
+      "children": ["rich-text#marcas-1"]
+    },
+  
+    "rich-text#marcas-1": {
+      "props": {
+        "blockClass": "mobile-menu-item",
+        "text": "1"
+      }
+    },
+  
+    "menu#marcas-1": {
+      "props": {
+        "blockClass": "mobile-menu",
+        "orientation": "vertical"
+      },
+  
+      "children": [
+        "vtex.menu@2.x:menu#submenu-marcas-1",
+        "menu-item#marcas-1-see-all"
+      ]
+    },
+  
+    "drawer#marcas-2": {
+      "props": {
+        "blockClass": ["mobile-menu", "secondary-tab"]
+      },
+  
+      "blocks": ["drawer-trigger#marcas-2"],
+      "children": ["menu#marcas-2"]
+    },
+  
+    "drawer-trigger#marcas-2": {
+      "children": ["rich-text#marcas-2"]
+    },
+  
+    "rich-text#marcas-2": {
+      "props": {
+        "blockClass": "mobile-menu-item",
+        "text": "2"
+      }
+    },
+  
+    "menu#marcas-2": {
+      "props": {
+        "blockClass": "mobile-menu",
+        "orientation": "vertical"
+      },
+  
+      "children": [
+        "vtex.menu@2.x:menu#submenu-marcas-2",
+        "menu-item#marcas-2-see-all"
+      ]
+    },
+  
+    //ver todo
+    "menu-item#marcas-see-all": {
+      "props": {
+        "blockClass": ["department", "see-all"],
+        "id": "marcas-see-all",
+        "type": "custom",
+  
+        "itemProps": {
+          "categoryId": 2,
+          "type": "internal",
+          "noFollow": true,
+          "href": "/marcas",
+          "tagTitle": "ver todo marcas",
+          "text": "ver todo marcas"
+        }
+      }
+    },
+  
+    "menu-item#marcas-1-see-all": {
+      "props": {
+        "blockClass": ["department", "see-all"],
+        "id": "marcas-1-see-all",
+        "type": "custom",
+  
+        "itemProps": {
+          "categoryId": 7,
+          "href": "/marcas/1",
+          "type": "internal",
+          "noFollow": true,
+          "tagTitle": "ver todo 1",
+          "text": "ver todo 1"
+        }
+      }
+    },
+  
+    "menu-item#marcas-2-see-all": {
+      "props": {
+        "blockClass": ["department", "see-all"],
+        "id": "2-see-all",
+        "type": "custom",
+  
+        "itemProps": {
+          "categoryId": 8,
+          "type": "internal",
+          "href": "/marcas/2",
+          "noFollow": true,
+          "tagTitle": "ver todo 2",
+          "text": "ver todo 2"
+        }
+      }
+    }
+  }
+  
