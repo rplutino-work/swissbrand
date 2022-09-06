@@ -249,7 +249,7 @@
       "preventVerticalStretch": true
     },
     "children": [
-      "image#devolucion-icono",
+      "image#devolucion-icon",
       "flex-layout.col#devolucion-text"
     ]
   },
@@ -274,10 +274,10 @@
       "blockClass": "product-info-text"
     }
   },
-  "image#devolucion-icono": {
+  "image#devolucion-icon": {
     "props": {
       "width": "30px",
-      "src": "assets/svgs/skf-icon-map.svg",
+      "src": "assets/svgs/skf-icon-map-blue.svg",
       "blockClass": "product-info-icon"
     }
   },
@@ -553,7 +553,8 @@
     "props": {
       "blockClass": ["product-info-generic-image"],
       "maxHeight": 40,
-      "src": "assets/svgs/skf-icon-quality.svg"
+      "height": 40,
+      "src": "assets/svgs/skf-icon-quality-gray.svg"
     }
   },
   "flex-layout.col#product-info-generic-2": {
