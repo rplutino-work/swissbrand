@@ -122,9 +122,9 @@
   "skfarg.skf-custom-search-result:filter-navigator.v3": {
     "props": {
       "colorSpecificationName": "Color",
-      "maxItemsCategory": 15,
-      "maxItemsDepartment": 15,
-      "truncateFilters": false,
+      "maxItemsCategory": 10,
+      "maxItemsDepartment": 10,
+      "truncateFilters": true,
       "initiallyCollapsed": false
     },
     "blocks": ["skfarg.skf-custom-search-result:sidebar-close-button"]

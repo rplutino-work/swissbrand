@@ -86,6 +86,30 @@
   bottom: 5px;
 }
 
+.filterContent .seeMoreButton {
+  padding: 6px 8px!important;
+  transition: color 0.2s linear;
+  background: #0f58d6!important;
+  outline: 0;
+  line-height: 15px;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 0;
+  font-weight: 800;
+  color: #fff!important;
+  font-family: inherit;
+  transition: .3s;
+}
+.filterContent .seeMoreButton::after  {
+  content: 'Ver más';
+  font-size: 12px;
+  position: relative;
+  top: 2px;
+}
+.filterContent .seeMoreButton:hover {
+  background: #88C008 !important;
+}
+
 .filterContent--Color {
   display: grid;
   grid-template-columns: repeat(auto-fill, 16px);
