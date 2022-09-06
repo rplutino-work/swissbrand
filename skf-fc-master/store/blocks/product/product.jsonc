@@ -111,7 +111,6 @@
       "product-identifier.product",
       "flex-layout.row#product-badges",
       "flex-layout.row#product-prices",
-      "custom-price-product",
       "product-installments#product",
       "sku-selector#skf",
       "flex-layout.row#add-cart",
