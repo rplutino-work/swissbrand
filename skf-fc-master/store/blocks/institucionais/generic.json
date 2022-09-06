@@ -1,0 +1,22 @@
+{
+    "store.custom#generica": {
+        "blocks": ["flex-layout.row#breadcrumb", "flex-layout.row#generica"]
+    },
+
+    "flex-layout.row#generica": {
+        "props": {
+            "blockClass": "institutional-wrapper",
+            "colSizing": "auto"
+        },
+
+        "children": ["rich-text#generica-content"]
+    },
+
+    "rich-text#generica-content": {
+        "props": {
+            "blockClass": "institutional-content",
+            "text": "# Titulo",
+            "width": "grow"
+        }
+    }
+}
