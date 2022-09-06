@@ -541,7 +541,6 @@
 }
 .flexRowContent--shelf-product-badges :first-child {
   align-items: flex-start;
-  flex-direction: column;
 }
 .flexRow--shelf-product-bottom-badges 
   .flexRowContent--shelf-product-bottom-badges
@@ -563,11 +562,10 @@
 }
 
 .flexRow--shelf-product-bottom-badges {
-  top: 0;
+  bottom: 12px;
   padding: 0;
-  right: 0;
+  left: 0;
   width: auto;
-  left: unset;
 }
 
 .flexRowContent--shelf-prices {
@@ -1566,4 +1564,27 @@ padding: 0 15px;
   .flexRow--skf-info-home-row {
     margin: 0 15px;
   }  
+}
+
+/* CUCARDA AGOTADO */
+.flexRow--shelf-unavailable-badge-wrapper {
+  position: absolute;
+  right: 0;
+  bottom: 12px;
+}
+.flexRowContent--product-details-badges-unavailable {
+  margin: 12px 12px 12px 0px !important;
+}
+
+/* CUCARDA NUEVO */
+.flexRow--shelf-unavailable-badge-wrapper {
+  position: absolute;
+  right: 0;
+  bottom: 12px;
+}
+
+.flexRow--shelf-product-new-badges {
+  position: absolute;
+  top: 11px;
+  padding: 0;
 }

@@ -22,7 +22,9 @@
   "flex-layout.col#shelf-product-top": {
     "children": [
       "product-summary-image#shelf-product",
-      "flex-layout.row#shelf-product-bottom-badges"
+      "flex-layout.row#shelf-product-new-badges",
+      "flex-layout.row#shelf-product-bottom-badges",
+      "flex-layout.row#shelf-product-unavailable-badges"
     ]
   },
 
@@ -144,8 +146,8 @@
 
   "rich-text#agotado": {
     "props": {
-      "blockClass": "shelf-product-unavailable",
-      "text": "Producto agotado"
+      "blockClass": ["shelf-product-unavailable","shelf-product"],
+      "text": "Hasta 12 cuotas sin interés"
     }
   }
 }

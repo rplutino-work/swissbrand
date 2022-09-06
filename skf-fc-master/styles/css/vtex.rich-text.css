@@ -367,6 +367,10 @@
   letter-spacing: .5px;
 }
 
+.wrapper--skf-info-home-text {
+  height: 152px;
+}
+
 /* PRODUCT SPECIFICATION */
 .wrapper--specification-title {
   width: 100%;
@@ -380,4 +384,26 @@
   border-bottom: 1px solid #d2d2d2;
   width: 100%;
   padding-bottom: 10px;
+}
+
+/* CUCARDA AGOTADO */
+.paragraph--badge-product-unavailable {
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin: 1px 10px;
+}
+
+.wrapper--badge-product-unavailable {
+  background: #485A64;
+}
+
+.paragraph--shelf-product-unavailable {
+  text-align: left;
+  display: block;
+  font-weight: 500;
+  color: #808895;
+  font-size: 12px;
+  width: auto;
+  margin: 0;
 }

@@ -71,6 +71,27 @@
     ]
   },
 
+  "flex-layout.row#products-badges-new": {
+    "props": {
+      "colSizing": "auto",
+      "blockClass": "product-details-badges-free"
+    },
+    "children": [
+      "vtex.product-highlights@2.x:product-highlights#new"
+    ]
+  },
+
+  "flex-layout.row#products-badges-unavailable": {
+    "props": {
+      "colSizing": "auto",
+      "blockClass": "product-details-badges-unavailable"
+    },
+    "children": [
+      "condition-layout.product#availability-pdp"
+    ]
+  },
+
+
   "product-images": {
     "props": {
       "showPaginationDots": true,
@@ -104,6 +125,8 @@
     "children": [
       "flex-layout.row#products-badges-discount",
       "flex-layout.row#products-badges-free",
+      "flex-layout.row#products-badges-new",
+      "flex-layout.row#products-badges-unavailable",
       "talle-agotado"
     ],
     "props": {

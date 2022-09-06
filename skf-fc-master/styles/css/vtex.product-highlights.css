@@ -24,7 +24,7 @@
   color: #fff;
   font-size: 12px;
   font-weight: 500;
-  padding: 1px 5px;
+  padding: 1px 10px;
   margin-right: 15px;
   line-height: 16px;
   margin-top: 1px;
@@ -41,5 +41,24 @@
 }
 
 .productHighlightText--pdp-badge{
-  margin: 12px 0;
+  margin: 12px 12px 12px 0px !important;
+}
+
+/* NUEVO */
+.productHighlightText--new {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  background: #0f58d6;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 1px 10px;
+  margin-right: 15px;
+  line-height: 16px;
+  margin-top: 1px;
 }

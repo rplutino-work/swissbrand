@@ -11,19 +11,22 @@
 
   "product-list-price#product": {
     "props": {
-      "blockClass": "product"
+      "blockClass": "product",
+      "alwaysShow": true
     }
   },
 
   "product-selling-price#product": {
     "props": {
-      "blockClass": "product"
+      "blockClass": "product",
+      "alwaysShow": true
     }
   },
 
   "product-price-savings#product": {
     "props": {
-      "blockClass": "product"
+      "blockClass": "product",
+      "alwaysShow": true
     }
   },
 

@@ -1,5 +1,15 @@
 
 {
+  "flex-layout.row#shelf-product-unavailable-badges": {
+    "props": {
+      "blockClass": ["shelf-unavailable-badge-wrapper"],
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": true
+    },
+    "children": [
+      "condition-layout.product#availability-pdp"
+    ]
+  },
   "flex-layout.row#shelf-product-bottom-badges": {
     "props": {
       "blockClass": ["shelf-product-badges", "shelf-product-bottom-badges", "pdp-badge"],
@@ -7,8 +17,7 @@
       "preserveLayoutOnMobile": true
     },
     "children": [
-      "vtex.product-highlights@2.x:product-highlights#envio-gratis",
-      "stock-flag"
+      "vtex.product-highlights@2.x:product-highlights#envio-gratis"
     ]
   },
 
@@ -18,7 +27,7 @@
 
       "filter": {
         "type": "show",
-        "highlightNames": ["Envio Gratis"]
+        "highlightNames": ["Envio gratis"]
       }
     },
 
@@ -32,10 +41,60 @@
     }
   },
 
-  "stock-flag": {
+  "flex-layout.row#shelf-product-new-badges": {
     "props": {
-      "blockClass": ["product-badge","pdp-badge"],
-      "unavailableText": "Agotado"
+      "blockClass": ["shelf-product-badges", "shelf-product-new-badges", "pdp-badge"],
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": true
+    },
+    "children": [
+      "vtex.product-highlights@2.x:product-highlights#new"
+    ]
+  },
+
+  "vtex.product-highlights@2.x:product-highlights#new": {
+    "props": {
+      "type": "collection",
+
+      "filter": {
+        "type": "show",
+        "highlightNames": ["Nuevo"]
+      }
+    },
+
+    "children": ["product-highlight-text#new"]
+  },
+
+  "product-highlight-text#new": {
+    "props": {
+      "blockClass": ["new","pdp-badge"],
+      "message": "{highlightName}"
+    }
+  },
+
+  "condition-layout.product#availability-pdp": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "isProductAvailable"
+        }
+      ],
+      "Then": "rich-text#available",
+      "Else": "rich-text#agotado-badge"
+    }
+  },
+
+  "rich-text#available": {
+    "props": {
+      "blockClass": "badge-product-unavailable",
+      "text": ""
+    }
+  },
+
+  "rich-text#agotado-badge": {
+    "props": {
+      "blockClass": "badge-product-unavailable",
+      "text": "Agotado"
     }
   },
 

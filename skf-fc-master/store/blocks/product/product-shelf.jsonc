@@ -30,7 +30,7 @@
       "recommendation": "view",
       "productList": {
         "titleText": "",
-        "itemsPerPage": 5,
+        "itemsPerPage": 4,
         "minItemsPerPage": 2
       }
     }
