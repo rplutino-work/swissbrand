@@ -31,7 +31,8 @@
     "props": {
       "blockClass": "product",
       "installmentsCriteria": "max-quantity-without-interest",
-      "message": "Hasta {installmentsNumber} cuotas {hasInterest, select, true {, {interestRate} de interés} false { sin interés}} de {installmentValue}"
+      //"message": "Hasta {installmentsNumber} cuotas {hasInterest, select, true {, {interestRate} de interés} false { sin interés}} de {installmentValue}"
+      "message": "Hasta 12 cuotas sin interés"
     }
   }
 }
