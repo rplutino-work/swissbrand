@@ -884,7 +884,7 @@
   justify-content: center;
   align-items: center;
   padding: 52px 0;
-  background: url("https://placehold.jp/1920x230.png") center no-repeat;
+  background: url("/arquivos/skf-newsletter-desktop.jpg") center no-repeat;
   background-size: cover;
 }
 .flexRow--newsletter :global(.vtex-store-components-3-x-container){
@@ -903,7 +903,7 @@
 @media only screen and (max-width: 768px) {
   .flexRow--newsletter {
     padding: 70px 0;
-    background: url("https://placehold.jp/768x300.png") no-repeat;
+    background: url("/arquivos/skf-newsletter-mobile.jpg") no-repeat;
     background-size: cover;
     background-position: center;
   }
