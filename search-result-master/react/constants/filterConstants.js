@@ -1,1 +1,1 @@
-export const FACETS_RENDER_THRESHOLD = 30
+export const FACETS_RENDER_THRESHOLD = 10
