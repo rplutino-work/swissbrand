@@ -1,5 +1,6 @@
 .box {
   min-width: 240px;
+  right: -150px !important;
 }
 
 .container :global(.vtex-button) {
@@ -15,6 +16,8 @@
 .container :global(.vtex-button__label) {
   height: 20px;
   background: url("assets/svgs/skf-icon-user.svg") center no-repeat;
+  position: relative;
+  left: -40px;
 }
 .label::before {
   content: "";
@@ -48,12 +51,18 @@
   font-size: 14px;
   line-height: 17px;
   text-transform: uppercase;
-  color: #313131;
+  color: #fff;
+  padding-left: 95px;
+  padding-top: 5px
+}
+
+.profileIcon--login {
+  opacity: 0;
 }
 
 .content {
   padding: 20px;
-  margin-top: 40px;
+  margin-top: 16px;
 }
 
 .formTitle {

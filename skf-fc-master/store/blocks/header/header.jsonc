@@ -55,16 +55,17 @@
   },
   "login": {
     "props": {
+      "blockClass": "login",
+      "iconLabel": "Mi cuenta",
+      "showIconProfile": true,
       "optionsTitle": "Escoja una opción para ingresar",
-      "providerPasswordButtonLabel": "INGRESAR CON E-MAIL",
       "accessCodeTitle": "Recibir código de acceso por mail",
       "emailAndPasswordTitle": "Ingrese con e-mail y contraseña",
+      "providerPasswordButtonLabel": "ingresar con e-mail",
       "emailPlaceholder": "Ej: ejemplo@empleo.com.ar",
-      "passwordPlaceholder": "Contraseña",
-      "showPasswordVerificationIntoTooltip": true,
-      "hasGoogleOneTap": false,
-      "hideIconLabel": true
-    }
+      "passwordPlaceholder": "Tu contraseña"
+    },
+    "title": "Login"
   },
 
   /*DESKTOP - ROW 2 */
