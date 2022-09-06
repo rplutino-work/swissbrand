@@ -92,8 +92,9 @@
 
 .submenu--submenu {
   justify-content: space-between;
-  max-width: 1540px;
+  max-width: 1620px;
   margin: 0 0 0 auto;
+  line-height: 0;
 }
 .submenu--submenu-dropdown {
   justify-content: space-between;
@@ -230,6 +231,7 @@
   grid-template-areas:
     "titulo"
     "column01";
+  line-height: 18px;
 }
 
 .menuContainer--short-categories {
@@ -266,10 +268,10 @@
 }
 
 .styledLinkContent--categories {
-  text-transform: uppercase;
+  text-transform: initial;
   font-family: "Skf";
   font-size: 13px;
-  font-weight: 900;
+  font-weight: 600;
   color: #485A64;
   transition: color 0.2s linear;
   align-items: center;

@@ -195,7 +195,7 @@
   "image#envios-icono": {
     "props": {
       "width": "30px",
-      "src": "assets/svgs/skf-icon-shipping.svg",
+      "src": "assets/svgs/skf-icon-shipping-gray.svg",
       "blockClass": "product-info-icon"
     }
   },
@@ -236,7 +236,7 @@
   "image#retiro-icono": {
     "props": {
       "width": "30px",
-      "src": "assets/svgs/skf-icon-card.svg",
+      "src": "assets/svgs/skf-icon-card-gray.svg",
       "blockClass": "product-info-icon"
     }
   },
@@ -277,7 +277,7 @@
   "image#devolucion-icon": {
     "props": {
       "width": "30px",
-      "src": "assets/svgs/skf-icon-map-blue.svg",
+      "src": "assets/svgs/skf-icon-map.svg",
       "blockClass": "product-info-icon"
     }
   },
