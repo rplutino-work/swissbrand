@@ -1588,3 +1588,8 @@ padding: 0 15px;
   top: 11px;
   padding: 0;
 }
+
+/* CUCARDA ENVIO GRATIS */
+.flexRowContent--shelf-product-bottom-badges :global(.vtex-product-highlights-2-x-productHighlightText--free-shipping) {
+  margin: 0 !important;
+}
