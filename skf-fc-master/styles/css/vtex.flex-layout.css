@@ -1544,7 +1544,7 @@ padding: 0 15px;
   flex-direction: column;
 }
 .flexRow--skf-info-home-row {
-  margin: 0 15px;
+  margin: 15px;
   height: 100%;
 }
 
@@ -1560,4 +1560,10 @@ padding: 0 15px;
   background: #ECECE0;
   padding: 30px;
   height: 100%;
+}
+
+@media(min-width: 1200px){
+  .flexRow--skf-info-home-row {
+    margin: 0 15px;
+  }  
 }
