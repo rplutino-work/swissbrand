@@ -353,7 +353,7 @@
     "children": ["rich-text#product-info-1-title"]
   },
   "disclosure-content#product-info-1-2": {
-    "children": ["rich-text#product-info-1-text"],
+    "children": ["product-specification-group#aplicaciones"],
     "props":{
       "blockClass": "product-info-text-disclosure"
     }
@@ -402,9 +402,9 @@
     "children": ["rich-text#product-info-3-title"]
   },
   "disclosure-content#product-info-3-2": {
-    "children": ["rich-text#product-info-3-text"],
+    "children": ["product-specification-group#informacion-tecnica"],
     "props":{
-      "blockClass": "product-info-text-disclosure"
+      "blockClass": ["product-info-text-disclosure","disclosure-informacion-tecnica"]
     }
   },
   "rich-text#product-info-3-title": {

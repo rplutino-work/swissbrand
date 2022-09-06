@@ -1,7 +1,6 @@
 .specificationName {
-  color: #313131;
-  font-weight: 700;
-  text-transform: uppercase;
+  color: #485A64;
+  font-weight: 600;
   font-size: 15px;
   display: block;
   margin-bottom: 2px;
@@ -13,6 +12,10 @@
   display: block;
 }
 
+.specificationName::after {
+  content: ':';
+}
+
 @media only screen and (max-width: 1025px) {
   .specificationValue {
     font-size: 14px;
@@ -20,5 +23,17 @@
     font-weight: 400;
     display: block;
     line-height: 23px;
+    padding-left: 10px;
+  }
+  .specificationName {
+    color: #485A64;
+    font-weight: 600;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 0;
+  }
+  .flexColChild--productSpecificationName {
+    display: flex;
+    align-items: center;
   }
 }

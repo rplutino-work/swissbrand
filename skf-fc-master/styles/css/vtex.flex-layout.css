@@ -191,20 +191,20 @@
     padding: 0 15px;
 }
 .flexRowContent--productSpecification {
-  display: block;
-  margin-bottom: 30px;
+  display: flex;
+  padding: 15px;
 }
 .flexRow--productSpecificationGroup {
   margin-bottom: 30px;
 }
 
-.flexRow--productSpecification:first-child .flexCol--productSpecificationName {
-  display: none;
-}
-
 .flexRowContent--deco-info-wrapper {
   display: flex;
   flex-direction: column;
+}
+
+.flexRow--productSpecification:nth-child(odd) {
+  background: #EBECEE;
 }
 
 @media only screen and (max-width: 1025px) {

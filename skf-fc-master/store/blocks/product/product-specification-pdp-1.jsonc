@@ -1,66 +1,85 @@
 {
-    "product-specification-group#aplicaciones": {
-        "props": {      
-            "filter": {      
-              "specificationGroups":["Aplicaciones"],                      
-                  "type": "show"     
-              }   
-          },
-      "children": [
-        "flex-layout.row#specification-pdpaplicaciones"
-      ]
+  "product-specification-group#aplicaciones": {
+      "props": {      
+          "filter": {      
+            "specificationGroups":["Aplicaciones"],                      
+                "type": "show"     
+            }   
+        },
+    "children": [
+      "flex-layout.row#spec-group-aplicaciones"
+    ]
+  },
+  "flex-layout.row#spec-group-aplicaciones": {
+    "props": {
+      "blockClass": ["productSpecificationGroup","pdp-aplicaciones-specification-wrapper"]
     },
-    "flex-layout.row#specification-pdpaplicaciones": {
-      "props": {
-        "blockClass": ["productSpecificationGroup","pdl-specification-pdpaplicaciones-specification-wrapper"]
-      },
-      "children": [
-        "flex-layout.col#specification-pdpaplicaciones"
-      ]
+    "children": [
+      "flex-layout.col#spec-group-aplicaciones"
+    ]
+  },
+  "flex-layout.col#spec-group-aplicaciones": {
+    "children": [
+      "product-specification#aplicaciones"
+    ]
+  },
+  "flex-layout.row#spec-group-name": {
+    "props": {
+      "blockClass": "productSpecificationGroupName"
     },
-    "flex-layout.col#specification-pdpaplicaciones": {
-      "children": [
-        "product-specification#specification-pdpaplicaciones"
-      ]
+    "children": [
+      "product-specification-text#group-aplicaciones"
+    ]
+  },
+  "product-specification#aplicaciones": {
+    "children": [
+      "flex-layout.row#spec-item-aplicaciones"
+    ]
+  },
+  "flex-layout.row#spec-item-aplicaciones": {
+    "props": {
+      "blockClass": "productSpecification"
     },
-    "flex-layout.row#spec-group-name": {
-      "props": {
-        "blockClass": "productSpecificationGroupName"
-      },
-      "children": [
-        
-      ]
+    "children": [
+      "flex-layout.col#spec-name-aplicaciones",
+      "flex-layout.col#spec-value-aplicaciones"
+    ]
+  },
+  "flex-layout.col#spec-name-aplicaciones": {
+    "props": {
+      "blockClass": "productSpecificationName"
     },
-    "product-specification#specification-pdpaplicaciones": {
-      "children": [
-        "flex-layout.row#spec-item-specification-pdpaplicaciones"
-      ]
+    "children": [
+      "product-specification-text#specification-aplicaciones"
+    ]
+  },
+  "flex-layout.col#spec-value-aplicaciones": {
+    "props": {
+      "blockClass": "productSpecificationValue"
     },
-    "flex-layout.row#spec-item-specification-pdpaplicaciones": {
-      "props": {
-        "blockClass": "productSpecification"
-      },
-      "children": [
-        "flex-layout.col#spec-value-specification-pdpaplicaciones"
-      ]
-    },
-    "flex-layout.col#spec-value-specification-pdpaplicaciones": {
-      "props": {
-        "blockClass": "productSpecificationValue"
-      },
-      "children": [
-        "product-specification-values#specification-pdpaplicaciones"
-      ]
-    },
-    "product-specification-values#specification-pdpaplicaciones": {
-      "children": [
-        "product-specification-text#value-specification-pdpaplicaciones"
-      ]
-    },
-    "product-specification-text#value-specification-pdpaplicaciones": {
-      "props": {
-        "message": "{specificationValue}"
-      }
+    "children": [
+      "product-specification-values#aplicaciones"
+    ]
+  },
+  "product-specification-values#aplicaciones": {
+    "children": [
+      "product-specification-text#value-aplicaciones"
+    ]
+  },
+  "product-specification-text#group-aplicaciones": {
+    "props": {
+      "message": "{groupName}"
+    }
+  },
+  "product-specification-text#specification-aplicaciones": {
+    "props": {
+      "blockClass": "pdp-aplicaciones-specification-title",
+      "message": "{specificationName}"
+    }
+  },
+  "product-specification-text#value-aplicaciones": {
+    "props": {
+      "message": "{specificationValue}"
     }
   }
-  
+}
