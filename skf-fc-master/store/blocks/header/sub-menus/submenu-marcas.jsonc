@@ -2,7 +2,7 @@
     "vtex.menu@2.x:submenu#marcas": {
       "children": ["flex-layout.row#marcas"],
       "props": {
-        "blockClass": "submenu"
+        "blockClass": ["submenu","submenu-brands"]
       }
     },
   

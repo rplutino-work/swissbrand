@@ -278,6 +278,11 @@
   justify-content: flex-start;
 }
 
+.submenu--submenu-brands {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .styledLinkContent--category::before {
   content: '';
   width: 6px;
