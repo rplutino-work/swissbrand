@@ -1593,3 +1593,69 @@ padding: 0 15px;
 .flexRowContent--shelf-product-bottom-badges :global(.vtex-product-highlights-2-x-productHighlightText--free-shipping) {
   margin: 0 !important;
 }
+
+/* FORMULARIO CONTACTO */
+.flexRowContent--form-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px 7px;
+}
+.flexRowContent--form-wrapper :global(.vtex-input-prefix__label) {
+  display: none;
+}
+
+.flexRowContent--form-wrapper :global(.vtex-styleguide-9-x-input)::placeholder {
+  color: #485a64;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .3px;
+}
+
+
+.flexRowContent--form-wrapper :global(.vtex-input__label) {
+  display: none;
+}
+
+.flexRowContent--form-wrapper :global(.vtex-input-prefix__group) {
+  margin-bottom: 15px;
+  border-radius: 0;
+  border: 1px solid #0f58d6;
+}
+
+.flexRowContent--form-wrapper :global(.vtex-styleguide-9-x-input) {
+  color: #485a64;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .3px;
+}
+
+.flexRowContent--form-wrapper :global(.vtex-input-prefix__group)::focus {
+  border-color: #88c008;
+}
+
+.flexRowContent--form-wrapper :global(.vtex-textarea__label) {
+  display: none;
+}
+
+.flexRowContent--form-wrapper :global(.vtex-textarea__input) {
+  margin-bottom: 15px;
+  border: 1px solid #0f58d6;
+  border-radius: 0;
+  color: #485a64;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .3px;
+}
+
+.flexRowContent--form-wrapper :global(.vtex-textarea__input)::placeholder {
+  color: #485a64;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .3px;
+}
+
+@media(min-width: 1200px){
+  .flexRowContent--form-wrapper {
+    padding: 60px 0;
+  }
+}

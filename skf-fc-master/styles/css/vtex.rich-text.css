@@ -407,3 +407,13 @@
   width: auto;
   margin: 0;
 }
+
+/* FORMULARIO CONTACTO */
+.heading--form-title {
+  margin: 0 0 18px 0px;
+  line-height: 30px;
+  font-size: 33px;
+  font-family: "Skf";
+  font-weight: 400;
+  color: #485A64;
+}
