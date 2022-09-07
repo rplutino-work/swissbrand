@@ -4,11 +4,20 @@
       "breadcrumb#product",
       "flex-layout.row#product-main-content",
       "__fold__",
+      "flex-layout.row#scroll",
       "responsive-layout.mobile#product-info",
       "responsive-layout.desktop#product-info",
       "flex-layout.row#product-info-generic",
       "flex-layout.row#shelf-page-product"
     ]
+  },
+
+  "flex-layout.row#scroll": {
+    "children": [],
+    "props": {
+      "blockClass": ["pdp-scroll"],
+      "htmlId": "aplicaciones"
+    }
   },
 
   "flex-layout.row#specifications-group": {
@@ -112,6 +121,7 @@
       "flex-layout.row#product-badges",
       "flex-layout.row#product-prices",
       "product-installments#product",
+      "link#aplications",
       "sku-selector#skf",
       "flex-layout.row#add-cart",
       "availability-subscriber",
@@ -131,6 +141,14 @@
     "props": {
       "blockClass": ["pdp-badges"],
       "colSizing": "auto"
+    }
+  },
+
+  "link#aplications": {
+    "props": {
+      "href": "#aplicaciones",
+      "label": "Aplicaciones",
+      "blockClass": "aplications-btn"
     }
   },
 
@@ -377,7 +395,7 @@
   "disclosure-content#product-info-1-2": {
     "children": ["product-specification-group#aplicaciones"],
     "props":{
-      "blockClass": "product-info-text-disclosure"
+      "blockClass": ["product-info-text-disclosure", "product-info-text-aplications"]
     }
   },
   "rich-text#product-info-1-title": {

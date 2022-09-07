@@ -1663,3 +1663,72 @@ padding: 0 15px;
     padding: 60px 0;
   }
 }
+
+/* APLICACIONES PDP */
+.flexRowContent--productSpecification .stretchChildrenWidth {
+  width: 100% !important;
+}
+
+.flexRowContent--pdp-spec-aplicaciones-title-wrapper {
+  background: #808895;
+  padding: 13px 15px;
+}
+
+
+.flexRow--pdp-aplicaciones-specification-wrapper {
+  padding: 0;
+}
+
+.flexRow--pdp-aplicaciones-specification-wrapper .flexRowContent--productSpecification {
+  background: #fff;
+  padding: 0;
+}
+
+.flexRow--pdp-aplicaciones-specification-wrapper :global(.vtex-skf-aplications-list):nth-child(odd) {
+  background: #ebecee;
+}
+
+.flexRow--pdp-aplicaciones-specification-wrapper :global(.vtex-skf-aplications-list) {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px;
+}
+
+:global(.vtex-skf-aplications-list) :global(.vtex-skf-aplications-paragraph) {
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+  color: #505050;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+:global(.vtex-skf-aplications-brand), :global(.vtex-skf-aplications-model), :global(.vtex-skf-aplications-displacement), :global(.vtex-skf-aplications-year) {
+  width: 25%;
+  text-align: center;
+}
+
+.flexRow--pdp-aplicaciones-specification-wrapper :global(.vtex-store-components-3-x-container) {
+  padding: 0;
+}
+
+.flexRow--pdp-aplicaciones-specification-wrapper :global(.vtex-product-specifications-1-x-specificationValue) {
+  padding: 0;
+}
+
+.flexRowContent--pdp-spec-aplicaciones-title-wrapper {
+  display: flex;
+}
+
+.flexRow--pdp-spec-aplicaciones-title-wrapper :global(.vtex-store-components-3-x-container) {
+  padding: 0;
+}
+
+@media(min-width: 1200px){
+  :global(.vtex-skf-aplications-list) :global(.vtex-skf-aplications-paragraph) {
+    font-size: 15px;
+  }  
+}

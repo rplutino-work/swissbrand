@@ -377,3 +377,28 @@
   justify-content: center;
   align-items: center;
 }
+
+/* PDP - BOTON APLICACIONES */
+.link--aplications-btn {
+  border: 1px solid #485A64;
+  padding: 10px 22px;
+  display: inline-flex;
+  text-decoration: none;
+  margin-top: 15px;
+  transition: .3s;
+}
+
+.label--aplications-btn {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #485A64;
+}
+
+.link--aplications-btn:hover {
+  background: #88c008;
+  color: #fff;
+}
+
+.link--aplications-btn:hover .label--aplications-btn {
+  color: #fff;
+}

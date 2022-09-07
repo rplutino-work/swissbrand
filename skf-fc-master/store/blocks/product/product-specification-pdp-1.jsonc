@@ -7,8 +7,52 @@
             }   
         },
     "children": [
+      "flex-layout.row#spec-group-aplicaciones-title",
       "flex-layout.row#spec-group-aplicaciones"
     ]
+  },
+  "flex-layout.row#spec-group-aplicaciones-title": {
+    "children": [
+      "rich-text#pdp-spec-aplicaciones-brand",
+      "rich-text#pdp-spec-aplicaciones-model",
+      "rich-text#pdp-spec-aplicaciones-displacement",
+      "rich-text#pdp-spec-aplicaciones-year"
+    ],
+    "props": {
+      "blockClass": ["pdp-spec-aplicaciones-title-wrapper"]
+    }
+  },
+  "rich-text#pdp-spec-aplicaciones-brand": {
+    "props": {
+      "blockClass": ["pdp-spec-aplicaciones-title"],
+      "text": "Marca",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#pdp-spec-aplicaciones-model": {
+    "props": {
+      "blockClass": ["pdp-spec-aplicaciones-title"],
+      "text": "Modelo",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#pdp-spec-aplicaciones-displacement": {
+    "props": {
+      "blockClass": ["pdp-spec-aplicaciones-title"],
+      "text": "Cilindrada",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#pdp-spec-aplicaciones-year": {
+    "props": {
+      "blockClass": ["pdp-spec-aplicaciones-title"],
+      "text": "Año",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
   },
   "flex-layout.row#spec-group-aplicaciones": {
     "props": {
@@ -23,14 +67,6 @@
       "product-specification#aplicaciones"
     ]
   },
-  "flex-layout.row#spec-group-name": {
-    "props": {
-      "blockClass": "productSpecificationGroupName"
-    },
-    "children": [
-      "product-specification-text#group-aplicaciones"
-    ]
-  },
   "product-specification#aplicaciones": {
     "children": [
       "flex-layout.row#spec-item-aplicaciones"
@@ -41,16 +77,7 @@
       "blockClass": "productSpecification"
     },
     "children": [
-      "flex-layout.col#spec-name-aplicaciones",
       "flex-layout.col#spec-value-aplicaciones"
-    ]
-  },
-  "flex-layout.col#spec-name-aplicaciones": {
-    "props": {
-      "blockClass": "productSpecificationName"
-    },
-    "children": [
-      "product-specification-text#specification-aplicaciones"
     ]
   },
   "flex-layout.col#spec-value-aplicaciones": {
@@ -65,17 +92,6 @@
     "children": [
       "product-specification-text#value-aplicaciones"
     ]
-  },
-  "product-specification-text#group-aplicaciones": {
-    "props": {
-      "message": "{groupName}"
-    }
-  },
-  "product-specification-text#specification-aplicaciones": {
-    "props": {
-      "blockClass": "pdp-aplicaciones-specification-title",
-      "message": "{specificationName}"
-    }
   },
   "product-specification-text#value-aplicaciones": {
     "props": {

@@ -417,3 +417,10 @@
   font-weight: 400;
   color: #485A64;
 }
+
+/* APLICACIONES PDP */
+.paragraph--pdp-spec-aplicaciones-title {
+  color: #fff;
+  font-weight: 600;
+  margin: 0;
+}
