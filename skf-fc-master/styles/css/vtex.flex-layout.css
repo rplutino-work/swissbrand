@@ -1560,6 +1560,10 @@ padding: 0 15px;
   height: 100%;
 }
 
+.flexRowContent--skf-info-home-row .stretchChildrenWidth {
+  justify-content: flex-start;
+}
+
 @media(min-width: 1200px){
   .flexRow--skf-info-home-row {
     margin: 0 15px;
