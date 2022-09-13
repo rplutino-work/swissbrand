@@ -1004,6 +1004,7 @@
   height: 100%;
   padding: 40px 20px;
   justify-content: space-between;
+  width: 100%;
 }
 
 .infoCardHeadline--banner-home {

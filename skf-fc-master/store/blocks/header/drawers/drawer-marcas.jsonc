@@ -26,7 +26,7 @@
       },
   
       "children": [
-        "vtex.menu@2.x:menu#submenu-marcas-1",
+        "vtex.menu@2.x:menu#submenu-marcas-all",
         "vtex.menu@2.x:menu#submenu-marcas-2",
         "vtex.menu@2.x:menu#submenu-marcas-3",
         "vtex.menu@2.x:menu#submenu-marcas-4",
@@ -63,7 +63,7 @@
       },
   
       "children": [
-        "vtex.menu@2.x:menu#submenu-marcas-1",
+        "vtex.menu@2.x:menu#submenu-marcas-all",
         "menu-item#marcas-1-see-all"
       ]
     },
