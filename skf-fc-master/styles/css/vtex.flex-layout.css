@@ -588,9 +588,6 @@
     padding: 30px 7px;
   }
 
-  .flexRow--shelf-product-badges {
-    padding: 4px;
-  }
 }
 
 @media only screen and (max-width: 639px) {

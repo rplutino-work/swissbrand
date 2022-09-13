@@ -24,10 +24,15 @@
   color: #fff;
   font-size: 12px;
   font-weight: 500;
-  padding: 1px 10px;
+  padding: 2px 10px;
   margin-right: 15px;
-  line-height: 18px;
+  line-height: 16px;
   margin-top: 1px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--pdp-badges) .productHighlightText--free-shipping {
+  line-height: 18px;
+  padding: 1px 10px;
 }
 
 /**/

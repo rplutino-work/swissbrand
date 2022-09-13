@@ -30,6 +30,7 @@
       "recommendation": "view",
       "productList": {
         "titleText": "",
+        "gap": "ph3",
         "itemsPerPage": 4,
         "minItemsPerPage": 2
       }
