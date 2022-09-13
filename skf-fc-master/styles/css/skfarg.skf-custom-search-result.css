@@ -234,6 +234,24 @@
   display: none;
 }
 
+.filter__container--referencia .filterTitle {
+  font-size: 0;
+}
+
+.filter__container--referencia .filterTitle::before {
+  content: 'Marcas';
+  font-size: 13px;
+}
+
+.filter__container--category-2 .filterTitle {
+  font-size: 0;
+}
+
+.filter__container--category-2 .filterTitle::before {
+  content: 'Tipo';
+  font-size: 13px;
+}
+
 @media only screen and (min-width: 1026px) {
   .filterItem--ColorName {
     display: none !important;
@@ -247,6 +265,23 @@
 }
 
 @media only screen and (max-width: 1025px) {
+  .filterAccordionItemBox--referencia .accordionFilterItemTitle {
+    font-size: 0;
+  }
+
+  .filterAccordionItemBox--referencia .accordionFilterItemTitle::before {
+      content: 'Marcas';
+      font-size: 14px;
+  }
+
+  .filterAccordionItemBox--categoria .accordionFilterItemTitle {
+      font-size: 0;
+  }
+
+  .filterAccordionItemBox--categoria .accordionFilterItemTitle::before {
+      content: 'Tipo';
+      font-size: 14px;
+  }
   .sidebar {
     padding: 16px;
   }
