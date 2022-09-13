@@ -782,11 +782,11 @@
 }
 
 .subscriberContainer :global(.vtex-button):hover {
-  background: #e9a427;
+  background: #0f58d6;
 }
 
 .subscriberContainer :global(.vtex-button__label) {
-  color: #313131;
+  color: #fff;
   font-size: 13px;
 }
 

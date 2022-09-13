@@ -1482,6 +1482,8 @@ padding: 0 15px;
 /* CUCARDAS */
 .flexRowContent--pdp-badges {
   justify-content: flex-start;
+  flex-direction: row;
+  display: flex;
 }
 
 /* TABS */
