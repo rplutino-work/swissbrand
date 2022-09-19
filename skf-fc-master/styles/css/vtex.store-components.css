@@ -512,6 +512,7 @@
 
 .skuSelectorItem--selected .skuSelectorInternalBox {
   border-color: #0f58d6;
+  background: #0d58d6;
 }
 
 .valueWrapper {
