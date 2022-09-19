@@ -31,7 +31,7 @@
       "productList": {
         "titleText": "",
         "gap": "ph3",
-        "itemsPerPage": 4,
+        "itemsPerPage": 5,
         "minItemsPerPage": 2
       }
     }
