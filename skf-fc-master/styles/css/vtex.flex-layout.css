@@ -256,6 +256,10 @@
   margin: 15px 0 0;
 }
 
+.flexRowContent--shelf-prices .stretchChildrenWidth {
+  width: 100% !important;
+}
+
 /* .flexRow--cart-button {
   margin-bottom: 16px;
 } */
@@ -1482,6 +1486,23 @@ padding: 0 15px;
   flex-direction: row;
   display: flex;
 }
+.flexRow--pdp-badges :global(.vtex-product-price-1-x-savings--pdp-badge) {
+  margin: 12px 0;
+}
+
+.flexRow--pdp-badges :global(.vtex-product-price-1-x-savings-discount--product-badge){
+  padding: 2px 5px;  
+}
+.flexRowContent--product-shelf-price :global(.vtex-product-price-1-x-savings-discount--product-badge) {
+  margin: 0;
+  padding: 2px 5px;
+  font-size: 12px;
+}
+
+.flexRowContent--product-shelf-price :global(.vtex-product-price-1-x-savings--pdp-badge) {
+  margin: 0 0 0 4px;
+}
+
 
 /* TABS */
 .flexRowContent--product-info {
@@ -1541,7 +1562,7 @@ padding: 0 15px;
   flex-direction: column;
 }
 .flexRow--skf-info-home-row {
-  margin: 15px;
+  margin: 7px;
   height: 100%;
 }
 
@@ -1730,4 +1751,9 @@ padding: 0 15px;
   :global(.vtex-skf-aplications-list) :global(.vtex-skf-aplications-paragraph) {
     font-size: 15px;
   }  
+}
+
+/* SHELF IDENTIFIER */
+.flexRowContent--shelf-name-wrapper {
+  flex-direction: column;
 }

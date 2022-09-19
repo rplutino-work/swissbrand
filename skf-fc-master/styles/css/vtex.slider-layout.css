@@ -293,7 +293,7 @@
   color: #0F58D6;
   text-decoration: none;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .infoCardTextContainer--list-home-item {
@@ -312,6 +312,9 @@
 }
 
 @media(min-width: 1024px){
+  .infoCardCallActionText--list-home-item {
+    font-size: 16px;
+  }  
   .sliderTrackContainer--list-home-item {
     padding-bottom: 40px;
   }

@@ -366,9 +366,10 @@
   font-weight: 300;
   letter-spacing: .5px;
 }
-
-.wrapper--skf-info-home-text {
-  height: 152px;
+@media(min-width: 1025px){
+  .wrapper--skf-info-home-text {
+    height: 152px;
+  }
 }
 
 /* PRODUCT SPECIFICATION */

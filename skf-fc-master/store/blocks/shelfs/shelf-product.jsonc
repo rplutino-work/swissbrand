@@ -49,9 +49,29 @@
       "blockClass": "product-bottom-col"
     },
     "children": [
-      "product-summary-name#shelf-product",
+      "flex-layout.row#shelf-name",
       "skf-flex-layout#shelf-prices"
     ]
+  },
+
+  "flex-layout.row#shelf-name": {
+    "children": [
+      "product-summary-name#shelf-product",
+      "product-identifier.product#shelf"
+    ],
+    "props": {
+      "blockClass": ["shelf-name-wrapper"],
+      "colSizing": "auto"
+    }
+  },
+
+  "product-identifier.product#shelf": {
+    "props": {
+      "blockClass": "identifier-shelf",
+      "label": "hide", //'default' | 'custom' | 'hide'
+      "customLabel": "hide", // text if label is custom
+      "idField": "skuReferenceId" //'itemId' | 'productId' | 'productReference' | 'skuEan' | 'skuReferenceId'
+    }
   },
 
   "skf-flex-layout#shelf-prices": {
@@ -140,14 +160,14 @@
       "blockClass": "shelf-product",
       "installmentsCriteria": "max-quantity-without-interest",
       //"message": "Hasta {installmentsNumber} cuotas {hasInterest, select, true {, {interestRate} de interés} false { sin interés}} de {installmentValue}"
-      "message": "Hasta 12 cuotas sin interés"
+      "message": "Hasta 3 cuotas sin interés"
     }
   },
 
   "rich-text#agotado": {
     "props": {
       "blockClass": ["shelf-product-unavailable","shelf-product"],
-      "text": "Hasta 12 cuotas sin interés"
+      "text": "Hasta 3 cuotas sin interés"
     }
   }
 }

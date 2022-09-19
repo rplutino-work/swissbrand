@@ -35,7 +35,7 @@
 }
 
 .savings-discount--product-badge {
-  background: #0F58D6;
+  background: #0f58d6;
   color: #fff;
   font-size: 13px;
   font-weight: 500;
@@ -49,6 +49,12 @@
 }
 
 @media only screen and (max-width: 1025px) {
+  .listPrice--shelf-product{
+    font-size: 13px;
+  }
+  .sellingPrice--shelf-product{
+    font-size: 15px;
+  }
   .savings-discount--shelf-product {
     font-size: 12px;
   }
@@ -85,5 +91,6 @@
 }
 
 .savings--pdp-badge{
-  margin: 12px 0;
+  margin: 0 0 0 12px;
 }
+
