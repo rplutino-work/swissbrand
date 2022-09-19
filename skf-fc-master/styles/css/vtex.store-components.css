@@ -17,6 +17,11 @@
   max-width: 100%;
 }
 
+/* SLIDER */
+.imageElementLink--main-gallery{
+  line-height: 0;
+}
+
 /* SEARCH BAR*/
 
 .portalWrapper :global(.vtex-search-1-x-biggy-autocomplete) {
