@@ -23,15 +23,16 @@
   top: -2px;
   right: 0;
   z-index: 1000;
-  max-width: 578px;
+  max-width: 550px;
 }
 
 @media only screen and (max-width: 1025px) {
   .portalWrapper :global(.vtex-search-1-x-biggy-autocomplete-wrapper) {
     width: 100vw;
+    width: calc(100vw - 30px);
   }
   .portalWrapper :global(.vtex-search-1-x-biggy-autocomplete) {
-    max-width: 338px;
+    max-width: 100%;
   }
 }
 
