@@ -70,7 +70,7 @@
       "blockClass": "identifier-shelf",
       "label": "hide", //'default' | 'custom' | 'hide'
       "customLabel": "hide", // text if label is custom
-      "idField": "skuReferenceId" //'itemId' | 'productId' | 'productReference' | 'skuEan' | 'skuReferenceId'
+      "idField": "productReference" //'itemId' | 'productId' | 'productReference' | 'skuEan' | 'skuReferenceId'
     }
   },
 
