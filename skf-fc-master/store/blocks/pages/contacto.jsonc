@@ -28,7 +28,7 @@
     },
     "form#arrepentimiento": {
       "props": {
-        "entity": "Arrepentimiento",
+        "entity": "AR",
         "schema": "Arrepentimiento",
         "blockClass": "form-contact"
       },
