@@ -118,9 +118,9 @@
 
     "children": [
       "rich-text#contact-title",
-      "menu-item#phone",
-      "menu-item#envelope",
-      "menu-item#whatsapp"
+      //"menu-item#phone",
+      "menu-item#envelope"
+      //"menu-item#whatsapp"
     ]
   },
 
@@ -346,9 +346,9 @@
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#phone",
-      "menu-item#envelope",
-      "menu-item#whatsapp"
+      //"menu-item#phone",
+      "menu-item#envelope"
+      //"menu-item#whatsapp"
     ]
   },
 
