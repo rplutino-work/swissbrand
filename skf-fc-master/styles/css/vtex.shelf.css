@@ -116,3 +116,11 @@
     font-size: 10px;
   }
 }
+
+/* CUCARDA CYBER */
+.relatedProducts :global(.vtex-product-highlights-2-x-productHighlightText--cyber) {
+  width: auto;
+}
+.relatedProducts :global(.vtex-flex-layout-0-x-flexRowContent--shelf-product-cyber-badges) :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+  justify-content: flex-start;
+}

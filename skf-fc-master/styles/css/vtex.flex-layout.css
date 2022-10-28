@@ -1757,3 +1757,9 @@ padding: 0 15px;
 .flexRowContent--shelf-name-wrapper {
   flex-direction: column;
 }
+
+/* CUCARDA CYBER */
+.flexRow--shelf-product-cyber-badges {
+  top: 0;
+  padding: 0;
+}

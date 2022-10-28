@@ -22,6 +22,7 @@
   "flex-layout.col#shelf-product-top": {
     "children": [
       "product-summary-image#shelf-product",
+      "flex-layout.row#shelf-product-cyber-badges",
       "flex-layout.row#shelf-product-new-badges",
       "flex-layout.row#shelf-product-bottom-badges",
       "flex-layout.row#shelf-product-unavailable-badges"

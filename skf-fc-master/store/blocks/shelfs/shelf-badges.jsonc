@@ -72,6 +72,37 @@
     }
   },
 
+  "flex-layout.row#shelf-product-cyber-badges": {
+    "props": {
+      "blockClass": ["shelf-product-badges", "shelf-product-cyber-badges", "pdp-badge"],
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": true
+    },
+    "children": [
+      "vtex.product-highlights@2.x:product-highlights#cyber"
+    ]
+  },
+
+  "vtex.product-highlights@2.x:product-highlights#cyber": {
+    "props": {
+      "type": "collection",
+
+      "filter": {
+        "type": "show",
+        "highlightNames": ["CYBER SKF"]
+      }
+    },
+
+    "children": ["product-highlight-text#cyber"]
+  },
+
+  "product-highlight-text#cyber": {
+    "props": {
+      "blockClass": ["cyber","pdp-badge"],
+      "message": "{highlightName}"
+    }
+  },
+
   "condition-layout.product#availability-pdp": {
     "props": {
       "conditions": [
