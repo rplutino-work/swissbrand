@@ -55,7 +55,8 @@
     },
 
     "children": [
-      "product-images"
+      "product-images",
+      "flex-layout.row#products-badges-cyber-image"
     ]
   },
 
@@ -93,6 +94,16 @@
     "props": {
       "colSizing": "auto",
       "blockClass": "product-details-badges-cyber"
+    },
+    "children": [
+      "vtex.product-highlights@2.x:product-highlights#cyber"
+    ]
+  },
+
+  "flex-layout.row#products-badges-cyber-image": {
+    "props": {
+      "colSizing": "auto",
+      "blockClass": ["product-details-badges-cyber","product-details-badges-cyber-image"]
     },
     "children": [
       "vtex.product-highlights@2.x:product-highlights#cyber"
