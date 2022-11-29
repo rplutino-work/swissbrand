@@ -1,0 +1,73 @@
+{
+    "store.custom#listado-de-productos": {
+        "blocks": [
+            "flex-layout.row#banner",
+            "search-result-layout.customQuery"
+        ]
+    },
+    "search-result-layout.customQuery": {
+        "title": "Configuracion de la busqueda",
+        "props": {
+            "querySchema": {
+                "maxItemsPerPage": 48,
+                "orderByField": "OrderByScoreDESC",
+                "hideUnavailableItems": true,
+                "facetsBehavior": "Dynamic",
+                "skusFilter": "FIRST_AVAILABLE",
+                "simulationBehavior": "skip",
+                "installmentCriteria": "MAX_WITHOUT_INTEREST",
+                "__unstableProductOriginVtex": true,
+                "queryField": "skf",
+                "mapField": "ft"
+            }
+        },
+        "blocks": [
+            "search-result-layout.mobile",
+            "search-result-layout.desktop",
+            "search-not-found-layout"
+        ]
+    },
+    "flex-layout.row#banner": {
+        "title": "Banner",
+        "props": {
+            "title": "Banner categoria",
+            "blockClass": "banner-custom-category",
+            "fullWidth": true
+        },
+
+        "children": ["flex-layout.col#bottom-banner-content"]
+    },
+
+    "flex-layout.col#bottom-banner-content": {
+        "props": {
+            "preventVerticalStretch": true
+        },
+
+        "children": [
+            "responsive-layout.mobile#bottom-banner",
+            "responsive-layout.desktop#bottom-banner"
+        ]
+    },
+
+    "responsive-layout.mobile#bottom-banner": {
+        "title": "Mobile",
+        "children": ["image#mobile-bottom-banner"]
+    },
+
+    "image#mobile-bottom-banner": {
+        "props": {
+            "blockClass": "banner-custom-category-mobile"
+        }
+    },
+
+    "responsive-layout.desktop#bottom-banner": {
+        "title": "Desktop",
+        "children": ["image#bottom-banner"]
+    },
+
+    "image#bottom-banner": {
+        "props": {
+            "blockClass": "banner-custom-category"
+        }
+    }
+}
