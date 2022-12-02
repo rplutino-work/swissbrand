@@ -7,7 +7,8 @@
     "children": [
       "flex-layout.row#newsletter",
       "flex-layout.row#footer-links",
-      "flex-layout.row#footer-bottom"
+      "flex-layout.row#footer-bottom",
+      "custom-script#wise"
     ]
   },
 
@@ -181,7 +182,8 @@
     "children": [
       "flex-layout.row#newsletter",
       "flex-layout.row#mobile-footer-links",
-      "flex-layout.row#footer-bottom"
+      "flex-layout.row#footer-bottom",
+      "custom-script#wise"
     ]
   },
 
@@ -195,5 +197,11 @@
 
   "flex-layout.col#mobile-footer-links-wrapper": {
     "children": ["image#footer-logo-mobile", "vtex.menu@2.x:menu#mobile-footer-menu"]
+  },
+  "custom-script#wise": {
+      "props": {
+          "script": "https://api.wcx.cloud/widget/?id=6686a29e818c4b269e6afb13ada64ac1",
+          "div": ""
+      }
   }
 }
