@@ -123,6 +123,11 @@
 
   "product-images": {
     "props": {
+      "contentOrder": "videos-first",
+      "aspectRatio": {
+        "desktop": "auto",
+        "phone": "auto"
+      },
       "showPaginationDots": true,
       "showNavigationArrows": true,
       "displayThumbnailsArrows": true
@@ -141,13 +146,14 @@
       "flex-layout.row#product-badges",
       "flex-layout.row#product-prices",
       "product-installments#product",
-      "link#aplications",
+      "condition-layout.product#aplications",
       "sku-selector#skf",
       "flex-layout.row#add-cart",
       "availability-subscriber",
       "shipping-simulator",
       "flex-layout.row#scroll",
       "flex-layout.row#info"
+      //"auto-play-video"
     ]
   },
 
@@ -166,11 +172,43 @@
     }
   },
 
+  "condition-layout.product#aplications": {
+    "props": {
+      "conditions": [
+         {
+           "subject": "categoryTree",
+           "arguments": {
+               "id": "1"
+           }
+         }
+      ],
+      "Then": "flex-layout.row#aplications",
+      "Else": "link#aplications"
+    }
+  },
+
+  "flex-layout.row#aplications": {
+    "children": ["link#download"],
+    "props": {
+      "blockClass": ["aplicaciones-download"],
+      "colSizing": "auto"
+    }
+  },
+
   "link#aplications": {
     "props": {
       "href": "#aplicaciones",
       "label": "Aplicaciones",
       "blockClass": "aplications-btn"
+    }
+  },
+
+  "link#download": {
+    "props": {
+      "href": "https://cdn.shopify.com/s/files/1/0331/2435/2138/files/skf.pdf?v=1671735924",
+      "label": "Descargar PDF",
+      "blockClass": "download-btn",
+      "target": "_blank"
     }
   },
 
@@ -537,7 +575,8 @@
   },
   "tab-content.item#home1": {
     "children": [
-      "product-description"
+      "product-description",
+      "condition-layout.product#aplications"
     ],
     "props": {
       "tabId": "home1"

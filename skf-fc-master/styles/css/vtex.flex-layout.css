@@ -1778,3 +1778,17 @@ padding: 0 15px;
   top: 0;
   padding: 0;
 }
+
+/* PDP PRODUCTO DOWNLOAD */
+.flexRow--aplicaciones-download {
+  display: flex;
+}
+
+.flexRowContent--aplicaciones-download {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.flexRowContent--product-info :global(.vtex-store-link-0-x-link--aplications-btn) {
+  display: none;
+}

@@ -402,3 +402,22 @@
 .link--aplications-btn:hover .label--aplications-btn {
   color: #fff;
 }
+
+/* PDP PRODUCTO DOWNLOAD */
+.link--download-btn {
+  margin: 20px 0 10px;
+  font-size: 16px;
+  color: #0f58d6;
+  text-decoration: none;
+  border: 1px solid #485A64;
+  padding: 10px 22px;
+}
+.link--download-btn::before{
+  content: '';
+  background-image: url("assets/svgs/skf-icon-download-pdp.svg");
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  margin-right: 6px;
+  background-repeat: no-repeat;
+}
