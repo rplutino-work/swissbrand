@@ -42,5 +42,50 @@
         "phone": 2
       }
     }
+  },
+  /* SHELF CART */
+  "flex-layout.row#shelf-cart": {
+    "children": [
+      "rich-text#shelf-cart",
+      "list-context.product-list#shelf-cart"
+    ],
+    "props": {
+      "colSizing": "auto",
+      "fullWidth": true,
+      "blockClass": ["shelf-cart"]
+    }
+  },
+  "rich-text#shelf-cart": {
+    "props": {
+      "blockClass": ["shelf-cart"],
+      "text": "Lleva tu merchandasing adicional"
+    }
+  },
+  "list-context.product-list#shelf-cart": {
+    "blocks": [
+      "product-summary.shelf#shelf-cart"
+  ],
+  "children": [
+    "slider-layout#shelf-cart"
+  ],
+  "props": {
+    // "orderBy": "OrderByTopSaleDESC",
+    "category": "2/9",
+    "hideUnavailableItems": true,
+    "blockClass": "m3-shelf-product-list"
+  }
+  },
+  "slider-layout#shelf-cart": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 3,
+        "phone": 3
+      },
+      "infinite": true,
+      "blockClass": ["shelf", "shelf-slider","shelf-cart"],
+      "showPaginationDots": "never",
+      "showNavigationArrows": "desktopOnly"
+    }
   }
 }

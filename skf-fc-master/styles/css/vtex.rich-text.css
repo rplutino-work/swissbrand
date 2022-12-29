@@ -425,3 +425,25 @@
   font-weight: 600;
   margin: 0;
 }
+
+/* SHELF CART */
+.paragraph--cart {
+  margin: 0;
+  text-align: center;
+  font-weight: 700;
+  color: #000;
+  line-height: 17px;
+}
+
+.container--cart {
+  align-items: center;
+}
+
+.paragraph--shelf-cart {
+  margin: 0 0 0 15px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #485a64;
+  padding: 0;
+}

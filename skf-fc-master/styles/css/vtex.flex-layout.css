@@ -680,6 +680,7 @@
 
 .flexRow--product {
   margin-bottom: 16px;
+  padding-right: 15px;
 }
 
 .flexRow--minicart-footer {
@@ -1791,4 +1792,26 @@ padding: 0 15px;
 }
 .flexRowContent--product-info :global(.vtex-store-link-0-x-link--aplications-btn) {
   display: none;
+}
+
+/* SHELF CART */
+.flexRowContent--shelf-cart {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.flexRow--minicart-footer :global(.vtex-store-components-3-x-container) {
+  padding: 0;
+}
+.flexRowContent--shelf-cart .stretchChildrenWidth {
+  width: 100% !important;
+}
+.flexRow--shelf-cart {
+  border-top: 1px solid #090909;
+  padding-top: 5px;
+}
+@media(min-width: 1025px){
+  .flexRow--shelf-cart {
+    display: block;
+  }
 }

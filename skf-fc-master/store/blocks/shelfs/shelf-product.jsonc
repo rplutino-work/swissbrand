@@ -170,5 +170,41 @@
       "blockClass": ["shelf-product-unavailable","shelf-product"],
       "text": "Hasta 3 cuotas sin interés"
     }
+  },
+  /* SHELF CART */
+  "product-summary.shelf#shelf-cart": {
+    "props": {
+      "blockClass": ["shelf-cart","shelf-product"]
+    },
+    "children": [
+      "skf-flex-layout#shelf-cart",
+      "skf-flex-layout#shelf-prices",
+      //"product-price-savings#product-badge",
+      "add-to-cart-button#shelf-cart"
+    ]
+  },
+  "add-to-cart-button#shelf-cart": {
+    "props": {
+      "customPixelEventId": "addToCartJibbitz",
+      "blockClass": ["shelf-cart","add-cart-shelf-cart"]
+    }
+  },
+  "skf-flex-layout#shelf-cart": {
+    "props": {
+      "blockClass": ["shelf-images-badges","shelf-cart"]
+    },
+    "children": [
+      "product-summary-image#shelf-cart",
+      "product-summary-name#shelf-product",
+      "flex-layout.row#shelf-product-bottom-badges"
+    ]
+  },
+  "product-summary-image#shelf-cart": {
+    "props": {
+      "blockClass": ["m3-shelf-product-image","shelf-cart"],
+      "showBadge": false,
+      "aspectRatio": "1:1",
+      "height": 100
+    }
   }
 }

@@ -326,3 +326,45 @@
     left: -25px;
   }  
 }
+
+/* SHELF CART */
+.sliderLayoutContainer--shelf-cart {
+  padding: 0 15px !important;
+  max-width: 420px;
+}
+
+.caretIcon--shelf-cart {
+  color: #000 !important;
+}
+.sliderRightArrow--shelf-cart {
+  right: -12px !important;
+}
+
+.sliderLeftArrow--shelf-cart {
+  left: -12px !important;
+}  
+
+.slide--shelf-cart :global(.vtex-product-price-1-x-installments--shelf-product) {
+  display: none;
+}
+
+.sliderLayoutContainer--shelf-cart{
+  margin: 0;
+}
+
+@media(min-width: 1025px){
+  .sliderLayoutContainer--shelf-cart {
+    padding: 0 !important;
+  }
+  .sliderRightArrow--shelf-cart {
+    right: 11px!important;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .sliderLeftArrow--shelf-cart {
+    left: 10px!important;
+    margin: 0;
+    padding: 0;
+  }
+}
