@@ -146,7 +146,7 @@
       "flex-layout.row#product-badges",
       "flex-layout.row#product-prices",
       "product-installments#product",
-      "condition-layout.product#aplications",
+      "toggle-layout#aplications",
       "sku-selector#skf",
       "flex-layout.row#add-cart",
       "availability-subscriber",
@@ -172,7 +172,15 @@
     }
   },
 
+  "toggle-layout#aplications": {
+    "title": "Descargar PDF",
+    "children": [
+      "condition-layout.product#aplications"
+      ]
+  },
+
   "condition-layout.product#aplications": {
+    "title": "Opciones",
     "props": {
       "conditions": [
          {
@@ -196,6 +204,7 @@
   },
 
   "link#aplications": {
+    "title": "Link aplicaciones",
     "props": {
       "href": "#aplicaciones",
       "label": "Aplicaciones",
@@ -204,8 +213,9 @@
   },
 
   "link#download": {
+    "title": "Link PDF",
     "props": {
-      "href": "https://cdn.shopify.com/s/files/1/0331/2435/2138/files/skf.pdf?v=1671735924",
+      "href": "#",
       "label": "Descargar PDF",
       "blockClass": "download-btn",
       "target": "_blank"
