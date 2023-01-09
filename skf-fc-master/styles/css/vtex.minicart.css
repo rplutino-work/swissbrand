@@ -104,7 +104,7 @@
   border: none;
   border-radius: 6px;
   outline: none;
-  background: #090909;
+  background: #485A64;
   transition: background 0.2s linear;
 }
 
@@ -130,13 +130,13 @@
   }
 
   .minicartCheckoutButton :global(.vtex-button):active {
-    background: #090909;
+    background: #485A64;
   }
 }
 
 /* SHELF CART */
 .minicartSummary {
-  border-top: 1px solid #090909;
+  border-top: 1px solid #485A64;
   margin-top: 10px;
   padding: 5px 15px;
 }
@@ -146,4 +146,7 @@
     padding-left: 0.75rem;
     padding-right: 0.75rem;
   } 
+  .minicartContentContainer :global(.vtex-flex-layout-0-x-flexRow--product){
+    padding-left: 15px;
+  }
 }
