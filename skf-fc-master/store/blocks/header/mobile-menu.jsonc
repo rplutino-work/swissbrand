@@ -19,7 +19,8 @@
     "children": [
       "drawer#repuestos",
       "drawer#marcas",
-      "drawer#herramientas",
+      "link#herramientas",
+      //"drawer#herramientas",
       "drawer#merchandasing"
     ],
     "props": {
@@ -60,6 +61,13 @@
       "href": "/oficina",
       "blockClass": "mobile-menu-item",
       "label": "oficina"
+    }
+  },
+  "link#herramientas": {
+    "props": {
+      "href": "/herramientas",
+      "blockClass": "mobile-menu-item",
+      "label": "Herramientas"
     }
   }
 }

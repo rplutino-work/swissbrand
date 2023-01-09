@@ -69,6 +69,10 @@
   display: flex;
 }
 
+.styledLinkIcon--herramientas {
+  display: none;
+}
+
 .submenuContainer--submenu {
   position: static;
 }

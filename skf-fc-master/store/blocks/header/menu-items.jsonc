@@ -35,7 +35,7 @@
 
   "menu-item#herramientas": {
     "props": {
-      "blockClass": "department",
+      "blockClass": ["department","herramientas"],
       "id": "estandar",
       "type": "custom",
 
@@ -44,14 +44,14 @@
         "text": "Categoria",
         "type": "internal",
         "href": "#"
-      },
+      }/*,
       "iconProps": {
         "id": "nav-caret--down",
         "size": 10
       },
-      "iconPosition": "right"
-    },
-    "blocks": ["vtex.menu@2.x:submenu#herramientas"]
+      "iconPosition": "right"*/
+    }
+    //"blocks": ["vtex.menu@2.x:submenu#herramientas"]
   },
 
   "menu-item#marcas": {
