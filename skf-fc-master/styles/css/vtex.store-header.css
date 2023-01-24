@@ -28,6 +28,7 @@
 .headerRowContentContainer {
   padding: 0;
   max-width: 1200px;
+  height: 70px;
 }
 
 .headerRowContainer {
@@ -70,6 +71,23 @@
 .headerRowContainer--teste
   :global(.vtex-store-components-3-x-searchBarContainer) {
   padding-top: 0px;
+}
+
+.headerRowContainer--top-bar-header {
+  justify-content: center;
+  padding: 5px 0;
+}
+
+.headerRowContentContainer--main-header-menu {
+  height: initial;
+}
+
+.headerStickyRow--top-bar-header .headerRowContentContainer {
+  height: 30px;
+}
+
+.headerRowBackground--top-bar-header .headerRowContentContainer {
+  background: #fff;
 }
 
 @media only screen and (max-width: 1025px) {

@@ -10,7 +10,7 @@
 
   "header-layout.desktop": {
     "children": [
-      //"header-row#top-bar",
+      //"header-row#top-bar-desktop",
       "header-row#1-desktop",
       "header-row#2-desktop",
       "telemarketing"
@@ -18,6 +18,16 @@
   },
 
   /*DESKTOP - ROW 1 */
+  "header-row#top-bar-desktop": {
+    "title": "Topbar desktop",
+    "children": [
+      "rich-text#header-top-bar-desktop"
+    ],
+    "props": {
+      "sticky": false,
+      "blockClass": "top-bar-header"
+    }
+  },
   "header-row#1-desktop": {
     "children": [
       "logo#desktop",
@@ -81,12 +91,24 @@
 
   "header-layout.mobile": {
     "children": [
+      //"header-row#top-bar-mobile",
       "header-row#1-mobile",
       "header-row#2-mobile",
       "close-menu-overlay"
     ],
     "props": {
       "blockClass": "mobile-header"
+    }
+  },
+
+  "header-row#top-bar-mobile": {
+    "title": "Topbar mobile",
+    "children": [
+      "rich-text#header-top-bar-mobile"
+    ],
+    "props": {
+      "sticky": false,
+      "blockClass": "top-bar-header"
     }
   },
 
@@ -169,6 +191,22 @@
     "props": {
       "__unstableProductOriginVtex": true,
       "maxSuggestedProducts": 2
+    }
+  },
+
+  "rich-text#header-top-bar-desktop": {
+    "title": "Texto",
+    "props": {
+      "blockClass": ["top-bar"],
+      "text": "Envío gratis a todo el país"
+    }
+  },
+
+  "rich-text#header-top-bar-mobile": {
+    "title": "Texto",
+    "props": {
+      "blockClass": ["top-bar"],
+      "text": "Envío gratis a todo el país"
     }
   }
 }

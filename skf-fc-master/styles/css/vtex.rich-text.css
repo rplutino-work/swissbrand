@@ -12,6 +12,12 @@
   color: #313131;
 }
 
+.paragraph--top-bar {
+  margin: 0;
+  font-size: 13px;
+  color: #0f58d6;
+}
+
 /* DEALS */
 .paragraph--deals-title {
   color: #0F58D6;
