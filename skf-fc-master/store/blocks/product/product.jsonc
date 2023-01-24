@@ -586,7 +586,8 @@
   "tab-content.item#home1": {
     "children": [
       "product-description",
-      "condition-layout.product#aplications"
+      "toggle-layout#aplications"
+      //"condition-layout.product#aplications"
     ],
     "props": {
       "tabId": "home1"
