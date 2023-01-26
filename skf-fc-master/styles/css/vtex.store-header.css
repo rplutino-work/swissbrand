@@ -87,7 +87,11 @@
 }
 
 .headerRowBackground--top-bar-header .headerRowContentContainer {
-  background: #fff;
+  background: #EBF0F0;
+}
+
+.headerRowBackground--top-bar-header {
+  background: #EBF0F0;
 }
 
 @media only screen and (max-width: 1025px) {

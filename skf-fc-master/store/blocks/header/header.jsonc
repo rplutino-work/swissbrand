@@ -10,7 +10,7 @@
 
   "header-layout.desktop": {
     "children": [
-      //"header-row#top-bar-desktop",
+      "header-row#top-bar-desktop",
       "header-row#1-desktop",
       "header-row#2-desktop",
       "telemarketing"
@@ -91,7 +91,7 @@
 
   "header-layout.mobile": {
     "children": [
-      //"header-row#top-bar-mobile",
+      "header-row#top-bar-mobile",
       "header-row#1-mobile",
       "header-row#2-mobile",
       "close-menu-overlay"
@@ -198,7 +198,7 @@
     "title": "Texto",
     "props": {
       "blockClass": ["top-bar"],
-      "text": "Envío gratis a todo el país"
+      "text": "3 cuotas sin interés. Envios gratis a todo el país"
     }
   },
 
@@ -206,7 +206,7 @@
     "title": "Texto",
     "props": {
       "blockClass": ["top-bar"],
-      "text": "Envío gratis a todo el país"
+      "text": "3 cuotas sin interés. Envios gratis a todo el país"
     }
   }
 }
