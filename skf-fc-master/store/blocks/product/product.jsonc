@@ -444,15 +444,69 @@
 
   "disclosure-layout-group#product-info": {
     "children": [
-      "disclosure-layout#product-info-1", 
+      "condition-layout.product#disclosure-info-1", 
       "disclosure-layout#product-info-2",
-      "disclosure-layout#product-info-3"
+      "condition-layout.product#disclosure-info-3"
     ],
     "props": {
       "animated": true
     }
   },
 
+  "condition-layout.product#disclosure-info-1": {
+    "title": "Opciones",
+    "props": {
+      "conditions": [
+         {
+           "subject": "categoryTree",
+           "arguments": {
+               "id": "1"
+           }
+         }
+      ],
+      "Then": "flex-layout.row#aplications-none",
+      "Else": "flex-layout.row#aplications-tab"
+    }
+  },
+  "flex-layout.row#aplications-tab": {
+    "children": ["disclosure-layout#product-info-1"],
+    "props": {
+      "blockClass": ["condition-aplications-tab"]
+    }
+  },
+  "flex-layout.row#aplications-none": {
+    "children": [],
+    "props": {
+      "blockClass": ["condition-aplications-tab-none"]
+    }
+  },
+  "condition-layout.product#disclosure-info-3": {
+    "title": "Opciones",
+    "props": {
+      "conditions": [
+         {
+           "subject": "categoryTree",
+           "arguments": {
+               "id": "1"
+           }
+         }
+      ],
+      "Then": "flex-layout.row#aplications-none-3",
+      "Else": "flex-layout.row#aplications-tab-3"
+    }
+  },
+  "flex-layout.row#aplications-tab-3": {
+    "children": ["disclosure-layout#product-info-3"],
+    "props": {
+      "blockClass": ["condition-aplications-tab"]
+    }
+  },
+  "flex-layout.row#aplications-none-3": {
+    "children": [],
+    "props": {
+      "blockClass": ["condition-aplications-tab-none"]
+    }
+  },
   "disclosure-layout#product-info-1": {
     "children": [
       "disclosure-trigger#product-info-1-1", 
@@ -470,7 +524,7 @@
   },
   "rich-text#product-info-1-title": {
     "props": {
-      "text": "Aplicaciones",
+      "text": "Aplicaciones test",
       "blockClass": "product-info-title-disclosure"
     }
   },
@@ -540,6 +594,45 @@
     ]
 },
 
+"condition-layout.product#tab-layout": {
+  "title": "Opciones",
+  "props": {
+    "conditions": [
+       {
+         "subject": "categoryTree",
+         "arguments": {
+             "id": "1"
+         }
+       }
+    ],
+    "Then": "flex-layout.row#tab-layout-none",
+    "Else": "flex-layout.row#tab-layout-aplications"
+  }
+},
+"flex-layout.row#tab-layout-none": {
+  "children": ["tab-layout#none"],
+  "props": {
+    "blockClass": ["condition-aplications-tab"]
+  }
+},
+"flex-layout.row#tab-layout-aplications": {
+  "children": ["tab-layout#home"],
+  "props": {
+    "blockClass": ["condition-aplications-tab-none"]
+  }
+},
+
+"tab-layout#none": {
+  "children": [
+    "tab-list#home",
+    "tab-content#home"
+  ],
+  "props": {
+    "blockClass": "home",
+    "defaultActiveTabId": "home2"
+  }
+},
+
 "tab-layout#home": {
     "children": [
       "tab-list#home",
@@ -547,14 +640,14 @@
     ],
     "props": {
       "blockClass": "home",
-      "defaultActiveTabId": "home2"
+      "defaultActiveTabId": "home1"
     }
   },
   "tab-list#home": {
     "children": [
-      "tab-list.item#home2",
+      "condition-layout.product#tab-info-2",
       "tab-list.item#home1",
-      "tab-list.item#home3"
+      "condition-layout.product#tab-info-3"
     ]
   },
   "tab-list.item#home1": {
@@ -564,10 +657,64 @@
       "defaultActiveTab": true
     }
   },
+  "condition-layout.product#tab-info-2": {
+    "title": "Opciones",
+    "props": {
+      "conditions": [
+         {
+           "subject": "categoryTree",
+           "arguments": {
+               "id": "1"
+           }
+         }
+      ],
+      "Then": "flex-layout.row#aplications-none",
+      "Else": "flex-layout.row#aplications-tab"
+    }
+  },
+  "flex-layout.row#aplications-tab": {
+    "children": ["tab-list.item#home2"],
+    "props": {
+      "blockClass": ["condition-aplications-tab"]
+    }
+  },
+  "flex-layout.row#aplications-none": {
+    "children": [],
+    "props": {
+      "blockClass": ["condition-aplications-tab-none"]
+    }
+  },
   "tab-list.item#home2": {
     "props": {
       "tabId": "home2",
       "label": "Aplicaciones"
+    }
+  },
+  "condition-layout.product#tab-info-3": {
+    "title": "Opciones",
+    "props": {
+      "conditions": [
+         {
+           "subject": "categoryTree",
+           "arguments": {
+               "id": "1"
+           }
+         }
+      ],
+      "Then": "flex-layout.row#aplications-none-3",
+      "Else": "flex-layout.row#aplications-tab-3"
+    }
+  },
+  "flex-layout.row#aplications-tab-3": {
+    "children": ["tab-list.item#home3"],
+    "props": {
+      "blockClass": ["condition-aplications-tab"]
+    }
+  },
+  "flex-layout.row#aplications-none-3": {
+    "children": [],
+    "props": {
+      "blockClass": ["condition-aplications-tab-none"]
     }
   },
   "tab-list.item#home3": {
