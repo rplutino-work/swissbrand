@@ -629,7 +629,7 @@
   ],
   "props": {
     "blockClass": "home",
-    "defaultActiveTabId": "home2"
+    "defaultActiveTabId": "home1"
   }
 },
 
@@ -640,7 +640,7 @@
     ],
     "props": {
       "blockClass": "home",
-      "defaultActiveTabId": "home1"
+      "defaultActiveTabId": "home2"
     }
   },
   "tab-list#home": {
