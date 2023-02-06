@@ -590,7 +590,7 @@
     },
 
     "children": [
-      "tab-layout#home"
+      "condition-layout.product#tab-layout"
     ]
 },
 
