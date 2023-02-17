@@ -435,78 +435,50 @@
   },
 
   "responsive-layout.mobile#product-info": {
-    "children": ["disclosure-layout-group#product-info"]
+    "children": ["condition-layout.product#disclosure-pdp"]
   },
 
   "responsive-layout.desktop#product-info": {
     "children": ["flex-layout.row#product-info"]
   },
 
+  "condition-layout.product#disclosure-pdp": {
+    "title": "Opciones",
+    "props": {
+      "conditions": [
+         {
+           "subject": "categoryTree",
+           "arguments": {
+               "id": "1"
+           }
+         }
+      ],
+      "Then": "disclosure-layout-group#product-info",
+      "Else": "disclosure-layout-group#product-info-2"
+    }
+  },
+
   "disclosure-layout-group#product-info": {
-    "children": [
-      "condition-layout.product#disclosure-info-1", 
+    "children": [ 
       "disclosure-layout#product-info-2",
-      "condition-layout.product#disclosure-info-3"
+      "disclosure-layout#product-info-3"
     ],
     "props": {
       "animated": true
     }
   },
 
-  "condition-layout.product#disclosure-info-1": {
-    "title": "Opciones",
+  "disclosure-layout-group#product-info-2": {
+    "children": [
+      "disclosure-layout#product-info-1", 
+      "disclosure-layout#product-info-2",
+      "disclosure-layout#product-info-3"
+    ],
     "props": {
-      "conditions": [
-         {
-           "subject": "categoryTree",
-           "arguments": {
-               "id": "1"
-           }
-         }
-      ],
-      "Then": "flex-layout.row#aplications-none",
-      "Else": "flex-layout.row#aplications-tab"
+      "animated": true
     }
   },
-  "flex-layout.row#aplications-tab": {
-    "children": ["disclosure-layout#product-info-1"],
-    "props": {
-      "blockClass": ["condition-aplications-tab"]
-    }
-  },
-  "flex-layout.row#aplications-none": {
-    "children": [],
-    "props": {
-      "blockClass": ["condition-aplications-tab-none"]
-    }
-  },
-  "condition-layout.product#disclosure-info-3": {
-    "title": "Opciones",
-    "props": {
-      "conditions": [
-         {
-           "subject": "categoryTree",
-           "arguments": {
-               "id": "1"
-           }
-         }
-      ],
-      "Then": "flex-layout.row#aplications-none-3",
-      "Else": "flex-layout.row#aplications-tab-3"
-    }
-  },
-  "flex-layout.row#aplications-tab-3": {
-    "children": ["disclosure-layout#product-info-3"],
-    "props": {
-      "blockClass": ["condition-aplications-tab"]
-    }
-  },
-  "flex-layout.row#aplications-none-3": {
-    "children": [],
-    "props": {
-      "blockClass": ["condition-aplications-tab-none"]
-    }
-  },
+
   "disclosure-layout#product-info-1": {
     "children": [
       "disclosure-trigger#product-info-1-1", 
@@ -524,7 +496,7 @@
   },
   "rich-text#product-info-1-title": {
     "props": {
-      "text": "Aplicaciones test",
+      "text": "Aplicaciones",
       "blockClass": "product-info-title-disclosure"
     }
   },
@@ -590,11 +562,10 @@
     },
 
     "children": [
-      "condition-layout.product#tab-layout"
+      "condition-layout.product#tab-layout-pdp"
     ]
 },
-
-"condition-layout.product#tab-layout": {
+"condition-layout.product#tab-layout-pdp": {
   "title": "Opciones",
   "props": {
     "conditions": [
@@ -605,34 +576,10 @@
          }
        }
     ],
-    "Then": "flex-layout.row#tab-layout-none",
-    "Else": "flex-layout.row#tab-layout-aplications"
+    "Then": "tab-layout#home",
+    "Else": "tab-layout#home-2"
   }
 },
-"flex-layout.row#tab-layout-none": {
-  "children": ["tab-layout#none"],
-  "props": {
-    "blockClass": ["condition-aplications-tab"]
-  }
-},
-"flex-layout.row#tab-layout-aplications": {
-  "children": ["tab-layout#home"],
-  "props": {
-    "blockClass": ["condition-aplications-tab-none"]
-  }
-},
-
-"tab-layout#none": {
-  "children": [
-    "tab-list#home",
-    "tab-content#home"
-  ],
-  "props": {
-    "blockClass": "home",
-    "defaultActiveTabId": "home1"
-  }
-},
-
 "tab-layout#home": {
     "children": [
       "tab-list#home",
@@ -640,14 +587,30 @@
     ],
     "props": {
       "blockClass": "home",
-      "defaultActiveTabId": "home2"
+      "defaultActiveTabId": "home1"
     }
   },
   "tab-list#home": {
     "children": [
-      "condition-layout.product#tab-info-2",
       "tab-list.item#home1",
-      "condition-layout.product#tab-info-3"
+      "tab-list.item#home3"
+    ]
+  },
+  "tab-layout#home-2": {
+    "children": [
+      "tab-list#home-2",
+      "tab-content#home-2"
+    ],
+    "props": {
+      "blockClass": "home",
+      "defaultActiveTabId": "home2"
+    }
+  },
+  "tab-list#home-2": {
+    "children": [
+      "tab-list.item#home2",
+      "tab-list.item#home1",
+      "tab-list.item#home3"
     ]
   },
   "tab-list.item#home1": {
@@ -657,64 +620,10 @@
       "defaultActiveTab": true
     }
   },
-  "condition-layout.product#tab-info-2": {
-    "title": "Opciones",
-    "props": {
-      "conditions": [
-         {
-           "subject": "categoryTree",
-           "arguments": {
-               "id": "1"
-           }
-         }
-      ],
-      "Then": "flex-layout.row#aplications-none",
-      "Else": "flex-layout.row#aplications-tab"
-    }
-  },
-  "flex-layout.row#aplications-tab": {
-    "children": ["tab-list.item#home2"],
-    "props": {
-      "blockClass": ["condition-aplications-tab"]
-    }
-  },
-  "flex-layout.row#aplications-none": {
-    "children": [],
-    "props": {
-      "blockClass": ["condition-aplications-tab-none"]
-    }
-  },
   "tab-list.item#home2": {
     "props": {
       "tabId": "home2",
       "label": "Aplicaciones"
-    }
-  },
-  "condition-layout.product#tab-info-3": {
-    "title": "Opciones",
-    "props": {
-      "conditions": [
-         {
-           "subject": "categoryTree",
-           "arguments": {
-               "id": "1"
-           }
-         }
-      ],
-      "Then": "flex-layout.row#aplications-none-3",
-      "Else": "flex-layout.row#aplications-tab-3"
-    }
-  },
-  "flex-layout.row#aplications-tab-3": {
-    "children": ["tab-list.item#home3"],
-    "props": {
-      "blockClass": ["condition-aplications-tab"]
-    }
-  },
-  "flex-layout.row#aplications-none-3": {
-    "children": [],
-    "props": {
-      "blockClass": ["condition-aplications-tab-none"]
     }
   },
   "tab-list.item#home3": {
@@ -724,6 +633,12 @@
     }
   },
   "tab-content#home": {
+    "children": [
+      "tab-content.item#home1",
+      "tab-content.item#home3"
+    ]
+  },
+  "tab-content#home-2": {
     "children": [
       "tab-content.item#home1",
       "tab-content.item#home2",
