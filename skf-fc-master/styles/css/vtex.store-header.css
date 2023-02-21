@@ -98,6 +98,7 @@
   .headerRowContentContainer {
     max-width: 100vw;
     background-color: #0f58d6;
+    height: 55px;
   }
 
   .headerRowContainer--main-header-mobile {
