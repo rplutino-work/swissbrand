@@ -454,7 +454,32 @@
          }
       ],
       "Then": "disclosure-layout-group#product-info",
+      "Else": "condition-layout.product#disclosure-pdp-merchandising"
+    }
+  },
+
+  "condition-layout.product#disclosure-pdp-merchandising": {
+    "title": "Opciones",
+    "props": {
+      "conditions": [
+         {
+           "subject": "categoryTree",
+           "arguments": {
+               "id": "2"
+           }
+         }
+      ],
+      "Then": "disclosure-layout-group#product-info-3",
       "Else": "disclosure-layout-group#product-info-2"
+    }
+  },
+
+  "disclosure-layout-group#product-info-3": {
+    "children": [ 
+      "disclosure-layout#product-info-2"
+    ],
+    "props": {
+      "animated": true
     }
   },
 
@@ -577,7 +602,32 @@
        }
     ],
     "Then": "tab-layout#home",
+    "Else": "condition-layout.product#tab-layout-pdp-merchandasing"
+  }
+},
+"condition-layout.product#tab-layout-pdp-merchandasing": {
+  "title": "Opciones",
+  "props": {
+    "conditions": [
+       {
+         "subject": "categoryTree",
+         "arguments": {
+             "id": "2"
+         }
+       }
+    ],
+    "Then": "tab-layout#home-3",
     "Else": "tab-layout#home-2"
+  }
+},
+"tab-layout#home-3": {
+  "children": [
+    "tab-list#home-3",
+    "tab-content#home-3"
+  ],
+  "props": {
+    "blockClass": "home",
+    "defaultActiveTabId": "home1"
   }
 },
 "tab-layout#home": {
@@ -594,6 +644,11 @@
     "children": [
       "tab-list.item#home1",
       "tab-list.item#home3"
+    ]
+  },
+  "tab-list#home-3": {
+    "children": [
+      "tab-list.item#home1"
     ]
   },
   "tab-layout#home-2": {
@@ -636,6 +691,11 @@
     "children": [
       "tab-content.item#home1",
       "tab-content.item#home3"
+    ]
+  },
+  "tab-content#home-3": {
+    "children": [
+      "tab-content.item#home1"
     ]
   },
   "tab-content#home-2": {
