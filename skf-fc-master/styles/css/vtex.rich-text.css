@@ -425,6 +425,11 @@
   color: #485A64;
 }
 
+.link--form-text {
+  text-decoration: none;
+  color: #0f58d6;
+}
+
 /* APLICACIONES PDP */
 .paragraph--pdp-spec-aplicaciones-title {
   color: #fff;

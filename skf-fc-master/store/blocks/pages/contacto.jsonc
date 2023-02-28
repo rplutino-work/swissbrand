@@ -1,97 +1,123 @@
 {
-    "store.custom#arrepentimiento": {
+    "store.custom#contacto": {
       "children": [
-        "flex-layout.row#arrepentimiento"
+        "flex-layout.row#contacto-form"
       ]
     },
-    "flex-layout.row#arrepentimiento": {
+    "flex-layout.row#contacto-form": {
       "props": {
         "blockClass": "form-wrapper"
       },
       "children": [
-        "flex-layout.col#arrepentimiento"
+        "flex-layout.col#contacto-form"
       ]
     },
-    "flex-layout.col#arrepentimiento": {
+    "flex-layout.col#contacto-form": {
       "children": [
-        "rich-text#form-title",
-        "form#arrepentimiento"
+        "form#contacto-form"
       ]
     },
-    "rich-text#form-title": {
+    "rich-text#form-contacto-title": {
       "props": {
         "blockClass": "form-title",
-        "text": "# Arrepentimiento",
+        "text": "# Contacto",
         "textAlignment": "CENTER",
         "textPosition": "CENTER"
       }
     },
-    "form#arrepentimiento": {
+    "rich-text#form-contacto-text": {
+        "props": {
+          "blockClass": "form-text",
+          "text": "Para contactarte con el equipo de SKF Store, te pedimos que completes el siguiente formulario con tu consulta y tus datos para poder contactarte.\n\nEn caso de querer cancelar una compra ya realizada, te pedimos que completes la siguiente [página de arrepentimiento](/arrepentimiento)"
+        }
+      },
+    "form#contacto-form": {
       "props": {
-        "entity": "AR",
-        "schema": "Arrepentimiento",
+        "entity": "CO",
+        "schema": "Contacto",
         "blockClass": "form-contact"
       },
       "blocks": [
-        "form-success#contact-us"
+        "form-success#contact"
       ],
       "children": [
-        "form-input.text#name",
-        "form-input.text#email",
-        "form-input.text#phone",
-        "form-input.text#pedido",
-        "form-input.textarea#textarea",
-        "form-submit#contact"
+        "rich-text#form-contacto-title",
+        "rich-text#form-contacto-text",
+        "form-input.text#form-contacto-name",
+        "form-input.text#form-contacto-apellido",
+        "form-input.text#form-contacto-email",
+        "form-input.text#form-contacto-phone",
+        "form-field-group#form-contacto-motivo",
+        "form-field-group#form-contacto-compro",
+        "form-input.text#form-contacto-pedido",
+        "form-input.textarea#form-contacto-textarea",
+        "form-submit#form-contacto-contact"
       ]
     },
-    "form-success#contact-us": {
+    "form-success#contact": {
       "children": [
-        "rich-text#success-submit"
+        "rich-text#success-submit-contact"
       ]
     },
-    "rich-text#success-submit": {
+    "rich-text#success-submit-contact": {
       "props": {
-        "text": "Lamentamos que no quieras tu producto. Nos estaremos contactando a la brevedad",
-        "textAlignment": "CENTER",
-        "textPosition": "CENTER"
+        "blockClass":["form-success"],
+        "text": "Gracias por contactarte con SKF Store. Te estaremos respondiendo tu consulta al email ingresado."
       }
     },
-    "form-input.text#name": {
+    "form-input.text#form-contacto-name": {
       "props": {
         "blockClass": "input-form",
         "placeholder": "Nombre",
         "pointer": "#/properties/nombre"
       }
     },
-    "form-input.text#email": {
+    "form-input.text#form-contacto-apellido": {
+        "props": {
+          "blockClass": "input-form",
+          "placeholder": "Apellido",
+          "pointer": "#/properties/apellido"
+        }
+      },
+    "form-input.text#form-contacto-email": {
         "props": {
           "blockClass": "input-form",
           "placeholder": "Email",
           "pointer": "#/properties/email"
         }
       },
-    "form-input.text#phone": {
+    "form-input.text#form-contacto-phone": {
         "props": {
             "blockClass": "input-form",
             "placeholder": "Teléfono",
             "pointer": "#/properties/telefono"
         }
       },
-      "form-input.text#pedido": {
+      "form-field-group#form-contacto-motivo": {
+        "props": {
+          "pointer": "#/properties/motivo"
+        }
+      },
+      "form-field-group#form-contacto-compro": {
+        "props": {
+          "pointer": "#/properties/compro"
+        }
+      },
+      "form-input.text#form-contacto-pedido": {
         "props": {
           "blockClass": "input-form",
           "placeholder": "N° de pedido",
           "pointer": "#/properties/pedido"
         }
       },
-    "form-input.textarea#textarea": {
+    "form-input.textarea#form-contacto-textarea": {
         "props": {
             "blockClass": "input-form",
-            "placeholder": "Motivo de arrepentimiento",
+            "placeholder": "Mensaje",
           "pointer": "#/properties/mensaje"
         }
       },
-    "form-submit#contact": {
+    "form-submit#form-contacto-contact": {
       "props": {
         "blockClass": "form-submit",
         "label": "Enviar"

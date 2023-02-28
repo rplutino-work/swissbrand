@@ -1651,6 +1651,29 @@ padding: 0 15px;
   letter-spacing: .3px;
 }
 
+.flexRowContent--form-wrapper :global(.vtex-dropdown__container) {
+  margin-bottom: 15px;
+  border-radius: 0;
+  border: 1px solid #0f58d6;
+}
+
+.flexRowContent--form-wrapper :global(.vtex-dropdown__caption) {
+  color: #485a64;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .3px;
+}
+
+.flexRowContent--form-wrapper :global(.vtex-dropdown__label) {
+  display: none;
+}
+
+.flexRowContent--form-wrapper :global(.vtex-dropdown__containervtex-dropdown)::placeholder {
+  color: #485a64;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .3px;
+}
 
 .flexRowContent--form-wrapper :global(.vtex-input__label) {
   display: none;

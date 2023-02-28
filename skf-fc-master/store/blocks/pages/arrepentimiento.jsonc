@@ -1,0 +1,100 @@
+{
+    "store.custom#arrepentimiento": {
+      "children": [
+        "flex-layout.row#arrepentimiento"
+      ]
+    },
+    "flex-layout.row#arrepentimiento": {
+      "props": {
+        "blockClass": "form-wrapper"
+      },
+      "children": [
+        "flex-layout.col#arrepentimiento"
+      ]
+    },
+    "flex-layout.col#arrepentimiento": {
+      "children": [
+        "rich-text#form-title",
+        "form#arrepentimiento"
+      ]
+    },
+    "rich-text#form-title": {
+      "props": {
+        "blockClass": "form-title",
+        "text": "# Arrepentimiento",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER"
+      }
+    },
+    "form#arrepentimiento": {
+      "props": {
+        "entity": "AR",
+        "schema": "Arrepentimiento",
+        "blockClass": "form-contact"
+      },
+      "blocks": [
+        "form-success#contact-us"
+      ],
+      "children": [
+        "form-input.text#name",
+        "form-input.text#email",
+        "form-input.text#phone",
+        "form-input.text#pedido",
+        "form-input.textarea#textarea",
+        "form-submit#contact"
+      ]
+    },
+    "form-success#contact-us": {
+      "children": [
+        "rich-text#success-submit"
+      ]
+    },
+    "rich-text#success-submit": {
+      "props": {
+        "text": "Lamentamos que no quieras tu producto. Nos estaremos contactando a la brevedad",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER"
+      }
+    },
+    "form-input.text#name": {
+      "props": {
+        "blockClass": "input-form",
+        "placeholder": "Nombre",
+        "pointer": "#/properties/nombre"
+      }
+    },
+    "form-input.text#email": {
+        "props": {
+          "blockClass": "input-form",
+          "placeholder": "Email",
+          "pointer": "#/properties/email"
+        }
+      },
+    "form-input.text#phone": {
+        "props": {
+            "blockClass": "input-form",
+            "placeholder": "Teléfono",
+            "pointer": "#/properties/telefono"
+        }
+      },
+      "form-input.text#pedido": {
+        "props": {
+          "blockClass": "input-form",
+          "placeholder": "N° de pedido",
+          "pointer": "#/properties/pedido"
+        }
+      },
+    "form-input.textarea#textarea": {
+        "props": {
+            "blockClass": "input-form",
+            "placeholder": "Motivo de arrepentimiento",
+          "pointer": "#/properties/mensaje"
+        }
+      },
+    "form-submit#contact": {
+      "props": {
+        "blockClass": "form-submit",
+        "label": "Enviar"
+      }
+    }
+  }
