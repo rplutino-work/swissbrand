@@ -34,16 +34,24 @@
   }
   
   .formSubmitContainer :global(.vtex-button) {
-        border: 0;
-        border-radius: 5px;
-        font-size: 13px;
-        color: #fff;
-        font-weight: 600;
-        background: rgb(255,199,0);
-        background: -moz-linear-gradient(95deg,rgba(255,199,0,1) 0%,rgba(236,32,35,1) 100%);
-        background: -webkit-linear-gradient(95deg,rgba(255,199,0,1) 0%,rgba(236,32,35,1) 100%);
-        background: linear-gradient(95deg,rgba(255,199,0,1) 0%,rgba(236,32,35,1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffc700",endColorstr="#ec2023",GradientType=1);
+    display: block;
+    width: 100%;
+    border-radius: 0;
+    outline: none;
+    background: #0f58d6;
+    border: 1px solid #fff;
+    transition: background .2s linear;
+    max-width: 200px;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: .025em;
+  }
+
+  .formSubmitContainer :global(.vtex-button):hover{
+    background-color: #88c008;
   }
   
   .formSubmitContainer :global(.vtex-button__label) {
@@ -83,6 +91,11 @@
     margin-bottom: 15px;
     text-align: center;
     padding-top: 30px;
+}
+
+.newsletterForm--popup-form-wrapper {
+  padding: 15px;
+  width: 100%;
 }
 
   @media(max-width: 1024px){

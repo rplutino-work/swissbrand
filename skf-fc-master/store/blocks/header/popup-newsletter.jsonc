@@ -1,0 +1,146 @@
+{
+    "modal-trigger#modal-newsletter": {
+        "props":{
+          "trigger": "load-session"
+        },
+        "children": [
+          "modal-layout#example"
+        ]
+      },
+      "modal-layout#example": {
+        "props": {
+          "blockClass": "popup-home"
+        },
+        "children": [
+          "modal-header#popup",
+          "responsive-layout.desktop#popup-image",
+          "responsive-layout.mobile#popup-image",
+          "flex-layout.row#newsletter-form"
+          //"newsletter-form#popup"
+        ]
+      },
+      "modal-header#popup": {
+        "props": {
+          "blockClass": "close-popup",
+          "showCloseButton": true,
+          "iconCloseSize": 32
+        },
+        "title": "Cruz"
+      },
+      "flex-layout.row#newsletter-form": {
+        "children": ["form#newsletter-form"],
+        "props": {
+          "blockClass": ["newsletter-form-wrapper"]
+        }
+      },
+      "form#newsletter-form": {
+        "props": {
+          "entity": "NW",
+          "schema": "Newsletter",
+          "blockClass": "form-contact"
+        },
+        "blocks": [
+          "form-success#newsletter"
+        ],
+        "children": [
+            "flex-layout.row#popup-title",
+            "form-input.text#form-newsletter-name",
+            "form-input.text#form-newsletter-apellido",
+            "form-input.text#form-newsletter-email",
+            "form-input.checkbox#newsletter",  
+            "form-submit#form-newsletter"
+        ]
+      },
+      "form-submit#form-newsletter": {
+        "props": {
+          "blockClass": "form-submit",
+          "label": "Registrarme"
+        }
+      },
+      "form-success#newsletter": {
+        "children": [
+          "rich-text#success-submit-newsletter"
+        ]
+      },
+      "rich-text#success-submit-newsletter": {
+        "props": {
+          "blockClass":["form-success","popup-title","form-success-newsletter"],
+          "textAlignment": "CENTER",
+          "text": "Gracias por susribirte a SKF Store. Pronto comenzaras a recibir las novedades."
+        }
+      },
+      "form-input.text#form-newsletter-name": {
+        "props": {
+          "blockClass": "input-form",
+          "placeholder": "Nombre",
+          "pointer": "#/properties/nombre"
+        }
+      },
+      "form-input.text#form-newsletter-apellido": {
+          "props": {
+            "blockClass": "input-form",
+            "placeholder": "Apellido",
+            "pointer": "#/properties/apellido"
+          }
+        },
+      "form-input.text#form-newsletter-email": {
+          "props": {
+            "blockClass": "input-form",
+            "placeholder": "Email",
+            "pointer": "#/properties/email"
+          }
+        },
+        "form-input.checkbox#newsletter": {
+            "props": {
+              "pointer": "#/properties/newsletter",
+              "label": "¿Acepta recibir newsletter?"
+            }
+          },
+    
+      "flex-layout.row#popup-title": {
+        "props": {
+          "blockClass": "popup-title-wrapper",
+          "colSizing": "auto"
+        },
+        "title": "Titulo Popup",
+        "children": [
+          "rich-text#popup-title"
+        ]
+      },
+    
+      "rich-text#popup-title": {
+        "props": {
+          "text": "Suscribite a nuestro newsletter y recibí antes todas las novedades",
+          "blockClass": "popup-title",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER"
+        },
+        "title": "Titulo"
+      },
+    
+      "responsive-layout.desktop#popup-image": {
+        "children": [
+          "image#popup-image-desktop"
+        ]
+      },
+      "responsive-layout.mobile#popup-image": {
+        "children": [
+          "image#popup-image-mobile"
+        ]
+      },
+      "image#popup-image-mobile": {
+        "props": {
+          "src": "https://placehold.jp/600x400.png",
+          "alt": "Novedades SKF",
+          "blockClass": "popup-image"
+        }
+      },
+      "image#popup-image-desktop": {
+        "props": {
+          "src": "https://placehold.jp/600x400.png",
+          "alt": "Novedades SKF",
+          "blockClass": "popup-image",
+          "maxWidth": 600
+        }
+      }
+}

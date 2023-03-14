@@ -10,6 +10,7 @@
       "flex-layout.row#list-home",
       "flex-layout.row#shelf-home",
       "flex-layout.row#banner-home",
+      "flex-layout.row#shelf-home-2",
       "flex-layout.row#skf-info-home"
     ]
   },

@@ -43,6 +43,50 @@
       }
     }
   },
+  /* SHELF HOME 2 */
+  "flex-layout.row#shelf-home-2": {
+    "props": {
+      "blockClass": ["shelf", "shelfWithBackground", "shelf-slider"]
+    },
+    "children": ["flex-layout.col#shelf-home-2"]
+  },
+  "flex-layout.col#shelf-home-2": {
+    "props": {
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "rich-text#shelf-home-title-2",
+      "list-context.product-list#home-shelf-2"
+    ]
+  },
+  "rich-text#shelf-home-title-2": {
+    "props": {
+      "blockClass": "block-title",
+      "text": "## Lorem ipsum",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT"
+    }
+  },
+  "list-context.product-list#home-shelf-2": {
+    "props": {
+      "categoryId": "9"
+    },
+    "blocks": ["product-summary.shelf#shelf-product"],
+    "children": ["slider-layout#shelf-products-slide-2"]
+  },
+  "slider-layout#shelf-products-slide-2": {
+    "props": {
+      "blockClass": ["shelf", "shelf-slider", "shelf-slider-2"],
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "always",
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 2
+      }
+    }
+  },
   /* SHELF CART */
   "flex-layout.row#shelf-cart": {
     "title": "Productos & texto",
