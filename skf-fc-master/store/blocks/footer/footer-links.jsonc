@@ -119,7 +119,7 @@
     "children": [
       "rich-text#contact-title",
       //"menu-item#phone",
-      "menu-item#envelope"
+      "menu-item#envelope-2"
       //"menu-item#whatsapp"
     ]
   },
@@ -152,7 +152,7 @@
     }
   },
 
-  "menu-item#envelope": {
+  "menu-item#envelope-2": {
     "props": {
       "blockClass": ["footer-menu-item","footer-menu-item-contact"],
       "id": "envelope",
@@ -167,7 +167,7 @@
       "iconProps": {
         "id": "skf-envelope",
         "size": 15,
-        "viewBox": "0 0 15 15"
+        "viewBox": "3 5 15 10"
       },
       "iconToTheRight": true
     }
@@ -347,7 +347,7 @@
     },
     "children": [
       //"menu-item#phone",
-      "menu-item#envelope"
+      "menu-item#envelope-2"
       //"menu-item#whatsapp"
     ]
   },
