@@ -45,31 +45,15 @@
   },
   /* SHELF CART */
   "flex-layout.row#shelf-cart": {
-    "title": "Productos cart lateral",
-    "children": [
-      "disposition-layout#shelf-cart"
-    ],
-    "props": {
-      "colSizing": "auto",
-      "fullWidth": true,
-      "blockClass": ["shelf-cart"]
-    }
-  },
-  "disposition-layout#shelf-cart": {
-    "title": "Orden y visualizacion",
+    "title": "Productos & texto",
     "children": [
       "rich-text#shelf-cart",
       "list-context.product-list#shelf-cart"
     ],
     "props": {
-      "disposition": [
-        {
-          "order": 1
-        },
-        {
-          "order": 2
-        }
-      ]
+      "colSizing": "auto",
+      "fullWidth": true,
+      "blockClass": ["shelf-cart"]
     }
   },
   "rich-text#shelf-cart": {
@@ -95,6 +79,7 @@
   }
   },
   "slider-layout#shelf-cart": {
+    "title": "Configuración slider",
     "props": {
       "itemsPerPage": {
         "desktop": 3,

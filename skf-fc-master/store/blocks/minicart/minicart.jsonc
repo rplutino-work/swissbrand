@@ -160,7 +160,49 @@
   },
 
   "flex-layout.col#minicart-footer": {
-    "children": ["flex-layout.row#shelf-cart","minicart-summary", "minicart-checkout-button"]
+    "children": ["responsive-layout.mobile", "responsive-layout.desktop","minicart-summary", "minicart-checkout-button"]
+  },
+
+  "responsive-layout.mobile": {
+    "title": "Productos cart lateral mobile",
+    "children": [
+      "disposition-layout#shelf-cart-mobile"
+    ]
+  },
+
+  "responsive-layout.desktop": {
+    "title": "Productos cart lateral Desktop",
+    "children": [
+      "disposition-layout#shelf-cart-desktop"
+    ]
+  },
+
+  "disposition-layout#shelf-cart-mobile": {
+    "title": "Visualización",
+    "children": [
+        "flex-layout.row#shelf-cart"
+      ],
+      "props": {
+        "disposition": [
+          {
+            "order": 1
+          }
+        ]
+      }
+  },
+
+  "disposition-layout#shelf-cart-desktop": {
+    "title": "Visualización",
+    "children": [
+        "flex-layout.row#shelf-cart"
+      ],
+      "props": {
+        "disposition": [
+          {
+            "order": 1
+          }
+        ]
+      }
   },
 
   "minicart-summary": {
