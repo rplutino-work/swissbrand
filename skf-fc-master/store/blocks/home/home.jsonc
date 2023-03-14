@@ -11,6 +11,8 @@
       "flex-layout.row#shelf-home",
       "flex-layout.row#banner-home",
       "flex-layout.row#shelf-home-2",
+      "responsive-layout.mobile#banner-home-2",
+      "responsive-layout.desktop#banner-home-2",
       "flex-layout.row#skf-info-home"
     ]
   },
@@ -282,6 +284,102 @@
       "callToActionUrl": "/",
       "blockClass": ["banner-home","banner-home-row-2"],
       "textAlignment": "left"
+    }
+  },
+
+  // BANNER HOME 2
+  "responsive-layout.mobile#banner-home-2": {
+    "children": ["flex-layout.row#banner-home-2-mobile"]
+  },
+
+  "responsive-layout.desktop#banner-home-2": {
+    "children": ["flex-layout.row#banner-home-2-desktop"]
+  },
+
+  "flex-layout.row#banner-home-2-desktop": {
+    "children": [
+      "flex-layout.row#banner-home-2-row-1-desktop",
+      "flex-layout.row#banner-home-2-row-2-desktop"
+    ],
+    "props": {
+      "blockClass": ["banner-home-2-wrapper"],
+      "colSizing": "auto"
+    }
+  },
+
+  "flex-layout.row#banner-home-2-mobile": {
+    "children": [
+      "flex-layout.row#banner-home-2-row-1-mobile",
+      "flex-layout.row#banner-home-2-row-2-mobile"
+    ],
+    "props": {
+      "blockClass": ["banner-home-2-wrapper"],
+      "colSizing": "auto"
+    }
+  },
+
+
+  "flex-layout.row#banner-home-2-row-1-mobile": {
+    "children": [
+      "image#banner-home-2-row-1-mobile"
+    ],
+    "props": {
+      "blockClass": ["banner-home-2-row-1"]
+    }
+  },
+
+  "flex-layout.row#banner-home-2-row-2-mobile": {
+    "children": [
+      "image#banner-home-2-row-2-mobile"
+    ],
+    "props": {
+      "blockClass": ["banner-home-2-row-2"]
+    }
+  },
+
+  "flex-layout.row#banner-home-2-row-1-desktop": {
+    "children": [
+      "image#banner-home-2-row-1-desktop"
+    ],
+    "props": {
+      "blockClass": ["banner-home-2-row-1"]
+    }
+  },
+
+  "flex-layout.row#banner-home-2-row-2-desktop": {
+    "children": [
+      "image#banner-home-2-row-2-desktop"
+    ],
+    "props": {
+      "blockClass": ["banner-home-2-row-2"]
+    }
+  },
+
+  "image#banner-home-2-row-1-mobile": {
+    "props": {
+      "blockClass": ["banner-home-1"],
+      "src": "https://placehold.jp/480x400.png"
+    }
+  },
+
+  "image#banner-home-2-row-2-mobile": {
+    "props": {
+      "blockClass": ["banner-home-2"],
+      "src": "https://placehold.jp/480x400.png"
+    }
+  },
+
+  "image#banner-home-2-row-1-desktop": {
+    "props": {
+      "blockClass": ["banner-home-1"],
+      "src": "https://placehold.jp/595x397.png"
+    }
+  },
+
+  "image#banner-home-2-row-2-desktop": {
+    "props": {
+      "blockClass": ["banner-home-2"],
+      "src": "https://placehold.jp/595x397.png"
     }
   },
 
