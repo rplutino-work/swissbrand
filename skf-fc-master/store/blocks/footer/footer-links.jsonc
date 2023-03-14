@@ -203,7 +203,7 @@
     "children": [
       "rich-text#clientes",
       "menu-item#ingresar",
-      "menu-item#mi-cuenta",
+      //"menu-item#mi-cuenta",
       "menu-item#me-arrepenti",
       "link#me-arrepenti"
     ]
@@ -383,7 +383,7 @@
 
     "children": [
       "menu-item#ingresar",
-      "menu-item#mi-cuenta",
+      //"menu-item#mi-cuenta",
       "menu-item#me-arrepenti",
       "link#me-arrepenti"
     ]
