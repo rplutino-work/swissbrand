@@ -63,11 +63,11 @@
         "title": "Texto",
         "props": {
           "blockClass": ["countdown", "countdown-site-desktop"],
-          "text": "SE VIENE EL HOT SALE"
+          "text": "Lorem Ipsum rem ui"
         }
       },
       "toggle-layout#countdown-site-mobile": {
-        "title": "Contador mobile",
+        "title": "Contador sitio mobile",
         "children": [
             "flex-layout.row#countdown-site-mobile"
           ]
