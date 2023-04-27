@@ -7,6 +7,7 @@
     "blocks": [
       "list-context.image-list#main-gallery",
       "flex-layout.row#deals",
+      "toggle-layout#countdown-home",
       "flex-layout.row#list-home",
       "flex-layout.row#shelf-home",
       "flex-layout.row#banner-home",
@@ -16,6 +17,74 @@
       //"responsive-layout.desktop#banner-home-2",
       "flex-layout.row#skf-info-home"
     ]
+  },
+
+  "toggle-layout#countdown-home": {
+    "title": "Contador home",
+    "children": [
+        "flex-layout.row#countdown-home"
+      ]
+  },
+
+  "flex-layout.row#countdown-home": {
+    "title": "Configuraciones",
+    "children": [
+      "disposition-layout#countdown-home"
+    ],
+    "props": {
+      "blockClass": ["countdown-wrapper", "countdown-wrapper-home"],
+      "colSizing": "equal"
+    }
+  },
+
+  "disposition-layout#countdown-home": {
+    "title": "Orden y visualización",
+    "children": [
+      "rich-text#countdown-home",
+      "countdown#home",
+      "link#countdown-home"
+    ],
+    "props": {
+      "title": "Contador",
+      "disposition": [
+        {
+          "order": 1,
+          "__editorItemTitle": "Texto"
+        },
+        {
+          "order": 2,
+          "__editorItemTitle": "Contador"
+        },
+        {
+          "order": 3,
+          "__editorItemTitle": "Botón"
+        }
+      ]
+    }
+  },
+
+  "countdown#home":{
+    "title": "Contador",
+    "props":{
+      "blockClass": ["countdown", "countdown-home"]
+    }
+  },
+
+  "link#countdown-home": {
+    "title": "Botón",
+    "props": {
+      "blockClass": ["countdown", "countdown-home"],
+      "label": "Ver ofertas",
+      "href": "/"
+    }
+  },
+
+  "rich-text#countdown-home": {
+    "title": "Texto",
+    "props": {
+      "blockClass": ["countdown", "countdown-home"],
+      "text": "Lorem Ipsum rem ui"
+    }
   },
 
   /* POLICY CONDITION */

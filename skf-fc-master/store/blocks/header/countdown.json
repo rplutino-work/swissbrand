@@ -1,0 +1,136 @@
+{
+    "toggle-layout#countdown-site-desktop": {
+        "title": "Contador sitio desktop",
+        "children": [
+            "flex-layout.row#countdown-site-desktop"
+          ]
+      },
+    
+      "flex-layout.row#countdown-site-desktop": {
+        "title": "Configuraciones",
+        "children": [
+          "disposition-layout#countdown-site-desktop"
+        ],
+        "props": {
+          "blockClass": ["countdown-wrapper", "countdown-wrapper-site-desktop"],
+          "colSizing": "equal"
+        }
+      },
+    
+      "disposition-layout#countdown-site-desktop": {
+        "title": "Orden y visualización",
+        "children": [
+          "rich-text#countdown-site-desktop",
+          "countdown#site-desktop",
+          "link#countdown-site-desktop"
+        ],
+        "props": {
+          "title": "Contador",
+          "disposition": [
+            {
+              "order": 1,
+              "__editorItemTitle": "Texto"
+            },
+            {
+              "order": 2,
+              "__editorItemTitle": "Contador"
+            },
+            {
+              "order": 3,
+              "__editorItemTitle": "Botón"
+            }
+          ]
+        }
+      },
+    
+      "countdown#site-desktop":{
+        "title": "Contador",
+        "props":{
+          "blockClass": ["countdown", "countdown-site-desktop"]
+        }
+      },
+    
+      "link#countdown-site-desktop": {
+        "title": "Botón",
+        "props": {
+          "blockClass": ["countdown", "countdown-site-desktop"],
+          "label": "Ver ofertas",
+          "href": "/"
+        }
+      },
+    
+      "rich-text#countdown-site-desktop": {
+        "title": "Texto",
+        "props": {
+          "blockClass": ["countdown", "countdown-site-desktop"],
+          "text": "SE VIENE EL HOT SALE"
+        }
+      },
+      "toggle-layout#countdown-site-mobile": {
+        "title": "Contador mobile",
+        "children": [
+            "flex-layout.row#countdown-site-mobile"
+          ]
+      },
+    
+      "flex-layout.row#countdown-site-mobile": {
+        "title": "Configuraciones",
+        "children": [
+          "disposition-layout#countdown-site-mobile"
+        ],
+        "props": {
+          "blockClass": ["countdown-wrapper", "countdown-wrapper-site-mobile"],
+          "colSizing": "equal"
+        }
+      },
+    
+      "disposition-layout#countdown-site-mobile": {
+        "title": "Orden y visualización",
+        "children": [
+          "rich-text#countdown-site-mobile",
+          "countdown#site-mobile",
+          "link#countdown-site-mobile"
+        ],
+        "props": {
+          "title": "Contador",
+          "disposition": [
+            {
+              "order": 1,
+              "__editorItemTitle": "Texto"
+            },
+            {
+              "order": 2,
+              "__editorItemTitle": "Contador"
+            },
+            {
+              "order": 3,
+              "__editorItemTitle": "Botón"
+            }
+          ]
+        }
+      },
+    
+      "countdown#site-mobile":{
+        "title": "Contador sitio mobile",
+        "props":{
+          "blockClass": ["countdown", "countdown-site-mobile"]
+        }
+      },
+    
+      "link#countdown-site-mobile": {
+        "title": "Botón",
+        "props": {
+          "blockClass": ["countdown", "countdown-site-mobile"],
+          "label": "Ver ofertas",
+          "href": "/"
+        }
+      },
+    
+      "rich-text#countdown-site-mobile": {
+        "title": "Texto",
+        "props": {
+          "blockClass": ["countdown", "countdown-site-mobile"],
+          "text": "Lorem Ipsum rem ui"
+        }
+      }
+}

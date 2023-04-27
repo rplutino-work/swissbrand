@@ -2,6 +2,7 @@
   // "header": {
   //   "blocks": ["header-layout.desktop", "header-layout.mobile"]
   // },
+
   "header.full": {
     "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
@@ -14,6 +15,7 @@
       "header-row#top-bar-desktop",
       "header-row#1-desktop",
       "header-row#2-desktop",
+      "toggle-layout#countdown-site-desktop",
       "telemarketing"
     ]
   },
@@ -103,6 +105,7 @@
       "header-row#top-bar-mobile",
       "header-row#1-mobile",
       "header-row#2-mobile",
+      "toggle-layout#countdown-site-mobile",
       "close-menu-overlay"
     ],
     "props": {

@@ -1178,3 +1178,13 @@
   background: #000;
   display: flex;
 }
+
+/* CONTADOR */
+.imageElementLink--pre-event-banner-image {
+  margin-bottom: 15px;
+}
+@media(min-width: 1024px){
+  .imageElementLink--pre-event-banner-image {
+    margin-bottom: 0px;
+  }
+}

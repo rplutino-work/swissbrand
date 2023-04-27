@@ -444,3 +444,26 @@
   transition: all .3s;
   border-bottom: 1px solid;
 }
+
+/* CONTADOR */
+.link--countdown {
+  text-decoration: none;
+  width: auto!important;
+  display: flex;
+}
+.label--countdown {
+  background: #88C008;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 25px;
+  text-transform: uppercase;
+  line-height: 10px;
+  font-weight: 400;
+  transition: .3s;
+}
+
+.link--countdown:hover .label--countdown {
+  background: #0f58d6;
+  color: #fff;
+}

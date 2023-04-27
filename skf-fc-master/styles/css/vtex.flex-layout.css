@@ -1967,3 +1967,50 @@ padding: 0 15px;
       position: relative;
   }
 }
+
+/* CONTADOR */
+.flexRow--countdown-wrapper {
+  background: #485A64;
+}
+
+.flexRow--countdown-wrapper :global(.vtex-store-components-3-x-container) {
+  padding: 0;
+}
+
+.flexRowContent--countdown-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+  margin-bottom: 0px;
+}
+
+.flexRowContent--countdown-wrapper-home {
+  margin-bottom: 30px;
+}
+
+.flexRowContent--countdown-wrapper .stretchChildrenWidth {
+  align-items: center;
+  flex-direction: column;
+}
+
+.flexRowContent--countdown-wrapper-plp,
+.flexRowContent--countdown-wrapper-ppd{
+  margin-bottom: 0;
+}
+
+@media(min-width: 1024px){
+    .flexRowContent--countdown-wrapper .stretchChildrenWidth {
+      flex-direction: row;
+    }
+    .flexRowContent--countdown-wrapper {
+      padding: 0;
+      flex-direction: row;
+      padding: 0;
+      height: 70px;
+      margin-bottom: 0;
+    }
+}
