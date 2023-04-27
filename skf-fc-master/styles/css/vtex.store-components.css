@@ -334,6 +334,7 @@
 
 .productImagesGallerySwiperContainer {
   border: 1px solid #AAAFB8;
+  background: #000;
 }
 
 .productImagesContainer {
@@ -1095,4 +1096,85 @@
   .infoCardTextContainer--banner-home {
     order: initial;
   }
+}
+
+/* BANNER SHELF */
+.imageElement--banner-shelf-mobile-image {
+  margin-bottom: 15px;
+}
+@media (min-width: 1025px){
+    .infoCardTextContainer--banner-shelf-full {
+      width: 100%;
+      justify-content: flex-end;
+      height: 100%;
+      margin: 0;
+      z-index: 2;
+    }
+
+    .infoCardCallActionContainer--banner-shelf-full :global(.vtex-button) {
+        background: #88C008;
+        border: 0;
+        font-size: 14px;
+        font-weight: 300;
+        border-radius: 0;
+        transition: all .3s;
+        margin-top: 0;
+        padding: 0 35px;
+    }
+
+    .infoCardCallActionContainer--banner-shelf-full :global(.vtex-button__label) {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .infoCardCallActionContainer--banner-shelf-full {
+      width: 100%;
+      margin: 0 0 30px 0;
+      z-index: 2;
+      text-align: center;
+    }
+
+    .infoCardHeadline--banner-shelf-full {
+        width: 100%;
+        margin-bottom: 15px;
+        line-height: 30px;
+        font-size: 33px;
+        font-family: "Skf";
+        font-weight: 400;
+        color: #fff;
+    }
+
+    .paragraph--banner-shelf-full {
+      margin: 0 0 18px;
+      line-height: 30px;
+      font-size: 33px;
+      font-weight: 400;
+      color: #fff;
+      padding: 0 15px;
+  }
+}
+
+/* VIDEO PDP */
+.figure--video::after {
+  content: '';
+  background-image: url('assets/imgs/icon-play.webp');
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  z-index: 2;
+  background-size: contain;
+  background-repeat: no-repeat;
+  right: 20px;
+  left: 0;
+  top: 0;
+  bottom: 15px;
+  margin: auto;
+}
+
+.figure--video {
+  width: 120px;
+  height: 120px;
+  background: #000;
+  display: flex;
 }

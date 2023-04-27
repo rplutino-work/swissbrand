@@ -488,3 +488,22 @@
     margin: 8px 0 15px 0;
   } 
 }
+
+/* BANNER SHELF */
+.container--shelf-product-title-mobile {
+  background: #0f58d6;
+  justify-content: flex-start;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.paragraph--shelf-product-title-mobile {
+  margin: 0;
+  color: #fff;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 30px;
+  font-size: 33px;
+  font-family: "Skf";
+  font-weight: 400;
+}

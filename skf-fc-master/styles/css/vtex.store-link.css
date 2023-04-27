@@ -421,3 +421,26 @@
   margin-right: 6px;
   background-repeat: no-repeat;
 }
+
+/* BANNER SHELF */
+.link--shelf-product-link-mobile {
+  background: #0f58d6;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 15px;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.label--shelf-product-link-mobile {
+  border: 0;
+  font-size: 14px;
+  font-weight: 300;
+  border-radius: 0;
+  padding: 4px 0px;
+  transition: all .3s;
+  border-bottom: 1px solid;
+}

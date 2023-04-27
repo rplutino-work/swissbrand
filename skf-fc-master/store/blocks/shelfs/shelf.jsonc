@@ -135,5 +135,35 @@
       "showPaginationDots": "never",
       "showNavigationArrows": "desktopOnly"
     }
+  },
+
+  /* BANNER SHELF */
+  "flex-layout.col#banner-shelf": {
+    "props": {
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "list-context.product-list#banner-shelf"
+    ]
+  },
+  "list-context.product-list#banner-shelf": {
+    "props": {
+      "categoryId": "9"
+    },
+    "blocks": ["product-summary.shelf#shelf-product"],
+    "children": ["slider-layout#shelf-products-slide-banner-shelf"]
+  },
+  "slider-layout#shelf-products-slide-banner-shelf": {
+    "props": {
+      "blockClass": ["shelf", "shelf-slider", "shelf-slider-2", "shelf-slider-banner"],
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "always",
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 2
+      }
+    }
   }
 }
