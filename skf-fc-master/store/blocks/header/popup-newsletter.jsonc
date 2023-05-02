@@ -138,14 +138,14 @@
       },
       "image#popup-image-mobile": {
         "props": {
-          "src": "assets/imgs/skf-newsletter.png",
+          "src": "assets/imgs/skf-newsletter-notebook.png",
           "alt": "Novedades SKF",
           "blockClass": "popup-image"
         }
       },
       "image#popup-image-desktop": {
         "props": {
-          "src": "assets/imgs/skf-newsletter.png",
+          "src": "assets/imgs/skf-newsletter-notebook.png",
           "alt": "Novedades SKF",
           "blockClass": "popup-image",
           "maxWidth": 600
