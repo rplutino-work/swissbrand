@@ -57,7 +57,8 @@
     "children": [
       "product-images",
       "flex-layout.row#products-badges-hotsale-image",
-      "flex-layout.row#products-badges-cyber-image"
+      "flex-layout.row#products-badges-cyber-image",
+      "flex-layout.row#products-badges-gift-image"
     ]
   },
 
@@ -131,6 +132,26 @@
     ]
   },
 
+  "flex-layout.row#products-badges-gift": {
+    "props": {
+      "colSizing": "auto",
+      "blockClass": "product-details-badges-gift"
+    },
+    "children": [
+      "vtex.product-highlights@2.x:product-highlights#gift"
+    ]
+  },
+
+  "flex-layout.row#products-badges-gift-image": {
+    "props": {
+      "colSizing": "auto",
+      "blockClass": ["product-details-badges-gift","product-details-badges-gift-image"]
+    },
+    "children": [
+      "vtex.product-highlights@2.x:product-highlights#gift"
+    ]
+  },
+
   "flex-layout.row#products-badges-unavailable": {
     "props": {
       "colSizing": "auto",
@@ -183,6 +204,7 @@
       "flex-layout.row#products-badges-new",
       "flex-layout.row#products-badges-hotsale",
       "flex-layout.row#products-badges-cyber",
+      "flex-layout.row#products-badges-gift",
       "flex-layout.row#products-badges-unavailable",
       "talle-agotado"
     ],

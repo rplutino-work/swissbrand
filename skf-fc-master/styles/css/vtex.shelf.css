@@ -132,3 +132,11 @@
 .relatedProducts :global(.vtex-flex-layout-0-x-flexRowContent--shelf-product-hotsale-badges) :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
   justify-content: flex-start;
 }
+
+/* CUCARDA REGALO */
+.relatedProducts :global(.vtex-product-highlights-2-x-productHighlightText--gift) {
+  width: auto;
+}
+.relatedProducts :global(.vtex-flex-layout-0-x-flexRowContent--shelf-product-gift-badges) :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+  justify-content: flex-end;
+}

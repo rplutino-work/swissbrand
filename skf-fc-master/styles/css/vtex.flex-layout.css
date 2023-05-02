@@ -230,6 +230,10 @@
   overflow: hidden;
 }
 
+.flexRow--product-main-content :global(.vtex-store-components-3-x-container) {
+  padding: 0 15px;
+}
+
 .flexRowContent--product-prices {
   align-items: flex-end;
   justify-content: flex-start;
@@ -1532,11 +1536,72 @@ padding: 0 15px;
   height: auto !important;
   flex-direction: row;
 }
+.flexRow--product-details-badges-gift-image{
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  z-index: 1;
+}
+.flexRow--product-details-badges-gift-image :global(.vtex-product-highlights-2-x-productHighlightText--gift) {
+  font-size: 0;
+  padding: 0;
+  margin-left: 0!important;
+  margin-top: 0 !important;
+  width: 60px !important;
+  height: 64px !important;
+}
+.flexRow--pdp-badges :global(.vtex-product-highlights-2-x-productHighlightText--gift) {
+  border-radius: 0;
+  margin: 12px 12px 12px 0px!important;
+  width: auto !important;
+  padding: 5px 10px;
+  height: auto !important;
+  flex-direction: row;
+}
+.flexRow--shelf-product-gift-badges {
+  right: 0;
+  bottom: initial;
+  bottom: 0;
+}
+
+.flexRowContent--shelf-product-gift-badges {
+  align-items: flex-end;
+}
+
+.flexRow--product-details-badges-gift-image {
+  right: 11px;
+  left: initial!important;
+  top: 0px;
+}
+
+.flexRow--pdp-badges :global(.vtex-product-highlights-2-x-productHighlightText--gift) {
+  border-radius: 0;
+  margin: 12px 12px 12px 0px!important;
+  width: auto!important;
+  padding: 5px 10px;
+  height: auto!important;
+  flex-direction: row;
+  background: #0f58d6;
+  color: #fff;
+  font-size: 0px;
+}
+
+.flexRow--pdp-badges :global(.vtex-product-highlights-2-x-productHighlightText--gift)::after {
+  content: 'Regalo';
+  font-size: 11px;
+}
 @media(min-width: 1025px){
+  .flexRow--product-details-badges-gift-image {
+    right: 30px;
+    top: 3px;
+  }
   .flexRow--product-details-badges-cyber-image{
     left: 160px;
   } 
   .flexRow--product-details-badges-hotsale-image{
+    left: 155px;
+  } 
+  .flexRow--product-details-badges-gift-image{
     left: 155px;
   } 
 }

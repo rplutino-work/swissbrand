@@ -164,7 +164,7 @@
 
       "filter": {
         "type": "show",
-        "highlightNames": ["Mayo - Hot Days SKF"]
+        "highlightNames": ["Envio gratis"]
       }
     },
 
@@ -174,6 +174,37 @@
   "product-highlight-text#hotsale": {
     "props": {
       "blockClass": ["hotsale","pdp-badge"],
+      "message": "{highlightName}"
+    }
+  },
+
+  "flex-layout.row#shelf-product-gift-badges": {
+    "props": {
+      "blockClass": ["shelf-product-badges", "shelf-product-gift-badges", "pdp-badge"],
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": true
+    },
+    "children": [
+      "vtex.product-highlights@2.x:product-highlights#gift"
+    ]
+  },
+
+  "vtex.product-highlights@2.x:product-highlights#gift": {
+    "props": {
+      "type": "collection",
+
+      "filter": {
+        "type": "show",
+        "highlightNames": ["Envio gratis"]
+      }
+    },
+
+    "children": ["product-highlight-text#gift"]
+  },
+
+  "product-highlight-text#gift": {
+    "props": {
+      "blockClass": ["gift","pdp-badge"],
       "message": "{highlightName}"
     }
   }

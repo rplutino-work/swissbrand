@@ -25,6 +25,7 @@
   max-width: 195px !important; */
   margin: auto;
   margin-bottom: 5px;
+  padding: 25px 0px
 }
 
 .nameContainer--shelf-product {
@@ -121,7 +122,7 @@
 /* CUCARDA GENERICA PDL */
 @media (max-width: 1024px){
   .image--shelf-product {
-    padding-top: 20px;
+    padding: 25px 0;
   }
 }
 
