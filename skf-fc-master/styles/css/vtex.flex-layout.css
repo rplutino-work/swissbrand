@@ -639,8 +639,16 @@
   margin-bottom: 18px;
 }
 .flexRow--banner-home-wrapper {
-  margin: 30px 0;
-  padding: 0 7px;
+  margin: 15px 0;
+  background: #f6f6f6;
+  padding: 40px 7px;
+}
+@media(min-width: 1025px){
+  .flexRow--banner-home-wrapper {
+    margin: 15px;
+    background: #f6f6f6;
+    padding: 60px 7px;
+  }
 }
 
 /* HOME - ENCONTRALO POR DEPORTE */
@@ -2009,9 +2017,9 @@ padding: 0 15px;
 
 /* BANNER SHELF */
 .flexRow--banner-shelf {
-  background: #f6f6f6;
-  padding: 30px 0 0px 0;
-  margin-bottom: 30px;
+  background: #fff;
+  padding: 40px 0 5px 0;
+  margin-bottom: 0px;
 }
 .flexRow--banner-shelf :global(.vtex-store-components-3-x-container) {
   padding: 0 15px;
@@ -2030,9 +2038,8 @@ padding: 0 15px;
       justify-content: center;
   }
   .flexRow--banner-shelf {
-    background: #f6f6f6;
-    padding: 30px 0 80px 0;
-    margin-bottom: 30px;
+    padding: 60px 0;
+    margin-bottom: 0;
   }
   .flexRow--container-banner-shelf {
     display: flex;

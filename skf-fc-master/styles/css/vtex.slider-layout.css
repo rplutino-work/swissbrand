@@ -133,9 +133,12 @@
   .sliderLayoutContainer {
     margin-bottom: 30px;
   }
+  .paginationDotsContainer--shelf {
+    bottom: -16px;
+  }
 }
 .paginationDotsContainer--shelf {
-  bottom: -16px;
+  bottom: -30px;
 }
 
 .paginationDot--shelf {

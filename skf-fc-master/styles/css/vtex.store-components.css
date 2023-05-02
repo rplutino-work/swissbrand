@@ -1053,6 +1053,7 @@
 
 .infoCardContainer--banner-home{
   padding: 0;
+  background: transparent;
 }
 
 .infoCardImage--banner-home{
