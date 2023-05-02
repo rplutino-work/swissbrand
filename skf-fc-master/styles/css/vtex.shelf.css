@@ -124,3 +124,11 @@
 .relatedProducts :global(.vtex-flex-layout-0-x-flexRowContent--shelf-product-cyber-badges) :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
   justify-content: flex-start;
 }
+
+/* CUCARDA HOTSALE */
+.relatedProducts :global(.vtex-product-highlights-2-x-productHighlightText--hotsale) {
+  width: auto;
+}
+.relatedProducts :global(.vtex-flex-layout-0-x-flexRowContent--shelf-product-hotsale-badges) :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+  justify-content: flex-start;
+}

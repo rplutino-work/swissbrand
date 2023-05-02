@@ -1513,9 +1513,31 @@ padding: 0 15px;
   font-size: 14px;
   padding: 6px 13px;
 }
+.flexRow--product-details-badges-hotsale-image{
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  z-index: 1;
+}
+.flexRow--product-details-badges-hotsale-image :global(.vtex-product-highlights-2-x-productHighlightText--hotsale) {
+  font-size: 0;
+  padding: 0;
+  margin-left: 0!important;
+}
+.flexRow--pdp-badges :global(.vtex-product-highlights-2-x-productHighlightText--hotsale) {
+  border-radius: 0;
+  margin: 12px 12px 12px 0px!important;
+  width: auto !important;
+  padding: 5px 10px;
+  height: auto !important;
+  flex-direction: row;
+}
 @media(min-width: 1025px){
   .flexRow--product-details-badges-cyber-image{
     left: 160px;
+  } 
+  .flexRow--product-details-badges-hotsale-image{
+    left: 155px;
   } 
 }
 
@@ -1799,6 +1821,12 @@ padding: 0 15px;
 
 /* CUCARDA CYBER */
 .flexRow--shelf-product-cyber-badges {
+  top: 0;
+  padding: 0;
+}
+
+/* CUCARDA HOTSALE */
+.flexRow--shelf-product-hotsale-badges {
   top: 0;
   padding: 0;
 }

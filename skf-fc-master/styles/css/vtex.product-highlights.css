@@ -93,3 +93,37 @@
   background: linear-gradient(135deg,  #f9b300 0%,#f8b500 61%,#fbdf93 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9b300', endColorstr='#fbdf93',GradientType=1 );
 }
+
+/* HOTSALE */
+.productHighlightText--hotsale {
+  display: flex;
+  flex-direction: column;
+  align-items: center !important;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  color: #fff;
+  font-weight: 400;
+  padding: 0px;
+  margin-right: 15px;
+  line-height: 11px;
+  background: #FF6F00;
+  border-radius: 100%;
+  width: 42px!important;
+  height: 42px;
+  margin-top: 6px!important;
+  margin-left: 6px!important;
+  font-size: 0;
+}
+
+.productHighlightText--hotsale::after {
+  content: 'Hot Days';
+  font-size: 11px;
+}
+
+@media(min-width: 1025px){
+  .productHighlightText--hotsale {
+    margin-top: 8px!important;
+    margin-left: 8px!important;
+  }  
+}

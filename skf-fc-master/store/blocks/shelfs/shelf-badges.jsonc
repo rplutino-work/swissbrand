@@ -145,5 +145,36 @@
       "markers": ["discount"],
       "message": "<discount>{savingsPercentage} OFF</discount>"
     }
+  },
+
+  "flex-layout.row#shelf-product-hotsale-badges": {
+    "props": {
+      "blockClass": ["shelf-product-badges", "shelf-product-hotsale-badges", "pdp-badge"],
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": true
+    },
+    "children": [
+      "vtex.product-highlights@2.x:product-highlights#hotsale"
+    ]
+  },
+
+  "vtex.product-highlights@2.x:product-highlights#hotsale": {
+    "props": {
+      "type": "collection",
+
+      "filter": {
+        "type": "show",
+        "highlightNames": ["Envio gratis"]
+      }
+    },
+
+    "children": ["product-highlight-text#hotsale"]
+  },
+
+  "product-highlight-text#hotsale": {
+    "props": {
+      "blockClass": ["hotsale","pdp-badge"],
+      "message": "{highlightName}"
+    }
   }
 }
