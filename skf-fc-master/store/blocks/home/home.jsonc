@@ -9,9 +9,9 @@
       "flex-layout.row#deals",
       "toggle-layout#countdown-home",
       "flex-layout.row#list-home",
-      "flex-layout.row#shelf-home",
+      "toggle-layout#banner-shelf-home",
       "flex-layout.row#banner-home",
-      //"toggle-layout#banner-shelf-home",
+      "flex-layout.row#shelf-home",
       //"flex-layout.row#shelf-home-2",
       //"responsive-layout.mobile#banner-home-2",
       //"responsive-layout.desktop#banner-home-2",
@@ -437,7 +437,7 @@
     "blockClass": "banner-shelf-full",
     "id": "info-card-full",
     "isFullModeStyle": true,
-    "imageUrl": "https://placehold.jp/220x370.png",
+    "imageUrl": "assets/imgs/skf-shelf-desktop.png",
     "callToActionUrl": "/",
     "textMode": "rich-text",
     "textPosition": "center",
@@ -497,7 +497,7 @@
     "title": "Configuración imagen",
     "props": {
       "blockClass": ["banner-shelf-mobile-image"],
-      "src": "https://placehold.jp/640x150.png"
+      "src": "assets/imgs/skf-shelf-mobile.png"
     }
   },
   "toggle-layout#banner-shelf-1-mobile-text-1": {

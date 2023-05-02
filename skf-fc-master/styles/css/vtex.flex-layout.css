@@ -489,7 +489,7 @@
 }
 
 .flexRow--shelf-slider {
-  margin: 60px 0;
+  margin: 30px 0 60px 0;
 }
 
 .flexRow--shelf-product-top {
@@ -1476,7 +1476,7 @@ padding: 0 15px;
 }
 @media(min-width: 1024px){
   .flexRow--list-home-wrapper {
-    padding: 60px 0;
+    padding: 60px 0 30px 0;
   } 
   .flexRow--list-home-wrapper :global(.vtex-store-components-3-x-container) {
       max-width: 1200px;
@@ -2031,8 +2031,8 @@ padding: 0 15px;
   }
   .flexRow--banner-shelf {
     background: #f6f6f6;
-    padding: 30px 0 60px 0;
-    margin-bottom: 60px;
+    padding: 30px 0 80px 0;
+    margin-bottom: 30px;
   }
   .flexRow--container-banner-shelf {
     display: flex;
