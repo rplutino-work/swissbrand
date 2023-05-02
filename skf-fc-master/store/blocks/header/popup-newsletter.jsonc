@@ -1,13 +1,15 @@
 {
     "modal-trigger#modal-newsletter": {
+        "title": "Configuraciones",
         "props":{
           "trigger": "load-session"
         },
         "children": [
-          "modal-layout#example"
+          "modal-layout#modal-newsletter"
         ]
       },
-      "modal-layout#example": {
+      "modal-layout#modal-newsletter": {
+        "title": "Bloques",
         "props": {
           "blockClass": "popup-home"
         },
@@ -28,12 +30,14 @@
         "title": "Cruz"
       },
       "flex-layout.row#newsletter-form": {
+        "title": "Formulario",
         "children": ["form#newsletter-form"],
         "props": {
           "blockClass": ["newsletter-form-wrapper"]
         }
       },
       "form#newsletter-form": {
+        "title": "Configuraciones",
         "props": {
           "entity": "NW",
           "schema": "Newsletter",
@@ -53,23 +57,27 @@
         ]
       },
       "rich-text#form-newsletter-text": {
+        "title": "Texto legal",
         "props": {
           "blockClass": ["form-newsletter-text"],
           "text": "Con el registro aceptás que te lleguen las comunicaciones y promociones SKF"
         }
       },
       "form-submit#form-newsletter": {
+        "title": "Botón",
         "props": {
           "blockClass": "form-submit",
           "label": "Registrarme"
         }
       },
       "form-success#newsletter": {
+        "title": "Gracias",
         "children": [
           "rich-text#success-submit-newsletter"
         ]
       },
       "rich-text#success-submit-newsletter": {
+        "title": "Texto",
         "props": {
           "blockClass":["form-success","popup-title","form-success-newsletter"],
           "textAlignment": "CENTER",
@@ -77,6 +85,7 @@
         }
       },
       "form-input.text#form-newsletter-name": {
+        "title": "Nombre",
         "props": {
           "blockClass": "input-form",
           "placeholder": "Nombre",
@@ -84,6 +93,7 @@
         }
       },
       "form-input.text#form-newsletter-apellido": {
+        "title": "Apellido",
           "props": {
             "blockClass": "input-form",
             "placeholder": "Apellido",
@@ -91,6 +101,7 @@
           }
         },
       "form-input.text#form-newsletter-email": {
+        "title": "E-mail",
           "props": {
             "blockClass": "input-form",
             "placeholder": "Email",
@@ -123,20 +134,23 @@
           "textAlignment": "CENTER",
           "textPosition": "CENTER"
         },
-        "title": "Titulo"
+        "title": "Texto"
       },
     
       "responsive-layout.desktop#popup-image": {
+        "title": "Imagen desktop",
         "children": [
           "image#popup-image-desktop"
         ]
       },
       "responsive-layout.mobile#popup-image": {
+        "title": "Imagen mobile",
         "children": [
           "image#popup-image-mobile"
         ]
       },
       "image#popup-image-mobile": {
+        "title": "Imagen",
         "props": {
           "src": "assets/imgs/skf-newsletter-notebook.png",
           "alt": "Novedades SKF",
@@ -144,6 +158,7 @@
         }
       },
       "image#popup-image-desktop": {
+        "title": "Imagen",
         "props": {
           "src": "assets/imgs/skf-newsletter-notebook.png",
           "alt": "Novedades SKF",
