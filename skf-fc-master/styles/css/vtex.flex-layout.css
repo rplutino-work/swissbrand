@@ -2089,7 +2089,7 @@ padding: 0 15px;
 }
 
 .flexRowContent--countdown-wrapper-home {
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 
 .flexRowContent--countdown-wrapper .stretchChildrenWidth {
@@ -2103,6 +2103,9 @@ padding: 0 15px;
 }
 
 @media(min-width: 1024px){
+  .flexRowContent--countdown-wrapper-home {
+    margin-bottom: 30px;
+  }
     .flexRowContent--countdown-wrapper .stretchChildrenWidth {
       flex-direction: row;
     }
