@@ -476,6 +476,12 @@
   margin-top: 25px;
   line-height: 30px;
 }
+.paragraph--form-newsletter-text {
+  font-size: 14px;
+  margin-top: 0;
+  font-weight: 600;
+  color: #3f3f40;
+}
 @media(min-width: 1024px){
   .paragraph--popup-title {
     font-size: 21px;

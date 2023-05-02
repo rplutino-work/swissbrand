@@ -11,7 +11,7 @@
 
   "header-layout.desktop": {
     "children": [
-      //"toggle-layout#modal-newsletter-desktop",
+      "toggle-layout#modal-newsletter-desktop",
       "header-row#top-bar-desktop",
       "header-row#1-desktop",
       "header-row#2-desktop",
@@ -101,7 +101,7 @@
 
   "header-layout.mobile": {
     "children": [
-      //"toggle-layout#modal-newsletter-mobile",
+      "toggle-layout#modal-newsletter-mobile",
       "header-row#top-bar-mobile",
       "header-row#1-mobile",
       "header-row#2-mobile",

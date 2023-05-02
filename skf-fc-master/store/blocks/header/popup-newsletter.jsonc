@@ -47,9 +47,16 @@
             "form-input.text#form-newsletter-name",
             "form-input.text#form-newsletter-apellido",
             "form-input.text#form-newsletter-email",
-            "form-input.checkbox#newsletter",  
+            "rich-text#form-newsletter-text",
+            //"form-input.checkbox#newsletter",  
             "form-submit#form-newsletter"
         ]
+      },
+      "rich-text#form-newsletter-text": {
+        "props": {
+          "blockClass": ["form-newsletter-text"],
+          "text": "Con el registro aceptás que te lleguen las comunicaciones y promociones SKF"
+        }
       },
       "form-submit#form-newsletter": {
         "props": {
@@ -93,7 +100,8 @@
         "form-input.checkbox#newsletter": {
             "props": {
               "pointer": "#/properties/newsletter",
-              "label": "¿Acepta recibir newsletter?"
+              "label": "¿Acepta recibir newsletter?",
+              "default": true
             }
           },
     
@@ -130,14 +138,14 @@
       },
       "image#popup-image-mobile": {
         "props": {
-          "src": "https://placehold.jp/600x400.png",
+          "src": "assets/imgs/skf-newsletter.png",
           "alt": "Novedades SKF",
           "blockClass": "popup-image"
         }
       },
       "image#popup-image-desktop": {
         "props": {
-          "src": "https://placehold.jp/600x400.png",
+          "src": "assets/imgs/skf-newsletter.png",
           "alt": "Novedades SKF",
           "blockClass": "popup-image",
           "maxWidth": 600
