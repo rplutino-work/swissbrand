@@ -164,7 +164,7 @@
 
       "filter": {
         "type": "show",
-        "highlightNames": ["Envio gratis"]
+        "highlightNames": ["Mayo - Regalo con compra"]
       }
     },
 
@@ -195,7 +195,7 @@
 
       "filter": {
         "type": "show",
-        "highlightNames": ["Envio gratis"]
+        "highlightNames": ["Mayo - Hot Days SKF"]
       }
     },
 
