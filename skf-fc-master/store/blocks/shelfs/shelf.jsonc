@@ -148,7 +148,7 @@
   },
   "list-context.product-list#banner-shelf": {
     "props": {
-      "collection": "139"
+      "collection": "164"
     },
     "blocks": ["product-summary.shelf#shelf-product"],
     "children": ["slider-layout#shelf-products-slide-banner-shelf"]
