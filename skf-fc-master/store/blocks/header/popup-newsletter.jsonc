@@ -15,8 +15,7 @@
         },
         "children": [
           "modal-header#popup",
-          "responsive-layout.desktop#popup-image",
-          "responsive-layout.mobile#popup-image",
+          "image#popup-image",
           "flex-layout.row#newsletter-form"
           //"newsletter-form#popup"
         ]
@@ -137,27 +136,7 @@
         "title": "Texto"
       },
     
-      "responsive-layout.desktop#popup-image": {
-        "title": "Imagen desktop",
-        "children": [
-          "image#popup-image-desktop"
-        ]
-      },
-      "responsive-layout.mobile#popup-image": {
-        "title": "Imagen mobile",
-        "children": [
-          "image#popup-image-mobile"
-        ]
-      },
-      "image#popup-image-mobile": {
-        "title": "Imagen",
-        "props": {
-          "src": "assets/imgs/skf-newsletter-notebook.png",
-          "alt": "Novedades SKF",
-          "blockClass": "popup-image"
-        }
-      },
-      "image#popup-image-desktop": {
+      "image#popup-image": {
         "title": "Imagen",
         "props": {
           "src": "assets/imgs/skf-newsletter-notebook.png",
