@@ -57,11 +57,12 @@
   border-radius: 0px;
 }
 .searchBarContainer :global(.vtex-styleguide-9-x-input) {
-  font-size: 16px;
-  line-height: 16px;
+  font-size: 15px;
+  line-height: 19px;
   color: #485A64;
-  max-width: initial !important;
-  font-family: "Skf", sans-serif;
+  max-width: initial!important;
+  font-family: "Skf",sans-serif;
+  font-weight: 500;
 }
 .searchBarContainer :global(.vtex-styleguide-9-x-input)::placeholder {
   color: #485A64;
@@ -191,8 +192,8 @@
 }
 
 .label--footer-newsletter {
-  font-size: 33px;
-  font-weight: 100;
+  font-size: 30px;
+  font-weight: 300;
   display: block;
   text-align: center;
   letter-spacing: -0.5px;
@@ -216,8 +217,8 @@
 .label--footer-newsletter::after {
   content: '¡Suscribite para conocer todas las novedades!';
   display: block;
-  font-size: 17px;
-  font-weight: 300;
+  font-size: 16px;
+  font-weight: 400;
   margin: 10px 0 0 0;
   letter-spacing: 0;
 }
@@ -234,7 +235,7 @@
 }
 
 .inputGroup--footer-newsletter :global(.vtex-styleguide-9-x-input) {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
   color: #485A64;
   border-radius: 0px;
@@ -242,7 +243,7 @@
 
 .inputGroup--footer-newsletter
   :global(.vtex-styleguide-9-x-input)::placeholder {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 600;
     color: #485A64;
     border-radius: 0px;
@@ -270,7 +271,7 @@
 .buttonContainer--footer-newsletter :global(.vtex-button__label) {
   padding: 0;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 500;
   color: #fff;
   letter-spacing: 0.025em;
 }
@@ -436,9 +437,9 @@
   margin: 15px 0 15px 0px;
   line-height: 37px;
   font-size: 33px;
-  font-weight: 300;
+  font-weight: 400;
   color: #485A64;
-  letter-spacing: -1.5px;
+  letter-spacing: -2px;
 }
 
 .skuSelectorContainer {
@@ -536,7 +537,7 @@
   height: 38px;
   line-height: 15px;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
   color: #485A64;
 }
 
@@ -550,7 +551,7 @@
 :global(.vtex-address-form__postalCode) :global(.vtex-input__label) {
   display: inline-flex;
   line-height: 14px;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 700;
   color: #485A64;
   letter-spacing: -.5px;
@@ -565,7 +566,7 @@
     right: 0;
     width: max-content;
     line-height: 14px;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 700;
     color: #485A64;
     letter-spacing: -.5px;
@@ -622,8 +623,8 @@
 .shippingContainer :global(.vtex-button__label)::before {
   content: "Calcular envío";
   line-height: 16px;
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 13.5px;
+  font-weight: 500;
   color: #fff;
 }
 
@@ -666,6 +667,10 @@
 @media only screen and (max-width: 639px) {
   .shareContainer {
     margin: 4px 0 12px;
+  }
+  .productDescriptionText {
+    font-size: 15px;
+    font-weight: 500;
   }
 }
 
@@ -972,7 +977,7 @@
   color: #fff;
   font-size: 22px;
   margin: 0 0 15px 0;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: none;
   text-align: left;
 }
@@ -1018,7 +1023,7 @@
 
 .infoCardHeadline--banner-home {
   color: #fff;
-  font-weight: 300;
+  font-weight: 400;
   margin: 0;
   line-height: 37px;
   letter-spacing: -.5px;
@@ -1026,9 +1031,9 @@
 
 .infoCardSubhead--banner-home {
   color: #fff;
-  font-size: 17px;
-  font-weight: 300;
-  line-height: 24px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 23px;
   max-width: 320px;
   margin-top: 25px;
 }

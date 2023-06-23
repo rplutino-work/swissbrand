@@ -1,9 +1,10 @@
 .buttonDataContainer {
-  font-weight: 400;
-  font-size: 14px;
+  font-weight: 500;
+  font-size: 13.5px;
   line-height: 19px;
   text-align: center;
   color: #fff;
+  letter-spacing: -.3px;
 }
 
 .tooltipLabelText{

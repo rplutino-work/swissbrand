@@ -41,8 +41,8 @@
   .paper--popup-home :global(.vtex-styleguide-9-x-input)::placeholder {
     color: #485a64;
     font-size: 13px;
-    font-weight: 600;
-    letter-spacing: .3px;
+    font-weight: 500;
+    letter-spacing: 0;
   }
   
   .paper--popup-home :global(.vtex-button) {

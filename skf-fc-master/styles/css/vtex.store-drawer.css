@@ -56,7 +56,7 @@
 .closeIconButton--secondary-tab::after {
   content: "VOLVER";
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   color: #fff;
   margin: 0;
   font-family: 'Skf';
@@ -81,7 +81,7 @@
 .childrenContainer :global(.vtex-button)::after {
   content: "INGRESAR";
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   color: #fff;
   margin: 0;
   padding: 15px;

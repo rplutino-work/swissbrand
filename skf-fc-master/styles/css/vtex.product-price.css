@@ -18,7 +18,7 @@
 }
 
 .listPrice--shelf-product {
-  font-weight: 400;
+  font-weight: 500;
   width: auto;
   color: #AAAFB8;
   font-size: 14px;
@@ -30,7 +30,7 @@
   display: block;
   font-weight: 500;
   color: #808895;
-  font-size: 12px;
+  font-size: 11px;
   width: auto;
 }
 
@@ -41,11 +41,15 @@
   font-weight: 500;
   padding: 1px 5px;
   margin-right: 10px;
+  position: relative;
+  top: 2px;
+  letter-spacing: -.3px;
 }
 
 .sellingPriceValue--shelf-product {
   color: #485A64;
-  font-weight: 400;
+  font-weight: 500;
+  letter-spacing: -.3px;
 }
 
 @media only screen and (max-width: 1025px) {
@@ -73,10 +77,11 @@
 .sellingPrice--product {
   color: #485A64;
   font-size: 18px;
+  font-weight: 500;
 }
 
 .installments--product {
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 500;
   color: #808895;
 }

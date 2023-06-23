@@ -1,6 +1,6 @@
 .specificationName {
   color: #485A64;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 15px;
   display: block;
   margin-bottom: 2px;
@@ -18,9 +18,9 @@
 
 @media only screen and (max-width: 1025px) {
   .specificationValue {
-    font-size: 14px;
+    font-size: 13px;
     color: #505050;
-    font-weight: 400;
+    font-weight: 500;
     display: block;
     line-height: 23px;
     padding-left: 10px;
@@ -28,7 +28,7 @@
   .specificationName {
     color: #485A64;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 13px;
     display: block;
     margin-bottom: 0;
   }

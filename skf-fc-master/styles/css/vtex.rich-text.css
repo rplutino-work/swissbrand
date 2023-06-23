@@ -16,21 +16,25 @@
   margin: 0;
   font-size: 13px;
   color: #0f58d6;
+  letter-spacing: -.3px;
+  font-weight: 400;
 }
 
 /* DEALS */
 .paragraph--deals-title {
   color: #0F58D6;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   margin: 0;
+  letter-spacing: -.5px;
 }
 
 .paragraph--deals-subtitle {
   color: #808895;
-  font-size: 14px;
-  font-weight: 300;
+  font-size: 13px;
+  font-weight: 400;
   margin: 0;
+  letter-spacing: -.3px;
 }
 
 /* HEADER */
@@ -46,7 +50,7 @@
 
 @media only screen and (max-width: 1025px) {
   .paragraph--main-header__cuotas {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 11px;
     line-height: 20px;
     max-width: 100%;
@@ -96,12 +100,13 @@
 /* SHELF TITLE  */
 /* ------------------------------------------------------------------------ */
 .heading--block-title {
-  margin: 0 0 18px 7px;
+  margin: 0 0 10px 7px;
   line-height: 30px;
-  font-size: 33px;
+  font-size: 30px;
   font-family: "Skf";
-  font-weight: 400;
+  font-weight: 500;
   color: #485A64;
+  letter-spacing: -1px;
 }
 
 .paragraph--block-title {
@@ -140,16 +145,17 @@
 
 .heading--footer-title {
   margin: 0 0 14px;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 500;
   color: #fff;
+  letter-spacing: -.3px;
 }
 
 .paragraph--footer-paragraph {
   margin: 0;
   font-family: 'Skf';
   font-weight: 500;
-  font-size: 12px;
+  font-size: 11px;
   color: #fff;
   letter-spacing: .3px;
 }
@@ -190,8 +196,9 @@
   margin: 0 0 24px;
   line-height: 28px;
   font-size: 23px;
-  font-weight: 400;
+  font-weight: 500;
   color: #313131;
+  letter-spacing: -.8px;
 }
 
 .headingLevel2--institutional-content {
@@ -209,7 +216,7 @@
 }
 .headingLevel6--institutional-content {
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 500;
   color: #0f58d6;
 }
 
@@ -222,8 +229,8 @@
 .paragraph--institutional-content {
   margin: 0 0 16px;
   line-height: 22px;
-  font-size: 14px;
-  font-weight: 300;
+  font-size: 13px;
+  font-weight: 400;
   color: #000000;
 }
 
@@ -343,6 +350,7 @@
   line-height: 19px;
   margin: 0 0 0 20px;
   color: #485A64;
+  letter-spacing: -.5px;
 }
 
 .paragraph--product-info-text {
@@ -350,6 +358,13 @@
   font-size: 12px;
   line-height: 10px;
   color: #808895;
+  letter-spacing: -.2px;
+}
+
+.paragraph--product-info-generic-text {
+  font-weight: 500;
+  letter-spacing: -.5px;
+  font-size: 16px;
 }
 
 .paragraph--help-shipping {
@@ -359,11 +374,18 @@
 }
 
 .headingLevel3--skf-info-home-title {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 33px;
-  letter-spacing: -1px;
+  letter-spacing: -2px;
   margin: 0;
   color: #485A64;
+}
+
+.paragraph--skf-info-home-text {
+  letter-spacing: -.5px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
 }
 
 .vtex-rich-text-0-x-paragraph--skf-info-home-text {
@@ -421,8 +443,9 @@
   line-height: 30px;
   font-size: 33px;
   font-family: "Skf";
-  font-weight: 400;
+  font-weight: 500;
   color: #485A64;
+  letter-spacing: -.9px;
 }
 
 .link--form-text {
@@ -430,11 +453,21 @@
   color: #0f58d6;
 }
 
+.paragraph--form-text {
+  font-weight: 500;
+  letter-spacing: -.3px;
+  font-size: 15px;
+}
+
 /* APLICACIONES PDP */
 .paragraph--pdp-spec-aplicaciones-title {
   color: #fff;
-  font-weight: 600;
+  font-weight: 500;
   margin: 0;
+}
+.paragraph--product-info-title-disclosure {
+  font-weight: 500;
+  letter-spacing: -.5px;
 }
 
 /* SHELF CART */
@@ -464,8 +497,9 @@
   font-size: 19px;
   line-height: 20px;
   margin-bottom: 5px;
-  font-weight: 600;
+  font-weight: 500;
   margin-top: 15px;
+  letter-spacing: -.3px;
 }
 .paragraph--popup-subtitle {
   font-size: 13px;
@@ -477,14 +511,14 @@
   line-height: 30px;
 }
 .paragraph--form-newsletter-text {
-  font-size: 14px;
+  font-size: 13px;
   margin-top: 0;
-  font-weight: 600;
+  font-weight: 500;
   color: #3f3f40;
 }
 @media(min-width: 1024px){
   .paragraph--popup-title {
-    font-size: 21px;
+    font-size: 20px;
     margin-bottom: 15px;
     margin-top: 15px;
     line-height: 26px;
@@ -523,7 +557,7 @@
   margin: 0;
   color: #fff;
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 22px;
   letter-spacing: -.5px;
   margin-right: 15px;

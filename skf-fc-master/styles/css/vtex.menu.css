@@ -56,11 +56,11 @@
   font-family: "Skf";
   font-size: 13px;
   line-height: 20px;
-  font-weight: 500;
+  font-weight: 500 !important ;
   color: #fff;
-
   display: flex;
   align-items: center;
+  letter-spacing: -.3px;
 }
 
 .styledLinkIcon--department {
@@ -169,18 +169,20 @@
 .styledLinkContent--custom-dropdown-submenu-dropdown-links-item,
 .styledLinkContent--custom-dropdown-submenu-links-item {
   font-family: "Skf";
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 700;
   color: #0f58d6;
   transition: all 0.21s ease;
+  letter-spacing: -.3px;
 }
 .styledLink--custom-dropdown-submenu-dropdown,
 .styledLink--custom-dropdown-submenu {
   font-family: "Skf";
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 500;
   color: #485A64;
   transition: all 0.21s ease;
+  letter-spacing: -.3px;
 }
 .styledLink--custom-dropdown-submenu:hover,
 .styledLink--custom-dropdown-submenu:active,
@@ -263,23 +265,25 @@
 .styledLinkContent--category {
   text-transform: uppercase;
   font-family: "Skf";
-  font-size: 13px;
-  font-weight: 900;
+  font-size: 12px;
+  font-weight: 700;
   color: #485A64;
   transition: color 0.2s linear;
   align-items: center;
   justify-content: flex-start;
+  letter-spacing: -.3px;
 }
 
 .styledLinkContent--categories {
   text-transform: initial;
   font-family: "Skf";
-  font-size: 13px;
-  font-weight: 600;
+  font-size: 12px;
+  font-weight: 500;
   color: #485A64;
   transition: color 0.2s linear;
   align-items: center;
   justify-content: flex-start;
+  letter-spacing: -.3px;
 }
 
 .submenu--submenu-brands {
@@ -318,7 +322,7 @@
 
 .styledLinkContent--mis-pedidos {
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 500;
   color: #fff;
   margin: 0;
   padding: 15px;
@@ -494,9 +498,9 @@
 }
 
 .styledLinkContent--footer-menu-item {
-  font-size: 14px;
+  font-size: 13px;
   line-height: 18px;
-  font-weight: 300;
+  font-weight: 400;
   color: #fff;
   justify-content: flex-start;
 }
@@ -504,7 +508,7 @@
 .styledLinkIcon--footer-menu-item-contact {
   margin: 0 10px 0 0;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .menuContainerNav--mobile-footer-menu {
@@ -520,8 +524,9 @@
   align-items: center;
   padding: 12px 0;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   color: #fff;
+  letter-spacing: -.3px;
 }
 
 .menuItem--isOpen {
@@ -580,7 +585,7 @@
 
 .styledLinkContent--brands-menu-item {
   font-family: "Skf";
-  font-weight: 600;
+  font-weight: 500;
   font-size: 13px;
   letter-spacing: 0px;
   color: #ffffff;

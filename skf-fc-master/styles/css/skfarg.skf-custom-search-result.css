@@ -38,7 +38,8 @@
   font-weight: 500;
   color: #808895;
   text-transform: uppercase;
-  border-bottom: 1px solid #808895
+  border-bottom: 1px solid #808895;
+  letter-spacing: -.8px;
 }
 
 .caretIcon {
@@ -202,7 +203,7 @@
 
 .filterItem :global(.vtex-checkbox__label) {
   line-height: 15px;
-  font-size: 14px;
+  font-size: 13px;
   color: #485A64;
   letter-spacing: -.2px;
   font-weight: 500;
@@ -271,7 +272,7 @@
 
   .filterAccordionItemBox--referencia .accordionFilterItemTitle::before {
       content: 'Marcas';
-      font-size: 14px;
+      font-size: 13px;
   }
 
   .filterAccordionItemBox--categoria .accordionFilterItemTitle {
@@ -280,7 +281,7 @@
 
   .filterAccordionItemBox--categoria .accordionFilterItemTitle::before {
       content: 'Tipo';
-      font-size: 14px;
+      font-size: 13px;
   }
   .sidebar {
     padding: 16px;
@@ -390,10 +391,11 @@
 
   .accordionFilterItemTitle {
     line-height: 16px;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
     color: #485A64;
     text-transform: uppercase;
+    letter-spacing: -.5px;
   }
 
   .accordionFilterItemIcon {
@@ -418,7 +420,7 @@
     border: none;
     border-radius: 50%;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 500;
     color: #313131;
     background: #0f58d6;
   }
@@ -470,7 +472,7 @@
   .filterClearButtonWrapper :global(.vtex-button__label)::after,
   .filterApplyButtonWrapper :global(.vtex-button__label) {
     color:#fff;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 14px;
     line-height: 17px;
     text-align: center;
@@ -517,7 +519,7 @@
     color: #313131;
     text-transform: uppercase;
     font-size: 13px;
-    font-weight: 400;
+    font-weight: 500;
   }
 
   .filterAccordionItemBox :global(.vtex-checkbox__box-wrapper) {

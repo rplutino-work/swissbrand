@@ -37,7 +37,7 @@
 
 .brandName--shelf-product {
   line-height: 18px;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
   color: #485A64;
   -webkit-line-clamp: 2;
@@ -64,7 +64,7 @@
 
   .brandName--shelf-product {
     line-height: 18px;
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 
@@ -165,7 +165,7 @@
 }
 
 .container--shelf-cart :global(.vtex-product-price-1-x-sellingPriceValue--shelf-product) {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .container--shelf-cart :global(.vtex-flex-layout-0-x-flexRowContent--shelf-prices) {
