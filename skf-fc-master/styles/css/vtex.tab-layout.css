@@ -32,6 +32,8 @@
   font-weight: 600;
   line-height: 20px;
   letter-spacing: -.5px;
+  padding-left: 1.1rem;
+  padding-right: 1.1rem;
 }
 .listItemActive :global(.vtex-button__label) {
   background: #fff;

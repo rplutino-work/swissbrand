@@ -539,7 +539,8 @@
     "children": [
       "disclosure-layout#product-info-1", 
       "disclosure-layout#product-info-2",
-      "disclosure-layout#product-info-3"
+      "disclosure-layout#product-info-3",
+      "disclosure-layout#product-info-4"
     ],
     "props": {
       "animated": true
@@ -616,9 +617,44 @@
       "blockClass": "product-info-title-disclosure"
     }
   },
-  "rich-text#product-info-3-text": {
+
+  "disclosure-layout#product-info-4": {
+    "children": [
+      "disclosure-trigger#product-info-4-1", 
+      "disclosure-content#product-info-4-2"
+    ]
+  },
+  "disclosure-trigger#product-info-4-1": {
+    "children": ["rich-text#product-info-4-title"]
+  },
+  "disclosure-content#product-info-4-2": {
+    "children": [
+      "condition-layout.product#pdp-tab-video-kit-distribucion",
+      "condition-layout.product#pdp-tab-video-bomba-agua",
+      "condition-layout.product#pdp-tab-video-axial",
+      "condition-layout.product#pdp-tab-video-barra-direccion",
+      "condition-layout.product#pdp-tab-video-bieleta-suspension",
+      "condition-layout.product#pdp-tab-video-brazo-suspension",
+      "condition-layout.product#pdp-tab-video-cruceta",
+      "condition-layout.product#pdp-tab-video-extremo-direccion",
+      "condition-layout.product#pdp-tab-video-homocinetica",
+      "condition-layout.product#pdp-tab-video-kit-accesorios",
+      "condition-layout.product#pdp-tab-video-kit-embrague",
+      "condition-layout.product#pdp-tab-video-parrilla-suspension",
+      "condition-layout.product#pdp-tab-video-rodamiento-rueda",
+      "condition-layout.product#pdp-tab-video-rotula-suspension",
+      "condition-layout.product#pdp-tab-video-triceta",
+      "condition-layout.product#pdp-tab-video-mityvac"
+    ],
     "props":{
-      "text": "Información técnica"
+      "blockClass": ["product-info-text-disclosure","disclosure-informacion-adicional"]
+    }
+  },
+
+  "rich-text#product-info-4-title": {
+    "props": {
+      "text": "Información adicional",
+      "blockClass": "product-info-title-disclosure"
     }
   },
 
@@ -685,7 +721,8 @@
   "tab-list#home": {
     "children": [
       "tab-list.item#home1",
-      "tab-list.item#home3"
+      "tab-list.item#home3",
+      "tab-list.item#home4"
     ]
   },
   "tab-list#home-3": {
@@ -707,7 +744,8 @@
     "children": [
       "tab-list.item#home2",
       "tab-list.item#home1",
-      "tab-list.item#home3"
+      "tab-list.item#home3",
+      "tab-list.item#home4"
     ]
   },
   "tab-list.item#home1": {
@@ -729,6 +767,12 @@
       "label": "Información técnica"
     }
   },
+  "tab-list.item#home4": {
+    "props": {
+      "tabId": "home4",
+      "label": "Información adicional"
+    }
+  },
   "tab-content#home": {
     "children": [
       "tab-content.item#home1",
@@ -744,7 +788,8 @@
     "children": [
       "tab-content.item#home1",
       "tab-content.item#home2",
-      "tab-content.item#home3"
+      "tab-content.item#home3",
+      "tab-content.item#home4"
     ]
   },
   "tab-content.item#home1": {
@@ -772,6 +817,557 @@
     "props": {
       "tabId": "home3"
     }
+  },
+  "tab-content.item#home4": {
+    "children": [
+      "condition-layout.product#pdp-tab-video-kit-distribucion",
+      "condition-layout.product#pdp-tab-video-bomba-agua",
+      "condition-layout.product#pdp-tab-video-axial",
+      "condition-layout.product#pdp-tab-video-barra-direccion",
+      "condition-layout.product#pdp-tab-video-bieleta-suspension",
+      "condition-layout.product#pdp-tab-video-brazo-suspension",
+      "condition-layout.product#pdp-tab-video-cruceta",
+      "condition-layout.product#pdp-tab-video-extremo-direccion",
+      "condition-layout.product#pdp-tab-video-homocinetica",
+      "condition-layout.product#pdp-tab-video-kit-accesorios",
+      "condition-layout.product#pdp-tab-video-kit-embrague",
+      "condition-layout.product#pdp-tab-video-parrilla-suspension",
+      "condition-layout.product#pdp-tab-video-rodamiento-rueda",
+      "condition-layout.product#pdp-tab-video-rotula-suspension",
+      "condition-layout.product#pdp-tab-video-triceta",
+      "condition-layout.product#pdp-tab-video-mityvac"
+    ],
+    "props": {
+      "tabId": "home4"
+    }
+  },
+  "condition-layout.product#pdp-tab-video-mityvac": {
+    "title": "Opciones",
+    "props": {
+      "conditions": [
+         {
+           "subject": "brandId",
+           "arguments": {
+               "id": "2000001"
+           }
+         }
+      ],
+      "Then": "flex-layout.row#pdp-tab-video-mityvac"
+    }
+  },
+  "flex-layout.row#pdp-tab-video-mityvac": {
+    "children": [
+      "video#pdp-tab-video-mityvac"
+    ],
+    "props": {
+      "blockClass": ["pdp-tab-video-mityvac"]
+    }
+  },
+  "video#pdp-tab-video-mityvac": {
+      "props": {
+        "width": "700",
+        "height": "380",
+        "loop": true,
+        "autoPlay": false,
+        "muted": false,
+        "src": "https://www.youtube.com/watch?v=1BlC_Dg1i1w",
+        "blockClass": "pdp-tab-video"
+      }
+  },
+  "condition-layout.product#pdp-tab-video-triceta": {
+    "title": "Opciones",
+    "props": {
+      "conditions": [
+         {
+           "subject": "categoryTree",
+           "arguments": {
+               "id": "26"
+           }
+         }
+      ],
+      "Then": "flex-layout.row#pdp-tab-video-triceta"
+    }
+  },
+  "flex-layout.row#pdp-tab-video-triceta": {
+    "children": [
+      "video#pdp-tab-video-triceta"
+    ],
+    "props": {
+      "blockClass": ["pdp-tab-video-triceta"]
+    }
+  },
+  "video#pdp-tab-video-triceta": {
+      "props": {
+        "width": "700",
+        "height": "380",
+        "loop": true,
+        "autoPlay": false,
+        "muted": false,
+        "src": "https://www.youtube.com/watch?v=90wYioqUSAs",
+        "blockClass": "pdp-tab-video"
+      }
+  },
+  "condition-layout.product#pdp-tab-video-rotula-suspension": {
+    "title": "Opciones",
+    "props": {
+      "conditions": [
+         {
+           "subject": "categoryTree",
+           "arguments": {
+               "id": "25"
+           }
+         }
+      ],
+      "Then": "flex-layout.row#pdp-tab-video-rotula-suspension"
+    }
+  },
+  "flex-layout.row#pdp-tab-video-rotula-suspension": {
+    "children": [
+      "video#pdp-tab-video-rotula-suspension"
+    ],
+    "props": {
+      "blockClass": ["pdp-tab-video-rotula-suspension"]
+    }
+  },
+  "video#pdp-tab-video-rotula-suspension": {
+      "props": {
+        "width": "700",
+        "height": "380",
+        "loop": true,
+        "autoPlay": false,
+        "muted": false,
+        "src": "https://www.youtube.com/watch?v=90wYioqUSAs",
+        "blockClass": "pdp-tab-video"
+      }
+  },
+  "condition-layout.product#pdp-tab-video-rodamiento-rueda": {
+    "title": "Opciones",
+    "props": {
+      "conditions": [
+         {
+           "subject": "categoryTree",
+           "arguments": {
+               "id": "24"
+           }
+         }
+      ],
+      "Then": "flex-layout.row#pdp-tab-video-rodamiento-rueda"
+    }
+  },
+  "flex-layout.row#pdp-tab-video-rodamiento-rueda": {
+    "children": [
+      "video#pdp-tab-video-rodamiento-rueda"
+    ],
+    "props": {
+      "blockClass": ["pdp-tab-video-rodamiento-rueda"]
+    }
+  },
+  "video#pdp-tab-video-rodamiento-rueda": {
+      "props": {
+        "width": "700",
+        "height": "380",
+        "loop": true,
+        "autoPlay": false,
+        "muted": false,
+        "src": "https://www.youtube.com/watch?v=90wYioqUSAs",
+        "blockClass": "pdp-tab-video"
+      }
+  },
+  "condition-layout.product#pdp-tab-video-parrilla-suspension": {
+    "title": "Opciones",
+    "props": {
+      "conditions": [
+         {
+           "subject": "categoryTree",
+           "arguments": {
+               "id": "23"
+           }
+         }
+      ],
+      "Then": "flex-layout.row#pdp-tab-video-parrilla-suspension"
+    }
+  },
+  "flex-layout.row#pdp-tab-video-parrilla-suspension": {
+    "children": [
+      "video#pdp-tab-video-parrilla-suspension"
+    ],
+    "props": {
+      "blockClass": ["pdp-tab-video-parrilla-suspension"]
+    }
+  },
+  "video#pdp-tab-video-parrilla-suspension": {
+      "props": {
+        "width": "700",
+        "height": "380",
+        "loop": true,
+        "autoPlay": false,
+        "muted": false,
+        "src": "https://www.youtube.com/watch?v=90wYioqUSAs",
+        "blockClass": "pdp-tab-video"
+      }
+  },
+  "condition-layout.product#pdp-tab-video-kit-embrague": {
+    "title": "Opciones",
+    "props": {
+      "conditions": [
+         {
+           "subject": "categoryTree",
+           "arguments": {
+               "id": "20"
+           }
+         }
+      ],
+      "Then": "flex-layout.row#pdp-tab-video-kit-embrague"
+    }
+  },
+  "flex-layout.row#pdp-tab-video-kit-embrague": {
+    "children": [
+      "video#pdp-tab-video-kit-embrague"
+    ],
+    "props": {
+      "blockClass": ["pdp-tab-video-kit-embrague"]
+    }
+  },
+  "video#pdp-tab-video-kit-embrague": {
+      "props": {
+        "width": "700",
+        "height": "380",
+        "loop": true,
+        "autoPlay": false,
+        "muted": false,
+        "src": "https://www.youtube.com/watch?v=90wYioqUSAs",
+        "blockClass": "pdp-tab-video"
+      }
+  },
+  "condition-layout.product#pdp-tab-video-kit-accesorios": {
+    "title": "Opciones",
+    "props": {
+      "conditions": [
+         {
+           "subject": "categoryTree",
+           "arguments": {
+               "id": "19"
+           }
+         }
+      ],
+      "Then": "flex-layout.row#pdp-tab-video-kit-accesorios"
+    }
+  },
+  "flex-layout.row#pdp-tab-video-kit-accesorios": {
+    "children": [
+      "video#pdp-tab-video-kit-accesorios"
+    ],
+    "props": {
+      "blockClass": ["pdp-tab-video-kit-accesorios"]
+    }
+  },
+  "video#pdp-tab-video-kit-accesorios": {
+      "props": {
+        "width": "700",
+        "height": "380",
+        "loop": true,
+        "autoPlay": false,
+        "muted": false,
+        "src": "https://www.youtube.com/watch?v=90wYioqUSAs",
+        "blockClass": "pdp-tab-video"
+      }
+  },
+  "condition-layout.product#pdp-tab-video-homocinetica": {
+    "title": "Opciones",
+    "props": {
+      "conditions": [
+         {
+           "subject": "categoryTree",
+           "arguments": {
+               "id": "18"
+           }
+         }
+      ],
+      "Then": "flex-layout.row#pdp-tab-video-homocinetica"
+    }
+  },
+  "flex-layout.row#pdp-tab-video-homocinetica": {
+    "children": [
+      "video#pdp-tab-video-homocinetica"
+    ],
+    "props": {
+      "blockClass": ["pdp-tab-video-homocinetica"]
+    }
+  },
+  "video#pdp-tab-video-homocinetica": {
+      "props": {
+        "width": "700",
+        "height": "380",
+        "loop": true,
+        "autoPlay": false,
+        "muted": false,
+        "src": "https://www.youtube.com/watch?v=90wYioqUSAs",
+        "blockClass": "pdp-tab-video"
+      }
+  },
+  "condition-layout.product#pdp-tab-video-extremo-direccion": {
+    "title": "Opciones",
+    "props": {
+      "conditions": [
+         {
+           "subject": "categoryTree",
+           "arguments": {
+               "id": "16"
+           }
+         }
+      ],
+      "Then": "flex-layout.row#pdp-tab-video-extremo-direccion"
+    }
+  },
+  "flex-layout.row#pdp-tab-video-extremo-direccion": {
+    "children": [
+      "video#pdp-tab-video-extremo-direccion"
+    ],
+    "props": {
+      "blockClass": ["pdp-tab-video-extremo-direccion"]
+    }
+  },
+  "video#pdp-tab-video-extremo-direccion": {
+      "props": {
+        "width": "700",
+        "height": "380",
+        "loop": true,
+        "autoPlay": false,
+        "muted": false,
+        "src": "https://www.youtube.com/watch?v=90wYioqUSAs",
+        "blockClass": "pdp-tab-video"
+      }
+  },
+  "condition-layout.product#pdp-tab-video-cruceta": {
+    "title": "Opciones",
+    "props": {
+      "conditions": [
+         {
+           "subject": "categoryTree",
+           "arguments": {
+               "id": "15"
+           }
+         }
+      ],
+      "Then": "flex-layout.row#pdp-tab-video-cruceta"
+    }
+  },
+  "flex-layout.row#pdp-tab-video-cruceta": {
+    "children": [
+      "video#pdp-tab-video-cruceta"
+    ],
+    "props": {
+      "blockClass": ["pdp-tab-video-cruceta"]
+    }
+  },
+  "video#pdp-tab-video-cruceta": {
+      "props": {
+        "width": "700",
+        "height": "380",
+        "loop": true,
+        "autoPlay": false,
+        "muted": false,
+        "src": "https://www.youtube.com/watch?v=90wYioqUSAs",
+        "blockClass": "pdp-tab-video"
+      }
+  },
+  "condition-layout.product#pdp-tab-video-brazo-suspension": {
+    "title": "Opciones",
+    "props": {
+      "conditions": [
+         {
+           "subject": "categoryTree",
+           "arguments": {
+               "id": "14"
+           }
+         }
+      ],
+      "Then": "flex-layout.row#pdp-tab-video-brazo-suspension"
+    }
+  },
+  "flex-layout.row#pdp-tab-video-brazo-suspension": {
+    "children": [
+      "video#pdp-tab-video-brazo-suspension"
+    ],
+    "props": {
+      "blockClass": ["pdp-tab-video-brazo-suspension"]
+    }
+  },
+  "video#pdp-tab-video-brazo-suspension": {
+      "props": {
+        "width": "700",
+        "height": "380",
+        "loop": true,
+        "autoPlay": false,
+        "muted": false,
+        "src": "https://www.youtube.com/watch?v=90wYioqUSAs",
+        "blockClass": "pdp-tab-video"
+      }
+  },
+  "condition-layout.product#pdp-tab-video-bieleta-suspension": {
+    "title": "Opciones",
+    "props": {
+      "conditions": [
+         {
+           "subject": "categoryTree",
+           "arguments": {
+               "id": "12"
+           }
+         }
+      ],
+      "Then": "flex-layout.row#pdp-tab-video-bieleta-suspension"
+    }
+  },
+  "flex-layout.row#pdp-tab-video-bieleta-suspension": {
+    "children": [
+      "video#pdp-tab-video-bieleta-suspension"
+    ],
+    "props": {
+      "blockClass": ["pdp-tab-video-bieleta-suspension"]
+    }
+  },
+  "video#pdp-tab-video-bieleta-suspension": {
+      "props": {
+        "width": "700",
+        "height": "380",
+        "loop": true,
+        "autoPlay": false,
+        "muted": false,
+        "src": "https://www.youtube.com/watch?v=90wYioqUSAs",
+        "blockClass": "pdp-tab-video"
+      }
+  },
+  "condition-layout.product#pdp-tab-video-barra-direccion": {
+    "title": "Opciones",
+    "props": {
+      "conditions": [
+         {
+           "subject": "categoryTree",
+           "arguments": {
+               "id": "11"
+           }
+         }
+      ],
+      "Then": "flex-layout.row#pdp-tab-video-barra-direccion"
+    }
+  },
+  "flex-layout.row#pdp-tab-video-barra-direccion": {
+    "children": [
+      "video#pdp-tab-video-barra-direccion"
+    ],
+    "props": {
+      "blockClass": ["pdp-tab-video-barra-direccion"]
+    }
+  },
+  "video#pdp-tab-video-barra-direccion": {
+      "props": {
+        "width": "700",
+        "height": "380",
+        "loop": true,
+        "autoPlay": false,
+        "muted": false,
+        "src": "https://www.youtube.com/watch?v=90wYioqUSAs",
+        "blockClass": "pdp-tab-video"
+      }
+  },
+  "condition-layout.product#pdp-tab-video-axial": {
+    "title": "Opciones",
+    "props": {
+      "conditions": [
+         {
+           "subject": "categoryTree",
+           "arguments": {
+               "id": "10"
+           }
+         }
+      ],
+      "Then": "flex-layout.row#pdp-tab-video-axial"
+    }
+  },
+  "flex-layout.row#pdp-tab-video-axial": {
+    "children": [
+      "video#pdp-tab-video-axial"
+    ],
+    "props": {
+      "blockClass": ["pdp-tab-video-axial"]
+    }
+  },
+  "video#pdp-tab-video-axial": {
+      "props": {
+        "width": "700",
+        "height": "380",
+        "loop": true,
+        "autoPlay": false,
+        "muted": false,
+        "src": "https://www.youtube.com/watch?v=90wYioqUSAs",
+        "blockClass": "pdp-tab-video"
+      }
+  },
+  "condition-layout.product#pdp-tab-video-kit-distribucion": {
+    "title": "Opciones",
+    "props": {
+      "conditions": [
+         {
+           "subject": "categoryTree",
+           "arguments": {
+               "id": "22"
+           }
+         }
+      ],
+      "Then": "flex-layout.row#pdp-tab-video-kit-distribucion"
+    }
+  },
+  "flex-layout.row#pdp-tab-video-kit-distribucion": {
+    "children": [
+      "video#pdp-tab-video-kit-distribucion"
+    ],
+    "props": {
+      "blockClass": ["pdp-tab-video-kit-distribucion"]
+    }
+  },
+  "video#pdp-tab-video-kit-distribucion": {
+      "props": {
+        "width": "700",
+        "height": "380",
+        "loop": true,
+        "autoPlay": false,
+        "muted": false,
+        "src": "https://www.youtube.com/watch?v=DK_IirHU_-0",
+        "blockClass": "pdp-tab-video"
+      }
+  },
+  "condition-layout.product#pdp-tab-video-bomba-agua": {
+    "title": "Opciones",
+    "props": {
+      "conditions": [
+         {
+           "subject": "categoryTree",
+           "arguments": {
+               "id": "13"
+           }
+         }
+      ],
+      "Then": "flex-layout.row#pdp-tab-video-bomba-agua"
+    }
+  },
+  "flex-layout.row#pdp-tab-video-bomba-agua": {
+    "children": [
+      "video#pdp-tab-video-bomba-agua"
+    ],
+    "props": {
+      "blockClass": ["pdp-tab-video-bomba-agua"]
+    }
+  },
+  "video#pdp-tab-video-bomba-agua": {
+      "props": {
+        "width": "700",
+        "height": "380",
+        "loop": true,
+        "autoPlay": false,
+        "muted": false,
+        "src": "https://www.youtube.com/watch?v=1fXIgEKePPU",
+        "blockClass": "pdp-tab-video"
+      }
   },
   "flex-layout.row#product-info-generic": {
     "children": [
