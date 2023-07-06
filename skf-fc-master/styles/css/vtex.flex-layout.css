@@ -645,7 +645,6 @@
 }
 @media(min-width: 1025px){
   .flexRow--banner-home-wrapper {
-    margin: 15px;
     background: #f6f6f6;
     padding: 60px 7px;
   }
