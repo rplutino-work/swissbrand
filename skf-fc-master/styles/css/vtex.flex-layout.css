@@ -2118,3 +2118,44 @@ padding: 0 15px;
       margin-bottom: 0;
     }
 }
+
+/* NOSOTROS */
+.flexRowContent--about-wrapper,
+.flexRowContent--about-info-wrapper {
+  flex-direction: column;
+}
+
+.flexRow--about-info,
+.flexRow--about-info-wrapper,
+.flexRowContent--about-text {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.flexRow--about-wrapper :global(.vtex-store-components-3-x-container){
+  padding: 0;
+}
+
+.flexRow--about-info-wrapper{
+  margin-bottom: 50px;;
+}
+
+.flexRow--about-text {
+  background: #F8F8F8;
+  padding: 25px 15px 10px 15px;
+  margin-bottom: 30px;
+}
+
+.flexRowContent--about-info-wrapper {
+  row-gap: 30px;
+  display: flex;
+}
+
+@media(min-width: 1200px){
+  .flexRow--about-text {
+    padding: 45px 0;
+  }  
+  .flexRow--about-text {
+    margin-bottom: 50px;
+  }
+}

@@ -1089,12 +1089,16 @@
     padding: 45px;
     max-width: 40%;
   }  
-  .infoCardImageContainer--banner-home-row-1 {
+  .infoCardImageContainer--banner-home-row-1,
+  .infoCardImageContainer--banner-home-row-3,
+  .infoCardImageContainer--banner-home-row-5 {
     width: 60%;
     padding-right: 18px;
   }
   
-  .infoCardImageContainer--banner-home-row-2 {
+  .infoCardImageContainer--banner-home-row-2,
+  .infoCardImageContainer--banner-home-row-4,
+  .infoCardImageContainer--banner-home-row-6 {
     width: 60%;
     padding-left: 18px;
   }
@@ -1193,4 +1197,9 @@
   .imageElementLink--pre-event-banner-image {
     margin-bottom: 0px;
   }
+}
+
+/* NOSOTROS */
+.infoCardTextContainer--about-info-row-content {
+  justify-content: center;
 }
