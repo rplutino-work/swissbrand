@@ -8,12 +8,59 @@
     "flex-layout.row#about": {
         "title": "Nosotros",
         "children": [
+            "flex-layout.row#about-banner",
             "flex-layout.row#about-text",
             "flex-layout.row#about-info"
         ],
         "props": {
             "blockClass": ["about-wrapper"],
             "colSizing": "auto"
+        }
+    },
+
+    "flex-layout.row#about-banner": {
+        "title": "Banner superior",
+        "props": {
+            "blockClass": "banner-custom-category",
+            "fullWidth": true
+        },
+
+        "children": ["flex-layout.col#about-banner-content"]
+    },
+
+    "flex-layout.col#about-banner-content": {
+        "title": "Dispositivos",
+        "props": {
+            "preventVerticalStretch": true
+        },
+
+        "children": [
+            "responsive-layout.mobile#about-banner-banner",
+            "responsive-layout.desktop#about-banner-banner"
+        ]
+    },
+
+    "responsive-layout.mobile#about-banner-banner": {
+        "title": "Mobile",
+        "children": ["image#mobile-about-banner"]
+    },
+
+    "image#mobile-about-banner": {
+        "title": "Imagen",
+        "props": {
+            "blockClass": "banner-custom-category-mobile"
+        }
+    },
+
+    "responsive-layout.desktop#about-banner-banner": {
+        "title": "Desktop",
+        "children": ["image#desktop-about-banner"]
+    },
+
+    "image#desktop-about-banner": {
+        "title": "Imagen",
+        "props": {
+            "blockClass": "banner-custom-category"
         }
     },
 
