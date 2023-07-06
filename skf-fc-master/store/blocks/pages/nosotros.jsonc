@@ -6,6 +6,7 @@
     },
 
     "flex-layout.row#about": {
+        "title": "Nosotros",
         "children": [
             "flex-layout.row#about-text",
             "flex-layout.row#about-info"
@@ -17,6 +18,7 @@
     },
 
     "flex-layout.row#about-text": {
+        "title": "Titulo & bajada",
         "children": [
             "rich-text#about-text"
         ],
@@ -26,6 +28,7 @@
     },
 
     "flex-layout.row#about-info": {
+        "title": "Información & fotos",
         "children": [
             "flex-layout.row#about-info-row-1",
             "flex-layout.row#about-info-row-2",
@@ -41,13 +44,15 @@
     },
 
     "rich-text#about-text": {
-      "props": {
-        "blockClass": ["about-text"],
-        "text": "# Quienes somos\n\nTodos damos mucho por sentado. Contamos con los trenes, subtes y autobuses para que nos lleven de forma segura. Confiamos en que las instalaciones de tratamiento de agua nos suministren agua potable y en que la industria alimentaria nos proteja de los alérgenos y las bacterias. Esperamos que los parques eólicos mantengan encendidas las luces y que los automóviles sean eléctricos. Hay un millón de necesidades diarias que satisfacer, y un planeta del que ocuparse.\n\nEn un mundo marcado por el crecimiento demográfico, la urbanización, la digitalización y las preocupaciones medioambientales, la realidad industrial es el verdadero desafío. Y ahí es exactamente donde queremos estar en SKF. Justo en el centro, con un rendimiento confiable para el mundo real."
-      }
+        "title": "Texto",
+        "props": {
+            "blockClass": ["about-text"],
+            "text": "# Quienes somos\n\nTodos damos mucho por sentado. Contamos con los trenes, subtes y autobuses para que nos lleven de forma segura. Confiamos en que las instalaciones de tratamiento de agua nos suministren agua potable y en que la industria alimentaria nos proteja de los alérgenos y las bacterias. Esperamos que los parques eólicos mantengan encendidas las luces y que los automóviles sean eléctricos. Hay un millón de necesidades diarias que satisfacer, y un planeta del que ocuparse.\n\nEn un mundo marcado por el crecimiento demográfico, la urbanización, la digitalización y las preocupaciones medioambientales, la realidad industrial es el verdadero desafío. Y ahí es exactamente donde queremos estar en SKF. Justo en el centro, con un rendimiento confiable para el mundo real."
+        }
     },
 
     "flex-layout.row#about-info-row-1": {
+        "title": "Fila 01",
         "children": [
             "info-card#about-info-row-1"
         ],
@@ -57,6 +62,7 @@
     },
 
     "info-card#about-info-row-1": {
+        "title": "Texto & Imagen",
         "props": {
             "id": "info-card-example",
             "isFullModeStyle": false,
@@ -71,6 +77,7 @@
     },
     
     "flex-layout.row#about-info-row-2": {
+        "title": "Fila 02",
         "children": [
             "info-card#about-info-row-2"
         ],
@@ -80,6 +87,7 @@
     },
 
     "info-card#about-info-row-2": {
+        "title": "Texto & Imagen",
         "props": {
           "id": "info-card-example",
           "isFullModeStyle": false,
@@ -94,6 +102,7 @@
     },
 
     "flex-layout.row#about-info-row-3": {
+        "title": "Fila 03",
         "children": [
             "info-card#about-info-row-3"
         ],
@@ -103,6 +112,7 @@
     },
 
     "info-card#about-info-row-3": {
+        "title": "Texto & Imagen",
         "props": {
             "id": "info-card-example",
             "isFullModeStyle": false,
@@ -117,6 +127,7 @@
     },
 
     "flex-layout.row#about-info-row-4": {
+        "title": "Fila 04",
         "children": [
             "info-card#about-info-row-4"
         ],
@@ -126,6 +137,7 @@
     },
 
     "info-card#about-info-row-4": {
+        "title": "Texto & Imagen",
         "props": {
           "id": "info-card-example",
           "isFullModeStyle": false,
@@ -140,6 +152,7 @@
     },
 
     "flex-layout.row#about-info-row-5": {
+        "title": "Fila 05",
         "children": [
             "info-card#about-info-row-5"
         ],
@@ -149,6 +162,7 @@
     },
 
     "info-card#about-info-row-5": {
+        "title": "Texto & Imagen",
         "props": {
             "id": "info-card-example",
             "isFullModeStyle": false,
@@ -163,6 +177,7 @@
     },
 
     "flex-layout.row#about-info-row-6": {
+        "title": "Fila 06",
         "children": [
             "info-card#about-info-row-6"
         ],
@@ -172,6 +187,7 @@
     },
 
     "info-card#about-info-row-6": {
+        "title": "Texto & Imagen",
         "props": {
           "id": "info-card-example",
           "isFullModeStyle": false,
