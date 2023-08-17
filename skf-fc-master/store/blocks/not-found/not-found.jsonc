@@ -2,10 +2,191 @@
   "store.not-found#product": {
     "blocks": ["flex-layout.row#product-not-found"]
   },
+  "store.not-found#search": {
+    "blocks": ["flex-layout.row#search-not-found"]
+  },
   "flex-layout.row#product-not-found": {
     "props": {
       "blockClass": "not-found-row"
     },
-    "children": []
+    "children": ["flex-layout.col#product-not-found"]
+  },
+  "flex-layout.row#search-not-found": {
+    "props": {
+      "blockClass": "not-found-row"
+    },
+    "children": [
+      "flex-layout.col#search-not-found"
+  ]
+  },
+  "flex-layout.col#product-not-found": {
+    "props": {
+      "blockClass": "not-found-row-info"
+    },
+    "children": [
+      "error-page",
+      "flex-layout.col#search-not-found"
+    ]
+  },
+  "flex-layout.col#search-not-found": {
+    "props": {
+      "blockClass": "not-found-row-products"
+    },
+    "children": [
+      "flex-layout.row#shelf-404",
+      "flex-layout.row#list-404"
+    ]
+  },
+  "flex-layout.row#list-404": {
+    "children": [
+      "rich-text#list-404-title",
+      "list-context.info-card-list#list-404"
+    ],
+    "props": {
+      "blockClass": ["list-home-wrapper","list-404-wrapper"],
+      "colSizing": "auto"
+    }
+  },
+
+  "rich-text#list-404-title": {
+    "props": {
+      "blockClass": "block-title",
+      "text": "## Lorem ipsum",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT"
+    }
+  },
+
+  "list-context.info-card-list#list-404": {
+    "children": [
+      "slider-layout#list-404"
+    ],
+    "props": {
+      "blockClass": ["list-home","list-404"],
+      "infoCards": [
+        {
+          "id": "list-404-1",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "https://placehold.jp/226x195.png",
+          "callToActionUrl": "/",
+          "blockClass": ["list-home-item-1"],
+          "callToActionMode": "link",
+          "callToActionText": "Lorem ipsum dolor sit amet, consetetur",
+          "textAlignment": "left"
+        },
+        {
+          "id": "list-404-1",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "https://placehold.jp/226x195.png",
+          "callToActionUrl": "/",
+          "blockClass": ["list-home-item-1"],
+          "callToActionMode": "link",
+          "callToActionText": "Lorem ipsum dolor sit amet, consetetur",
+          "textAlignment": "left"
+        },
+        {
+          "id": "list-404-1",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "https://placehold.jp/226x195.png",
+          "callToActionUrl": "/",
+          "blockClass": ["list-home-item-1"],
+          "callToActionMode": "link",
+          "callToActionText": "Lorem ipsum dolor sit amet, consetetur",
+          "textAlignment": "left"
+        },
+        {
+          "id": "list-404-1",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "https://placehold.jp/226x195.png",
+          "callToActionUrl": "/",
+          "blockClass": ["list-home-item-1"],
+          "callToActionMode": "link",
+          "callToActionText": "Lorem ipsum dolor sit amet, consetetur",
+          "textAlignment": "left"
+        },
+        {
+          "id": "list-404-1",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "https://placehold.jp/226x195.png",
+          "callToActionUrl": "/",
+          "blockClass": ["list-home-item-1"],
+          "callToActionMode": "link",
+          "callToActionText": "Lorem ipsum dolor sit amet, consetetur",
+          "textAlignment": "left"
+        },
+        {
+          "id": "list-404-1",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "https://placehold.jp/226x195.png",
+          "callToActionUrl": "/",
+          "blockClass": ["list-home-item-1"],
+          "callToActionMode": "link",
+          "callToActionText": "Lorem ipsum dolor sit amet, consetetur",
+          "textAlignment": "left"
+        },
+        {
+          "id": "list-404-1",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "https://placehold.jp/226x195.png",
+          "callToActionUrl": "/",
+          "blockClass": ["list-home-item-1"],
+          "callToActionMode": "link",
+          "callToActionText": "Lorem ipsum dolor sit amet, consetetur",
+          "textAlignment": "left"
+        },
+        {
+          "id": "list-404-1",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "https://placehold.jp/226x195.png",
+          "callToActionUrl": "/",
+          "blockClass": ["list-home-item-1"],
+          "callToActionMode": "link",
+          "callToActionText": "Lorem ipsum dolor sit amet, consetetur",
+          "textAlignment": "left"
+        },
+        {
+          "id": "list-404-1",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "https://placehold.jp/226x195.png",
+          "callToActionUrl": "/",
+          "blockClass": ["list-home-item-1"],
+          "callToActionMode": "link",
+          "callToActionText": "Lorem ipsum dolor sit amet, consetetur",
+          "textAlignment": "left"
+        },
+        {
+          "id": "list-404-1",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "https://placehold.jp/226x195.png",
+          "callToActionUrl": "/",
+          "blockClass": ["list-home-item-1"],
+          "callToActionMode": "link",
+          "callToActionText": "Lorem ipsum dolor sit amet, consetetur",
+          "textAlignment": "left"
+        }
+      ]
+    }
+  },
+
+  "slider-layout#list-404": {
+    "props": {
+      "blockClass": ["list-home-item"],
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true
+    }
   }
 }

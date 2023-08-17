@@ -1430,9 +1430,7 @@
 /* 404 */
 .flexColChild--not-found-row-info:first-child{
   height: 100%;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+  background-color: #485A64;
   margin-bottom: 30px;
 }
 .ProductErrorPage--wrapper,
@@ -1462,14 +1460,28 @@ padding: 0 15px;
 .flexRow--not-found-container {
   width: 100%;
 }
-@media(min-width: 1024px){
-  .flexColChild--not-found-row-info:first-child{
+.flexRowContent--list-404-wrapper {
+  padding: 0 8px;
+}
 
-  }
+.flexRow--shelf-404 {
+  padding: 16px 16px;
+}
+@media(min-width: 1024px){
   .ProductErrorPage--wrapper,
   .PageErrorPage--wrapper {
     padding: 40px 0px;
   }  
+
+  .flexRowContent--list-404-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .flexRow--shelf-404 {
+    padding: 16px 8px;
+  }
 }
 
 /* LIST HOME */
@@ -2158,3 +2170,4 @@ padding: 0 15px;
     margin-bottom: 50px;
   }
 }
+

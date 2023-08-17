@@ -397,3 +397,8 @@
   }
 
 }
+
+/* 404 */
+.sliderLayoutContainer--list-home-item {
+  justify-content: center;
+}
