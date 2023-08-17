@@ -2171,3 +2171,12 @@ padding: 0 15px;
   }
 }
 
+/* QUICK VIEW */
+.flexRow--quickviewMainRow {
+  padding: 15px;
+}
+@media(min-width: 1026px){
+  .flexRow--quickviewMainRow {
+    padding: 30px;
+  }
+}

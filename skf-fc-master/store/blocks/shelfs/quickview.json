@@ -1,0 +1,100 @@
+{
+  "modal-trigger#quickview": {
+    "children": ["image#quickview-icon", "modal-layout#quickview"],
+    "props": {
+      "blockClass": "quickview"
+    }
+  },
+
+  "image#quickview-icon": {
+    "props": {
+      "blockClass": "quickview-icon",
+      "src": "assets/imgs/icon-quickview.png",
+      "alt": "Icono de vista rapida del producto de SKF",
+      "maxWidth": 24
+    }
+  },
+
+  "modal-layout#quickview": {
+    "children": [
+      "modal-header#quickview",
+      "flex-layout.row#quickview-main-row"
+    ],
+    "props": {
+      "blockClass": "quickview"
+    }
+  },
+
+  "modal-header#quickview": {
+    "props": {
+      "blockClass": "quickview"
+    }
+  },
+
+  "flex-layout.row#quickview-main-row": {
+    "children": [
+      "flex-layout.col#quickview-images",
+      "flex-layout.col#quickview-product-details"
+    ],
+    "props": {
+      "blockClass": "quickviewMainRow",
+      "colSizing": "equal"
+    }
+  },
+  "flex-layout.col#quickview-images": {
+    "children": ["product-images#quickview"]
+  },
+  "product-images#quickview": {
+    "props": {
+      "blockClass": "quickview",
+      "thumbnailVisibility": "visible",
+      "showNavigationArrows": true,
+      "thumbnailsOrientation": "horizontal"
+    }
+  },
+  "flex-layout.col#quickview-product-details": {
+    "children": [
+      "modal-content#quickview"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "blockClass": "quickviewDetails"
+    }
+  },
+
+  "modal-content#quickview": {
+    "children": [
+      "vtex.store-components:product-name",
+      "product-identifier.product",
+      "flex-layout.row#product-badges",
+      "flex-layout.row#product-prices",
+      "product-description#quickview",
+      "product-installments#product",
+      "sku-selector#skf",
+      "flex-layout.row#add-cart",
+      "availability-subscriber",
+      "flex-layout.row#quickview-actions-2"
+    ],
+    "props": {
+      "blockClass": "quickviewContent"
+    }
+  },
+
+  "flex-layout.row#quickview-actions-2": {
+    "children": ["link.product#button-pdp"]
+  },
+  "link.product#button-pdp": {
+    "props": {
+      "blockClass": "quickview-more",
+      "displayMode": "button",
+      "label": "Ver más detalles",
+      "href": "/{slug}/p"
+    }
+  },
+  "product-description#quickview":{
+      "props": {
+        "blockClass": "quickview-product-description",
+        "collapseContent": false
+      }
+  }
+}

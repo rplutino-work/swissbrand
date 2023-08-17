@@ -467,3 +467,30 @@
   background: #0f58d6;
   color: #fff;
 }
+
+/* QUICK VIEW */
+.buttonLink--quickview-more {
+  height: 40px;
+  margin: 15px 0 0 0;
+  border: none;
+  border-radius: 0px;
+  outline: none;
+  background: #485A64;
+  transition: background-color 0.2s linear;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 19px;
+  text-align: center;
+  color: #fff;
+  letter-spacing: -.3px;
+}
+
+.buttonLink--quickview-more:hover {
+  background: #88C008;
+}
+
+@media(min-width: 1026px){
+  .buttonLink--quickview-more {
+    margin: 20px 0 0 0;
+  }
+}

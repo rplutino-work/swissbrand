@@ -22,6 +22,7 @@
   "flex-layout.col#shelf-product-top": {
     "children": [
       "product-summary-image#shelf-product",
+      "modal-trigger#quickview",
       "flex-layout.row#shelf-product-hotsale-badges",
       "flex-layout.row#shelf-product-cyber-badges",
       "flex-layout.row#shelf-product-gift-badges",

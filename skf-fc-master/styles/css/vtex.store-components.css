@@ -1204,3 +1204,30 @@
   justify-content: center;
 }
 
+/* QUICK VIEW */
+.productImagesGallerySwiperContainer--quickview .swiper-pagination {
+  bottom: 5px !important;
+}
+.productDescriptionText--quickview-product-description {
+  font-size: 12px;
+  line-height: 21px;
+  margin-top: 15px;
+}
+.figure--quickview {
+  width: 90px;
+  height: 90px;
+  display: flex;
+}
+.carouselGaleryThumbs--quickview {
+  margin-top: 20px;
+}
+
+.productImagesGallerySwiperContainer--quickview{
+  background-color: #fff;
+}
+
+@media(min-width: 1026px){
+  .productDescriptionText--quickview-product-description {
+    font-size: 13px;
+  }  
+}
