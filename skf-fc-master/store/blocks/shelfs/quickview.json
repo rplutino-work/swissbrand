@@ -9,7 +9,7 @@
   "image#quickview-icon": {
     "props": {
       "blockClass": "quickview-icon",
-      "src": "assets/imgs/icon-quickview.png",
+      "src": "assets/imgs/skf-icon-quickview.png",
       "alt": "Icono de vista rapida del producto de SKF",
       "maxWidth": 24
     }
@@ -64,8 +64,8 @@
 
   "modal-content#quickview": {
     "children": [
-      "vtex.store-components:product-name",
-      "product-identifier.product",
+      "vtex.store-components:product-name#quickview",
+      "product-identifier.product#quickview",
       "flex-layout.row#product-badges",
       "flex-layout.row#product-prices",
       "product-description#quickview",
@@ -89,6 +89,16 @@
       "displayMode": "button",
       "label": "Ver más detalles",
       "href": "/{slug}/p"
+    }
+  },
+  "vtex.store-components:product-name#quickview":{
+      "props": {
+        "blockClass": ["quickview-product-name"]
+      }
+  },
+  "product-identifier.product#quickview":{
+    "props":{
+      "blockClass": ["product-identifier"]
     }
   },
   "product-description#quickview":{

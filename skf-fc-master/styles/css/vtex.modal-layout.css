@@ -122,6 +122,12 @@
   top: 8px;
 }
 
+.contentContainer--quickviewContent :global(.vtex-product-identifier-0-x-product-identifier__label),
+.contentContainer--quickviewContent :global(.vtex-product-identifier-0-x-product-identifier__separator),
+.contentContainer--quickviewContent :global(.vtex-product-identifier-0-x-product-identifier__value) {
+  font-size: 15px;
+}
+
 @media(min-width: 1200px){
   .closeButton--quickview {
     right: 0px;
@@ -133,5 +139,10 @@
   .paper--quickview {
       margin: 2rem;
       max-height: calc(100% - 4rem);
+  }
+  .contentContainer--quickviewContent :global(.vtex-product-identifier-0-x-product-identifier__label),
+  .contentContainer--quickviewContent :global(.vtex-product-identifier-0-x-product-identifier__separator),
+  .contentContainer--quickviewContent :global(.vtex-product-identifier-0-x-product-identifier__value) {
+    font-size: 12px;
   }
 }

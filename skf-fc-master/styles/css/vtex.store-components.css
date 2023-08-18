@@ -1226,8 +1226,22 @@
   background-color: #fff;
 }
 
+.productBrand--quickview-product-name {
+  font-size: 26px;
+}
+
+.productNameContainer--quickview-product-name {
+  margin-bottom: 5px;
+}
+
 @media(min-width: 1026px){
   .productDescriptionText--quickview-product-description {
     font-size: 13px;
   }  
+  .productBrand--quickview-product-name {
+    font-size: 33px;
+  }
+  .productNameContainer--quickview-product-name {
+    margin-bottom: 15px;
+  }
 }
