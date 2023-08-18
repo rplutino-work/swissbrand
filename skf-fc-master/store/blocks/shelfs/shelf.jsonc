@@ -169,12 +169,14 @@
 
   /* 404 SHELF */
   "flex-layout.row#shelf-404": {
+    "title": "Productos",
     "props": {
       "blockClass": ["shelf", "shelfWithBackground", "shelf-slider", "shelf-404"]
     },
     "children": ["flex-layout.col#shelf-404"]
   },
   "flex-layout.col#shelf-404": {
+    "title": "Titulo y texto",
     "props": {
       "preventVerticalStretch": true
     },
@@ -184,6 +186,7 @@
     ]
   },
   "rich-text#shelf-404-title": {
+    "title": "Titulo",
     "props": {
       "blockClass": "block-title",
       "text": "## Lorem ipsum",
@@ -192,6 +195,7 @@
     }
   },
   "list-context.product-list#404-shelf": {
+    "title": "Listado de productos",
     "props": {
       "categoryId": "9"
     },
@@ -199,6 +203,7 @@
     "children": ["slider-layout#shelf-products-slide-404"]
   },
   "slider-layout#shelf-products-slide-404": {
+    "title": "Configuraciones slider",
     "props": {
       "blockClass": ["shelf", "shelf-slider"],
       "infinite": true,
