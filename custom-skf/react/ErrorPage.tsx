@@ -13,7 +13,7 @@ const ErrorPage: StorefrontFunctionComponent = () => {
               <div className={`vtex-flex-layout-0-x-ProductErrorPage--wrapper`}>
               <h1 className={`vtex-store-components-3-x-ProductErrorPage--title`}>Su búsqueda de "{term}" no arrojó ningún resultado.</h1>
               <p className={`vtex-store-components-3-x-ProductErrorPage--subtitle`}>Comproba los términos buscados. Intenta utilizar una sola palabra o términos genéricos en la búsqueda. Podés intentar usar sinónimos al término buscado.</p>
-              <p className={`vtex-store-components-3-x-ProductErrorPage--text`}>Tambien podés visiar alguno de los productos recomendados</p>
+              <p className={`vtex-store-components-3-x-ProductErrorPage--text`}>Tambien podés visitar alguno de los productos recomendados</p>
             </div>
             </>
           )
