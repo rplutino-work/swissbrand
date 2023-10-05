@@ -1,7 +1,7 @@
 {
   "vendor": "skfarg",
   "name": "skfarg",
-  "version": "1.2.84",
+  "version": "1.2.85",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
