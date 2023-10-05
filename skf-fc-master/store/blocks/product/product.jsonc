@@ -547,9 +547,18 @@
     "children": ["rich-text#product-info-2-title"]
   },
   "disclosure-content#product-info-2-2": {
-    "children": ["product-description","condition-layout.product#pdf"],
+    "children": ["product-description","toggle-layout#pdp-pdf"],
     "props":{
       "blockClass": "product-info-text-disclosure"
+    }
+  },
+  "toggle-layout#pdp-pdf": {
+    "title": "Botón PDF",
+    "children": [
+        "condition-layout.product#pdf"
+    ],
+    "props": {
+      "blockClass": ["pdp-description-pdf"]
     }
   },
   "rich-text#product-info-2-title": {
@@ -758,7 +767,7 @@
   "tab-content.item#home1": {
     "children": [
       "product-description",
-      "condition-layout.product#pdf"
+      "toggle-layout#pdp-pdf"
       //"condition-layout.product#aplications"
     ],
     "props": {
