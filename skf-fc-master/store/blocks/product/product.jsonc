@@ -187,7 +187,7 @@
       "flex-layout.row#product-badges",
       "flex-layout.row#product-prices",
       "product-installments#product",
-      "toggle-layout#aplications",
+      "flex-layout.row#aplications-pdf",
       "sku-selector#skf",
       "flex-layout.row#add-cart",
       "availability-subscriber",
@@ -196,6 +196,19 @@
       "flex-layout.row#info"
     ]
   },
+
+  "flex-layout.row#aplications-pdf": {
+    "title": "Aplicaciones - PDF",
+    "children": [
+        "disposition-layout#aplications-pdf"
+    ],
+    "props": {
+      "blockClass": ["aplications-pdf"],
+      "colSizing": "auto",
+      "fullWidth": true
+    }
+  },
+
 
   "flex-layout.row#product-badges": {
     "children": [
@@ -211,56 +224,6 @@
     "props": {
       "blockClass": ["pdp-badges"],
       "colSizing": "auto"
-    }
-  },
-
-  "toggle-layout#aplications": {
-    "title": "Descargar PDF",
-    "children": [
-      "condition-layout.product#aplications"
-      ]
-  },
-
-  "condition-layout.product#aplications": {
-    "title": "Opciones",
-    "props": {
-      "conditions": [
-         {
-           "subject": "categoryTree",
-           "arguments": {
-               "id": "1"
-           }
-         }
-      ],
-      "Then": "flex-layout.row#aplications",
-      "Else": "link#aplications"
-    }
-  },
-
-  "flex-layout.row#aplications": {
-    "children": ["link#download"],
-    "props": {
-      "blockClass": ["aplicaciones-download"],
-      "colSizing": "auto"
-    }
-  },
-
-  "link#aplications": {
-    "title": "Link aplicaciones",
-    "props": {
-      "href": "#aplicaciones",
-      "label": "Aplicaciones",
-      "blockClass": "aplications-btn"
-    }
-  },
-
-  "link#download": {
-    "title": "Link PDF",
-    "props": {
-      "href": "#",
-      "label": "Descargar PDF",
-      "blockClass": "download-btn",
-      "target": "_blank"
     }
   },
 
@@ -584,7 +547,7 @@
     "children": ["rich-text#product-info-2-title"]
   },
   "disclosure-content#product-info-2-2": {
-    "children": ["product-description"],
+    "children": ["product-description","condition-layout.product#pdf"],
     "props":{
       "blockClass": "product-info-text-disclosure"
     }
@@ -795,7 +758,7 @@
   "tab-content.item#home1": {
     "children": [
       "product-description",
-      "toggle-layout#aplications"
+      "condition-layout.product#pdf"
       //"condition-layout.product#aplications"
     ],
     "props": {
@@ -1525,6 +1488,12 @@
       "blockClass": ["product-info-generic-image"],
       "maxHeight": 40,
       "src": "assets/svgs/skf-icon-qr.svg"
+    }
+  },
+  "product-description":{
+    "title": "Descripción",
+    "props": {
+      "collapseContent": false
     }
   }
 }

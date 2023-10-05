@@ -1893,6 +1893,20 @@ padding: 0 15px;
   padding: 0;
 }
 
+.flexRowContent--aplications-pdf .stretchChildrenWidth {
+  width: 100% !important;
+  justify-content: flex-start;
+  column-gap: 15px;
+}
+
+.flexRowContent--aplicaciones-download .stretchChildrenWidth {
+  width: auto !important;
+}
+
+.flexRow--aplications-pdf {
+  margin: 20px 0 10px 0;
+}
+
 @media(min-width: 1200px){
   :global(.vtex-skf-aplications-list) :global(.vtex-skf-aplications-paragraph) {
     font-size: 14px;
@@ -1919,6 +1933,7 @@ padding: 0 15px;
 /* PDP PRODUCTO DOWNLOAD */
 .flexRow--aplicaciones-download {
   display: flex;
+  width: auto !important;
 }
 
 .flexRowContent--aplicaciones-download {

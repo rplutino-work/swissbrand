@@ -381,31 +381,31 @@
 /* PDP - BOTON APLICACIONES */
 .link--aplications-btn {
   border: 1px solid #485A64;
-  padding: 10px 22px;
-  display: inline-flex;
+  padding: 13px 22px;
+  display: flex;
   text-decoration: none;
-  margin-top: 15px;
   transition: .3s;
+  align-items: center;
 }
 
 .label--aplications-btn {
   font-size: 14px;
   text-transform: uppercase;
-  color: #485A64;
+  color: #485A64 !important;
+  line-height: 13px;
 }
 
 .link--aplications-btn:hover {
   background: #88c008;
-  color: #fff;
+  color: #fff !important;
 }
 
 .link--aplications-btn:hover .label--aplications-btn {
-  color: #fff;
+  color: #fff !important;
 }
 
 /* PDP PRODUCTO DOWNLOAD */
 .link--download-btn {
-  margin: 20px 0 10px;
   font-size: 16px;
   color: #0f58d6;
   text-decoration: none;

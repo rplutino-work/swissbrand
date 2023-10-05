@@ -1,0 +1,92 @@
+{
+    "disposition-layout#aplications-pdf": { 
+        "title": "Opciones",
+        "children": [
+            "condition-layout.product#aplications",
+            "condition-layout.product#pdf"
+        ],
+        "props": {
+          "disposition": [
+            {
+                "order": 1,
+                "__editorItemTitle": "Aplicaciones"
+            },
+            {
+                "order": 2,
+                "__editorItemTitle": "Descargar PDF"
+            }
+          ]
+        }
+    },
+
+    "condition-layout.product#aplications": {
+        "title": "Aplicaciones",
+        "props": {
+          "conditions": [
+            {
+               "subject": "categoryTree",
+               "arguments": {
+                   "id": "3"
+               }
+            }
+          ],
+          "Then": "flex-layout.row#aplications"
+        }
+    },
+
+    "flex-layout.row#aplications": {
+        "children": [
+            "link#aplications"
+        ],
+        "props": {
+            "blockClass": ["aplicaciones-download"],
+            "colSizing": "auto"
+        }
+    },
+    
+
+    "link#aplications": {
+        "title": "Link aplicaciones",
+        "props": {
+            "href": "#aplicaciones",
+            "label": "Aplicaciones",
+            "blockClass": "aplications-btn"
+        }
+    },
+
+    "condition-layout.product#pdf": {
+        "title": "PDF",
+        "props": {
+          "conditions": [
+            {
+               "subject": "categoryTree",
+               "arguments": {
+                   "id": "1"
+               }
+            }
+          ],
+          "Then": "flex-layout.row#pdf"
+        }
+    },
+
+    "flex-layout.row#pdf": {
+        "title": "Descargar PDF",
+        "children": [
+            "link#pdf"
+        ],
+        "props": {
+            "blockClass": ["aplicaciones-download"],
+            "colSizing": "auto",
+            "fullWidth": true
+        }
+    },
+
+    "link#pdf": {
+        "title": "Link PDF",
+        "props": {
+            "label": "Descargar PDF",
+            "blockClass": "download-btn",
+            "target": "_blank"
+        }
+    }
+}
