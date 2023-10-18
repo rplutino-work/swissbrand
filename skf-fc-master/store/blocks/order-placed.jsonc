@@ -1,6 +1,9 @@
 {
   "store.orderplaced": {
-    "children": ["order-placed"]
+    "children": [
+      "flex-layout.row#placa-wrapper"
+      //"order-placed"
+    ]
   },
   "order-placed": {
     "blocks": ["op-header", "op-order"]
