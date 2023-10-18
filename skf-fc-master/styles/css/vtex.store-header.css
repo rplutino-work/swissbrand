@@ -113,3 +113,13 @@
     box-shadow: -3px 9px 16px -5px rgb(0 0 0 / 9%);
   }
 }
+
+/* PLACA */
+.headerRowContainer--header-placa {
+  justify-content: center;
+  height: 70px;
+}
+
+.headerRowContentContainer--header-placa {
+  height: 70px;
+}

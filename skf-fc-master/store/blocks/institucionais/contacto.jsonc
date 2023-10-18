@@ -1,6 +1,12 @@
 {
   "store.custom#contacto": {
-      "blocks": ["flex-layout.row#breadcrumb", "flex-layout.row#contacto"]
+      "blocks": [
+        "flex-layout.row#placa-wrapper"
+        /*
+        "flex-layout.row#breadcrumb", 
+        "flex-layout.row#contacto"
+        */
+    ]
   },
 
   "flex-layout.row#contacto": {

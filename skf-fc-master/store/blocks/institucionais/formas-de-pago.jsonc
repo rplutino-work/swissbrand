@@ -1,6 +1,12 @@
 {
     "store.custom#formas-de-pago": {
-        "blocks": ["flex-layout.row#breadcrumb", "flex-layout.row#formas-de-pago"]
+        "blocks": [
+            "flex-layout.row#placa-wrapper"
+            /*
+            "flex-layout.row#breadcrumb", 
+            "flex-layout.row#formas-de-pago"
+            */
+        ]
     },
 
     "flex-layout.row#formas-de-pago": {

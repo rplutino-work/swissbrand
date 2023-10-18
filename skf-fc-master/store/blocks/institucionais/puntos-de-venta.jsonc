@@ -1,6 +1,9 @@
 {
     "store.custom#puntos-de-venta": {
-        "blocks": ["custom-script#puntos-de-venta"]
+        "blocks": [
+            "flex-layout.row#placa-wrapper"
+            //"custom-script#puntos-de-venta"
+        ]
     },
     "custom-script#puntos-de-venta": {
         "props": {

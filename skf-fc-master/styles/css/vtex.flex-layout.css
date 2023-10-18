@@ -2195,3 +2195,13 @@ padding: 0 15px;
     padding: 30px;
   }
 }
+
+/* PLACA */
+.flexRow--placa-wrapper :global(.vtex-store-components-3-x-container) {
+  padding: 0;
+}
+@media(min-width: 1024px){
+  .flexRowContent--placa-wrapper {
+      flex-direction: column;
+  }
+}

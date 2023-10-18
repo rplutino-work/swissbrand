@@ -261,3 +261,8 @@
     width: 100%;
   }
 }
+
+/* PLACA */
+.content {
+  display: none;
+}

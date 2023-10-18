@@ -1,17 +1,26 @@
 {
   "store.orderplaced#default-skf": {
-    "blocks": ["order-placed"]
+    "blocks": [
+      "flex-layout.row#placa-wrapper",
+      "order-placed"
+    ]
   },
 
   "store.account#default-skf": {
-    "blocks": ["my-account"],
+    "blocks": [
+      "flex-layout.row#placa-wrapper",
+      "my-account"
+    ],
     "parent": {
       "challenge": "challenge.profile"
     }
   },
 
   "store.login#default-skf": {
-    "blocks": ["login-content#default-skf"]
+    "blocks": [
+      "flex-layout.row#placa-wrapper",
+      "login-content#default-skf"
+    ]
   },
 
   "login-content#default-skf": {

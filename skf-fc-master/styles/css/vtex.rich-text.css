@@ -592,3 +592,28 @@
     font-size: 14px;
   }
 }
+
+/* PLACA */
+.container--placa{
+  background: #f8f8f8;
+  padding: 25px 15px 10px;
+}
+.headingLevel1--placa {
+  color: #485a64;
+  line-height: 33px;
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0 0 25px;
+}
+
+.paragraph--placa {
+  color: #485a64;
+  font-size: 13px;
+  line-height: 20px;
+}
+@media(min-width: 1024px){
+  .wrapper--placa {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}

@@ -1,7 +1,8 @@
 {
     "store.custom#about": {
         "children": [
-          "flex-layout.row#about"
+            "flex-layout.row#placa-wrapper"  
+            //"flex-layout.row#about"
         ]
     },
 

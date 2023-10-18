@@ -1,6 +1,12 @@
 {
     "store.custom#como-comprar": {
-        "blocks": ["flex-layout.row#breadcrumb", "flex-layout.row#como-comprar"]
+        "blocks": [
+            "flex-layout.row#placa-wrapper"
+            /*
+            "flex-layout.row#breadcrumb", 
+            "flex-layout.row#como-comprar"
+            */
+        ]
     },
 
     "flex-layout.row#como-comprar": {

@@ -1,6 +1,12 @@
 {
   "store.custom#quienes-somos": {
-    "blocks": ["flex-layout.row#breadcrumb", "flex-layout.row#quienes-somos"]
+    "blocks": [
+      "flex-layout.row#placa-wrapper"
+      /*
+      "flex-layout.row#breadcrumb", 
+      "flex-layout.row#quienes-somos"
+      */
+    ]
   },
 
   "flex-layout.row#quienes-somos": {

@@ -1,6 +1,12 @@
 {
     "store.custom#generica": {
-        "blocks": ["flex-layout.row#breadcrumb", "flex-layout.row#generica"]
+        "blocks": [
+            "flex-layout.row#placa-wrapper"
+            /*
+            "flex-layout.row#breadcrumb", 
+            "flex-layout.row#generica"
+            */
+        ]
     },
 
     "flex-layout.row#generica": {

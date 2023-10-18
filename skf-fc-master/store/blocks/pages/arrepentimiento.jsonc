@@ -1,7 +1,8 @@
 {
     "store.custom#arrepentimiento": {
       "children": [
-        "flex-layout.row#arrepentimiento"
+        "flex-layout.row#placa-wrapper"
+        //"flex-layout.row#arrepentimiento"
       ]
     },
     "flex-layout.row#arrepentimiento": {

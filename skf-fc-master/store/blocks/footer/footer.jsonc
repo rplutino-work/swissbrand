@@ -5,10 +5,10 @@
 
   "footer-layout.desktop": {
     "children": [
-      "flex-layout.row#newsletter",
-      "flex-layout.row#footer-links",
-      "flex-layout.row#footer-bottom",
-      "custom-script#wise"
+      //"flex-layout.row#newsletter",
+      //"flex-layout.row#footer-links",
+      "flex-layout.row#footer-bottom"
+      //"custom-script#wise"
     ]
   },
 
@@ -180,10 +180,10 @@
 
   "footer-layout.mobile": {
     "children": [
-      "flex-layout.row#newsletter",
-      "flex-layout.row#mobile-footer-links",
-      "flex-layout.row#footer-bottom",
-      "custom-script#wise"
+      //"flex-layout.row#newsletter",
+      //"flex-layout.row#mobile-footer-links",
+      "flex-layout.row#footer-bottom"
+      //"custom-script#wise"
     ]
   },
 

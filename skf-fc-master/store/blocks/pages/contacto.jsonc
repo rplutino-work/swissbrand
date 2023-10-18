@@ -1,7 +1,8 @@
 {
     "store.custom#contacto": {
       "children": [
-        "flex-layout.row#contacto-form"
+        "flex-layout.row#placa-wrapper"
+        //"flex-layout.row#contacto-form"
       ]
     },
     "flex-layout.row#contacto-form": {

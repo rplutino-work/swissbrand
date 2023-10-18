@@ -1,6 +1,8 @@
 {
   "store.product": {
     "children": [
+      "flex-layout.row#placa-wrapper"
+      /*
       "breadcrumb#product",
       "flex-layout.row#product-main-content",
       "__fold__",
@@ -8,6 +10,7 @@
       "responsive-layout.desktop#product-info",
       "flex-layout.row#product-info-generic",
       "flex-layout.row#shelf-page-product"
+      */
     ]
   },
 
