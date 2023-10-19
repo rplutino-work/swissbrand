@@ -11,7 +11,9 @@
                 "custom-script#placa"
             ],
             "props": {
-                "blockClass": ["placa-wrapper"]
+                "blockClass": ["placa-wrapper"],
+                "colSizing": "auto",
+                "fullWidth": true
             }
       },
       "rich-text#placa": {
