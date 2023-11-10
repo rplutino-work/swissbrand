@@ -102,7 +102,7 @@
 .heading--block-title {
   margin: 0 0 10px 7px;
   line-height: 30px;
-  font-size: 30px;
+  font-size: 25px;
   font-family: "Skf";
   font-weight: 500;
   color: #485A64;
@@ -124,6 +124,12 @@
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.6px;
+}
+
+@media(min-width: 1024px){
+  .heading--block-title {
+    font-size: 30px;
+  }
 }
 
 /* --- */

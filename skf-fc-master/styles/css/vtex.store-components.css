@@ -1027,6 +1027,7 @@
   margin: 0;
   line-height: 37px;
   letter-spacing: -.5px;
+  font-size: 30px;
 }
 
 .infoCardSubhead--banner-home {
@@ -1085,6 +1086,9 @@
 }
 
 @media(min-width: 1024px){
+  .infoCardHeadline--banner-home {
+    font-size: 2.25rem;
+  }
   .infoCardTextContainer--banner-home {
     padding: 45px;
     max-width: 40%;
