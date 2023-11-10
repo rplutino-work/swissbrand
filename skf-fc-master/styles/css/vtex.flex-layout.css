@@ -578,7 +578,7 @@
 
 .flexRowContent--shelf-prices {
   flex-direction: column;
-  padding: 7px 0;
+  padding: 7px 0 3px 0;
 }
 
 @media only screen and (max-width: 1025px) {
@@ -2204,4 +2204,18 @@ padding: 0 15px;
   .flexRowContent--placa-wrapper {
       flex-direction: column;
   }
+}
+
+/* CUOTAS PDP */
+.flexRowContent--pdp-installments {
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  display: flex;
+  margin-top: 5px;
+  row-gap: 7px;
+}
+.flexRowContent--pdp-installments  :global(.vtex-product-price-1-x-installments--shelf-product) {
+  font-weight: 600;
+  font-size: 13px;
 }

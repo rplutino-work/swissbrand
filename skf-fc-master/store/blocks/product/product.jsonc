@@ -1,8 +1,7 @@
 {
   "store.product": {
     "children": [
-      "flex-layout.row#placa-wrapper"
-      /*
+      //"flex-layout.row#placa-wrapper"
       "breadcrumb#product",
       "flex-layout.row#product-main-content",
       "__fold__",
@@ -10,7 +9,6 @@
       "responsive-layout.desktop#product-info",
       "flex-layout.row#product-info-generic",
       "flex-layout.row#shelf-page-product"
-      */
     ]
   },
 
@@ -189,7 +187,7 @@
       "product-identifier.product",
       "flex-layout.row#product-badges",
       "flex-layout.row#product-prices",
-      "product-installments#product",
+      "flex-layout.row#pdp-installments",
       "flex-layout.row#aplications-pdf",
       "sku-selector#skf",
       "flex-layout.row#add-cart",
@@ -198,6 +196,26 @@
       "flex-layout.row#scroll",
       "flex-layout.row#info"
     ]
+  },
+
+  "flex-layout.row#pdp-installments": {
+    "title": "Cuotas sin interés",
+    "children": [
+        "image#pdp-installments",
+        "condition-layout.product#availability"
+    ],
+    "props": {
+      "blockClass": ["pdp-installments"],
+      "colSizing": "auto"
+    }
+  },
+
+  "image#pdp-installments": {
+    "title": "Imagen logos",
+    "props": {
+      "blockClass": ["pdp-installments"],
+      "src": "https://i.imgur.com/YNpgDX1.png"
+    }
   },
 
   "flex-layout.row#aplications-pdf": {

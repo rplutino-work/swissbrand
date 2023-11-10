@@ -85,7 +85,7 @@
 
     "children": [
       "flex-layout.row#shelf-prices",
-      "condition-layout.product#availability"
+      "product-installments#product3"
     ]
   },
 
@@ -163,8 +163,8 @@
       "alwaysShow": true,
       "blockClass": "shelf-product",
       "installmentsCriteria": "max-quantity-without-interest",
-      //"message": "Hasta {installmentsNumber} cuotas {hasInterest, select, true {, {interestRate} de interés} false { sin interés}} de {installmentValue}"
-      "message": "Hasta 3 cuotas sin interés"
+      "message": "Hasta {installmentsNumber} cuotas {hasInterest, select, true {, {interestRate} de interés} false { sin interés}} de {installmentValue}"
+      //"message": "Hasta 3 cuotas sin interés"
     }
   },
 

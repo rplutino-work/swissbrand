@@ -30,7 +30,7 @@
   display: block;
   font-weight: 500;
   color: #808895;
-  font-size: 11px;
+  font-size: 12px;
   width: auto;
 }
 
@@ -99,3 +99,10 @@
   margin: 0 0 0 12px;
 }
 
+/* CUOTAS */
+.currencyDecimal--shelf-product, 
+.currencyFraction--shelf-product,
+.currencyDecimal--product,
+.currencyFraction--product {
+  display: none;
+}
