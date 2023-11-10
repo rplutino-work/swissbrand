@@ -1,14 +1,14 @@
 {
   "store.orderplaced#default-skf": {
     "blocks": [
-      "flex-layout.row#placa-wrapper",
+      //"flex-layout.row#placa-wrapper",
       "order-placed"
     ]
   },
 
   "store.account#default-skf": {
     "blocks": [
-      "flex-layout.row#placa-wrapper",
+      //"flex-layout.row#placa-wrapper",
       "my-account"
     ],
     "parent": {
@@ -18,7 +18,7 @@
 
   "store.login#default-skf": {
     "blocks": [
-      "flex-layout.row#placa-wrapper",
+      //"flex-layout.row#placa-wrapper",
       "login-content#default-skf"
     ]
   },

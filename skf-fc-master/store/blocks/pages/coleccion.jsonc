@@ -1,9 +1,9 @@
 {
     "store.custom#listado-de-productos": {
         "blocks": [
-            "flex-layout.row#placa-wrapper"
-            //"flex-layout.row#banner",
-            //"search-result-layout.customQuery"
+            //"flex-layout.row#placa-wrapper"
+            "flex-layout.row#banner",
+            "search-result-layout.customQuery"
         ]
     },
     "search-result-layout.customQuery": {

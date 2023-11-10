@@ -5,7 +5,7 @@
     },
 
     "blocks": [
-      "flex-layout.row#placa-wrapper",
+      //"flex-layout.row#placa-wrapper",
       "flex-layout.row#account-breadcrumb",
       "rich-text#account-title",
       "flex-layout.row#account"

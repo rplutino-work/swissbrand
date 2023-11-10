@@ -1,11 +1,9 @@
 {
   "store.custom#cambios-y-devoluciones": {
     "blocks": [
-      "flex-layout.row#placa-wrapper"
-      /*
+      //"flex-layout.row#placa-wrapper"
       "flex-layout.row#breadcrumb",
       "flex-layout.row#cambios-y-devoluciones"
-      */
     ]
   },
 

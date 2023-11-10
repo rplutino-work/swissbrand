@@ -9,6 +9,7 @@
       "list-context.image-list#main-gallery",
       "flex-layout.row#deals",
       "toggle-layout#countdown-home",
+      "filter-search",
       "flex-layout.row#list-home",
       "toggle-layout#banner-shelf-home",
       "flex-layout.row#banner-home",

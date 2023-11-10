@@ -1,8 +1,8 @@
 {
   "store.orderplaced": {
     "children": [
-      "flex-layout.row#placa-wrapper"
-      //"order-placed"
+      //"flex-layout.row#placa-wrapper"
+      "order-placed"
     ]
   },
   "order-placed": {
