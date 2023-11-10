@@ -14,15 +14,13 @@
 
   "header-layout.desktop": {
     "children": [
-      "header-row#desktop-placa"
-      /*
+      //"header-row#desktop-placa"
       "toggle-layout#modal-newsletter-desktop",
       "header-row#top-bar-desktop",
       "header-row#1-desktop",
       "header-row#2-desktop",
       "toggle-layout#countdown-site-desktop",
       "telemarketing"
-      */
     ]
   },
 
@@ -116,13 +114,13 @@
 
   "header-layout.mobile": {
     "children": [
-      //"toggle-layout#modal-newsletter-mobile",
-      //"header-row#top-bar-mobile",
-      //"header-row#1-mobile"
-      //"header-row#2-mobile",
-      //"toggle-layout#countdown-site-mobile",
-      //"close-menu-overlay"
-      "header-row#placa"
+      "toggle-layout#modal-newsletter-mobile",
+      "header-row#top-bar-mobile",
+      "header-row#1-mobile",
+      "header-row#2-mobile",
+      "toggle-layout#countdown-site-mobile",
+      "close-menu-overlay"
+      //"header-row#placa"
     ],
     "props": {
       "blockClass": "mobile-header"

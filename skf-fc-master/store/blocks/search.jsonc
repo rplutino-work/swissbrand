@@ -1,8 +1,8 @@
 {
   "store.search#brand": {
     "blocks": [
-      "flex-layout.row#placa-wrapper"
-      //"search-result-layout"
+      //"flex-layout.row#placa-wrapper"
+      "search-result-layout"
     ],
     "props": {
       "context": {
@@ -16,8 +16,8 @@
 
   "store.search#department": {
     "blocks": [
-      "flex-layout.row#placa-wrapper"
-      //"search-result-layout"
+      //"flex-layout.row#placa-wrapper"
+      "search-result-layout"
     ],
     "props": {
       "context": {
@@ -31,8 +31,8 @@
 
   "store.search#category": {
     "blocks": [
-      "flex-layout.row#placa-wrapper"
-      //"search-result-layout"
+      //"flex-layout.row#placa-wrapper"
+      "search-result-layout"
     ],
     "props": {
       "context": {
@@ -46,8 +46,8 @@
 
   "store.search#subcategory": {
     "blocks": [
-      "flex-layout.row#placa-wrapper"
-      //"search-result-layout"
+      //"flex-layout.row#placa-wrapper"
+      "search-result-layout"
     ],
     "props": {
       "context": {

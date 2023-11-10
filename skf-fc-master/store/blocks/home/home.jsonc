@@ -5,8 +5,7 @@
     },
 
     "blocks": [
-      "flex-layout.row#placa-wrapper"
-      /*
+      //"flex-layout.row#placa-wrapper"
       "list-context.image-list#main-gallery",
       "flex-layout.row#deals",
       "toggle-layout#countdown-home",
@@ -18,7 +17,6 @@
       //"responsive-layout.mobile#banner-home-2",
       //"responsive-layout.desktop#banner-home-2",
       "flex-layout.row#skf-info-home"
-      */
     ]
   },
 
