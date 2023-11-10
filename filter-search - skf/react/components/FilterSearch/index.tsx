@@ -27,10 +27,10 @@ const FilterSearch: React.FC<FilterSearchProps> = ({ mujer }) => {
   const [añoOptions, setAñoOptions] = useState<Option[]>([]);
   const [año, setAño] = useState<string | undefined>();
 
-  const marcaText = "Elige la Marca";
-  const modeloText = "Elige el Modelo";
-  const cilindradaText = "Elige la Clindrada";
-  const añoText = "Elige el Año";
+  const marcaText = "Marca";
+  const modeloText = "Modelo";
+  const cilindradaText = "Clindrada";
+  const añoText = "Año";
 
   const { navigate } = useRuntime();
 
