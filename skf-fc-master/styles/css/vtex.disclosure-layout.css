@@ -15,3 +15,16 @@
 .content--product-info-text-aplications {
     padding: 18px 0;
 }
+
+/* PREGUNTAS FRECUENTES */
+.trigger--faq-title {
+    background: transparent;
+    border-bottom: 1px solid #AAAFB8;
+    cursor: pointer;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.trigger--faq-title--visible {
+    margin-bottom: 0;
+}

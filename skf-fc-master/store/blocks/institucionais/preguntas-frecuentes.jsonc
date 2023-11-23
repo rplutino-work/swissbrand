@@ -1,28 +1,1157 @@
 {
   "store.custom#preguntas-frecuentes": {
     "blocks": [
-      "flex-layout.row#placa-wrapper"
-      /*
-      "flex-layout.row#breadcrumb",
-      "flex-layout.row#preguntas-frecuentes"
-      */
+      //"flex-layout.row#placa-wrapper"
+      "flex-layout.row#faq-banner",
+      "flex-layout.row#faq-title",
+      "flex-layout.row#faq-content"
     ]
   },
-
-  "flex-layout.row#preguntas-frecuentes": {
+  "flex-layout.row#faq-banner": {
+    "title": "Banner preguntas frecuentes",
     "props": {
-      "blockClass": "institutional-wrapper",
+      "title": "Banner",
+      "blockClass": "faq-banner",
+      "fullWidth": true,
       "colSizing": "auto"
     },
-
-    "children": ["rich-text#preguntas-frecuentes-content"]
+    "children": [
+      "responsive-layout.mobile#faq-banner-mobile",
+      "responsive-layout.desktop#faq-banner-desktop"
+    ]
   },
-
-  "rich-text#preguntas-frecuentes-content": {
+  "responsive-layout.mobile#faq-banner-mobile": {
+    "title": "Mobile",
+    "children": [
+      "image#faq-banner-mobile"
+    ]
+  },
+  "image#faq-banner-mobile": {
+    "title": "Imagen",
     "props": {
-      "blockClass": "institutional-content",
+      "blockClass": "faq-banner",
+      "src": "https://skfarg.vtexassets.com/arquivos/department-repuestos--mobile.jpg?v=bra3fsspaopyqubxu1ja9"
+    }
+  },
+  "responsive-layout.desktop#faq-banner-desktop": {
+    "title": "Desktop",
+    "children": [
+      "image#faq-banner-desktop"
+    ]
+  },
+  "image#faq-banner-desktop": {
+    "title": "Imagen",
+    "props": {
+      "blockClass": "faq-banner",
+      "src": "https://skfarg.vtexassets.com/arquivos/department-repuestos.jpg?v=7qslcg48cym90r8l1b0jo6"
+    }
+  },
+  "flex-layout.row#faq-title": {
+    "title": "Titulo preguntas frecuentes",
+    "props": {
+      "blockClass": "faq-wrapper-title",
+      "colSizing": "auto"
+    },
+    "children": [
+      "rich-text#faq-title"
+    ]
+  },
+  "flex-layout.row#faq-content": {
+    "title": "Bloques preguntas frecuentes",
+    "props": {
+      "blockClass": "faq-wrapper-content",
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.row#faq-pre",
+      "flex-layout.row#faq-price",
+      "flex-layout.row#faq-shipping",
+      "flex-layout.row#faq-orders",
+      "flex-layout.row#faq-invoice",
+      "flex-layout.row#faq-account"
+    ]
+  },
+  "rich-text#faq-title": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "faq-title",
       "text": "# PREGUNTAS FRECUENTES",
       "width": "grow"
+    }
+  },
+  "flex-layout.row#faq-pre": {
+    "title": "Proceso de compra",
+    "children": [
+      "rich-text#faq-pre-title",
+      "disclosure-layout-group#faq-pre-group"
+    ],
+    "props": {
+      "blockClass": [
+        "faq-block"
+      ]
+    }
+  },
+  "rich-text#faq-pre-title": {
+    "title": "Título",
+    "props": {
+      "blockClass": "faq-title-block",
+      "text": "## Proceso de compra",
+      "width": "grow"
+    }
+  },
+  "disclosure-layout-group#faq-pre-group": {
+    "title": "Preguntas y respuestas",
+    "children": [
+      "disclosure-layout#faq-pre",
+      "disclosure-layout#faq-pre-products",
+      "disclosure-layout#faq-pre-payments",
+      "disclosure-layout#faq-pre-secure",
+      "disclosure-layout#faq-pre-limit"
+    ]
+  },
+  "disclosure-layout#faq-pre": {
+    "title": "¿Cómo hago para comprar?",
+    "children": [
+      "disclosure-trigger#faq-pre",
+      "disclosure-content#faq-pre"
+    ]
+  },
+  "disclosure-trigger#faq-pre": {
+    "title": "Pregunta",
+    "props": {
+      "blockClass": "faq-title"
+    },
+    "children": [
+      "rich-text#faq-pre-question"
+    ]
+  },
+  "disclosure-content#faq-pre": {
+    "title": "Respuesta",
+    "children": [
+      "rich-text#faq-pre-answer"
+    ]
+  },
+  "rich-text#faq-pre-question": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "faq-title-question",
+      "text": "### ¿Cómo hago para comprar?"
+    }
+  },
+  "rich-text#faq-pre-answer": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "faq-text-response",
+      "text": "a. Navegá por las categorías y hacé click sobre el producto que te interese.\n\nb. Hacé click en el botón indicado para agregarlo a tu carrito de compras (te recomendamos leer atentamente la descripción y aplicación del producto elegido)\n\nc. Tu producto fue agregado. Si querés agregar más productos, podés seguir navegando y repetir el proceso. Cuando termines, accedé al botón de carrito en el margen superior derecho del sitio.\n\nd. Allí aparecerá el resumen de tu compra (producto, cantidad, precio, etc). En caso de tener un código promocional (no es obligatorio), cargalo en el recuadro correspondiente y hacé click en 'validar'. Verificá que el pedido sea correcto y hacé click en el botón indicado para realizar el pedido.\n\ne. Seguí las instrucciones completando los campos enumerados (información de facturación, información del envío, método de envío, medio de pago, revisión del pedido) y hacé click en el botón indicado para continuar.\n\nf. Serás redirigido a una ventana de confirmación, ¡y listo! (Si elegiste pagar con un cupón de PagoFácil, RapiPago, etc., no olvides imprimir el voucher).\n\ng. Te mantendremos al tanto del estado de tu pedido por mail."
+    }
+  },
+  "disclosure-layout#faq-pre-products": {
+    "title": "¿Puedo comprar varios productos a la vez?",
+    "children": [
+      "disclosure-trigger#faq-pre-products",
+      "disclosure-content#faq-pre-products"
+    ]
+  },
+  "disclosure-trigger#faq-pre-products": {
+    "title": "Pregunta",
+    "props": {
+      "blockClass": "faq-title"
+    },
+    "children": [
+      "rich-text#faq-pre-products-question"
+    ]
+  },
+  "disclosure-content#faq-pre-products": {
+    "title": "Respuesta",
+    "children": [
+      "rich-text#faq-pre-products-answer"
+    ]
+  },
+  "rich-text#faq-pre-products-question": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "faq-title-question",
+      "text": "### ¿Puedo comprar varios productos a la vez?"
+    }
+  },
+  "rich-text#faq-pre-products-answer": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "faq-text-response",
+      "text": "Sí, podés comprar tantos artículos como desees y pagar el costo de envío por todos los productos (y no por cada uno)."
+    }
+  },
+  "disclosure-layout#faq-pre-payments": {
+    "title": "¿Cuáles son los medios de pago?",
+    "children": [
+      "disclosure-trigger#faq-pre-payments",
+      "disclosure-content#faq-pre-payments"
+    ]
+  },
+  "disclosure-trigger#faq-pre-payments": {
+    "title": "pregunta",
+    "props": {
+      "blockClass": "faq-title"
+    },
+    "children": [
+      "rich-text#faq-pre-payments-question"
+    ]
+  },
+  "disclosure-content#faq-pre-payments": {
+    "title": "Respuesta",
+    "children": [
+      "rich-text#faq-pre-payments-answer"
+    ]
+  },
+  "rich-text#faq-pre-payments-question": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "faq-title-question",
+      "text": "### ¿Cuáles son los medios de pago?"
+    }
+  },
+  "rich-text#faq-pre-payments-answer": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "faq-text-response",
+      "text": "Mercado Pago, tarjetas de crédito, débito y efectivo."
+    }
+  },
+  "disclosure-layout#faq-pre-secure": {
+    "title": "¿Es seguro comprar en este sitio?",
+    "children": [
+      "disclosure-trigger#faq-pre-secure",
+      "disclosure-content#faq-pre-secure"
+    ]
+  },
+  "disclosure-trigger#faq-pre-secure": {
+    "title": "Pregunta",
+    "props": {
+      "blockClass": "faq-title"
+    },
+    "children": [
+      "rich-text#faq-pre-secure-question"
+    ]
+  },
+  "disclosure-content#faq-pre-secure": {
+    "title": "Respuesta",
+    "children": [
+      "rich-text#faq-pre-secure-answer"
+    ]
+  },
+  "rich-text#faq-pre-secure-question": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "faq-title-question",
+      "text": "### ¿Es seguro comprar en este sitio?"
+    }
+  },
+  "rich-text#faq-pre-secure-answer": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "faq-text-response",
+      "text": "Sí. Trabajamos con la plataformas de pago online líder de América Latina y garantiza la seguridad en todas las operaciones que se generen a través de su sistema."
+    }
+  },
+  "disclosure-layout#faq-pre-limit": {
+    "title": "¿Hay algún límite de compra?",
+    "children": [
+      "disclosure-trigger#faq-pre-limit",
+      "disclosure-content#faq-pre-limit"
+    ]
+  },
+  "disclosure-trigger#faq-pre-limit": {
+    "title": "Pregunta",
+    "props": {
+      "blockClass": "faq-title"
+    },
+    "children": [
+      "rich-text#faq-pre-limit-question"
+    ]
+  },
+  "disclosure-content#faq-pre-limit": {
+    "title": "Respuesta",
+    "children": [
+      "rich-text#faq-pre-limit-answer"
+    ]
+  },
+  "rich-text#faq-pre-limit-question": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "faq-title-question",
+      "text": "### ¿Hay algún límite de compra?"
+    }
+  },
+  "rich-text#faq-pre-limit-answer": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "faq-text-response",
+      "text": "No. El único límite de compra que tenemos es el stock de nuestro e-Shop."
+    }
+  },
+  "flex-layout.row#faq-price": {
+    "title": "Precios",
+    "children": [
+      "rich-text#faq-price-title",
+      "disclosure-layout-group#faq-price-group"
+    ],
+    "props": {
+      "blockClass": [
+        "faq-block"
+      ]
+    }
+  },
+  "rich-text#faq-price-title": {
+    "title": "Título",
+    "props": {
+      "blockClass": "faq-title-block",
+      "text": "## Precios y promociones",
+      "width": "grow"
+    }
+  },
+  "disclosure-layout-group#faq-price-group": {
+    "title": "Preguntas y respuestas",
+    "children": [
+      "disclosure-layout#faq-pre-price",
+      "disclosure-layout#faq-pre-tax",
+      "disclosure-layout#faq-pre-promo",
+      "disclosure-layout#faq-pre-b2b"
+    ]
+  },
+  "disclosure-layout#faq-pre-price": {
+    "title": "Pregunta y respuesta",
+    "children": [
+      "disclosure-trigger#faq-pre-price",
+      "disclosure-content#faq-pre-price"
+    ]
+  },
+  "disclosure-trigger#faq-pre-price": {
+    "title": "Pregunta",
+    "props": {
+      "blockClass": "faq-title"
+    },
+    "children": [
+      "rich-text#faq-pre-price-question"
+    ]
+  },
+  "disclosure-content#faq-pre-price": {
+    "title": "Respuesta",
+    "children": [
+      "rich-text#faq-pre-price-answer"
+    ]
+  },
+  "rich-text#faq-pre-price-question": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "faq-title-question",
+      "text": "### ¿El precio en el e-shop es el mismo que en los locales?"
+    }
+  },
+  "rich-text#faq-pre-price-answer": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "faq-text-response",
+      "text": "No necesariamente. Los locales físicos y el e-shop tienen distintos paquetes de promociones y los precios pueden o no coincidir."
+    }
+  },
+  "disclosure-layout#faq-pre-tax": {
+    "title": "¿Los precios tienen el iva incluido?",
+    "children": [
+      "disclosure-trigger#faq-pre-tax",
+      "disclosure-content#faq-pre-tax"
+    ]
+  },
+  "disclosure-trigger#faq-pre-tax": {
+    "title": "Pregunta",
+    "props": {
+      "blockClass": "faq-title"
+    },
+    "children": [
+      "rich-text#faq-pre-tax-question"
+    ]
+  },
+  "disclosure-content#faq-pre-tax": {
+    "title": "Respuesta",
+    "children": [
+      "rich-text#faq-pre-tax-answer"
+    ]
+  },
+  "rich-text#faq-pre-tax-question": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "faq-title-question",
+      "text": "### ¿Los precios tienen el iva incluido?"
+    }
+  },
+  "rich-text#faq-pre-tax-answer": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "faq-text-response",
+      "text": "Si, todos los precios publicados tienen el IVA incluido."
+    }
+  },
+  "disclosure-layout#faq-pre-promo": {
+    "title": "¿Qué son los códigos precionales?",
+    "children": [
+      "disclosure-trigger#faq-pre-promo",
+      "disclosure-content#faq-pre-promo"
+    ]
+  },
+  "disclosure-trigger#faq-pre-promo": {
+    "title": "pregunta",
+    "props": {
+      "blockClass": "faq-title"
+    },
+    "children": [
+      "rich-text#faq-pre-promo-question"
+    ]
+  },
+  "disclosure-content#faq-pre-promo": {
+    "title": "Respuesta",
+    "children": [
+      "rich-text#faq-pre-promo-answer"
+    ]
+  },
+  "rich-text#faq-pre-promo-question": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "faq-title-question",
+      "text": "### ¿Qué son los códigos precionales?"
+    }
+  },
+  "rich-text#faq-pre-promo-answer": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "faq-text-response",
+      "text": "Son claves alfanuméricas precionales que al validarse generan un descuento. Si tenés un código precional, introducilo antes de proceder a finalizar la compra en el recuadro indicado en el check-out. El descuento se aplicará sobre el importe que corresponda."
+    }
+  },
+  "disclosure-layout#faq-pre-b2b": {
+    "title": "Hacen ventas mayoristas?",
+    "children": [
+      "disclosure-trigger#faq-pre-b2b",
+      "disclosure-content#faq-pre-b2b"
+    ]
+  },
+  "disclosure-trigger#faq-pre-b2b": {
+    "title": "pregunta",
+    "props": {
+      "blockClass": "faq-title"
+    },
+    "children": [
+      "rich-text#faq-pre-b2b-question"
+    ]
+  },
+  "disclosure-content#faq-pre-b2b": {
+    "title": "Respuesta",
+    "children": [
+      "rich-text#faq-pre-b2b-answer"
+    ]
+  },
+  "rich-text#faq-pre-b2b-question": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "faq-title-question",
+      "text": "### Hacen ventas mayoristas?"
+    }
+  },
+  "rich-text#faq-pre-b2b-answer": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "faq-text-response",
+      "text": "Si, en caso que desees realizar una compra mayorista, ingrese al siguiente link: https://www.skf.com/ar/support/find-a-distributor donde encontrarás un listado de todos nuestros distribuidores autorizados."
+    }
+  },
+  "flex-layout.row#faq-shipping": {
+    "title": "Envios",
+    "children": [
+      "rich-text#faq-shipping-title",
+      "disclosure-layout-group#faq-shipping-group"
+    ],
+    "props": {
+      "blockClass": [
+        "faq-block"
+      ]
+    }
+  },
+  "rich-text#faq-shipping-title": {
+    "title": "Título",
+    "props": {
+      "blockClass": "faq-title-block",
+      "text": "## Envíos",
+      "width": "grow"
+    }
+  },
+  "disclosure-layout-group#faq-shipping-group": {
+    "title": "Preguntas y respuestas",
+    "children": [
+      "disclosure-layout#faq-pre-follow",
+      "disclosure-layout#faq-pre-pickup",
+      "disclosure-layout#faq-pre-shipping-method",
+      "disclosure-layout#faq-pre-shipping-time",
+      "disclosure-layout#faq-pre-shipping-coast",
+      "disclosure-layout#faq-pre-shipping-change-method"
+    ]
+  },
+  "disclosure-layout#faq-pre-follow": {
+    "title": "¿Cómo realizo el seguimiento de mi pedido?",
+    "children": [
+      "disclosure-trigger#faq-pre-follow",
+      "disclosure-content#faq-pre-follow"
+    ]
+  },
+  "disclosure-trigger#faq-pre-follow": {
+    "title": "pregunta",
+    "props": {
+      "blockClass": "faq-title"
+    },
+    "children": [
+      "rich-text#faq-pre-follow-question"
+    ]
+  },
+  "disclosure-content#faq-pre-follow": {
+    "title": "Respuesta",
+    "children": [
+      "rich-text#faq-pre-follow-answer"
+    ]
+  },
+  "rich-text#faq-pre-follow-question": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "faq-title-question",
+      "text": "### ¿Cómo realizo el seguimiento de mi pedido?"
+    }
+  },
+  "rich-text#faq-pre-follow-answer": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "faq-text-response",
+      "text": "En cuanto tu pedido se haya despachado, recibirás una confirmación por email, a la casilla que utilizaste para realizar la compra.\n\n Si tu envío es a través del correo Andreani recibirás por email el número de seguimiento, el mismo podes rastrearlo ingresando a https://seguimiento.andreani.com/envio.\n\n Si por algún motivo no recibes el código de seguimiento revisa tu carpeta de correo no deseado o puedes enviar tu consulta a ventasonline.arg@skf.com o consultarnos vía \n\nchat en nuestro sitio web."
+    }
+  },
+  "disclosure-layout#faq-pre-pickup": {
+    "title": "¿Puedo retirar mi compra en un local?",
+    "children": [
+      "disclosure-trigger#faq-pre-pickup",
+      "disclosure-content#faq-pre-pickup"
+    ]
+  },
+  "disclosure-trigger#faq-pre-pickup": {
+    "title": "pregunta",
+    "props": {
+      "blockClass": "faq-title"
+    },
+    "children": [
+      "rich-text#faq-pre-pickup-question"
+    ]
+  },
+  "disclosure-content#faq-pre-pickup": {
+    "title": "Respuesta",
+    "children": [
+      "rich-text#faq-pre-pickup-answer"
+    ]
+  },
+  "rich-text#faq-pre-pickup-question": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "faq-title-question",
+      "text": "### ¿Puedo retirar mi compra en un local?"
+    }
+  },
+  "rich-text#faq-pre-pickup-answer": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "faq-text-response",
+      "text": "No, por el momento no contamos con la opción de retiro en puntos de venta oficiales de SKF."
+    }
+  },
+  "disclosure-layout#faq-pre-shipping-method": {
+    "title": "¿Cuáles son los métodos de envío?",
+    "children": [
+      "disclosure-trigger#faq-pre-shipping-method",
+      "disclosure-content#faq-pre-shipping-method"
+    ]
+  },
+  "disclosure-trigger#faq-pre-shipping-method": {
+    "title": "pregunta",
+    "props": {
+      "blockClass": "faq-title"
+    },
+    "children": [
+      "rich-text#faq-pre-shipping-method-question"
+    ]
+  },
+  "disclosure-content#faq-pre-shipping-method": {
+    "title": "Respuesta",
+    "children": [
+      "rich-text#faq-pre-shipping-method-answer"
+    ]
+  },
+  "rich-text#faq-pre-shipping-method-question": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "faq-title-question",
+      "text": "### ¿Cuáles son los métodos de envío?"
+    }
+  },
+  "rich-text#faq-pre-shipping-method-answer": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "faq-text-response",
+      "text": "Envío gratis a todo el país (salvo Tierra del fuego) con Andreani en compras superiores a $10.000. Retirá tu pedido en la sucursal del correo Andreani sin cargo"
+    }
+  },
+  "disclosure-layout#faq-pre-shipping-time": {
+    "title": "¿Cuánto demoran los envíos?",
+    "children": [
+      "disclosure-trigger#faq-pre-shipping-time",
+      "disclosure-content#faq-pre-shipping-time"
+    ]
+  },
+  "disclosure-trigger#faq-pre-shipping-time": {
+    "title": "pregunta",
+    "props": {
+      "blockClass": "faq-title"
+    },
+    "children": [
+      "rich-text#faq-pre-shipping-time-question"
+    ]
+  },
+  "disclosure-content#faq-pre-shipping-time": {
+    "title": "Respuesta",
+    "children": [
+      "rich-text#faq-pre-shipping-time-answer"
+    ]
+  },
+  "rich-text#faq-pre-shipping-time-question": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "faq-title-question",
+      "text": "### ¿Cuánto demoran los envíos?"
+    }
+  },
+  "rich-text#faq-pre-shipping-time-answer": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "faq-text-response",
+      "text": "Los envíos de las compras realizadas pueden demorar entre 3 y hasta 5 días hábiles desde la fecha de compra."
+    }
+  },
+  "disclosure-layout#faq-pre-shipping-coast": {
+    "title": "¿Cuál es el costo del envío?",
+    "children": [
+      "disclosure-trigger#faq-pre-shipping-coast",
+      "disclosure-content#faq-pre-shipping-coast"
+    ]
+  },
+  "disclosure-trigger#faq-pre-shipping-coast": {
+    "title": "pregunta",
+    "props": {
+      "blockClass": "faq-title"
+    },
+    "children": [
+      "rich-text#faq-pre-shipping-coast-question"
+    ]
+  },
+  "disclosure-content#faq-pre-shipping-coast": {
+    "title": "Respuesta",
+    "children": [
+      "rich-text#faq-pre-shipping-coast-answer"
+    ]
+  },
+  "rich-text#faq-pre-shipping-coast-question": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "faq-title-question",
+      "text": "### ¿Cuál es el costo del envío?"
+    }
+  },
+  "rich-text#faq-pre-shipping-coast-answer": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "faq-text-response",
+      "text": "El costo de envío varía en función del código postal y el peso del producto."
+    }
+  },
+  "disclosure-layout#faq-pre-shipping-change-method": {
+    "title": "¿Se puede modificar la forma de envío?",
+    "children": [
+      "disclosure-trigger#faq-pre-shipping-change-method",
+      "disclosure-content#faq-pre-shipping-change-method"
+    ]
+  },
+  "disclosure-trigger#faq-pre-shipping-change-method": {
+    "title": "pregunta",
+    "props": {
+      "blockClass": "faq-title"
+    },
+    "children": [
+      "rich-text#faq-pre-shipping-change-method-question"
+    ]
+  },
+  "disclosure-content#faq-pre-shipping-change-method": {
+    "title": "Respuesta",
+    "children": [
+      "rich-text#faq-pre-shipping-change-method-answer"
+    ]
+  },
+  "rich-text#faq-pre-shipping-change-method-question": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "faq-title-question",
+      "text": "### ¿Se puede modificar la forma de envío?"
+    }
+  },
+  "rich-text#faq-pre-shipping-change-method-answer": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "faq-text-response",
+      "text": "No, no se puede modificar la forma de envío una vez realizada la compra. En estos casos te recomendamos cancelar la compra realizada y volver a realizarla con una nueva forma de envío."
+    }
+  },
+  "flex-layout.row#faq-orders": {
+    "title": "Ordenes",
+    "children": [
+      "rich-text#faq-orders-title",
+      "disclosure-layout-group#faq-orders-group"
+    ],
+    "props": {
+      "blockClass": [
+        "faq-block"
+      ]
+    }
+  },
+  "rich-text#faq-orders-title": {
+    "title": "Título",
+    "props": {
+      "blockClass": "faq-title-block",
+      "text": "## Pedidos",
+      "width": "grow"
+    }
+  },
+  "disclosure-layout-group#faq-orders-group": {
+    "title": "Preguntas y respuestas",
+    "children": [
+        "disclosure-layout#faq-pre-orders-change-confirmation",
+        "disclosure-layout#faq-pre-orders-products-confirmation",
+        "disclosure-layout#faq-pre-orders-cancel",
+        "disclosure-layout#faq-pre-orders-cancel-2",
+        "disclosure-layout#faq-pre-orders-change-payments-error"
+    ]
+  },
+  "disclosure-layout#faq-pre-orders-change-confirmation": {
+    "title": "¿Cuándo se confirma mi compra?",
+    "children": [
+      "disclosure-trigger#faq-pre-orders-change-confirmation",
+      "disclosure-content#faq-pre-orders-change-confirmation"
+    ]
+  },
+  "disclosure-trigger#faq-pre-orders-change-confirmation": {
+    "title": "pregunta",
+    "props": {
+      "blockClass": "faq-title"
+    },
+    "children": [
+      "rich-text#faq-pre-orders-change-confirmation-question"
+    ]
+  },
+  "disclosure-content#faq-pre-orders-change-confirmation": {
+    "title": "Respuesta",
+    "children": [
+      "rich-text#faq-pre-orders-change-confirmation-answer"
+    ]
+  },
+  "rich-text#faq-pre-orders-change-confirmation-question": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "faq-title-question",
+      "text": "### ¿Cuándo se confirma mi compra?"
+    }
+  },
+  "rich-text#faq-pre-orders-change-confirmation-answer": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "faq-text-response",
+      "text": "Si elegiste pagar con tarjeta de crédito, vas a recibir el mail de confirmación dentro de las 24 horas. Si elegiste abonar imprimiendo un cupón (RapiPago, PagoFácil, etc.), recibirás el mail de confirmación cuando se acredite el pago (puede demorar hasta 72 horas)."
+    }
+  },
+  "disclosure-layout#faq-pre-orders-products-confirmation": {
+    "title": "No recibi el producto, ¿Dónde debo contactarme?",
+    "children": [
+      "disclosure-trigger#faq-pre-orders-products-confirmation",
+      "disclosure-content#faq-pre-orders-products-confirmation"
+    ]
+  },
+  "disclosure-trigger#faq-pre-orders-products-confirmation": {
+    "title": "pregunta",
+    "props": {
+      "blockClass": "faq-title"
+    },
+    "children": [
+      "rich-text#faq-pre-orders-products-confirmation-question"
+    ]
+  },
+  "disclosure-content#faq-pre-orders-products-confirmation": {
+    "title": "Respuesta",
+    "children": [
+      "rich-text#faq-pre-orders-products-confirmation-answer"
+    ]
+  },
+  "rich-text#faq-pre-orders-products-confirmation-question": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "faq-title-question",
+      "text": "### No recibi el producto, ¿Dónde debo contactarme?"
+    }
+  },
+  "rich-text#faq-pre-orders-products-confirmation-answer": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "faq-text-response",
+      "text": "Si por algún motivo no recibes el pedido a tiempo puedes enviar tu consulta a ventasonline.arg@skf.com o consultarnos vía chat en nuestro sitio web"
+    }
+  },
+  "disclosure-layout#faq-pre-orders-cancel": {
+    "title": "¿Se puede cancelar la compra?",
+    "children": [
+      "disclosure-trigger#faq-pre-orders-cancel",
+      "disclosure-content#faq-pre-orders-cancel"
+    ]
+  },
+  "disclosure-trigger#faq-pre-orders-cancel": {
+    "title": "pregunta",
+    "props": {
+      "blockClass": "faq-title"
+    },
+    "children": [
+      "rich-text#faq-pre-orders-cancel-question"
+    ]
+  },
+  "disclosure-content#faq-pre-orders-cancel": {
+    "title": "Respuesta",
+    "children": [
+      "rich-text#faq-pre-orders-cancel-answer"
+    ]
+  },
+  "rich-text#faq-pre-orders-cancel-question": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "faq-title-question",
+      "text": "### ¿Se puede cancelar la compra?"
+    }
+  },
+  "rich-text#faq-pre-orders-cancel-answer": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "faq-text-response",
+      "text": "Lamentablemente no, una vez realizado el pago no se puede cancelar la compra."
+    }
+  },
+  "disclosure-layout#faq-pre-orders-cancel-2": {
+    "title": "¿Cómo cancelo mi compra?",
+    "children": [
+      "disclosure-trigger#faq-pre-orders-cancel-2",
+      "disclosure-content#faq-pre-orders-cancel-2"
+    ]
+  },
+  "disclosure-trigger#faq-pre-orders-cancel-2": {
+    "title": "pregunta",
+    "props": {
+      "blockClass": "faq-title"
+    },
+    "children": [
+      "rich-text#faq-pre-orders-cancel-2-question"
+    ]
+  },
+  "disclosure-content#faq-pre-orders-cancel-2": {
+    "title": "Respuesta",
+    "children": [
+      "rich-text#faq-pre-orders-cancel-2-answer"
+    ]
+  },
+  "rich-text#faq-pre-orders-cancel-2-question": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "faq-title-question",
+      "text": "### ¿Cómo cancelo mi compra?"
+    }
+  },
+  "rich-text#faq-pre-orders-cancel-2-answer": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "faq-text-response",
+      "text": "Para cancelar tu compra comunicate con nosotros llamando al: +54 9 11 6842-3223 (Argentina) No olvides tener a mano tu número de pedido."
+    }
+  },
+  "disclosure-layout#faq-pre-orders-change-payments-error": {
+    "title": "¿Se puede modificar la forma de pago una vez completado el pedido?",
+    "children": [
+      "disclosure-trigger#faq-pre-orders-change-payments-error",
+      "disclosure-content#faq-pre-orders-change-payments-error"
+    ]
+  },
+  "disclosure-trigger#faq-pre-orders-change-payments-error": {
+    "title": "pregunta",
+    "props": {
+      "blockClass": "faq-title"
+    },
+    "children": [
+      "rich-text#faq-pre-orders-change-payments-error-question"
+    ]
+  },
+  "disclosure-content#faq-pre-orders-change-payments-error": {
+    "title": "Respuesta",
+    "children": [
+      "rich-text#faq-pre-orders-change-payments-error-answer"
+    ]
+  },
+  "rich-text#faq-pre-orders-change-payments-error-question": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "faq-title-question",
+      "text": "### ¿Se puede modificar la forma de pago una vez completado el pedido?"
+    }
+  },
+  "rich-text#faq-pre-orders-change-payments-error-answer": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "faq-text-response",
+      "text": "No, no se puede modificar la forma de pago, una vez completado el pedido."
+    }
+  },
+  "flex-layout.row#faq-invoice": {
+    "title": "Facturación",
+    "children": [
+      "rich-text#faq-invoice-title",
+      "disclosure-layout-group#faq-invoice-group"
+    ],
+    "props": {
+      "blockClass": [
+        "faq-block"
+      ]
+    }
+  },
+  "rich-text#faq-invoice-title": {
+    "title": "Título",
+    "props": {
+      "blockClass": "faq-title-block",
+      "text": "## Facturación",
+      "width": "grow"
+    }
+  },
+  "disclosure-layout-group#faq-invoice-group": {
+    "title": "Preguntas y respuestas",
+    "children": [
+        "disclosure-layout#faq-pre-invoice-invoice-a",
+        "disclosure-layout#faq-pre-invoice-invoice"
+    ]
+  },
+  "disclosure-layout#faq-pre-invoice-invoice-a": {
+    "title": "¿Entregan factura “A”?",
+    "children": [
+      "disclosure-trigger#faq-pre-invoice-invoice-a",
+      "disclosure-content#faq-pre-invoice-invoice-a"
+    ]
+  },
+  "disclosure-trigger#faq-pre-invoice-invoice-a": {
+    "title": "pregunta",
+    "props": {
+      "blockClass": "faq-title"
+    },
+    "children": [
+      "rich-text#faq-pre-invoice-invoice-a-question"
+    ]
+  },
+  "disclosure-content#faq-pre-invoice-invoice-a": {
+    "title": "Respuesta",
+    "children": [
+      "rich-text#faq-pre-invoice-invoice-a-answer"
+    ]
+  },
+  "rich-text#faq-pre-invoice-invoice-a-question": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "faq-title-question",
+      "text": "### ¿Entregan factura “A”?"
+    }
+  },
+  "rich-text#faq-pre-invoice-invoice-a-answer": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "faq-text-response",
+      "text": "Por el momento únicamente emitimos Factura B. Si por algún motivo no recibes esta factura envía tu consulta a ventasonline.arg@skf.com o consultarnos vía chat en nuestro sitio web."
+    }
+  },
+  "disclosure-layout#faq-pre-invoice-invoice": {
+    "title": "¿Dónde obtengo mi factura?",
+    "children": [
+      "disclosure-trigger#faq-pre-invoice-invoice",
+      "disclosure-content#faq-pre-invoice-invoice"
+    ]
+  },
+  "disclosure-trigger#faq-pre-invoice-invoice": {
+    "title": "pregunta",
+    "props": {
+      "blockClass": "faq-title"
+    },
+    "children": [
+      "rich-text#faq-pre-invoice-invoice-question"
+    ]
+  },
+  "disclosure-content#faq-pre-invoice-invoice": {
+    "title": "Respuesta",
+    "children": [
+      "rich-text#faq-pre-invoice-invoice-answer"
+    ]
+  },
+  "rich-text#faq-pre-invoice-invoice-question": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "faq-title-question",
+      "text": "### ¿Dónde obtengo mi factura?"
+    }
+  },
+  "rich-text#faq-pre-invoice-invoice-answer": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "faq-text-response",
+      "text": "Recibirás la factura en tu pedido. Si por algún motivo no recibes esta factura envía tu consulta a ventasonline.arg@skf.com o consultarnos vía chat en nuestro sitio web."
+    }
+  },
+  "flex-layout.row#faq-account": {
+    "title": "Mi cuenta",
+    "children": [
+      "rich-text#faq-account-title",
+      "disclosure-layout-group#faq-account-group"
+    ],
+    "props": {
+      "blockClass": [
+        "faq-block"
+      ]
+    }
+  },
+  "rich-text#faq-account-title": {
+    "title": "Título",
+    "props": {
+      "blockClass": "faq-title-block",
+      "text": "## Mi cuenta",
+      "width": "grow"
+    }
+  },
+  "disclosure-layout-group#faq-account-group": {
+    "title": "Preguntas y respuestas",
+    "children": [
+          "disclosure-layout#faq-account-create",
+          "disclosure-layout#faq-account-email",
+          "disclosure-layout#faq-account-error"
+    ]
+  },
+  "disclosure-layout#faq-account-create": {
+    "title": "¿Cómo me registro?",
+    "children": [
+      "disclosure-trigger#faq-account-create",
+      "disclosure-content#faq-account-create"
+    ]
+  },
+  "disclosure-trigger#faq-account-create": {
+    "title": "pregunta",
+    "props": {
+      "blockClass": "faq-title"
+    },
+    "children": [
+      "rich-text#faq-account-create-question"
+    ]
+  },
+  "disclosure-content#faq-account-create": {
+    "title": "Respuesta",
+    "children": [
+      "rich-text#faq-account-create-answer"
+    ]
+  },
+  "rich-text#faq-account-create-question": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "faq-title-question",
+      "text": "### ¿Cómo me registro?"
+    }
+  },
+  "rich-text#faq-account-create-answer": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "faq-text-response",
+      "text": "Muy sencillo: ingresá en la sección 'Mi cuenta' y escoge una opción para ingresar, elegí la contraseña y completá tus datos. ¡Listo!"
+    }
+  },
+  "disclosure-layout#faq-account-email": {
+    "title": "Me registré y no recibí el mail de confirmación, ¿qué hago?",
+    "children": [
+      "disclosure-trigger#faq-account-email",
+      "disclosure-content#faq-account-email"
+    ]
+  },
+  "disclosure-trigger#faq-account-email": {
+    "title": "pregunta",
+    "props": {
+      "blockClass": "faq-title"
+    },
+    "children": [
+      "rich-text#faq-account-email-question"
+    ]
+  },
+  "disclosure-content#faq-account-email": {
+    "title": "Respuesta",
+    "children": [
+      "rich-text#faq-account-email-answer"
+    ]
+  },
+  "rich-text#faq-account-email-question": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "faq-title-question",
+      "text": "### Me registré y no recibí el mail de confirmación, ¿qué hago?"
+    }
+  },
+  "rich-text#faq-account-email-answer": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "faq-text-response",
+      "text": "Asegurate de haber utilizado el navegador Google Chrome. También verificá que el correo no se encuentre en la carpeta “SPAM” o “Correo No Deseado”. Si no es el caso, comunicate con nosotros llamando al: +54 9 11 6842-3223 (Argentina)"
+    }
+  },
+  "disclosure-layout#faq-account-error": {
+    "title": "Me registré pero no puedo ingresar",
+    "children": [
+      "disclosure-trigger#faq-account-error",
+      "disclosure-content#faq-account-error"
+    ]
+  },
+  "disclosure-trigger#faq-account-error": {
+    "title": "pregunta",
+    "props": {
+      "blockClass": "faq-title"
+    },
+    "children": [
+      "rich-text#faq-account-error-question"
+    ]
+  },
+  "disclosure-content#faq-account-error": {
+    "title": "Respuesta",
+    "children": [
+      "rich-text#faq-account-error-answer"
+    ]
+  },
+  "rich-text#faq-account-error-question": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "faq-title-question",
+      "text": "### Me registré pero no puedo ingresar"
+    }
+  },
+  "rich-text#faq-account-error-answer": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "faq-text-response",
+      "text": "Cuando te registraste te enviamos un error de confirmación a la dirección que nos indicaste. Si seguís con algún problema por favor comunícate con nosotros llamando al: +54 9 11 6842-3223 (Argentina) o escribinos a ventasonline.arg@skf.com."
     }
   }
 }

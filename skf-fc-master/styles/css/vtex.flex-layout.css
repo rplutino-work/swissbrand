@@ -2220,3 +2220,45 @@ padding: 0 15px;
   font-weight: 600;
   font-size: 13px;
 }
+
+/* PREGUNTAS FRECUENTES */
+.flexRow--faq-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flexRowContent--faq-block .stretchChildrenWidth {
+  width: 100% !important;
+  flex-direction: column;
+}
+
+.flexRowContent--faq-wrapper {
+  flex-direction: column;
+}
+
+.flexRowContent--faq-block {
+  flex-direction: column;
+}
+
+.flexRowContent--faq-wrapper-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  flex-direction: column;
+}
+
+.flexRow--faq-wrapper-content {
+  background: #F8F8F8;
+}
+
+.flexRowContent--faq-wrapper-content .stretchChildrenWidth {
+  width: 100% !important;
+}
+
+.flexRow--faq-wrapper-content :global(.vtex-store-components-3-x-container) {
+  padding: 0;
+}
+
+.flexRow--faq-wrapper-content {
+  padding: 0 15px;
+}
