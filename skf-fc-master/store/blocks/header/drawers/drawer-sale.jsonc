@@ -1,0 +1,253 @@
+{
+    "drawer#sale": {
+      "title": "Sale",
+      "props": {
+        "blockClass": ["mobile-menu", "secondary-tab"]
+      },
+  
+      "blocks": ["drawer-trigger#sale"],
+      "children": ["menu#sale"]
+    },
+  
+    "drawer-trigger#sale": {
+      "title": "Titulo",
+      "children": ["rich-text#sale"]
+    },
+  
+    "rich-text#sale": {
+      "title": "Texto",
+      "props": {
+        "blockClass": ["mobile-menu-item-mobile-sale"],
+        "text": "Sale"
+      }
+    },
+  
+    "menu#sale": {
+      "title": "Filas",
+      "props": {
+        "blockClass": "mobile-menu",
+        "orientation": "vertical"
+      },
+  
+      "children": [
+        "flex-layout.row#menu-mobile-sale-title",
+        "flex-layout.row#menu-mobile-sale-featured",
+        "flex-layout.row#menu-mobile-sale-discounts"
+      ]
+    },
+
+    "flex-layout.row#menu-mobile-sale-title": {
+      "title": "Titulo",
+      "children": [
+        "rich-text#menu-mobile-sale-title"
+      ],
+      "props": {
+        "blockClass": ["menu-mobile-sale-title"]
+      }
+    },
+
+    "flex-layout.row#menu-mobile-sale-discounts": {
+      "title": "Descuentos",
+        "children": [
+          "disposition-layout#menu-mobile-sale-discounts"
+        ],
+        "props": {
+          "blockClass": ["menu-mobile-sale-discounts-wrapper"]
+        }
+    },
+
+    "flex-layout.row#menu-mobile-sale-featured": {
+        "title": "Destacado",
+          "children": [
+            "image#menu-mobile-sale-discounts-featured"
+          ],
+          "props": {
+            "blockClass": ["menu-mobile-sale-discounts-featured"]
+          }
+    },
+
+    "image#menu-mobile-sale-discounts-featured": {
+        "title": "Imagen",
+        "props": {
+        "blockClass": ["menu-sale-discounts","menu-sale-discounts-featured"],
+        "src": "https://placehold.jp/426x213.png",
+        "alt": "",
+            "link": {
+                "title": "",
+                "url": "/"
+            }
+        }
+    },
+
+    "rich-text#menu-mobile-sale-title": {
+      "title": "Texto",
+      "props": {
+        "blockClass": ["menu-mobile-sale-title"],
+        "text": "Lorem Ipsum Tittle"
+      }
+    },
+
+    "disposition-layout#menu-mobile-sale-discounts": {
+      "title": "Orden y visualizacion",
+      "children": [
+            "flex-layout.row#menu-mobile-sale-discounts-1",
+            "flex-layout.row#menu-mobile-sale-discounts-2",
+            "flex-layout.row#menu-mobile-sale-discounts-3",
+            "flex-layout.row#menu-mobile-sale-discounts-4"
+      ],
+      "props": {
+        "disposition": [
+          {
+            "order": 1,
+            "__editorItemTitle": "Descuento 01"
+          },
+          {
+            "order": 2,
+            "__editorItemTitle": "Descuento 02"
+          },
+          {
+            "order": 3,
+            "__editorItemTitle": "Descuento 03"
+          },
+          {
+            "order": 4,
+            "__editorItemTitle": "Descuento 04"
+          }
+        ]
+      }
+    },
+
+    "flex-layout.row#menu-mobile-sale-discounts-1": {
+      "title": "Descuento 01",
+      "children": [
+        "image#menu-mobile-sale-discounts-1",
+        "link#menu-mobile-sale-discounts-1"
+      ],
+      "props": {
+        "blockClass": ["menu-mobile-sale-discounts","menu-mobile-sale-discounts-1"]
+      }
+    },
+
+    "image#menu-mobile-sale-discounts-1": {
+      "title": "Imagen & Link",
+      "props": {
+      "blockClass": "menu-sale-discounts",
+      "src": "https://placehold.jp/132x132.png",
+      "alt": "",
+          "link": {
+              "title": "",
+              "url": "/"
+          }
+      }
+    },
+
+    "link#menu-mobile-sale-discounts-1": {
+      "title": "Texto & Link",
+      "props": {
+        "blockClass": ["menu-mobile-sale-discounts","menu-mobile-sale-discounts-1"],
+        "label": "Lorem Ipsum is simply dummy text.",
+        "href": "/"
+      }
+    },
+
+    "flex-layout.row#menu-mobile-sale-discounts-2": {
+        "title": "Descuento 02",
+      "children": [
+        "image#menu-mobile-sale-discounts-2",
+        "link#menu-mobile-sale-discounts-2"
+      ],
+      "props": {
+        "blockClass": ["menu-mobile-sale-discounts","menu-mobile-sale-discounts-2"]
+      }
+    },
+  
+    "image#menu-mobile-sale-discounts-2": {
+      "title": "Imagen & Link",
+      "props": {
+      "blockClass": "menu-sale-discounts",
+      "src": "https://placehold.jp/132x132.png",
+      "alt": "",
+          "link": {
+              "title": "",
+              "url": "/"
+          }
+      }
+    },
+  
+    "link#menu-mobile-sale-discounts-2": {
+      "title": "Texto & Link",
+      "props": {
+        "blockClass": ["menu-mobile-sale-discounts","menu-mobile-sale-discounts-1"],
+        "label": "Lorem Ipsum is simply dummy text.",
+        "href": "/"
+      }
+    },
+
+    "flex-layout.row#menu-mobile-sale-discounts-3": {
+    "title": "Descuento 03",
+      "children": [
+        "image#menu-mobile-sale-discounts-3",
+        "link#menu-mobile-sale-discounts-3"
+      ],
+      "props": {
+        "blockClass": ["menu-mobile-sale-discounts","menu-mobile-sale-discounts-3"]
+      }
+    },
+  
+    "image#menu-mobile-sale-discounts-3": {
+      "title": "Imagen & Link",
+      "props": {
+      "blockClass": "menu-sale-discounts",
+      "src": "https://placehold.jp/132x132.png",
+      "alt": "",
+          "link": {
+              "title": "",
+              "url": "/"
+          }
+      }
+    },
+  
+    "link#menu-mobile-sale-discounts-3": {
+      "title": "Texto & Link",
+      "props": {
+        "blockClass": ["menu-mobile-sale-discounts","menu-mobile-sale-discounts-1"],
+        "label": "Lorem Ipsum is simply dummy text.",
+        "href": "/"
+      }
+    },
+
+    "flex-layout.row#menu-mobile-sale-discounts-4": {
+        "title": "Descuento 04",
+        "children": [
+            "image#menu-mobile-sale-discounts-4",
+            "link#menu-mobile-sale-discounts-4"
+        ],
+        "props": {
+            "blockClass": ["menu-mobile-sale-discounts","menu-mobile-sale-discounts-4"]
+        }
+    },
+  
+    "image#menu-mobile-sale-discounts-4": {
+      "title": "Imagen & Link",
+      "props": {
+      "blockClass": "menu-sale-discounts",
+      "src": "https://placehold.jp/132x132.png",
+      "alt": "",
+          "link": {
+              "title": "",
+              "url": "/"
+          }
+      }
+    },
+  
+    "link#menu-mobile-sale-discounts-4": {
+      "title": "Texto & Link",
+      "props": {
+        "blockClass": ["menu-mobile-sale-discounts","menu-mobile-sale-discounts-1"],
+        "label": "Lorem Ipsum is simply dummy text.",
+        "href": "/"
+      }
+    }
+
+  }
+  

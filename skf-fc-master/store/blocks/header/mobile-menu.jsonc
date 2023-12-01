@@ -21,7 +21,8 @@
       "drawer#marcas",
       "link#herramientas",
       //"drawer#herramientas",
-      "drawer#merchandasing"
+      "drawer#merchandasing",
+      "drawer#sale"
     ],
     "props": {
       "orientation": "vertical",

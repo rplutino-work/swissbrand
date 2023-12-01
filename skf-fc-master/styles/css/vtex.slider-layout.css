@@ -402,3 +402,94 @@
 .sliderLayoutContainer--list-home-item {
   justify-content: center;
 }
+
+/* MENU SALE DESKTOP */
+.infoCardContainer--menu-desktop-sale-discounts {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+}
+
+.infoCardImageContainer--main-gallery {
+  width: 100%;
+}
+
+.infoCardTextContainer--main-gallery {
+  width: 100%;
+  padding: 0;
+}
+
+.infoCardCallActionText--menu-desktop-sale-discounts {
+  color: #434343;
+  font-size: 11px;
+  transition: 0.2s all;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 0;
+  max-width: 132px;
+  text-align: center;
+}
+
+.infoCardCallActionContainer--menu-desktop-sale-discounts {
+  text-decoration: none;
+  margin: 0;
+  line-height: 16px;
+  text-decoration: none;
+}
+
+.sliderLayoutContainer--menu-desktop-sale-discounts {
+  background: #fff;
+  max-width: 1200px;
+  margin: 0px auto 60px auto !important;
+  padding: 0 15px!important;
+}
+
+.paginationDotsContainer--menu-desktop-sale-discounts {
+  bottom: -35px;
+}
+
+.sliderArrows--menu-desktop-sale-discounts {
+  padding: 0;
+  background: none !important;
+}
+
+.caretIcon--menu-desktop-sale-discounts {
+    opacity: 1;
+    color: #555555;
+    width: 15px;
+}
+
+@media (min-width: 1025px){
+  .sliderLayoutContainer--menu-desktop-sale-discounts {
+    background: #fff;
+    max-width: 1200px;
+    margin: 0px auto 0px !important;
+    padding: 0!important;
+    justify-content: center;
+  }
+  .infoCardTextContainer--menu-desktop-sale-discounts {
+    width: 100%;
+    line-height: 2.2;
+    padding: 0;
+  }
+
+  .infoCardImageContainer--menu-desktop-sale-discounts {
+      width: 100%;
+  }
+
+  .sliderTrack--menu-desktop-sale-discounts {
+    column-gap: 12px;
+  }
+  .sliderRightArrow--menu-desktop-sale-discounts {
+    right: -10px;
+}
+
+.sliderLeftArrow--menu-desktop-sale-discounts {
+    left: -15px;
+}
+.sliderTrackContainer--menu-desktop-sale-discounts {
+  max-width: 850px;
+}
+}

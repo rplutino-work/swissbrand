@@ -494,3 +494,22 @@
     margin: 20px 0 0 0;
   }
 }
+
+/* MENU SALE MOBILE */
+.link--menu-mobile-sale-view-all-link {
+  color: #191919;
+  font-weight: 600;
+  text-decoration: none;
+  margin: 25px 0;
+}
+.link--menu-mobile-sale-discounts {
+  margin: 0;
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #434343;
+  margin-top: 5px;
+  text-decoration: none;
+  text-align: center;
+  max-width: 132px;
+}

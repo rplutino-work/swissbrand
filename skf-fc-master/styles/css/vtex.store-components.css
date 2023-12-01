@@ -1249,3 +1249,12 @@
     margin-bottom: 15px;
   }
 }
+
+/* MENU SALE */
+.imageElementLink--menu-sale-discounts {
+  display: flex;
+  align-items: center;
+}
+.imageElement--menu-sale-discounts-featured{
+  width: 100%;
+}

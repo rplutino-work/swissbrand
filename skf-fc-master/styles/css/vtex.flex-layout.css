@@ -2262,3 +2262,87 @@ padding: 0 15px;
 .flexRow--faq-wrapper-content {
   padding: 0 15px;
 }
+
+/* MENU SALE */
+.flexRowContent--menu-mobile-sale-discounts-wrapper .stretchChildrenWidth {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 15px;
+  grid-auto-rows: auto;
+  margin-bottom: 0px;
+}
+
+.flexRowContent--menu-mobile-sale-discounts-wrapper .flexRowContent--menu-mobile-sale-discounts .stretchChildrenWidth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexRowContent--menu-mobile-sale-discounts-1 {
+  margin-bottom: 15px;
+}
+
+.flexRow--menu-mobile-sale-view-all {
+  border-top: 1px solid #191919;
+  padding: 15px 15px 0px 15px;
+}
+
+.flexRow--menu-mobile-sale-title :global(.vtex-store-components-3-x-container) {
+  padding: 0;
+}
+
+.flexRow--menu-mobile-sale-discounts-wrapper :global(.vtex-store-components-3-x-container) {
+  padding: 0;
+}
+
+.flexRow.vtex-flex-layout-0-x-flexRow--menu-mobile-sale-title {
+  padding: 0 15px;
+}
+
+.flexRow--menu-mobile-sale-discounts-wrapper {
+  padding: 0px;
+}
+
+.flexRow--menu-mobile-sale-view-all :global(.vtex-store-components-3-x-container) {
+  padding: 0;
+}
+
+.flexRowContent--menu-mobile-sale-view-all-discounts {
+  display: flex;
+  column-gap: 15px;
+}
+
+.flexRow--menu-mobile-sale-discounts-featured :global(.vtex-store-components-3-x-container) {
+  padding: 0;
+}
+
+.flexRow--menu-mobile-sale-discounts-featured {
+  margin-bottom: 30px;
+}
+
+/* SALE DESKTOP */
+.flexRowContent--menu-desktop-sale-discounts{
+  display: flex;
+  flex-direction: column;
+}
+
+.flexRowContent--menu-sale-wrapper {
+  column-gap: 30px;
+  padding: 0px 0 0px 0;
+  margin-bottom: 0px;
+}
+
+.flexRowContent--menu-sale-wrapper .stretchChildrenWidth {
+  padding: 0;
+}
+
+.flexRowContent--menu-desktop-sale-view-all-discounts {
+  column-gap: 15px;
+}
+
+@media(min-width: 1024px){
+  .flexRowContent--menu-mobile-sale-discounts-wrapper .flexRowContent--menu-mobile-sale-discounts .stretchChildrenWidth {
+      justify-content: flex-start;
+    }
+}

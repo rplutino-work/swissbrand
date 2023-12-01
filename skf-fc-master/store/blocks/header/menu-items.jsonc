@@ -8,7 +8,8 @@
       "menu-item#repuestos",
       "menu-item#marcas",
       "menu-item#herramientas",
-      "menu-item#merchandasing"
+      "menu-item#merchandasing",
+      "disposition-layout#menu-sale"
     ]
   },
 
@@ -94,6 +95,40 @@
       "iconPosition": "right"
     },
     "blocks": ["vtex.menu@2.x:submenu#merchandasing"]
+  },
+
+  "disposition-layout#menu-sale": {
+    "title": "Visualización",
+    "children": [
+          "menu-item#sale"
+      ],
+      "props": {
+        "disposition": [
+          {
+            "order": 1
+          }
+        ]
+      }
+  },
+
+  "menu-item#sale": {
+    "props": {
+      "blockClass": "department",
+      "id": "estandar",
+      "type": "custom",
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "Sale",
+        "type": "internal",
+        "href": "#"
+      },
+      "iconProps": {
+        "id": "nav-caret--down",
+        "size": 10
+      },
+      "iconPosition": "right"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#sale"]
   },
 
   /*Mobile*/

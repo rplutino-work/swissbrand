@@ -1,0 +1,170 @@
+{
+    "vtex.menu@2.x:submenu#sale": {
+        "title": "Configuraciones",
+        "children": ["flex-layout.row#sale"],
+        "props": {
+        "blockClass": ["submenu","menu-sale"]
+        }
+    },
+
+    "flex-layout.row#sale": {
+        "title": "Columnas",
+        "props": {
+        "blockClass": "menu-sale-wrapper",
+        "colSizing": "auto",
+        "colGap": 4
+        },
+
+        "children": [
+            "flex-layout.col#menu-desktop-sale-discounts-1",
+            "flex-layout.col#menu-desktop-sale-discounts-2"
+        ]
+    },
+
+    "flex-layout.col#menu-desktop-sale-discounts-1": {
+        "title": "Columna 1",
+      "children": [
+        "flex-layout.row#menu-desktop-sale-title",
+        "flex-layout.row#menu-desktop-sale-discounts"
+      ],
+      "props": {
+        "blockClass": ["menu-desktop-sale-discounts","menu-desktop-sale-discounts-1"],
+        "verticalAlign":"middle",
+        "width": "60%"
+      }
+    },
+
+    "flex-layout.col#menu-desktop-sale-discounts-2": {
+        "title": "Columna 2",
+        "children": [
+            "flex-layout.row#menu-desktop-sale-view-all-discounts"
+        ],
+        "props": {
+          "blockClass": ["menu-desktop-sale-discounts","menu-desktop-sale-discounts-2"],
+          "verticalAlign":"middle"
+        }
+    },
+
+    "flex-layout.row#menu-desktop-sale-title": {
+        "title": "Titulo",
+      "children": [
+        "rich-text#menu-desktop-sale-title"
+      ],
+      "props": {
+        "blockClass": ["menu-desktop-sale-title"]
+      }
+    },
+
+    "flex-layout.row#menu-desktop-sale-discounts": {
+        "title": "Descuentos",
+        "children": [
+            "list-context.info-card-list#menu-desktop-sale-discounts"
+        ],
+        "props": {
+          "blockClass": ["menu-desktop-sale-discounts"]
+        }
+      },
+
+    "rich-text#menu-desktop-sale-title": {
+        "title": "Texto",
+        "props": {
+          "blockClass": ["menu-desktop-sale-title"],
+          "text": "Lorem Ipsum Tittle"
+        }
+      },
+
+      "list-context.info-card-list#menu-desktop-sale-discounts": {
+        "title": "Imagenes & Links",
+        "children": [
+          "slider-layout#menu-desktop-sale-discounts"
+        ],
+        "props": {
+          "infoCards": [
+            {
+                "id": "menu-desktop-sale-discounts-1",
+                "isFullModeStyle": false,
+                "textPosition": "left",
+                "imageUrl": "https://placehold.jp/138x138.png",
+                "desktopImageUrl": "https://placehold.jp/138x138.png",
+                "callToActionText": "Lorem Ipsum is simply dummy text.",
+                "callToActionUrl": "/200?map=productClusterIds",
+                "blockClass": "menu-desktop-sale-discounts",
+                "textAlignment": "center",
+                "callToActionMode": "link"
+            },
+            {
+                "id": "menu-desktop-sale-discounts-2",
+                "isFullModeStyle": false,
+                "textPosition": "left",
+                "imageUrl": "https://placehold.jp/138x138.png",
+                "desktopImageUrl": "https://placehold.jp/138x138.png",
+                "callToActionText": "Lorem Ipsum is simply dummy text.",
+                "callToActionUrl": "/",
+                "blockClass": "menu-desktop-sale-discounts",
+                "textAlignment": "center",
+                "callToActionMode": "link"
+            },
+            {
+                "id": "menu-desktop-sale-discounts-3",
+                "isFullModeStyle": false,
+                "textPosition": "left",
+                "imageUrl": "https://placehold.jp/138x138.png",
+                "desktopImageUrl": "https://placehold.jp/138x138.png",
+                "callToActionText": "Lorem Ipsum is simply dummy text.",
+                "callToActionUrl": "/",
+                "blockClass": "menu-desktop-sale-discounts",
+                "textAlignment": "center",
+                "callToActionMode": "link"
+            },
+            {
+                "id": "menu-desktop-sale-discounts-4",
+                "isFullModeStyle": false,
+                "textPosition": "left",
+                "imageUrl": "https://placehold.jp/138x138.png",
+                "desktopImageUrl": "https://placehold.jp/138x138.png",
+                "callToActionText": "Lorem Ipsum is simply dummy text.",
+                "callToActionUrl": "/",
+                "blockClass": "menu-desktop-sale-discounts",
+                "textAlignment": "center",
+                "callToActionMode": "link"
+            }
+          ]
+        }
+      },
+      "slider-layout#menu-desktop-sale-discounts": {
+        "title": "Configuraciones slider",
+        "props": {
+          "blockClass": ["menu-desktop-sale-discounts"],
+          "showPaginationDots": "never",
+          "infinite": true,
+            "itemsPerPage": {
+                "desktop": 4,
+                "tablet": 5,
+                "phone": 3
+            }
+        }
+    },
+
+    "flex-layout.row#menu-desktop-sale-view-all-discounts": {
+        "title": "Destacados",
+        "children": [
+          "image#menu-desktop-sale-view-all-discounts-1"
+        ],
+        "props": {
+          "blockClass": ["menu-desktop-sale-view-all-discounts"]
+        }
+      },
+  
+      "image#menu-desktop-sale-view-all-discounts-1": {
+        "title": "Imagen & Link 1",
+        "props": {
+        "blockClass": "menu-sale-discounts",
+        "src": "https://placehold.jp/430x225.png",
+        "alt": "",
+            "link": {
+                "title": "",
+                "url": "/"
+            }
+        }
+      }
+}
