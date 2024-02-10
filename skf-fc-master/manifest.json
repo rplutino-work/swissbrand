@@ -76,7 +76,8 @@
     "vtex.info-card-list": "0.x",
     "skfarg.skf-custom": "0.x",
     "skfarg.skf-custom-search-result": "0.x",
-    "skfarg.countdown": "0.x"
+    "skfarg.countdown": "0.x",
+    "skfarg.filter-search": "0.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

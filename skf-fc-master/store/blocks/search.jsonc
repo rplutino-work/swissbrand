@@ -155,6 +155,7 @@
     },
 
     "children": [
+      "filter-search",
       "flex-layout.row#result-top",
       "search-fetch-previous",
       "search-content",

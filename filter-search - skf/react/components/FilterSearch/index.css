@@ -149,6 +149,10 @@
     background: #fff;
 }
 
+:global(.css-h54wua-menu) {
+    z-index: 3 !important;
+}
+
 @media screen and (min-width:1024px) {
     .dp{
         height: 128px;
