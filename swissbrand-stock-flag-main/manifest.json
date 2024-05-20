@@ -1,7 +1,7 @@
 {
   "vendor": "swissbrand",
   "name": "stock-flag",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "title": "Stock Flag",
   "description": "A custom block that renders a flag based on the product's availability",
   "defaultLocale": "pt-BR",
