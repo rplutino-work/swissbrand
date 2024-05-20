@@ -1,7 +1,7 @@
 {
   "name": "filter-search",
   "vendor": "swissbrand",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "vtex-version": "0.0.0",
   "builders": {
     "react": "3.x",
