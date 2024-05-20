@@ -1,7 +1,7 @@
 {
   "vendor": "swissbrand",
   "name": "add-class-on-header",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "title": "add-class-on-header",
   "description": "Agrega clase para sticky en home",
   "defaultLocale": "en",
