@@ -1,7 +1,7 @@
 {
-  "vendor": "skfarg",
-  "name": "skfarg",
-  "version": "1.2.89",
+  "vendor": "swissbrand",
+  "name": "swissbrand",
+  "version": "0.0.1",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
@@ -74,10 +74,10 @@
     "vtex.store-newsletter": "1.x",
     "vtex.store-video": "1.x",
     "vtex.info-card-list": "0.x",
-    "skfarg.skf-custom": "0.x",
-    "skfarg.skf-custom-search-result": "0.x",
-    "skfarg.countdown": "0.x",
-    "skfarg.filter-search": "0.x"
+    "swissbrand.skf-custom": "0.x",
+    "swissbrand.skf-custom-search-result": "0.x",
+    "swissbrand.countdown": "0.x",
+    "swissbrand.filter-search": "0.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

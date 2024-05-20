@@ -1,7 +1,7 @@
 {
-  "vendor": "skfarg",
+  "vendor": "swissbrand",
   "name": "skf-custom",
-  "version": "0.1.67",
+  "version": "0.0.1",
   "title": "SKF Custom",
   "description": "Bloques custom de SKF",
   "defaultLocale": "pt-BR",
