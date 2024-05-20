@@ -1,0 +1,18 @@
+{
+  "filter-navigator.v3": {
+    "component": "FilterNavigatorFlexible",
+    "allowed": ["sidebar-close-button"]
+  },
+
+  "category-banner": {
+    "component": "CustomCategoryBanner"
+  },
+
+  "sidebar-close-button": {
+    "component": "SidebarCloseButton"
+  },
+
+  "error-page": {
+    "component": "ErrorPage"
+  }
+}

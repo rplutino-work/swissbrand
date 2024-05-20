@@ -1,0 +1,10 @@
+{
+    "newsletter#footer-newsletter": {
+        "props": {
+            "blockClass": "footer-newsletter",
+            "label": "REGISTRATE",
+            "placeholder": "ingresá tu mail",
+            "submit": "REGISTRARME"
+        }
+    }
+}

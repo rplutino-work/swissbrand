@@ -1,0 +1,126 @@
+{
+    "store.storelocator#sucursales": {
+      "blocks": ["flex-layout.row#title", "flex-layout.row#container"],
+      "props": {
+        "blockClass": "stores-wrapper",
+        "preventVerticalStretch": true
+      }
+    },
+    "flex-layout.row#title": {
+      "children": ["flex-layout.col#title"],
+      "props": {
+        "blockClass": "stores-title",
+        "preventVerticalStretch": true,
+        "fullWidth": true
+      }
+    },
+    "flex-layout.row#container": {
+      "children": [
+        "tab-layout#store-list"
+      ],
+      "props": {
+        "blockClass": "stores-container",
+        "preventVerticalStretch": false,
+        "colSizing": "equal",
+        "fullWidth": true
+      }
+    },
+    "tab-layout#store-list": {
+      "children": [
+        "tab-list#store-list",
+        "tab-content#store-list"
+      ],
+      "props": {
+        "blockClass": "store-list",
+        "defaultActiveTabId": "luz"
+      }
+    },
+    "tab-list#store-list": {
+      "children": [
+        "tab-list.item#luz-de-mar",
+        "tab-list.item#distribuidores"
+      ],
+      "props": {
+        "blockClass": "store-list"
+      }
+    },
+    "tab-list.item#luz-de-mar": {
+      "props": {
+        "blockClass": ["tab-list","tab-list-luz"],
+        "tabId": "luz",
+        "label": "Sucursales",
+        "defaultActiveTab": true
+      }
+    },
+    "tab-list.item#distribuidores": {
+      "props": {
+        "blockClass": ["tab-list", "tab-list-distribuidores"],
+        "tabId": "distribuidores",
+        "label": "Revendedores oficiales",
+        "defaultActiveTab": true
+      }
+    },
+    "tab-content#store-list": {
+      "props": {
+        "blockClass": "store-list"
+      },
+      "children": [
+        "tab-content.item#luz-de-mar",
+        "tab-content.item#distribuidores"
+      ]
+    },
+    "tab-content.item#luz-de-mar": {
+      "children": [
+        "store-list#luz-de-mar"
+      ],
+      "props": {
+        "tabId": "luz"
+      }
+    },
+    "tab-content.item#distribuidores": {
+      "children": [
+        "store-list#distribuidores"
+      ],
+      "props": {
+        "tabId": "distribuidores"
+      }
+    },
+    "store-list#luz-de-mar": {
+        "props": {
+          "icon": "assets/imgs/luz-de-mar-sucursales.png",
+          "filterByTag": "luzdemar",
+          "sortBy": "name",
+          "zoom": 12
+        }
+      },
+      "store-list#distribuidores": {
+        "props": {
+          "icon": "assets/imgs/luz-de-mar-sucursales.png",
+          "filterByTag": "externo",
+          "sortBy": "name",
+          "zoom": 12
+        }
+      },
+    "flex-layout.col#title": {
+      "children": [
+        "rich-text#title",
+        "rich-text#subtitle"
+      ],
+      "props": {
+        "blockClass": "title",
+        "preventVerticalStretch": true
+      }
+    },
+    "rich-text#title": {
+      "props": {
+        "text": "## Sucursales",
+        "blockClass":["stores-wrapper-title"]
+      }
+    },
+    "rich-text#subtitle": {
+      "props": {
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra auctor ex in convallis. Duis aliquet maximus nibh nec tristique. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\n\nPraesent eu ex blandit sapien efficitur placerat in eu sapien. Aenean mattis risus in metus sollicitudin, ut ultrices odio consectetur. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+        "blockClass":["stores-wrapper-subtitle"]
+      }
+    }
+  }

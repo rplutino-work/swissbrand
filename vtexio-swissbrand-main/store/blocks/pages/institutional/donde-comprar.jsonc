@@ -1,0 +1,22 @@
+{
+    "store.custom#dondecomprar": {
+        "blocks": ["flex-layout.row#breadcrumb", "flex-layout.row#dondecomprar"]
+    },
+
+    "flex-layout.row#dondecomprar": {
+        "props": {
+            "blockClass": "institutional-wrapper",
+            "colSizing": "auto"
+        },
+
+        "children": ["rich-text#dondecomprar-content"]
+    },
+
+    "rich-text#dondecomprar-content": {
+        "props": {
+            "blockClass": "institutional-content",
+            "text": "# dondecomprar",
+            "width": "grow"
+        }
+    }
+}

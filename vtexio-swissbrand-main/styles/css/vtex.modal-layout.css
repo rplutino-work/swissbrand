@@ -1,0 +1,79 @@
+/* POPUP */
+.modal--popup-home {
+    background: #00000080;
+  }
+  .modal--popup-home {
+    background: #00000080;
+  }
+  
+  .paper--popup-home {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 712px;
+    align-items: center;
+    border-radius: 5px;
+  }
+  
+  .paper--popup-home :global(.vtex-input-prefix__group),
+  .paper--popup-home :global(.vtex-dropdown__container) {
+    border-radius: 0px!important;
+    margin-bottom: 10px!important;
+    margin-right: 0!important;
+    width: 100%!important;
+    border: 1px solid #434343!important;
+  }
+  
+  
+  .paper--popup-home :global(.vtex-styleguide-9-x-input),
+  .paper--popup-home :global(.vtex-dropdown__button) {
+    font-size: 13px;
+    color: #434343;
+    font-weight: 400;
+  }
+  
+  .paper--popup-home :global(.vtex-button) {
+    border: 0 !important;
+    background: transparent !important;
+    height: 0;
+    width: 100%;
+  }
+  
+  .paper--popup-home :global(.vtex-button) {
+    background: transparent;
+    border: 0;
+    height: 0;
+  }
+  
+  .paper--popup-home :global(.vtex-store-newsletter-1-x-formSubmitContainer) {
+    text-align: center;
+  }
+  
+  .headerContainer--close-popup {
+    border: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  
+  .headerContainer--close-popup {
+    border: 0;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+
+  
+  .paper--popup-home :global(.vtex-styleguide-9-x-input)::placeholder,
+  .paper--popup-home :global(.vtex-dropdown__caption) {
+    font-size: 13px;
+    color: #434343;
+    font-weight: 400;
+  }
+  
+  @media (min-width: 1024px){
+    .paper--popup-home {
+      flex-direction: row;
+    }
+  }

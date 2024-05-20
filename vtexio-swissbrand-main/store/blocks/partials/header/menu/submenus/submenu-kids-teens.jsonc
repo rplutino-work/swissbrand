@@ -1,0 +1,346 @@
+{
+    "vtex.menu@2.x:submenu#kids-teens": {
+        "props": {
+            "blockClass": "submenu"
+        },
+
+        "children": ["image#kids-teens-banner","flex-layout.row#kids-teens"]
+    },
+
+    "flex-layout.row#kids-teens": {
+        "props": {
+            "blockClass": "categories-wrapper",
+            "colSizing": "auto",
+            "colGap": 9
+        },
+
+        "children": [
+            //"vtex.menu@2.x:menu#kids-teens-column-1",
+            "vtex.menu@2.x:menu#kids-teens-column-2"
+            //"vtex.menu@2.x:menu#kids-teens-column-3"
+        ]
+    },
+
+    /* COLUMNA 1 */
+    "vtex.menu@2.x:menu#kids-teens-column-1": {
+        "props": {
+            "blockClass": "categories"
+        },
+
+        "children": [
+          "menu-item#sub-kids-teens-column-1",
+          "vtex.menu@2.x:menu#submenu-kids-teens-column-1"
+        ]
+    },
+
+    "menu-item#sub-kids-teens-column-1": {
+      "props": {
+          "blockClass": "category",
+          "id": "kids-teens-column-1",
+          "type": "custom",
+          "itemProps": {
+                "href": "/kids-teens",
+                "text": "Teens",
+                "tagTitle": "Teens",
+                "type": "internal",
+                "noFollow": false
+          }
+      }
+    },
+
+    "vtex.menu@2.x:menu#submenu-kids-teens-column-1": {
+        "props": {
+          "blockClass": "categories",
+          "items": [
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/kids-teens/bikini",
+                    "text": "Bikini",
+                    "tagTitle": "Bikini",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            },
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/kids-teens/entera",
+                    "text": "Entera",
+                    "tagTitle": "Entera",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            },
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/kids-teens/corpino",
+                    "text": "Corpiño",
+                    "tagTitle": "Corpiño",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            },
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/kids-teens/bombacha",
+                    "text": "Bombacha",
+                    "tagTitle": "Bombacha",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            },
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/kids-teens/remera",
+                    "text": "Remera",
+                    "tagTitle": "Remera",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            },
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/kids-teens/sunga",
+                    "text": "Sunga",
+                    "tagTitle": "Sunga",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            },
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/kids-teens/accesorios",
+                    "text": "Accesorios",
+                    "tagTitle": "Accesorios",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            }
+          ]
+        }
+    },
+
+    /* COLUMNA 2 */
+    "vtex.menu@2.x:menu#kids-teens-column-2": {
+        "props": {
+            "blockClass": "categories"
+        },
+
+        "children": [
+          "menu-item#sub-kids-teens-column-2",
+          "vtex.menu@2.x:menu#submenu-kids-teens-column-2"
+        ]
+    },
+
+    "menu-item#sub-kids-teens-column-2": {
+      "props": {
+          "blockClass": "category",
+          "id": "kids-teens-column-2",
+          "type": "custom",
+          "itemProps": {
+                "href": "/kids",
+                "text": "Kids",
+                "tagTitle": "Kids",
+                "type": "internal",
+                "noFollow": false
+          }
+      }
+    },
+
+    "vtex.menu@2.x:menu#submenu-kids-teens-column-2": {
+        "props": {
+          "blockClass": "categories",
+          "items": [
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/kids-teens/kids/bikini",
+                    "text": "Bikini",
+                    "tagTitle": "Bikini",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            },
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/kids-teens/kids/sunga",
+                    "text": "Sunga",
+                    "tagTitle": "Sunga",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            },
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/kids-teens/kids/entera",
+                    "text": "Entera",
+                    "tagTitle": "Entera",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            }/*,
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/kids-teens/kids/corpino",
+                    "text": "Corpiño",
+                    "tagTitle": "Corpiño",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            },
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/kids-teens/kids/bombacha",
+                    "text": "Bombacha",
+                    "tagTitle": "Bombacha",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            },
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/kids-teens/kids/remera",
+                    "text": "Remera",
+                    "tagTitle": "Remera",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            },
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/kids-teens/kids/sunga",
+                    "text": "Sunga",
+                    "tagTitle": "Sunga",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            },
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/kids-teens/kids/accesorios",
+                    "text": "Accesorios",
+                    "tagTitle": "Accesorios",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            }*/
+          ]
+        }
+    },
+
+    /* COLUMNA 3 */
+    "vtex.menu@2.x:menu#kids-teens-column-3": {
+        "props": {
+            "blockClass": "categories"
+        },
+
+        "children": [
+        "menu-item#sub-kids-teens-column-3",
+        "vtex.menu@2.x:menu#submenu-kids-teens-column-3"
+        ]
+    },
+
+    "menu-item#sub-kids-teens-column-3": {
+    "props": {
+        "blockClass": "category",
+        "id": "kids-teens-column-3",
+        "type": "custom",
+        "itemProps": {
+                "href": "/bebe",
+                "text": "Bebé",
+                "tagTitle": "Bebé",
+                "type": "internal",
+                "noFollow": false
+        }
+    }
+    },
+
+    "vtex.menu@2.x:menu#submenu-kids-teens-column-3": {
+        "props": {
+        "blockClass": "categories",
+        "items": [
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/kids-teens/bebe/bikini",
+                    "text": "Bikini",
+                    "tagTitle": "Bikini",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            },
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/kids-teens/bebe/entera",
+                    "text": "Entera",
+                    "tagTitle": "Entera",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            },
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/kids-teens/bebe/bombacha",
+                    "text": "Bombacha",
+                    "tagTitle": "Bombacha",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            },
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/kids-teens/bebe/remera",
+                    "text": "Remera",
+                    "tagTitle": "Remera",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            }
+        ]
+        }
+    },
+
+    /* COLUMNA BANNER */
+    "image#kids-teens-banner": {
+        "props": {
+            "blockClass": "submenu-banner",
+            "src": "assets/imgs/desktop/luz-de-mar-mega-menu-3-columns.png",
+            "link": true
+        }
+    }
+}

@@ -1,0 +1,460 @@
+{
+    "store.home": {
+        "parent": {
+            "challenge": "challenge.trade-policy-condition"
+        },
+
+        "blocks": [
+            "class-header",
+            "list-context.image-list#main-gallery",
+            "flex-layout.row#category",
+            "flex-layout.row#top-gallery",
+            "__fold__",
+            "flex-layout.row#banner-2",
+            "flex-layout.row#banner-full",
+            "flex-layout.row#shelf-01",
+            "flex-layout.row#middle-content",
+            "flex-layout.row#shelf-02",
+            "flex-layout.row#coleccions-home",
+            "flex-layout.row#deals",
+            //"flex-layout.row#newsletter-form"
+            "newsletter#footer-newsletter"
+        ]
+    },
+
+    "challenge.trade-policy-condition": {
+        "props": {
+            "redirectPath": "/registration",
+            "defaultContentVisibility": "hidden"
+        }
+    },
+
+    "list-context.image-list#main-gallery": {
+        "props": {
+            "blockClass": "main-gallery",
+            "height": "600",
+            "images": [
+                {
+                    "image": "assets/imgs/desktop/luz-de-mar-slider.jpg",
+                    "mobileImage": "assets/imgs/mobile/luz-de-mar-slider.jpg"
+                },
+
+                {
+                    "image": "assets/imgs/desktop/luz-de-mar-slider.jpg",
+                    "mobileImage": "assets/imgs/mobile/luz-de-mar-slider.jpg"
+                }
+            ]
+        },
+
+        "children": ["slider-layout#main-gallery-slider"]
+    },
+
+    "slider-layout#main-gallery-slider": {
+        "props": {
+            "blockClass": "main-gallery",
+            "infinite": true,
+
+            "autoplay": {
+                "timeout": 5000,
+                "stopOnHover": true
+            },
+
+            "itemsPerPage": {
+                "desktop": 1,
+                "tablet": 1,
+                "phone": 1
+            }
+        }
+    },
+
+    "flex-layout.row#category": {
+      "children": [
+          "rich-text#category-title",
+          "list-context.info-card-list#demo"
+        ],
+      "props": {
+        "blockClass": ["category"],
+        "fullWidth": true,
+        "preserveLayoutOnMobile": false
+      }
+    },
+
+    "list-context.info-card-list#demo": {
+        "children": [
+            "slider-layout#category-home"
+        ],
+        "props": {
+          "infoCards": [
+            {
+                "blockClass":"category-home-item",
+                "isFullModeStyle": false,
+                "textPosition": "left",
+                "imageUrl": "assets/imgs/desktop/luz-de-mar-triangulos.jpg",
+                "mobileImageUrl": "assets/imgs/mobile/luz-de-mar-triangulos.jpg",
+                "callToActionText": "Triangulos",
+                "callToActionUrl": "/",
+                "textAlignment": "center"
+            },
+            {
+                "blockClass":"category-home-item",
+                "isFullModeStyle": false,
+                "textPosition": "left",
+                "imageUrl": "assets/imgs/desktop/luz-de-mar-trikinis.jpg",
+                "mobileImageUrl": "assets/imgs/mobile/luz-de-mar-trikinis.jpg",
+                "callToActionText": "Trikinis",
+                "callToActionUrl": "/",
+                "textAlignment": "center"
+            },
+            {
+                "blockClass":"category-home-item",
+                "isFullModeStyle": false,
+                "textPosition": "left",
+                "imageUrl": "assets/imgs/desktop/luz-de-mar-entera.jpg",
+                "mobileImageUrl": "assets/imgs/mobile/luz-de-mar-entera.jpg",
+                "callToActionText": "Enteras",
+                "callToActionUrl": "/",
+                "textAlignment": "center"
+            },
+            {
+                "blockClass":"category-home-item",
+                "isFullModeStyle": false,
+                "textPosition": "left",
+                "imageUrl": "assets/imgs/desktop/luz-de-mar-bendeau.jpg",
+                "mobileImageUrl": "assets/imgs/mobile/luz-de-mar-bendeau.jpg",
+                "callToActionText": "Bendeaus",
+                "callToActionUrl": "/",
+                "textAlignment": "center"
+            },
+            {
+                "blockClass":"category-home-item",
+                "isFullModeStyle": false,
+                "textPosition": "left",
+                "imageUrl": "assets/imgs/desktop/luz-de-mar-banner-lounge.jpg",
+                "mobileImageUrl": "assets/imgs/mobile/luz-de-mar-banner-lounge.jpg",
+                "callToActionText": "Lounges",
+                "callToActionUrl": "/",
+                "textAlignment": "center"
+            },
+            {
+                "blockClass":"category-home-item",
+                "isFullModeStyle": false,
+                "textPosition": "left",
+                "imageUrl": "assets/imgs/desktop/luz-de-mar-banner-culotte.jpg",
+                "mobileImageUrl": "assets/imgs/mobile/luz-de-mar-banner-culotte.jpg",
+                "callToActionText": "Culotte",
+                "callToActionUrl": "/",
+                "textAlignment": "center"
+            }
+          ]
+        }
+    },
+
+    "slider-layout#category-home": {
+        "props": {
+            "blockClass": "category-home",
+            "itemsPerPage": {
+                "desktop": 6,
+                "tablet": 2,
+                "phone": 2
+            },
+            "infinite": true
+        }
+    },
+
+    "rich-text#category-title": {
+      "props": {
+        "blockClass": ["category-title"],
+        "font": "t-body",
+        "text": "## Categorias principales",
+        "textAlignment": "LEFT",
+        "textColor": "c-on-base",
+        "textPosition": "LEFT"
+      }
+    },
+
+    "flex-layout.row#top-gallery": {
+        "children": ["list-context.image-list#top-gallery"]
+    },
+
+    "list-context.image-list#top-gallery": {
+        "props": {
+            "height": "fit-content",
+
+            "images": [
+                {
+                    "image": "assets/imgs/desktop/luz-de-mar-banner-bikini.jpg",
+                    "mobileImage": "assets/imgs/mobile/luz-de-mar-banner-bikini.jpg"
+                },
+
+                {
+                    "image": "assets/imgs/desktop/luz-de-mar-banner-entera-nino.jpg",
+                    "mobileImage": "assets/imgs/mobile/luz-de-mar-banner-entera-nino.jpg"
+                },
+
+                {
+                    "image": "assets/imgs/desktop/luz-de-mar-banner-bikini-nino.jpg",
+                    "mobileImage": "assets/imgs/mobile/luz-de-mar-banner-bikini-nino.jpg"
+                }
+            ]
+        },
+
+        "children": ["slider-layout#top-gallery-slider"]
+    },
+
+    "slider-layout#top-gallery-slider": {
+        "props": {
+            "blockClass": "top-gallery",
+            "infinite": true,
+
+            "itemsPerPage": {
+                "desktop": 3,
+                "tablet": 2,
+                "phone": 1
+            }
+        }
+    },
+
+    "flex-layout.row#banner-2": {
+        "children": [
+            "responsive-layout.mobile#banner-2",
+            "responsive-layout.desktop#banner-2"
+        ],
+      "props": {
+        "blockClass": ["banner-2-wrapper"]
+      }
+    },
+
+    "responsive-layout.mobile#banner-2": {
+        "children": [
+            "image#banner-2-image-01-mobile",
+            "image#banner-2-image-02-mobile"
+        ],
+        "props": {
+            "blockClass": "banner-image-wrapper",
+            "preserveLayoutOnMobile": false
+        }
+    },
+
+    "responsive-layout.desktop#banner-2": {
+        "children": [
+            "image#banner-2-image-01-desktop",
+            "image#banner-2-image-02-desktop"
+        ],
+        "props": {
+            "blockClass": "banner-image-wrapper"
+        }
+    },
+
+    "image#banner-2-image-01-mobile": {
+        "props": {
+            "blockClass": ["banner-2-image-01"],
+            "src": "assets/imgs/mobile/luz-de-mar-banner-bikini-colores.jpg"
+        }
+    },
+
+    "image#banner-2-image-02-mobile": {
+        "props": {
+            "blockClass": ["banner-2-image-02"],
+            "src": "assets/imgs/mobile/luz-de-mar-banner-bikini-blanco.jpg"
+        }
+    },
+
+    "image#banner-2-image-01-desktop": {
+        "props": {
+            "blockClass": ["banner-2-image-01"],
+            "src": "assets/imgs/desktop/luz-de-mar-banner-bikini-colores.jpg"
+        }
+    },
+
+    "image#banner-2-image-02-desktop": {
+        "props": {
+            "blockClass": ["banner-2-image-02"],
+            "src": "assets/imgs/desktop/luz-de-mar-banner-bikini-blanco.jpg"
+        }
+    },
+
+    "flex-layout.row#middle-content": {
+        "props": {
+            "blockClass": "middle-content",
+            "colSizing": "auto"
+        },
+
+        "children": [
+            "responsive-layout.mobile#video#background",
+            "responsive-layout.desktop#video#background"
+        ]
+    },
+
+    "flex-layout.row#banner-full": {
+        "title": "Banner full",
+        "children": [
+            "responsive-layout.mobile#banner-full",
+            "responsive-layout.desktop#banner-full"
+        ],
+      "props": {
+        "blockClass": ["banner-full"],
+        "colSizing": "auto"
+      }
+    },
+
+    "responsive-layout.mobile#banner-full": {
+        "title": "Mobile",
+        "children": [
+            "image#banner-full-mobile"
+        ],
+        "props": {
+            "blockClass": "banner-full",
+            "preserveLayoutOnMobile": false
+        }
+    },
+
+    "image#banner-full-mobile": {
+        "title": "Imagen",
+        "props": {
+            "blockClass": ["banner-full"],
+            "src": "assets/imgs/mobile/luz-de-mar-biki-temporada-2023.jpg",
+            "alt": "Biki terracota Luz de Mar temporada 2023",
+            "title": "Biki terracota Luz de Mar temporada 2023",
+            "link": {
+                "title": "Biki terracota Luz de Mar temporada 2023",
+                "url": "/trajes-de-bano/conjuntos"
+            }
+        }
+    },
+
+    "responsive-layout.desktop#banner-full": {
+        "title": "Desktop",
+        "children": [
+            "image#banner-full-desktop"
+        ],
+        "props": {
+            "blockClass": "banner-full",
+            "preserveLayoutOnMobile": false
+        }
+    },
+
+    "image#banner-full-desktop": {
+        "title": "Imagen",
+        "props": {
+            "blockClass": ["banner-full"],
+            "src": "assets/imgs/desktop/luz-de-mar-biki-temporada-2023.jpg",
+            "alt": "Biki terracota Luz de Mar temporada 2023",
+            "title": "Biki terracota Luz de Mar temporada 2023",
+            "link": {
+                "title": "Biki terracota Luz de Mar temporada 2023",
+                "url": "/trajes-de-bano/conjuntos"
+            }
+        }
+    },
+
+    "responsive-layout.mobile#video#background": {
+        "children": [
+            "video#background-mobile-2"
+        ],
+        "props": {
+            "blockClass": "video-wrapper"
+        }
+    },
+
+    "responsive-layout.desktop#video#background": {
+        "children": [
+            "video#background-desktop-2"
+        ],
+        "props": {
+            "blockClass": "video-wrapper"
+        }
+    },
+
+    "video#background-mobile-2": {
+        "props": {
+          "width": "100%",
+          "height": "428px",
+          "autoPlay": "&background=1",
+          "loop": 1,
+          "src": "https://player.vimeo.com/831898484",
+          "poster": "assets/imgs/mobile/luz-de-mar-video-home.jpg",
+          "blockClass": "video-home"
+        }
+    },
+
+    "video#background-desktop-2": {
+        "props": {
+          "width": "100%",
+          "height": "",
+          "autoPlay": "&background=1",
+          "loop": 1,
+          "src": "https://player.vimeo.com/831898484",
+          "poster": "assets/imgs/desktop/luz-de-mar-video-home.jpg",
+          "blockClass": "video-home"
+        }
+    },
+
+    "flex-layout.row#coleccions-home": {
+        "children": [
+            "list-context.info-card-list#collections-home"
+          ],
+        "props": {
+          "blockClass": ["collections-home-wrapper"],
+          "fullWidth": true,
+          "preserveLayoutOnMobile": false
+        }
+      },
+  
+      "list-context.info-card-list#collections-home": {
+          "children": [
+              "slider-layout#collections-home"
+          ],
+          "props": {
+            "infoCards": [
+              {
+                  "blockClass":"category-home-item",
+                  "isFullModeStyle": false,
+                  "textPosition": "left",
+                  "imageUrl": "assets/imgs/desktop/luz-de-mar-foto-noticias-1.jpg",
+                  "mobileImageUrl": "assets/imgs/mobile/luz-de-mar-foto-noticias-1.jpg",
+                  "headline": "LOREM IPSUM",
+                  "subhead": "LOREM IPSUM DOLOR SIT AMET, CONSETETUR SADIPSCINGED",
+                  "callToActionText": "VER MAS",
+                  "callToActionUrl": "/",
+                  "textAlignment": "left"
+              },
+              {
+                  "blockClass":"category-home-item",
+                  "isFullModeStyle": false,
+                  "textPosition": "left",
+                  "imageUrl": "assets/imgs/desktop/luz-de-mar-foto-noticias-2.jpg",
+                  "mobileImageUrl": "assets/imgs/mobile/luz-de-mar-foto-noticias-2.jpg",
+                  "headline": "LOREM IPSUM",
+                  "subhead": "LOREM IPSUM DOLOR SIT AMET, CONSETETUR SADIPSCINGED",
+                  "callToActionText": "VER MAS",
+                  "callToActionUrl": "/",
+                  "textAlignment": "left"
+              },
+              {
+                  "blockClass":"category-home-item",
+                  "isFullModeStyle": false,
+                  "textPosition": "left",
+                  "imageUrl": "assets/imgs/desktop/luz-de-mar-foto-noticias-3.jpg",
+                  "mobileImageUrl": "assets/imgs/mobile/luz-de-mar-foto-noticias-3.jpg",
+                  "headline": "LOREM IPSUM",
+                  "subhead": "LOREM IPSUM DOLOR SIT AMET, CONSETETUR SADIPSCINGED",
+                  "callToActionText": "VER MAS",
+                  "callToActionUrl": "/",
+                  "textAlignment": "left"
+              }
+            ]
+          }
+      },
+  
+      "slider-layout#collections-home": {
+          "props": {
+              "blockClass": "collections-home",
+              "itemsPerPage": {
+                  "desktop": 3,
+                  "tablet": 3,
+                  "phone": 1
+              },
+              "infinite": true
+          }
+      }
+}

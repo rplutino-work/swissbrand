@@ -1,0 +1,348 @@
+{
+    "vtex.menu@2.x:submenu#trajes-de-bano": {
+        "props": {
+            "blockClass": "submenu"
+        },
+
+        "children": ["image#trajes-de-bano-banner","flex-layout.row#trajes-de-bano"]
+    },
+
+    "flex-layout.row#trajes-de-bano": {
+        "props": {
+            "blockClass": "categories-wrapper",
+            "colSizing": "auto",
+            "colGap": 9
+        },
+
+        "children": [
+            "vtex.menu@2.x:menu#trajes-de-bano-column-1",
+            "vtex.menu@2.x:menu#trajes-de-bano-column-2",
+            "vtex.menu@2.x:menu#trajes-de-bano-column-3",
+            "vtex.menu@2.x:menu#trajes-de-bano-column-4"
+        ]
+    },
+
+    /* COLUMNA 1 */
+    "vtex.menu@2.x:menu#trajes-de-bano-column-1": {
+        "props": {
+            "blockClass": "categories"
+        },
+
+        "children": [
+          "menu-item#sub-trajes-de-bano-column-1",
+          "vtex.menu@2.x:menu#submenu-trajes-de-bano-column-1"
+        ]
+    },
+
+    "menu-item#sub-trajes-de-bano-column-1": {
+      "props": {
+          "blockClass": "category",
+          "id": "trajes-de-bano-column-1",
+          "type": "custom",
+          "itemProps": {
+                "href": "/trajes-de-bano/conjuntos",
+                "text": "Conjuntos",
+                "tagTitle": "Conjuntos",
+                "type": "internal",
+                "noFollow": false
+          }
+      }
+    },
+
+    "vtex.menu@2.x:menu#submenu-trajes-de-bano-column-1": {
+        "props": {
+          "blockClass": "categories",
+          "items": [
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/trajes-de-bano/conjuntos/lisos",
+                    "text": "Lisos",
+                    "tagTitle": "Lisos",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            },
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/trajes-de-bano/conjuntos/estampados",
+                    "text": "Estampados",
+                    "tagTitle": "Estampados",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            }
+          ]
+        }
+    },
+
+    /* COLUMNA 2 */
+    "vtex.menu@2.x:menu#trajes-de-bano-column-2": {
+        "props": {
+            "blockClass": "categories"
+        },
+
+        "children": [
+          "menu-item#sub-trajes-de-bano-column-2",
+          "vtex.menu@2.x:menu#submenu-trajes-de-bano-column-2"
+        ]
+    },
+
+    "menu-item#sub-trajes-de-bano-column-2": {
+      "props": {
+          "blockClass": "category",
+          "id": "trajes-de-bano-column-2",
+          "type": "custom",
+          "itemProps": {
+                "href": "/trajes-de-bano/corpinos",
+                "text": "Corpiños",
+                "tagTitle": "Corpiños",
+                "type": "internal",
+                "noFollow": false
+          }
+      }
+    },
+
+    "vtex.menu@2.x:menu#submenu-trajes-de-bano-column-2": {
+        "props": {
+          "blockClass": "categories",
+          "items": [
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/trajes-de-bano/corpinos/triangulo",
+                    "text": "Triangulo",
+                    "tagTitle": "Triangulo",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            },
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/trajes-de-bano/corpinos/top",
+                    "text": "Top",
+                    "tagTitle": "Top",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            },
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/trajes-de-bano/corpinos/bandeau",
+                    "text": "Bandeau",
+                    "tagTitle": "Bandeau",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            },
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/trajes-de-bano/corpinos/cruzado",
+                    "text": "Cruzado",
+                    "tagTitle": "Cruzado",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            },
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/trajes-de-bano/corpinos/aro",
+                    "text": "Aro",
+                    "tagTitle": "Aro",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            },
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/trajes-de-bano/corpinos/tankini",
+                    "text": "Tankini",
+                    "tagTitle": "Tankini",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            }
+          ]
+        }
+    },
+
+    /* COLUMNA 3 */
+    "vtex.menu@2.x:menu#trajes-de-bano-column-3": {
+        "props": {
+            "blockClass": "categories"
+        },
+
+        "children": [
+          "menu-item#sub-trajes-de-bano-column-3",
+          "vtex.menu@2.x:menu#submenu-trajes-de-bano-column-3"
+        ]
+    },
+
+    "menu-item#sub-trajes-de-bano-column-3": {
+      "props": {
+          "blockClass": "category",
+          "id": "trajes-de-bano-column-3",
+          "type": "custom",
+          "itemProps": {
+                "href": "/trajes-de-bano/bombachas",
+                "text": "Bombachas",
+                "tagTitle": "Bombachas",
+                "type": "internal",
+                "noFollow": false
+          }
+      }
+    },
+
+    "vtex.menu@2.x:menu#submenu-trajes-de-bano-column-3": {
+        "props": {
+          "blockClass": "categories",
+          "items": [
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/trajes-de-bano/bombachas/cola-less",
+                    "text": "Cola Less",
+                    "tagTitle": "Cola Less",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            },
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/trajes-de-bano/bombachas/media-cola",
+                    "text": "Media Cola",
+                    "tagTitle": "Media Cola",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            },
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/trajes-de-bano/bombachas/tiro-corto",
+                    "text": "Tiro Corto",
+                    "tagTitle": "Tiro Corto",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            },
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/trajes-de-bano/bombachas/tiro-medio",
+                    "text": "Tiro medio",
+                    "tagTitle": "Tiro medio",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            },
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/trajes-de-bano/bombachas/tiro-alto",
+                    "text": "Tiro Alto",
+                    "tagTitle": "Tiro Alto",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            },
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/trajes-de-bano/bombachas/culotte",
+                    "text": "Culotte",
+                    "tagTitle": "Culotte",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            },
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/trajes-de-bano/bombachas/biker",
+                    "text": "Biker",
+                    "tagTitle": "Biker",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            }
+          ]
+        }
+    },
+
+    /* COLUMNA 4 */
+    "vtex.menu@2.x:menu#trajes-de-bano-column-4": {
+        "props": {
+            "blockClass": "categories"
+        },
+
+        "children": [
+          "menu-item#sub-trajes-de-bano-column-4",
+          "vtex.menu@2.x:menu#submenu-trajes-de-bano-column-4"
+        ]
+    },
+
+    "menu-item#sub-trajes-de-bano-column-4": {
+      "props": {
+          "blockClass": "category",
+          "id": "trajes-de-bano-column-4",
+          "type": "custom",
+          "itemProps": {
+                "href": "/trajes-de-bano/one-piece",
+                "text": "One Piece",
+                "tagTitle": "One Piece",
+                "type": "internal",
+                "noFollow": false
+          }
+      }
+    },
+
+    "vtex.menu@2.x:menu#submenu-trajes-de-bano-column-4": {
+        "props": {
+          "blockClass": "categories",
+          "items": [
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/trajes-de-bano/one-piece/entera",
+                    "text": "Entera",
+                    "tagTitle": "Entera",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            }
+          ]
+        }
+    },
+
+    "image#trajes-de-bano-banner": {
+        "props": {
+            "blockClass": "submenu-banner",
+            "src": "assets/imgs/desktop/luz-de-mar-mega-menu-3-columns.png",
+            "link": true
+        }
+    }
+}

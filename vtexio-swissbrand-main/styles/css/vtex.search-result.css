@@ -1,0 +1,173 @@
+/* Search */
+
+.searchResultContainer {
+    padding: 0;
+    min-width: 100%;
+    margin-bottom: 24px;
+}
+
+.galleryTitle--layout {
+    margin: 0;
+    text-transform: uppercase;
+    line-height: 25px;
+    letter-spacing: 2.82px;
+    font-size: 20px;
+    font-weight: normal;
+    color: #434343;
+}
+
+.totalProducts--layout {
+    padding: 0;
+    border: none;
+    text-transform: uppercase;
+    line-height: 12px;
+    font-size: 10px;
+    color: #b8b8b8;
+}
+
+.totalProductsMessage {
+    color: #b8b8b8;
+}
+
+.orderByDropdown {
+    padding: 0;
+}
+
+.orderByButton {
+    padding: 0;
+    border: none;
+}
+
+.filterPopupTitle {
+    display: block;
+    line-height: 12px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #1f1f1f;
+}
+
+.orderByText {
+    margin-right: 16px;
+    font-size: 10px;
+    font-weight: normal;
+    color: #b8b8b8;
+}
+
+.filterPopupArrowIcon {
+    display: none;
+}
+
+.orderByOptionsContainer {
+    z-index: 10;
+    border: none;
+    box-shadow: 0px 3px 6px #0000001c;
+    top: 55px;
+}
+
+.orderByOptionItem {
+    outline: none;
+    font-family: "Montserrat";
+    font-size: 12px;
+    color: #3d3c3c;
+}
+
+.orderByOptionItem--selected {
+    background: #0093cc;
+    color: #fff;
+    font-weight: 500;
+}
+
+.gallery {
+    margin: 0;
+    padding: 0;
+}
+
+.galleryItem {
+    padding: 14px 8px;
+}
+
+.buttonShowMore--layout :global(.vtex-button) {
+    min-height: auto;
+    margin-top: 10px;
+    border: none;
+    border-bottom: 1px solid #434343;
+    border-radius: 0;
+    outline: none;
+    background: transparent;
+}
+
+.buttonShowMore--layout :global(.vtex-button__label) {
+    padding: 4px 10px !important;
+    line-height: 14px;
+    font-size: 12px;
+    color: #434343;
+    transition: color 0.2s linear;
+}
+
+.buttonShowMore--layout :global(.vtex-button__label):hover {
+    color: #b8b8b8;
+}
+
+.notFound--layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+    padding: 0;
+}
+
+@media only screen and (max-width: 1025px) {
+    .galleryTitle--layout {
+        margin-bottom: 24px;
+        padding: 0 16px;
+        text-align: center;
+    }
+
+    .orderBy--layout {
+        height: 54px;
+        border-right: 1px solid #0093CC;
+    }
+
+    .orderByDropdown {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    .orderByButton {
+        justify-content: center;
+    }
+
+    .orderByText {
+        display: block;
+        margin: 0;
+        line-height: 15px;
+        font-size: 12px;
+    }
+
+    .totalProducts--layout {
+        margin-bottom: 6px;
+        font-weight: normal;
+        color: #6a6a6b;
+    }
+
+    .totalProductsMessage {
+        color: #6a6a6b;
+    }
+
+    .notFound--layout {
+        min-height: 420px;
+    }
+}
+
+@media only screen and (min-width: 1026px) {
+    .orderByOptionsContainer {
+        top: 30px;
+    }
+    .galleryTitle--layout {
+        padding-bottom: 16px;
+        border-bottom: 0px;
+    }
+}
+
+/**/

@@ -1,0 +1,20 @@
+{
+    "store.login": {
+        "blocks": ["login-content"]
+    },
+
+    "login-content": {
+        "props": {
+            "isInitialScreenOptionOnly": false,
+            "defaultOption": 1,
+            "optionsTitle": "Escoja una opción para ingresar",
+            "accessCodeTitle": "Recibir código de acceso por mail",
+            "emailAndPasswordTitle": "Ingrese con e-mail y contraseña",
+            "emailPlaceholder": "Ej: ejemplo@empleo.com.ar",
+            "passwordPlaceholder": "Contraseña",
+            "showPasswordVerificationIntoTooltip": true,
+            "hasGoogleOneTap": false,
+            "hideIconLabel": true
+        }
+    }
+}

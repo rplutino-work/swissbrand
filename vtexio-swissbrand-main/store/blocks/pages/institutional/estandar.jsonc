@@ -1,0 +1,22 @@
+{
+    "store.custom#estandar": {
+        "blocks": ["flex-layout.row#breadcrumb", "flex-layout.row#estandar"]
+    },
+
+    "flex-layout.row#estandar": {
+        "props": {
+            "blockClass": "institutional-wrapper",
+            "colSizing": "auto"
+        },
+
+        "children": ["rich-text#estandar-content"]
+    },
+
+    "rich-text#estandar-content": {
+        "props": {
+            "blockClass": "institutional-content",
+            "text": "",
+            "width": "grow"
+        }
+    }
+}

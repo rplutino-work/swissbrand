@@ -1,0 +1,15 @@
+/* Header */
+
+@media only screen and (max-width: 1025px) {
+    .toggleSearchWrapper {
+        display: none;
+    }
+}
+
+/* HEADER HOME */
+:global(.vtex-sticky-layout-0-x-wrapper--header-content-home) .toggleSearchButton {
+    filter: invert(1) !important;
+}
+:global(.vtex-sticky-layout-0-x-wrapper--header-content-home--stuck) .toggleSearchButton {
+    filter: initial !important;
+}

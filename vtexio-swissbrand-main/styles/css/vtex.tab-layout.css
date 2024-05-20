@@ -1,0 +1,113 @@
+/* SUCURSALES */
+.listContainer--store-list .listItem--tab-list :global(.vtex-button) {
+    font-size: 13px;
+    min-height: 35px;
+    border-radius: 3px;
+    padding: 0 30px;
+    transition: .3s;
+    background: #434343;
+    width: 100%;
+}
+
+.listContainer--store-list .listItemActive--tab-list :global(.vtex-button) {
+    background: #0093cc;
+    font-weight: 600;
+    border: 0;
+}
+
+.listContainer--store-list .listItem--tab-list :global(.vtex-button__label) {
+    padding: 0;
+    color: #fff;
+}
+
+.listContainer--store-list .listItemActive--tab-list :global(.vtex-button__label) {
+    border: 0;
+}
+
+.listContainer--store-list .listItem--tab-list :global(.vtex-button):hover {
+    background: #0093cc;
+    color: #fff;
+    text-decoration: none;
+}
+
+.listContainer--store-list .listItem--tab-list {
+    margin: 0;
+    width: calc(100% - 20px);
+}
+
+.listContainer--store-list {
+    margin: 10px 0 40px 0;
+    justify-content: space-around;
+    margin-left: 0px;
+    flex-direction: row;
+}
+@media(min-width: 1026px){
+    .listContainer--store-list .listItem--tab-list :global(.vtex-button__label) {
+        border-bottom: 1px solid transparent;
+    }
+    
+    .listContainer--store-list .listItemActive--tab-list :global(.vtex-button__label) {
+        border-bottom: 1px solid #fff;
+    }
+    
+    .listContainer--store-list .listItem--tab-list :global(.vtex-button):hover :global(.vtex-button__label) {
+        border-bottom: 1px solid #fff;
+    }
+    .listContainer--store-list .listItem--tab-list,
+    .listContainer--store-list .listItem--tab-list :global(.vtex-button) {
+        width: auto;
+    }
+    .listContainer--store-list {
+        margin: 20px 0 50px 0;
+        justify-content: flex-start;
+        margin-left: 5px;
+    }    
+}
+
+/* PDP Specs */
+
+.listContainer--product-specs {
+    margin-bottom: 50px;
+}
+
+.listItem--product-specs {
+    padding: 0;
+    margin: 0;
+}
+
+.listItem--product-specs :global(.vtex-button) {
+    width: 265px;
+    height: 40px;
+    background-color: #eaeaea;
+    border: none;
+    border-radius: 0;
+}
+
+.listItem--product-specs :global(.vtex-button) :global(.vtex-button__label) {
+    font-size: 13px;
+    line-height: 15px;
+    font-weight: 600;
+    color: #434343;
+}
+
+.listItemActive--product-specs :global(.vtex-button) {
+    background-color: #fff;
+}
+
+.contentItem--product-specs {
+    margin: 0;
+    font-size: 15px;
+    line-height: normal;
+    text-align: left;
+    color: #727273;
+}
+
+@media only screen and (max-width: 768px) {
+    .listItem--product-specs {
+        width: 100%;
+    }
+
+    .listItem--product-specs :global(.vtex-button) {
+        width: 100%;
+    }
+}

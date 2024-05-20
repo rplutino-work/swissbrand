@@ -1,0 +1,324 @@
+{
+    "drawer#estandar-05": {
+      "title": "Menu",
+      "props": {
+        "blockClass": ["mobile-menu", "secondary-tab"]
+      },
+  
+      "blocks": ["drawer-trigger#estandar-05"],
+      "children": ["menu#estandar-05"]
+    },
+  
+    "drawer-trigger#estandar-05": {
+      "title": "Titulo",
+      "children": ["rich-text#estandar-05"]
+    },
+  
+    "rich-text#estandar-05": {
+      "title": "Texto",
+      "props": {
+        "blockClass": "mobile-menu-item",
+        "text": "Trajes de baño"
+      }
+    },
+  
+    "menu#estandar-05": {
+      "title": "Menu filas",
+      "props": {
+        "blockClass": "mobile-menu",
+        "orientation": "vertical"
+      },
+      "children": [
+        "disposition-layout#estandar-05-row"
+      ]
+    },
+  
+    "disposition-layout#estandar-05-row": {
+      "title": "Orden y visualización",
+      "children": [
+          "drawer#estandar-05-row-01",
+          "drawer#estandar-05-row-02",
+          "drawer#estandar-05-row-03",
+          "drawer#estandar-05-row-04",
+          "drawer#estandar-05-row-05",
+          "menu-item#estandar-05-see-all"
+      ],
+      "props": {
+          "blockClass":["categories-wrapper"],
+          "disposition": [
+              {
+                  "order": 1,
+                  "__editorItemTitle": "Fila 01"
+              },
+              {
+                  "order": 2,
+                  "__editorItemTitle": "Fila 02"
+              },
+              {
+                  "order": 3,
+                  "__editorItemTitle": "Fila 03"
+              },
+              {
+                  "order": 4,
+                  "__editorItemTitle": "Fila 04"
+              },
+              {
+                  "order": 5,
+                  "__editorItemTitle": "Fila 05"
+              },
+              {
+                "order": 6,
+                "__editorItemTitle": "Ver todo"
+              }
+          ]
+      }
+  },
+  
+  /* FILA 01 */
+  "drawer#estandar-05-row-01": {
+    "title": "Fila 01",
+    "props": {
+      "blockClass": ["mobile-menu", "secondary-tab"]
+    },
+  
+    "blocks": ["drawer-trigger#estandar-05-row-01"],
+    "children": ["menu#estandar-05-row-01"]
+  },
+  
+  "drawer-trigger#estandar-05-row-01": {
+    "title": "Titulo",
+    "children": ["rich-text#estandar-05-row-01"]
+  },
+  
+  "rich-text#estandar-05-row-01": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "mobile-menu-item",
+      "text": "Bombachas"
+    }
+  },
+  
+  "menu#estandar-05-row-01": {
+    "title": "Items menú",
+    "props": {
+      "blockClass": "mobile-menu",
+      "orientation": "vertical"
+    },
+  
+    "children": [
+      "vtex.menu@2.x:menu#menu-estandar-05-column-1",
+      "menu-item#estandar-05-column-1-see-all"
+    ]
+  },
+  
+  /* FILA 02 */
+  "drawer#estandar-05-row-02": {
+    "title": "Fila 02",
+    "props": {
+      "blockClass": ["mobile-menu", "secondary-tab"]
+    },
+  
+    "blocks": ["drawer-trigger#estandar-05-row-02"],
+    "children": ["menu#estandar-05-row-02"]
+  },
+  
+  "drawer-trigger#estandar-05-row-02": {
+    "title": "Titulo",
+    "children": ["rich-text#estandar-05-row-02"]
+  },
+  
+  "rich-text#estandar-05-row-02": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "mobile-menu-item",
+      "text": "Conjuntos"
+    }
+  },
+  
+  "menu#estandar-05-row-02": {
+    "title": "Items menú",
+    "props": {
+      "blockClass": "mobile-menu",
+      "orientation": "vertical"
+    },
+  
+    "children": [
+      "vtex.menu@2.x:menu#menu-estandar-05-column-2",
+      "menu-item#estandar-05-column-2-see-all"
+    ]
+  },
+  
+  /* FILA 03 */
+  "drawer#estandar-05-row-03": {
+    "title": "Fila 03",
+    "props": {
+      "blockClass": ["mobile-menu", "secondary-tab"]
+    },
+  
+    "blocks": ["drawer-trigger#estandar-05-row-03"],
+    "children": ["menu#estandar-05-row-03"]
+  },
+  
+  "drawer-trigger#estandar-05-row-03": {
+    "title": "Titulo",
+    "children": ["rich-text#estandar-05-row-03"]
+  },
+  
+  "rich-text#estandar-05-row-03": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "mobile-menu-item",
+      "text": "Corpiños"
+    }
+  },
+  
+  "menu#estandar-05-row-03": {
+    "title": "Items menú",
+    "props": {
+      "blockClass": "mobile-menu",
+      "orientation": "vertical"
+    },
+  
+    "children": [
+      "vtex.menu@2.x:menu#menu-estandar-05-column-3",
+      "menu-item#estandar-05-column-3-see-all"
+    ]
+  },
+  
+  /* FILA 04 */
+  "drawer#estandar-05-row-04": {
+    "title": "Fila 04",
+    "props": {
+      "blockClass": ["mobile-menu", "secondary-tab"]
+    },
+  
+    "blocks": ["drawer-trigger#estandar-05-row-04"],
+    "children": ["menu#estandar-05-row-04"]
+  },
+  
+  "drawer-trigger#estandar-05-row-04": {
+    "title": "Titulo",
+    "children": ["rich-text#estandar-05-row-04"]
+  },
+  
+  "rich-text#estandar-05-row-04": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "mobile-menu-item",
+      "text": "One Piece"
+    }
+  },
+  
+  "menu#estandar-05-row-04": {
+    "title": "Items menú",
+    "props": {
+      "blockClass": "mobile-menu",
+      "orientation": "vertical"
+    },
+  
+    "children": [
+      "vtex.menu@2.x:menu#menu-estandar-05-column-4",
+      "menu-item#estandar-05-column-4-see-all"
+    ]
+  },
+  
+  /* FILA 05 */
+  "drawer#estandar-05-row-05": {
+    "title": "Fila 05",
+    "props": {
+      "blockClass": ["mobile-menu", "secondary-tab"]
+    },
+  
+    "blocks": ["drawer-trigger#estandar-05-row-05"],
+    "children": ["menu#estandar-05-row-05"]
+  },
+  
+  "drawer-trigger#estandar-05-row-05": {
+    "title": "Titulo",
+    "children": ["rich-text#estandar-05-row-05"]
+  },
+  
+  "rich-text#estandar-05-row-05": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "mobile-menu-item",
+      "text": "Titulo"
+    }
+  },
+  
+  "menu#estandar-05-row-05": {
+    "title": "Items menú",
+    "props": {
+      "blockClass": "mobile-menu",
+      "orientation": "vertical"
+    },
+  
+    "children": [
+      "vtex.menu@2.x:menu#menu-estandar-05-column-5",
+      "menu-item#estandar-05-column-5-see-all"
+    ]
+  },
+  
+    //ver todo
+    "menu-item#estandar-05-see-all": {
+      "props": {
+        "blockClass": ["department", "see-all"],
+        "type": "category",
+        "itemProps": {
+          "categoryId": 1,
+          "text": "Ver todo Trajes de baño"
+        }
+      }
+    },
+    "menu-item#estandar-05-column-1-see-all": {
+      "props": {
+        "blockClass": ["department", "see-all"],
+        "type": "category",
+        "itemProps": {
+          "categoryId": 12,
+          "text": "Ver todo Bombachas"
+        }
+      }
+    },
+    "menu-item#estandar-05-column-2-see-all": {
+      "props": {
+        "blockClass": ["department", "see-all"],
+        "type": "category",
+        "itemProps": {
+          "categoryId": 2,
+          "text": "Ver todo conjuntos"
+        }
+      }
+    },
+    "menu-item#estandar-05-column-3-see-all": {
+      "props": {
+        "blockClass": ["department", "see-all"],
+        "type": "category",
+        "itemProps": {
+          "categoryId": 5,
+          "text": "Ver todo Corpiños"
+        }
+      }
+    },
+    "menu-item#estandar-05-column-4-see-all": {
+      "props": {
+        "blockClass": ["department", "see-all"],
+        "type": "category",
+        "itemProps": {
+          "categoryId": 20,
+          "text": "Ver todo One Piece"
+        }
+      }
+    },
+    "menu-item#estandar-05-column-5-see-all": {
+      "props": {
+        "blockClass": ["department", "see-all"],
+        "type": "category",
+        "itemProps": {
+          "categoryId": 1,
+          "text": "Ver todo"
+        }
+      }
+    }
+  }
+  

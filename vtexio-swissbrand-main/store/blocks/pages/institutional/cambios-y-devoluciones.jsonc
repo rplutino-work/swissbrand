@@ -1,0 +1,22 @@
+{
+    "store.custom#cambios-y-devoluciones": {
+        "blocks": ["flex-layout.row#breadcrumb", "flex-layout.row#cambios-y-devoluciones"]
+    },
+
+    "flex-layout.row#cambios-y-devoluciones": {
+        "props": {
+            "blockClass": "institutional-wrapper",
+            "colSizing": "auto"
+        },
+
+        "children": ["rich-text#cambios-y-devoluciones-content"]
+    },
+
+    "rich-text#cambios-y-devoluciones-content": {
+        "props": {
+            "blockClass": "institutional-content",
+            "text": "# Cambios y devoluciones \n\n Todos los productos adquiridos en el e-shop tienen 30 días de cambio en nuestras sucursales exclusivas (Ver en [www.luzdemar.com.ar/sucursales](www.luzdemar.com.ar/sucursales)) presentando el producto con su packaging original, etiqueta y ticket de compra. En el caso que el cliente no posea un comercio cercano puede enviar el producto con su packaging original, etiqueta y ticket de compra por correo a Francisco Berra 451, Castelar (CP 1712) y debe enviar un e-mail a ventasonline@luzdemar.com.ar indicando el producto a cambiar. Una vez que llegue el envío se procederá a despachar el nuevo producto. En este caso, el envío del producto a nuestro depósito corre por cargo y cuenta del cliente, mientras que la empresa bonificará el nuevo envío a domicilio. \n\n Para realizar una devolución total o parcial el cliente debe enviar el producto con su packaging original, etiqueta y ticket de compra por correo a Francisco Berra 451, Castelar (CP 1712) y debe enviar un e-mail a ventasonline@luzdemar.com.ar indicando el producto a devolver. Una vez que llegue el producto y se verifique que se encuentra en condiciones el dinero será devuelto a la cuenta de Mercado Pago con la que el cliente efectuó la compra. El envío corre por cargo y cuenta del cliente. No se pueden realizar devoluciones en sucursales. \n\n Para cambios se contempla siempre el valor abonado por el producto adquirido y el precio vigente del producto elegido al momento de realizar el cambio. Si el nuevo producto elegido posee un valor mayor al adquirido inicialmente, se debe abonar la diferencia correspondiente, mientras que si el cambio fuera sólo por talle, no se deberá abonar ninguna diferencia.",
+            "width": "grow"
+        }
+    }
+}

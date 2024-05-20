@@ -1,0 +1,214 @@
+/* Login */
+
+.container :global(.vtex-button) {
+    border: none;
+    outline: none;
+}
+
+.container :global(.vtex-button):hover,
+.container :global(.vtex-button):focus {
+    background: none;
+}
+
+.container :global(.vtex-button__label) {
+    height: 16px;
+    background: url("assets/svgs/account-icon.svg") center no-repeat;
+}
+
+.arrowUp {
+    box-shadow: 2px 0 6px #00000029;
+}
+
+.contentContainer {
+    box-shadow: 3px 3px 6px #00000029;
+}
+
+.content {
+    padding: 32px 20px 22px;
+}
+
+.content--accountOptions {
+    padding: 20px;
+}
+
+.formTitle {
+    margin: 0 0 16px;
+    padding: 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #434343;
+}
+
+.optionsList {
+    margin: 0;
+}
+
+.optionsListItem {
+    margin: 12px 0 0;
+}
+
+.button :global(.vtex-button) {
+    border: none;
+    outline: none;
+    border-radius: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #ffffff;
+    background: #090909;
+    transition: background 0.2s linear;
+}
+
+.contentForm {
+    padding: 0;
+}
+
+.inputContainer :global(.vtex-input-prefix__group) {
+    border: 1px solid #707070;
+    border-radius: 0;
+}
+
+.contentForm :global(.vtex-styleguide-9-x-input),
+.contentForm :global(.vtex-styleguide-9-x-input)::placeholder {
+    font-size: 14px;
+    color: #b8b7b8;
+}
+
+.formFooter {
+    align-items: center;
+    margin: 16px 0 0;
+    padding: 0;
+    border: none;
+}
+
+.backButton :global(.vtex-button) {
+    outline: none;
+}
+
+.backButton :global(.vtex-button):hover,
+.backButton :global(.vtex-button):focus {
+    background: none;
+}
+
+.backButton :global(.vtex-button__label) {
+    padding: 0 4px;
+}
+
+.backButton :global(.t-small) {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #090909;
+}
+
+.arrowBackIcon {
+    color: #090909;
+}
+
+.sendButton :global(.vtex-button) {
+    width: 126px;
+    height: 40px;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    background: #090909;
+    transition: background 0.2s linear;
+}
+
+.sendButton :global(.t-small) {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.forgotPasswordLink,
+.dontHaveAccount {
+    font-size: 10px;
+    color: #434343;
+}
+
+.forgotPasswordLink:focus,
+.dontHaveAccount:focus {
+    outline: none;
+}
+
+.dontHaveAccount {
+    display: block;
+    width: 100%;
+    padding-top: 12px;
+    border-top: 1px solid #707070;
+    text-align: center;
+}
+
+.accountOptions :global(.vtex-login-2-x-button),
+.accountOptions :global(.vtex-button) {
+    min-height: auto;
+    padding: 0;
+    border-radius: 0;
+    outline: none;
+}
+
+.accountOptions :global(.vtex-button):hover,
+.accountOptions :global(.vtex-button):focus {
+    background: transparent;
+}
+
+.accountOptions :global(.vtex-button__label) {
+    padding: 0 !important;
+}
+
+:global(.vtex-product-summary-2-x-element--complete-look) :global(.vtex-flex-layout-0-x-flexRowContent--product-shelf-price) :global(div.pr0.items-stretch.flex):first-child {
+    width: 100% !important;
+}
+
+:global(.vtex-product-specification-badges-0-x-badgeText) {
+    margin: 0;
+}
+
+:global(.vtex-product-specification-badges-0-x-badgeText) {
+    font-size: 15px;
+    line-height: normal;
+    text-align: left;
+}
+
+@media only screen and (max-width: 1025px) {
+    .container :global(.vtex-button__label) {
+        height: 22px;
+        background: url("assets/svgs/mobile-account-icon.svg") center no-repeat;
+    }
+}
+
+@media only screen and (min-width: 1026px) {
+    .button :global(.vtex-button):hover,
+    .sendButton :global(.vtex-button):hover {
+        background: #4b4b4b;
+    }
+
+    .button :global(.vtex-button):active,
+    .sendButton :global(.vtex-button):active {
+        background: #090909;
+    }
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--productSpecification) > :global(.vtex-flex-layout-0-x-stretchChildrenWidth):first-child {
+    display: none;
+}
+
+:global(.vtex-tab-layout-0-x-contentItem--product-specs) :global(.vtex-flex-layout-0-x-flexRow--productSpecification) {
+    display: none;
+}
+
+:global(.vtex-tab-layout-0-x-contentItem--product-specs-01) :global(.vtex-flex-layout-0-x-flexRow--productSpecification):first-child {
+    display: block !important;
+}
+
+:global(.vtex-tab-layout-0-x-contentItem--product-specs-02) :global(.vtex-flex-layout-0-x-flexRow--productSpecification):nth-child(2) {
+    display: block !important;
+}
+
+:global(.vtex-tab-layout-0-x-contentItem--product-specs-03) :global(.vtex-flex-layout-0-x-flexRow--productSpecification):nth-child(3){
+    display: block !important;
+}
+
+:global(.vtex-tab-layout-0-x-contentItem--product-specs-04) :global(.vtex-flex-layout-0-x-flexRow--productSpecification):last-child {
+    display: block !important;
+}

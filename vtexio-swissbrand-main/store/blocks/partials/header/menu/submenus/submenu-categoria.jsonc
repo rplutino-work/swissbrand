@@ -1,0 +1,87 @@
+{
+    "vtex.menu@2.x:submenu#categoria": {
+        "props": {
+            "blockClass": "submenu"
+        },
+
+        "children": ["image#categoria-banner","flex-layout.row#categoria"]
+    },
+
+    "flex-layout.row#categoria": {
+        "props": {
+            "blockClass": "categories-wrapper",
+            "colSizing": "auto",
+            "colGap": 9
+        },
+
+        "children": [
+            "vtex.menu@2.x:menu#categoria-column-1"
+        ]
+    },
+
+    /* COLUMNA 1 */
+    "vtex.menu@2.x:menu#categoria-column-1": {
+        "props": {
+            "blockClass": "categories"
+        },
+
+        "children": [
+          "menu-item#sub-categoria-column-1",
+          "vtex.menu@2.x:menu#submenu-categoria-column-1"
+        ]
+    },
+
+    "menu-item#sub-categoria-column-1": {
+      "props": {
+          "blockClass": "category",
+          "id": "categoria-column-1",
+          "type": "custom",
+          "itemProps": {
+                "href": "/",
+                "text": "Subcategoria",
+                "tagTitle": "Subcategoria",
+                "type": "internal",
+                "noFollow": false
+          }
+      }
+    },
+
+    "vtex.menu@2.x:menu#submenu-categoria-column-1": {
+        "props": {
+          "blockClass": "categories",
+          "items": [
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "#",
+                    "text": "Item",
+                    "tagTitle": "Item",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            },
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                  "href": "#",
+                  "text": "Item",
+                  "tagTitle": "Item",
+                  "type": "internal",
+                  "noFollow": false
+                }
+            }
+          ]
+        }
+    },
+
+    /* COLUMNA BANNER */
+    "image#categoria-banner": {
+        "props": {
+            "blockClass": "submenu-banner",
+            "src": "assets/imgs/desktop/luz-de-mar-mega-menu-3-columns.png",
+            "link": true
+        }
+    }
+}

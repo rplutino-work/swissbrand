@@ -1,0 +1,324 @@
+{
+    "drawer#estandar-01": {
+      "title": "Menu",
+      "props": {
+        "blockClass": ["mobile-menu", "secondary-tab"]
+      },
+  
+      "blocks": ["drawer-trigger#estandar-01"],
+      "children": ["menu#estandar-01"]
+    },
+  
+    "drawer-trigger#estandar-01": {
+      "title": "Titulo",
+      "children": ["rich-text#estandar-01"]
+    },
+  
+    "rich-text#estandar-01": {
+      "title": "Texto",
+      "props": {
+        "blockClass": "mobile-menu-item",
+        "text": "Street"
+      }
+    },
+  
+    "menu#estandar-01": {
+      "title": "Menu filas",
+      "props": {
+        "blockClass": "mobile-menu",
+        "orientation": "vertical"
+      },
+      "children": [
+        "disposition-layout#estandar-01-row"
+      ]
+    },
+  
+    "disposition-layout#estandar-01-row": {
+      "title": "Orden y visualización",
+      "children": [
+          "drawer#estandar-01-row-01",
+          "drawer#estandar-01-row-02",
+          "drawer#estandar-01-row-03",
+          "drawer#estandar-01-row-04",
+          "drawer#estandar-01-row-05",
+          "menu-item#estandar-01-see-all"
+      ],
+      "props": {
+          "blockClass":["categories-wrapper"],
+          "disposition": [
+              {
+                  "order": 1,
+                  "__editorItemTitle": "Fila 01"
+              },
+              {
+                  "order": 2,
+                  "__editorItemTitle": "Fila 02"
+              },
+              {
+                  "order": 3,
+                  "__editorItemTitle": "Fila 03"
+              },
+              {
+                  "order": 4,
+                  "__editorItemTitle": "Fila 04"
+              },
+              {
+                  "order": 5,
+                  "__editorItemTitle": "Fila 05"
+              },
+              {
+                "order": 6,
+                "__editorItemTitle": "Ver todo"
+              }
+          ]
+      }
+  },
+  
+  /* FILA 01 */
+  "drawer#estandar-01-row-01": {
+    "title": "Fila 01",
+    "props": {
+      "blockClass": ["mobile-menu", "secondary-tab"]
+    },
+  
+    "blocks": ["drawer-trigger#estandar-01-row-01"],
+    "children": ["menu#estandar-01-row-01"]
+  },
+  
+  "drawer-trigger#estandar-01-row-01": {
+    "title": "Titulo",
+    "children": ["rich-text#estandar-01-row-01"]
+  },
+  
+  "rich-text#estandar-01-row-01": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "mobile-menu-item",
+      "text": "Buzos y Camperas"
+    }
+  },
+  
+  "menu#estandar-01-row-01": {
+    "title": "Items menú",
+    "props": {
+      "blockClass": "mobile-menu",
+      "orientation": "vertical"
+    },
+  
+    "children": [
+      "vtex.menu@2.x:menu#menu-estandar-01-column-1",
+      "menu-item#estandar-01-column-1-see-all"
+    ]
+  },
+  
+  /* FILA 02 */
+  "drawer#estandar-01-row-02": {
+    "title": "Fila 02",
+    "props": {
+      "blockClass": ["mobile-menu", "secondary-tab"]
+    },
+  
+    "blocks": ["drawer-trigger#estandar-01-row-02"],
+    "children": ["menu#estandar-01-row-02"]
+  },
+  
+  "drawer-trigger#estandar-01-row-02": {
+    "title": "Titulo",
+    "children": ["rich-text#estandar-01-row-02"]
+  },
+  
+  "rich-text#estandar-01-row-02": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "mobile-menu-item",
+      "text": "Pantalones y Shorts"
+    }
+  },
+  
+  "menu#estandar-01-row-02": {
+    "title": "Items menú",
+    "props": {
+      "blockClass": "mobile-menu",
+      "orientation": "vertical"
+    },
+  
+    "children": [
+      "vtex.menu@2.x:menu#menu-estandar-01-column-2",
+      "menu-item#estandar-01-column-2-see-all"
+    ]
+  },
+  
+  /* FILA 03 */
+  "drawer#estandar-01-row-03": {
+    "title": "Fila 03",
+    "props": {
+      "blockClass": ["mobile-menu", "secondary-tab"]
+    },
+  
+    "blocks": ["drawer-trigger#estandar-01-row-03"],
+    "children": ["menu#estandar-01-row-03"]
+  },
+  
+  "drawer-trigger#estandar-01-row-03": {
+    "title": "Titulo",
+    "children": ["rich-text#estandar-01-row-03"]
+  },
+  
+  "rich-text#estandar-01-row-03": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "mobile-menu-item",
+      "text": "Remeras y Musculosas"
+    }
+  },
+  
+  "menu#estandar-01-row-03": {
+    "title": "Items menú",
+    "props": {
+      "blockClass": "mobile-menu",
+      "orientation": "vertical"
+    },
+  
+    "children": [
+      "vtex.menu@2.x:menu#menu-estandar-01-column-3",
+      "menu-item#estandar-01-column-3-see-all"
+    ]
+  },
+  
+  /* FILA 04 */
+  "drawer#estandar-01-row-04": {
+    "title": "Fila 04",
+    "props": {
+      "blockClass": ["mobile-menu", "secondary-tab"]
+    },
+  
+    "blocks": ["drawer-trigger#estandar-01-row-04"],
+    "children": ["menu#estandar-01-row-04"]
+  },
+  
+  "drawer-trigger#estandar-01-row-04": {
+    "title": "Titulo",
+    "children": ["rich-text#estandar-01-row-04"]
+  },
+  
+  "rich-text#estandar-01-row-04": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "mobile-menu-item",
+      "text": "Titulo"
+    }
+  },
+  
+  "menu#estandar-01-row-04": {
+    "title": "Items menú",
+    "props": {
+      "blockClass": "mobile-menu",
+      "orientation": "vertical"
+    },
+  
+    "children": [
+      "vtex.menu@2.x:menu#menu-estandar-01-column-4",
+      "menu-item#estandar-01-column-4-see-all"
+    ]
+  },
+  
+  /* FILA 05 */
+  "drawer#estandar-01-row-05": {
+    "title": "Fila 05",
+    "props": {
+      "blockClass": ["mobile-menu", "secondary-tab"]
+    },
+  
+    "blocks": ["drawer-trigger#estandar-01-row-05"],
+    "children": ["menu#estandar-01-row-05"]
+  },
+  
+  "drawer-trigger#estandar-01-row-05": {
+    "title": "Titulo",
+    "children": ["rich-text#estandar-01-row-05"]
+  },
+  
+  "rich-text#estandar-01-row-05": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "mobile-menu-item",
+      "text": "Titulo"
+    }
+  },
+  
+  "menu#estandar-01-row-05": {
+    "title": "Items menú",
+    "props": {
+      "blockClass": "mobile-menu",
+      "orientation": "vertical"
+    },
+  
+    "children": [
+      "vtex.menu@2.x:menu#menu-estandar-01-column-5",
+      "menu-item#estandar-01-column-5-see-all"
+    ]
+  },
+  
+    //ver todo
+    "menu-item#estandar-01-see-all": {
+      "props": {
+        "blockClass": ["department", "see-all"],
+        "type": "category",
+        "itemProps": {
+          "categoryId": 77,
+          "text": "Ver todo Street"
+        }
+      }
+    },
+    "menu-item#estandar-01-column-1-see-all": {
+      "props": {
+        "blockClass": ["department", "see-all"],
+        "type": "category",
+        "itemProps": {
+          "categoryId": 82,
+          "text": "Ver todo Buzos y Camperas"
+        }
+      }
+    },
+    "menu-item#estandar-01-column-2-see-all": {
+      "props": {
+        "blockClass": ["department", "see-all"],
+        "type": "category",
+        "itemProps": {
+          "categoryId": 85,
+          "text": "Ver todo Pantalones y Shorts"
+        }
+      }
+    },
+    "menu-item#estandar-01-column-3-see-all": {
+      "props": {
+        "blockClass": ["department", "see-all"],
+        "type": "category",
+        "itemProps": {
+          "categoryId": 78,
+          "text": "Ver todo Remeras y Musculosas"
+        }
+      }
+    },
+    "menu-item#estandar-01-column-4-see-all": {
+      "props": {
+        "blockClass": ["department", "see-all"],
+        "type": "category",
+        "itemProps": {
+          "categoryId": 1,
+          "text": "Ver todo"
+        }
+      }
+    },
+    "menu-item#estandar-01-column-5-see-all": {
+      "props": {
+        "blockClass": ["department", "see-all"],
+        "type": "category",
+        "itemProps": {
+          "categoryId": 1,
+          "text": "Ver todo"
+        }
+      }
+    }
+  }
+  

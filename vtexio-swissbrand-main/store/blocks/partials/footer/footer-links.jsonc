@@ -1,0 +1,401 @@
+{
+    "vtex.menu@2.x:menu#informacion": {
+        "props": {
+            "orientation": "vertical"
+        },
+
+        "children": [
+            "rich-text#informacion",
+            "menu-item#nosotros",
+            "menu-item#contactanos",
+            "menu-item#sucursales"
+        ]
+    },
+
+    "rich-text#informacion": {
+        "props": {
+            "blockClass": "footer-title",
+            "text": "#### Información"
+        }
+    },
+
+    "menu-item#sucursales": {
+        "props": {
+            "blockClass": "footer-menu-item",
+            "id": "sucursales",
+            "type": "custom",
+
+            "itemProps": {
+                "text": "Sucursales",
+                "tagTitle": "Sucursales",
+                "href": "/sucursales",
+                "type": "internal",
+                "noFollow": false
+            }
+        }
+    },
+
+    "menu-item#contactanos": {
+        "props": {
+            "blockClass": "footer-menu-item",
+            "id": "contactanos",
+            "type": "custom",
+
+            "itemProps": {
+                "text": "Contacto",
+                "tagTitle": "Contacto",
+                "href": "/contacto",
+                "type": "internal",
+                "noFollow": false
+            }
+        }
+    },
+
+    "menu-item#formas-de-pago": {
+        "props": {
+            "blockClass": "footer-menu-item",
+            "id": "formas-de-pago",
+            "type": "custom",
+
+            "itemProps": {
+                "text": "Formas de pago",
+                "tagTitle": "Formas de pago",
+                "href": "/formas-de-pago",
+                "type": "internal",
+                "noFollow": false
+            }
+        }
+    },
+
+    "menu-item#plazo-de-entrega": {
+        "props": {
+            "blockClass": "footer-menu-item",
+            "id": "plazo-de-entrega",
+            "type": "custom",
+
+            "itemProps": {
+                "text": "Plazo de entrega",
+                "tagTitle": "Plazo de entrega",
+                "href": "/plazo-de-entrega",
+                "type": "internal",
+                "noFollow": false
+            }
+        }
+    },
+
+    "menu-item#cambios-y-devoluciones": {
+        "props": {
+            "blockClass": "footer-menu-item",
+            "id": "cambios-y-devoluciones",
+            "type": "custom",
+
+            "itemProps": {
+                "text": "Cambios y devoluciones",
+                "tagTitle": "Cambios y devoluciones",
+                "href": "/cambios-y-devoluciones",
+                "type": "internal",
+                "noFollow": false
+            }
+        }
+    },
+
+    "menu-item#nosotros": {
+        "props": {
+            "blockClass": "footer-menu-item",
+            "id": "nosotros",
+            "type": "custom",
+            "itemProps": {
+                "text": "Nosotros",
+                "tagTitle": "Nosotros",
+                "href": "/nosotros",
+                "type": "internal",
+                "noFollow": false
+            }
+        }
+    },
+
+    "vtex.menu@2.x:menu#ayuda-2": {
+        "props": {
+            "orientation": "vertical"
+        },
+
+        "children": [
+            "rich-text#ayuda",
+            "menu-item#como-comprar",
+            "menu-item#preguntas-frecuentes",
+            "menu-item#envios",
+            "menu-item#cambios",
+            "menu-item#arrepentimiento"
+        ]
+    },
+
+    "rich-text#ayuda": {
+        "props": {
+            "blockClass": "footer-title",
+            "text": "#### Ayuda"
+        }
+    },
+
+    "menu-item#contacto": {
+        "props": {
+            "blockClass": "footer-menu-item",
+            "id": "contacto",
+            "type": "custom",
+
+            "itemProps": {
+                "text": "Contacto",
+                "tagTitle": "Contacto",
+                "href": "/contacto",
+                "type": "internal",
+                "noFollow": false
+            }
+        }
+    },
+
+    "menu-item#como-comprar": {
+        "props": {
+            "blockClass": "footer-menu-item",
+            "id": "como-comprar",
+            "type": "custom",
+
+            "itemProps": {
+                "text": "Cómo comprar",
+                "tagTitle": "Cómo comprar",
+                "href": "/como-comprar",
+                "type": "internal",
+                "noFollow": false
+            }
+        }
+    },
+
+    "menu-item#preguntas-frecuentes": {
+        "props": {
+            "blockClass": "footer-menu-item",
+            "id": "preguntas-frecuentes",
+            "type": "custom",
+
+            "itemProps": {
+                "text": "Preguntas frecuentes",
+                "tagTitle": "Preguntas frecuentes",
+                "href": "/preguntas-frecuentes",
+                "type": "internal",
+                "noFollow": false
+            }
+        }
+    },
+
+    "menu-item#envios": {
+        "props": {
+            "blockClass": "footer-menu-item",
+            "id": "envios",
+            "type": "custom",
+
+            "itemProps": {
+                "text": "Envíos",
+                "tagTitle": "Envíos",
+                "href": "/envios",
+                "type": "internal",
+                "noFollow": false
+            }
+        }
+    },
+
+    "menu-item#cambios": {
+        "props": {
+            "blockClass": "footer-menu-item",
+            "id": "cambios",
+            "type": "custom",
+
+            "itemProps": {
+                "text": "Cambios y devoluciones",
+                "tagTitle": "Cambios y devoluciones",
+                "href": "/cambios-y-devoluciones",
+                "type": "internal",
+                "noFollow": false
+            }
+        }
+    },
+
+    "vtex.menu@2.x:menu#mobile-footer-menu": {
+        "props": {
+            "blockClass": "mobile-footer-menu",
+            "orientation": "vertical"
+        },
+
+        "children": [
+            "menu-item#mobile-informacion",
+            "menu-item#mobile-ayuda",
+            "menu-item#mobile-cuenta",
+            "flex-layout.col#seguinos",
+            "flex-layout.col#formas-de-pago",
+            "flex-layout.col#logoscace"
+        ]
+    },
+
+    "menu-item#mobile-informacion": {
+        "props": {
+            "blockClass": "mobile-footer-menu-item",
+            "id": "mobile-informacion",
+
+            "itemProps": {
+                "tagTitle": "Información",
+                "text": "Información"
+            }
+        },
+
+        "blocks": ["vtex.menu@2.x:submenu.accordion#mobile-informacion"]
+    },
+
+    "vtex.menu@2.x:submenu.accordion#mobile-informacion": {
+        "props": {
+            "blockClass": "mobile-footer-submenu-wrapper"
+        },
+
+        "children": ["vtex.menu@2.x:menu#mobile-informacion"]
+    },
+
+    "vtex.menu@2.x:menu#mobile-informacion": {
+        "props": {
+            "blockClass": "mobile-footer-submenu",
+            "orientation": "vertical"
+        },
+
+        "children": [
+            "menu-item#nosotros",
+            "menu-item#contactanos",
+            "menu-item#sucursales"
+        ]
+    },
+
+    "menu-item#mobile-ayuda": {
+        "props": {
+            "blockClass": "mobile-footer-menu-item",
+            "id": "mobile-ayuda",
+
+            "itemProps": {
+                "tagTitle": "Ayuda",
+                "text": "Ayuda"
+            }
+        },
+
+        "blocks": ["vtex.menu@2.x:submenu.accordion#mobile-ayuda"]
+    },
+
+    "vtex.menu@2.x:submenu.accordion#mobile-ayuda": {
+        "props": {
+            "blockClass": "mobile-footer-submenu-wrapper"
+        },
+
+        "children": ["vtex.menu@2.x:menu#mobile-ayuda"]
+    },
+
+    "menu-item#mobile-cuenta": {
+        "props": {
+            "blockClass": "mobile-footer-menu-item",
+            "id": "mobile-cuenta",
+
+            "itemProps": {
+                "tagTitle": "Mi cuenta",
+                "text": "Mi cuenta"
+            }
+        },
+
+        "blocks": ["vtex.menu@2.x:submenu.accordion#mobile-cuenta"]
+    },
+
+    "vtex.menu@2.x:submenu.accordion#mobile-cuenta": {
+        "props": {
+            "blockClass": "mobile-footer-submenu-wrapper"
+        },
+
+        "children": ["vtex.menu@2.x:menu#mobile-cuenta"]
+    },
+
+    "vtex.menu@2.x:menu#mobile-cuenta": {
+        "props": {
+            "blockClass": "mobile-footer-submenu",
+            "orientation": "vertical"
+        },
+
+        "children": [
+            "menu-item#cuenta",
+            "menu-item#pedidos"
+        ]
+    },
+
+    "vtex.menu@2.x:menu#mobile-ayuda": {
+        "props": {
+            "blockClass": "mobile-footer-submenu",
+            "orientation": "vertical"
+        },
+
+        "children": [
+            "menu-item#como-comprar",
+            "menu-item#preguntas-frecuentes",
+            "menu-item#envios",
+            "menu-item#cambios",
+            "menu-item#arrepentimiento"
+        ]
+    },
+
+    "vtex.menu@2.x:menu#cuenta": {
+        "props": {
+            "orientation": "vertical"
+        },
+
+        "children": [
+            "rich-text#cuenta",
+            "menu-item#cuenta",
+            "menu-item#pedidos"
+        ]
+    },
+
+    "rich-text#cuenta": {
+        "props": {
+            "blockClass": "footer-title",
+            "text": "#### Mi cuenta"
+        }
+    },
+
+    "menu-item#cuenta": {
+        "props": {
+            "blockClass": "footer-menu-item",
+            "type": "custom",
+            "itemProps": {
+                "text": "Ingresar",
+                "tagTitle": "Ingresar",
+                "href": "/account",
+                "type": "internal",
+                "noFollow": false
+            }
+        }
+    },
+
+    "menu-item#pedidos": {
+        "props": {
+            "blockClass": "footer-menu-item",
+            "type": "custom",
+            "itemProps": {
+                "text": "Mis pedidos",
+                "tagTitle": "Mis pedidos",
+                "href": "/account#/orders",
+                "type": "internal",
+                "noFollow": false
+            }
+        }
+    },
+
+    "menu-item#arrepentimiento": {
+        "props": {
+            "blockClass": "footer-menu-item",
+            "type": "custom",
+            "itemProps": {
+                "text": "Me arrepentí",
+                "tagTitle": "Me arrepentí",
+                "href": "/arrepentimiento",
+                "type": "internal",
+                "noFollow": false
+            }
+        }
+    }
+}

@@ -1,0 +1,164 @@
+{
+  "flex-layout.row#shelf-product-badge-cyber": {
+      "props": {
+          "blockClass": ["shelf-product-badge-cyber"],
+          "colSizing": "auto",
+          "preserveLayoutOnMobile": true
+      },
+
+      "children": [
+        "vtex.product-highlights@2.x:product-highlights#cyber"
+      ]
+  },
+  "flex-layout.row#product-page-badge-cyber": {
+    "props": {
+        "blockClass": ["product-page-badge-cyber"],
+        "colSizing": "auto",
+        "preserveLayoutOnMobile": true
+    },
+
+    "children": [
+      "vtex.product-highlights@2.x:product-highlights#cyber"
+    ]
+},
+    "flex-layout.row#shelf-product-top-badges": {
+        "props": {
+            "blockClass": ["shelf-product-badges", "shelf-product-top-badges"],
+            "colSizing": "auto",
+            "preserveLayoutOnMobile": true
+        },
+
+        "children": [
+            "vtex.product-highlights@2.x:product-highlights#nuevo"
+        ]
+    },
+
+    "product-price-savings#badge": {
+        "props": {
+            "blockClass": "shelf-product",
+            "markers": ["discount"],
+            "message": "<discount>-{savingsPercentage}</discount>"
+        }
+    },
+
+    "vtex.product-highlights@2.x:product-highlights#nuevo": {
+        "props": {
+            "type": "collection",
+
+            "filter": {
+                "type": "show",
+                "highlightNames": ["Nuevo"]
+            }
+        },
+
+        "children": ["product-highlight-text#nuevo"]
+    },
+
+    "product-highlight-text#nuevo": {
+        "props": {
+            "blockClass": ["shelf-product","badge-new"],
+            "message": "{highlightName}"
+        }
+    },
+
+    "flex-layout.row#shelf-product-bottom-badges": {
+        "props": {
+            "blockClass": ["shelf-product-badges", "shelf-product-bottom-badges"],
+            "colSizing": "auto",
+            "preserveLayoutOnMobile": true
+        },
+
+        "children": ["vtex.product-highlights@2.x:product-highlights#envio-gratis", "stock-flag"]
+    },
+
+    "vtex.product-highlights@2.x:product-highlights#envio-gratis": {
+        "props": {
+            "type": "collection",
+
+            "filter": {
+                "type": "show",
+                "highlightNames": ["Envio gratis"]
+            }
+        },
+
+        "children": ["product-highlight-text#envio-gratis"]
+    },
+
+    "product-highlight-text#envio-gratis": {
+        "props": {
+            "blockClass": ["shelf-product", "free-shipping"],
+            "message": "{highlightName}"
+        }
+    },
+
+    "stock-flag": {
+        "props": {
+            "unavailableText": "Agotado"
+        }
+    },
+
+    /* CYBER */
+
+  "flex-layout.row#shelf-product-cyber": {
+    "props": {
+      "blockClass": ["shelf-product-badges", "shelf-product-cyber"],
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": true
+    },
+
+    "children": [
+      "vtex.product-highlights@2.x:product-highlights#cyber"
+    ]
+  },
+
+  "vtex.product-highlights@2.x:product-highlights#cyber": {
+    "props": {
+      "type": "collection",
+      "filter": {
+        "type": "show",
+        "highlightNames": ["CyberMonday 2023"]
+      }
+    },
+
+    "children": ["product-highlight-text#cyber"]
+  },
+
+  "product-highlight-text#cyber": {
+    "props": {
+      "blockClass": ["shelf-cyber"],
+      "message": "{highlightName}"
+    }
+  },
+
+  /* HOTSALE */
+  "flex-layout.row#shelf-product-hotsale": {
+    "props": {
+      "blockClass": ["shelf-product-badges", "shelf-product-hotsale"],
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": true
+    },
+
+    "children": [
+      "vtex.product-highlights@2.x:product-highlights#hotsale"
+    ]
+  },
+
+  "vtex.product-highlights@2.x:product-highlights#hotsale": {
+    "props": {
+      "type": "collection",
+      "filter": {
+        "type": "show",
+        "highlightNames": ["Hotsale"]
+      }
+    },
+
+    "children": ["product-highlight-text#hotsale"]
+  },
+
+  "product-highlight-text#hotsale": {
+    "props": {
+      "blockClass": ["shelf-product", "shelf-hotsale"],
+      "message": "{highlightName}"
+    }
+  }
+}

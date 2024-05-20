@@ -1,0 +1,17 @@
+{
+    "store.search#department": {
+        "props": {
+            "context": {
+                "orderByField": "OrderByReleaseDateDESC",
+                "maxItemsPerPage": 18,
+                "skusFilter": "ALL_AVAILABLE",
+                "simulationBehavior": "default"
+                //"__unstableProductOriginVtex": true
+            }
+        },
+
+        "blocks": [
+            "search-result-layout"
+        ]
+    }
+}

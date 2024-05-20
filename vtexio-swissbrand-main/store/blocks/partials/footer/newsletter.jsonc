@@ -1,0 +1,116 @@
+{
+    "flex-layout.row#newsletter-form": {
+        "title": "Formulario",
+        "children": ["form#newsletter-form"],
+        "props": {
+          "blockClass": ["newsletter-form-wrapper"]
+        }
+      },
+      "form#newsletter-form": {
+        "title": "Configuraciones",
+        "props": {
+          "entity": "NW",
+          "schema": "Newsletter",
+          "blockClass": "form-contact"
+        },
+        "blocks": [
+          "form-success#newsletter"
+        ],
+        "children": [
+            "flex-layout.row#form-container"
+        ]
+      },
+      "flex-layout.row#form-container": {
+        "title": "Campos formulario",
+        "children": [
+            "rich-text#form-newsletter-title", 
+            "flex-layout.row#form-newsletter-input"
+            //"rich-text#form-newsletter-text"
+        ],
+        "props": {
+          "blockClass": ["form-container"],
+          "colSizing": "auto"
+        }
+      },
+      "flex-layout.row#form-newsletter-input": {
+        "title": "Input y submit",
+        "children": [
+            "form-input.text#form-newsletter-origin",
+            "form-input.text#form-newsletter-name",
+            "form-input.text#form-newsletter-email",
+            "form-submit#form-newsletter"
+        ],
+        "props": {
+          "blockClass": ["form-newsletter-input"],
+          "colSizing": "auto"
+        }
+      },
+      "form-success#newsletter": {
+        "title": "Gracias",
+        "children": [
+            "logo#newsletter-success-logo",
+            "rich-text#success-submit-newsletter"
+        ]
+      },
+      "logo#newsletter-success-logo": {
+        "props": {
+            "blockClass": "newsletter-success-logo",
+            "href": "/",
+            "title": "Kappa Logo",
+            "url": "assets/svgs/footer-logo.svg"
+        }
+    },
+      "form-input.text#form-newsletter-origin": {
+        "props": {
+          "pointer": "#/properties/origen",
+          "inputType": "hidden",
+          "value": "newsletter"
+        }
+      },
+      "rich-text#success-submit-newsletter": {
+        "title": "Texto",
+        "props": {
+          "blockClass":["form-success","popup-title","form-success-newsletter"],
+          "textAlignment": "CENTER",
+          "text": "Gracias por susribirte a Kappa Store. Pronto comenzaras a recibir las novedades."
+        }
+      },
+      "form-input.text#form-newsletter-name": {
+        "title": "Nombre",
+        "props": {
+          "blockClass": "input-form",
+          "placeholder": "Nombre",
+          "pointer": "#/properties/nombre"
+        }
+      },
+      "form-input.text#form-newsletter-email": {
+        "title": "E-mail",
+          "props": {
+            "blockClass": "input-form",
+            "placeholder": "Email",
+            "pointer": "#/properties/email"
+          }
+        },
+        "rich-text#form-newsletter-text": {
+          "title": "Texto legal",
+          "props": {
+            "blockClass": ["form-newsletter-text"],
+            "text": "Con el registro acepetas suscribirte para recibir correos electrónicos de Kappa, con ofertas exclusivas e información sobre productos más recientes. Vea nuestra política de privacidad para obtener más información."
+          }
+        },
+        "rich-text#form-newsletter-title": {
+            "title": "Titulo",
+            "props": {
+              "blockClass": ["form-newsletter-title"],
+              "text": "# REGISTRATE AL KAPPA CLUB\ny recibí toda la novedades y descuentos esclusivos",
+              "textAlignment": "CENTER"
+            }
+          },
+        "form-submit#form-newsletter": {
+          "title": "Botón",
+          "props": {
+            "blockClass": "form-newsletter-submit",
+            "label": "Registrarme"
+          }
+        }
+}

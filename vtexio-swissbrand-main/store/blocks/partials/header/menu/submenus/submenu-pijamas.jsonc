@@ -1,0 +1,294 @@
+{
+    "vtex.menu@2.x:submenu#pijamas": {
+        "props": {
+            "blockClass": "submenu"
+        },
+
+        "children": ["image#pijamas-banner","flex-layout.row#pijamas"]
+    },
+
+    "flex-layout.row#pijamas": {
+        "props": {
+            "blockClass": "categories-wrapper",
+            "colSizing": "auto",
+            "colGap": 9
+        },
+
+        "children": [
+            "vtex.menu@2.x:menu#pijamas-column-1",
+            "vtex.menu@2.x:menu#pijamas-column-2",
+            "vtex.menu@2.x:menu#pijamas-column-3"
+            //"vtex.menu@2.x:menu#pijamas-column-4"
+        ]
+    },
+
+    /* COLUMNA 1 */
+    "vtex.menu@2.x:menu#pijamas-column-1": {
+        "props": {
+            "blockClass": "categories"
+        },
+
+        "children": [
+          "menu-item#sub-pijamas-column-1",
+          "vtex.menu@2.x:menu#submenu-pijamas-column-1"
+        ]
+    },
+
+    "menu-item#sub-pijamas-column-1": {
+      "props": {
+          "blockClass": "category",
+          "id": "pijamas-column-1",
+          "type": "custom",
+          "itemProps": {
+                "href": "/pijamas/remeras-y-musculosas",
+                "text": "Remeras y musculosas",
+                "tagTitle": "Remeras y musculosas",
+                "type": "internal",
+                "noFollow": false
+          }
+      }
+    },
+
+    "vtex.menu@2.x:menu#submenu-pijamas-column-1": {
+        "props": {
+          "blockClass": "categories",
+          "items": [
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/pijamas/remeras-y-musculosas/manga-larga",
+                    "text": "Manga larga",
+                    "tagTitle": "Manga larga",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            }/*,
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/pijamas/remeras-y-musculosas/musculosa",
+                    "text": "Musculosa",
+                    "tagTitle": "Musculosa",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            },
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/pijamas/remeras-y-musculosas/manga-corta",
+                    "text": "Manga corta",
+                    "tagTitle": "Manga corta",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            },
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/pijamas/remeras-y-musculosas/buzo",
+                    "text": "Buzo",
+                    "tagTitle": "buzo",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            }*/
+          ]
+        }
+    },
+
+    /* COLUMNA 2 */
+    "vtex.menu@2.x:menu#pijamas-column-2": {
+        "props": {
+            "blockClass": "categories"
+        },
+
+        "children": [
+          "menu-item#sub-pijamas-column-2",
+          "vtex.menu@2.x:menu#submenu-pijamas-column-2"
+        ]
+    },
+
+    "menu-item#sub-pijamas-column-2": {
+      "props": {
+          "blockClass": "category",
+          "id": "pijamas-column-1",
+          "type": "custom",
+          "itemProps": {
+                "href": "/pijamas/pantalones-y-shorts",
+                "text": "Pantalones y Shorts",
+                "tagTitle": "Pantalones y Shorts",
+                "type": "internal",
+                "noFollow": false
+          }
+      }
+    },
+
+    "vtex.menu@2.x:menu#submenu-pijamas-column-2": {
+        "props": {
+          "blockClass": "categories",
+          "items": [
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/pijamas/pantalones-y-shorts/short",
+                    "text": "Short",
+                    "tagTitle": "Short",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            },
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/pijamas/pantalones-y-shorts/pantalon",
+                    "text": "Pantalón",
+                    "tagTitle": "Pantalón",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            }
+          ]
+        }
+    },
+
+    /* COLUMNA 3 */
+    "vtex.menu@2.x:menu#pijamas-column-3": {
+        "props": {
+            "blockClass": "categories"
+        },
+
+        "children": [
+          "menu-item#sub-pijamas-column-3",
+          "vtex.menu@2.x:menu#submenu-pijamas-column-3"
+        ]
+    },
+
+    "menu-item#sub-pijamas-column-3": {
+      "props": {
+          "blockClass": "category",
+          "id": "pijamas-column-3",
+          "type": "custom",
+          "itemProps": {
+                "href": "/pijamas/camisones",
+                "text": "Camisones",
+                "tagTitle": "Camisones",
+                "type": "internal",
+                "noFollow": false
+          }
+      }
+    },
+
+    "vtex.menu@2.x:menu#submenu-pijamas-column-3": {
+        "props": {
+          "blockClass": "categories",
+          "items": [
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/pijamas/camisones/manga-corta",
+                    "text": "Manga corta",
+                    "tagTitle": "Manga corta",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            }/*,
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/pijamas/camisones/musculosa",
+                    "text": "Musculosa",
+                    "tagTitle": "Musculosa",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            },
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/pijamas/camisones/manga-larga",
+                    "text": "Manga larga",
+                    "tagTitle": "Manga larga",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            },
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/pijamas/camisones/mono",
+                    "text": "Mono",
+                    "tagTitle": "Mono",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            }*/
+          ]
+        }
+    },
+
+    /* COLUMNA 4 */
+    "vtex.menu@2.x:menu#pijamas-column-4": {
+        "props": {
+            "blockClass": "categories"
+        },
+
+        "children": [
+          "menu-item#sub-pijamas-column-4",
+          "vtex.menu@2.x:menu#submenu-pijamas-column-4"
+        ]
+    },
+
+    "menu-item#sub-pijamas-column-4": {
+      "props": {
+          "blockClass": "category",
+          "id": "pijamas-column-1",
+          "type": "custom",
+          "itemProps": {
+                "href": "/pijamas/batas",
+                "text": "Batas",
+                "tagTitle": "Batas",
+                "type": "internal",
+                "noFollow": false
+          }
+      }
+    },
+
+    "vtex.menu@2.x:menu#submenu-pijamas-column-4": {
+        "props": {
+          "blockClass": "categories",
+          "items": [
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/pijamas/batas/bata",
+                    "text": "Bata",
+                    "tagTitle": "Bata",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            }
+          ]
+        }
+    },
+
+    /* COLUMNA BANNER */
+    "image#pijamas-banner": {
+        "props": {
+            "blockClass": "submenu-banner",
+            "src": "assets/imgs/desktop/luz-de-mar-mega-menu-4-columns.png",
+            "link": true
+        }
+    }
+}

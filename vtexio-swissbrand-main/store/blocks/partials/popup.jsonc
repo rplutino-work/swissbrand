@@ -1,0 +1,171 @@
+{
+    "modal-layout#popup": {
+        "title": "Contenido",
+        "props": {
+            "blockClass": "popup-home"
+        },
+        "children": [
+            "modal-header#popup",
+            "responsive-layout.desktop#popup-image",
+            "responsive-layout.mobile#popup-image",
+            "flex-layout.row#popup"
+        ]
+    },
+    "flex-layout.row#popup": {
+        "title": "Titulo y formulario",
+        "props": {
+            "blockClass": [
+                "popup-form-wrapper"
+            ],
+            "colSizing": "auto"
+        },
+        "children": [
+            "form#newsletter-popup"
+        ]
+    },
+    "modal-header#popup": {
+        "props": {
+            "blockClass": "close-popup",
+            "showCloseButton": true,
+            "iconCloseSize": 32
+        },
+        "title": "Cruz"
+    },
+    
+    "flex-layout.row#popup-title": {
+        "props": {
+            "blockClass": "popup-title-wrapper",
+            "colSizing": "auto"
+        },
+        "title": "Titulo Popup",
+        "children": [
+            "rich-text#popup-title",
+            "rich-text#popup-subtitle"
+        ]
+    },
+    "rich-text#popup-title": {
+        "props": {
+            "text": "Lorem Ipsum example",
+            "blockClass": "popup-title",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        },
+        "title": "Titulo"
+    },
+    "rich-text#popup-subtitle": {
+        "props": {
+            "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "blockClass": "popup-subtitle",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        },
+        "title": "Subtitulo"
+    },
+    "responsive-layout.desktop#popup-image": {
+        "title": "Imagen desktop",
+        "children": [
+            "image#popup-image-desktop"
+        ]
+    },
+    "responsive-layout.mobile#popup-image": {
+        "title": "Imagen mobile",
+        "children": [
+            "image#popup-image-mobile"
+        ]
+    },
+    "image#popup-image-mobile": {
+        "title": "Imagen",
+        "props": {
+            "src": "https://placehold.jp/576x400.png",
+            "alt": "Novedades Luz de Mar",
+            "blockClass": "popup-image"
+        }
+    },
+    "image#popup-image-desktop": {
+        "title": "Imagen",
+        "props": {
+            "src": "https://placehold.jp/333x391.png",
+            "alt": "Novedades Luz de Mar",
+            "blockClass": "popup-image"
+        }
+    },
+    "form#newsletter-popup": {
+        "title": "Formulario",
+        "props": { 
+            "blockClass": ["popup","popup-newsletter"],
+            "entity": "NW",
+            "schema": "Newsletter"
+        },
+        "children": [
+            "flex-layout.row#popup-title",
+            "flex-layout.row#popup-newsletter-form-input"
+        ],
+        "blocks": [
+            "form-success#popup-newsletter-form-success"
+        ]
+    },
+    "form-success#popup-newsletter-form-success": {
+        "title": "Texto Gracias",
+        "children": [
+            "rich-text#popup-newsletter-form-success"
+        ]
+    },
+    "flex-layout.row#popup-newsletter-form-input": {
+        "title": "Campos Newsletter",
+        "props": {
+            "blockClass": [
+                "popup-newsletter",
+                "popup-newsletter"
+            ],
+            "colSizing": "auto"
+        },
+        "children": [
+            "form-input.text#popup-newsletter-origin",
+            "form-input.text#popup-newsletter-name",
+            "form-input.text#popup-newsletter-email",
+            "form-field-group#popup-newsletter-interest",
+            "form-submit#popup-newsletter-submit"
+        ]
+    },
+    "form-input.text#popup-newsletter-origin": {
+        "props": {
+            "pointer": "#/properties/origen",
+            "inputType": "hidden",
+            "value": "Popup newsletter"
+        }
+    },
+    "rich-text#popup-newsletter-form-success": {
+        "title": "Texto",
+        "props": {
+            "blockClass": "popup-newsletter-form-success",
+            "text": "¡Muchas gracias por suscribirte!\n\nMuy pronto vas a comenzar a recibir nuestras novedades",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "form-input.text#popup-newsletter-name": {
+        "props": {
+            "pointer": "#/properties/nombre",
+            "placeholder": "Nombre"
+        }
+    },
+    "form-input.text#popup-newsletter-email": {
+        "props": {
+            "pointer": "#/properties/email",
+            "placeholder": "Email"
+        }
+    },
+    "form-field-group#popup-newsletter-interest": {
+        "props": {
+            "pointer": "#/properties/interes"
+        }
+    },
+    "form-submit#popup-newsletter-submit": {
+        "props": {
+            "blockClass": [
+                "popup-newsletter-submit"
+            ],
+            "label": "Registrarme"
+        }
+    }
+}

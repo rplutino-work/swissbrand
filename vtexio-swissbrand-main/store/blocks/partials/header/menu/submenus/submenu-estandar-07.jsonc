@@ -1,0 +1,254 @@
+{
+  "vtex.menu@2.x:submenu#estandar-menu-07": {
+    "title": "Configuraciones Menu",
+    "children": ["flex-layout.row#menu-estandar-07"],
+    "props": {
+      "blockClass": "submenu"
+    }
+  },
+
+  "flex-layout.row#menu-estandar-07": {
+    "title": "Menu columnas",
+  "props": {
+    "blockClass": "categories-wrapper",
+    "colSizing": "auto",
+    "colGap": 3
+  },
+  "children": [
+    "disposition-layout#menu-estandar-07-column"
+  ]
+},
+
+"disposition-layout#menu-estandar-07-column": {
+    "title": "Orden y visualización",
+    "children": [
+      "image#estandar-07",
+      "vtex.menu@2.x:menu#estandar-07-column-1",
+      "vtex.menu@2.x:menu#estandar-07-column-2",
+      "vtex.menu@2.x:menu#estandar-07-column-3",
+      "vtex.menu@2.x:menu#estandar-07-column-4",
+      "vtex.menu@2.x:menu#estandar-07-column-5"
+    ],
+    "props": {
+        "blockClass":["categories-wrapper"],
+        "disposition": [
+            {
+                "order": 1,
+                "__editorItemTitle": "Imagen"
+            },
+            {
+                "order": 2,
+                "__editorItemTitle": "Columna"
+            },
+            {
+                "order": 3,
+                "__editorItemTitle": "Columna"
+            },
+            {
+                "order": 4,
+                "__editorItemTitle": "Columna"
+            },
+            {
+                "order": 5,
+                "__editorItemTitle": "Columna"
+            },
+            {
+                "order": 6,
+                "__editorItemTitle": "Columna"
+            }
+        ]
+    }
+},
+
+
+  /* COLUMN 1 */
+  "vtex.menu@2.x:menu#estandar-07-column-1": {
+    "title": "Columna 01",
+    "props": {
+      "blockClass": "categories"
+    },
+    "children": [
+      "menu-item#estandar-07-column-1",
+      "vtex.menu@2.x:menu#menu-estandar-07-column-1"
+    ]
+  },
+  "vtex.menu@2.x:menu#menu-estandar-07-column-1": {
+    "title": "Items menú",
+    "props": {
+      "blockClass": "categories",
+      "items": [
+        {
+          "type": "category",
+          "itemProps": {
+            "categoryId": 108
+          }
+        }
+      ]
+    }
+  },
+  "menu-item#estandar-07-column-1": {
+    "title": "Titulo & Link",
+    "props": {
+      "blockClass": "category",
+      "type": "category",
+      "itemProps": {
+        "categoryId": 106
+      }
+    }
+  },
+
+  /* COLUMN 2 */
+  "vtex.menu@2.x:menu#estandar-07-column-2": {
+    "title": "Columna 02",
+    "props": {
+      "blockClass": "categories"
+    },
+    "children": [
+      "menu-item#estandar-07-column-2",
+      "vtex.menu@2.x:menu#menu-estandar-07-column-2"
+    ]
+  },
+  "vtex.menu@2.x:menu#menu-estandar-07-column-2": {
+    "title": "Items menú",
+    "props": {
+      "blockClass": "categories",
+      "items": [
+        
+      ]
+    }
+  },
+  "menu-item#estandar-07-column-2": {
+    "title": "Titulo & Link",
+    "props": {
+      "blockClass": "category",
+      "type": "category",
+      "itemProps": {
+        "categoryId": 113
+      }
+    }
+  },
+
+  /* COLUMN 3 */
+  "vtex.menu@2.x:menu#estandar-07-column-3": {
+    "title": "Columna 03",
+    "props": {
+      "blockClass": "categories"
+    },
+    "children": [
+      "menu-item#estandar-07-column-3",
+      "vtex.menu@2.x:menu#menu-estandar-07-column-3"
+    ]
+  },
+  "vtex.menu@2.x:menu#menu-estandar-07-column-3": {
+    "title": "Items menú",
+    "props": {
+      "blockClass": "categories",
+      "items": [
+        {
+          "type": "category",
+          "itemProps": {
+            "categoryId": 112
+          }
+        }
+      ]
+    }
+  },
+  "menu-item#estandar-07-column-3": {
+    "title": "Titulo & Link",
+    "props": {
+      "blockClass": "category",
+      "type": "category",
+      "itemProps": {
+        "categoryId": 110
+      }
+    }
+  },
+
+  /* COLUMN 4 */
+  "vtex.menu@2.x:menu#estandar-07-column-4": {
+    "title": "Columna 04",
+    "props": {
+      "blockClass": "categories"
+    },
+    "children": [
+      "menu-item#estandar-07-column-4",
+      "vtex.menu@2.x:menu#menu-estandar-07-column-4"
+    ]
+  },
+  "vtex.menu@2.x:menu#menu-estandar-07-column-4": {
+    "title": "Items menú",
+    "props": {
+      "blockClass": "categories",
+      "items": [
+        {
+          "type": "category",
+          "itemProps": {
+            "categoryId": 21
+          }
+        },
+        {
+          "type": "category",
+          "itemProps": {
+            "categoryId": 22
+          }
+        }
+      ]
+    }
+  },
+  "menu-item#estandar-07-column-4": {
+    "title": "Titulo & Link",
+    "props": {
+      "blockClass": "category",
+      "type": "category",
+      "itemProps": {
+        "categoryId": 20
+      }
+    }
+  },
+
+  /* COLUMN 5 */
+  "vtex.menu@2.x:menu#estandar-07-column-5": {
+    "title": "Columna 05",
+    "props": {
+      "blockClass": "categories"
+    },
+    "children": [
+      "menu-item#estandar-07-column-5",
+      "vtex.menu@2.x:menu#menu-estandar-07-column-5"
+    ]
+  },
+  "vtex.menu@2.x:menu#menu-estandar-07-column-5": {
+    "title": "Items menú",
+    "props": {
+      "blockClass": "categories",
+      "items": [
+        {
+          "type": "category",
+          "itemProps": {
+            "categoryId": 1
+          }
+        }
+      ]
+    }
+  },
+  "menu-item#estandar-07-column-5": {
+    "title": "Titulo & Link",
+    "props": {
+      "blockClass": "category",
+      "type": "category",
+      "itemProps": {
+        "categoryId": 1
+      }
+    }
+  },
+
+  /* COLUMNA BANNER */
+  "image#estandar-07": {
+    "title": "Imagen",
+      "props": {
+          "blockClass": "submenu-banner",
+          "src": "assets/imgs/desktop/luz-de-mar-mega-menu-4-columns.png"
+          
+      }
+  }
+}

@@ -1,0 +1,125 @@
+{
+    "store.custom#contacto": {
+        "blocks": ["flex-layout.row#breadcrumb", "flex-layout.row#contacto-form"]
+    },
+
+    "flex-layout.row#contacto-form": {
+        "props": {
+          "blockClass": "form-wrapper"
+        },
+        "children": [
+          "flex-layout.col#contacto-form"
+        ]
+      },
+      "flex-layout.col#contacto-form": {
+        "children": [
+          "form#contacto-form"
+        ]
+      },
+      "rich-text#form-title": {
+        "props": {
+          "blockClass": "form-title",
+          "text": "# Contacto",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER"
+        }
+      },
+      "rich-text#form-text": {
+          "props": {
+            "blockClass": "form-text",
+            "text": "Para contactarte con el equipo de Luz de Mar, te pedimos que completes el siguiente formulario con tu consulta y tus datos para poder contactarte.\n\nEn caso de querer cancelar una compra ya realizada, te pedimos que completes la siguiente [página de arrepentimiento](/arrepentimiento)"
+          }
+        },
+      "form#contacto-form": {
+        "props": {
+          "entity": "CO",
+          "schema": "Contacto",
+          "blockClass": "form-contact"
+        },
+        "blocks": [
+          "form-success#contact-us"
+        ],
+        "children": [
+          "rich-text#form-title",
+          "rich-text#form-text",
+          "form-input.text#name",
+          "form-input.text#apellido",
+          "form-input.text#email",
+          "form-input.text#phone",
+          "form-field-group#contacto-motivo",
+          "form-field-group#compro",
+          "form-input.text#pedido",
+          "form-input.textarea#textarea",
+          "form-submit#contact"
+        ]
+      },
+      "form-success#contact-us": {
+        "children": [
+          "rich-text#success-submit-contacto"
+        ]
+      },
+      "rich-text#success-submit-contacto": {
+        "props": {
+          "blockClass":["form-success"],
+          "text": "Gracias por contactarte con Luz de Mar. Te estaremos respondiendo tu consulta al email ingresado."
+        }
+      },
+      "form-input.text#name": {
+        "props": {
+          "blockClass": "input-form",
+          "placeholder": "Nombre",
+          "pointer": "#/properties/nombre"
+        }
+      },
+      "form-input.text#apellido": {
+          "props": {
+            "blockClass": "input-form",
+            "placeholder": "Apellido",
+            "pointer": "#/properties/apellido"
+          }
+        },
+      "form-input.text#email": {
+          "props": {
+            "blockClass": "input-form",
+            "placeholder": "Email",
+            "pointer": "#/properties/email"
+          }
+        },
+      "form-input.text#phone": {
+          "props": {
+              "blockClass": "input-form",
+              "placeholder": "Teléfono",
+              "pointer": "#/properties/telefono"
+          }
+        },
+        "form-field-group#contacto-motivo": {
+          "props": {
+            "pointer": "#/properties/motivo"
+          }
+        },
+        "form-field-group#compro": {
+          "props": {
+            "pointer": "#/properties/compro"
+          }
+        },
+        "form-input.text#pedido": {
+          "props": {
+            "blockClass": "input-form",
+            "placeholder": "N° de pedido",
+            "pointer": "#/properties/pedido"
+          }
+        },
+      "form-input.textarea#textarea": {
+          "props": {
+              "blockClass": "input-form",
+              "placeholder": "Mensaje",
+            "pointer": "#/properties/mensaje"
+          }
+        },
+      "form-submit#contact": {
+        "props": {
+          "blockClass": "form-submit",
+          "label": "Enviar"
+        }
+      }
+}

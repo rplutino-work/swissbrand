@@ -1,0 +1,113 @@
+/* Shelf */
+
+.savings-discount--shelf-product {
+    display: block;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #0093CC;
+    line-height: 14px;
+}
+
+.listPrice--shelf-product {
+    display: block;
+    text-align: left;
+    line-height: 14px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #BEBEBE;
+}
+
+.sellingPrice--shelf-product {
+    display: block;
+    text-align: left;
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #434343;
+    padding: 0 10px;
+}
+
+:global(.vtex-product-summary-2-x-element--complete-look) .sellingPrice--shelf-product {
+    font-size: 20px;
+    line-height: 28px;
+    padding: 0;
+}
+
+.installments--shelf-product {
+    display: block;
+    line-height: 15px;
+    margin-top: 4px;
+    font-size: 14px;
+    letter-spacing: -.2px;
+    color: #434343;
+    text-align: left;
+}
+
+:global(.vtex-product-summary-2-x-element--complete-look) .installments--shelf-product {
+    margin: 0;
+}
+
+@media only screen and (max-width: 1025px) {
+    .installments--shelf-product {
+        font-size: 12px;
+        margin-top: 0;
+    }
+}
+
+/**/
+
+/* Product */
+
+.savings-discount--product-badge {
+    display: block;
+    box-sizing: border-box;
+    font-size: 18px;
+    line-height: normal;
+    font-weight: 600;
+    color: #0093CC;
+}
+
+.listPrice--product,
+.sellingPrice--product {
+    margin-right: 10px;
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.listPrice--product {
+    color: #bebebe;
+}
+
+.sellingPrice--product {
+    color: #434343;
+    font-size: 26px;
+    line-height: 28px;
+    font-weight: 600;
+}
+
+.savings--product {
+    line-height: 12px;
+    font-size: 10px;
+    font-weight: 500;
+    color: #006f52;
+}
+
+.installments--product {
+    display: block;
+    margin: 4px 0 8px;
+    line-height: 12px;
+    font-size: 14px;
+    color: #434343;
+}
+
+:global(.vtex-product-summary-2-x-element--complete-look) .listPrice--shelf-product,
+:global(.vtex-product-summary-2-x-element--complete-look) .savings-discount--shelf-product {
+    font-size: 11px;
+    line-height: normal;
+}
+
+:global(.vtex-product-summary-2-x-element--complete-look)  .currencyContainer--shelf-product {
+    margin-right: 5px;
+}

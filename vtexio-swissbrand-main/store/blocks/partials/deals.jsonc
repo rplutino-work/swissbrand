@@ -1,0 +1,92 @@
+{
+    "flex-layout.row#deals": {
+      "children": ["slider-layout"],
+      "props": {
+        "blockClass":  ["store-container", "deals"]
+      },
+      "title": "Info"
+    },
+    "slider-layout": {
+      "props": {
+        "itemsPerPage": {
+          "desktop": 3,
+          "tablet": 3,
+          "mobile": 1
+        },
+        "infinite": true,
+        "showNavigationArrows": "mobileOnly",
+        "showPaginationDots": "never",
+        "blockClass": "deals-carousel"
+      },
+      "title": "Configuraciones",
+      "children": [
+        "flex-layout.col#deals1",
+        "flex-layout.col#deals2",
+        "flex-layout.col#deals3"
+      ]
+    },
+  
+    "flex-layout.col#deals1": {
+      "children": ["image#deal1", "rich-text#deal1"],
+      "props": {
+        "blockClass": "deals-col"
+      },
+      "title": "Comunicación 1"
+    },
+    "image#deal1": {
+      "props": {
+        "src": "assets/svgs/luz-de-mar-icon-card.svg"
+      },
+      "title": "Icono"
+    },
+    "rich-text#deal1": {
+      "props": {
+        "text": "[Lorem Ipsum Dolor Sit Amet,<br>Consetetur](#)",
+        "blockClass": "deals",
+        "textAlignment": "LEFT"
+      },
+      "title": "Texto"
+    },
+    "flex-layout.col#deals2": {
+      "children": ["image#deal2", "rich-text#deal2"],
+      "props": {
+        "blockClass": ["deals-col","deals-center"]
+      },
+      "title": "Comunicación 2"
+    },
+    "image#deal2": {
+      "props": {
+        "src": "assets/svgs/luz-de-mar-icon-pickup.svg"
+      },
+      "title": "Icono"
+    },
+    "rich-text#deal2": {
+      "props": {
+        "text": "[Lorem Ipsum Dolor Sit Amet,<br>Consetetur](#)",
+        "blockClass": "deals",
+        "textAlignment": "LEFT"
+      },
+      "title": "Texto"
+    },
+    "flex-layout.col#deals3": {
+      "children": ["image#deal3", "rich-text#deal3"],
+      "props": {
+        "blockClass": "deals-col"
+      },
+      "title": "Comunicación 3"
+    },
+    "image#deal3": {
+      "props": {
+        "src": "assets/svgs/luz-de-mar-icon-shipping.svg"
+      },
+      "title": "Icono"
+    },
+    "rich-text#deal3": {
+      "props": {
+        "text": "[Lorem Ipsum Dolor Sit Amet,<br>Consetetur](#)",
+        "blockClass": "deals",
+        "textAlignment": "LEFT"
+      },
+      "title": "Texto"
+    }
+  }

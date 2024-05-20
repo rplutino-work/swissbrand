@@ -1,0 +1,68 @@
+.barContainer {
+    background: #00a650 !important;
+    border-radius: 0 !important;
+    height: 7px !important;
+}
+.sliderContainer {
+    border-radius: 0 !important;
+    height: 9px !important;
+    background: #d5d5d5 !important;
+    border: 1px solid #d5d5d5 !important;
+    margin: 8px 0 !important;
+}
+.sliderText {
+    margin-top: 0 !important;
+    margin-bottom: 6px !important;
+}
+.freigthScaleContainer {
+    padding: 10px 25px 0 25px !important;
+    box-shadow: none !important;
+    border-top: 1px solid #333 !important;
+}
+.text1 {
+    text-align: center !important;
+    font-size: 0 !important;
+    font-weight: 600 !important;
+}
+.text2 {
+    color: #00a650 !important;
+    font-size: 0 !important;
+    margin-left: 4px !important;
+    font-weight: bold !important;
+    text-transform: lowercase !important;
+}
+.text3 {
+    font-size: 0px !important;
+    font-weight: 500 !important;
+}
+.text2::after {
+    content: 'Envio gratis!' !important;
+    font-size: 12px !important;
+}
+.text1::before {
+    content: '¡Agregá productos para tener' !important;
+    font-size: 12px;
+}
+.text3::before {
+    content: 'Te faltan  ' !important;
+    font-size: 13px !important;
+}
+.text4 {
+    color: #00a650 !important;
+    margin: 0 0 10px 0 !important;
+    font-size: 0 !important;
+}
+.text4::after {
+    content: '¡Ya tenés el envío gratis!' !important;
+    font-size: 15px;
+}
+@media(min-width: 1025px){
+    .text2::after {
+        content: 'Envio gratis!' !important;
+        font-size: 12px !important;
+    }
+    .text1::before {
+        content: '¡Agregá productos para tener' !important;
+        font-size: 12px !important;
+    }    
+}

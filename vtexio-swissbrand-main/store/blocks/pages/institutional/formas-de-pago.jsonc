@@ -1,0 +1,22 @@
+{
+    "store.custom#formas-de-pago": {
+        "blocks": ["flex-layout.row#breadcrumb", "flex-layout.row#formas-de-pago"]
+    },
+
+    "flex-layout.row#formas-de-pago": {
+        "props": {
+            "blockClass": "institutional-wrapper",
+            "colSizing": "auto"
+        },
+
+        "children": ["rich-text#formas-de-pago-content"]
+    },
+
+    "rich-text#formas-de-pago-content": {
+        "props": {
+            "blockClass": "institutional-content",
+            "text": "# Medios de pago \n\n Podés pagar tu compra a través de la plataforma Decidir con: Tarjeta de crédito.",
+            "width": "grow"
+        }
+    }
+}

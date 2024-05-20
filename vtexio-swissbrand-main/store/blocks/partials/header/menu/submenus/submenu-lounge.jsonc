@@ -1,0 +1,214 @@
+{
+    "vtex.menu@2.x:submenu#lounge": {
+        "props": {
+            "blockClass": "submenu"
+        },
+
+        "children": ["image#lounge-banner","flex-layout.row#lounge"]
+    },
+
+    "flex-layout.row#lounge": {
+        "props": {
+            "blockClass": "categories-wrapper",
+            "colSizing": "auto",
+            "colGap": 9
+        },
+
+        "children": [
+            "vtex.menu@2.x:menu#lounge-column-1",
+            "vtex.menu@2.x:menu#lounge-column-2",
+            "vtex.menu@2.x:menu#lounge-column-3"
+        ]
+    },
+
+    /* COLUMNA 1 */
+    "vtex.menu@2.x:menu#lounge-column-1": {
+        "props": {
+            "blockClass": "categories"
+        },
+
+        "children": [
+          "menu-item#sub-lounge-column-1",
+          "vtex.menu@2.x:menu#submenu-lounge-column-1"
+        ]
+    },
+
+    "menu-item#sub-lounge-column-1": {
+      "props": {
+          "blockClass": "category",
+          "id": "lounge-column-1",
+          "type": "custom",
+          "itemProps": {
+                "href": "/lounge/remeras-y-musculosas",
+                "text": "Remeras y musculosas",
+                "tagTitle": "Remeras y musculosas",
+                "type": "internal",
+                "noFollow": false
+          }
+      }
+    },
+
+    "vtex.menu@2.x:menu#submenu-lounge-column-1": {
+        "props": {
+          "blockClass": "categories",
+          "items": [
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/lounge/remeras-y-musculosas/musculosa",
+                    "text": "Musculosa",
+                    "tagTitle": "Musculosa",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            },
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/lounge/remeras-y-musculosas/manga-corta",
+                    "text": "Manga corta",
+                    "tagTitle": "Manga corta",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            },
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/lounge/remeras-y-musculosas/manga-larga",
+                    "text": "Manga larga",
+                    "tagTitle": "Manga larga",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            }
+          ]
+        }
+    },
+
+    /* COLUMNA 2 */
+    "vtex.menu@2.x:menu#lounge-column-2": {
+        "props": {
+            "blockClass": "categories"
+        },
+
+        "children": [
+          "menu-item#sub-lounge-column-2",
+          "vtex.menu@2.x:menu#submenu-lounge-column-2"
+        ]
+    },
+
+    "menu-item#sub-lounge-column-2": {
+      "props": {
+          "blockClass": "category",
+          "id": "lounge-column-2",
+          "type": "custom",
+          "itemProps": {
+                "href": "/lounge/buzos-y-camperas",
+                "text": "Buzos y camperas",
+                "tagTitle": "Buzos y camperas",
+                "type": "internal",
+                "noFollow": false
+          }
+      }
+    },
+
+    "vtex.menu@2.x:menu#submenu-lounge-column-2": {
+        "props": {
+          "blockClass": "categories",
+          "items": [
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/lounge/buzos-y-camperas/buzo",
+                    "text": "Buzo",
+                    "tagTitle": "Buzo",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            },
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/lounge/buzos-y-camperas/campera",
+                    "text": "Campera",
+                    "tagTitle": "Campera",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            }
+          ]
+        }
+    },
+
+    /* COLUMNA 3 */
+    "vtex.menu@2.x:menu#lounge-column-3": {
+        "props": {
+            "blockClass": "categories"
+        },
+
+        "children": [
+          "menu-item#sub-lounge-column-3",
+          "vtex.menu@2.x:menu#submenu-lounge-column-3"
+        ]
+    },
+
+    "menu-item#sub-lounge-column-3": {
+      "props": {
+          "blockClass": "category",
+          "id": "lounge-column-1",
+          "type": "custom",
+          "itemProps": {
+                "href": "/lounge/pantalones-y-shorts",
+                "text": "Pantalones y Shorts",
+                "tagTitle": "Pantalones y Shorts",
+                "type": "internal",
+                "noFollow": false
+          }
+      }
+    },
+
+    "vtex.menu@2.x:menu#submenu-lounge-column-3": {
+        "props": {
+          "blockClass": "categories",
+          "items": [
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/lounge/pantalones-y-shorts/short",
+                    "text": "Short",
+                    "tagTitle": "Short",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            },
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/lounge/pantalones-y-shorts/pantalon",
+                    "text": "Pantalón",
+                    "tagTitle": "Pantalón",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            }
+          ]
+        }
+    },
+
+    /* COLUMNA BANNER */
+    "image#lounge-banner": {
+        "props": {
+            "blockClass": "submenu-banner",
+            "src": "assets/imgs/desktop/luz-de-mar-mega-menu-3-columns.png",
+            "link": true
+        }
+    }
+}

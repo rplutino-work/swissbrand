@@ -1,0 +1,196 @@
+{
+    "drawer#accesorios": {
+        "props": {
+            "blockClass": ["mobile-menu", "secondary-tab"]
+        },
+
+        "blocks": ["drawer-trigger#accesorios"],
+        "children": ["menu#accesorios"]
+    },
+
+    "drawer-trigger#accesorios": {
+        "children": ["rich-text#accesorios"]
+    },
+
+    "rich-text#accesorios": {
+        "props": {
+            "blockClass": "mobile-menu-item",
+            "text": "accesorios"
+        }
+    },
+
+    "menu#accesorios": {
+        "props": {
+            "blockClass": "mobile-menu",
+            "orientation": "vertical"
+        },
+
+        "children": [
+            "drawer#accesorios-column-1", 
+            "drawer#accesorios-column-2", 
+            "drawer#accesorios-column-3", 
+            "menu-item#accesorios-see-all"
+        ]
+    },
+
+    /* COLUMN 1 */
+    "drawer#accesorios-column-1": {
+        "props": {
+            "blockClass": ["mobile-menu", "secondary-tab"]
+        },
+
+        "blocks": ["drawer-trigger#accesorios-column-1"],
+        "children": ["menu#accesorios-menu-column-1"]
+    },
+
+    "drawer-trigger#accesorios-column-1": {
+        "children": ["rich-text#accesorios-column-1"]
+    },
+
+    "rich-text#accesorios-column-1": {
+        "props": {
+            "blockClass": "mobile-menu-item",
+            "text": "Medias"
+        }
+    },
+
+    "menu#accesorios-menu-column-1": {
+        "props": {
+            "blockClass": "mobile-menu",
+            "orientation": "vertical"
+        },
+
+        "children": [
+            "vtex.menu@2.x:menu#submenu-accesorios-column-1",
+            "menu-item#accesorios-column-1-see-all"
+        ]
+    },
+
+    "menu-item#accesorios-column-1-see-all": {
+        "props": {
+            "blockClass": ["category", "see-all"],
+            "id": "accesorios-column-1-see-all",
+            "type": "custom",
+            "itemProps": {
+                "href": "/accesorios/medias",
+                "text": "Ver todo medias",
+                "tagTitle": "Ver todo medias",
+                "type": "internal",
+                "noFollow": false
+            }
+        }
+    },
+
+    /* COLUMN 2 */
+    "drawer#accesorios-column-2": {
+        "props": {
+            "blockClass": ["mobile-menu", "secondary-tab"]
+        },
+
+        "blocks": ["drawer-trigger#accesorios-column-2"],
+        "children": ["menu#accesorios-menu-column-2"]
+    },
+
+    "drawer-trigger#accesorios-column-2": {
+        "children": ["rich-text#accesorios-column-2"]
+    },
+
+    "rich-text#accesorios-column-2": {
+        "props": {
+            "blockClass": "mobile-menu-item",
+            "text": "Pantuflas"
+        }
+    },
+
+    "menu#accesorios-menu-column-2": {
+        "props": {
+            "blockClass": "mobile-menu",
+            "orientation": "vertical"
+        },
+
+        "children": [
+            "vtex.menu@2.x:menu#submenu-accesorios-column-2",
+            "menu-item#accesorios-column-2-see-all"
+        ]
+    },
+
+    "menu-item#accesorios-column-2-see-all": {
+        "props": {
+            "blockClass": ["category", "see-all"],
+            "id": "accesorios-column-2-see-all",
+            "type": "custom",
+
+            "itemProps": {
+                "href": "/accesorios/pantuflas",
+                "text": "Ver todo pantuflas",
+                "tagTitle": "Ver todo pantuflas",
+                "type": "internal",
+                "noFollow": false
+            }
+        }
+    },
+
+    /* COLUMN 3 */
+    "drawer#accesorios-column-3": {
+        "props": {
+            "blockClass": ["mobile-menu", "secondary-tab"]
+        },
+
+        "blocks": ["drawer-trigger#accesorios-column-3"],
+        "children": ["menu#accesorios-menu-column-3"]
+    },
+
+    "drawer-trigger#accesorios-column-3": {
+        "children": ["rich-text#accesorios-column-3"]
+    },
+
+    "rich-text#accesorios-column-3": {
+        "props": {
+            "blockClass": "mobile-menu-item",
+            "text": "Ojotas"
+        }
+    },
+
+    "menu#accesorios-menu-column-3": {
+        "props": {
+            "blockClass": "mobile-menu",
+            "orientation": "vertical"
+        },
+
+        "children": [
+            "vtex.menu@2.x:menu#submenu-accesorios-column-3",
+            "menu-item#accesorios-column-3-see-all"
+        ]
+    },
+
+    "menu-item#accesorios-column-3-see-all": {
+        "props": {
+            "blockClass": ["category", "see-all"],
+            "id": "accesorios-column-3-see-all",
+            "type": "custom",
+            "itemProps": {
+                "href": "/accesorios/ojotas",
+                "text": "Ver todo ojotas",
+                "tagTitle": "Ver todo ojotas",
+                "type": "internal",
+                "noFollow": false
+            }
+        }
+    },
+
+    /* VER TODO DEPARTAMENTO */
+    "menu-item#accesorios-see-all": {
+        "props": {
+            "blockClass": ["department", "see-all"],
+            "id": "accesorios-see-all",
+            "type": "custom",
+            "itemProps": {
+                "href": "/accesorios",
+                "text": "Ver todo accesorios",
+                "tagTitle": "Ver todo accesorios",
+                "type": "internal",
+                "noFollow": false
+            }
+        }
+    }
+}

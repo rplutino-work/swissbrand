@@ -1,0 +1,22 @@
+{
+    "store.custom#nosotros": {
+        "blocks": ["flex-layout.row#breadcrumb", "flex-layout.row#nosotros"]
+    },
+
+    "flex-layout.row#nosotros": {
+        "props": {
+            "blockClass": "institutional-wrapper",
+            "colSizing": "auto"
+        },
+
+        "children": ["rich-text#nosotros-content"]
+    },
+
+    "rich-text#nosotros-content": {
+        "props": {
+            "blockClass": "institutional-content",
+            "text": "# ¿Quienes somos? \n\n Luz de Mar es una empresa argentina dedicada al diseño, producción y venta de trajes de baño de alta calidad para mujeres de todas las edades. Presente desde 1994, ha tenido un crecimiento sostenido con locales exclusivos en Mar del Plata, Pinamar, Cariló, San Bernardo, Villa Gesell, y el resto de la Costa Atlántica así como también Capital Federal, Gran Buenos Aires, Rosario y demás ciudades del país a través de su red de tiendas adheridas. \n\n A su vez, desarrolló las líneas «Luz de Mar Sports», donde se combinan la funcionalidad deportiva y el diseño urbano, y “Luz de Mar Dreams”, con pijamas que pueden combinarse en modelos y talles para seleccionar lo más confortable para la hora de dormir. \n\n Su más reciente incorporación es «HER by Luz de Mar», una nueva propuesta que viene a revolucionar el mercado de la ropa interior con el concepto de una mujer sin prejuicios, valiente y comprometida con ella misma. Los productos son hechos a la medida de lo que quieren las mujeres, pero no sólo hablando de cuestiones físicas sino de la medida de sus sentimientos, metas y sueños. \n\n Luz de Mar es una marca joven, con estilo, pero por sobre todas las cosas un lugar donde sentirse bien. La experiencia de sus clientes en las tiendas es única y es allí donde radica el secreto de su éxito",
+            "width": "grow"
+        }
+    }
+}

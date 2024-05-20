@@ -1,8 +1,0 @@
-{
-  "store.search#department": {
-    "path": "/_v/segment/routing/vtex.store@2.x/department/:id/:department(/*terms)",
-    "canonical": "/:department",
-    "map": ["c"],
-    "contentType": "department"
-  }
-}

@@ -1,0 +1,124 @@
+/* PRODUTOS SIMILARES */
+
+.titleSimilar,
+.similarLoading{
+    display: block;
+    line-height: 14px;
+    font-size: 0px;
+    font-weight: 300;
+    color: #434343;
+    margin-bottom: 6px;
+}
+
+.titleSimilar::after {
+    content: 'Seleccioná tu color';
+    font-size: 12px;
+}
+
+.similarImageContainer{
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+}
+
+.similarImageDiv{
+    margin: 0 6px 6px 0;
+    width: 50px;
+}
+
+.similarWrapperImageDiv{
+    border: 1px solid #43434380;
+}
+
+.similarImageLink{
+    text-decoration: none;
+}
+
+.similarColorText{
+   display: none;
+}
+
+.similarImage{
+    display: block;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 100%;
+}
+
+.similarImageSelect{
+    border: 0
+}
+
+.headerNotFixed{
+    border-color: #9f9f9f!important;
+}
+
+.FlexLayoutChildren--shelf-product-bottom{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    padding: 8px;
+}
+
+/* customPrices - Página produto*/
+:global(.vtex-flex-layout-0-x-flexRow--product-main-content) .customPriceWrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--product-main-content) .customListPrice,
+:global(.vtex-flex-layout-0-x-flexRow--product-main-content) .customPrice{
+    margin-right: 12px;
+    line-height: 22px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--product-main-content) .customInstallments{
+    text-align: left;
+    margin: 4px 0 8px;
+    line-height: 12px;
+    font-size: 14px;
+    color: #434343;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--product-main-content) .customDiscount{
+    display: block;
+    box-sizing: border-box;
+    margin-right: auto;
+    margin-bottom: 8px;
+    padding: 2px 6px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+    background: #0093cc;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--product-main-content) .customAhorre{
+    display: flex;
+    line-height: 12px;
+    font-size: 10px;
+    font-weight: 500;
+    color: #006f52;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--product-main-content) .customAhorre .price{
+    margin-left: 4px;
+}
+
+.price {
+    color: #525252;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.headerNotFixed :global(.vtex-store-header-2-x-headerRowContentContainer--mobile-header-content) {
+    border-bottom: 0 !important;
+}
+
+:global(.vtex-product-summary-2-x-element--complete-look) .FlexLayoutChildren--shelf-prices {
+    height: fit-content;
+}

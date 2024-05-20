@@ -1,0 +1,115 @@
+/* Minicart */
+.openIconContainer--minicart {
+    padding: 0;
+}
+
+.openIconContainer--minicart :global(.vtex-button) {
+    border: none;
+    outline: none;
+}
+
+.openIconContainer--minicart :global(.vtex-button):hover,
+.openIconContainer--minicart :global(.vtex-button):focus {
+    background: none;
+}
+
+.openIconContainer--minicart :global(.vtex-button__label) {
+    padding: 0;
+}
+
+.minicartIconContainer--minicart {
+    display: flex;
+    align-items: center;
+}
+
+.minicartQuantityBadge--minicart {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    padding: 0;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.overlay--minicart {
+    background: #000000;
+}
+
+.closeIconContainer--minicart {
+    padding: 16px;
+}
+
+.closeIconButton--minicart {
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    outline: none;
+    background: url(assets/svgs/close-icon.svg) center no-repeat;
+    background-size: cover;
+}
+
+.closeIcon--minicart {
+    display: none;
+}
+
+.minicartTitle {
+    margin: 0;
+    padding: 32px 16px 26px;
+    text-transform: uppercase;
+    font-size: 19px;
+    font-weight: bold;
+    color: #434343;
+}
+
+.minicartProductListContainer {
+    padding: 0 16px;
+}
+
+.minicartCheckoutButton {
+    margin: 0;
+}
+
+.minicartCheckoutButton :global(.vtex-button) {
+    height: 42px;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    background: #090909;
+    transition: background 0.2s linear;
+}
+
+.minicartCheckoutButton :global(.vtex-button__label) {
+    font-size: 0px;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.minicartCheckoutButton :global(.vtex-button__label)::after {
+    content: "Comprar";
+    display: block;
+    font-size: 14px;
+    color: #fff;
+}
+
+:global(.vtex-toast-container){
+    display: none;
+}
+
+@media only screen and (min-width: 1026px) {
+    .minicartCheckoutButton :global(.vtex-button):hover {
+        background: #4b4b4b;
+    }
+
+    .minicartCheckoutButton :global(.vtex-button):active {
+        background: #090909;
+    }
+
+    :global(.vtex-toast-container){
+        display: block;
+    }
+}
+
+/* FREE SHIPPING LATERAL CART*/
+.minicartSummary {
+    padding-top: 0;
+}

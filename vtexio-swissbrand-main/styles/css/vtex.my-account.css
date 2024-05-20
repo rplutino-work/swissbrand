@@ -1,0 +1,187 @@
+/* Account */
+
+.menu {
+    width: 180px;
+    padding: 0;
+}
+
+.userInfo {
+    display: flex;
+    align-items: center;
+    margin: 0 0 24px;
+}
+
+.userGreeting {
+    line-height: 17px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #434343;
+}
+
+.menuLinks :global(.vtex-account_menu-link),
+.menuLink {
+    margin: 0;
+    padding: 12px;
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #707070;
+}
+
+.menuLinks :global(.b--action-primary) {
+    border-color: #0093cc;
+}
+
+.menu ~ :global(.vtex-account__page),
+.menu ~ * :global(.vtex-account__page) {
+    width: 100%;
+    padding-left: 16px;
+}
+
+.menu ~ * :global(.vtex-pageHeader__container) {
+    margin-bottom: 16px;
+    padding: 0;
+}
+
+.menu ~ * :global(.vtex-pageHeader__container) :global(.mt7) {
+    margin-top: 0;
+}
+
+.menu ~ * :global(.vtex-pageHeader-link__container) {
+    margin-bottom: 16px;
+}
+
+.menu ~ * :global(.vtex-pageHeader-link__container) :global(.vtex-button) {
+    outline: none;
+}
+
+.menu ~ * :global(.vtex-pageHeader-link__container) :global(.vtex-button):hover,
+.menu ~ * :global(.vtex-pageHeader-link__container) :global(.vtex-button):focus {
+    background: transparent;
+}
+
+.menu ~ * :global(.vtex-pageHeader-link__container) :global(.vtex__icon-arrow-back) {
+    display: none;
+}
+
+.menu ~ * :global(.vtex-pageHeader-link__container) :global(.t-action--small) {
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+    font-size: 12px;
+}
+
+.menu ~ * :global(.vtex-pageHeader-link__container) :global(.t-action--small)::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: url("assets/svgs/left-arrow-icon.svg") left center no-repeat;
+}
+
+.menu ~ * :global(.vtex-pageHeader__title) {
+    display: flex;
+    align-items: center;
+    line-height: 17px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #434343;
+}
+
+.menu ~ * :global(.vtex-pageHeader__children) :global(.vtex-button) {
+    border: none;
+    border-radius: 0;
+    outline: none;
+    background: #434343;
+}
+
+.menu ~ * :global(.vtex-account__page-body) {
+    padding: 0;
+}
+
+.menu ~ * :global(.vtex-account__page-body) :global(.t-heading-4) {
+    font-size: 16px;
+    font-weight: normal;
+    color: #3f3f40;
+}
+
+.boxContainer {
+    border: 1px solid #52525280;
+    border-radius: 0;
+}
+
+.boxContainerBody {
+    padding: 16px;
+}
+
+.boxContainerFooter {
+    justify-content: center;
+    padding: 0;
+    background: #434343;
+}
+
+.boxContainerFooter :global(.vtex-button) {
+    border: none;
+    border-radius: 0;
+    outline: none;
+}
+
+.boxContainerFooter :global(.vtex-button):hover {
+    background: transparent;
+}
+
+.boxContainerFooter :global(.vtex-button__label) {
+    line-height: 17px;
+    letter-spacing: 0.56px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.dataEntryLabel,
+.newsletterContainerTitle {
+    margin-bottom: 8px;
+    line-height: 16px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #434343;
+}
+
+.dataEntryChildren,
+.newsletterContainerMessage {
+    line-height: 16px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #525252;
+}
+
+.newsletterContainerMessage {
+    margin-bottom: 16px;
+    padding: 0;
+}
+
+.passwordBox :global(.vtex-checkbox__line-container) {
+    align-items: center;
+}
+
+.passwordBox :global(.vtex-checkbox__container) {
+    margin-right: 16px;
+}
+
+.passwordBox :global(.vtex-checkbox__container) :global(.b--muted-4) {
+    border: 1px solid #52525280;
+    border-radius: 0;
+}
+
+.passwordBox :global(.vtex-checkbox__container) :global(.b--action-primary) {
+    border-radius: 0;
+    background: #434343;
+}
+
+.passwordBox :global(.vtex-checkbox__label) {
+    line-height: 14px;
+    font-size: 12px;
+    font-weight: 300;
+    color: #52525280;
+}
+
+/**/

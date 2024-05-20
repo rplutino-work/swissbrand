@@ -1,0 +1,196 @@
+{
+    "drawer#kids-teens": {
+        "props": {
+            "blockClass": ["mobile-menu", "secondary-tab"]
+        },
+
+        "blocks": ["drawer-trigger#kids-teens"],
+        "children": ["menu#kids-teens"]
+    },
+
+    "drawer-trigger#kids-teens": {
+        "children": ["rich-text#kids-teens"]
+    },
+
+    "rich-text#kids-teens": {
+        "props": {
+            "blockClass": "mobile-menu-item",
+            "text": "Kids & Teens"
+        }
+    },
+
+    "menu#kids-teens": {
+        "props": {
+            "blockClass": "mobile-menu",
+            "orientation": "vertical"
+        },
+
+        "children": [
+            //"drawer#kids-teens-column-1", 
+            "drawer#kids-teens-column-2", 
+            //"drawer#kids-teens-column-3", 
+            "menu-item#kids-teens-see-all"
+        ]
+    },
+
+    /* COLUMN 1 */
+    "drawer#kids-teens-column-1": {
+        "props": {
+            "blockClass": ["mobile-menu", "secondary-tab"]
+        },
+
+        "blocks": ["drawer-trigger#kids-teens-column-1"],
+        "children": ["menu#kids-teens-menu-column-1"]
+    },
+
+    "drawer-trigger#kids-teens-column-1": {
+        "children": ["rich-text#kids-teens-column-1"]
+    },
+
+    "rich-text#kids-teens-column-1": {
+        "props": {
+            "blockClass": "mobile-menu-item",
+            "text": "Teens"
+        }
+    },
+
+    "menu#kids-teens-menu-column-1": {
+        "props": {
+            "blockClass": "mobile-menu",
+            "orientation": "vertical"
+        },
+
+        "children": [
+            "vtex.menu@2.x:menu#submenu-kids-teens-column-1",
+            "menu-item#kids-teens-column-1-see-all"
+        ]
+    },
+
+    "menu-item#kids-teens-column-1-see-all": {
+        "props": {
+            "blockClass": ["category", "see-all"],
+            "id": "kids-teens-column-1-see-all",
+            "type": "custom",
+            "itemProps": {
+                "href": "/kids-teens/teens",
+                "text": "Ver todo teens",
+                "tagTitle": "Ver todo teens",
+                "type": "internal",
+                "noFollow": false
+            }
+        }
+    },
+
+    /* COLUMN 2 */
+    "drawer#kids-teens-column-2": {
+        "props": {
+            "blockClass": ["mobile-menu", "secondary-tab"]
+        },
+
+        "blocks": ["drawer-trigger#kids-teens-column-2"],
+        "children": ["menu#kids-teens-menu-column-2"]
+    },
+
+    "drawer-trigger#kids-teens-column-2": {
+        "children": ["rich-text#kids-teens-column-2"]
+    },
+
+    "rich-text#kids-teens-column-2": {
+        "props": {
+            "blockClass": "mobile-menu-item",
+            "text": "Kids"
+        }
+    },
+
+    "menu#kids-teens-menu-column-2": {
+        "props": {
+            "blockClass": "mobile-menu",
+            "orientation": "vertical"
+        },
+
+        "children": [
+            "vtex.menu@2.x:menu#submenu-kids-teens-column-2",
+            "menu-item#kids-teens-column-2-see-all"
+        ]
+    },
+
+    "menu-item#kids-teens-column-2-see-all": {
+        "props": {
+            "blockClass": ["category", "see-all"],
+            "id": "kids-teens-column-2-see-all",
+            "type": "custom",
+
+            "itemProps": {
+                "href": "/kids-teens/kids",
+                "text": "Ver todo kids",
+                "tagTitle": "Ver todo kids",
+                "type": "internal",
+                "noFollow": false
+            }
+        }
+    },
+
+    /* COLUMN 3 */
+    "drawer#kids-teens-column-3": {
+        "props": {
+            "blockClass": ["mobile-menu", "secondary-tab"]
+        },
+
+        "blocks": ["drawer-trigger#kids-teens-column-3"],
+        "children": ["menu#kids-teens-menu-column-3"]
+    },
+
+    "drawer-trigger#kids-teens-column-3": {
+        "children": ["rich-text#kids-teens-column-3"]
+    },
+
+    "rich-text#kids-teens-column-3": {
+        "props": {
+            "blockClass": "mobile-menu-item",
+            "text": "Bebé"
+        }
+    },
+
+    "menu#kids-teens-menu-column-3": {
+        "props": {
+            "blockClass": "mobile-menu",
+            "orientation": "vertical"
+        },
+
+        "children": [
+            "vtex.menu@2.x:menu#submenu-kids-teens-column-3",
+            "menu-item#kids-teens-column-3-see-all"
+        ]
+    },
+
+    "menu-item#kids-teens-column-3-see-all": {
+        "props": {
+            "blockClass": ["category", "see-all"],
+            "id": "kids-teens-column-3-see-all",
+            "type": "custom",
+            "itemProps": {
+                "href": "/kids-teens/bebe",
+                "text": "Ver todo Bebé",
+                "tagTitle": "Ver todo One Bebé",
+                "type": "internal",
+                "noFollow": false
+            }
+        }
+    },
+
+    /* VER TODO DEPARTAMENTO */
+    "menu-item#kids-teens-see-all": {
+        "props": {
+            "blockClass": ["department", "see-all"],
+            "id": "kids-teens-see-all",
+            "type": "custom",
+            "itemProps": {
+                "href": "/kids-teens",
+                "text": "Ver todo Kids & Teens",
+                "tagTitle": "Ver todo Kids & Teens",
+                "type": "internal",
+                "noFollow": false
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+  "vendor": "swissbrand",
+  "name": "add-class-on-header",
+  "version": "0.0.1",
+  "title": "add-class-on-header",
+  "description": "Agrega clase para sticky en home",
+  "defaultLocale": "en",
+  "builders": {
+    "messages": "1.x",
+    "store": "0.x",
+    "react": "3.x"
+  },
+  "mustUpdateAt": "2019-04-02",
+  "scripts": {
+    "postreleasy": "vtex publish --verbose"
+  },
+  "dependencies": {
+    "vtex.styleguide": "9.x",
+    "vtex.css-handles": "1.x",
+    "vtex.device-detector": "0.x",
+    "vtex.store-graphql": "2.x",
+    "vtex.search-graphql": "0.x",
+    "vtex.product-context": "0.x",
+    "vtex.product-list": "0.x",
+    "vtex.formatted-price": "0.x"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

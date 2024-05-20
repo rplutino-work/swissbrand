@@ -1,0 +1,25 @@
+/* Header */
+
+.tileListTitle {
+    margin: 14px 0;
+    padding: 0 4px;
+}
+
+.tileList {
+    padding: 0 4px;
+}
+
+.tileListItem {
+    padding: 0 4px;
+}
+
+.tileListSeeMore {
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.biggy-autocomplete {
+    top: 120px;
+}
+
+/**/

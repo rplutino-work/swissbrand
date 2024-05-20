@@ -1,0 +1,162 @@
+{
+    "store.storedetail#sucursales": {
+        "blocks": [
+            "flex-layout.row#stores-details-wrapper"
+        ],
+        "props": {
+          "blockClass": "store-details-wrapper",
+          "preventVerticalStretch": true
+        }
+      },
+
+      "flex-layout.row#stores-details-wrapper": {
+        "title": "Detalle sucursal",
+        "children": [
+            "flex-layout.row#stores-details-back-wrapper",
+            "flex-layout.row#stores-details-content-wrapper"
+        ],
+        "props": {
+          "blockClass": "store-details-wrapper",
+          "preventVerticalStretch": true
+        }
+      },
+    
+      "flex-layout.row#stores-details-back-wrapper": {
+        "title": "Vovler para atras",
+        "children": [
+            "link#store-back-link"
+            //"store-back-link"
+        ],
+        "props": {
+          "blockClass": "store-details-back-container",
+          "preventVerticalStretch": true
+        }
+      },
+    
+      "flex-layout.row#stores-details-content-wrapper": {
+        "title": "Detalles sucursal",
+        "children": [
+            //"flex-layout.col#store-details-info",
+            //"flex-layout.col#store-details-map",
+            "flex-layout.row#stores-details-content"
+        ],
+        "props": {
+          "blockClass": "store-details-container",
+          "preventVerticalStretch": true
+        }
+      },
+
+      "flex-layout.row#stores-details-content": {
+        "title": "Detalle sucursal",
+        "children": [
+            "store-group"
+        ],
+        "props": {
+          "blockClass": "store-details-content",
+          "preventVerticalStretch": true
+        }
+      },
+
+      "flex-layout.row#stores-details-info": {
+        "title": "Detalle sucursal",
+        "children": [
+          "flex-layout.col#detail"
+        ],
+        "props": {
+          "blockClass": "store-details-info-wrapper",
+          "preventVerticalStretch": true
+        }
+      },
+
+      "flex-layout.row#stores-details-map": {
+        "title": "Detalle sucursal",
+        "children": [
+          "flex-layout.col#store"
+        ],
+        "props": {
+          "blockClass": "store-details-map-content",
+          "preventVerticalStretch": true
+        }
+      },
+    
+      "store-group": {
+        "children": ["flex-layout.row#containerStore"],
+        "props": {
+          "title": "{storeName} Store"
+        }
+      },
+      "flex-layout.row#titleStore": {
+        "children": ["flex-layout.col#titleStore"]
+      },
+      "flex-layout.row#containerStore": {
+        "props": {
+          "blockClass": "container-stores"
+        },
+        "children": ["flex-layout.col#detail", "flex-layout.col#store"]
+      },
+      "flex-layout.col#titleStore": {
+        "children": ["rich-text#titleStore"],
+        "props": {
+          "blockClass": "store-details-title",
+          "preventVerticalStretch": true
+        }
+      },
+      "rich-text#titleStore": {
+        "props": {
+          "text": "## Más información 2"
+        }
+      },
+      "flex-layout.col#detail": {
+        "children": [
+          "store-name",
+          "store-address",
+          "store-hours",
+          "store-instructions"
+        ],
+        "props": {
+          "blockClass": "store-details-info",
+          "width": "100%",
+          "preventVerticalStretch": true
+        }
+      },
+      "flex-layout.col#store": {
+        "children": [
+          "store-map"
+        ],
+        "props": {
+          "blockClass": "store-details-map",
+          "width": "100%",
+          "preventVerticalStretch": true
+        }
+      },
+      "store-map":{
+        "props": {
+            "icon": "assets/imgs/luz-de-mar-sucursales.png",
+          "height": "500px"
+        }
+      },
+      "store-hours": {
+        "props": {
+          "label": "Horarios de la sucursal:",
+          "format": "12h"
+        }
+      },
+      "store-back-link": {
+        "props": {
+          "label": "Volver"
+        }
+      },
+      "link#store-back-link": {
+        "title": "Volver",
+        "props": {
+          "label": "Volver",
+          "href": "/sucursales",
+          "blockClass": ["backlink"]
+        }
+      },
+      "store-instructions": {
+        "props": {
+          "label": ""
+        }
+      }
+}

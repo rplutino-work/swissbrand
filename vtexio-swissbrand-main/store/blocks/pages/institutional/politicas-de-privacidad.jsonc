@@ -1,0 +1,22 @@
+{
+    "store.custom#politicas-de-privacidad": {
+        "blocks": ["flex-layout.row#breadcrumb", "flex-layout.row#politicas-de-privacidad"]
+    },
+
+    "flex-layout.row#politicas-de-privacidad": {
+        "props": {
+            "blockClass": "institutional-wrapper",
+            "colSizing": "auto"
+        },
+
+        "children": ["rich-text#politicas-de-privacidad-content"]
+    },
+
+    "rich-text#politicas-de-privacidad-content": {
+        "props": {
+            "blockClass": "institutional-content",
+            "text": "# Políticas de privacidad",
+            "width": "grow"
+        }
+    }
+}

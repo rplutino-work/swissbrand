@@ -1,0 +1,43 @@
+.headerFixed :global(.vtex-flex-layout-0-x-flexRow--menu-header){
+    background: transparent linear-gradient(180deg,rgba(36,36,36,.83),rgba(36,36,36,.18) 79%,rgba(36,36,36,0)) 0 0 no-repeat padding-box!important;
+    border: 0!important;
+}
+.headerFixed :global(.vtex-menu-2-x-styledLinkContent--department) {
+    color: #fff;
+}
+
+.headerFixed :global(.vtex-store-header-2-x-headerStickyRow--mobile-header-content){
+    border-bottom: solid 0px transparent;
+}
+
+@media(min-width: 1025px){
+    .headerFixed :global(.vtex-sticky-layout-0-x-wrapper--header-content) {
+        height: 0 !important;
+    }
+    .headerNotFixed :global(.vtex-sticky-layout-0-x-wrapper--header-content--stuck){
+        height: 0 !important;
+    }
+    .headerFixed :global(.vtex-store-components-3-x-logoImage--header-logo) {
+        opacity: 0;
+    }
+    
+    .headerFixed :global(.vtex-store-components-3-x-logoContainer--header-logo)::after {
+        content: '';
+        display: block;
+        background-image: url('assets/svgs/luz-de-mar-logo-header-home.svg');
+        background-size: 165px;
+        width: 165px;
+        height: 47px;
+        background-repeat: no-repeat;
+        position: absolute;
+        z-index: 999999;
+        top: 0;
+        left: 0;
+    }
+
+    .headerFixed :global(.vtex-store-components-3-x-imageElement--minicart-icon),
+    .headerFixed :global(.vtex-login-2-x-container) :global(.vtex-button__label),
+    .headerFixed :global(.vtex-store-components-3-x-toggle-search-icon){
+        filter: invert();
+    }
+}

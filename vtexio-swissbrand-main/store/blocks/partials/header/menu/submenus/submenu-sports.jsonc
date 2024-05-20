@@ -1,0 +1,307 @@
+{
+    "vtex.menu@2.x:submenu#sports": {
+        "props": {
+            "blockClass": "submenu"
+        },
+
+        "children": ["image#sports-banner","flex-layout.row#sports"]
+    },
+
+    "flex-layout.row#sports": {
+        "props": {
+            "blockClass": "categories-wrapper",
+            "colSizing": "auto",
+            "colGap": 9
+        },
+
+        "children": [
+            "vtex.menu@2.x:menu#sports-column-1",
+            //"vtex.menu@2.x:menu#sports-column-2",
+            "vtex.menu@2.x:menu#sports-column-3"
+            //"vtex.menu@2.x:menu#sports-column-4"
+        ]
+    },
+
+    /* COLUMNA 1 */
+    "vtex.menu@2.x:menu#sports-column-1": {
+        "props": {
+            "blockClass": "categories"
+        },
+
+        "children": [
+          "menu-item#sub-sports-column-1",
+          "vtex.menu@2.x:menu#submenu-sports-column-1"
+        ]
+    },
+
+    "menu-item#sub-sports-column-1": {
+      "props": {
+          "blockClass": "category",
+          "id": "sports-column-1",
+          "type": "custom",
+          "itemProps": {
+                "href": "/sports/tops-y-remeras",
+                "text": "Tops y remeras",
+                "tagTitle": "Tops y remeras",
+                "type": "internal",
+                "noFollow": false
+          }
+      }
+    },
+
+    "vtex.menu@2.x:menu#submenu-sports-column-1": {
+        "props": {
+          "blockClass": "categories",
+          "items": [
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/sports/tops-y-remeras/top",
+                    "text": "Top",
+                    "tagTitle": "Top",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            }/*,
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/sports/tops-y-remeras/musculosa",
+                    "text": "Musculosa",
+                    "tagTitle": "Musculosa",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            },
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/sports/tops-y-remeras/remera",
+                    "text": "Remera",
+                    "tagTitle": "Remera",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            }*/
+          ]
+        }
+    },
+
+    /* COLUMNA 2 */
+    "vtex.menu@2.x:menu#sports-column-2": {
+        "props": {
+            "blockClass": "categories"
+        },
+
+        "children": [
+          "menu-item#sub-sports-column-2",
+          "vtex.menu@2.x:menu#submenu-sports-column-2"
+        ]
+    },
+
+    "menu-item#sub-sports-column-2": {
+      "props": {
+          "blockClass": "category",
+          "id": "sports-column-2",
+          "type": "custom",
+          "itemProps": {
+                "href": "/sports/buzos-y-camperas",
+                "text": "Buzos y camperas",
+                "tagTitle": "Buzos y camperas",
+                "type": "internal",
+                "noFollow": false
+          }
+      }
+    },
+
+    "vtex.menu@2.x:menu#submenu-sports-column-2": {
+        "props": {
+          "blockClass": "categories",
+          "items": [
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/sports/buzos-y-camperas/buzo",
+                    "text": "Buzo",
+                    "tagTitle": "Buzo",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            },
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/sports/buzos-y-camperas/campera",
+                    "text": "Campera",
+                    "tagTitle": "Campera",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            }
+          ]
+        }
+    },
+
+    /* COLUMNA 3 */
+    "vtex.menu@2.x:menu#sports-column-3": {
+        "props": {
+            "blockClass": "categories"
+        },
+
+        "children": [
+          "menu-item#sub-sports-column-3",
+          "vtex.menu@2.x:menu#submenu-sports-column-3"
+        ]
+    },
+
+    "menu-item#sub-sports-column-3": {
+      "props": {
+          "blockClass": "category",
+          "id": "sports-column-3",
+          "type": "custom",
+          "itemProps": {
+                "href": "/sports/pantalones-y-calzas",
+                "text": "Pantalones y calzas",
+                "tagTitle": "Pantalones y calzas",
+                "type": "internal",
+                "noFollow": false
+          }
+      }
+    },
+
+    "vtex.menu@2.x:menu#submenu-sports-column-3": {
+        "props": {
+          "blockClass": "categories",
+          "items": [
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/sports/pantalones-y-calzas/short",
+                    "text": "Short",
+                    "tagTitle": "Short",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            },
+            /*
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/sports/pantalones-y-calzas/ciclista",
+                    "text": "Ciclista",
+                    "tagTitle": "Ciclista",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            },
+            */
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/sports/pantalones-y-calzas/pescador",
+                    "text": "Pescador",
+                    "tagTitle": "Pescador",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            },
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/sports/pantalones-y-calzas/calza",
+                    "text": "Calza",
+                    "tagTitle": "Calza",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            }/*,
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/sports/pantalones-y-calzas/pantalon",
+                    "text": "Pantalón",
+                    "tagTitle": "Pantalón",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            }*/
+          ]
+        }
+    },
+
+    /* COLUMNA 4 */
+    "vtex.menu@2.x:menu#sports-column-4": {
+        "props": {
+            "blockClass": "categories"
+        },
+
+        "children": [
+          "menu-item#sub-sports-column-4",
+          "vtex.menu@2.x:menu#submenu-sports-column-4"
+        ]
+    },
+
+    "menu-item#sub-sports-column-4": {
+      "props": {
+          "blockClass": "category",
+          "id": "sports-column-4",
+          "type": "custom",
+          "itemProps": {
+                "href": "/sports/malla-deportiva",
+                "text": "Malla deportiva",
+                "tagTitle": "Malla deportiva",
+                "type": "internal",
+                "noFollow": false
+          }
+      }
+    },
+
+    "vtex.menu@2.x:menu#submenu-sports-column-4": {
+        "props": {
+          "blockClass": "categories",
+          "items": [
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/sports/malla-deportiva/bikini",
+                    "text": "Bikini",
+                    "tagTitle": "Bikini",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            },
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/sports/malla-deportiva/entera",
+                    "text": "Entera",
+                    "tagTitle": "Entera",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            }
+          ]
+        }
+    },
+
+    /* COLUMNA BANNER */
+    "image#sports-banner": {
+        "props": {
+            "blockClass": "submenu-banner",
+            "src": "assets/imgs/desktop/luz-de-mar-mega-menu-4-columns.png",
+            "link": true
+        }
+    }
+}

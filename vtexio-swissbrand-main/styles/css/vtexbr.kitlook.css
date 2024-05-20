@@ -1,0 +1,151 @@
+.kitlookCheckbox {
+    display: none;
+}
+.kitlookDetails :global(.vtex-button) {
+    border: 2px solid #BEBEBE;
+}
+
+.kitlookDetails :global(.vtex-button__label) {
+    background: #fff;
+}
+
+.kitlookDetails :global(.vtex-add-to-cart-button-0-x-buttonText) {
+    color: #434343;
+}
+
+.kitlookImage {
+    padding: 0;
+}
+
+.kitlookImage :global(.vtex-store-components-3-x-productImagesContainer) {
+    padding: 0;
+}
+
+.kitlookDetails {
+    padding: 0;
+}
+
+.kitlookBox {
+    border-color: #a3a3a3;
+}
+
+.kitlookDetails :global(.vtex-product-details-1-x-quantitySelectorContainer){
+    display: none;
+}
+
+.kitlookImage :global(.vtex-store-components-3-x-productImagesGallerySlide) {
+    margin-left: 0;
+    width: 100% !important;
+    padding-right: 15px;
+}
+
+.kitlookTotalizer  :global(.vtex-button) {
+    background: #434343;
+    border: 0;
+    border-radius: 0;
+    transition: .3s;
+}
+
+.kitlookTotalizer :global(.vtex-button)::hover {
+    background: #0093cc;
+}
+
+.kitlookDetails :global(.vtex-store-components-3-x-skuSelectorItemImage) {
+    width: 32px;
+    height: 32px;
+}
+
+.kitlookDetails :global(.vtex-store-components-3-x-skuSelectorSubcontainer--color) :global(.vtex-store-components-3-x-skuSelectorName), 
+.kitlookDetails :global(.vtex-store-components-3-x-skuSelectorSubcontainer--talle) :global(.vtex-store-components-3-x-skuSelectorName ){
+    font-size: 0px;
+    color: #434343;
+    font-weight: 600;
+}
+
+.kitlookDetails :global(.vtex-store-components-3-x-skuSelectorSubcontainer--talle) {
+    margin: 15px 0;
+}
+
+.kitlookDetails :global(.vtex-store-components-3-x-skuSelectorSubcontainer--talle) :global(.vtex-store-components-3-x-skuSelectorName)::after {
+    font-size: 0;
+}
+
+.kitlookDetails :global(.vtex-store-components-3-x-skuSelectorSubcontainer--talle) :global(.vtex-store-components-3-x-skuSelectorName)::after {
+    font-size: 0;
+    content: "Selecciona tu talle";
+    font-size: 12px !important;
+}
+
+.kitlookName {
+    margin: 0;
+}
+
+.kitlookPrice :global(.vtex-store-components-3-x-priceContainer) {
+    display: flex;
+    align-items: center;
+}
+
+.kitlookPrice :global(.vtex-store-components-3-x-listPriceLabel), 
+.kitlookPrice :global(.vtex-store-components-3-x-sellingPriceLabel) {
+    display: none;
+}
+
+.kitlookPrice :global(.vtex-store-components-3-x-listPriceValue) {
+    font-size: 14px;
+    color: #BEBEBE;
+    padding-left: 0;
+    padding-right: 10px;
+}
+.kitlookPrice :global(.vtex-store-components-3-x-listPrice) {
+    margin: 0;
+}
+
+.kitlookPrice :global(.vtex-store-components-3-x-sellingPrice){
+    color: #434343;
+    font-size: 16px;
+}
+
+.kitlookTotalizerQuantityLabel,
+.kitlookTotalizerPriceLabel {
+    color: #434343;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.kitlookTotalizerQuantityLabel{
+    font-size: 0;
+}
+
+.kitlookTotalizerQuantityLabel::after {
+    content: 'Cantidad';
+    font-size: 12px;
+}
+
+.kitlookTotalizerPrice,
+.kitlookTotalizerQuantity {
+    color: #434343;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.kitlookPrice :global(.vtex-store-components-3-x-skuSelectorItem) {
+    height: 32px;
+}
+
+@media only screen and (max-width: 1024px){
+    .kitlookBox {
+        display: flex;
+    }
+    
+    .kitlookName :global(.vtex-store-components-3-x-productNameContainer) {
+        font-size: 16px;
+    }
+    
+    .kitlookImage {
+        width: 50%;
+    }
+    
+    .kitlookDetails {
+        width: 50%;
+    }
+}

@@ -1,0 +1,124 @@
+{   
+    "store.custom#tabla-talles": {
+      "blocks": [
+          "flex-layout.row#tabla-talles"
+      ]
+    },
+    "flex-layout.row#tabla-talles": {
+        "props": {
+          "blockClass": "tabla-talles-page",
+          "fullWidth": true,
+          "colSizing": "auto"
+        },
+        "children": [
+          "rich-text#tabla-talles-title",
+          "flex-layout.row#tabla-talles-container",
+          "flex-layout.row#tabla-talles-footer"
+        ]
+      },
+      "flex-layout.row#tabla-talles-container": {
+        "props": {
+          "blockClass": "tabla-talles-page",
+          "fullWidth": true,
+          "colSizing": "auto"
+        },
+        "children": [
+          "flex-layout.col#tabla-talles-1",
+          "flex-layout.col#tabla-talles-2",
+          "flex-layout.col#tabla-talles-3"
+        ]
+      },
+      "flex-layout.col#tabla-talles-1": {
+        "props": {
+            "blockClass": "tabla-talles-page",
+            "width": "100%"
+          },
+        "children": [
+          "info-card#tabla-talles-1"
+        //   "info-card#tabla-talles-2",
+        //   "info-card#tabla-talles-3"
+        ]
+      },
+      "flex-layout.col#tabla-talles-2": {
+        "props": {
+            "blockClass": "tabla-talles-page",
+            "width": "100%"
+          },
+        "children": [
+          "info-card#tabla-talles-2"
+        //   "info-card#tabla-talles-2",
+        //   "info-card#tabla-talles-3"
+        ]
+      },
+      "flex-layout.col#tabla-talles-3": {
+        "props": {
+            "blockClass": "tabla-talles-page",
+            "width": "100%"
+          },
+        "children": [
+          "info-card#tabla-talles-3"
+        //   "info-card#tabla-talles-2",
+        //   "info-card#tabla-talles-3"
+        ]
+      },
+      "info-card#tabla-talles-1": {
+        "props": {
+          "blockClass": "tabla-talles-page",
+          "isFullModeStyle": false,
+          "imageUrl": "assets/imgs/talles-desk-1.png",
+          "mobileImageUrl": "assets/imgs/talles-mob-1.png"
+        }
+      },
+      "info-card#tabla-talles-2": {
+        "props": {
+            "blockClass": "tabla-talles-page",
+            "isFullModeStyle": false,
+            "imageUrl": "assets/imgs/talles-desk-2.png",
+            "mobileImageUrl": "assets/imgs/talles-mob-2.png"
+        }
+      },
+      "info-card#tabla-talles-3": {
+        "props": {
+          "blockClass": "tabla-talles-page",
+          "isFullModeStyle": false,
+          "imageUrl": "assets/imgs/talles-desk-3.png",
+          "mobileImageUrl": "assets/imgs/talles-mob-3.png"
+        }
+      },
+      "rich-text#tabla-talles-title": {
+          "props": {
+            "blockClass": "tabla-talles-page-title",
+            "text": "GUIA DE TALLES"
+          }
+        },
+        "flex-layout.row#tabla-talles-footer": {
+            "props": {
+              "blockClass": "tabla-talles-footer",
+              "fullWidth": false,
+              "colSizing": "auto"
+            },
+            "children": [
+              "rich-text#tabla-talles-footer-1",
+              "rich-text#tabla-talles-footer-2",
+              "rich-text#tabla-talles-footer-3"
+            ]
+          },
+        "rich-text#tabla-talles-footer-1": {
+          "props": {
+            "blockClass": ["tabla-talles-page","tabla-talles-page-text"],
+            "text": "Si tenes dudas, escribinos y te ayudamos a elegir:"
+          }
+        },
+        "rich-text#tabla-talles-footer-2": {
+          "props": {
+              "blockClass": ["tabla-talles-page","tabla-talles-page-tel"],
+              "text": "11-2078.3108"
+          }
+        },
+        "rich-text#tabla-talles-footer-3": {
+          "props": {
+            "blockClass": ["tabla-talles-page","tabla-talles-page-mail"],
+            "text": "ventasonline@luzdemar.com.ar"
+          }
+        }
+}

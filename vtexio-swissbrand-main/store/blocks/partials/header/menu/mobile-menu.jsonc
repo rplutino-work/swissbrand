@@ -1,0 +1,126 @@
+{
+    "drawer#mobile-menu": {
+    "title": "Menu mobile",
+    "props": {
+      "blockClass": ["mobile-menu", "primary-tab"]
+    },
+    "blocks": [],
+    "children": [
+      "disposition-layout#menu-mobile-content"
+      
+    ]
+  },
+  "disposition-layout#menu-mobile-content": {
+    "title": "Orden y visualización",
+    "children": [
+      "header-row#mobile-search",
+      "menu#mobile-menu",
+      "menu#mobile-menu-user"
+    ],
+    "props": {
+      "disposition": [
+        {
+          "order": 1,
+          "__editorItemTitle": "Buscador"
+        },
+        {
+          "order": 2,
+          "__editorItemTitle": "Menu usuario y ordenes"
+        },
+        {
+          "order": 3,
+          "__editorItemTitle": "Menu usuario y ordenes"
+        }
+      ]
+    }
+  },
+  "menu#mobile-menu": {
+    "title": "Menu categorias",
+    "children": [
+      "disposition-layout#menu-mobile-2"
+    ],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "mobile-menu"
+    }
+  },
+  "disposition-layout#menu-mobile-2": {
+    "title": "Orden y visualización",
+    "children": [
+        "drawer#estandar-01",
+        "drawer#estandar-02",
+        "drawer#estandar-03",
+        "drawer#estandar-04",
+        "drawer#estandar-05",
+        "drawer#estandar-06",
+        "drawer#estandar-07",
+        "drawer#sale"
+    ],
+    "props": {
+      "disposition": [
+        {
+          "order": 1,
+          "__editorItemTitle": "Menu 01"
+        },
+        {
+          "order": 2,
+          "__editorItemTitle": "Menu 02"
+        },
+        {
+          "order": 3,
+          "__editorItemTitle": "Menu 03"
+        },
+        {
+          "order": 4,
+          "__editorItemTitle": "Menu 04"
+        },
+        {
+          "order": 5,
+          "__editorItemTitle": "Menu 05"
+        },
+        {
+          "order": 6,
+          "__editorItemTitle": "Menu 06"
+        },
+        {
+          "order": 7,
+          "__editorItemTitle": "Menu 07"
+        },
+        {
+          "order": 8,
+          "__editorItemTitle": "Menu Sale"
+        }
+      ]
+    }
+  },
+
+    "menu#mobile-menu-user": {
+        "title": "Menu usuario y ordenes",
+        "children": [
+            "link#login",
+            "link#order"
+        ],
+        "props": {
+            "orientation": "vertical",
+            "blockClass": ["mobile-menu-user"]            
+        }
+    },
+
+    "link#login": {
+        "title": "Mi cuenta",
+        "props": {
+          "href": "/account",
+          "blockClass": ["mobile-menu-user"],
+          "label": "Mi cuenta"
+        }
+    },
+
+    "link#order": {
+        "title": "Mis pedidos",
+        "props": {
+          "href": "/account#/orders",
+          "blockClass": ["mobile-menu-user"],
+          "label": "Mis pedidos"
+        }
+    }
+}

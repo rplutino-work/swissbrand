@@ -1,0 +1,22 @@
+{
+    "store.custom#como-comprar": {
+        "blocks": ["flex-layout.row#breadcrumb", "flex-layout.row#como-comprar"]
+    },
+
+    "flex-layout.row#como-comprar": {
+        "props": {
+            "blockClass": "institutional-wrapper",
+            "colSizing": "auto"
+        },
+
+        "children": ["rich-text#como-comprar-content"]
+    },
+
+    "rich-text#como-comprar-content": {
+        "props": {
+            "blockClass": "institutional-content",
+            "text": "# ¿Como comprar? \n\n 1. Para comprar, navegá por las categorías y hacé click sobre el producto que te interese. Tenemos filtros para ayudarte a encontrar tus modelos favoritos dentro de cada sección. \n\n 2. Elegí el color, talle y cantidad (de ambas piezas cuando se trate de un conjunto). Luego agregalo al carrito de compras. \n\n 3. Vendemos todo por separado. Entonces, en el caso que quieras comprar sólo uno de los dos productos de un conjunto debés hacer click donde dice “comprar solo” y elegir color, talle y cantidad en la nueva pestaña que se abre. Allí también debes hacer click en “añadir al carrito”. \n\n 4. Podés elegir la cantidad de productos que desees y, una vez que quieras finalizar la compra debés dirigirte al carrito ubicado en el margen superior derecho. Allí vas a poder ver el detalle de tus productos y podés eliminar los que no quieras o cambiar la cantidad. Cuando realices un cambio no olvides dar click en “Actualizar carrito”. \n\n 5.  En caso que cuentes con un código promocional debés colocarlo donde dice “Código de cupón” y luego hacer click en “Aplicar cupón”. Allí se aplicará el correspondiente beneficio. Si no poseés un código, debes saltear este paso. \n\n 6.  Verificá el detalle de tu pedido y hacé click en “Finalizar compra”. \n\n 7.  Seguí los pasos para realizar el pago y seleccionar el método de envío.",
+            "width": "grow"
+        }
+    }
+}

@@ -1,0 +1,216 @@
+{
+    "store.product": {
+        "children": [
+            "breadcrumb#product",
+            //"flex-layout.row#product-main-content",
+            "flex-layout.row#product-main-content",
+            "__fold__",
+            // "flex-layout.row#related-products",
+            "flex-layout.row#product-specs",
+            "shelf.relatedProducts#related-products"
+        ]
+    },
+
+    "breadcrumb#product": {
+        "props": {
+            "showOnMobile": true,
+            "blockClass": "pdp"
+        }
+    },
+
+    "flex-layout.row#product-main-content": {
+        "props": {
+            "blockClass": "product-main-content",
+            "colSizing": "auto"
+        },
+
+        "children": ["flex-layout.col#images-column", "flex-layout.col#details-column"]
+    },
+    
+
+    "flex-layout.col#images-column": {
+        "props": {
+            "width": "64%",
+            "preventVerticalStretch": true,
+            "blockClass": "product-image-wrapper"
+        },
+
+        "children": [
+            "product-images#pdp",
+            "flex-layout.row#product-page-badge-cyber"
+            //"vtex.product-highlights@2.x:product-highlights#cyber", 
+            //"vtex.product-highlights@2.x:product-highlights#hotsale", 
+        ]
+    },
+
+    "product-images#pdp": {
+        "props": {
+            "hiddenImages": "color"
+        }
+    },
+
+    "responsive-layout.desktop#share": {
+        "children": ["share"]
+    },
+
+    "responsive-layout.mobile#share": {
+        "children": ["share"]
+    },
+
+    "share": {
+        "props": {
+            "social": {
+                "WhatsApp": true,
+                "Facebook": true,
+                "Pinterest": true
+            }
+        }
+    },
+
+    "flex-layout.col#details-column": {
+        "props": {
+            "width": "36%",
+            "preventVerticalStretch": true,
+            "blockClass": "details-column"
+        },
+
+        "children": [
+            "vtex.store-components:product-name",
+            "flex-layout.row#badges-pdp",
+            "flex-layout.row#product-prices",
+            "custom-prices",
+            //"product-installments#product",
+            //"product-identifier.product",
+            //"product-separator",
+            // "similar-products",
+            // "product-description",
+            "sku-selector#pdp",
+            //"sku-selector#color",
+            //"sku-selector#m3",
+            "size-table",
+            "flex-layout.row#cart-button",
+            "flex-layout.row#complete-look"
+            // "responsive-layout.mobile#share"
+            // "responsive-layout.desktop#share"
+            //"share"
+            //"shipping-simulator",
+            //"availability-subscriber",
+            //"product-separator",
+            //"responsive-layout.mobile#share"
+            //"product-description"
+        ]
+    },
+    "flex-layout.row#badges-pdp": {
+      "children": [
+        "vtex.product-highlights@2.x:product-highlights#envio-gratis",
+        "vtex.product-highlights@2.x:product-highlights#nuevo"
+      ],
+      "props": {
+        "blockClass": ["badges-pdp"],
+        "colSizing": "auto"
+      }
+    },
+    "sku-selector#pdp":{
+        "props": {
+            "blockClass": ["pdp-custom-sku-selector"],
+            "thumbnailImage": ["color"],
+            "hideImpossibleCombinations": true,
+            "maxItems": 40
+        }
+    },
+    "sku-selector#color": {
+        "props": {
+            "blockClass": ["m3-custom-sku-selector","pdp-sku-selector-color"],
+            "visibleVariations": ["Color"],
+            "thumbnailImage": ["color"],
+            "hideImpossibleCombinations": true,
+            "maxItems": 40
+        }
+    },
+    "sku-selector#m3": {
+        "props": {
+            "blockClass": ["m3-custom-sku-selector","pdp-sku-selector-talle"],
+            "visibleVariations": ["Talle"],
+            "hideImpossibleCombinations": true,
+            "maxItems": 40
+        }
+    },
+    "flex-layout.row#cart-button": {
+        "props": {
+            "blockClass": "cart-button",
+            "colSizing": "auto",
+            "preserveLayoutOnMobile": true
+        },
+
+        "children": [/*"product-quantity#product", */"add-to-cart-button#product"]
+    },
+
+    "add-to-cart-button#product": {
+        "props": {
+            "customPixelEventId": "addToCart",
+            "blockCLass": "product",
+            "width": "grow",
+            "text": "AGREGAR AL CARRITO"
+        }
+    },
+
+    "flex-layout.row#complete-look": {
+        "children": [
+            "flex-layout.col#complete-look"
+        ],
+        "props": {
+            "blockClass": "complete-look"
+        }
+    },
+
+    "flex-layout.col#complete-look": {
+        "children": [
+            "rich-text#complete-look-title",
+            "rich-text#complete-look-description",
+            "shelf.relatedProducts#complete-look-shelf"
+        ],
+        "props": {
+            "blockClass": "complete-look"
+        }
+    },
+
+    "rich-text#complete-look-title": {
+        "props": {
+            "text": "¡Completá tu look!",
+            "blockClass": "complete-look-title"
+        }
+    },
+
+    "rich-text#complete-look-description": {
+        "props": {
+            "text": "Con Luz de Mar tenés la libertad de combinar talles y colores para encontrar el estilo que te haga sentir cómoda y única. Te sugerimos algunas opciones.",
+            "blockClass": "complete-look-description"
+        }
+    },
+
+    "shelf.relatedProducts#complete-look-shelf": {
+        "blocks": ["product-summary.shelf#complete-look"],
+        "props": {
+            "blockClass": "complete-look-shelf",
+            "recommendation": "view",
+            "productList": {
+                "titleText": "¡Completá tu look!",
+                "itemsPerPage": 1,
+                "minItemsPerPage": 1
+            }
+        }
+    },
+
+    "shelf.relatedProducts#related-products": {
+        "blocks": ["product-summary.shelf#shelf-product"],
+        "props": {
+            "blockClass": ["m3-shelf-product", "m3-shelf-product-list"],
+            "recommendation": "view",
+            "productList": {
+                "titleText": "PRODUCTOS RELACIONADOS",
+                "itemsPerPage": 4,
+                "minItemsPerPage": 2
+            }
+        }
+    }
+}

@@ -1,0 +1,203 @@
+{
+    "vtex.menu@2.x:submenu#accesorios": {
+        "props": {
+            "blockClass": "submenu"
+        },
+
+        "children": ["image#accesorios-banner","flex-layout.row#accesorios"]
+    },
+
+    "flex-layout.row#accesorios": {
+        "props": {
+            "blockClass": "categories-wrapper",
+            "colSizing": "auto",
+            "colGap": 9
+        },
+
+        "children": [
+            "vtex.menu@2.x:menu#accesorios-column-1",
+            "vtex.menu@2.x:menu#accesorios-column-2",
+            "vtex.menu@2.x:menu#accesorios-column-3"
+        ]
+    },
+
+    /* COLUMNA 1 */
+    "vtex.menu@2.x:menu#accesorios-column-1": {
+        "props": {
+            "blockClass": "categories"
+        },
+
+        "children": [
+          "menu-item#sub-accesorios-column-1",
+          "vtex.menu@2.x:menu#submenu-accesorios-column-1"
+        ]
+    },
+
+    "menu-item#sub-accesorios-column-1": {
+      "props": {
+          "blockClass": "category",
+          "id": "accesorios-column-1",
+          "type": "custom",
+          "itemProps": {
+                "href": "/accesorios/medias",
+                "text": "Medias",
+                "tagTitle": "Medias",
+                "type": "internal",
+                "noFollow": false
+          }
+      }
+    },
+
+    "vtex.menu@2.x:menu#submenu-accesorios-column-1": {
+        "props": {
+          "blockClass": "categories",
+          "items": [
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/accesorios/medias/invisible",
+                    "text": "Invisible",
+                    "tagTitle": "Invisible",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            },
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/accesorios/medias/soquete",
+                  "text": "Soquete",
+                  "tagTitle": "Soquete",
+                  "type": "internal",
+                  "noFollow": false
+                }
+            },
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/accesorios/medias/media-cana",
+                  "text": "Media Caña",
+                  "tagTitle": "Media Caña",
+                  "type": "internal",
+                  "noFollow": false
+                }
+            }
+          ]
+        }
+    },
+
+    /* COLUMNA 2 */
+    "vtex.menu@2.x:menu#accesorios-column-2": {
+        "props": {
+            "blockClass": "categories"
+        },
+
+        "children": [
+          "menu-item#sub-accesorios-column-2",
+          "vtex.menu@2.x:menu#submenu-accesorios-column-2"
+        ]
+    },
+
+    "menu-item#sub-accesorios-column-2": {
+      "props": {
+          "blockClass": "category",
+          "id": "accesorios-column-2",
+          "type": "custom",
+          "itemProps": {
+                "href": "/accesorios/pantuflas",
+                "text": "Pantuflas",
+                "tagTitle": "Pantuflas",
+                "type": "internal",
+                "noFollow": false
+          }
+      }
+    },
+
+    "vtex.menu@2.x:menu#submenu-accesorios-column-2": {
+        "props": {
+          "blockClass": "categories",
+          "items": [
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/accesorios/pantuflas/pantufla",
+                    "text": "Pantufla",
+                    "tagTitle": "Pantufla",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            },
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/accesorios/pantuflas/pantuflon",
+                  "text": "Pantuflón",
+                  "tagTitle": "Pantuflón",
+                  "type": "internal",
+                  "noFollow": false
+                }
+            }
+          ]
+        }
+    },
+
+    /* COLUMNA 3 */
+    "vtex.menu@2.x:menu#accesorios-column-3": {
+        "props": {
+            "blockClass": "categories"
+        },
+
+        "children": [
+          "menu-item#sub-accesorios-column-3",
+          "vtex.menu@2.x:menu#submenu-accesorios-column-3"
+        ]
+    },
+
+    "menu-item#sub-accesorios-column-3": {
+      "props": {
+          "blockClass": "category",
+          "id": "accesorios-column-2",
+          "type": "custom",
+          "itemProps": {
+                "href": "/accesorios/ojotas",
+                "text": "Ojotas",
+                "tagTitle": "Ojotas",
+                "type": "internal",
+                "noFollow": false
+          }
+      }
+    },
+
+    "vtex.menu@2.x:menu#submenu-accesorios-column-3": {
+        "props": {
+          "blockClass": "categories",
+          "items": [
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/accesorios/ojotas/Ojota",
+                    "text": "Ojota",
+                    "tagTitle": "Ojota",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            }
+          ]
+        }
+    },
+
+    /* COLUMNA BANNER */
+    "image#accesorios-banner": {
+        "props": {
+            "blockClass": "submenu-banner",
+            "src": "assets/imgs/desktop/luz-de-mar-mega-menu-3-columns.png",
+            "link": true
+        }
+    }
+}

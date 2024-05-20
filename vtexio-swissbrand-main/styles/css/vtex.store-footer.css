@@ -1,0 +1,35 @@
+/* Footer */
+
+.socialNetworkLink {
+    margin: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.socialNetworkLink--instagram {
+    background-image: url("assets/svgs/luz-de-mar-footer-logo-instagram.svg");
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+}
+
+.socialNetworkLink--facebook {
+    background-image: url("assets/svgs/luz-de-mar-footer-logo-facebook.svg");
+    width: 7px;
+    height: 15px;
+    margin-left: 15px;
+}
+
+.socialNetworkLink--twitter {
+    background-image: url("assets/svgs/twitter-icon.svg");
+}
+
+.socialNetworkLink--youtube {
+    background-image: url("assets/svgs/youtube-icon.svg");
+}
+
+.socialNetworkImage {
+    opacity: 0;
+}
+
+/**/

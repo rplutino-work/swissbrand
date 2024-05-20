@@ -1,0 +1,196 @@
+{
+    "drawer#her": {
+        "props": {
+            "blockClass": ["mobile-menu", "secondary-tab"]
+        },
+
+        "blocks": ["drawer-trigger#her"],
+        "children": ["menu#her"]
+    },
+
+    "drawer-trigger#her": {
+        "children": ["rich-text#her"]
+    },
+
+    "rich-text#her": {
+        "props": {
+            "blockClass": "mobile-menu-item",
+            "text": "Her"
+        }
+    },
+
+    "menu#her": {
+        "props": {
+            "blockClass": "mobile-menu",
+            "orientation": "vertical"
+        },
+
+        "children": [
+            "drawer#her-column-1", 
+            "drawer#her-column-2", 
+            "drawer#her-column-3", 
+            "menu-item#her-see-all"
+        ]
+    },
+
+    /* COLUMN 1 */
+    "drawer#her-column-1": {
+        "props": {
+            "blockClass": ["mobile-menu", "secondary-tab"]
+        },
+
+        "blocks": ["drawer-trigger#her-column-1"],
+        "children": ["menu#her-menu-column-1"]
+    },
+
+    "drawer-trigger#her-column-1": {
+        "children": ["rich-text#her-column-1"]
+    },
+
+    "rich-text#her-column-1": {
+        "props": {
+            "blockClass": "mobile-menu-item",
+            "text": "Corpiños"
+        }
+    },
+
+    "menu#her-menu-column-1": {
+        "props": {
+            "blockClass": "mobile-menu",
+            "orientation": "vertical"
+        },
+
+        "children": [
+            "vtex.menu@2.x:menu#submenu-her-column-1",
+            "menu-item#her-column-1-see-all"
+        ]
+    },
+
+    "menu-item#her-column-1-see-all": {
+        "props": {
+            "blockClass": ["category", "see-all"],
+            "id": "her-column-1-see-all",
+            "type": "custom",
+            "itemProps": {
+                "href": "/her/corpiños",
+                "text": "Ver todo corpiños",
+                "tagTitle": "Ver todo corpiños",
+                "type": "internal",
+                "noFollow": false
+            }
+        }
+    },
+
+    /* COLUMN 2 */
+    "drawer#her-column-2": {
+        "props": {
+            "blockClass": ["mobile-menu", "secondary-tab"]
+        },
+
+        "blocks": ["drawer-trigger#her-column-2"],
+        "children": ["menu#her-menu-column-2"]
+    },
+
+    "drawer-trigger#her-column-2": {
+        "children": ["rich-text#her-column-2"]
+    },
+
+    "rich-text#her-column-2": {
+        "props": {
+            "blockClass": "mobile-menu-item",
+            "text": "Bombachas"
+        }
+    },
+
+    "menu#her-menu-column-2": {
+        "props": {
+            "blockClass": "mobile-menu",
+            "orientation": "vertical"
+        },
+
+        "children": [
+            "vtex.menu@2.x:menu#submenu-her-column-2",
+            "menu-item#her-column-2-see-all"
+        ]
+    },
+
+    "menu-item#her-column-2-see-all": {
+        "props": {
+            "blockClass": ["category", "see-all"],
+            "id": "her-column-2-see-all",
+            "type": "custom",
+
+            "itemProps": {
+                "href": "/her/corpinos",
+                "text": "Ver todo bombachas",
+                "tagTitle": "Ver todo bombachas",
+                "type": "internal",
+                "noFollow": false
+            }
+        }
+    },
+
+    /* COLUMN 3 */
+    "drawer#her-column-3": {
+        "props": {
+            "blockClass": ["mobile-menu", "secondary-tab"]
+        },
+
+        "blocks": ["drawer-trigger#her-column-3"],
+        "children": ["menu#her-menu-column-3"]
+    },
+
+    "drawer-trigger#her-column-3": {
+        "children": ["rich-text#her-column-3"]
+    },
+
+    "rich-text#her-column-3": {
+        "props": {
+            "blockClass": "mobile-menu-item",
+            "text": "One Piece"
+        }
+    },
+
+    "menu#her-menu-column-3": {
+        "props": {
+            "blockClass": "mobile-menu",
+            "orientation": "vertical"
+        },
+
+        "children": [
+            "vtex.menu@2.x:menu#submenu-her-column-3",
+            "menu-item#her-column-3-see-all"
+        ]
+    },
+
+    "menu-item#her-column-3-see-all": {
+        "props": {
+            "blockClass": ["category", "see-all"],
+            "id": "her-column-3-see-all",
+            "type": "custom",
+            "itemProps": {
+                "href": "/her/one-piece",
+                "text": "Ver todo One Piece",
+                "tagTitle": "Ver todo One Piece",
+                "type": "internal",
+                "noFollow": false
+            }
+        }
+    },
+
+    /* VER TODO DEPARTAMENTO */
+    "menu-item#her-see-all": {
+        "props": {
+            "blockClass": ["department", "see-all"],
+            "id": "her-see-all",
+            "type": "custom",
+            "itemProps": {
+                "href": "/her",
+                "text": "Ver todo her",
+                "tagTitle": "Ver todo her",
+                "type": "internal",
+                "noFollow": false
+            }
+        }
+    }
+}

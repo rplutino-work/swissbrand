@@ -1,0 +1,245 @@
+{
+    "drawer#pijamas": {
+        "props": {
+            "blockClass": ["mobile-menu", "secondary-tab"]
+        },
+
+        "blocks": ["drawer-trigger#pijamas"],
+        "children": ["menu#pijamas"]
+    },
+
+    "drawer-trigger#pijamas": {
+        "children": ["rich-text#pijamas"]
+    },
+
+    "rich-text#pijamas": {
+        "props": {
+            "blockClass": "mobile-menu-item",
+            "text": "Pijamas"
+        }
+    },
+
+    "menu#pijamas": {
+        "props": {
+            "blockClass": "mobile-menu",
+            "orientation": "vertical"
+        },
+
+        "children": [
+            "drawer#pijamas-column-1", 
+            "drawer#pijamas-column-2", 
+            "drawer#pijamas-column-3",
+            //"drawer#pijamas-column-4", 
+            "menu-item#pijamas-see-all"
+        ]
+    },
+
+    /* COLUMN 1 */
+    "drawer#pijamas-column-1": {
+        "props": {
+            "blockClass": ["mobile-menu", "secondary-tab"]
+        },
+
+        "blocks": ["drawer-trigger#pijamas-column-1"],
+        "children": ["menu#pijamas-menu-column-1"]
+    },
+
+    "drawer-trigger#pijamas-column-1": {
+        "children": ["rich-text#pijamas-column-1"]
+    },
+
+    "rich-text#pijamas-column-1": {
+        "props": {
+            "blockClass": "mobile-menu-item",
+            "text": "Remeras y muscuolosas"
+        }
+    },
+
+    "menu#pijamas-menu-column-1": {
+        "props": {
+            "blockClass": "mobile-menu",
+            "orientation": "vertical"
+        },
+
+        "children": [
+            "vtex.menu@2.x:menu#submenu-pijamas-column-1",
+            "menu-item#pijamas-column-1-see-all"
+        ]
+    },
+
+    "menu-item#pijamas-column-1-see-all": {
+        "props": {
+            "blockClass": ["category", "see-all"],
+            "id": "pijamas-column-1-see-all",
+            "type": "custom",
+            "itemProps": {
+                "href": "/pijamas/remeras-y-musculosas",
+                "text": "Ver todo remeras y musculosas",
+                "tagTitle": "Ver todo remeras y musculosas",
+                "type": "internal",
+                "noFollow": false
+            }
+        }
+    },
+
+    /* COLUMN 2 */
+    "drawer#pijamas-column-2": {
+        "props": {
+            "blockClass": ["mobile-menu", "secondary-tab"]
+        },
+
+        "blocks": ["drawer-trigger#pijamas-column-2"],
+        "children": ["menu#pijamas-menu-column-2"]
+    },
+
+    "drawer-trigger#pijamas-column-2": {
+        "children": ["rich-text#pijamas-column-2"]
+    },
+
+    "rich-text#pijamas-column-2": {
+        "props": {
+            "blockClass": "mobile-menu-item",
+            "text": "Pantalones y Shorts"
+        }
+    },
+
+    "menu#pijamas-menu-column-2": {
+        "props": {
+            "blockClass": "mobile-menu",
+            "orientation": "vertical"
+        },
+
+        "children": [
+            "vtex.menu@2.x:menu#submenu-pijamas-column-2",
+            "menu-item#pijamas-column-2-see-all"
+        ]
+    },
+
+    "menu-item#pijamas-column-2-see-all": {
+        "props": {
+            "blockClass": ["category", "see-all"],
+            "id": "pijamas-column-2-see-all",
+            "type": "custom",
+
+            "itemProps": {
+                "href": "/pijamas/pantalones-y-shorts",
+                "text": "Ver todo pantalones y shorts",
+                "tagTitle": "Ver todo pantalones y shorts",
+                "type": "internal",
+                "noFollow": false
+            }
+        }
+    },
+
+    /* COLUMN 3 */
+    "drawer#pijamas-column-3": {
+        "props": {
+            "blockClass": ["mobile-menu", "secondary-tab"]
+        },
+
+        "blocks": ["drawer-trigger#pijamas-column-3"],
+        "children": ["menu#pijamas-menu-column-3"]
+    },
+
+    "drawer-trigger#pijamas-column-3": {
+        "children": ["rich-text#pijamas-column-3"]
+    },
+
+    "rich-text#pijamas-column-3": {
+        "props": {
+            "blockClass": "mobile-menu-item",
+            "text": "Camisones"
+        }
+    },
+
+    "menu#pijamas-menu-column-3": {
+        "props": {
+            "blockClass": "mobile-menu",
+            "orientation": "vertical"
+        },
+
+        "children": [
+            "vtex.menu@2.x:menu#submenu-pijamas-column-3",
+            "menu-item#pijamas-column-3-see-all"
+        ]
+    },
+
+    "menu-item#pijamas-column-3-see-all": {
+        "props": {
+            "blockClass": ["category", "see-all"],
+            "id": "pijamas-column-3-see-all",
+            "type": "custom",
+            "itemProps": {
+                "href": "/pijamas/camisones",
+                "text": "Ver todo camisones",
+                "tagTitle": "Ver todo camisones",
+                "type": "internal",
+                "noFollow": false
+            }
+        }
+    },
+
+    /* COLUMN 4 */
+    "drawer#pijamas-column-4": {
+        "props": {
+            "blockClass": ["mobile-menu", "secondary-tab"]
+        },
+
+        "blocks": ["drawer-trigger#pijamas-column-4"],
+        "children": ["menu#pijamas-menu-column-4"]
+    },
+
+    "drawer-trigger#pijamas-column-4": {
+        "children": ["rich-text#pijamas-column-4"]
+    },
+
+    "rich-text#pijamas-column-4": {
+        "props": {
+            "blockClass": "mobile-menu-item",
+            "text": "Batas"
+        }
+    },
+
+    "menu#pijamas-menu-column-4": {
+        "props": {
+            "blockClass": "mobile-menu",
+            "orientation": "vertical"
+        },
+
+        "children": [
+            "vtex.menu@2.x:menu#submenu-pijamas-column-4",
+            "menu-item#pijamas-column-4-see-all"
+        ]
+    },
+
+    "menu-item#pijamas-column-4-see-all": {
+        "props": {
+            "blockClass": ["category", "see-all"],
+            "id": "pijamas-column-4-see-all",
+            "type": "custom",
+            "itemProps": {
+                "href": "/pijamas/batas",
+                "text": "Ver todo batas",
+                "tagTitle": "Ver todo batas",
+                "type": "internal",
+                "noFollow": false
+            }
+        }
+    },
+
+    /* VER TODO DEPARTAMENTO */
+    "menu-item#pijamas-see-all": {
+        "props": {
+            "blockClass": ["department", "see-all"],
+            "id": "pijamas-see-all",
+            "type": "custom",
+            "itemProps": {
+                "href": "/pijamas",
+                "text": "Ver todo trajes de baño",
+                "tagTitle": "Ver todo trajes de baño",
+                "type": "internal",
+                "noFollow": false
+            }
+        }
+    }
+}

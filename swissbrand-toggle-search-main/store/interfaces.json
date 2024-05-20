@@ -1,0 +1,6 @@
+{
+	"toggle-search": {
+    "component": "ToggleSearch",
+    "composition": "children"
+	}
+}

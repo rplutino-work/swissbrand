@@ -1,0 +1,268 @@
+{
+    "vtex.menu@2.x:submenu#her": {
+        "props": {
+            "blockClass": "submenu"
+        },
+
+        "children": ["image#her-banner","flex-layout.row#her"]
+    },
+
+    "flex-layout.row#her": {
+        "props": {
+            "blockClass": "categories-wrapper",
+            "colSizing": "auto",
+            "colGap": 9
+        },
+
+        "children": [
+            "vtex.menu@2.x:menu#her-column-1",
+            "vtex.menu@2.x:menu#her-column-2",
+            "vtex.menu@2.x:menu#her-column-4"
+        ]
+    },
+
+    /* COLUMNA 1 */
+    "vtex.menu@2.x:menu#her-column-1": {
+        "props": {
+            "blockClass": "categories"
+        },
+
+        "children": [
+          "menu-item#sub-her-column-1",
+          "vtex.menu@2.x:menu#submenu-her-column-1"
+        ]
+    },
+
+    "menu-item#sub-her-column-1": {
+      "props": {
+          "blockClass": "category",
+          "id": "her-column-1",
+          "type": "custom",
+          "itemProps": {
+                "href": "/her/corpinos",
+                "text": "Corpiños",
+                "tagTitle": "Corpiños",
+                "type": "internal",
+                "noFollow": false
+          }
+      }
+    },
+
+    "vtex.menu@2.x:menu#submenu-her-column-1": {
+        "props": {
+          "blockClass": "categories",
+          "items": [
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/her/corpinos/traingulo",
+                    "text": "Triangulo",
+                    "tagTitle": "Triangulo",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            },
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/her/corpinos/top",
+                    "text": "Top",
+                    "tagTitle": "Top",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            },
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/her/corpinos/bandeau",
+                    "text": "Bandeau",
+                    "tagTitle": "Bandeau",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            },
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/her/corpinos/high-neck",
+                    "text": "High Neck",
+                    "tagTitle": "High Neck",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            },
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/her/corpinos/aro",
+                    "text": "Aro",
+                    "tagTitle": "Aro",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            }
+          ]
+        }
+    },
+
+    /* COLUMNA 2 */
+    "vtex.menu@2.x:menu#her-column-2": {
+        "props": {
+            "blockClass": "categories"
+        },
+
+        "children": [
+          "menu-item#sub-her-column-2",
+          "vtex.menu@2.x:menu#submenu-her-column-2"
+        ]
+    },
+
+    "menu-item#sub-her-column-2": {
+      "props": {
+          "blockClass": "category",
+          "id": "her-column-2",
+          "type": "custom",
+          "itemProps": {
+                "href": "/her/bombachas",
+                "text": "Bombachas",
+                "tagTitle": "Bombachas",
+                "type": "internal",
+                "noFollow": false
+          }
+      }
+    },
+
+    "vtex.menu@2.x:menu#submenu-her-column-2": {
+        "props": {
+          "blockClass": "categories",
+          "items": [
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/her/bombachas/cola-less",
+                    "text": "Cola Less",
+                    "tagTitle": "Cola Less",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            },
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/her/bombachas/media-cola",
+                    "text": "Media Cola",
+                    "tagTitle": "Media Cola",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            },
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/her/bombachas/vedetina",
+                    "text": "Vedetina",
+                    "tagTitle": "Vedetina",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            },
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/her/bombachas/tiro-medio",
+                    "text": "Tiro medio",
+                    "tagTitle": "Tiro medio",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            },
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/her/bombachas/tiro-alto",
+                    "text": "Tiro Alto",
+                    "tagTitle": "Tiro Alto",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            },
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/her/bombachas/culotte",
+                    "text": "Culotte",
+                    "tagTitle": "Culotte",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            }
+          ]
+        }
+    },
+
+    /* COLUMNA 3 */
+    "vtex.menu@2.x:menu#her-column-4": {
+        "props": {
+            "blockClass": "categories"
+        },
+
+        "children": [
+          "menu-item#sub-her-column-4",
+          "vtex.menu@2.x:menu#submenu-her-column-3"
+        ]
+    },
+
+    "menu-item#sub-her-column-4": {
+      "props": {
+          "blockClass": "category",
+          "id": "her-column-4",
+          "type": "custom",
+          "itemProps": {
+                "href": "/her/one-pice",
+                "text": "One Piece",
+                "tagTitle": "One Piece",
+                "type": "internal",
+                "noFollow": false
+          }
+      }
+    },
+
+    "vtex.menu@2.x:menu#submenu-her-column-3": {
+        "props": {
+          "blockClass": "categories",
+          "items": [
+            {
+                "type": "custom",
+                "highlight": false,
+                "itemProps": {
+                    "href": "/her/one-pice/body",
+                    "text": "Body",
+                    "tagTitle": "Body",
+                    "type": "internal",
+                    "noFollow": false
+                }
+            }
+          ]
+        }
+    },
+
+    "image#her-banner": {
+        "props": {
+            "blockClass": "submenu-banner",
+            "src": "assets/imgs/desktop/luz-de-mar-mega-menu-4-columns.png",
+            "link": true
+        }
+    }
+}

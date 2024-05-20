@@ -1,0 +1,6 @@
+{
+	"size-table": {
+		"component": "SizeTable",
+		"composition": "children"
+	}
+}

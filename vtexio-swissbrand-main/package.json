@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "log-update": "^5.0.0"
+  }
+}

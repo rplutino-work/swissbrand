@@ -1,0 +1,245 @@
+{
+    "drawer#trajes-de-bano": {
+        "props": {
+            "blockClass": ["mobile-menu", "secondary-tab"]
+        },
+
+        "blocks": ["drawer-trigger#trajes-de-bano"],
+        "children": ["menu#trajes-de-bano"]
+    },
+
+    "drawer-trigger#trajes-de-bano": {
+        "children": ["rich-text#trajes-de-bano"]
+    },
+
+    "rich-text#trajes-de-bano": {
+        "props": {
+            "blockClass": "mobile-menu-item",
+            "text": "Trajes de baño"
+        }
+    },
+
+    "menu#trajes-de-bano": {
+        "props": {
+            "blockClass": "mobile-menu",
+            "orientation": "vertical"
+        },
+
+        "children": [
+            "drawer#trajes-de-bano-column-1", 
+            "drawer#trajes-de-bano-column-2", 
+            "drawer#trajes-de-bano-column-3", 
+            "drawer#trajes-de-bano-column-4",
+            "menu-item#trajes-de-bano-see-all"
+        ]
+    },
+
+    /* COLUMN 1 */
+    "drawer#trajes-de-bano-column-1": {
+        "props": {
+            "blockClass": ["mobile-menu", "secondary-tab"]
+        },
+
+        "blocks": ["drawer-trigger#trajes-de-bano-column-1"],
+        "children": ["menu#trajes-de-bano-menu-column-1"]
+    },
+
+    "drawer-trigger#trajes-de-bano-column-1": {
+        "children": ["rich-text#trajes-de-bano-column-1"]
+    },
+
+    "rich-text#trajes-de-bano-column-1": {
+        "props": {
+            "blockClass": "mobile-menu-item",
+            "text": "Conjuntos"
+        }
+    },
+
+    "menu#trajes-de-bano-menu-column-1": {
+        "props": {
+            "blockClass": "mobile-menu",
+            "orientation": "vertical"
+        },
+
+        "children": [
+            "vtex.menu@2.x:menu#submenu-trajes-de-bano-column-1",
+            "menu-item#trajes-de-bano-column-1-see-all"
+        ]
+    },
+
+    "menu-item#trajes-de-bano-column-1-see-all": {
+        "props": {
+            "blockClass": ["category", "see-all"],
+            "id": "trajes-de-bano-column-1-see-all",
+            "type": "custom",
+            "itemProps": {
+                "href": "/trajes-de-bano/conjuntos",
+                "text": "Ver todo conjuntos",
+                "tagTitle": "Ver todo conjuntos",
+                "type": "internal",
+                "noFollow": false
+            }
+        }
+    },
+
+    /* COLUMN 2 */
+    "drawer#trajes-de-bano-column-2": {
+        "props": {
+            "blockClass": ["mobile-menu", "secondary-tab"]
+        },
+
+        "blocks": ["drawer-trigger#trajes-de-bano-column-2"],
+        "children": ["menu#trajes-de-bano-menu-column-2"]
+    },
+
+    "drawer-trigger#trajes-de-bano-column-2": {
+        "children": ["rich-text#trajes-de-bano-column-2"]
+    },
+
+    "rich-text#trajes-de-bano-column-2": {
+        "props": {
+            "blockClass": "mobile-menu-item",
+            "text": "Corpiños"
+        }
+    },
+
+    "menu#trajes-de-bano-menu-column-2": {
+        "props": {
+            "blockClass": "mobile-menu",
+            "orientation": "vertical"
+        },
+
+        "children": [
+            "vtex.menu@2.x:menu#submenu-trajes-de-bano-column-2",
+            "menu-item#trajes-de-bano-column-2-see-all"
+        ]
+    },
+
+    "menu-item#trajes-de-bano-column-2-see-all": {
+        "props": {
+            "blockClass": ["category", "see-all"],
+            "id": "trajes-de-bano-column-2-see-all",
+            "type": "custom",
+
+            "itemProps": {
+                "href": "/trajes-de-bano/corpinos",
+                "text": "Ver todo corpiños",
+                "tagTitle": "Ver todo corpiños",
+                "type": "internal",
+                "noFollow": false
+            }
+        }
+    },
+
+    /* COLUMN 3 */
+    "drawer#trajes-de-bano-column-3": {
+        "props": {
+            "blockClass": ["mobile-menu", "secondary-tab"]
+        },
+
+        "blocks": ["drawer-trigger#trajes-de-bano-column-3"],
+        "children": ["menu#trajes-de-bano-menu-column-3"]
+    },
+
+    "drawer-trigger#trajes-de-bano-column-3": {
+        "children": ["rich-text#trajes-de-bano-column-3"]
+    },
+
+    "rich-text#trajes-de-bano-column-3": {
+        "props": {
+            "blockClass": "mobile-menu-item",
+            "text": "Bombachas"
+        }
+    },
+
+    "menu#trajes-de-bano-menu-column-3": {
+        "props": {
+            "blockClass": "mobile-menu",
+            "orientation": "vertical"
+        },
+
+        "children": [
+            "vtex.menu@2.x:menu#submenu-trajes-de-bano-column-3",
+            "menu-item#trajes-de-bano-column-3-see-all"
+        ]
+    },
+
+    "menu-item#trajes-de-bano-column-3-see-all": {
+        "props": {
+            "blockClass": ["category", "see-all"],
+            "id": "trajes-de-bano-column-3-see-all",
+            "type": "custom",
+            "itemProps": {
+                "href": "/trajes-de-bano/bombachas",
+                "text": "Ver todo bombachas",
+                "tagTitle": "Ver todo bombachas",
+                "type": "internal",
+                "noFollow": false
+            }
+        }
+    },
+
+    /* COLUMN 4 */
+    "drawer#trajes-de-bano-column-4": {
+        "props": {
+            "blockClass": ["mobile-menu", "secondary-tab"]
+        },
+
+        "blocks": ["drawer-trigger#trajes-de-bano-column-4"],
+        "children": ["menu#trajes-de-bano-menu-column-4"]
+    },
+
+    "drawer-trigger#trajes-de-bano-column-4": {
+        "children": ["rich-text#trajes-de-bano-column-4"]
+    },
+
+    "rich-text#trajes-de-bano-column-4": {
+        "props": {
+            "blockClass": "mobile-menu-item",
+            "text": "One Piece"
+        }
+    },
+
+    "menu#trajes-de-bano-menu-column-4": {
+        "props": {
+            "blockClass": "mobile-menu",
+            "orientation": "vertical"
+        },
+
+        "children": [
+            "vtex.menu@2.x:menu#submenu-trajes-de-bano-column-4",
+            "menu-item#trajes-de-bano-column-4-see-all"
+        ]
+    },
+
+    "menu-item#trajes-de-bano-column-4-see-all": {
+        "props": {
+            "blockClass": ["category", "see-all"],
+            "id": "trajes-de-bano-column-4-see-all",
+            "type": "custom",
+            "itemProps": {
+                "href": "/trajes-de-bano/one-piece",
+                "text": "Ver todo One Piece",
+                "tagTitle": "Ver todo One Piece",
+                "type": "internal",
+                "noFollow": false
+            }
+        }
+    },
+
+    /* VER TODO DEPARTAMENTO */
+    "menu-item#trajes-de-bano-see-all": {
+        "props": {
+            "blockClass": ["department", "see-all"],
+            "id": "trajes-de-bano-see-all",
+            "type": "custom",
+            "itemProps": {
+                "href": "/trajes-de-bano",
+                "text": "Ver todo trajes de baño",
+                "tagTitle": "Ver todo trajes de baño",
+                "type": "internal",
+                "noFollow": false
+            }
+        }
+    }
+}

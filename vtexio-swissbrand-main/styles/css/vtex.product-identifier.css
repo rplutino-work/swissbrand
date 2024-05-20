@@ -1,0 +1,22 @@
+/* Product */
+
+.product-identifier__label,
+.product-identifier__value,
+.product-identifier__separator {
+    line-height: 12px;
+    font-size: 10px;
+    color: #434343;
+}
+
+.product-identifier__label {
+    font-size: 0px;
+}
+
+.product-identifier__label::after {
+    content: 'Código';
+    line-height: 12px;
+    font-size: 10px;
+    color: #434343;
+}
+
+/**/

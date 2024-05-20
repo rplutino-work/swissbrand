@@ -1,0 +1,38 @@
+.customPrices{
+  display: flex;
+  flex-direction: column;
+}
+
+.customPriceWrapper{}
+
+.customDiscount,
+.customAhorre {
+  display: none;
+}
+
+.customListPrice{
+  display: block;
+  text-align: left;
+  line-height: 15px;
+  font-size: 12px;
+  font-weight: 300;
+  color: #4b4b4b;
+  text-decoration-line: line-through;
+}
+
+.customPrice{
+  text-align: left;
+  line-height: 22px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #434343;
+}
+
+.customInstallments{
+  display: block;
+  line-height: 15px;
+  font-size: 12px;
+  color: #434343;
+  text-align: left;
+  font-weight: 400;
+}

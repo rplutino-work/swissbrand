@@ -1,0 +1,35 @@
+{
+    "flex-layout.row#related-products": {
+        "props": {
+            "blockClass": "shelf"
+        },
+
+        "children": ["flex-layout.col#related-products"]
+    },
+
+    "flex-layout.col#related-products": {
+        "props": {
+            "preventVerticalStretch": true
+        },
+
+        "children": ["rich-text#related-products", "list-context.product-list#related-products"]
+    },
+
+    "rich-text#related-products": {
+        "props": {
+            "blockClass": "shelf-title",
+            "text": "## RECOMENDADOS",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+
+    "list-context.product-list#related-products": {
+        "props": {
+            "collection": "137"
+        },
+
+        "blocks": ["product-summary.shelf#shelf-product"],
+        "children": ["slider-layout#shelf-products-slide"]
+    }
+}

@@ -1,0 +1,245 @@
+{
+    "drawer#sports": {
+        "props": {
+            "blockClass": ["mobile-menu", "secondary-tab"]
+        },
+
+        "blocks": ["drawer-trigger#sports"],
+        "children": ["menu#sports"]
+    },
+
+    "drawer-trigger#sports": {
+        "children": ["rich-text#sports"]
+    },
+
+    "rich-text#sports": {
+        "props": {
+            "blockClass": "mobile-menu-item",
+            "text": "Sports"
+        }
+    },
+
+    "menu#sports": {
+        "props": {
+            "blockClass": "mobile-menu",
+            "orientation": "vertical"
+        },
+
+        "children": [
+            "drawer#sports-column-1", 
+            //"drawer#sports-column-2", 
+            "drawer#sports-column-3", 
+            //"drawer#sports-column-4",
+            "menu-item#sports-see-all"
+        ]
+    },
+
+    /* COLUMN 1 */
+    "drawer#sports-column-1": {
+        "props": {
+            "blockClass": ["mobile-menu", "secondary-tab"]
+        },
+
+        "blocks": ["drawer-trigger#sports-column-1"],
+        "children": ["menu#sports-menu-column-1"]
+    },
+
+    "drawer-trigger#sports-column-1": {
+        "children": ["rich-text#sports-column-1"]
+    },
+
+    "rich-text#sports-column-1": {
+        "props": {
+            "blockClass": "mobile-menu-item",
+            "text": "Tops y remeras"
+        }
+    },
+
+    "menu#sports-menu-column-1": {
+        "props": {
+            "blockClass": "mobile-menu",
+            "orientation": "vertical"
+        },
+
+        "children": [
+            "vtex.menu@2.x:menu#submenu-sports-column-1",
+            "menu-item#sports-column-1-see-all"
+        ]
+    },
+
+    "menu-item#sports-column-1-see-all": {
+        "props": {
+            "blockClass": ["category", "see-all"],
+            "id": "sports-column-1-see-all",
+            "type": "custom",
+            "itemProps": {
+                "href": "/sports/tops-y-remeras",
+                "text": "Ver todo tops y remeras",
+                "tagTitle": "Ver todo tops y remeras",
+                "type": "internal",
+                "noFollow": false
+            }
+        }
+    },
+
+    /* COLUMN 2 */
+    "drawer#sports-column-2": {
+        "props": {
+            "blockClass": ["mobile-menu", "secondary-tab"]
+        },
+
+        "blocks": ["drawer-trigger#sports-column-2"],
+        "children": ["menu#sports-menu-column-2"]
+    },
+
+    "drawer-trigger#sports-column-2": {
+        "children": ["rich-text#sports-column-2"]
+    },
+
+    "rich-text#sports-column-2": {
+        "props": {
+            "blockClass": "mobile-menu-item",
+            "text": "Buzos y camperas"
+        }
+    },
+
+    "menu#sports-menu-column-2": {
+        "props": {
+            "blockClass": "mobile-menu",
+            "orientation": "vertical"
+        },
+
+        "children": [
+            "vtex.menu@2.x:menu#submenu-sports-column-2",
+            "menu-item#sports-column-2-see-all"
+        ]
+    },
+
+    "menu-item#sports-column-2-see-all": {
+        "props": {
+            "blockClass": ["category", "see-all"],
+            "id": "sports-column-2-see-all",
+            "type": "custom",
+
+            "itemProps": {
+                "href": "/sports/buzos-y-camperas",
+                "text": "Ver todo buzos y camperas",
+                "tagTitle": "Ver todo buzos y camperas",
+                "type": "internal",
+                "noFollow": false
+            }
+        }
+    },
+
+    /* COLUMN 3 */
+    "drawer#sports-column-3": {
+        "props": {
+            "blockClass": ["mobile-menu", "secondary-tab"]
+        },
+
+        "blocks": ["drawer-trigger#sports-column-3"],
+        "children": ["menu#sports-menu-column-3"]
+    },
+
+    "drawer-trigger#sports-column-3": {
+        "children": ["rich-text#sports-column-3"]
+    },
+
+    "rich-text#sports-column-3": {
+        "props": {
+            "blockClass": "mobile-menu-item",
+            "text": "Pantalones y calzas"
+        }
+    },
+
+    "menu#sports-menu-column-3": {
+        "props": {
+            "blockClass": "mobile-menu",
+            "orientation": "vertical"
+        },
+
+        "children": [
+            "vtex.menu@2.x:menu#submenu-sports-column-3",
+            "menu-item#sports-column-3-see-all"
+        ]
+    },
+
+    "menu-item#sports-column-3-see-all": {
+        "props": {
+            "blockClass": ["category", "see-all"],
+            "id": "sports-column-3-see-all",
+            "type": "custom",
+            "itemProps": {
+                "href": "/sports/pantalones-y-calzas",
+                "text": "Ver todo pantalones y calzas",
+                "tagTitle": "Ver todo pantalones y calzas",
+                "type": "internal",
+                "noFollow": false
+            }
+        }
+    },
+
+    /* COLUMN 4 */
+    "drawer#sports-column-4": {
+        "props": {
+            "blockClass": ["mobile-menu", "secondary-tab"]
+        },
+
+        "blocks": ["drawer-trigger#sports-column-4"],
+        "children": ["menu#sports-menu-column-4"]
+    },
+
+    "drawer-trigger#sports-column-4": {
+        "children": ["rich-text#sports-column-4"]
+    },
+
+    "rich-text#sports-column-4": {
+        "props": {
+            "blockClass": "mobile-menu-item",
+            "text": "Malla deportiva"
+        }
+    },
+
+    "menu#sports-menu-column-4": {
+        "props": {
+            "blockClass": "mobile-menu",
+            "orientation": "vertical"
+        },
+
+        "children": [
+            "vtex.menu@2.x:menu#submenu-sports-column-4",
+            "menu-item#sports-column-4-see-all"
+        ]
+    },
+
+    "menu-item#sports-column-4-see-all": {
+        "props": {
+            "blockClass": ["category", "see-all"],
+            "id": "sports-column-4-see-all",
+            "type": "custom",
+            "itemProps": {
+                "href": "/sports/malla-deportiva",
+                "text": "Ver todo Malla deportiva",
+                "tagTitle": "Ver todo Malla deportiva",
+                "type": "internal",
+                "noFollow": false
+            }
+        }
+    },
+
+    /* VER TODO DEPARTAMENTO */
+    "menu-item#sports-see-all": {
+        "props": {
+            "blockClass": ["department", "see-all"],
+            "id": "sports-see-all",
+            "type": "custom",
+            "itemProps": {
+                "href": "/sports",
+                "text": "Ver todo sports",
+                "tagTitle": "Ver todo sports",
+                "type": "internal",
+                "noFollow": false
+            }
+        }
+    }
+}

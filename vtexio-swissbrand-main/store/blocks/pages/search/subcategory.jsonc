@@ -1,0 +1,17 @@
+{
+    "store.search#subcategory": {
+        "props": {
+            "context": {
+                "orderByField": "OrderByReleaseDateDESC",
+                "maxItemsPerPage": 18,
+                "skusFilter": "ALL_AVAILABLE",
+                "simulationBehavior": "default"
+            }
+        },
+
+        "blocks": [
+            "luzdemararg.m3-custom-search-result:category-banner",
+            "search-result-layout"
+        ]
+    }
+}

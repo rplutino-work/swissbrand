@@ -1,0 +1,196 @@
+{
+    "drawer#lounge": {
+        "props": {
+            "blockClass": ["mobile-menu", "secondary-tab"]
+        },
+
+        "blocks": ["drawer-trigger#lounge"],
+        "children": ["menu#lounge"]
+    },
+
+    "drawer-trigger#lounge": {
+        "children": ["rich-text#lounge"]
+    },
+
+    "rich-text#lounge": {
+        "props": {
+            "blockClass": "mobile-menu-item",
+            "text": "Lounge"
+        }
+    },
+
+    "menu#lounge": {
+        "props": {
+            "blockClass": "mobile-menu",
+            "orientation": "vertical"
+        },
+
+        "children": [
+            "drawer#lounge-column-1", 
+            "drawer#lounge-column-2", 
+            "drawer#lounge-column-3", 
+            "menu-item#lounge-see-all"
+        ]
+    },
+
+    /* COLUMN 1 */
+    "drawer#lounge-column-1": {
+        "props": {
+            "blockClass": ["mobile-menu", "secondary-tab"]
+        },
+
+        "blocks": ["drawer-trigger#lounge-column-1"],
+        "children": ["menu#lounge-menu-column-1"]
+    },
+
+    "drawer-trigger#lounge-column-1": {
+        "children": ["rich-text#lounge-column-1"]
+    },
+
+    "rich-text#lounge-column-1": {
+        "props": {
+            "blockClass": "mobile-menu-item",
+            "text": "Remeras y musculosas"
+        }
+    },
+
+    "menu#lounge-menu-column-1": {
+        "props": {
+            "blockClass": "mobile-menu",
+            "orientation": "vertical"
+        },
+
+        "children": [
+            "vtex.menu@2.x:menu#submenu-lounge-column-1",
+            "menu-item#lounge-column-1-see-all"
+        ]
+    },
+
+    "menu-item#lounge-column-1-see-all": {
+        "props": {
+            "blockClass": ["category", "see-all"],
+            "id": "lounge-column-1-see-all",
+            "type": "custom",
+            "itemProps": {
+                "href": "/lounge/remeras-y-musculosas",
+                "text": "Ver todo remeras y musculosas",
+                "tagTitle": "Ver todo remeras y musculosas",
+                "type": "internal",
+                "noFollow": false
+            }
+        }
+    },
+
+    /* COLUMN 2 */
+    "drawer#lounge-column-2": {
+        "props": {
+            "blockClass": ["mobile-menu", "secondary-tab"]
+        },
+
+        "blocks": ["drawer-trigger#lounge-column-2"],
+        "children": ["menu#lounge-menu-column-2"]
+    },
+
+    "drawer-trigger#lounge-column-2": {
+        "children": ["rich-text#lounge-column-2"]
+    },
+
+    "rich-text#lounge-column-2": {
+        "props": {
+            "blockClass": "mobile-menu-item",
+            "text": "Buzos y camperas"
+        }
+    },
+
+    "menu#lounge-menu-column-2": {
+        "props": {
+            "blockClass": "mobile-menu",
+            "orientation": "vertical"
+        },
+
+        "children": [
+            "vtex.menu@2.x:menu#submenu-lounge-column-2",
+            "menu-item#lounge-column-2-see-all"
+        ]
+    },
+
+    "menu-item#lounge-column-2-see-all": {
+        "props": {
+            "blockClass": ["category", "see-all"],
+            "id": "lounge-column-2-see-all",
+            "type": "custom",
+
+            "itemProps": {
+                "href": "/lounge/buzos-y-camperas",
+                "text": "Ver todo buzos y camperas",
+                "tagTitle": "Ver todo buzos y camperas",
+                "type": "internal",
+                "noFollow": false
+            }
+        }
+    },
+
+    /* COLUMN 3 */
+    "drawer#lounge-column-3": {
+        "props": {
+            "blockClass": ["mobile-menu", "secondary-tab"]
+        },
+
+        "blocks": ["drawer-trigger#lounge-column-3"],
+        "children": ["menu#lounge-menu-column-3"]
+    },
+
+    "drawer-trigger#lounge-column-3": {
+        "children": ["rich-text#lounge-column-3"]
+    },
+
+    "rich-text#lounge-column-3": {
+        "props": {
+            "blockClass": "mobile-menu-item",
+            "text": "Pantalones y Shorts"
+        }
+    },
+
+    "menu#lounge-menu-column-3": {
+        "props": {
+            "blockClass": "mobile-menu",
+            "orientation": "vertical"
+        },
+
+        "children": [
+            "vtex.menu@2.x:menu#submenu-lounge-column-3",
+            "menu-item#lounge-column-3-see-all"
+        ]
+    },
+
+    "menu-item#lounge-column-3-see-all": {
+        "props": {
+            "blockClass": ["category", "see-all"],
+            "id": "lounge-column-3-see-all",
+            "type": "custom",
+            "itemProps": {
+                "href": "/lounge/pantalones-y-shorts",
+                "text": "Ver todo pantalones y shorts",
+                "tagTitle": "Ver todo pantalones y shorts",
+                "type": "internal",
+                "noFollow": false
+            }
+        }
+    },
+
+    /* VER TODO DEPARTAMENTO */
+    "menu-item#lounge-see-all": {
+        "props": {
+            "blockClass": ["department", "see-all"],
+            "id": "lounge-see-all",
+            "type": "custom",
+            "itemProps": {
+                "href": "/lounge",
+                "text": "Ver todo lounge",
+                "tagTitle": "Ver todo lounge",
+                "type": "internal",
+                "noFollow": false
+            }
+        }
+    }
+}

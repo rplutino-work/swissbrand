@@ -1,0 +1,32 @@
+{
+  "close-menu-overlay": {
+    "component": "CloseMenuOverlay",
+    "composition": "children"
+  },
+  "similar-products": {
+    "component": "SimilarProducts",
+    "composition": "children"
+  },
+  "add-class-on-header": {
+    "component": "AddClassOnHeader",
+    "composition": "children"
+  },
+  "custom-prices": {
+    "component": "CustomPrices",
+    "composition": "children"
+  },
+  "custom-typeform-script": {
+    "component": "CustomTypeformScript"
+  },
+  "custom-script": {
+    "component": "CustomScript"
+  },
+  "m3-flex-layout": {
+    "component": "FlexLayout",
+    "composition": "children"
+  },
+  "m3-flex-layout-item": {
+    "component": "FlexLayoutItem",
+    "composition": "children"
+  }
+}

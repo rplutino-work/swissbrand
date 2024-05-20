@@ -1,0 +1,179 @@
+{
+  "flex-layout.row#product-specs": {
+    "title": "Información del producto",
+    "children": [
+      "tab-layout#pdp-description"
+    ],
+    "props": {
+      "blockClass": "product-specs"
+    }
+  },
+"tab-layout#pdp-description": {
+    "title": "Contenido",
+    "children": [
+        "tab-list#product-specs",
+        "tab-content#product-specs"
+    ],
+    "props": {
+        "blockClass": "product-specs",
+        "defaultActiveTabId": "info"
+    }
+},
+"tab-list#product-specs": {
+    "title": "Opciones",
+    "props": {
+        "blockClass": "product-specs"
+    },
+    "children": [
+        "tab-list.item#product-info",
+        "tab-list.item#product-care",
+        "tab-list.item#product-shipping",
+        "tab-list.item#product-return"
+    ]
+},
+"tab-list.item#product-info": {
+    "title": "1ra pestaña",
+    "props": {
+        "tabId": "info",
+        "label": "Información del producto",
+        "blockClass": ["product-specs", "product-specs-01"],
+        "defaultActiveTab": true
+    }
+},
+"tab-list.item#product-care": {
+    "title": "2da pestaña",
+    "props": {
+        "tabId": "care",
+        "label": "Cuidado de la prenda",
+        "blockClass": ["product-specs", "product-specs-02"]
+    }
+},
+"tab-list.item#product-shipping": {
+  "title": "3ra pestaña",
+  "props": {
+    "tabId": "shipping",
+    "label": "Envío y formas de pago",
+    "blockClass": ["product-specs", "product-specs-03"]
+  }
+},
+"tab-list.item#product-return": {
+  "title": "4ta pestaña",
+  "props": {
+    "tabId": "return",
+    "label": "Cambios y devoluciones",
+    "blockClass": ["product-specs", "product-specs-04"]
+  }
+},
+"tab-content#product-specs": {
+    "title": "Contenido de pestañas",
+    "children": [
+        "tab-content.item#product-info",
+        "tab-content.item#product-care",
+        "tab-content.item#product-shipping",
+        "tab-content.item#product-return"
+    ]
+},
+"tab-content.item#product-info": {
+    "title": "Contenido 1ra pestaña",
+    "children": [
+       "product-specification-group#pdp-description"
+    ],
+    "props": {
+        "tabId": "info",
+        "blockClass": ["product-specs", "product-specs-01"]
+    }
+},
+"tab-content.item#product-care": {
+    "title": "Contenido 2da pestaña",
+    "children": [
+        "product-specification-group#pdp-description"
+    ],
+    "props": {
+        "tabId": "care",
+        "blockClass": ["product-specs", "product-specs-02"]
+    }
+},
+"tab-content.item#product-shipping": {
+  "title": "Contenido 3ra pestaña",
+  "children": [
+      "product-specification-group#pdp-description"
+  ],
+  "props": {
+      "tabId": "shipping",
+      "blockClass": ["product-specs", "product-specs-03"]
+  }
+},
+"tab-content.item#product-return": {
+  "title": "Contenido 4TA pestaña",
+  "children": [
+      "product-specification-group#pdp-description"
+  ],
+  "props": {
+      "tabId": "return",
+      "blockClass": ["product-specs", "product-specs-04"]
+  }
+},
+"product-specification-group#pdp-description": {
+    "title": "Grupo de Especificaciones",
+    "children": [
+        "product-specification#pdp-description"
+    ]
+},
+"product-specification#pdp-description": {
+    "title": "Especificaciones el producto",
+    "children": [
+        "flex-layout.row##pdp-description"
+    ]
+},
+"flex-layout.row##pdp-description": {
+    "title": "Contenido",
+    "props": {
+        "blockClass": "productSpecification"
+    },
+    "children": [
+        "flex-layout.col#spec-name",
+        "flex-layout.col#spec-value"
+    ]
+},
+"flex-layout.col#spec-name": {
+    "title": "Nombre",
+    "props": {
+        "blockClass": "productSpecificationName",
+        "width": {
+            "mobile": "100%",
+            "desktop": "100%"
+        }
+    },
+    "children": [
+        "product-specification-text#specification"
+    ]
+},
+"flex-layout.col#spec-value": {
+    "title": "Valor",
+    "props": {
+        "blockClass": "productSpecificationValue",
+        "width": {
+            "mobile": "100%",
+            "desktop": "100%"
+        }
+    },
+    "children": [
+        "product-specification-values"
+    ]
+},
+"product-specification-values": {
+    "children": [
+        "product-specification-text#value"
+    ]
+},
+"product-specification-text#specification": {
+    "props": {
+        "message": "{specificationName}"
+    }
+},
+"product-specification-text#value": {
+    "props": {
+        "message": "{specificationValue}"
+    }
+}
+}

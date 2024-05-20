@@ -1,0 +1,310 @@
+{
+    "vtex.menu@2.x:menu#departments": {
+        "title": "Menu desktop",
+        "props": {
+            "blockClass": "departments",
+            "experimentalOptimizeRendering": true
+        },
+
+        "children": [
+            "disposition-layout#menu-desktop-2"
+        ]
+    },
+
+    "disposition-layout#menu-desktop-2": {
+        "title": "Orden y visualización",
+        "children": [
+            "menu-item#estandar-01",
+            "menu-item#estandar-02",
+            "menu-item#estandar-03",
+            "menu-item#estandar-04",
+            "menu-item#estandar-05",
+            "menu-item#estandar-06",
+            "menu-item#estandar-07",
+            "menu-item#sale"
+        ],
+        "props": {
+          "disposition": [
+            {
+              "order": 1,
+              "__editorItemTitle": "Menu 01"
+            },
+            {
+              "order": 2,
+              "__editorItemTitle": "Menu 02"
+            },
+            {
+              "order": 3,
+              "__editorItemTitle": "Menu 03"
+            },
+            {
+              "order": 4,
+              "__editorItemTitle": "Menu 04"
+            },
+            {
+              "order": 5,
+              "__editorItemTitle": "Menu 05"
+            },
+            {
+              "order": 6,
+              "__editorItemTitle": "Menu 06"
+            },
+            {
+              "order": 7,
+              "__editorItemTitle": "Menu 07"
+            },
+            {
+              "order": 8,
+              "__editorItemTitle": "Menu Sale"
+            }
+          ]
+        }
+      },
+
+      "menu-item#estandar-01": {
+        "title": "Mega menu",
+        "props": {
+          "blockClass": "department",
+          "type": "category",
+          "itemProps": {
+            "categoryId": 77
+          }
+        },
+        "blocks": ["vtex.menu@2.x:submenu#estandar-menu-01"]
+      },
+
+    "menu-item#estandar-02": {
+      "title": "Mega menu",
+        "props": {
+            "blockClass": "department",
+            "type": "category",
+            "itemProps": {
+                "categoryId": 61
+            }
+        },
+
+        "blocks": ["vtex.menu@2.x:submenu#estandar-menu-02"]
+    },
+
+    "menu-item#estandar-03": {
+      "title": "Mega menu",
+        "props": {
+            "blockClass": "department",
+            "type": "category",
+            "itemProps": {
+                "categoryId": 88
+            }
+        },
+
+        "blocks": ["vtex.menu@2.x:submenu#estandar-menu-03"]
+    },
+
+    "menu-item#estandar-04": {
+      "title": "Mega menu",
+        "props": {
+            "blockClass": "department",
+            "type": "category",
+            "itemProps": {
+                "categoryId": 23
+            }
+        },
+
+        "blocks": ["vtex.menu@2.x:submenu#estandar-menu-04"]
+    },
+
+    "menu-item#estandar-05": {
+      "title": "Mega menu",
+        "props": {
+            "blockClass": "department",
+            "type": "category",
+            "itemProps": {
+                "categoryId": 1
+            }
+        },
+
+        "blocks": ["vtex.menu@2.x:submenu#estandar-menu-05"]
+    },
+
+    "menu-item#estandar-06": {
+      "title": "Mega menu",
+        "props": {
+            "blockClass": "department",
+            "type": "category",
+            "itemProps": {
+                "categoryId": 39
+            }
+        },
+
+        "blocks": ["vtex.menu@2.x:submenu#estandar-menu-06"]
+    },
+
+    "menu-item#estandar-07": {
+      "title": "Mega menu",
+        "props": {
+            "blockClass": "department",
+            "type": "category",
+            "itemProps": {
+                "categoryId": 105
+            }
+        },
+
+        "blocks": ["vtex.menu@2.x:submenu#estandar-menu-07"]
+    },
+
+    "menu-item#sale": {
+      "props": {
+        "blockClass": ["department","sale"],
+        "type": "custom",
+        "highlight": true,
+        "itemProps": {
+          "text": "Sale",
+          "tagTitle": "Sale",
+          "type": "internal",
+          "href": "/",
+          "noFollow": false
+        },
+        "iconProps": {
+          "id": "nav-caret--down",
+          "size": 10
+        },
+        "iconPosition": "right"
+      },
+      "blocks": ["vtex.menu@2.x:submenu#sale"]
+    },
+
+    "menu-item#trajes-de-bano": {
+        "props": {
+            "blockClass": "department",
+            "id": "categoria",
+            "type": "custom",
+            "itemProps": {
+                "text": "Trajes de baño",
+                "tagTitle": "Trajes de baño",
+                "type": "internal",
+                "href": "/trajes-de-bano",
+                "noFollow": false
+            }
+        },
+
+        "blocks": ["vtex.menu@2.x:submenu#trajes-de-bano"]
+    },
+
+    "menu-item#her": {
+        "props": {
+            "blockClass": "department",
+            "id": "categoria",
+            "type": "custom",
+            "itemProps": {
+                "text": "Her",
+                "tagTitle": "Her",
+                "type": "internal",
+                "href": "/her",
+                "noFollow": false
+            }
+        },
+
+        "blocks": ["vtex.menu@2.x:submenu#her"]
+    },
+
+    "menu-item#kids-teens": {
+        "props": {
+            "blockClass": "department",
+            "id": "categoria",
+            "type": "custom",
+            "itemProps": {
+                "text": "Kids & Teens",
+                "tagTitle": "Kids & Teens",
+                "type": "internal",
+                "href": "/kids-teens",
+                "noFollow": false
+            }
+        },
+
+        "blocks": ["vtex.menu@2.x:submenu#kids-teens"]
+    },
+    
+    "menu-item#pijamas": {
+        "props": {
+            "blockClass": "department",
+            "id": "pijamas",
+            "type": "custom",
+            "itemProps": {
+                "text": "Pijamas",
+                "tagTitle": "Pijamas",
+                "type": "internal",
+                "href": "/pijamas",
+                "noFollow": false
+            }
+        },
+
+        "blocks": ["vtex.menu@2.x:submenu#pijamas"]
+    },
+
+    "menu-item#lounge": {
+        "props": {
+            "blockClass": "department",
+            "id": "lounge",
+            "type": "custom",
+            "itemProps": {
+                "text": "Lounge",
+                "tagTitle": "Lounge",
+                "type": "internal",
+                "href": "/lounge",
+                "noFollow": false
+            }
+        },
+
+        "blocks": ["vtex.menu@2.x:submenu#lounge"]
+    },
+
+    "menu-item#sports": {
+        "props": {
+            "blockClass": "department",
+            "id": "sports",
+            "type": "custom",
+            "itemProps": {
+                "text": "Sports",
+                "tagTitle": "Sports",
+                "type": "internal",
+                "href": "/sports",
+                "noFollow": false
+            }
+        },
+
+        "blocks": ["vtex.menu@2.x:submenu#sports"]
+    },
+
+    "menu-item#accesorios": {
+        "props": {
+            "blockClass": "department",
+            "id": "accesorios",
+            "type": "custom",
+            "itemProps": {
+                "text": "Accesorios",
+                "tagTitle": "Accesorios",
+                "type": "internal",
+                "href": "/accesorios",
+                "noFollow": false
+            }
+        },
+
+        "blocks": ["vtex.menu@2.x:submenu#accesorios"]
+    },
+    
+    "menu-item#categoria": {
+        "props": {
+            "blockClass": "department",
+            "id": "categoria",
+            "type": "custom",
+            "itemProps": {
+                "text": "Categoria",
+                "tagTitle": "Categoria",
+                "type": "internal",
+                "href": "/categoria",
+                "noFollow": false
+            }
+        },
+
+        "blocks": ["vtex.menu@2.x:submenu#categoria"]
+    }
+}

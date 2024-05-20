@@ -1,0 +1,16 @@
+{
+  "user-auth": {
+    "component": "UserAuth",
+    "composition": "children",
+    "allowed": [
+      "user-auth-content",
+      "user-auth-fallback"
+    ]
+  },
+  "user-auth-content": {
+    "composition": "children"
+  },
+  "user-auth-fallback": {
+    "composition": "children"
+  }
+}

@@ -1,0 +1,215 @@
+{
+    "header.full": {
+        "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    },
+
+    "header-layout.desktop": {
+        "children": [
+            "custom-script#clarity",
+            "flex-layout.row#header-layout-desktop",
+            "toggle-layout#countdown-home-desktop",
+            "experimental__visibility-layout#whatsapp-bottom-desktop"
+        ]
+    },
+
+    "custom-script#clarity": {
+        "props": {
+            "script": "assets/js/clarity.js",
+            "div": ""
+        }
+      },
+
+    "flex-layout.row#header-layout-desktop": {
+      "children": ["sticky-layout#header-content"],
+      "props": {
+        "blockClass": ["header-layout-desktop"],
+        "fullWidth": true
+      }
+    },
+
+    "sticky-layout#header-content": {
+        "props": {
+            "blockClass": "header-content",
+            "sticky": true
+        },
+
+        "children": [
+            "flex-layout.row#top-bar",
+            "flex-layout.row#menu-desktop"
+        ]
+    },
+
+    "flex-layout.row#menu-desktop": {
+        "props": {
+            "blockClass": "menu-header",
+            "colSizing": "auto",
+            "preserveLayoutOnMobile": true
+        },
+
+        "children": [
+            "logo#header-logo",
+            "vtex.menu@2.x:menu#departments",
+            "flex-layout.row#user-items"
+        ]
+    },
+
+    "logo#header-logo": {
+        "props": {
+            "blockClass": "header-logo",
+            "href": "/",
+            "title": "Luz de Mar",
+            "url": "assets/svgs/luz-de-mar-logo-header.svg",
+            "width": 165
+        }
+    },
+
+    "flex-layout.row#user-items": {
+        "props": {
+            "blockClass": "user-items",
+            "colSizing": "auto",
+            "preserveLayoutOnMobile": true
+        },
+
+        "children": ["toggle-search", "login", "minicart.v2"]
+    },
+
+    "toggle-search": {
+        "props": {
+            "containerWidth": 75,
+            "buttonSize": 16,
+            "buttonIcon": "assets/svgs/search-icon.svg",
+            "buttonCloseIcon": "assets/svgs/close-search-icon.svg"
+        },
+
+        "children": ["search-bar#desktop"]
+    },
+
+    "search-bar#desktop": {
+        "props": {
+            "blockClass": "desktop-search",
+            "placeholder": "Buscar",
+            "displayMode": "search-button",
+            "openAutocompleteOnFocus": true,
+            "containerMode": "container"
+        },
+
+        "blocks": ["autocomplete-result-list.v2"]
+    },
+
+    "login": {
+        "props": {
+            "optionsTitle": "Escoja una opción para ingresar",
+            "accessCodeTitle": "Recibir código de acceso por mail",
+            "emailAndPasswordTitle": "Ingrese con e-mail y contraseña",
+            "emailPlaceholder": "Ej: ejemplo@empleo.com.ar",
+            "passwordPlaceholder": "Contraseña",
+            "showPasswordVerificationIntoTooltip": true,
+            "hasGoogleOneTap": false,
+            "hideIconLabel": true
+        }
+    },
+
+    "header-layout.mobile": {
+        "children": [
+            "flex-layout.row#top-bar",
+            "header-row#mobile-header-content",
+            "close-menu-overlay",
+            "toggle-layout#countdown-home-mobile",
+            "experimental__visibility-layout#whatsapp-bottom-mobile"
+        ]
+    },
+
+    "flex-layout.row#top-bar": {
+      "children": ["rich-text#top-bar"],
+      "props": {
+        "blockClass": ["top-bar"]
+      }
+    },
+
+    "rich-text#top-bar": {
+      "props": {
+        "blockClass": ["top-bar"],
+        "font": "t-body",
+        "text": "ENVÍOS GRATIS A PARTIR DE $15.000 | 3 Y 6 CUOTAS SIN INTERÉS",
+        "textAlignment": "CENTER",
+        "textColor": "c-on-base",
+        "textPosition": "CENTER"
+      }
+    },
+
+    "header-row#mobile-header-content": {
+        "props": {
+            "blockClass": "mobile-header-content",
+            "sticky": true
+        },
+
+        "children": ["drawer#mobile-menu", "logo#header-logo", "flex-layout.row#user-items"]
+    },
+
+    "header-row#mobile-search": {
+        "props": {
+            "blockClass": "mobile-search"
+        },
+
+        "children": ["search-bar#mobile"]
+    },
+
+    "search-bar#mobile": {
+        "props": {
+            "blockClass": "mobile-search",
+            "placeholder": "Buscar...",
+            "displayMode": "clear-button",
+            "openAutocompleteOnFocus": true,
+            "autocompleteFullWidth": true
+        },
+
+        "blocks": ["autocomplete-result-list.v2"]
+    },
+
+    "autocomplete-result-list.v2": {
+        "blocks": ["product-summary.shelf#shelf-product"]
+        //"props":{"__unstableProductOriginVtex": true}
+    },
+
+    "toggle-layout#countdown-home-mobile": {
+        "title": "Popup newsletter mobile",
+        "children": [
+            "modal-trigger#modal-home"
+          ]
+    },
+
+    "toggle-layout#countdown-home-desktop": {
+        "title": "Popup newsletter desktop",
+        "children": [
+            "modal-trigger#modal-home"
+          ]
+    },
+
+    "experimental__visibility-layout#whatsapp-bottom-desktop": {
+        "title": "Activar Botón Wsp Desktop",
+        "children": ["link#whatsappBottom"]
+      },
+      "experimental__visibility-layout#whatsapp-bottom-mobile": {
+        "title": "Activar Botón Wsp Mobile",
+        "children": ["link#whatsappBottom"]
+      },
+
+    "link#whatsappBottom": {
+        "title": "Whatsapp flotante",
+        "props": {
+          "label": "",
+          "blockClass": "whatsapp-fixed",
+          "href": "https://api.whatsapp.com/send?phone=5491133488289",
+          "target": "_blank"
+        }
+      },
+
+    "modal-trigger#modal-home": {
+        "props":{
+          "trigger": "load-session"
+        },
+        "children": [
+          "modal-layout#popup"
+        ]
+    }
+}

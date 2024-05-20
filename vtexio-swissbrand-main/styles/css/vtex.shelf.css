@@ -1,0 +1,137 @@
+/* Product */
+
+.relatedProducts {
+    max-width: 1200px;
+    margin: 0 auto 43px;
+    padding: 0 15px;
+}
+
+.title {
+    margin: 0 0 10px;
+    padding: 0;
+    line-height: 36px;
+    font-size: 30px;
+    font-weight: 300;
+    color: #525252;
+}
+
+.shelfContentContainer {
+    padding-bottom: 22px;
+}
+
+.slide {
+    padding: 8px;
+}
+
+.arrow {
+    outline: none;
+}
+
+.arrowLeft {
+    transform: translate(-100%, -50%);
+}
+
+.arrowRight {
+    transform: translate(100%, -50%);
+}
+
+.caretIcon {
+    width: 25px;
+    height: 25px;
+    color: #525252;
+}
+
+:global(.vtex-shelf-1-x-relatedProducts--complete-look-shelf) .caretIcon {
+    height: 20px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    margin: 0 3px;
+    background-color: #fff;
+    border: 1px solid #bebebe;
+}
+
+.dot--isActive {
+    width: 12px;
+    height: 12px;
+    background-color: #0093CC;
+    border: 1px solid #0093CC;
+}
+
+@media only screen and (max-width: 1025px) {
+    .relatedProducts {
+        margin: 0 auto 48px;
+        padding: 0 16px;
+    }
+
+    .title {
+        margin: 0 0 8px;
+        line-height: 1;
+        font-size: 22px;
+    }
+
+    .slide {
+        padding: 8px 4px;
+    }
+
+    .arrowLeft {
+        transform: translate(-80%, -50%);
+    }
+
+    .arrowRight {
+        transform: translate(80%, -50%);
+    }
+
+    .caretIcon {
+        width: 20px;
+        height: 20px;
+    }
+    .m3-shelf-product{
+        font-size: 20px;
+    }
+}
+
+/**/
+
+/* Página de Produto Related Shelf */
+
+.title--m3-shelf-product {
+    margin: 0 0 15px;
+    line-height: 36px;
+    font-size: 26px;
+    font-weight: 500;
+    color: #434343;
+    text-transform: uppercase;
+    justify-content: flex-start;
+    border-bottom: 1px solid #434343;
+}
+
+.title--complete-look-shelf {
+    display: none;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--complete-look) .relatedProducts--complete-look-shelf {
+    padding: 0;
+}
+
+.slide--complete-look-shelf {
+    padding: 0;
+}
+
+.shelfContentContainer--complete-look-shelf {
+    padding-bottom: 0;
+}
+
+.relatedProducts--complete-look-shelf {
+    margin: 10px 0 0;
+}
+
+.arrowLeft--complete-look-shelf {
+    transform: translate(-50%, -50%);
+}
+
+.arrowRight--complete-look-shelf {
+    transform: translate(50%, -50%);
+}

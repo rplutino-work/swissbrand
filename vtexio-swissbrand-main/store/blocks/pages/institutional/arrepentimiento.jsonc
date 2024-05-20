@@ -1,0 +1,119 @@
+{
+    "store.custom#arrepentimiento": {
+        "blocks": ["flex-layout.row#breadcrumb", "flex-layout.row#arrepentimiento-form"]
+    },
+
+    "flex-layout.row#arrepentimiento-form": {
+        "props": {
+          "blockClass": "form-wrapper"
+        },
+        "children": [
+          "flex-layout.col#arrepentimiento-form"
+        ]
+      },
+      "flex-layout.col#arrepentimiento-form": {
+        "children": [
+          "form#arrepentimiento"
+        ]
+      },
+      "rich-text#arrepentimiento-form-title": {
+        "props": {
+          "blockClass": "form-title",
+          "text": "# Arrepentimiento",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER"
+        }
+      },
+      "rich-text#arrepentimiento-form-text": {
+          "props": {
+            "blockClass": "form-text",
+            "text": "Lamentamos que quieras arrepentirte de la compra, te pedimos que completes el siguiente formulario con tus datos para poder contactarte.\n\nEn caso de querer realizar una consulta, te pedimos que completes la siguiente [página de contacto](/contacto)"
+          }
+        },
+      "form#arrepentimiento": {
+        "props": {
+          "entity": "AR",
+          "schema": "Arrepentimiento",
+          "blockClass": "form-contact"
+        },
+        "blocks": [
+          "form-success#arrepentimiento"
+        ],
+        "children": [
+          "rich-text#arrepentimiento-form-title",
+          "rich-text#arrepentimiento-form-text",
+          "form-input.text#arrepentimiento-name",
+          "form-input.text#arrepentimiento-last-name",
+          "form-input.text#arrepentimiento-email",
+          "form-input.text#arrepentimiento-phone",
+          "form-input.text#arrepentimiento-pedido",
+          "form-field-group#arrepentimiento-motivo",
+          "form-input.textarea#arrepentimiento-textarea",
+          "form-submit#arrepentimiento-contact"
+        ]
+      },
+      "form-success#arrepentimiento": {
+        "children": [
+          "rich-text#success-submit-arrepentimiento"
+        ]
+      },
+      "rich-text#success-submit-arrepentimiento": {
+        "props": {
+          "blockClass":["form-success"],
+          "text": "Lamentamos el arrepentimiento de tu compra. Nos estaremos contactando con vos para cancelar tu compra."
+        }
+      },
+      "form-input.text#arrepentimiento-name": {
+        "props": {
+          "blockClass": "input-form",
+          "placeholder": "Nombre",
+          "pointer": "#/properties/nombre"
+        }
+      },
+      "form-input.text#arrepentimiento-last-name": {
+        "props": {
+          "blockClass": "input-form",
+          "placeholder": "Apellido",
+          "pointer": "#/properties/apellido"
+        }
+      },
+      "form-input.text#arrepentimiento-email": {
+          "props": {
+            "blockClass": "input-form",
+            "placeholder": "Email",
+            "pointer": "#/properties/email"
+          }
+        },
+      "form-input.text#arrepentimiento-phone": {
+          "props": {
+              "blockClass": "input-form",
+              "placeholder": "Teléfono",
+              "pointer": "#/properties/telefono"
+          }
+        },
+        "form-input.text#arrepentimiento-pedido": {
+          "props": {
+            "blockClass": "input-form",
+            "placeholder": "N° de pedido",
+            "pointer": "#/properties/pedido"
+          }
+        },
+        "form-field-group#arrepentimiento-motivo": {
+          "props": {
+            "pointer": "#/properties/motivo"
+          }
+        },
+      "form-input.textarea#arrepentimiento-textarea": {
+          "props": {
+              "blockClass": "input-form",
+              "placeholder": "Mensaje adicional",
+            "pointer": "#/properties/mensaje"
+          }
+        },
+      "form-submit#arrepentimiento-contact": {
+        "props": {
+          "blockClass": "form-submit",
+          "label": "Enviar"
+        }
+      }
+}

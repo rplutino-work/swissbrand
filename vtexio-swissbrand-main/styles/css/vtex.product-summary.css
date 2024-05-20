@@ -1,0 +1,70 @@
+/* Shelf */
+
+.container--shelf-product {
+    box-shadow: 0px 3px 6px #0000001c;
+    border-radius: 5px;
+}
+
+.container--complete-look {
+    box-shadow: none;
+    border: 0.5px solid #D0D0D0;
+    border-radius: 0;
+}
+
+.element--shelf-product {
+    padding: 0;
+    background: #ffffff;
+}
+
+.imageContainer--shelf-product {
+    display: flex;
+}
+
+.nameContainer--shelf-product {
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.brandName--shelf-product {
+    line-height: 18px;
+    font-size: 13px;
+    font-weight: 300;
+    color: #434343;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-align: center;
+}
+
+.nameWrapper--shelf-product{
+    width: 100%;
+    text-align: left;
+    height: 36px;
+}
+
+.image {
+    height: auto !important;
+}
+
+.skuSelectorItemImageValue--pdl-sku-selector-color{
+    width: auto !important;
+    height: auto !important;
+}
+
+.element--shelf-product-kitlook .nameContainer--shelf-product {
+    padding-top: 7px;
+}
+
+.element--shelf-product-kitlook .image {
+    max-height: fit-content;
+}
+
+.element--complete-look {
+    flex-direction: row;
+}
+
+.container--complete-look {
+    max-width: 605px !important;
+}

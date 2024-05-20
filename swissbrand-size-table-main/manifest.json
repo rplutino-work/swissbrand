@@ -1,0 +1,21 @@
+{
+  "vendor": "swissbrand",
+  "name": "size-table",
+  "version": "0.0.1",
+  "title": "Size Table",
+  "description": "A custom block that creates a size table for the product",
+  "defaultLocale": "pt-BR",
+  "builders": {
+    "messages": "1.x",
+    "store": "0.x",
+    "react": "3.x"
+  },
+  "dependencies": {
+    "vtex.styleguide": "9.x",
+    "vtex.css-handles": "0.x",
+    "vtex.store-graphql": "2.x",
+    "vtex.search-graphql": "0.x",
+    "vtex.product-context": "0.x"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

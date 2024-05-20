@@ -1,0 +1,57 @@
+.container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 25px auto 15px;
+    padding: 0 15px;
+}
+
+.container--pdp {
+    padding-left: 125px;
+}
+
+.link,
+.term {
+    padding: 0;
+    text-transform: uppercase;
+    line-height: 12px;
+    font-size: 10px;
+    color: #bebebe;
+}
+
+.link:hover,
+.link:focus {
+    outline: none;
+    color: #707070;
+}
+
+.homeLink::after {
+    content: "Home";
+    display: block;
+}
+
+.homeIcon {
+    display: none;
+}
+
+.arrow {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.caretIcon {
+    margin: 0 8px;
+    color: #bebebe;
+}
+
+@media only screen and (max-width: 1025px) {
+    .container {
+        padding: 0 16px;
+    }
+    .term,
+    .termArrow{
+        display: none;
+    }
+}

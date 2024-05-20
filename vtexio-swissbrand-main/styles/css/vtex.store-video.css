@@ -1,0 +1,23 @@
+.videoContainer--video-home{
+    border: 0;
+}
+.videoContainer--video-home{
+    overflow: hidden;
+}
+
+.videoElement--video-home{
+    width: 100vw;
+    height: 56.1797vw;
+    object-fit: initial;
+    -o-object-fit: initial;
+}
+
+@media (max-width: 768px){
+
+    .videoElement--video-home{
+        width: 178vw;
+        height: 100vw;
+        margin-left: -39vw;
+    }
+    
+}

@@ -1,0 +1,22 @@
+{
+    "store.custom#terminos-y-condiciones": {
+        "blocks": ["flex-layout.row#breadcrumb", "flex-layout.row#terminos-y-condiciones"]
+    },
+
+    "flex-layout.row#terminos-y-condiciones": {
+        "props": {
+            "blockClass": "institutional-wrapper",
+            "colSizing": "auto"
+        },
+
+        "children": ["rich-text#terminos-y-condiciones-content"]
+    },
+
+    "rich-text#terminos-y-condiciones-content": {
+        "props": {
+            "blockClass": "institutional-content",
+            "text": "# Términos y condiciones",
+            "width": "grow"
+        }
+    }
+}
