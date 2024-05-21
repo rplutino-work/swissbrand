@@ -1681,7 +1681,7 @@
   height: 18px;
   background-size: contain !important;
   background-repeat: no-repeat !important;
-  background: url("assets/imgs/mai.png");
+  /* background: url("assets/imgs/mai.png"); */
 }
 :global(.vtex-rich-text-0-x-paragraph--tabla-talles-page-text) {
   text-wrap: nowrap;
