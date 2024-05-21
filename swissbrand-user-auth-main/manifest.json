@@ -1,7 +1,7 @@
 {
   "vendor": "swissbrand",
   "name": "user-auth",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "title": "User auth for Luz de Mar",
   "description": "Autenticação de usuário para a Luz de mar",
   "defaultLocale": "pt-BR",
