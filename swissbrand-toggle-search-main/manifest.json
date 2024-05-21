@@ -1,7 +1,7 @@
 {
   "vendor": "swissbrand",
   "name": "toggle-search",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "title": "Toggle Search",
   "description": "A custom block that allows open and close the search bar",
   "defaultLocale": "pt-BR",
