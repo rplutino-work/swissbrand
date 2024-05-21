@@ -78,7 +78,7 @@
             "vtex.store-components:product-name",
             "flex-layout.row#badges-pdp",
             "flex-layout.row#product-prices",
-            "custom-prices",
+            // "custom-prices",
             //"product-installments#product",
             //"product-identifier.product",
             //"product-separator",

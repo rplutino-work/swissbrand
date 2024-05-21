@@ -77,7 +77,6 @@
     "swissbrand.m3-custom-search-result": "0.x",
     "swissbrand.size-table": "0.x",
     "swissbrand.user-auth": "0.x",
-    "swissbrand.m3-custom": "0.x",
     "swissbrand.add-class-on-header": "0.x"
   },
   "peerDependencies": {

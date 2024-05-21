@@ -5,19 +5,19 @@
 
     "header-layout.desktop": {
         "children": [
-            "custom-script#clarity",
+            // "custom-script#clarity",
             "flex-layout.row#header-layout-desktop",
             "toggle-layout#countdown-home-desktop",
             "experimental__visibility-layout#whatsapp-bottom-desktop"
         ]
     },
 
-    "custom-script#clarity": {
-        "props": {
-            "script": "assets/js/clarity.js",
-            "div": ""
-        }
-      },
+    // "custom-script#clarity": {
+    //     "props": {
+    //         "script": "assets/js/clarity.js",
+    //         "div": ""
+    //     }
+    //   },
 
     "flex-layout.row#header-layout-desktop": {
       "children": ["sticky-layout#header-content"],
@@ -113,7 +113,7 @@
         "children": [
             "flex-layout.row#top-bar",
             "header-row#mobile-header-content",
-            "close-menu-overlay",
+            // "close-menu-overlay",
             "toggle-layout#countdown-home-mobile",
             "experimental__visibility-layout#whatsapp-bottom-mobile"
         ]

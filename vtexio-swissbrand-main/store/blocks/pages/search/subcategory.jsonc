@@ -10,7 +10,7 @@
         },
 
         "blocks": [
-            "luzdemararg.m3-custom-search-result:category-banner",
+            // "luzdemararg.m3-custom-search-result:category-banner",
             "search-result-layout"
         ]
     }

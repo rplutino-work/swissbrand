@@ -19,7 +19,7 @@
           "blockClass": "category-banner"
         },
         "children": [
-            "luzdemararg.m3-custom-search-result:category-banner"
+            // "luzdemararg.m3-custom-search-result:category-banner"
         ]
     },
 
@@ -94,23 +94,26 @@
             "preventVerticalStretch": true
         },
 
-        "children": ["search-title.v2", "luzdemararg.m3-custom-search-result:filter-navigator.v3"]
+        "children": [
+            "search-title.v2"
+            //  "luzdemararg.m3-custom-search-result:filter-navigator.v3"
+            ]
     },
 
-    "luzdemararg.m3-custom-search-result:filter-navigator.v3": {
-        "props": {
-            "colorSpecificationName": "Color",
-            "truncateFilters": false,
-            "initiallyCollapsed": false
-        },
-        "blocks": ["luzdemararg.m3-custom-search-result:sidebar-close-button"]
-    },
+    // "luzdemararg.m3-custom-search-result:filter-navigator.v3": {
+    //     "props": {
+    //         "colorSpecificationName": "Color",
+    //         "truncateFilters": false,
+    //         "initiallyCollapsed": false
+    //     },
+    //     "blocks": ["luzdemararg.m3-custom-search-result:sidebar-close-button"]
+    // },
 
-    "luzdemararg.m3-custom-search-result:sidebar-close-button": {
-        "props": {
-          "size": 20
-        }
-      },
+    // "luzdemararg.m3-custom-search-result:sidebar-close-button": {
+    //     "props": {
+    //       "size": 20
+    //     }
+    //   },
 
     "flex-layout.col#result": {
         "props": {
@@ -185,7 +188,10 @@
             "fullWidth": true
         },
 
-        "children": ["order-by.v2", "luzdemararg.m3-custom-search-result:filter-navigator.v3"]
+        "children": [
+            "order-by.v2"
+            // "luzdemararg.m3-custom-search-result:filter-navigator.v3"
+        ]
     },
 
     "search-not-found-layout": {

@@ -64,25 +64,25 @@
       "info-card#tabla-talles-1": {
         "props": {
           "blockClass": "tabla-talles-page",
-          "isFullModeStyle": false,
-          "imageUrl": "assets/imgs/talles-desk-1.png",
-          "mobileImageUrl": "assets/imgs/talles-mob-1.png"
+          "isFullModeStyle": false
+          // "imageUrl": "assets/imgs/talles-desk-1.png",
+          // "mobileImageUrl": "assets/imgs/talles-mob-1.png"
         }
       },
       "info-card#tabla-talles-2": {
         "props": {
             "blockClass": "tabla-talles-page",
-            "isFullModeStyle": false,
-            "imageUrl": "assets/imgs/talles-desk-2.png",
-            "mobileImageUrl": "assets/imgs/talles-mob-2.png"
+            "isFullModeStyle": false
+            // "imageUrl": "assets/imgs/talles-desk-2.png",
+            // "mobileImageUrl": "assets/imgs/talles-mob-2.png"
         }
       },
       "info-card#tabla-talles-3": {
         "props": {
           "blockClass": "tabla-talles-page",
-          "isFullModeStyle": false,
-          "imageUrl": "assets/imgs/talles-desk-3.png",
-          "mobileImageUrl": "assets/imgs/talles-mob-3.png"
+          "isFullModeStyle": false
+          // "imageUrl": "assets/imgs/talles-desk-3.png",
+          // "mobileImageUrl": "assets/imgs/talles-mob-3.png"
         }
       },
       "rich-text#tabla-talles-title": {
