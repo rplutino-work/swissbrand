@@ -1,6 +1,6 @@
 /* TOP BAR */
 .flexRow--top-bar {
-    background: #434343;
+    background: #000000;
 }
 .flexRow--top-bar :global(.vtex-store-components-3-x-container) {
     padding: 0;
@@ -68,7 +68,7 @@
     
     .flexRowContent--menu-header {
         height: 65px;
-        max-width: 1300px;
+        max-width: 1200px;
         margin: 0 auto;
         padding: 0 15px;
     }
