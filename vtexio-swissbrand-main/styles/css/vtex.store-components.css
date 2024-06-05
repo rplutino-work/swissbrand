@@ -730,7 +730,7 @@
 /**/
 
 /* Newsletter */
-.newsletter--footer-newsletter::before {
+/* .newsletter--footer-newsletter::before {
     content: '';
     background: #00000045;
     width: 100%;
@@ -738,15 +738,15 @@
     z-index: 1;
     height: 100%;
     top: 0;
-}
+} */
 
 .newsletter--footer-newsletter {
     display: flex;
     align-items: flex-end;
     justify-content: center;
     padding: 122px 0 38px;
-    background: url("assets/imgs/mobile/luz-de-mar-temporada-2023.jpg") center no-repeat;
-    background-size: cover;
+    background: #5E5E5E;
+    /* background-size: cover; */
     position: relative;
 }
 
@@ -772,10 +772,11 @@
 }
 
 .label--footer-newsletter::after {
-    content: "RECIBÍ NUESTRAS OFERTAS Y NOVEDADES EXCLUSIVAS";
+    content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,";
     display: block;
-    font-size: 19px;
-    font-weight: normal;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.07px;
 }
 
 .inputGroup--footer-newsletter {
@@ -913,7 +914,7 @@
 @media only screen and (min-width: 1026px) {
     .newsletter--footer-newsletter {
         padding: 85px 0;
-        background: url("assets/imgs/desktop/luz-de-mar-temporada-2023.jpg") center no-repeat;
+        /* background: url("assets/imgs/desktop/luz-de-mar-temporada-2023.jpg") center no-repeat; */
     }
     .buttonContainer--footer-newsletter :global(.vtex-button):hover {
         background: #434343;

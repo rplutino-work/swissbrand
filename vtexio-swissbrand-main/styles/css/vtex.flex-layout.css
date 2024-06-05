@@ -482,7 +482,7 @@
 }
 .flexRow--deals {
     padding: 50px 0px;
-    background: #bebebe;
+    background: #BD202E;
   }
   
   .flexRow--deals .stretchChildrenWidth {
@@ -492,8 +492,8 @@
   .flexRow--deals .flexCol {
     align-items: center;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     gap: 10px;
   }
   
@@ -511,11 +511,15 @@
         border-right: 1px solid #fff;
         border-left: 1px solid #fff;
     }
+    .flexCol--deals-center.flexCol--deals-none {
+        border-right: 1px solid #fff;
+        border-left: none;
+    }
     .flexRow--deals .flexCol {
         padding: 10px 0;
     }
     .flexRow--deals {
-        padding: 38px 0px !important;
+        padding: 43px 0px !important;
       }
   }
 

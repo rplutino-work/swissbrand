@@ -218,7 +218,7 @@
     "rich-text#copyright": {
         "props": {
             "blockClass": ["footer-paragraph", "footer-copyright"],
-            "text": "© 2023 Luz de mar - Todos los derechos reservados"
+            "text": "© 2024 SwissBrand - Todos los derechos reservados"
         }
     },
 

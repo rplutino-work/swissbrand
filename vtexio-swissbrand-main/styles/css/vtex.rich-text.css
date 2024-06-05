@@ -167,19 +167,28 @@
 }
 
 /* DEALS */
+
 .paragraph--deals {
-    font-size: 13px;
-    line-height: 16px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.07px;
     color: #fff;
     padding: 0 15px;
     margin-top: 0;
     margin-bottom: 0;
   }
+  .paragraph--deals-title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.4px;
+    color: #fff;
+  }
   .link--deals{
     text-decoration: none;
-    color: #fff;
+    font-size: 14px;
     font-weight: 400;
-    font-size: 11px;
+    line-height: 17.07px;
+    color: #fff;
     font-family: 'Montserrat';
   }
 
