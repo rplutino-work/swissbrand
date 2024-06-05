@@ -197,15 +197,13 @@
 }
 
 /* BANNER x2 */
-.imageElement--banner-2-image-01 {
-    margin-bottom: 20px;
-}
+
 @media(min-width: 1025px){
     .imageElement--banner-2-image-01 {
-        margin: 0 25.5px 0 0;
+        /* margin: 0 25.5px 0 0; */
     }
     .imageElement--banner-2-image-02 {
-        margin: 0 0 0 25.5px;
+        margin: 0 20px;
     }
 }
 
@@ -1264,17 +1262,139 @@
     background: #E46262;
 }
 @media only screen and (max-width: 768px){
-    .infoCardTextContainer--info-card-home {
-        align-items: center;
-        margin: 43px;
-    }
-    .infoCardTextContainer--info-card-home .container--info-card-home .paragraph--info-card-home {
-        width: 100%;
-        font-size: 14px;
-        line-height: 17.07px;
-    }
-    .infoCardTextContainer--info-card-home .container--info-card-home:first-child .paragraph--info-card-home {
-        font-size: 20px;
-        line-height: 24.38px;
-    }
+  .infoCardTextContainer--info-card-home {
+      align-items: center;
+      margin: 43px;
   }
+  .infoCardTextContainer--info-card-home .container--info-card-home .paragraph--info-card-home {
+      width: 100%;
+      font-size: 14px;
+      line-height: 17.07px;
+  }
+  .infoCardTextContainer--info-card-home .container--info-card-home:first-child .paragraph--info-card-home {
+      font-size: 20px;
+      line-height: 24.38px;
+  }
+}
+
+/* INFOCARD BANNERS 1 */
+
+.infoCardContainer--info-card-banner-1 {
+    width: 574px !important;
+    height: 430px;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.infoCardTextContainer--info-card-banner-1 {
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: auto;
+    margin: 20px 30px;
+}
+.infoCardTextContainer--info-card-banner-1 .container--info-card-banner-1 .paragraph--info-card-banner-1 {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30.48px;
+    letter-spacing: 0.05em; 
+    color: #FFFFFF;
+    margin: 0 0 10px;
+}
+.infoCardCallActionContainer--info-card-banner-1 {
+    margin: 0;
+}
+.infoCardCallActionContainer--info-card-banner-1 :global(.vtex-button) {
+    background: #BD202E;
+    width: 253px;
+    height: 44px;
+    border: none;
+    border-radius: initial;
+    transition: all 350ms ease-in-out;
+}
+.infoCardCallActionContainer--info-card-banner-1 :global(.vtex-button) :global(.vtex-button__label) {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+}
+.infoCardCallActionContainer--info-card-banner-1 :global(.vtex-button):hover {
+    background: #E46262;
+}
+
+@media only screen and (max-width: 768px){
+  .infoCardContainer--info-card-banner-1 {
+      width: 354px !important;
+      height: 259px;
+  }
+  .infoCardCallActionContainer--info-card-banner-1 :global(.vtex-button) {
+      display: none;
+  }
+  .infoCardTextContainer--info-card-banner-1 {
+      margin: 10px 25px;
+  }
+}
+
+
+/* INFOCARD BANNERS 2 */
+
+.infoCardContainer--info-card-banner-2 {
+    width: 376px !important;
+    height: 270px;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.infoCardContainer--info-card-banner-2-02 {
+    margin: 0 20px;
+}
+.infoCardTextContainer--info-card-banner-2 {
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: auto;
+    margin: 20px 30px;
+}
+.infoCardTextContainer--info-card-banner-2 .container--info-card-banner-2 .paragraph--info-card-banner-2 {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30.48px;
+    letter-spacing: 0.05em; 
+    color: #FFFFFF;
+    margin: 0 0 10px;
+}
+.infoCardCallActionContainer--info-card-banner-2 {
+    margin: 0;
+}
+.infoCardCallActionContainer--info-card-banner-2 :global(.vtex-button) {
+    background: #BD202E;
+    width: 253px;
+    height: 44px;
+    border: none;
+    border-radius: initial;
+    transition: all 350ms ease-in-out;
+}
+.infoCardCallActionContainer--info-card-banner-2 :global(.vtex-button) :global(.vtex-button__label) {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+}
+.infoCardCallActionContainer--info-card-banner-2 :global(.vtex-button):hover {
+    background: #E46262;
+}
+
+@media only screen and (max-width: 768px){
+  .infoCardContainer--info-card-banner-2 {
+    width: 100% !important;
+    height: 160px;
+  }
+  .infoCardContainer--info-card-banner-2-02 {
+    margin: 20px 0px;
+  }
+  .infoCardCallActionContainer--info-card-banner-2 :global(.vtex-button) {
+    display: none;
+  }
+  .infoCardTextContainer--info-card-banner-2 {
+    margin: 10px 25px;
+  }
+}
+

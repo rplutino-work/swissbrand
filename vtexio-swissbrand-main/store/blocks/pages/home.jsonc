@@ -8,12 +8,13 @@
             "class-header",
             "flex-layout.row#info-card-home",
             // "list-context.image-list#main-gallery",
-            "flex-layout.row#category",
+            // "flex-layout.row#category",
             "flex-layout.row#top-gallery",
             "__fold__",
             "flex-layout.row#banner-2",
-            "flex-layout.row#banner-full",
-            "flex-layout.row#shelf-01",
+            // "flex-layout.row#banner-full",
+            // "flex-layout.row#shelf-01",
+            "flex-layout.row#shelf-home-desktop-01",
             "flex-layout.row#middle-content",
             "flex-layout.row#shelf-02",
             "flex-layout.row#coleccions-home",
@@ -198,7 +199,7 @@
     },
 
     "flex-layout.row#top-gallery": {
-        "children": ["list-context.image-list#top-gallery"]
+        "children": ["slider-layout#top-gallery-slider"]
     },
 
     "list-context.image-list#top-gallery": {
@@ -211,10 +212,10 @@
                     "mobileImage": "assets/imgs/mobile/luz-de-mar-banner-bikini.jpg"
                 },
 
-                {
-                    "image": "assets/imgs/desktop/luz-de-mar-banner-entera-nino.jpg",
-                    "mobileImage": "assets/imgs/mobile/luz-de-mar-banner-entera-nino.jpg"
-                },
+                // {
+                //     "image": "assets/imgs/desktop/luz-de-mar-banner-entera-nino.jpg",
+                //     "mobileImage": "assets/imgs/mobile/luz-de-mar-banner-entera-nino.jpg"
+                // },
 
                 {
                     "image": "assets/imgs/desktop/luz-de-mar-banner-bikini-nino.jpg",
@@ -230,15 +231,45 @@
         "props": {
             "blockClass": "top-gallery",
             "infinite": true,
-
+            "showPaginationDots": "never",
             "itemsPerPage": {
                 "desktop": 3,
                 "tablet": 2,
                 "phone": 1
             }
-        }
+        },
+        "children": ["info-card#banner-1-image-01", "info-card#banner-1-image-02"]
     },
-
+    "info-card#banner-1-image-01": {
+        "props": {
+          "id": "banner-1-image-01",
+          "isFullModeStyle": true,
+          "textPosition": "center",
+          "imageUrl": "https://placehold.jp/574x430.png",
+          "mobileImageUrl": "https://placehold.jp/354x259.png",
+          "headline": "LOREM IPSUM",
+        //   "subhead": "Lorem Ipsum",
+          "callToActionText": "VER MÁS",
+          "callToActionUrl": "/sale/d",
+          "blockClass": "info-card-banner-1",
+          "textMode": "rich-text"
+        }
+      },
+      "info-card#banner-1-image-02": {
+        "props": {
+          "id": "banner-1-image-01",
+          "isFullModeStyle": true,
+          "textPosition": "center",
+          "imageUrl": "https://placehold.jp/574x430.png",
+          "mobileImageUrl": "https://placehold.jp/354x259.png",
+          "headline": "LOREM IPSUM",
+        //   "subhead": "Lorem Ipsum",
+          "callToActionText": "VER MÁS",
+          "callToActionUrl": "/sale/d",
+          "blockClass": "info-card-banner-1",
+          "textMode": "rich-text"
+        }
+      },
     "flex-layout.row#banner-2": {
         "children": [
             "responsive-layout.mobile#banner-2",
@@ -251,8 +282,9 @@
 
     "responsive-layout.mobile#banner-2": {
         "children": [
-            "image#banner-2-image-01-mobile",
-            "image#banner-2-image-02-mobile"
+            "info-card#banner-2-image-01",
+            "info-card#banner-2-image-02",
+            "info-card#banner-2-image-03"
         ],
         "props": {
             "blockClass": "banner-image-wrapper",
@@ -262,14 +294,62 @@
 
     "responsive-layout.desktop#banner-2": {
         "children": [
-            "image#banner-2-image-01-desktop",
-            "image#banner-2-image-02-desktop"
+            // "image#banner-2-image-01-desktop",
+            // "image#banner-2-image-02-desktop",
+            // "image#banner-2-image-03-desktop"
+            "info-card#banner-2-image-01",
+            "info-card#banner-2-image-02",
+            "info-card#banner-2-image-03"
         ],
         "props": {
             "blockClass": "banner-image-wrapper"
         }
     },
-
+    "info-card#banner-2-image-01": {
+        "props": {
+          "id": "banner-2-image-01",
+          "isFullModeStyle": true,
+          "textPosition": "center",
+          "imageUrl": "https://placehold.jp/376x270.png",
+          "mobileImageUrl": "https://placehold.jp/354x160.png",
+          "headline": "LOREM IPSUM",
+        //   "subhead": "Lorem Ipsum",
+          "callToActionText": "VER MÁS",
+          "callToActionUrl": "/sale/d",
+          "blockClass": "info-card-banner-2",
+          "textMode": "rich-text"
+        }
+      },
+      "info-card#banner-2-image-02": {
+        "props": {
+          "id": "banner-2-image-02",
+          "isFullModeStyle": true,
+          "textPosition": "center",
+          "imageUrl": "https://placehold.jp/376x270.png",
+          "mobileImageUrl": "https://placehold.jp/354x160.png",
+          "headline": "LOREM IPSUM",
+        //   "subhead": "Lorem Ipsum",
+          "callToActionText": "VER MÁS",
+          "callToActionUrl": "/sale/d",
+          "blockClass": ["info-card-banner-2", "info-card-banner-2-02"],
+          "textMode": "rich-text"
+        }
+      },
+      "info-card#banner-2-image-03": {
+        "props": {
+          "id": "banner-2-image-01",
+          "isFullModeStyle": true,
+          "textPosition": "center",
+          "imageUrl": "https://placehold.jp/376x270.png",
+          "mobileImageUrl": "https://placehold.jp/354x160.png",
+          "headline": "LOREM IPSUM",
+        //   "subhead": "Lorem Ipsum",
+          "callToActionText": "VER MÁS",
+          "callToActionUrl": "/sale/d",
+          "blockClass": "info-card-banner-2",
+          "textMode": "rich-text"
+        }
+      },
     "image#banner-2-image-01-mobile": {
         "props": {
             "blockClass": ["banner-2-image-01"],
@@ -287,17 +367,23 @@
     "image#banner-2-image-01-desktop": {
         "props": {
             "blockClass": ["banner-2-image-01"],
-            "src": "assets/imgs/desktop/luz-de-mar-banner-bikini-colores.jpg"
+            "src": "https://placehold.jp/376x270.png"
         }
     },
 
     "image#banner-2-image-02-desktop": {
         "props": {
             "blockClass": ["banner-2-image-02"],
-            "src": "assets/imgs/desktop/luz-de-mar-banner-bikini-blanco.jpg"
+            "src": "https://placehold.jp/376x270.png"
         }
     },
 
+    "image#banner-2-image-03-desktop": {
+        "props": {
+            "blockClass": ["banner-2-image-03"],
+            "src": "https://placehold.jp/376x270.png"
+        }
+    },
     "flex-layout.row#middle-content": {
         "props": {
             "blockClass": "middle-content",

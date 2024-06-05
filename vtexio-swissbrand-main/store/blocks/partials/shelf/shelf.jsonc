@@ -26,7 +26,7 @@
 
     "list-context.product-list#shelf-01": {
         "props": {
-            "collection": "137"
+            "collection": "139"
         },
 
         "blocks": ["product-summary.shelf#shelf-product"],
@@ -41,7 +41,7 @@
             "showPaginationDots": "always",
 
             "itemsPerPage": {
-                "desktop": 4,
+                "desktop": 3,
                 "tablet": 3,
                 "phone": 2
             }
@@ -188,5 +188,58 @@
 
         "blocks": ["product-summary.shelf#shelf-product"],
         "children": ["slider-layout#shelf-products-slide"]
-    }
+    },
+    "flex-layout.row#shelf-home-desktop-01": {
+        "title": "1º fila de productos desktop",
+        "children": [
+            "rich-text#title-new-in",
+            "flex-layout.row#shelf-home-desktop-01-products"
+            
+        ],
+        "props": {
+            "colSizing": "auto",
+            "blockClass": [
+                "shelf-products",
+                "shelf-products-home"
+            ]
+        }
+      },
+      "rich-text#title-new-in": {
+        "props": {
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "text": "Novedades",
+          "textColor": "c-on-action-secondary",
+          "font": "t-heading-2",
+          "blockClass": ["title-shelf", "special-padding"]
+        }
+      },
+    "flex-layout.row#shelf-home-desktop-01-products": {
+        "title": "Productos",
+          "props": {
+              "blockClass": [
+                "shelf-home-desktop-01"
+              ]
+          },
+          "children": [
+            "image#shelf-home-desktop-01-banner",
+            "list-context.product-list#shelf-01"
+          ]
+        },
+        "image#shelf-home-desktop-01-banner": {
+          "title": "Banner",
+          "props": {
+              "blockClass": [
+                  "shelf-products",
+                  "shelf-products-home",
+                  "shelf-products-home-01"
+              ],
+              "src": "https://placehold.jp/271x411.png",
+              "alt": "Imagen",
+              "link": {
+                  "url": "/sillon",
+                  "title": "Sillon"
+              }
+          }
+        }
 }

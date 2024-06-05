@@ -211,13 +211,16 @@
     margin-bottom: 20px;
 }
 @media(min-width:1025px){
+    .flexRowContent--banner-2-wrapper {
+        justify-content: center;
+    }
     .flexRowContent--banner-2-wrapper .stretchChildrenWidth {
         flex-direction: row;
     }
     .flexRowContent--banner-2-wrapper .stretchChildrenWidth {
         flex-direction: row;
         width: auto !important;
-        overflow: hidden;
+        /* overflow: hidden; */
     }
     .flexRow--banner-2-wrapper {
         max-width: 1200px;
@@ -1752,3 +1755,66 @@
         margin: auto auto 50px;
     }
 }
+
+/* Slider home */
+
+.flexRowContent--shelf-products-home {
+    flex-direction: column;
+    padding-bottom: 5rem;
+    background-color: whitesmoke;
+  }
+  .flexRow--shelf-home-desktop-01 {
+    padding-bottom: 2rem;
+    background-color: whitesmoke;
+  }
+  .flexRowContent--shelf-home-desktop-01 {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .flexRowContent--shelf-home-desktop-01 .stretchChildrenWidth {
+    margin: 0 5px;
+  }
+  .flexRow--shelf-products {
+    background-color: whitesmoke !important;
+  }
+  :global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf-home-desktop-01) {
+    padding-bottom: 3rem;
+    background: whitesmoke !important;
+  }
+  :global(.vtex-slider-layout-0-x-slide--shelf-home-desktop-01) {
+    background: whitesmoke;
+  }
+  :global(.vtex-store-components-3-x-imageElement--shelf-products-home-01) {
+    box-shadow: 0px 5px 5px #00000029;
+  }
+  @media screen and (max-width: 768px) {
+    .flexRowContent--shelf-home-desktop-01 {
+      max-width: initial;
+      margin: 0;
+    }
+    .flexRowContent--shelf-home-desktop-01 .stretchChildrenWidth {
+      margin: 0;
+      width: initial;
+    }
+    :global(.vtex-store-components-3-x-imageElementLink--shelf-products-home-01) {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: 0rem 1rem 0rem;
+    }
+    :global(.vtex-store-components-3-x-imageElementLink--shelf-products-home-02) {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: 2rem 1rem 2rem;
+    }
+    .flexRowContent--shelf-products-home-2 {
+      padding-bottom: 0;
+    }
+    :global(.vtex-store-components-3-x-imageElement--shelf-products-home-01) {
+      border-radius: 5px;
+      /* padding: 2rem; */
+      object-fit: cover;
+      width: max-content;
+    }
+  }

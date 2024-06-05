@@ -51,7 +51,8 @@
       "product-summary-space",
       "product-summary-name#shelf-product",
       // "m3-flex-layout#shelf-prices",
-      "product-summary-sku-selector"
+      "product-summary-sku-selector",
+      "flex-layout.row#selling-price-savings"
     ]
   },
   "product-summary-sku-selector": {
@@ -60,7 +61,7 @@
         "pdl-sku-selector-color"
       ],
       "visibleVariations": [
-        "Color"
+        "Tamaño"
       ],
       "thumbnailImage": [
         "color"
@@ -70,6 +71,37 @@
       "maxItems": 40,
       "imageWidth": 20,
       "imageHeight": 20
+    }
+  },
+  "flex-layout.row#selling-price-savings": {
+    "props": {
+      "colGap": 2,
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "marginBottom": 4,
+      "blockClass": "product-prices"
+    },
+    "children": [
+      "product-selling-price#summary",
+      "product-list-price#summary"
+      //"product-price-savings#summary"
+    ]
+  },
+  "product-installments#summary": {
+    "props": {
+      "blockClass": "summary"
+    }
+  },
+  "product-list-price#summary": {
+    "props": {
+      "blockClass": "summary",
+      "alwaysShow":true
+    }
+  },
+  "product-selling-price#summary": {
+    "props": {
+      "blockClass": "summary",
+      "alwaysShow":true
     }
   },
   // "m3-flex-layout#shelf-prices": {
