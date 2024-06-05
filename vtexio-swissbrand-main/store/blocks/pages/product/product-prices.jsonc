@@ -16,21 +16,22 @@
 
         "children": [
             "product-list-price#product",
-            "product-selling-price#product",
-            "product-price-savings#product-badge"
-            //"product-price-savings#product"
+            "product-selling-price#product"
         ]
     },
+    
 
     "product-list-price#product": {
         "props": {
-            "blockClass": "product"
+            "blockClass": "product-list-pdp",
+            "alwaysShow": true
         }
     },
 
     "product-selling-price#product": {
         "props": {
-            "blockClass": "product"
+            "blockClass": "product-selling-pdp",
+            "alwaysShow": true
         }
     },
 

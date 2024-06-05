@@ -16,6 +16,17 @@
     outline: none;
 }
 
+.removeButton::after {
+    content: url("assets/icons/trash-minicart.svg");
+    display: block;
+    width:auto;
+    height: auto;
+}
+
+:global(.vtex-product-list-0-x-deleteIcon){
+    display: none;
+}
+
 .productVariationsContainer {
     display: flex;
     align-items: center;

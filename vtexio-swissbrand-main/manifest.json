@@ -6,13 +6,17 @@
     "styles": "2.x",
     "store": "0.x",
     "docs": "0.x",
-    "assets": "0.x"
+    "assets": "0.x",
+    "react": "3.x"
   },
   "scripts": {
     "postreleasy": "vtex publish --verbose"
   },
   "dependencies": {
     "vtex.search-graphql": "0.x",
+    "vtex.product-summary-context": "0.x",
+    "vtex.product-context": "0.x",
+    "vtex.search-page-context": "0.x",
     "vtex.challenge-tp-condition": "0.x",
     "vtex.store": "2.x",
     "vtex.store-header": "2.x",
@@ -80,7 +84,6 @@
     "swissbrand.add-class-on-header": "0.x"
   },
   "peerDependencies": {
-    "vtexeurope.minicart-freeshipping-bar": "2.x",
     "vtex.store-locator": "0.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"

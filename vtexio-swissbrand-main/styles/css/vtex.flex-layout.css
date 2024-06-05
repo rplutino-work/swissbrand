@@ -626,7 +626,7 @@
 }
 
 .flexRowContent--product-prices .stretchChildrenWidth:first-child {
-    width: 100% !important;
+    /* width: 100% !important; */
 }
 
 .flexRow--cart-button :global(.vtex-button):disabled{
@@ -1741,12 +1741,21 @@
 }
 /* PDP Specs */
 
-.flexRow--product-specs {
-    max-width: 1090px;
-    margin: auto auto 100px;
+
+    .flexRow--product-specs :global(.vtex-store-components-3-x-container){
+        padding: 0px !important;
+    }
+
+@media(min-width:992px){
+    .flexRow--product-specs {
+        padding: 0px 4rem;
+    }
+    .flexRow--product-specs :global(.vtex-store-components-3-x-container){
+        padding: 0px !important;
+    }
 }
 
-.flexRow--product-specs :global(.vtex-store-components-3-x-container) {
+/* .flexRow--product-specs :global(.vtex-store-components-3-x-container) {
     padding: 0 15px;
 }
 

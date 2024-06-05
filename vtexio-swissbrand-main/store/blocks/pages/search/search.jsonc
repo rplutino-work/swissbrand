@@ -3,8 +3,8 @@
         "props": {
             "context": {
                 "orderByField": "OrderByReleaseDateDESC",
-                "maxItemsPerPage": 18,
-                "skusFilter": "ALL_AVAILABLE",
+                "maxItemsPerPage": 70,
+                "skusFilter": "ALL",
                 "simulationBehavior": "default"
             }
         },
