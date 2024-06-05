@@ -6,7 +6,8 @@
 
         "blocks": [
             "class-header",
-            "list-context.image-list#main-gallery",
+            "flex-layout.row#info-card-home",
+            // "list-context.image-list#main-gallery",
             "flex-layout.row#category",
             "flex-layout.row#top-gallery",
             "__fold__",
@@ -78,7 +79,31 @@
         "preserveLayoutOnMobile": false
       }
     },
-
+    "flex-layout.row#info-card-home": {
+      "children": [
+        "info-card#home"
+          ],
+      "props": {
+          "blockClass": ["info-card-home"],
+          "fullWidth": true,
+          "preserveLayoutOnMobile": false
+      }
+    },
+    "info-card#home": {
+      "props": {
+        "id": "info-card-home",
+        "isFullModeStyle": true,
+        "textPosition": "center",
+        "imageUrl": "assets/imgs/desktop/luz-de-mar-slider.jpg",
+        "mobileImageUrl": "assets/imgs/mobile/luz-de-mar-slider.jpg",
+        "headline": "LOREM IPSUM TEXT",
+        "subhead": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+        "callToActionText": "VER MÁS",
+        "callToActionUrl": "/sale/d",
+        "blockClass": "info-card-home",
+        "textMode": "rich-text"
+      }
+    },  
     "list-context.info-card-list#demo": {
         "children": [
             "slider-layout#category-home"

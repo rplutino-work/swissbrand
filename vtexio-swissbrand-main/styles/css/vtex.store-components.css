@@ -1200,3 +1200,80 @@
     color: #707070;
     font-weight: 500;
 }
+
+/* INFOCARD HOME */
+
+.infoCardContainer--info-card-home {
+    height: 444px;
+    justify-content: flex-start;
+    position: relative;
+}
+.infoCardContainer--info-card-home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Color de fondo con opacidad */
+}
+.infoCardTextContainer--info-card-home {
+    align-items: flex-start;
+    max-width: 1200px;
+    width: 100% !important;
+    margin: 0 auto;
+    z-index: 10;
+}
+.infoCardTextContainer--info-card-home .container--info-card-home .paragraph--info-card-home {
+    width: 55%;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.5px;
+    color: #FFFFFF;
+    margin: 14px 0 27px;
+}
+.infoCardTextContainer--info-card-home .container--info-card-home:first-child .paragraph--info-card-home {
+    width: 100%;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 42.67px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    margin: 0;
+}
+.infoCardCallActionContainer--info-card-home {
+    margin: 0;
+}
+.infoCardCallActionContainer--info-card-home :global(.vtex-button) {
+    background: #BD202E;
+    width: 253px;
+    height: 44px;
+    border: none;
+    border-radius: initial;
+    transition: all 350ms ease-in-out;
+}
+.infoCardCallActionContainer--info-card-home :global(.vtex-button) :global(.vtex-button__label) {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+}
+.infoCardCallActionContainer--info-card-home :global(.vtex-button):hover {
+    background: #E46262;
+}
+@media only screen and (max-width: 768px){
+    .infoCardTextContainer--info-card-home {
+        align-items: center;
+        margin: 43px;
+    }
+    .infoCardTextContainer--info-card-home .container--info-card-home .paragraph--info-card-home {
+        width: 100%;
+        font-size: 14px;
+        line-height: 17.07px;
+    }
+    .infoCardTextContainer--info-card-home .container--info-card-home:first-child .paragraph--info-card-home {
+        font-size: 20px;
+        line-height: 24.38px;
+    }
+  }

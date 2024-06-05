@@ -177,6 +177,10 @@
         margin: 0;
         background: url("assets/svgs/mobile-account-icon.svg") center no-repeat;
     }
+    .container :global(.vtex-button__label) {
+        height: 18px;
+        background-size: contain;
+    }
 }
 
 @media only screen and (min-width: 1026px) {

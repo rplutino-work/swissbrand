@@ -24,7 +24,7 @@
 
     "image#footer-logo": {
         "props": {
-            "src": "assets/svgs/luz-de-mar-logo-footer.svg",
+            "src": "assets/svgs/swissbrand.svg",
             "title": "Luz de mar"
         }
     },

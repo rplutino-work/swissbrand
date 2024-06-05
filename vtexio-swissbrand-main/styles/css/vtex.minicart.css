@@ -96,6 +96,9 @@
 }
 
 @media only screen and (min-width: 1026px) {
+    .minicartWrapperContainer--minicart {
+        margin-left: 1rem;
+    }
     .minicartCheckoutButton :global(.vtex-button):hover {
         background: #4b4b4b;
     }
@@ -106,6 +109,11 @@
 
     :global(.vtex-toast-container){
         display: block;
+    }
+}
+@media only screen and (max-width: 1023px) {
+    .minicartWrapperContainer--minicart {
+        margin-left: 1rem;
     }
 }
 

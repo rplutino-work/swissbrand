@@ -21,7 +21,9 @@
     .flexRow--user-items {
         flex: 1;
     }
-
+    .flexRowContent--user-items .stretchChildrenWidth:first-child {
+        display: none;
+    }
     .flexRowContent--user-items {
         justify-content: flex-end;
     }
@@ -912,6 +914,9 @@
         flex: unset;
         max-width: max-content;
         padding-right: 10px;
+    }
+    :global(.vtex-store-drawer-0-x-openIconContainer) {
+        flex: 0.3 !important;
     }
     .flexRowContent--evento-menu {
         max-width: 98%;

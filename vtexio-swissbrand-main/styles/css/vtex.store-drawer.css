@@ -23,9 +23,9 @@
 
 .closeIconContainer--primary-tab::before {
     content: "";
-    width: 122px;
+    width: 204px;
     height: 31px;
-    background: url("assets/svgs/luz-de-mar-logo-menu.svg") center no-repeat;
+    background: url("assets/svgs/swissbrand.svg") center no-repeat;
 }
 
 .closeIconButton--mobile-menu {
