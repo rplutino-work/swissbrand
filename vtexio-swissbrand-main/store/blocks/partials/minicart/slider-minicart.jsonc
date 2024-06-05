@@ -1,0 +1,77 @@
+{
+  "list-context.product-list#slider-minicart": {
+      "props":{
+          "collection":"138"
+      },
+      "blocks": ["product-summary.shelf#minicart-card"],
+      "children": ["slider-layout#slider-minicart"]
+    },
+    "slider-layout#slider-minicart": {
+      "props": {
+          "blockClass": ["minicart-slider"],
+          "infinite": true,
+          "showNavigationArrows": "always",
+          "showPaginationDots": "never",
+
+          "itemsPerPage": {
+              "desktop": 1,
+              "tablet": 1,
+              "phone": 1
+          }
+      }
+  },
+
+  "product-summary.shelf#minicart-card": {
+      "props": {
+        "blockClass": "minicart-card"
+      },
+      "title": "Slider minicart",
+      "children": [
+          "flex-layout.row#minicart-card",
+          "add-to-cart-button"
+      ]
+    },
+    "flex-layout.row#minicart-card":{
+      "props":{
+          "blockClass":"minicart-card-container"
+      },
+      "children":[
+          "flex-layout.col#minicart-card-image", // -> imagen card minicart
+          "flex-layout.col#minicart-card-info"
+      ]
+    },
+    "flex-layout.col#minicart-card-image":{
+      "props":{
+          "blockClass":"minicart-card-image",
+          "width":"30%"
+      },
+      "children":[
+          "product-summary-image#shelf-product"
+      ]
+    },
+    "flex-layout.col#minicart-card-info":{
+      "props":{
+          "blockClass":"minicart-card-info",
+          "width":"70%"
+      },
+      "children":[
+          "flex-layout.row#price",
+          "product-summary-sku-selector#minicart-card"
+          
+      ]
+    },
+    "product-summary-sku-selector#minicart-card": {
+      "props": {
+        "blockClass": [
+          "minicart-slider-sku-selector"
+        ],
+        "thumbnailImage": [
+          "color"
+        ],
+        "sortVariationsByLabel": false,
+        "maxItems": 40,
+        "imageWidth": 20,
+        "imageHeight": 20
+      }
+    }
+}

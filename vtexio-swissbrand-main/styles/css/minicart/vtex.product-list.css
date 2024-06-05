@@ -1,0 +1,117 @@
+.unitPriceContainer--minicart-price{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+.unitPriceMeasurementUnit--minicart-price{
+    display: none;
+}
+
+
+/* imagen del producto */
+
+.productImageContainer{
+    width: 124px !important;
+}
+
+/* NOMBRE MINICART */
+
+.productName{
+    font-size: 16px;
+    color: #231F20;
+}
+
+/* PRECIOS MINICART */
+
+.unitListPrice--minicart-price{
+    font-size: 20px;
+    font-weight: 500;
+    color: #8e8d8d;
+}
+
+.unitPricePerUnitCurrency--minicart-price{
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.32px;
+    color: #231F20;
+}
+
+/* MINICART QUANTITY */
+
+.quantitySelector{
+    max-width: none !important;
+    width: auto !important;
+}
+
+.quantitySelectorWrapper{
+    border: 1px solid #000000;
+}
+
+.quantitySelectorButton{
+    border: none;
+    background: none;
+    padding: 10px;
+    cursor: pointer;
+    color: #000;
+}
+
+.quantitySelectorDecrease::before{
+    /* content: " | ";
+    transform: rotate(90deg); */
+}
+
+.quantitySelectorIncrease::before{
+    /* content: " + "; */
+}
+
+.quantitySelectorButton:hover{
+    background: none;
+}
+
+.quantitySelectorWrapper .inputContainer{
+    width: 3rem;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+@media(max-width:991px){
+
+
+    /* imagen del producto */
+
+    .productImageContainer{
+        width: 117px !important;
+    }
+
+    /* nombre */
+    .productName{
+        font-size: 13px;
+    }
+
+    /* precio */
+
+    .unitListPrice--minicart-price{
+        font-size: 13px;
+    }
+    
+    .unitPricePerUnitCurrency--minicart-price{
+        font-size: 13px;
+    }
+
+    .quantitySelectorWrapper .inputContainer{
+        width: 2rem;
+    }
+}
+
+/*  PRECIOS MINICART */
+
+.currencyDecimal--minicart-price,
+.currencyFraction--minicart-price{
+    display: none;
+}
+
+

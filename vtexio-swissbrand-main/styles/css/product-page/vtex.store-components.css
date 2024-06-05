@@ -1,0 +1,11 @@
+/* imagen pdp */
+.productImagesThumb{
+    margin: 16px;
+}
+
+/* nombre producto pdp */
+
+.productBrand{
+    font-size: 20px;
+    color: #231F20;
+}

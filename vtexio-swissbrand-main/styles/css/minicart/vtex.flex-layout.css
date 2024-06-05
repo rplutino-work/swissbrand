@@ -1,0 +1,17 @@
+.flexRowContent--minicart-info-top{
+    margin-bottom: 10px;
+}
+
+.flexRowContent--minicart-info-middle{
+    margin-bottom: 5px;
+}
+
+.flexRowContent--minicart-info-bottom{
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+
+.flexRowContent--minicart-content-info{
+    gap: 10px;
+}

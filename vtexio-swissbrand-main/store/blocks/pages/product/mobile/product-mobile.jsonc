@@ -1,0 +1,21 @@
+{
+    "responsive-layout.phone#product": {
+        "children": [
+            "flex-layout.row#product-main-content-mobile",
+            "flex-layout.row#product-specs"
+            // "flex-layout.row#related-products",
+            // "shelf.relatedProducts#related-products"
+        ]
+    },
+
+    "flex-layout.row#product-main-content-mobile": {
+        "props": {
+            "blockClass": ["product-main-content","product-main-content-mobile"],
+            "colSizing": "auto"
+        },
+        "children": [
+            "flex-layout.col#images-column",
+            "flex-layout.col#details-column"
+        ]
+    }
+}

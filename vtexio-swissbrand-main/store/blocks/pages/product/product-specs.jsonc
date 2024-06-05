@@ -16,7 +16,7 @@
     ],
     "props": {
         "blockClass": "product-specs",
-        "defaultActiveTabId": "info"
+        "defaultActiveTabId": "descripcion"
     }
 },
 "tab-list#product-specs": {
@@ -25,94 +25,58 @@
         "blockClass": "product-specs"
     },
     "children": [
-        "tab-list.item#product-info",
-        "tab-list.item#product-care",
-        "tab-list.item#product-shipping",
-        "tab-list.item#product-return"
+        "tab-list.item#product-description",
+        "tab-list.item#product-ficha-tecnica"
     ]
 },
-"tab-list.item#product-info": {
-    "title": "1ra pestaña",
+"tab-list.item#product-description": {
+    "title": "Descripción del producto",
     "props": {
-        "tabId": "info",
-        "label": "Información del producto",
+        "tabId": "descripcion",
+        "label": "Descripción",
         "blockClass": ["product-specs", "product-specs-01"],
         "defaultActiveTab": true
     }
 },
-"tab-list.item#product-care": {
-    "title": "2da pestaña",
+"tab-list.item#product-ficha-tecnica": {
+    "title": "Ficha técnica",
     "props": {
-        "tabId": "care",
-        "label": "Cuidado de la prenda",
+        "tabId": "ficha-tecnica",
+        "label": "Ficha técnica",
         "blockClass": ["product-specs", "product-specs-02"]
     }
 },
-"tab-list.item#product-shipping": {
-  "title": "3ra pestaña",
-  "props": {
-    "tabId": "shipping",
-    "label": "Envío y formas de pago",
-    "blockClass": ["product-specs", "product-specs-03"]
-  }
-},
-"tab-list.item#product-return": {
-  "title": "4ta pestaña",
-  "props": {
-    "tabId": "return",
-    "label": "Cambios y devoluciones",
-    "blockClass": ["product-specs", "product-specs-04"]
-  }
-},
+
 "tab-content#product-specs": {
     "title": "Contenido de pestañas",
     "children": [
-        "tab-content.item#product-info",
-        "tab-content.item#product-care",
-        "tab-content.item#product-shipping",
-        "tab-content.item#product-return"
+        "tab-content.item#product-description",
+        "tab-content.item#product-ficha-tecnica"
     ]
 },
-"tab-content.item#product-info": {
-    "title": "Contenido 1ra pestaña",
+"tab-content.item#product-description": {
+    "title": "Contenido descripción de producto",
     "children": [
        "product-specification-group#pdp-description"
     ],
     "props": {
-        "tabId": "info",
+        "tabId": "descripcion",
         "blockClass": ["product-specs", "product-specs-01"]
     }
 },
-"tab-content.item#product-care": {
-    "title": "Contenido 2da pestaña",
+"tab-content.item#product-ficha-tecnica": {
+    "title": "Contenido ficha técnica",
     "children": [
-        "product-specification-group#pdp-description"
+        "ficha-tecnica"
+        // "product-specification-group#pdp-description"
     ],
     "props": {
-        "tabId": "care",
+        "tabId": "ficha-tecnica",
         "blockClass": ["product-specs", "product-specs-02"]
     }
 },
-"tab-content.item#product-shipping": {
-  "title": "Contenido 3ra pestaña",
-  "children": [
-      "product-specification-group#pdp-description"
-  ],
-  "props": {
-      "tabId": "shipping",
-      "blockClass": ["product-specs", "product-specs-03"]
-  }
-},
-"tab-content.item#product-return": {
-  "title": "Contenido 4TA pestaña",
-  "children": [
-      "product-specification-group#pdp-description"
-  ],
-  "props": {
-      "tabId": "return",
-      "blockClass": ["product-specs", "product-specs-04"]
-  }
-},
+
+
 "product-specification-group#pdp-description": {
     "title": "Grupo de Especificaciones",
     "children": [

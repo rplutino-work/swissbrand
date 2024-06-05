@@ -1,0 +1,185 @@
+{
+    "responsive-layout.desktop#product": {
+        "children": [
+            
+            "flex-layout.row#product-main-content",
+            "flex-layout.row#product-specs"
+            // "flex-layout.row#related-products",
+            // "shelf.relatedProducts#related-products"
+        ]
+      },
+
+      //contenido de ficha
+      "flex-layout.row#product-main-content": {
+        "props": {
+            "blockClass": "product-main-content",
+            "colSizing": "auto"
+        },
+        "children": [
+            "flex-layout.col#images-column",
+            "flex-layout.col#details-column"
+        ]
+    },
+
+    "flex-layout.col#images-column": {
+        "props": {
+            "width": "64%",
+            "preventVerticalStretch": true,
+            "blockClass": "product-image-wrapper"
+        },
+
+        "children": [
+            "product-images#desktop",
+            "flex-layout.row#product-page-badge-cyber"
+            //"vtex.product-highlights@2.x:product-highlights#cyber", 
+            //"vtex.product-highlights@2.x:product-highlights#hotsale", 
+        ]
+    },
+    "product-images#desktop": {
+        "props": {
+          "thumbnailsOrientation": "vertical",
+          "showNavigationArrows": false,
+          "showPaginationDots": false,
+          "thumbnailAspectRatio": "1:1",
+          "displayMode": "carousel",
+          "position":"left",
+          "thumbnailVisibility":"visible"
+        }
+      },
+      "product-images#pdp": {
+        "props": {
+          "thumbnailsOrientation": "horizontal",
+          "showNavigationArrows": true,
+          "showPaginationDots": false,
+          "thumbnailAspectRatio": "1920:1080",
+          "displayMode": "carousel"
+        }
+    },
+
+    "share#redes": {
+        "props": {
+            "className":"redes-sociales",
+            "blockCLass":"redes-sociales",
+            "social": {
+                "WhatsApp": true,
+                "Facebook": true,
+                "Pinterest": true
+            }
+        }
+    },
+
+    // detalles del producto
+    "flex-layout.col#details-column": {
+        "props": {
+            "width": "36%",
+            "preventVerticalStretch": true,
+            "blockClass": "details-column"
+        },
+        "children": [
+            "flex-layout.row#badges-pdp", // -> CUCARDAS
+            "flex-layout.row#product-name", //-> NOMBRE DEL PRODUCTO
+            "flex-layout.row#product-prices", // -> PRECIO DEL PRODUCTO
+            "product-description#pdp", // -> DESCRIPCION DEL PRODUCTO
+            "sku-selector#pdp", // -> SKU SELECTOR
+            "flex-layout.row#cart-button", // -> BOTON DE COMPRA
+            "share#redes"// -> REDES PARA COMPARTIR
+        ]
+    },
+
+
+    // descripcion del producto 
+
+    "product-description#pdp":{
+        "props":{
+            "blockClass":"product-description-pdp",
+            "collapseContent":false,
+            "showTitle":false
+        }
+    },
+
+    //nombre del producto
+    "flex-layout.row#product-name": {
+        "children": [
+            "vtex.store-components:product-name"
+        ],
+        "props": {
+            "blockClass": ["product-name-pdp"],
+            "colSizing": "auto"
+        }
+    },
+
+      //cucardas
+    "flex-layout.row#badges-pdp": {
+        "children": [
+            "product-price-savings#pdp-badge"
+            //demas cucardas
+        ],
+        "props": {
+            "blockClass": ["badges-pdp"],
+            "colSizing": "auto"
+        }
+    },
+
+    //cucarda descuento
+    "product-price-savings#pdp-badge": {
+        "title": "Cucarda descuento",
+        "props": {
+          "message": "{savingsPercentage}",
+          "percentageStyle": "compact",
+          "blockClass": "pdp-discount"
+        }
+      },
+
+    //sku selector
+    "sku-selector#pdp":{
+        "props": {
+            "blockClass": ["pdp-custom-sku-selector"],
+            // "thumbnailImage": ["color"],
+            // "hideImpossibleCombinations": true,
+            "maxItems": 40
+        }
+    },
+
+    "sku-selector#color": {
+        "props": {
+            "blockClass": ["m3-custom-sku-selector","pdp-sku-selector-color"],
+            "visibleVariations": ["Color"],
+            "thumbnailImage": ["color"],
+            "hideImpossibleCombinations": true,
+            "maxItems": 40
+        }
+    },
+
+    //boton para comprar
+    "flex-layout.row#cart-button": {
+        "props": {
+            "blockClass": ["cart-button-pdp"],
+            "colSizing": "auto",
+            "preserveLayoutOnMobile": true
+        },
+        "children": ["add-to-cart-button#product"]
+    },
+
+    "add-to-cart-button#product": {
+        "props": {
+            "customPixelEventId": "addToCart",
+            "blockCLass": "product",
+            "text": "AGREGAR AL CARRITO"
+        }
+    },
+
+    //productos relacionados
+
+    "shelf.relatedProducts#related-products": {
+        "blocks": ["product-summary.shelf#shelf-product"],
+        "props": {
+            "blockClass": ["m3-shelf-product", "m3-shelf-product-list"],
+            "recommendation": "view",
+            "productList": {
+                "titleText": "PRODUCTOS RELACIONADOS",
+                "itemsPerPage": 4,
+                "minItemsPerPage": 2
+            }
+        }
+    }
+}

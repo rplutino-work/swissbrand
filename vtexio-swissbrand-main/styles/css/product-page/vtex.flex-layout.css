@@ -1,0 +1,49 @@
+@media(min-width:991px){
+    .flexRow--product-main-content{
+        margin-top: 4rem;
+    }
+}
+
+.flexRowContent--product-prices{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+/* nombre de producto */
+.flexRow--product-name-pdp{
+    margin-bottom: 10px;
+}
+
+/* precio de producto */
+
+.flexRow--product-prices{
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+/* boton de compra */
+
+.flexRowContent--cart-button-pdp{
+    margin-top: 24px;
+}
+
+.flexRowContent--cart-button-pdp :global(.vtex-button){
+    width: 253px;
+    height: 44px;
+    background: #DF3856;
+    border: none;
+    border-radius: 0px;
+    transition: background ease-in-out 350ms;
+}
+
+.flexRowContent--cart-button-pdp :global(.vtex-button):hover{
+    background: #ab253d;
+}
+
+:global(.vtex-add-to-cart-button-0-x-buttonText){
+    font-size: 12px;
+    color: #fff;
+}

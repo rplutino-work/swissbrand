@@ -35,37 +35,66 @@
     background: #000000;
 }
 
-.closeIconContainer--minicart {
-    padding: 16px;
+.drawerContent--minicart{
+    padding: 0px 25px;
 }
 
+.closeIconContainer--minicart {
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #000;
+}
+
+.closeIconContainer--minicart::before{
+    content: "Tu carrito";
+    font-size: 13px;
+    letter-spacing: 0.26px;
+}
+
+
 .closeIconButton--minicart {
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
     padding: 0;
     outline: none;
-    background: url(assets/svgs/close-icon.svg) center no-repeat;
+    /* background: url(assets/svgs/close-icon.svg) center no-repeat; */
     background-size: cover;
 }
 
 .closeIcon--minicart {
-    display: none;
+    width: 100%;
+    height: 100%;
+    /* display: none; */
 }
 
 .minicartTitle {
-    margin: 0;
+    display: none;
+    /* margin: 0;
     padding: 32px 16px 26px;
     text-transform: uppercase;
     font-size: 19px;
     font-weight: bold;
-    color: #434343;
+    color: #434343; */
 }
 
 .minicartProductListContainer {
-    padding: 0 16px;
+    padding: 0px;
+}
+
+
+.minicartContentContainer{
+    margin-top: 4rem;
+}
+
+@media(max-width:991px){
+    .minicartContentContainer{
+        margin-top: 2rem;
+    } 
 }
 
 .minicartCheckoutButton {
+    padding: 0;
     margin: 0;
 }
 
@@ -74,7 +103,7 @@
     border: none;
     border-radius: 0;
     outline: none;
-    background: #090909;
+    background: #bd202e;
     transition: background 0.2s linear;
 }
 
@@ -87,7 +116,8 @@
 .minicartCheckoutButton :global(.vtex-button__label)::after {
     content: "Comprar";
     display: block;
-    font-size: 14px;
+    font-size: 15px;
+    letter-spacing: 0.3px;
     color: #fff;
 }
 
@@ -97,11 +127,11 @@
 
 @media only screen and (min-width: 1026px) {
     .minicartCheckoutButton :global(.vtex-button):hover {
-        background: #4b4b4b;
+        background: #a01924;
     }
 
     .minicartCheckoutButton :global(.vtex-button):active {
-        background: #090909;
+        background: #a01924;
     }
 
     :global(.vtex-toast-container){
@@ -109,7 +139,7 @@
     }
 }
 
-/* FREE SHIPPING LATERAL CART*/
+
 .minicartSummary {
-    padding-top: 0;
+    padding: 0;
 }

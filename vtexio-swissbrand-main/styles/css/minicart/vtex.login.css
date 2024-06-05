@@ -1,0 +1,19 @@
+/* minicart footer */
+
+:global(.vtex-minicart-2-x-minicartSummary--minicart-summary-footer){
+    margin-bottom: 8px;
+}
+
+:global(.vtex-minicart-2-x-minicartSummary--minicart-summary-footer) :global(.vtex-checkout-summary-0-x-summaryItemContainer){
+    padding: 0;
+}
+
+:global(.vtex-minicart-2-x-minicartSummary--minicart-summary-footer) :global(.vtex-checkout-summary-0-x-summaryItemContainer) :global(.vtex-checkout-summary-0-x-summaryItemLabel), :global(.vtex-checkout-summary-0-x-price){
+    font-size: 13px;
+    letter-spacing: 0.26px;
+}
+
+:global(.vtex-minicart-2-x-minicartSummary--minicart-summary-footer) :global(.vtex-checkout-summary-0-x-summaryItemContainer) ~ :global(.vtex-checkout-summary-0-x-summaryItemContainer) :global(.vtex-checkout-summary-0-x-summaryItemLabel), :global(.vtex-checkout-summary-0-x-price){
+    font-size: 20px;
+    letter-spacing: 0.26px;
+}

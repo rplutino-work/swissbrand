@@ -212,3 +212,8 @@
 :global(.vtex-tab-layout-0-x-contentItem--product-specs-04) :global(.vtex-flex-layout-0-x-flexRow--productSpecification):last-child {
     display: block !important;
 }
+
+
+:global(.vtex-product-list-0-x-quantitySelectorButton) :global(svg){
+    /* display: none; */
+}
