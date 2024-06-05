@@ -16,8 +16,9 @@
             // "flex-layout.row#shelf-01",
             "flex-layout.row#shelf-home-desktop-01",
             "flex-layout.row#middle-content",
-            "flex-layout.row#shelf-02",
-            "flex-layout.row#coleccions-home",
+            // "flex-layout.row#shelf-02",
+            "flex-layout.row#shelf-home-desktop-02",
+            // "flex-layout.row#coleccions-home",
             "flex-layout.row#deals",
             //"flex-layout.row#newsletter-form"
             "newsletter#footer-newsletter"

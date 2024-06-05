@@ -1416,3 +1416,40 @@
   }
 }
 
+
+/* INFOCARD SHELF HOME 1 Y 2 */
+
+.infoCardContainer--shelf-home-desktop-01-banner {
+  width: 271px !important;
+  height: 411px;
+  justify-content: center;
+  align-items: flex-end;
+}
+.infoCardCallActionContainer--shelf-home-desktop-01-banner :global(.vtex-button) {
+  background: #BD202E;
+  width: 213px;
+  height: 43px;
+  border: none;
+  border-radius: initial;
+  transition: all 350ms ease-in-out;
+}
+.infoCardCallActionContainer--shelf-home-desktop-01-banner :global(.vtex-button) :global(.vtex-button__label) {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+}
+.infoCardCallActionContainer--shelf-home-desktop-01-banner :global(.vtex-button):hover {
+  background: #E46262;
+}
+
+@media only screen and (max-width: 768px){
+  .infoCardContainer--shelf-home-desktop-01-banner{
+    width: 100% !important;
+    padding: 0 .5rem;
+  }
+  .infoCardCallActionContainer--shelf-home-desktop-01-banner :global(.vtex-button) {
+    width: 278px;
+  }
+}

@@ -38,7 +38,7 @@
             "blockClass": "shelf",
             "infinite": true,
             "showNavigationArrows": "always",
-            "showPaginationDots": "always",
+            "showPaginationDots": "never",
 
             "itemsPerPage": {
                 "desktop": 3,
@@ -75,7 +75,7 @@
     
     "list-context.product-list#shelf-02": {
         "props": {
-            "collection": "137"
+            "collection": "141"
         },
     
         "blocks": ["product-summary.shelf#shelf-product"],
@@ -87,10 +87,10 @@
             "blockClass": "shelf",
             "infinite": true,
             "showNavigationArrows": "always",
-            "showPaginationDots": "always",
+            "showPaginationDots": "never",
     
             "itemsPerPage": {
-                "desktop": 4,
+                "desktop": 3,
                 "tablet": 3,
                 "phone": 2
             }
@@ -192,7 +192,7 @@
     "flex-layout.row#shelf-home-desktop-01": {
         "title": "1º fila de productos desktop",
         "children": [
-            "rich-text#title-new-in",
+            // "rich-text#title-new-in",
             "flex-layout.row#shelf-home-desktop-01-products"
             
         ],
@@ -219,12 +219,29 @@
           "props": {
               "blockClass": [
                 "shelf-home-desktop-01"
-              ]
+              ],
+              "colSizing":"auto"
           },
           "children": [
-            "image#shelf-home-desktop-01-banner",
+            // "image#shelf-home-desktop-01-banner",
+            "info-card#shelf-home-desktop-01-banner1",
             "list-context.product-list#shelf-01"
           ]
+        },
+        "info-card#shelf-home-desktop-01-banner1": {
+            "props": {
+              "id": "shelf-home-desktop-01-banner",
+              "isFullModeStyle": true,
+              "textPosition": "center",
+              "imageUrl": "https://placehold.jp/271x411.png",
+              "mobileImageUrl": "https://placehold.jp/354x411.png",
+            //   "headline": "LOREM IPSUM",
+            //   "subhead": "Lorem Ipsum",
+              "callToActionText": "VER MÁS",
+              "callToActionUrl": "/sale/d",
+              "blockClass": "shelf-home-desktop-01-banner",
+              "textMode": "rich-text"
+            }
         },
         "image#shelf-home-desktop-01-banner": {
           "title": "Banner",
@@ -241,5 +258,77 @@
                   "title": "Sillon"
               }
           }
-        }
+        },
+        "flex-layout.row#shelf-home-desktop-02": {
+            "title": "1º fila de productos desktop",
+            "children": [
+                // "rich-text#title-recomendados",
+                "flex-layout.row#shelf-home-desktop-02-products"
+                
+            ],
+            "props": {
+                "colSizing": "auto",
+                "blockClass": [
+                    "shelf-products",
+                    "shelf-products-home",
+                    "shelf-products-home-2"
+                ]
+            }
+          },
+          "rich-text#title-recomendados": {
+            "props": {
+              "textAlignment": "CENTER",
+              "textPosition": "CENTER",
+              "text": "Novedades",
+              "textColor": "c-on-action-secondary",
+              "font": "t-heading-2",
+              "blockClass": ["title-shelf", "special-padding"]
+            }
+          },
+          "info-card#shelf-home-desktop-02-banner1": {
+            "props": {
+              "id": "shelf-home-desktop-02-banner",
+              "isFullModeStyle": true,
+              "textPosition": "center",
+              "imageUrl": "https://placehold.jp/271x411.png",
+              "mobileImageUrl": "https://placehold.jp/354x411.png",
+            //   "headline": "LOREM IPSUM",
+            //   "subhead": "Lorem Ipsum",
+              "callToActionText": "VER MÁS",
+              "callToActionUrl": "/sale/d",
+              "blockClass": "shelf-home-desktop-01-banner",
+              "textMode": "rich-text"
+            }
+        },
+          "image#shelf-home-desktop-02-banner": {
+            "title": "Banner",
+            "props": {
+                "blockClass": [
+                    "shelf-products",
+                    "shelf-products-home",
+                    "shelf-products-home-01",
+                    "shelf-products-home-02"
+                ],
+                "src": "https://placehold.jp/271x411.png",
+                "alt": "Imagen",
+                "link": {
+                    "url": "/sillon",
+                    "title": "Sillon"
+                }
+            }
+        },
+        "flex-layout.row#shelf-home-desktop-02-products": {
+            "title": "Productos",
+            "props": {
+                "blockClass": [
+                  "shelf-home-desktop-01"
+                ],
+                "colSizing":"auto"
+            },
+            "children": [
+              "list-context.product-list#shelf-02",
+            //   "image#shelf-home-desktop-02-banner"
+            "info-card#shelf-home-desktop-02-banner1"
+            ]
+          }
 }
