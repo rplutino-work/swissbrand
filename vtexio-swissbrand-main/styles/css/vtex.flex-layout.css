@@ -259,15 +259,13 @@
 }
 
 .flexRow--shelf-product-badges {
-    position: absolute;
-    left: 0;
-    z-index: 1;
     width: 100%;
     padding: 8px;
 }
 
 .flexRowContent--shelf-product-badges {
     align-items: center;
+    justify-content: center;
 }
 
 .flexRow--shelf-product-top-badges {

@@ -91,6 +91,7 @@
 
 .galleryItem :global(.vtex-shelf-1-x-relatedProducts--related-products-sku-filter) {
     padding: 0px;
+    height: 55px;
 }
 .galleryItem :global(.vtex-shelf-1-x-relatedProducts--related-products-sku-filter) :global(.vtex-slider-0-x-sliderFrame) {
     justify-content: center;
@@ -107,32 +108,30 @@
     justify-content: center;
 }
 :global(.vtex-shelf-1-x-relatedProducts--related-products-sku-filter) :global(.vtex-product-summary-2-x-hoverEffect) {
-    border: 0.5 solid rgb(53, 53, 53);
+    border: 0.5px solid rgb(53, 53, 53);
 }
 
 
 .buttonShowMore--layout :global(.vtex-button) {
-    min-height: auto;
-    margin-top: 10px;
+    background: #BD202E;
+    width: 213px;
+    height: 43px;
     border: none;
-    border-bottom: 1px solid #434343;
-    border-radius: 0;
-    outline: none;
-    background: transparent;
+    border-radius: initial;
+    transition: all 350ms ease-in-out;
 }
 
 .buttonShowMore--layout :global(.vtex-button__label) {
-    padding: 4px 10px !important;
-    line-height: 14px;
-    font-size: 12px;
-    color: #434343;
-    transition: color 0.2s linear;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 1px;
+    color: #FFFFFF;
 }
 
-.buttonShowMore--layout :global(.vtex-button__label):hover {
-    color: #b8b8b8;
-}
-
+.buttonShowMore--layout :global(.vtex-button):hover {
+    background: #E46262;
+  }
 .notFound--layout {
     display: flex;
     align-items: center;
