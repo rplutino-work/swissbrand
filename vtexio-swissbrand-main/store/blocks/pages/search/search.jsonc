@@ -170,30 +170,37 @@
     "search-result-layout.mobile": {
         "props": {
             "pagination": "show-more",
-            "preventRouteChange": false,
+            "preventRouteChange": true,
 
             "mobileLayout": {
                 "mode1": "small",
                 "mode2": "normal"
             },
-
+            
             "hiddenFacets": {
                 "brands": true,
-                "categories": true,
-                "priceRange": true,
-
+                "categories": false,
+                "priceRange": false,
                 "specificationFilters": {
-                    "hiddenFilters": []
+                     "hiddenFilters": [
+                          {"name": "Tabela de Medidas"},
+                          {"name": "Características"},
+                          {"name": "Especificações"},
+                          {"name": "Descrição do produto"},
+                          {"name": "Conteúdo da embalagem"},
+                          {"name": "Marca"},
+                          {"name": "Color"}
+                     ]
                 }
-            }
+           }
         },
 
         "children": [
-            "flex-layout.row#category-banner",
-            "breadcrumb.search",
-            "search-title.v2",
+            // "flex-layout.row#category-banner",
+            // "breadcrumb.search",
+            // "search-title.v2",
             "flex-layout.row#mobile-buttons",
-            "total-products.v2",
+            // "total-products.v2",
             "search-content",
             "search-fetch-more"
         ]
@@ -215,11 +222,25 @@
         },
 
         "children": [
+            "filter-navigator.v3#mobile",
             "order-by.v2"
             // "luzdemararg.m3-custom-search-result:filter-navigator.v3"
         ]
     },
-
+    "filter-navigator.v3#mobile": {
+        "blocks": ["sidebar-close-button"],
+        "props": {
+          "layout": "responsive",
+          "scrollToTop": "auto",
+          "initiallyCollapsed": false,
+          "navigationTypeOnMobile": "collapsible",
+          "updateOnFilterSelectionOnMobile": false,
+          "appliedFiltersOverview": "hide",
+          "fullWidthOnMobile": true,
+          "priceRangeLayout": "slider"
+        //   "showClearByFilter": false
+        }
+      },
     "search-not-found-layout": {
         "children": ["flex-layout.row#notfound"]
       },

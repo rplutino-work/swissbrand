@@ -38,6 +38,7 @@
     justify-content: center;
     overflow: hidden;
     text-align: center;
+    text-transform: capitalize;
 }
 
 .nameWrapper--shelf-product{
@@ -47,6 +48,7 @@
 
 .image {
     height: auto !important;
+    vertical-align: middle;
 }
 
 .skuSelectorItemImageValue--pdl-sku-selector-color{

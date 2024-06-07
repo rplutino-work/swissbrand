@@ -578,8 +578,7 @@
 @media only screen and (max-width: 1025px) {
     .flexRow--mobile-buttons {
         margin-bottom: 20px;
-        border-top: 1px solid #BD202E;
-        border-bottom: 1px solid #BD202E;
+        border-bottom: 2px solid black;
     }
 
     .flexRowContent--mobile-buttons {

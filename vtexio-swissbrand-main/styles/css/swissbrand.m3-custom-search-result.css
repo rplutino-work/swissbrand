@@ -300,7 +300,7 @@
     .filterAccordionItemBox {
         min-height: auto;
         padding: 12px 0px;
-        border-bottom: solid 1px #a8a8a8;
+        border: none !important;
     }
 
     .filterAccordionItemBox--unisex {

@@ -55,9 +55,12 @@
     text-transform: capitalize;
 }
 
-/* .filterPopupArrowIcon {
+.filterPopupArrowIcon {
+    padding: 0 5px;
+}
+.filtersWrapperMobile .filterPopupArrowIcon {
     display: none;
-} */
+}
 
 .orderByOptionsContainer {
     z-index: 10;
@@ -141,6 +144,9 @@
 }
 
 @media only screen and (max-width: 1025px) {
+    .gallery {
+        padding-left: 0px;
+    }
     .galleryTitle--layout {
         margin-bottom: 24px;
         padding: 0 16px;
@@ -229,6 +235,19 @@
 
 .filter__container--category-3 .filterTitle::before {
     content: 'Tipo de producto';
+    font-size: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.5px;
+    color: #231F20;
+    text-transform: capitalize;
+}
+.filter__container--priceRange .filterTitle {
+    font-size: 0;
+}
+
+.filter__container--priceRange .filterTitle::before {
+    content: 'Precio';
     font-size: 16px;
     font-size: 16px;
     font-weight: 500;
@@ -446,7 +465,7 @@
 } */
 
 .accordionFilter {
-    padding: 0 12px;
+    padding: 45px 20px;
 }
 
 @media only screen and (max-width: 1025px) {
@@ -472,9 +491,7 @@
     }
 
     .filterAccordionBreadcrumbs {
-        height: auto;
-        padding: 16px 0;
-        border-bottom: 1px solid #a8a8a8;
+        display: none;
     }
 
     .filterBreadcrumbsContent,
@@ -509,7 +526,7 @@
     }
 
     .accordionFilterContainer {
-        padding: 0;
+        padding: 22px 0;
     }
 
     .filterAccordionItemBox {
@@ -517,13 +534,16 @@
         padding: 12px 0px;
         border-bottom: solid 1px #a8a8a8;
     }
-
+    .accordionFilterOpen .filterAccordionItemBox {
+        border: none !important;
+    }
     .filterAccordionItemBox--unisex {
         display: none;
     }
 
     .accordionFilterItem {
         border-bottom: 1px solid #a8a8a8;
+        padding: 18px 0;
     }
 
     .accordionFilterContent {
@@ -533,10 +553,25 @@
     }
 
     .accordionFilterItemTitle {
-        line-height: 16px;
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 500;
-        color: #434343;
+        line-height: 19.5px;
+        color: #231F20;
+    }
+
+    .filterAccordionItemBox--gama-de-precios .accordionFilterItemTitle {
+        font-size: 0;
+    }
+
+    .filterAccordionItemBox--gama-de-precios .accordionFilterItemTitle::after {
+        content: 'Precio';
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19.5px;
+        color: #231F20;
+    }
+    .filter__container--priceRange .filterAvailable .filterTitle {
+        display: none;
     }
 
     .filterAccordionItemBox--departamento .accordionFilterItemTitle {
@@ -545,8 +580,10 @@
 
     .filterAccordionItemBox--departamento .accordionFilterItemTitle::after {
         content: 'Cateogria principal';
-        line-height: 17px;
-        font-size: 14px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19.5px;
+        color: #231F20;
     }
 
     .filterAccordionItemBox--sub-categoria .accordionFilterItemTitle {
@@ -555,8 +592,10 @@
 
     .filterAccordionItemBox--sub-categoria .accordionFilterItemTitle::after {
         content: 'Tipo de producto';
-        line-height: 17px;
-        font-size: 14px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19.5px;
+        color: #231F20;
     }
 
     .accordionFilterItemTag :global(.vtex-tag) {
@@ -571,7 +610,7 @@
 
     .accordionFilterItemIcon {
         margin-left: auto;
-        transform: rotate(-90deg);
+        /* transform: rotate(-90deg); */
     }
 
     .filterButtonsBox {
@@ -622,7 +661,8 @@
 
     .accordionFilterOpen,
     .accordionFilterItemOptions {
-        padding: 0 0 45px;
+        padding: 0 0 20px;
+        margin-left: -3rem;
     }
 
     .filterAccordionItemBox :global(.vtex-checkbox__line-container) {
@@ -633,8 +673,8 @@
 
     .filterAccordionItemBox :global(.vtex-checkbox__inner-container) {
         margin: 0;
-        border: 1px solid #707070;
-        border-radius: 2px;
+        border: 1px solid black;
+        border-radius: 0;
         background: #ffffff;
     }
 
@@ -647,9 +687,10 @@
     }
 
     .filterAccordionItemBox :global(.vtex-checkbox__label) {
-        line-height: 15px;
-        font-size: 12px;
-        color: #3d3c3c;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 15.85px;
+        color: #231F20;
     }
 
     .filter__container--priceRange {
