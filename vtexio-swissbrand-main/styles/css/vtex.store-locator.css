@@ -1,6 +1,6 @@
 .addressListLink,
 .markerInfoLink {
-    color: #0093cc;
+    color: #BD202E;
     font-weight: 600;
     font-size: 11px;
     text-decoration: none!important;
@@ -101,7 +101,7 @@
   }
   
   .addressLink {
-    color: #0093cc;
+    color: #BD202E;
     font-size: 13px;
     font-weight: 600;
     line-height: 17px;
@@ -129,7 +129,7 @@
   
   :global(.vtex-store-link-0-x-label--backlink),
   .backlink {
-    color: #0093cc;
+    color: #BD202E;
     text-transform: uppercase;
     font-weight: 800;
     font-size: 11px;

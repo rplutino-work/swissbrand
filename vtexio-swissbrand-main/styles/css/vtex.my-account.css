@@ -29,7 +29,7 @@
 }
 
 .menuLinks :global(.b--action-primary) {
-    border-color: #0093cc;
+    border-color: #BD202E;
 }
 
 .menu ~ :global(.vtex-account__page),

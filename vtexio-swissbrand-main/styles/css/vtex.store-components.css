@@ -58,9 +58,16 @@
 .searchBarInnerContainer--desktop-search :global(.vtex-input-prefix__group) {
     display: flex;
     align-items: center;
-    padding-left: 10px;
     border: none;
-    border-bottom: 1px solid #525252;
+    /* border-bottom: 1px solid #525252; */
+    border: 0.5px solid #000000;
+    height: auto !important;
+    margin: 15px 25%;
+    background-color: white;
+}
+
+:global(.vtex-search-1-x-biggy-autocomplete) {
+    display: none;
 }
 
 .searchBarInnerContainer--desktop-search :global(.vtex-input-prefix__group)::before {
@@ -69,10 +76,12 @@
     height: 18px;
     background: url("assets/svgs/search-icon.svg") center no-repeat;
     background-size: contain;
+    display: none;
 }
 
 .searchBarInnerContainer--desktop-search :global(.vtex-styleguide-9-x-input) {
-    padding: 0 10px 0 20px;
+    padding: 10px;
+    height: 44px;
 }
 
 .searchBarInnerContainer--mobile-search {
@@ -565,7 +574,7 @@
 }
 
 .shippingContainer :global(.vtex-button):hover {
-    background: #0093cc;
+    background: #BD202E;
 }
 
 .shippingContainer :global(.vtex-button__label) {
@@ -785,6 +794,7 @@
     margin-top: 20px;
     padding: 0;
     position: relative;
+    height: fit-content;
 }
 
 .inputGroup--footer-newsletter :global(.vtex-input) {
@@ -805,7 +815,8 @@
 }
 
 .inputGroup--footer-newsletter :global(.vtex-styleguide-9-x-input)::placeholder {
-    color: #434343;
+    color: #9F9F9F;
+    font-weight: 400;
 }
 
 .buttonContainer--footer-newsletter {
@@ -825,9 +836,12 @@
     border: none;
     border-radius: 0;
     outline: none;
-    background: #FCA01E;
-    transition: background-color 0.2s linear;
+    background: #BD202E;
+    transition: all 350ms ease-in-out;
 }
+.buttonContainer--footer-newsletter :global(.vtex-button):hover {
+    background: #E46262;
+  }
 
 .buttonContainer--footer-newsletter :global(.vtex-button__label) {
     padding: 0 26px;
@@ -846,7 +860,7 @@
     padding: 4px 16px;
     font-weight: 500;
     color: #ffffff;
-    background: #0093cc;
+    background: #BD202E;
 }
 
 .confirmation--footer-newsletter{
@@ -864,7 +878,7 @@
 
 @media only screen and (max-width: 1025px) {
     .newsletter--footer-newsletter {
-        padding: 100px 0;
+        padding: 70px 0;
         background-position: center center;
     }
 
@@ -874,7 +888,7 @@
 
     .label--footer-newsletter {
         text-align: left;
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .label--footer-newsletter::after {
@@ -889,8 +903,7 @@
         align-items: stretch;
         position: relative;
         margin-top: 24px;
-        border: 1px solid #fff;
-        margin: 0;
+        margin: 20px 0 0;;
     }
 
     .inputGroup--footer-newsletter :global(.vtex-input) {
@@ -916,13 +929,6 @@
         padding: 85px 0;
         /* background: url("assets/imgs/desktop/luz-de-mar-temporada-2023.jpg") center no-repeat; */
     }
-    .buttonContainer--footer-newsletter :global(.vtex-button):hover {
-        background: #434343;
-    }
-
-    .buttonContainer--footer-newsletter :global(.vtex-button):active {
-        background: #434343;
-    }
     .form--footer-newsletter {
         display: flex;
         max-width: 100%;
@@ -935,6 +941,8 @@
         width: 50%;
         justify-content: flex-end;
         max-width: 500px;
+        margin: 20px 0 0;
+        padding: 0;
     }
     .container--footer-newsletter {
         max-width: 1200px !important;

@@ -15,6 +15,7 @@
 .flexRow--menu-header{
     background: #fff;
     border-bottom: 1px solid #bebebe;
+    position: relative;
 }
 
 @media only screen and (max-width: 1025px) {
@@ -109,10 +110,6 @@
 
 .flexRowContent--mosaic-row {
     justify-content: center;
-}
-
-.flexRow--middle-content {
-    margin-bottom: 60px;
 }
 
 .flexRow--middle-content :global(.vtex-store-components-3-x-container){
@@ -360,7 +357,7 @@
     padding: 0;
     font-size: 14px;
     font-weight: 500;
-    color: #0093CC;
+    color: #BD202E;
     line-height: 14px;
 }
 
@@ -420,7 +417,7 @@
     font-size: 18px;
     line-height: normal;
     font-weight: 600;
-    color: #0093CC;
+    color: #BD202E;
 }
 
 .listPrice--product,
@@ -484,6 +481,10 @@
     padding: 50px 0px;
     background: #BD202E;
   }
+  .flexRow--deals :global(.vtex-store-components-3-x-imageElement) {
+    width: 43px;
+    height: 43px;
+}
   
   .flexRow--deals .stretchChildrenWidth {
     align-items: center;
@@ -563,8 +564,8 @@
 @media only screen and (max-width: 1025px) {
     .flexRow--mobile-buttons {
         margin-bottom: 20px;
-        border-top: 1px solid #0093CC;
-        border-bottom: 1px solid #0093CC;
+        border-top: 1px solid #BD202E;
+        border-bottom: 1px solid #BD202E;
     }
 
     .flexRowContent--mobile-buttons {
@@ -658,7 +659,7 @@
 }
 
 .flexRow--cart-button :global(.vtex-button):hover {
-    background: #0093cc;
+    background: #BD202E;
 }
 
 .flexRow--cart-button :global(.vtex-button):active {
@@ -1187,7 +1188,7 @@
     border-radius: 3px;
 }
 :global(.vtex-product-summary-2-x-containerNormal--shelf-product):hover .flexRow--cart-button-kitlook :global(.vtex-button) {
-    background: #0093cc;
+    background: #BD202E;
 }
 .flexRowContent--plp-price-kitlook {
     display: flex;
@@ -1329,7 +1330,7 @@
         transition: .3s;
     }    
     .flexRowContent--form-wrapper :global(.vtex-button):hover {
-        background: #0093cc;
+        background: #BD202E;
     }
   }
 
@@ -1845,3 +1846,6 @@
       width: max-content;
     }
   }
+
+
+  

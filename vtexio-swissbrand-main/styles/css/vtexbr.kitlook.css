@@ -47,7 +47,7 @@
 }
 
 .kitlookTotalizer :global(.vtex-button)::hover {
-    background: #0093cc;
+    background: #BD202E;
 }
 
 .kitlookDetails :global(.vtex-store-components-3-x-skuSelectorItemImage) {

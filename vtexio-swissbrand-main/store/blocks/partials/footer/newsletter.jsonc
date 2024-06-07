@@ -110,7 +110,7 @@
           "title": "Botón",
           "props": {
             "blockClass": "form-newsletter-submit",
-            "label": "Registrarme"
+            "label": "Registrate"
           }
         }
 }

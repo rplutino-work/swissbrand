@@ -8,7 +8,8 @@
             "rich-text#informacion",
             "menu-item#nosotros",
             "menu-item#contactanos",
-            "menu-item#sucursales"
+            "menu-item#sucursales",
+            "menu-item#guia-talles"
         ]
     },
 
@@ -29,6 +30,21 @@
                 "text": "Sucursales",
                 "tagTitle": "Sucursales",
                 "href": "/sucursales",
+                "type": "internal",
+                "noFollow": false
+            }
+        }
+    },
+    "menu-item#guia-talles": {
+        "props": {
+            "blockClass": "footer-menu-item",
+            "id": "guia-talles",
+            "type": "custom",
+
+            "itemProps": {
+                "text": "Guia de talles",
+                "tagTitle": "Guia de talles",
+                "href": "/guia-de-talles",
                 "type": "internal",
                 "noFollow": false
             }

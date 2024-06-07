@@ -95,7 +95,8 @@
         },
 
         "children": [
-            "search-title.v2"
+            "search-title.v2",
+            "filter-navigator.v3"
             //  "luzdemararg.m3-custom-search-result:filter-navigator.v3"
             ]
     },
@@ -198,7 +199,7 @@
         "children": ["flex-layout.row#notfound"]
       },
       "flex-layout.row#notfound": {
-        "children": ["flex-layout.row#product-not-found"],
+        "children": ["flex-layout.row#not-found-1"],
         "props": {
           "fullWidth": true,
           "blockClass": "not-found-container"

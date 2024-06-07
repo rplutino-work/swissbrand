@@ -5,7 +5,18 @@
         display: none;
     }
 }
-
+.toggleSearchWrapper {
+    position: unset !important;
+}
+.toggleSearchContainer{
+    position: absolute !important;
+    top: 160% !important;
+    right: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    max-width: none !important;
+    background-color: rgba(237, 235, 235, 0.814) !important;
+}
 /* HEADER HOME */
 :global(.vtex-sticky-layout-0-x-wrapper--header-content-home) .toggleSearchButton {
     filter: invert(1) !important;

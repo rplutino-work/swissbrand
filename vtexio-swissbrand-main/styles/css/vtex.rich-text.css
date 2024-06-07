@@ -63,7 +63,7 @@
 }
 
 .paragraph--advantage-highlight {
-    color: #0093cc;
+    color: #BD202E;
 }
 
 .heading--middle-title {
@@ -240,7 +240,7 @@
     line-height: 28px;
     font-size: 18px;
     font-weight: 500;
-    color: #0093cc;
+    color: #BD202E;
 }
 
 .headingLevel4--institutional-content {
@@ -248,7 +248,7 @@
 }
 
 .link--institutional-content {
-    color: #0093cc;
+    color: #BD202E;
     font-weight: 500;
     text-decoration: none;
 }
@@ -313,7 +313,7 @@
     padding: 12px 0;
     font-size: 14px;
     font-weight: 500;
-    color: #434343;
+    color: #231F20;
     margin: 0;
 }
 
@@ -596,3 +596,49 @@
     color: #434343;
     margin: 0;
 }
+
+/* Nor found */
+
+.container--not-found-title {
+    font-size: 48px;
+  }
+  .container--not-found-title .paragraph--not-found-title {
+    margin: 0;
+  }
+
+  .container--title-page-not-found {
+    width: 70% !important;
+  }
+
+  .paragraph--title-slider-not-found {
+    color: #7f7f7f;
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.150000006px;
+  }
+
+  .strong--title-page-not-found {
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 43px;
+    letter-spacing: 0.25px;
+  }
+
+  @media only screen and (max-width: 1025px) {
+    .container--not-found-title {
+        font-size: 20px;
+      }
+      .container--not-found-title .paragraph--not-found-title {
+        margin: 0;
+      }
+    
+      .container--not-found-desc {
+        margin-top: 20px;
+      }
+   }
+
+  

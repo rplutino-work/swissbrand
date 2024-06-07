@@ -15,7 +15,7 @@
         },
         "infinite": true,
         "showNavigationArrows": "mobileOnly",
-        "showPaginationDots": "never",
+        "showPaginationDots": "mobileOnly",
         "blockClass": "deals-carousel"
       },
       "title": "Configuraciones",
@@ -36,7 +36,7 @@
     },
     "image#deal1": {
       "props": {
-        "src": "assets/svgs/luz-de-mar-icon-card.svg"
+        "src": "assets/svgs/swissbrand-icon-wallet.svg"
       },
       "title": "Icono"
     },
@@ -65,7 +65,7 @@
     },
     "image#deal2": {
       "props": {
-        "src": "assets/svgs/luz-de-mar-icon-pickup.svg"
+        "src": "assets/svgs/swissbrand-icon-pickup.svg"
       },
       "title": "Icono"
     },
@@ -94,7 +94,7 @@
     },
     "image#deal3": {
       "props": {
-        "src": "assets/svgs/luz-de-mar-icon-shipping.svg"
+        "src": "assets/svgs/swissbrand-icon-shipping.svg"
       },
       "title": "Icono"
     },
@@ -123,7 +123,7 @@
     },
     "image#deal4": {
       "props": {
-        "src": "assets/svgs/luz-de-mar-icon-card.svg"
+        "src": "assets/svgs/swissbrand-icon-card.svg"
       },
       "title": "Icono"
     },
