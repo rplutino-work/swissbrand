@@ -2,9 +2,8 @@
     "responsive-layout.phone#product": {
         "children": [
             "flex-layout.row#product-main-content-mobile",
-            "flex-layout.row#product-specs"
-            // "flex-layout.row#related-products",
-            // "shelf.relatedProducts#related-products"
+            "flex-layout.row#product-specs",
+            "shelf.relatedProducts#related-products-mobile"
         ]
     },
 
@@ -17,5 +16,21 @@
             "flex-layout.col#images-column",
             "flex-layout.col#details-column"
         ]
+    },
+    "shelf.relatedProducts#related-products-mobile": {
+        "blocks": ["product-summary.shelf#shelf-product"],
+        "props": {
+            "blockClass": ["productos-relacionados-pdp"],
+            "recommendation": "similars",
+            "productList": {
+                // "titleText": "PRODUCTOS RELACIONADOS",
+                "showTitle":false,
+                "itemsPerPage": 2,
+                "minItemsPerPage": 2,
+                "arrows":true,
+                "scroll":"ONE_BY_ONE",
+                "gap":"ph3"
+            }
+        }
     }
 }

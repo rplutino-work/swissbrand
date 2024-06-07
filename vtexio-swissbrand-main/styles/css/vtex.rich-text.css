@@ -1,11 +1,12 @@
 /* TOP BAR */
 .paragraph--top-bar {
-    color: #fff;
-    font-weight: 500;
-    font-size: 11px;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12.19px;
+    text-align: center;
+    color: #FFFFFF;
     margin: 5px 0;
-    letter-spacing: -.22px;
-    line-height: 20px;
+    font-family: "Montserrat";
 }
 
 /* Menu */
@@ -21,10 +22,11 @@
     margin: 0;
     padding: 15px 2px;
     text-transform: uppercase;
-    line-height: 17px;
-    font-size: 13px;
-    font-weight: 500;
-    color: #434343;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.63px;
+    letter-spacing: 0.05em;
+    color: #000000;
 }
 
 .paragraph--mobile-menu-item::after {
@@ -165,19 +167,28 @@
 }
 
 /* DEALS */
+
 .paragraph--deals {
-    font-size: 13px;
-    line-height: 16px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.07px;
     color: #fff;
     padding: 0 15px;
     margin-top: 0;
     margin-bottom: 0;
   }
+  .paragraph--deals-title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.4px;
+    color: #fff;
+  }
   .link--deals{
     text-decoration: none;
-    color: #fff;
+    font-size: 14px;
     font-weight: 400;
-    font-size: 11px;
+    line-height: 17.07px;
+    color: #fff;
     font-family: 'Montserrat';
   }
 

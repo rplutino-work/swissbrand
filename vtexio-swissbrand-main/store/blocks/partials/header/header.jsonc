@@ -57,9 +57,9 @@
         "props": {
             "blockClass": "header-logo",
             "href": "/",
-            "title": "Luz de Mar",
-            "url": "assets/svgs/luz-de-mar-logo-header.svg",
-            "width": 165
+            "title": "Swissbrand",
+            "url": "assets/svgs/swissbrand.svg",
+            "width": 201
         }
     },
 

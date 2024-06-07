@@ -125,6 +125,7 @@
 
 .menuContainerNav--mobile-menu {
     flex: 1;
+    padding: 0 12px;
 }
 
 .styledLinkContent--department{
@@ -169,8 +170,9 @@
     }
 
     .menuContainerNav--mobile-menu-user {
-        border-top: 1px solid #0093CC;
-        padding-top: 10px;
+        border-top: 1px solid #C5C5C5;
+        padding: 10px 12px;
+        background: #F5F5F5;
     }
 }
 
@@ -189,7 +191,7 @@
     }
 
     .styledLinkContent--department {
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 500;
     }
     .menuItem--department {

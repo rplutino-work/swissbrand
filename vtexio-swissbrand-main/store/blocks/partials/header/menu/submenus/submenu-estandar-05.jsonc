@@ -24,10 +24,10 @@
     "children": [
       "image#estandar-05",
       "vtex.menu@2.x:menu#estandar-05-column-1",
-      "vtex.menu@2.x:menu#estandar-05-column-2",
-      "vtex.menu@2.x:menu#estandar-05-column-3",
-      "vtex.menu@2.x:menu#estandar-05-column-4",
-      "vtex.menu@2.x:menu#estandar-05-column-5"
+      "vtex.menu@2.x:menu#estandar-05-column-2"
+      // "vtex.menu@2.x:menu#estandar-05-column-3",
+      // "vtex.menu@2.x:menu#estandar-05-column-4",
+      // "vtex.menu@2.x:menu#estandar-05-column-5"
     ],
     "props": {
         "blockClass":["categories-wrapper"],

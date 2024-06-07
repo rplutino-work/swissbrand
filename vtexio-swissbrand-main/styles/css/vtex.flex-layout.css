@@ -1,6 +1,6 @@
 /* TOP BAR */
 .flexRow--top-bar {
-    background: #434343;
+    background: #000000;
 }
 .flexRow--top-bar :global(.vtex-store-components-3-x-container) {
     padding: 0;
@@ -21,7 +21,9 @@
     .flexRow--user-items {
         flex: 1;
     }
-
+    .flexRowContent--user-items .stretchChildrenWidth:first-child {
+        display: none;
+    }
     .flexRowContent--user-items {
         justify-content: flex-end;
     }
@@ -68,7 +70,7 @@
     
     .flexRowContent--menu-header {
         height: 65px;
-        max-width: 1300px;
+        max-width: 1200px;
         margin: 0 auto;
         padding: 0 15px;
     }
@@ -210,13 +212,16 @@
     margin-bottom: 20px;
 }
 @media(min-width:1025px){
+    .flexRowContent--banner-2-wrapper {
+        justify-content: center;
+    }
     .flexRowContent--banner-2-wrapper .stretchChildrenWidth {
         flex-direction: row;
     }
     .flexRowContent--banner-2-wrapper .stretchChildrenWidth {
         flex-direction: row;
         width: auto !important;
-        overflow: hidden;
+        /* overflow: hidden; */
     }
     .flexRow--banner-2-wrapper {
         max-width: 1200px;
@@ -478,7 +483,7 @@
 }
 .flexRow--deals {
     padding: 50px 0px;
-    background: #bebebe;
+    background: #BD202E;
   }
   
   .flexRow--deals .stretchChildrenWidth {
@@ -488,8 +493,8 @@
   .flexRow--deals .flexCol {
     align-items: center;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     gap: 10px;
   }
   
@@ -507,11 +512,15 @@
         border-right: 1px solid #fff;
         border-left: 1px solid #fff;
     }
+    .flexCol--deals-center.flexCol--deals-none {
+        border-right: 1px solid #fff;
+        border-left: none;
+    }
     .flexRow--deals .flexCol {
         padding: 10px 0;
     }
     .flexRow--deals {
-        padding: 38px 0px !important;
+        padding: 43px 0px !important;
       }
   }
 
@@ -610,7 +619,7 @@
 
 .flexRowContent--product-main-content {
     width: 100%;
-    max-width: 980px;
+    /* max-width: 980px; */
     padding: 0 15px;
     margin: 0 auto 100px;
 }
@@ -913,6 +922,9 @@
         flex: unset;
         max-width: max-content;
         padding-right: 10px;
+    }
+    :global(.vtex-store-drawer-0-x-openIconContainer) {
+        flex: 0.3 !important;
     }
     .flexRowContent--evento-menu {
         max-width: 98%;
@@ -1756,4 +1768,81 @@
     .flexRow--product-specs {
         margin: auto auto 50px;
     }
-} */
+}
+
+/* Product shelf home 1 */
+
+.flexRowContent--shelf-products-home {
+    flex-direction: column;
+    /* padding-bottom: 5rem; */
+    background-color: whitesmoke;
+  }
+  .flexRow--shelf-home-desktop-01 {
+    padding: 6rem 0;
+    background-color: whitesmoke;
+  }
+  .flexRowContent--shelf-home-desktop-01 {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .flexRowContent--shelf-home-desktop-01 .stretchChildrenWidth {
+    margin: 0 5px;
+  }
+  .flexRow--shelf-products {
+    background-color: whitesmoke !important;
+  }
+  :global(.vtex-store-components-3-x-imageElementLink--shelf-products-home) {
+    width: 271px !important;
+    height: 411px;
+    padding: 0 5px;
+  }
+  :global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf-home-desktop-01) {
+    padding-bottom: 3rem;
+    background: whitesmoke !important;
+  }
+  :global(.vtex-slider-layout-0-x-slide--shelf-home-desktop-01) {
+    background: whitesmoke;
+  }
+  :global(.vtex-store-components-3-x-imageElement--shelf-products-home-01) {
+    box-shadow: 0px 5px 5px #00000029;
+  }
+  @media screen and (max-width: 768px) {
+    .flexRow--shelf-home-desktop-01 {
+        padding: 2rem 0;
+      }
+    .flexRowContent--shelf-home-desktop-01 {
+      max-width: initial;
+      margin: 0;
+    }
+    .flexRowContent--shelf-home-desktop-01 .stretchChildrenWidth {
+      margin: 0;
+      width: initial;
+    }
+    :global(.vtex-store-components-3-x-imageElementLink--shelf-products-home-01) {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: 0rem 1rem 0rem;
+    }
+    :global(.vtex-store-components-3-x-imageElementLink--shelf-products-home-02) {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: 2rem 1rem 2rem;
+    }
+    .flexRowContent--shelf-home-desktop-01 :global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf) {
+        /* padding-bottom: 0; */
+        margin-top: 2rem;
+    }
+    .flexRowContent--shelf-products-home-2 :global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf) {
+      /* padding-bottom: 0; */
+      margin-bottom: 2rem;
+      margin-top: 0;
+    }
+    :global(.vtex-store-components-3-x-imageElement--shelf-products-home-01) {
+      border-radius: 5px;
+      /* padding: 2rem; */
+      object-fit: cover;
+      width: max-content;
+    }
+  }

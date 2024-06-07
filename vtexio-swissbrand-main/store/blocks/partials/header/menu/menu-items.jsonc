@@ -20,8 +20,8 @@
             "menu-item#estandar-04",
             "menu-item#estandar-05",
             "menu-item#estandar-06",
-            "menu-item#estandar-07",
-            "menu-item#sale"
+            "menu-item#estandar-07"
+            // "menu-item#sale"
         ],
         "props": {
           "disposition": [
@@ -67,7 +67,7 @@
           "blockClass": "department",
           "type": "category",
           "itemProps": {
-            "categoryId": 77
+            "categoryId": 1
           }
         },
         "blocks": ["vtex.menu@2.x:submenu#estandar-menu-01"]
@@ -79,7 +79,7 @@
             "blockClass": "department",
             "type": "category",
             "itemProps": {
-                "categoryId": 61
+                "categoryId": 2
             }
         },
 
@@ -92,7 +92,7 @@
             "blockClass": "department",
             "type": "category",
             "itemProps": {
-                "categoryId": 88
+                "categoryId": 3
             }
         },
 
@@ -105,7 +105,7 @@
             "blockClass": "department",
             "type": "category",
             "itemProps": {
-                "categoryId": 23
+                "categoryId": 4
             }
         },
 
@@ -118,7 +118,7 @@
             "blockClass": "department",
             "type": "category",
             "itemProps": {
-                "categoryId": 1
+                "categoryId": 5
             }
         },
 

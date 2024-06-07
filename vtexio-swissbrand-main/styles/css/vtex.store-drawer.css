@@ -6,7 +6,7 @@
 }
 
 .drawer--mobile-menu {
-    padding: 0 12px;
+    /* padding: 0 12px; */
 }
 
 .childrenContainer--mobile-menu {
@@ -17,21 +17,20 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #0093CC;
-    margin-bottom: 15px;
+    margin: 25px 12px 10px;
 }
 
 .closeIconContainer--primary-tab::before {
     content: "";
-    width: 122px;
+    width: 204px;
     height: 31px;
-    background: url("assets/svgs/luz-de-mar-logo-menu.svg") center no-repeat;
+    background: url("assets/svgs/swissbrand.svg") center no-repeat;
 }
 
 .closeIconButton--mobile-menu {
     display: flex;
     align-items: center;
-    padding: 17px 0;
+    padding: 0;
     outline: none;
 }
 

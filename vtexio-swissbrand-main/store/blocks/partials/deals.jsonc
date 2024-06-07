@@ -9,7 +9,7 @@
     "slider-layout": {
       "props": {
         "itemsPerPage": {
-          "desktop": 3,
+          "desktop": 4,
           "tablet": 3,
           "mobile": 1
         },
@@ -22,12 +22,13 @@
       "children": [
         "flex-layout.col#deals1",
         "flex-layout.col#deals2",
-        "flex-layout.col#deals3"
+        "flex-layout.col#deals3",
+        "flex-layout.col#deals4"
       ]
     },
   
     "flex-layout.col#deals1": {
-      "children": ["image#deal1", "rich-text#deal1"],
+      "children": ["image#deal1","rich-text#deal1-title", "rich-text#deal1"],
       "props": {
         "blockClass": "deals-col"
       },
@@ -39,16 +40,24 @@
       },
       "title": "Icono"
     },
+    "rich-text#deal1-title": {
+      "props": {
+        "text": "PROMOS BANCARIAS",
+        "blockClass": "deals-title",
+        "textAlignment": "CENTER"
+      },
+      "title": "Texto"
+    },
     "rich-text#deal1": {
       "props": {
         "text": "[Lorem Ipsum Dolor Sit Amet,<br>Consetetur](#)",
         "blockClass": "deals",
-        "textAlignment": "LEFT"
+        "textAlignment": "CENTER"
       },
       "title": "Texto"
     },
     "flex-layout.col#deals2": {
-      "children": ["image#deal2", "rich-text#deal2"],
+      "children": ["image#deal2","rich-text#deal2-title", "rich-text#deal2"],
       "props": {
         "blockClass": ["deals-col","deals-center"]
       },
@@ -60,18 +69,26 @@
       },
       "title": "Icono"
     },
+    "rich-text#deal2-title": {
+      "props": {
+        "text": "PICK UP IN STORE",
+        "blockClass": "deals-title",
+        "textAlignment": "CENTER"
+      },
+      "title": "Texto"
+    },
     "rich-text#deal2": {
       "props": {
         "text": "[Lorem Ipsum Dolor Sit Amet,<br>Consetetur](#)",
         "blockClass": "deals",
-        "textAlignment": "LEFT"
+        "textAlignment": "CENTER"
       },
       "title": "Texto"
     },
     "flex-layout.col#deals3": {
-      "children": ["image#deal3", "rich-text#deal3"],
+      "children": ["image#deal3","rich-text#deal3-title", "rich-text#deal3"],
       "props": {
-        "blockClass": "deals-col"
+        "blockClass": ["deals-col","deals-center","deals-none"]
       },
       "title": "Comunicación 3"
     },
@@ -81,11 +98,48 @@
       },
       "title": "Icono"
     },
+    "rich-text#deal3-title": {
+      "props": {
+        "text": "ENVÍO GRATIS",
+        "blockClass": "deals-title",
+        "textAlignment": "CENTER"
+      },
+      "title": "Texto"
+    },
     "rich-text#deal3": {
       "props": {
         "text": "[Lorem Ipsum Dolor Sit Amet,<br>Consetetur](#)",
         "blockClass": "deals",
-        "textAlignment": "LEFT"
+        "textAlignment": "CENTER"
+      },
+      "title": "Texto"
+    },
+    "flex-layout.col#deals4": {
+      "children": ["image#deal1","rich-text#deal4-title", "rich-text#deal1"],
+      "props": {
+        "blockClass": "deals-col"
+      },
+      "title": "Comunicación 1"
+    },
+    "image#deal4": {
+      "props": {
+        "src": "assets/svgs/luz-de-mar-icon-card.svg"
+      },
+      "title": "Icono"
+    },
+    "rich-text#deal4-title": {
+      "props": {
+        "text": "CUOTAS SIN INTERES",
+        "blockClass": "deals-title",
+        "textAlignment": "CENTER"
+      },
+      "title": "Texto"
+    },
+    "rich-text#deal4": {
+      "props": {
+        "text": "[Lorem Ipsum Dolor Sit Amet,<br>Consetetur](#)",
+        "blockClass": "deals",
+        "textAlignment": "CENTER"
       },
       "title": "Texto"
     }
