@@ -1,0 +1,22 @@
+.containerNormal--minicart-card{
+    max-width: initial !important;
+}
+
+
+/* NOMBRE DE PRODUCTO EN RELACIONADOS MINICART */
+.nameContainer--product-name-minicart{
+    padding: 0;
+    justify-content: flex-start;
+    margin-bottom: 5px;
+}
+
+.productBrand--product-name-minicart{
+    font-size: 12px;
+    letter-spacing: 0.24px;
+}
+
+@media(max-width:991px){
+    .productBrand--product-name-minicart{
+        font-size: 10px;
+    }
+}

@@ -13,7 +13,8 @@ function index() {
 
     useEffect(()=>{
         if(product && product?.properties){
-            const fichaTecnica = product.properties.filter(spec => spec.name === 'tabla-talles')[0]?.values
+            const fichaTecnica = product?.properties?.filter(spec => spec.name === 'tabla-talles')[0]?.values
+            if(!fichaTecnica) return
             setTabla(JSON.parse(fichaTecnica))
         }
     },[product])

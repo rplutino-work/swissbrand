@@ -34,5 +34,8 @@
     },
     "store.storelocator#sucursales":{
         "path": "/sucursales"
+    },
+    "store.custom#landing-custom":{
+        "path": "/landing-custom"
     }
 }

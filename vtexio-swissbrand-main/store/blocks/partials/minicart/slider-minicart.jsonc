@@ -27,8 +27,7 @@
       },
       "title": "Slider minicart",
       "children": [
-          "flex-layout.row#minicart-card",
-          "add-to-cart-button"
+          "flex-layout.row#minicart-card"
       ]
     },
     "flex-layout.row#minicart-card":{
@@ -55,9 +54,24 @@
           "width":"70%"
       },
       "children":[
-          "flex-layout.row#price",
-          "product-summary-sku-selector#minicart-card"
-          
+        "product-summary-name#product-name-minicart",
+        "flex-layout.row#price-minicart",
+        "add-to-cart-button"
+      ]
+    },
+    "product-summary-name#product-name-minicart": {
+      "props": {
+        "blockClass": "product-name-minicart",
+        "alwaysShow": true
+      }
+    },
+    "flex-layout.row#price-minicart": {
+      "props": {
+        "blockClass": "product-price-minicart"
+      },
+      "children": [
+        // "product-list-price#shelf-product",
+        "product-selling-price#shelf-product"
       ]
     },
     "product-summary-sku-selector#minicart-card": {

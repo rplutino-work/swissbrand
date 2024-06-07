@@ -98,6 +98,7 @@
 
 .flexRow--minicart-footer {
     box-shadow: none;
+    padding: 0px 25px;
 }
 
 /**/
@@ -619,7 +620,7 @@
 
 .flexRowContent--product-main-content {
     width: 100%;
-    max-width: 980px;
+    /* max-width: 980px; */
     padding: 0 15px;
     margin: 0 auto 100px;
 }

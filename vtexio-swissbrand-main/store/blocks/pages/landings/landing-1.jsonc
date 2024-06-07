@@ -1,0 +1,60 @@
+{
+    "store.custom#landing-custom": {
+        "blocks": ["flex-layout.row#landing-custom"]
+    },
+    "flex-layout.row#landing-custom":{
+        "props":{
+            "blockCLass":["landing-custom"]
+        },
+        "children":["flex-layout.col#landing-custom"]
+    },
+    "flex-layout.col#landing-custom":{
+        "props":{
+            "blockCLass":["landing-custom"]
+        },
+        "children":[
+            "flex-layout.row#landing-custom-banner",
+            "flex-layout.row#landing-custom-text"
+        ]
+    },
+    "flex-layout.row#landing-custom-banner":{
+        "props":{
+            "blockCLass":["landing-custom-banner"]
+        },
+        "children":["flex-layout.col#landing-custom-banner"]
+    },
+    "flex-layout.col#landing-custom-banner":{
+        "props":{
+            "blockCLass":["landing-custom-banner"]
+        },
+        "children":["image#landing-banner"]
+    },
+    "flex-layout.row#landing-custom-text":{
+        "props":{
+            "blockCLass":["landing-custom-text"]
+        },
+        "children":["flex-layout.col#landing-custom-text"]
+    },
+    "flex-layout.col#landing-custom-text":{
+        "props":{
+            "blockCLass":["landing-custom-text"]
+        },
+        "children":[
+            "rich-text#landing-text"
+        ]
+    },
+    "image#landing-banner": {
+        "title": "Imagen",
+        "props": {
+            "src": "https://placehold.jp/1920x130.png",
+            "alt": "Novedades Luz de Mar",
+            "blockClass": "popup-image"
+        }
+    },
+    "rich-text#landing-text": {
+        "props": {
+          "text": "## Sucursales",
+          "blockClass":["stores-wrapper-title"]
+        }
+      }
+}

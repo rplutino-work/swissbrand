@@ -36,7 +36,7 @@
 }
 
 .drawerContent--minicart{
-    padding: 0px 25px;
+    /* padding: 0px 25px; */
 }
 
 .closeIconContainer--minicart {
@@ -79,7 +79,7 @@
 }
 
 .minicartProductListContainer {
-    padding: 0px;
+    padding: 0px 25px;
 }
 
 
