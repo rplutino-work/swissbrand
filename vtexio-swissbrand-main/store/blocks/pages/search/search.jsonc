@@ -52,7 +52,8 @@
                           {"name": "Especificações"},
                           {"name": "Descrição do produto"},
                           {"name": "Conteúdo da embalagem"},
-                          {"name": "Marca"}
+                          {"name": "Marca"},
+                          {"name": "Color"}
                      ]
                 }
            }
@@ -60,7 +61,8 @@
 
         "children": [
             "flex-layout.row#category-banner",
-            "breadcrumb.search",
+            // "breadcrumb.search",
+            "flex-layout.row#order-by",
             "flex-layout.row#content"
         ]
     },
@@ -87,7 +89,20 @@
 
         "children": ["flex-layout.col#filters", "flex-layout.col#result"]
     },
+    "flex-layout.row#order-by":{
+        "props": {
+            "blockClass": "order-by"
+        },
 
+        "children": [
+            "order-by.v2"
+            ]
+    },
+    "order-by.v2":{
+        "props": {
+            "showOrderTitle": false
+        }
+    },
     "flex-layout.col#filters": {
         "props": {
             "blockClass": "filters",
@@ -100,7 +115,17 @@
             //  "luzdemararg.m3-custom-search-result:filter-navigator.v3"
             ]
     },
-
+    "filter-navigator.v3": {
+        "props": {
+          "layout": "responsive",
+          "scrollToTop": "auto",
+        //   "blockClass": "filtros-desktop",
+          "fullWidthOnMobile": true,
+          "priceRangeLayout": "slider",
+          "showClearByFilter": true,
+          "truncateFilters": true
+        }
+      },
     // "luzdemararg.m3-custom-search-result:filter-navigator.v3": {
     //     "props": {
     //         "colorSpecificationName": "Color",
@@ -129,9 +154,9 @@
         "props": {
             "blockClass": "result-top",
             "colSizing": "auto"
-        },
+        }
 
-        "children": ["total-products.v2", "order-by.v2"]
+        // "children": ["total-products.v2", "order-by.v2"]
     },
 
     "search-content": {

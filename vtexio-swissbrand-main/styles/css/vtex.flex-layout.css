@@ -544,15 +544,30 @@
 .flexRow--content {
     width: 100%;
     max-width: 1200px;
-    padding: 0 15px;
+    /* padding: 0 15px; */
     margin: 0 auto;
 }
 
-.flexColChild--filters {
+/* .flexColChild--filters {
     width: 265px;
     margin-right: 8px;
-}
+} */
 
+.flexRowContent--order-by {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    position: relative;
+    border-bottom: 0.5px solid black;
+    padding: 25px 0 10px;
+}
+.flexRowContent--order-by .stretchChildrenWidth {
+    justify-content: flex-end;
+}
+:global(.vtex-search-result-3-x-orderBy--layout) {
+    display: flex;
+}
 .flexRow--result-top {
     padding: 0 8px;
     margin-bottom: 10px;
