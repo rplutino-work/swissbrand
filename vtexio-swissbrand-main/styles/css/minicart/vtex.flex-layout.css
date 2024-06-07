@@ -15,3 +15,59 @@
 .flexRowContent--minicart-content-info{
     gap: 10px;
 }
+
+.flexCol--minicart-card-info{
+    justify-content: center;
+}
+.flexColChild--minicart-card-info{
+    height: auto !important;
+}
+
+.flexRowContent--minicart-card-container{
+    gap: 10px;
+    height: 126px;
+}
+
+@media(max-width:991px){
+    .flexRowContent--minicart-card-container{
+        display: flex;
+    }
+}
+
+
+/* agregar al carrito minicart */
+
+.flexColChild--minicart-card-info :global(.vtex-button){
+    border: none;
+    background: none;
+}
+
+.flexColChild--minicart-card-info :global(.vtex-button__label){
+    padding: 0;
+    justify-content: flex-start;
+}
+
+.flexColChild--minicart-card-info :global(.vtex-add-to-cart-button-0-x-buttonText){
+    color: #000;
+    text-decoration: underline;
+    font-size: 12px;
+    letter-spacing: 0.24px;
+}
+
+/* imagen minicart relacionados*/
+
+.flexCol--minicart-card-image :global(.vtex-product-summary-2-x-imageWrapper--shelf-product){
+    height: 100%;
+}
+
+.flexCol--minicart-card-image :global(.vtex-product-summary-2-x-imageContainer--shelf-product){
+    object-fit: cover !important;
+    height: 100%;
+}
+
+
+/* precios minicart */
+
+.flexRow--product-price-minicart :global(.vtex-product-price-1-x-sellingPrice--shelf-product){
+    padding: 0px;
+}

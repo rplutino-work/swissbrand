@@ -9,7 +9,7 @@
 }
 
 :global(.vtex-minicart-2-x-minicartSummary--minicart-summary-footer) :global(.vtex-checkout-summary-0-x-summaryItemContainer) :global(.vtex-checkout-summary-0-x-summaryItemLabel), :global(.vtex-checkout-summary-0-x-price){
-    font-size: 13px;
+    font-size: 13px !important;
     letter-spacing: 0.26px;
 }
 

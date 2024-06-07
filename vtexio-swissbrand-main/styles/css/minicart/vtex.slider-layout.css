@@ -1,0 +1,31 @@
+.sliderLayoutContainer--minicart-slider{
+    padding: 30px 20px;
+    background-color: #EFEFEF;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+.sliderLayoutContainer--minicart-slider::before{
+    content: "También te puede interesar..";
+    border-bottom: 1px solid #000;
+    padding-bottom: 10px;
+    width: 100%;
+    font-size: 13px;
+}
+
+.sliderLeftArrow--minicart-slider{
+    right: 40px;
+    justify-content: flex-end;
+    top: 30px;
+}
+
+.sliderRightArrow--minicart-slider{
+    right: 20px;
+    top: 30px;
+}
+
+.caretIcon--minicart-slider{
+    width: 10px;
+    height: 10px; 
+    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(2deg) brightness(0%) contrast(105%);
+}
