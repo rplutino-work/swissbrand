@@ -35,7 +35,7 @@
     "store.storelocator#sucursales":{
         "path": "/sucursales"
     },
-    "store.custom#landing-custom":{
+    "store.custom#test":{
         "path": "/landing-custom"
     }
 }

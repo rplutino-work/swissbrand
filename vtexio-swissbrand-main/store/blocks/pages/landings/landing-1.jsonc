@@ -1,5 +1,5 @@
 {
-    "store.custom#landing-custom": {
+    "store.custom#test": {
         "blocks": ["flex-layout.row#landing-custom"]
     },
     "flex-layout.row#landing-custom":{
