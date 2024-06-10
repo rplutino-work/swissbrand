@@ -8,7 +8,7 @@
     max-width: 244px;
     height: 40px;
     text-decoration: none;
-    background: #0093cc;
+    background: #BD202E;
     transition: background 0.2s linear;
 }
 
@@ -17,7 +17,7 @@
 }
 
 .link--middle-button:active {
-    background: #0093cc;
+    background: #BD202E;
 }
 
 .label--middle-button {
@@ -121,14 +121,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: solid 1px #0093cc;
+    border: solid 1px #BD202E;
     border-radius: 5px;
     padding: 14px;
 }
 
 .childrenContainer--follow-us-links :global(.vtex-rich-text-0-x-paragraph--instagram-text) {
     margin: 0;
-    color: #0093cc;
+    color: #BD202E;
     text-transform: uppercase;
     font-size: 26px;
     text-decoration: none;

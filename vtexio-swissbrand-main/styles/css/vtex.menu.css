@@ -106,20 +106,21 @@
 
 .styledLinkContent--category {
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
     line-height: 18px;
-    color: #434343;
+    color: #000000;
     transition: color 0.2s linear;
     padding: 0 0 5px 10px;
-    border-bottom: 2px solid #0093CC;
+    /* border-bottom: 2px solid #BD202E; */
 }
 
 .styledLinkContent--subcategory,
 .styledLinkContent--categories {
-    font-size: 13px;
+    font-size: 11px;
     font-weight: 400;
-    color: #434343;
+    line-height: 13px;
+    color: #000000;
     padding: 0 10px;
 }
 
@@ -164,7 +165,7 @@
     }
 
     .styledLinkContent--see-all {
-        color: #0093CC;
+        color: #BD202E;
         font-weight: 600;
         border-bottom: 0;
     }
@@ -212,7 +213,7 @@
 .styledLinkContent--footer-menu-item {
     font-size: 12px;
     font-weight: 400;
-    color: #434343;
+    color: #231F20;
     transition: color .12s ease-in-out;
 }
 
@@ -271,7 +272,7 @@
 
 @media only screen and (min-width: 1026px) {
     .styledLinkContent--footer-menu-item:hover {
-        color: #0093cc;
+        color: #BD202E;
     }
 }
 
@@ -309,7 +310,7 @@
 
 /* CATEGORIA SALE */
 .styledLink--menu-sale {
-    background: #0093cc;
+    background: #BD202E;
     padding: 3px 15px;
 }
 .styledLinkContent--menu-sale {

@@ -24,7 +24,7 @@
       //"flex-layout.row#shelf-product-hotsale",
       "flex-layout.row#shelf-product-badge-cyber",
       "flex-layout.row#shelf-product-top-badges",
-      "flex-layout.row#shelf-product-bottom-badges",
+      // "flex-layout.row#shelf-product-bottom-badges",
       "product-summary-image#shelf-product"
     ]
   },
@@ -48,11 +48,14 @@
       "blockClass": "product-bottom-col"
     },
     "children": [
-      "product-summary-space",
+      // "product-summary-space",
       "product-summary-name#shelf-product",
       // "m3-flex-layout#shelf-prices",
-      "product-summary-sku-selector",
-      "flex-layout.row#selling-price-savings"
+      // "product-summary-sku-selector",
+      "flex-layout.row#product-prices",
+      "shelf.relatedProducts#sku-filter",
+      "flex-layout.row#shelf-product-bottom-badges"
+      // "flex-layout.row#selling-price-savings"
     ]
   },
   "product-summary-sku-selector": {

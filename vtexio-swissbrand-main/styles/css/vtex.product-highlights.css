@@ -12,7 +12,7 @@
 }
 
 .productHighlightText--badge-new {
-    background: #0093cc;
+    background: #BD202E;
     color: #fff;
     font-weight: 500;
     font-size: 11px;
@@ -32,15 +32,12 @@
 }
 
 .productHighlightText--free-shipping {
-    color: #ffffff;
-    background: #188B01;
-    font-size: 11px;
-    line-height: 12px;
-    font-weight: 500;
-    padding: 3px 6px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.4px;
     text-align: center;
-    border-radius: 5px;
-    letter-spacing: 0.2px;
+    color: #60AA6C;
+    text-transform: capitalize;
 }
 
 /* Cyber */

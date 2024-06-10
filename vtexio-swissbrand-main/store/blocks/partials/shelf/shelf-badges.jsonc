@@ -68,7 +68,9 @@
             "preserveLayoutOnMobile": true
         },
 
-        "children": ["vtex.product-highlights@2.x:product-highlights#envio-gratis", "stock-flag"]
+        "children": ["vtex.product-highlights@2.x:product-highlights#envio-gratis"
+        // , "stock-flag"
+      ]
     },
 
     "vtex.product-highlights@2.x:product-highlights#envio-gratis": {

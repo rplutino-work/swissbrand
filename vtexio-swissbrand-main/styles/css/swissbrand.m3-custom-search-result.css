@@ -55,7 +55,7 @@
     font-weight: 500;
     color: #434343;
     text-transform: uppercase;
-    border-bottom: 1px solid #0093CC;
+    border-bottom: 1px solid #BD202E;
     padding-bottom: 9px;
 }
 
@@ -132,7 +132,7 @@
 
 .filterItem-Color--selected .filterItem--ColorImage{
     opacity: 1;
-    border: 2px solid #0093cc !important;
+    border: 2px solid #BD202E !important;
 }
 
 @media only screen and (max-width: 768px){
@@ -300,7 +300,7 @@
     .filterAccordionItemBox {
         min-height: auto;
         padding: 12px 0px;
-        border-bottom: solid 1px #a8a8a8;
+        border: none !important;
     }
 
     .filterAccordionItemBox--unisex {
@@ -383,7 +383,7 @@
     }
 
     .filterApplyButtonWrapper{
-        background-color: #0093cc;
+        background-color: #BD202E;
     }
 
     .filterClearButtonWrapper :global(.vtex-button),

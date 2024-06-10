@@ -10,7 +10,7 @@
 }
 
 .listContainer--store-list .listItemActive--tab-list :global(.vtex-button) {
-    background: #0093cc;
+    background: #BD202E;
     font-weight: 600;
     border: 0;
 }
@@ -25,7 +25,7 @@
 }
 
 .listContainer--store-list .listItem--tab-list :global(.vtex-button):hover {
-    background: #0093cc;
+    background: #BD202E;
     color: #fff;
     text-decoration: none;
 }

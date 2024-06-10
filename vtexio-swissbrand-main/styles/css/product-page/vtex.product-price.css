@@ -12,6 +12,13 @@
     text-decoration-color: #A8A8A8;
 }
 
+.currencyDecimal--product-list-pdp {
+    display: none;
+}
+.currencyFraction--product-list-pdp {
+    display: none;
+}
+
 /* precio normal */
 
 .currencyContainer--product-selling-pdp{
@@ -19,7 +26,12 @@
     letter-spacing: 0.32px;
     color: #231F20;
 }
-
+.currencyDecimal--product-selling-pdp {
+    display: none;
+}
+.currencyFraction--product-selling-pdp {
+    display: none;
+}
 
 
 

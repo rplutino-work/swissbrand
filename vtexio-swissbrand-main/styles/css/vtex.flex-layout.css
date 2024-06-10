@@ -15,6 +15,7 @@
 .flexRow--menu-header{
     background: #fff;
     border-bottom: 1px solid #bebebe;
+    position: relative;
 }
 
 @media only screen and (max-width: 1025px) {
@@ -110,10 +111,6 @@
 
 .flexRowContent--mosaic-row {
     justify-content: center;
-}
-
-.flexRow--middle-content {
-    margin-bottom: 60px;
 }
 
 .flexRow--middle-content :global(.vtex-store-components-3-x-container){
@@ -262,15 +259,13 @@
 }
 
 .flexRow--shelf-product-badges {
-    position: absolute;
-    left: 0;
-    z-index: 1;
     width: 100%;
     padding: 8px;
 }
 
 .flexRowContent--shelf-product-badges {
     align-items: center;
+    justify-content: center;
 }
 
 .flexRow--shelf-product-top-badges {
@@ -361,7 +356,7 @@
     padding: 0;
     font-size: 14px;
     font-weight: 500;
-    color: #0093CC;
+    color: #BD202E;
     line-height: 14px;
 }
 
@@ -421,7 +416,7 @@
     font-size: 18px;
     line-height: normal;
     font-weight: 600;
-    color: #0093CC;
+    color: #BD202E;
 }
 
 .listPrice--product,
@@ -485,6 +480,10 @@
     padding: 50px 0px;
     background: #BD202E;
   }
+  .flexRow--deals :global(.vtex-store-components-3-x-imageElement) {
+    width: 43px;
+    height: 43px;
+}
   
   .flexRow--deals .stretchChildrenWidth {
     align-items: center;
@@ -543,15 +542,30 @@
 .flexRow--content {
     width: 100%;
     max-width: 1200px;
-    padding: 0 15px;
+    /* padding: 0 15px; */
     margin: 0 auto;
 }
 
-.flexColChild--filters {
+/* .flexColChild--filters {
     width: 265px;
     margin-right: 8px;
-}
+} */
 
+.flexRowContent--order-by {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    position: relative;
+    border-bottom: 0.5px solid black;
+    padding: 25px 0 10px;
+}
+.flexRowContent--order-by .stretchChildrenWidth {
+    justify-content: flex-end;
+}
+:global(.vtex-search-result-3-x-orderBy--layout) {
+    display: flex;
+}
 .flexRow--result-top {
     padding: 0 8px;
     margin-bottom: 10px;
@@ -564,8 +578,7 @@
 @media only screen and (max-width: 1025px) {
     .flexRow--mobile-buttons {
         margin-bottom: 20px;
-        border-top: 1px solid #0093CC;
-        border-bottom: 1px solid #0093CC;
+        border-bottom: 2px solid black;
     }
 
     .flexRowContent--mobile-buttons {
@@ -659,7 +672,7 @@
 }
 
 .flexRow--cart-button :global(.vtex-button):hover {
-    background: #0093cc;
+    background: #BD202E;
 }
 
 .flexRow--cart-button :global(.vtex-button):active {
@@ -1188,7 +1201,7 @@
     border-radius: 3px;
 }
 :global(.vtex-product-summary-2-x-containerNormal--shelf-product):hover .flexRow--cart-button-kitlook :global(.vtex-button) {
-    background: #0093cc;
+    background: #BD202E;
 }
 .flexRowContent--plp-price-kitlook {
     display: flex;
@@ -1330,7 +1343,7 @@
         transition: .3s;
     }    
     .flexRowContent--form-wrapper :global(.vtex-button):hover {
-        background: #0093cc;
+        background: #BD202E;
     }
   }
 
@@ -1846,3 +1859,6 @@
       width: max-content;
     }
   }
+
+
+  
