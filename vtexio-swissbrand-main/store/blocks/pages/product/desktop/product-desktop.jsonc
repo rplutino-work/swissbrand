@@ -76,7 +76,7 @@
             "blockClass": "details-column"
         },
         "children": [
-            "flex-layout.row#badges-pdp", // -> CUCARDAS
+            "flex-layout.row#pdp-product-cucardas", // -> CUCARDAS
             "flex-layout.row#product-name", //-> NOMBRE DEL PRODUCTO
             "flex-layout.row#product-prices", // -> PRECIO DEL PRODUCTO
             "product-description#pdp", // -> DESCRIPCION DEL PRODUCTO
@@ -86,6 +86,17 @@
             "share#redes"// -> REDES PARA COMPARTIR
         ]
     },
+    "flex-layout.row#pdp-product-cucardas": {
+        "props": {
+          "blockClass": "shelf-product-cucardas",
+          "colSizing": "auto"
+        },
+        "children": [
+          "product-price-savings#badge",
+          "vtex.product-highlights@2.x:product-highlights#nuevo",
+          "vtex.product-highlights@2.x:product-highlights#nuevo"
+        ]
+      },
 
     "shelf.relatedProducts#sku-filter": {
         "props": {

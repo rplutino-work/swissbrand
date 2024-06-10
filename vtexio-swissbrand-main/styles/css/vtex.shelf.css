@@ -56,8 +56,8 @@
 .dot--isActive {
     width: 12px;
     height: 12px;
-    background-color: #BD202E;
-    border: 1px solid #BD202E;
+    background-color: #E46262;
+    border: 1px solid #E46262;
 }
 
 @media only screen and (max-width: 1025px) {

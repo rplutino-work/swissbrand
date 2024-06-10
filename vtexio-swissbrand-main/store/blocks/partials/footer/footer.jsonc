@@ -4,7 +4,11 @@
     },
 
     "footer-layout.desktop": {
-        "children": ["flex-layout.row#footer-links", "flex-layout.row#footer-bottom"]
+        "children": ["flex-layout.row#deals",
+                    "newsletter#footer-newsletter",
+                    "flex-layout.row#footer-links"
+                    , "flex-layout.row#footer-bottom"
+                    ]
     },
 
     "flex-layout.row#footer-links": {
@@ -279,7 +283,10 @@
     },
 
     "footer-layout.mobile": {
-        "children": ["flex-layout.row#mobile-footer-links", "flex-layout.row#footer-bottom"]
+        "children": ["flex-layout.row#deals",
+                    "newsletter#footer-newsletter",
+                    "flex-layout.row#mobile-footer-links", 
+                    "flex-layout.row#footer-bottom"]
     },
 
     "flex-layout.row#mobile-footer-links": {

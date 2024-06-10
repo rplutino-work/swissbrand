@@ -1,4 +1,4 @@
-@media(min-width:991px){
+@media(min-width:1025px){
     .flexRow--product-main-content{
         margin-top: 4rem;
     }
@@ -8,8 +8,10 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
+}
+.flexRow--product-main-content .flexRowContent--product-prices{
     justify-content: flex-start;
-    gap: 10px;
 }
 
 /* nombre de producto */
@@ -36,11 +38,11 @@
     background: #DF3856;
     border: none;
     border-radius: 0px;
-    transition: background ease-in-out 350ms;
+    transition: all ease-in-out 250ms;
 }
 
 .flexRowContent--cart-button-pdp :global(.vtex-button):hover{
-    background: #ab253d;
+    background: #E46262;
 }
 
 :global(.vtex-add-to-cart-button-0-x-buttonText){
@@ -48,7 +50,10 @@
     color: #fff;
 }
 
-@media(max-width:991px){
+@media(max-width:1025px){
+    .flexRow--product-prices{
+        margin-bottom: 4px;
+    }
     :global(.vtex-add-to-cart-button-0-x-buttonText){
         text-wrap:nowrap;
     }

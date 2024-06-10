@@ -1,12 +1,20 @@
 /* Shelf */
 
 .savings-discount--shelf-product {
-    display: block;
-    padding: 0;
-    font-size: 14px;
-    font-weight: 500;
-    color: #BD202E;
-    line-height: 14px;
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    background-color: #BD202E;
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18.4px;
+    padding: 1px 8px;
+    width: fit-content;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--product-main-content) .savings-discount--shelf-product{
+    position: initial;
 }
 
 .listPrice--shelf-product {
@@ -52,6 +60,10 @@
     .installments--shelf-product {
         font-size: 12px;
         margin-top: 0;
+    }
+    .savings-discount--shelf-product {
+        top: 20px;
+        padding: 2px 5px;
     }
 }
 

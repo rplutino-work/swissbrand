@@ -676,7 +676,7 @@
     border-radius: 5px;
 }
 
-@media only screen and (max-width: 639px) {
+@media only screen and (max-width: 1025px) {
     .shareContainer {
         margin: 4px 0 12px;
         flex-direction: column;
@@ -1058,7 +1058,7 @@
     max-width: 100%;
   }
 
-  @media only screen and (max-width: 768px){
+  @media only screen and (max-width: 1025px){
     .subscriberContainer .content {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -1288,7 +1288,7 @@
 .infoCardCallActionContainer--info-card-home :global(.vtex-button):hover {
     background: #E46262;
 }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1025px){
   .infoCardTextContainer--info-card-home {
       align-items: center;
       margin: 43px;
@@ -1297,6 +1297,7 @@
       width: 100%;
       font-size: 14px;
       line-height: 17.07px;
+      text-align: center;
   }
   .infoCardTextContainer--info-card-home .container--info-card-home:first-child .paragraph--info-card-home {
       font-size: 20px;
@@ -1348,7 +1349,7 @@
     background: #E46262;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1025px){
   .infoCardContainer--info-card-banner-1 {
       width: 354px !important;
       height: 259px;
@@ -1409,7 +1410,7 @@
     background: #E46262;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1025px){
   .infoCardContainer--info-card-banner-2 {
     width: 100% !important;
     height: 160px;
@@ -1430,7 +1431,7 @@
 
 .infoCardContainer--shelf-home-desktop-01-banner {
   width: 271px !important;
-  height: 411px;
+  height: 100%;
   justify-content: center;
   align-items: flex-end;
 }
@@ -1453,10 +1454,13 @@
   background: #E46262;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1025px){
   .infoCardContainer--shelf-home-desktop-01-banner{
     width: 100% !important;
     padding: 0 .5rem;
+  }
+  .infoCardContainer--shelf-home-desktop-01-banner {
+    height: 411px;
   }
   .infoCardCallActionContainer--shelf-home-desktop-01-banner :global(.vtex-button) {
     width: 278px;

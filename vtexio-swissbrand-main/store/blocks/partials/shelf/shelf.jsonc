@@ -36,7 +36,8 @@
     "slider-layout#shelf-products-slide": {
         "props": {
             "blockClass": "shelf",
-            "infinite": true,
+            "usePagination": true,
+            "infinite": false,
             "showNavigationArrows": "always",
             "showPaginationDots": "never",
 
@@ -85,7 +86,8 @@
     "slider-layout#shelf-products-slide-02": {
         "props": {
             "blockClass": "shelf",
-            "infinite": true,
+            "usePagination": true,
+            "infinite": false,
             "showNavigationArrows": "always",
             "showPaginationDots": "never",
     
@@ -260,7 +262,7 @@
           }
         },
         "flex-layout.row#shelf-home-desktop-02": {
-            "title": "1º fila de productos desktop",
+            "title": "2º fila de productos desktop",
             "children": [
                 // "rich-text#title-recomendados",
                 "flex-layout.row#shelf-home-desktop-02-products"
