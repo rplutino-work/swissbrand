@@ -79,7 +79,7 @@
             "blockClass": "department",
             "type": "category",
             "itemProps": {
-                "categoryId": 2
+              "categoryId": 1
             }
         },
 
@@ -92,7 +92,7 @@
             "blockClass": "department",
             "type": "category",
             "itemProps": {
-                "categoryId": 3
+              "categoryId": 1
             }
         },
 
@@ -105,7 +105,7 @@
             "blockClass": "department",
             "type": "category",
             "itemProps": {
-                "categoryId": 4
+              "categoryId": 1
             }
         },
 
@@ -118,7 +118,7 @@
             "blockClass": "department",
             "type": "category",
             "itemProps": {
-                "categoryId": 5
+              "categoryId": 1
             }
         },
 
@@ -131,7 +131,7 @@
             "blockClass": "department",
             "type": "category",
             "itemProps": {
-                "categoryId": 39
+              "categoryId": 1
             }
         },
 
@@ -144,7 +144,7 @@
             "blockClass": "department",
             "type": "category",
             "itemProps": {
-                "categoryId": 105
+              "categoryId": 1
             }
         },
 

@@ -23,7 +23,7 @@
     "title": "Orden y visualización",
     "children": [
       "image#estandar-06",
-      "vtex.menu@2.x:menu#estandar-06-column-1",
+      // "vtex.menu@2.x:menu#estandar-06-column-1",
       "vtex.menu@2.x:menu#estandar-06-column-2",
       "vtex.menu@2.x:menu#estandar-06-column-3",
       "vtex.menu@2.x:menu#estandar-06-column-4",
@@ -80,19 +80,19 @@
         {
           "type": "category",
           "itemProps": {
-            "categoryId": 49
+            "categoryId": 1
           }
         },
         {
           "type": "category",
           "itemProps": {
-            "categoryId": 50
+            "categoryId": 1
           }
         },
         {
           "type": "category",
           "itemProps": {
-            "categoryId": 54
+            "categoryId": 1
           }
         }
       ]
@@ -104,7 +104,7 @@
       "blockClass": "category",
       "type": "category",
       "itemProps": {
-        "categoryId": 48
+        "categoryId": 1
       }
     }
   },
@@ -128,13 +128,13 @@
         {
           "type": "category",
           "itemProps": {
-            "categoryId": 3
+            "categoryId": 1
           }
         },
         {
           "type": "category",
           "itemProps": {
-            "categoryId": 4
+            "categoryId": 1
           }
         }
       ]
@@ -146,7 +146,7 @@
       "blockClass": "category",
       "type": "category",
       "itemProps": {
-        "categoryId": 2
+        "categoryId": 1
       }
     }
   },
@@ -170,37 +170,25 @@
         {
           "type": "category",
           "itemProps": {
-            "categoryId": 10
+            "categoryId": 1
           }
         },
         {
           "type": "category",
           "itemProps": {
-            "categoryId": 8
+            "categoryId": 1
           }
         },
         {
           "type": "category",
           "itemProps": {
-            "categoryId": 9
+            "categoryId": 1
           }
         },
         {
           "type": "category",
           "itemProps": {
-            "categoryId": 11
-          }
-        },
-        {
-          "type": "category",
-          "itemProps": {
-            "categoryId": 7
-          }
-        },
-        {
-          "type": "category",
-          "itemProps": {
-            "categoryId": 6
+            "categoryId": 1
           }
         }
       ]
@@ -212,7 +200,7 @@
       "blockClass": "category",
       "type": "category",
       "itemProps": {
-        "categoryId": 5
+      "categoryId": 1
       }
     }
   },
@@ -236,13 +224,7 @@
         {
           "type": "category",
           "itemProps": {
-            "categoryId": 21
-          }
-        },
-        {
-          "type": "category",
-          "itemProps": {
-            "categoryId": 22
+            "categoryId": 1
           }
         }
       ]
@@ -254,7 +236,7 @@
       "blockClass": "category",
       "type": "category",
       "itemProps": {
-        "categoryId": 20
+        "categoryId": 1
       }
     }
   },

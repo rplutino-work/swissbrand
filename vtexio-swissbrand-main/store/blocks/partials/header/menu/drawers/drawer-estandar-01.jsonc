@@ -265,7 +265,7 @@
         "blockClass": ["department", "see-all"],
         "type": "category",
         "itemProps": {
-          "categoryId": 77,
+          "categoryId": 1,
           "text": "Ver todo Street"
         }
       }
@@ -275,7 +275,7 @@
         "blockClass": ["department", "see-all"],
         "type": "category",
         "itemProps": {
-          "categoryId": 82,
+          "categoryId": 1,
           "text": "Ver todo Buzos y Camperas"
         }
       }
@@ -285,7 +285,7 @@
         "blockClass": ["department", "see-all"],
         "type": "category",
         "itemProps": {
-          "categoryId": 85,
+          "categoryId": 1,
           "text": "Ver todo Pantalones y Shorts"
         }
       }
@@ -295,7 +295,7 @@
         "blockClass": ["department", "see-all"],
         "type": "category",
         "itemProps": {
-          "categoryId": 78,
+          "categoryId": 1,
           "text": "Ver todo Remeras y Musculosas"
         }
       }

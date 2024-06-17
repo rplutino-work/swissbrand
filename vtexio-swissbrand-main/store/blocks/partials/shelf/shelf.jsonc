@@ -323,7 +323,8 @@
             "title": "Productos",
             "props": {
                 "blockClass": [
-                  "shelf-home-desktop-01"
+                  "shelf-home-desktop-01",
+                  "shelf-home-desktop-02"
                 ],
                 "colSizing":"auto"
             },

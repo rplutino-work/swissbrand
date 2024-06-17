@@ -23,7 +23,7 @@
     "title": "Orden y visualización",
     "children": [
       "image#estandar-02",
-      "vtex.menu@2.x:menu#estandar-02-column-1",
+      // "vtex.menu@2.x:menu#estandar-02-column-1",
       "vtex.menu@2.x:menu#estandar-02-column-2",
       "vtex.menu@2.x:menu#estandar-02-column-3",
       "vtex.menu@2.x:menu#estandar-02-column-4",
@@ -80,19 +80,19 @@
         {
           "type": "category",
           "itemProps": {
-            "categoryId": 72
+            "categoryId": 1
           }
         },
         {
           "type": "category",
           "itemProps": {
-            "categoryId": 74
+            "categoryId": 1
           }
         },
         {
           "type": "category",
           "itemProps": {
-            "categoryId": 71
+            "categoryId": 1
           }
         }
       ]
@@ -104,7 +104,7 @@
       "blockClass": "category",
       "type": "category",
       "itemProps": {
-        "categoryId": 70
+        "categoryId": 1
       }
     }
   },
@@ -128,13 +128,13 @@
         {
           "type": "category",
           "itemProps": {
-            "categoryId": 68
+            "categoryId": 1
           }
         },
         {
           "type": "category",
           "itemProps": {
-            "categoryId": 69
+            "categoryId": 1
           }
         }
       ]
@@ -146,7 +146,7 @@
       "blockClass": "category",
       "type": "category",
       "itemProps": {
-        "categoryId": 67
+        "categoryId": 1
       }
     }
   },
@@ -170,25 +170,25 @@
         {
           "type": "category",
           "itemProps": {
-            "categoryId": 66
+            "categoryId": 1
           }
         },
         {
           "type": "category",
           "itemProps": {
-            "categoryId": 64
+            "categoryId": 1
           }
         },
         {
           "type": "category",
           "itemProps": {
-            "categoryId": 65
+            "categoryId": 1
           }
         },
         {
           "type": "category",
           "itemProps": {
-            "categoryId": 63
+            "categoryId": 1
           }
         }
       ]
@@ -200,7 +200,7 @@
       "blockClass": "category",
       "type": "category",
       "itemProps": {
-        "categoryId": 62
+      "categoryId": 1
       }
     }
   },
