@@ -92,13 +92,6 @@
             "message": "{highlightName}"
         }
     },
-
-    "stock-flag": {
-        "props": {
-            "unavailableText": "Agotado"
-        }
-    },
-
     /* CYBER */
 
   "flex-layout.row#shelf-product-cyber": {
