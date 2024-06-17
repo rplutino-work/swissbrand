@@ -13,8 +13,21 @@
             "colSizing": "auto"
         },
         "children": [
-            "flex-layout.col#images-column",
+            "flex-layout.col#images-column-mobile",
             "flex-layout.col#details-column"
+        ]
+    },
+    "flex-layout.col#images-column-mobile": {
+        "props": {
+            // "width": "59%",
+            // "preventVerticalStretch": true,
+            "blockClass": "product-image-wrapper"
+        },
+
+        "children": [
+            // "product-images#desktop",
+            "product-images#pdp",
+            "flex-layout.row#product-page-badge-cyber"
         ]
     },
     "shelf.relatedProducts#related-products-mobile": {

@@ -9,11 +9,12 @@
 }
 
 :global(.vtex-minicart-2-x-minicartSummary--minicart-summary-footer) :global(.vtex-checkout-summary-0-x-summaryItemContainer) :global(.vtex-checkout-summary-0-x-summaryItemLabel), :global(.vtex-checkout-summary-0-x-price){
-    font-size: 13px !important;
-    letter-spacing: 0.26px;
+    /* font-size: 13px !important;
+    letter-spacing: 0.26px; */
 }
 
 :global(.vtex-minicart-2-x-minicartSummary--minicart-summary-footer) :global(.vtex-checkout-summary-0-x-summaryItemContainer) ~ :global(.vtex-checkout-summary-0-x-summaryItemContainer) :global(.vtex-checkout-summary-0-x-summaryItemLabel), :global(.vtex-checkout-summary-0-x-price){
-    font-size: 20px;
+    /* font-size: 20px; */
     letter-spacing: 0.26px;
+    font-weight: 400 !important;
 }
