@@ -9,6 +9,17 @@
 .headerFixed :global(.vtex-store-header-2-x-headerStickyRow--mobile-header-content){
     border-bottom: solid 0px transparent;
 }
+@media(max-width: 1025px){
+    .headerFixed :global(.vtex-store-components-3-x-logoContainer--header-logo)::after {
+        height: 100%;
+        width: 143px;
+        max-width: none;
+        max-height: none;
+        display: flex;
+        align-items: center;
+    }
+}
+
 
 @media(min-width: 1025px){
     .headerFixed :global(.vtex-sticky-layout-0-x-wrapper--header-content) {
@@ -39,5 +50,9 @@
     .headerFixed :global(.vtex-login-2-x-container) :global(.vtex-button__label),
     .headerFixed :global(.vtex-store-components-3-x-toggle-search-icon){
         filter: invert();
+    }
+    :global(.vtex-store-components-3-x-toggle-search-icon) {
+        width: 18px;
+        height: 18px;
     }
 }

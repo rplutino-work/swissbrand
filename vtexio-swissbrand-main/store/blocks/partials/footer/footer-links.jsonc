@@ -279,7 +279,8 @@
         "children": [
             "menu-item#nosotros",
             "menu-item#contactanos",
-            "menu-item#sucursales"
+            "menu-item#sucursales",
+            "menu-item#guia-talles"
         ]
     },
 

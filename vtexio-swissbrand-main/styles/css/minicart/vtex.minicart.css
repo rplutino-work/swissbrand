@@ -129,6 +129,7 @@
 @media only screen and (min-width: 1026px) {
     .minicartWrapperContainer--minicart {
         margin-left: 1rem;
+        margin-right: 0.75rem;
     }
     .minicartCheckoutButton :global(.vtex-button):hover {
         background: #E46262;

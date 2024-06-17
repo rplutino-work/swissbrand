@@ -92,9 +92,9 @@
           "colSizing": "auto"
         },
         "children": [
-          "product-price-savings#badge",
           "vtex.product-highlights@2.x:product-highlights#nuevo",
-          "vtex.product-highlights@2.x:product-highlights#nuevo"
+          "vtex.product-highlights@2.x:product-highlights#nuevo",
+          "product-price-savings#badge"
         ]
       },
 

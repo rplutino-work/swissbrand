@@ -16,7 +16,7 @@
     left: 0 !important;
     width: 100vw !important;
     max-width: none !important;
-    background-color: rgba(237, 235, 235, 0.814) !important;
+    opacity: 0.9;
 }
 /* HEADER HOME */
 :global(.vtex-sticky-layout-0-x-wrapper--header-content-home) .toggleSearchButton {

@@ -341,7 +341,7 @@
     "image#trajes-de-bano-banner": {
         "props": {
             "blockClass": "submenu-banner",
-            "src": "assets/imgs/desktop/luz-de-mar-mega-menu-3-columns.png",
+            "src": "https://placehold.jp/331x206.png",
             "link": true
         }
     }

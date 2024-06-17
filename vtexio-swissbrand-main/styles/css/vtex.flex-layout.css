@@ -541,7 +541,7 @@
     padding: 0 15px;
     margin: 0 auto;
     position: relative;
-    border-bottom: 0.5px solid black;
+    border-bottom: 0.5px solid #231F20;
     padding: 25px 0 10px;
 }
 .flexRowContent--order-by .stretchChildrenWidth {
@@ -561,8 +561,9 @@
 
 @media only screen and (max-width: 1025px) {
     .flexRow--mobile-buttons {
+        margin-top: 65px;
         margin-bottom: 20px;
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid #231F20;
     }
 
     .flexRowContent--mobile-buttons {
@@ -921,7 +922,8 @@
         padding-right: 10px;
     }
     :global(.vtex-store-drawer-0-x-openIconContainer) {
-        flex: 0.3 !important;
+        flex: 0.2 !important;
+        display: flex;
     }
     .flexRowContent--evento-menu {
         max-width: 98%;
@@ -1860,6 +1862,9 @@
     position: absolute;
     top: 0;
     left: 0;
+  }
+  .flexRow--shelf-product-cucardas .stretchChildrenWidth:empty {
+    display: none;
   }
   :global(.vtex-flex-layout-0-x-flexRowContent--product-main-content) .flexRow--shelf-product-cucardas{
     margin-bottom: 8px;

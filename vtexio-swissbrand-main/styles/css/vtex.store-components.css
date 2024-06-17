@@ -193,7 +193,13 @@
         max-width: 60px;
         height: 60px;
     }
-
+    .logoContainer--header-logo {
+        max-width: none;
+        max-height: none;
+        width: 143px;
+        display: flex;
+        align-items: center;
+    }
     .imageElement--follow-us-banner {
         margin: 8px 0;
     }
@@ -775,8 +781,8 @@
 .label--footer-newsletter {
     display: block;
     text-align: start;
-    font-size: 30px;
-    font-weight: 300;
+    font-size: 35px;
+    font-weight: 500;
     color: #ffffff;
 }
 
@@ -821,7 +827,8 @@
 
 .buttonContainer--footer-newsletter {
     flex: 1;
-    max-width: 154px;
+    max-width: 213px;
+    width: 100%;
     margin-left: 3px;
     padding: 0;
     position: absolute;
@@ -845,10 +852,11 @@
 
 .buttonContainer--footer-newsletter :global(.vtex-button__label) {
     padding: 0 26px;
-    font-size: 11px;
-    font-weight: 500;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 16px;
     color: #434343;
-    max-width: 157px;
+    /* max-width: 157px; */
     width: 100%;
 }
 
@@ -877,6 +885,9 @@
 }
 
 @media only screen and (max-width: 1025px) {
+    .buttonContainer--footer-newsletter {
+        width: initial;
+    }
     .newsletter--footer-newsletter {
         padding: 70px 0;
         background-position: center center;
@@ -935,12 +946,12 @@
         justify-content: space-between;
     }
     .label--footer-newsletter {
-        width: 50%;
+        width: 40%;
     }
     .inputGroup--footer-newsletter {
         width: 50%;
         justify-content: flex-end;
-        max-width: 500px;
+        /* max-width: 500px; */
         margin: 20px 0 0;
         padding: 0;
     }
@@ -1415,6 +1426,18 @@
     width: 100% !important;
     height: 160px;
   }
+  .infoCardTextContainer--info-card-banner-1 .container--info-card-banner-1 .paragraph--info-card-banner-1 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.94px;
+    letter-spacing: 0.05em;
+}
+  .infoCardTextContainer--info-card-banner-2 .container--info-card-banner-2 .paragraph--info-card-banner-2  {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.94px;
+    letter-spacing: 0.05em;
+}
   .infoCardContainer--info-card-banner-2-02 {
     margin: 20px 0px;
   }

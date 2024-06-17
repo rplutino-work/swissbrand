@@ -8,6 +8,9 @@
     margin: 5px 0;
     font-family: "Montserrat";
 }
+.container--top-bar {
+    padding: 3px 0;
+}
 
 /* Menu */
 .wrapper--mobile-menu-item {

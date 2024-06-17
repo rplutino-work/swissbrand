@@ -300,7 +300,7 @@
     "image#sports-banner": {
         "props": {
             "blockClass": "submenu-banner",
-            "src": "assets/imgs/desktop/luz-de-mar-mega-menu-4-columns.png",
+            "src": "https://placehold.jp/331x206.png",
             "link": true
         }
     }

@@ -57,10 +57,11 @@
     .savingsPercentage--pdp-discount{
         font-size: 11px;
     }
-    .currencyContainer--product-list-pdp{
+    :global(.vtex-flex-layout-0-x-flexRow--shelf-product-bottom) .currencyContainer--product-list-pdp{
         font-size: 14px;
     }
-    .currencyContainer--product-selling-pdp{
+    :global(.vtex-flex-layout-0-x-flexRow--shelf-product-bottom) .currencyContainer--product-selling-pdp{
         font-size: 14px;
     }
+
 }
