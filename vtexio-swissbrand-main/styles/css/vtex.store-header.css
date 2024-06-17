@@ -1,7 +1,7 @@
 /* Header */
 .headerStickyRow--mobile-header-content{
     transition: all .2s ease-in-out;
-    border-bottom: solid 1px transparent;
+    /* border-bottom: solid 1px transparent; */
 }
 
 .headerRowContentContainer--header-content {

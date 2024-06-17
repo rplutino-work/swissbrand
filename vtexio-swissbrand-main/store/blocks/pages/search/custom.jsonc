@@ -1,0 +1,101 @@
+{
+    "store.custom#custom-search": {
+        "blocks": [
+            "search-result-layout.customQuery#custom-search"
+        ]
+    },
+    "search-result-layout.customQuery#custom-search": {
+        "props": {
+            "querySchema": {
+                "maxItemsPerPage": 48,
+                "orderByField": "OrderByScoreDESC",
+                "hideUnavailableItems": true,
+                "facetsBehavior": "Dynamic",
+                "skusFilter": "FIRST_AVAILABLE",
+                "simulationBehavior": "skip",
+                "installmentCriteria": "MAX_WITHOUT_INTEREST",
+                "__unstableProductOriginVtex": true,
+                "queryField": "Sofa",
+                "mapField": "ft"
+            }
+        },
+        "blocks": [
+            "search-result-layout.mobile#custom",
+            "search-result-layout.desktop#custom",
+            "search-not-found-layout"
+        ]
+    },
+    "search-result-layout.desktop#custom": {
+        "props": {
+            "pagination": "show-more",
+            "preventRouteChange": false,
+
+            "mobileLayout": {
+                "mode1": "small",
+                "mode2": "normal"
+            },
+
+            "hiddenFacets": {
+                "brands": true,
+                "categories": false,
+                "priceRange": false,
+                "specificationFilters": {
+                     "hiddenFilters": [
+                          {"name": "Tabela de Medidas"},
+                          {"name": "Características"},
+                          {"name": "Especificações"},
+                          {"name": "Descrição do produto"},
+                          {"name": "Conteúdo da embalagem"},
+                          {"name": "Marca"},
+                          {"name": "Color"}
+                     ]
+                }
+           }
+        },
+
+        "children": [
+            "flex-layout.row#category-banner",
+            // "breadcrumb.search",
+            "flex-layout.row#order-by",
+            "flex-layout.row#content"
+        ]
+    },
+    "search-result-layout.mobile#custom": {
+        "props": {
+            "pagination": "show-more",
+            "preventRouteChange": true,
+
+            "mobileLayout": {
+                "mode1": "small",
+                "mode2": "normal"
+            },
+            
+            "hiddenFacets": {
+                "brands": true,
+                "categories": false,
+                "priceRange": false,
+                "specificationFilters": {
+                     "hiddenFilters": [
+                          {"name": "Tabela de Medidas"},
+                          {"name": "Características"},
+                          {"name": "Especificações"},
+                          {"name": "Descrição do produto"},
+                          {"name": "Conteúdo da embalagem"},
+                          {"name": "Marca"},
+                          {"name": "Color"}
+                     ]
+                }
+           }
+        },
+
+        "children": [
+            "flex-layout.row#category-banner",
+            // "breadcrumb.search",
+            // "search-title.v2",
+            "flex-layout.row#mobile-buttons",
+            // "total-products.v2",
+            "search-content",
+            "search-fetch-more"
+        ]
+    }
+}

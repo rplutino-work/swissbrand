@@ -19,10 +19,24 @@
           "blockClass": "category-banner"
         },
         "children": [
-            // "luzdemararg.m3-custom-search-result:category-banner"
+            "info-card#category-banner"
         ]
     },
-
+    "info-card#category-banner": {
+        "props": {
+          "id": "info-card-home",
+          "isFullModeStyle": true,
+          "textPosition": "center",
+          "imageUrl": "https://placehold.jp/1440x263.png",
+          "mobileImageUrl": "https://placehold.jp/389x275.png",
+          "headline": "CATEGORIA",
+        //   "subhead": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+        //   "callToActionText": "VER MÁS",
+        //   "callToActionUrl": "/sale/d",
+        //   "blockClass": "info-card-home",
+          "textMode": "rich-text"
+        }
+      },  
     "search-result-layout": {
         "blocks": [
             "search-result-layout.desktop",
@@ -60,7 +74,7 @@
         },
 
         "children": [
-            "flex-layout.row#category-banner",
+            // "flex-layout.row#category-banner",
             // "breadcrumb.search",
             "flex-layout.row#order-by",
             "flex-layout.row#content"

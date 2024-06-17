@@ -29,6 +29,7 @@
     padding: 0;
     font-size: 10px;
     font-weight: 500;
+    background-color: #DF3856;
 }
 
 .overlay--minicart {
@@ -104,7 +105,7 @@
     border-radius: 0;
     outline: none;
     background: #bd202e;
-    transition: background 0.2s linear;
+    transition: all 0.2s ease-in-out;
 }
 
 .minicartCheckoutButton :global(.vtex-button__label) {
@@ -130,11 +131,11 @@
         margin-left: 1rem;
     }
     .minicartCheckoutButton :global(.vtex-button):hover {
-        background: #a01924;
+        background: #E46262;
     }
 
     .minicartCheckoutButton :global(.vtex-button):active {
-        background: #a01924;
+        background: #E46262;
     }
 
     :global(.vtex-toast-container){

@@ -71,3 +71,56 @@
 .container--complete-look {
     max-width: 605px !important;
 }
+.container--shelf-product {
+    position: relative;
+    transition: all 250ms ease-in-out;
+}
+.container--shelf-product .clearLink--shelf-product:first-child:hover{
+    transition: all 250ms ease-in-out;
+}
+.container--shelf-product .clearLink--shelf-product:first-child:hover .element--shelf-product {
+    opacity: 0.6;
+    transition: all 250ms ease-in-out;
+}
+.container--shelf-product .clearLink--shelf-product:first-child::before {
+    content: "Ver más";
+    background-color: #BD202E;
+    color: white;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    height: 44px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-transform: uppercase;
+    z-index: 4;
+    transition: all 250ms ease-in-out;
+    display: none;
+}
+.container--shelf-product .clearLink--shelf-product:first-child::before:hover {
+    background-color: #E46262;
+}
+.container--shelf-product .clearLink--shelf-product:first-child:hover::before {
+    display: flex;
+    transition: all 250ms ease-in-out;
+}
+
+@media only screen and (max-width: 1025px) {
+    .brandName--shelf-product {
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 12px;
+    }
+    .container--shelf-product .clearLink--shelf-product:first-child:hover .element--shelf-product {
+        opacity: initial;
+    }
+    .container--shelf-product .clearLink--shelf-product:first-child:hover::before {
+        display: none;
+    }
+}

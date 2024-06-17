@@ -92,26 +92,37 @@
     padding: 10px;
 }
 
-.galleryItem :global(.vtex-shelf-1-x-relatedProducts--related-products-sku-filter) {
+:global(.vtex-flex-layout-0-x-flexRow--shelf-product-bottom) :global(.vtex-shelf-1-x-relatedProducts--related-products-sku-filter) {
     padding: 0px;
-    height: 55px;
+    height: auto;
 }
-.galleryItem :global(.vtex-shelf-1-x-relatedProducts--related-products-sku-filter) :global(.vtex-slider-0-x-sliderFrame) {
+:global(.vtex-flex-layout-0-x-flexRow--shelf-product-bottom) :global(.vtex-shelf-1-x-relatedProducts--related-products-sku-filter) :global(.vtex-slider-0-x-sliderFrame) {
     justify-content: center;
     gap: 5px;
     flex-wrap: wrap;
     flex-direction: row;
+    /* padding-top: 10px; */
 }
-.galleryItem :global(.vtex-shelf-1-x-relatedProducts--related-products-sku-filter) :global(.vtex-shelf-1-x-slide--related-products-sku-filter) {
+:global(.vtex-flex-layout-0-x-flexRow--product-main-content) :global(.vtex-shelf-1-x-slide--related-products-sku-filter) {
     padding: 0px;
     height: auto;
     margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 50px !important;
 }
-.galleryItem :global(.vtex-flex-layout-0-x-flexRowContent--product-prices) {
+:global(.vtex-flex-layout-0-x-flexRow--shelf-product-bottom) :global(.vtex-shelf-1-x-relatedProducts--related-products-sku-filter) :global(.vtex-shelf-1-x-slide--related-products-sku-filter) {
+    padding: 0px;
+    height: auto;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}
+:global(.vtex-shelf-1-x-relatedProducts--related-products-sku-filter) :global(.vtex-shelf-1-x-slide--related-products-sku-filter) :global(.vtex-product-summary-2-x-element) {
+    padding: 0px;
+}
+:global(.vtex-flex-layout-0-x-flexRow--shelf-product-bottom) :global(.vtex-flex-layout-0-x-flexRowContent--product-prices) {
     justify-content: center;
-}
-:global(.vtex-shelf-1-x-relatedProducts--related-products-sku-filter) :global(.vtex-product-summary-2-x-hoverEffect) {
-    border: 0.5px solid rgb(53, 53, 53);
 }
 
 
@@ -144,6 +155,13 @@
 }
 
 @media only screen and (max-width: 1025px) {
+    .searchResultContainer {
+        padding: 0 18px;
+    }
+    .galleryItem :global(.vtex-shelf-1-x-relatedProducts--related-products-sku-filter) {
+        padding: 0px;
+        height: fit-content;
+    }
     .gallery {
         padding-left: 0px;
     }
@@ -154,8 +172,7 @@
     }
 
     .orderBy--layout {
-        height: 54px;
-        border-right: 1px solid #BD202E;
+        height: 38px;
     }
 
     .orderByDropdown {
@@ -165,14 +182,15 @@
     }
 
     .orderByButton {
-        justify-content: center;
+        justify-content: flex-end;
     }
 
     .orderByText {
         display: block;
         margin: 0;
-        line-height: 15px;
         font-size: 12px;
+        font-weight: 400;
+        line-height: 14.63px;
     }
 
     .totalProducts--layout {
@@ -288,7 +306,7 @@
     color: #231F20;
     text-transform: uppercase;
     border-bottom: 0.5px solid black;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
     text-transform: capitalize;
 }
 
@@ -309,7 +327,7 @@
 }
 
 .filterContent {
-    padding-top: 25px;
+    padding-top: 15px;
 }
 /* 
 .filterContent--Color {
@@ -368,7 +386,7 @@
     border: 2px solid #BD202E !important;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1025px){
     .filterItem--ColorImage{
         border: 1px solid #b8b8b8;
         margin-right: 4px;
@@ -376,7 +394,7 @@
 }
 
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1025px){
     .filterItem-Color {
         display: flex;
         align-items: center;
@@ -459,6 +477,9 @@
 .filterTemplateOverflow :global(.vtex-slider__base-internal) {
     background: #434343;
 }
+:global(.vtex-slider__base) {
+    height: 2px !important;
+}
 
 /* .filterPopupArrowIcon {
     display: none;
@@ -471,19 +492,22 @@
 @media only screen and (max-width: 1025px) {
     .filterPopupButton {
         flex: 1;
-        height: 54px;
+        height: 38px;
         padding: 0;
         border: none;
         outline: none;
+        justify-content: flex-start;
     }
 
     .filterPopupTitle {
         display: block;
         margin: 0;
-        line-height: 15px;
         font-size: 12px;
+        font-weight: 400;
+        line-height: 14.63px;
         font-weight: normal;
         color: #434343;
+        text-transform: capitalize;
     }
 
     .accordionFilter {
@@ -706,5 +730,5 @@
     flex-wrap: wrap;
   }
   :global(.vtex-flex-layout-0-x-flexCol--filters) .filterItem {
-    padding: 10px 0;
+    padding: 8px 0;
   }

@@ -3,7 +3,7 @@
         "props": {
             "blockClass": "footer-newsletter",
             "label": "REGISTRATE",
-            "placeholder": "ingresá tu mail",
+            "placeholder": "Ingresá tu mail",
             "submit": "REGISTRATE"
         }
     }

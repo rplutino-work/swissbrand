@@ -10,6 +10,7 @@
     color: #A8A8A8;
     text-decoration: line-through !important;
     text-decoration-color: #A8A8A8;
+    margin-right: 10px;
 }
 
 .currencyDecimal--product-list-pdp {
@@ -48,12 +49,18 @@
     display: block;
 }
 
-@media(max-width:991px){
+@media(max-width:1025px){
     .savings--pdp-discount{
         background: #60AA6C;
     }
     
     .savingsPercentage--pdp-discount{
         font-size: 11px;
+    }
+    .currencyContainer--product-list-pdp{
+        font-size: 14px;
+    }
+    .currencyContainer--product-selling-pdp{
+        font-size: 14px;
     }
 }

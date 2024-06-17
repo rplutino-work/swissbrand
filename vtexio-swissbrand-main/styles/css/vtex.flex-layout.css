@@ -155,7 +155,7 @@
     padding: 0;
 }
 
-@media only screen and (max-width: 639px) {
+@media only screen and (max-width: 1025px) {
     .flexCol--middle-text {
         margin-top: 16px;
         margin-left: 0;
@@ -257,6 +257,15 @@
     justify-content: center;
     height: 100%;
 }
+.flexRowContent--shelf-product-bottom{
+    height: 100%;
+}
+.flexRowContent--shelf-product-bottom .stretchChildrenWidth{
+    height: 100%;
+}
+.flexCol--product-bottom-col{
+    height: 100%;
+}
 
 .flexRow--shelf-product-badges {
     width: 100%;
@@ -350,34 +359,6 @@
 }
 
 /* Shelf */
-
-.savings-discount--shelf-product {
-    display: block;
-    padding: 0;
-    font-size: 14px;
-    font-weight: 500;
-    color: #BD202E;
-    line-height: 14px;
-}
-
-.listPrice--shelf-product {
-    display: block;
-    text-align: left;
-    line-height: 14px;
-    font-size: 14px;
-    font-weight: 300;
-    color: #BEBEBE;
-}
-
-.sellingPrice--shelf-product {
-    display: block;
-    text-align: left;
-    line-height: 18px;
-    font-size: 14px;
-    font-weight: 500;
-    color: #434343;
-    padding: 0 10px;
-}
 
 :global(.vtex-product-summary-2-x-element--complete-look) .sellingPrice--shelf-product {
     font-size: 20px;
@@ -578,7 +559,7 @@
 @media only screen and (max-width: 1025px) {
     .flexRow--mobile-buttons {
         margin-bottom: 20px;
-        border-bottom: 2px solid black;
+        border-bottom: 1px solid black;
     }
 
     .flexRowContent--mobile-buttons {
@@ -697,7 +678,7 @@
     padding: 0;
 }
 
-@media only screen and (max-width: 639px) {
+@media only screen and (max-width: 1025px) {
     .flexRowContent--product-main-content {
         display: flex;
         flex-direction: column;
@@ -717,7 +698,7 @@
         right: 8px;
     }
     .flexRow--mobile-footer-links {
-        border-top: 1px solid #FCA01E;
+        border-top: 1px solid #BD202E;
     }
 }
 
@@ -878,7 +859,7 @@
     background: #fff;
 }
 
-@media only screen and (max-width: 639px) {
+@media only screen and (max-width: 1025px) {
     .flexRowContent--footer-copyright {
         margin-bottom: 10px;
     }
@@ -1222,6 +1203,9 @@
 
 :global(.vtex-product-summary-2-x-element--complete-look) .flexRowContent--shelf-product-top {
     width: 130px;
+}
+.flexRowContent--shelf-product-top {
+    position: relative;
 }
 
 :global(.vtex-product-summary-2-x-element--complete-look) .flexRow--shelf-product-bottom {
@@ -1783,6 +1767,7 @@
     }
 }
 
+
 /* Product shelf home 1 */
 
 .flexRowContent--shelf-products-home {
@@ -1819,7 +1804,7 @@
   :global(.vtex-store-components-3-x-imageElement--shelf-products-home-01) {
     box-shadow: 0px 5px 5px #00000029;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1025px) {
     .flexRow--shelf-home-desktop-01 {
         padding: 2rem 0;
       }
@@ -1860,5 +1845,52 @@
     }
   }
 
+  /* Cucardas */
 
-  
+  .flexRow--shelf-product-cucardas {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  :global(.vtex-flex-layout-0-x-flexRowContent--product-main-content) .flexRow--shelf-product-cucardas{
+    margin-bottom: 8px;
+}
+  .flexRowContent--shelf-product-cucardas {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    height: 100%;
+    gap: 10px;
+  }
+  :global(.vtex-flex-layout-0-x-flexRowContent--product-main-content) .flexRow--shelf-product-cucardas {
+    width: 100%;
+    height: 100%;
+    position: initial;
+    top: 0;
+    left: 0;
+  }
+  :global(.vtex-flex-layout-0-x-flexRowContent--product-main-content) .flexRowContent--shelf-product-cucardas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    gap: 10px;
+    height: 21px;
+  }
+
+  @media screen and (max-width: 1025px) {
+    :global(.vtex-flex-layout-0-x-flexRowContent--product-main-content) .flexRowContent--shelf-product-cucardas {
+        height: 21px;
+        padding: 0;
+      }
+      :global(.vtex-flex-layout-0-x-flexRowContent--product-main-content) .flexRow--shelf-product-cucardas{
+        margin-bottom: 12px;
+    }
+    .flexRowContent--shelf-product-cucardas {
+        gap: 5px;
+      }
+  }

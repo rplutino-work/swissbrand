@@ -1,34 +1,17 @@
 /* Shelf */
 
 .productHighlightText--shelf-product {
-    display: block;
-    box-sizing: border-box;
-    min-width: 64px;
-    padding: 4px;
-    text-transform: uppercase;
+    display: flex;
     font-size: 12px;
-    color: #434343;
-    background: #ffffff;
-}
-
-.productHighlightText--badge-new {
-    background: #BD202E;
-    color: #fff;
-    font-weight: 500;
-    font-size: 11px;
-    text-align: center;
-}
-
-@media only screen and (max-width: 1025px) {
-    .productHighlightText--shelf-product {
-        font-size: 10px;
-        padding: 4.5px 5px;
-    }
-    .productHighlightText--badge-new {
-        font-size: 11px;
-        padding: 4px 5px;
-        min-width: 50px;
-    }
+    font-weight: 400;
+    line-height: 18.4px;
+    text-transform: uppercase;
+    color: #BD202E;
+    background-color: #fff;
+    border: 1px solid #BD202E;
+    width: 100px !important;
+    justify-content: center;
+    align-items: center;
 }
 
 .productHighlightText--free-shipping {
@@ -38,7 +21,22 @@
     text-align: center;
     color: #60AA6C;
     text-transform: capitalize;
+    border: none !important;
 }
+
+@media only screen and (max-width: 1025px) {
+    .productHighlightText--shelf-product {
+        font-size: 9px;
+        width: 63px !important;
+        height: 14px;
+    }
+    .productHighlightText--free-shipping {
+        font-size: 8px;
+        font-weight: 400;
+    }
+}
+
+
 
 /* Cyber */
 .productHighlightText--shelf-cyber {

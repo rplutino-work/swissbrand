@@ -22,10 +22,12 @@
     "children": [
       //"flex-layout.row#shelf-product-cyber",
       //"flex-layout.row#shelf-product-hotsale",
-      "flex-layout.row#shelf-product-badge-cyber",
-      "flex-layout.row#shelf-product-top-badges",
+      // "flex-layout.row#shelf-product-badge-cyber",
+      // "flex-layout.row#shelf-product-top-badges",
       // "flex-layout.row#shelf-product-bottom-badges",
-      "product-summary-image#shelf-product"
+      "product-summary-image#shelf-product",
+      "product-price-savings#badge",
+      "flex-layout.row#shelf-product-cucardas"
     ]
   },
   "product-summary-image#shelf-product": {
@@ -34,6 +36,16 @@
       "aspectRatio": "auto",
       "showBadge": false
     }
+  },
+  "flex-layout.row#shelf-product-cucardas": {
+    "props": {
+      "blockClass": "shelf-product-cucardas",
+      "colSizing": "auto"
+    },
+    "children": [
+      "vtex.product-highlights@2.x:product-highlights#nuevo",
+      "vtex.product-highlights@2.x:product-highlights#nuevo"
+    ]
   },
   "flex-layout.row#shelf-product-bottom": {
     "props": {
@@ -198,7 +210,8 @@
       // "flex-layout.row#shelf-product-badge-cyber",
       // "flex-layout.row#shelf-product-top-badges",
       // "flex-layout.row#shelf-product-bottom-badges",
-      "product-summary-image#shelf-product"
+      "product-summary-image#shelf-product",
+      "product-price-savings#badge"
     ]
   },
   "flex-layout.row#shelf-product-right": {

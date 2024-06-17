@@ -13,7 +13,7 @@
     color: #231F20;
 }
 
-.relatedProducts--productos-relacionados-pdp :global(.vtex-product-summary-2-x-container--shelf-product){
+:global(.vtex-product-summary-2-x-container--shelf-product){
     box-shadow: none;
     border-radius: 0px;
 }
@@ -43,10 +43,13 @@
 .relatedProducts--related-products-sku-filter{
     margin-bottom: 0;
 }
+:global(.vtex-flex-layout-0-x-flexRow--product-main-content) .relatedProducts--related-products-sku-filter{
+    margin-top: 24px;
+}
 .shelfContentContainer--related-products-sku-filter {
     padding-bottom: 0;
 }
-.sliderContainer--related-products-sku-filter :global(.vtex-slider-0-x-sliderFrame){
+:global(.vtex-flex-layout-0-x-flexRow--product-main-content) .sliderContainer--related-products-sku-filter :global(.vtex-slider-0-x-sliderFrame){
     justify-content: flex-start;
 }
 

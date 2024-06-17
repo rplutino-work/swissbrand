@@ -5,7 +5,7 @@
         },
 
         "blocks": [
-            "class-header",
+            // "class-header",
             "flex-layout.row#info-card-home",
             // "list-context.image-list#main-gallery",
             // "flex-layout.row#category",
@@ -17,11 +17,11 @@
             "flex-layout.row#shelf-home-desktop-01",
             "flex-layout.row#middle-content",
             // "flex-layout.row#shelf-02",
-            "flex-layout.row#shelf-home-desktop-02",
+            "flex-layout.row#shelf-home-desktop-02"
             // "flex-layout.row#coleccions-home",
-            "flex-layout.row#deals",
+            // "flex-layout.row#deals",
             //"flex-layout.row#newsletter-form"
-            "newsletter#footer-newsletter"
+            // "newsletter#footer-newsletter"
         ]
     },
 

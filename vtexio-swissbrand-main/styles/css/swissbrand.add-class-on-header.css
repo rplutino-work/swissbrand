@@ -24,7 +24,7 @@
     .headerFixed :global(.vtex-store-components-3-x-logoContainer--header-logo)::after {
         content: '';
         display: block;
-        background-image: url('assets/svgs/luz-de-mar-logo-header-home.svg');
+        background-image: url('assets/svgs/swissbrand.svg');
         background-size: 165px;
         width: 165px;
         height: 47px;

@@ -178,9 +178,6 @@
 }
 
 @media only screen and (min-width: 1026px) {
-    .menuItem--department {
-        margin-right: 52px;
-    }
 
     .menuItem--department:hover .styledLinkContent--department {
         font-weight: 500;
@@ -195,7 +192,7 @@
         font-size: 12px;
         font-weight: 500;
     }
-    .menuItem--department {
+    .styledLinkContainer--department {
         margin: 0 20px;
     }
     
@@ -320,7 +317,7 @@
 
 /* MENU SALE */
 .styledLink--sale--highlight {
-    background: #FCA01E;
+    background: #BD202E;
     border-radius: 5px;
     padding: 7px 2px;
   }
