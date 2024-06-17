@@ -4,57 +4,104 @@
     },
     "flex-layout.row#landing-custom":{
         "props":{
-            "blockCLass":["landing-custom"]
+            "blockClass":["landing-custom"],
+            "fullWidth":true
         },
         "children":["flex-layout.col#landing-custom"]
     },
     "flex-layout.col#landing-custom":{
         "props":{
-            "blockCLass":["landing-custom"]
+            "blockClass":["landing-custom"]
         },
         "children":[
             "flex-layout.row#landing-custom-banner",
-            "flex-layout.row#landing-custom-text"
+            "flex-layout.row#landing-custom-title"
         ]
+    },
+    "responsive-layout.mobile#landing-custom-banner":{
+        "children":["image#landing-banner-mobile"]
+    },
+    "responsive-layout.desktop#landing-custom-banner":{
+        "children":["image#landing-banner"]
     },
     "flex-layout.row#landing-custom-banner":{
         "props":{
-            "blockCLass":["landing-custom-banner"]
+            "blockClass":["landing-custom-banner"]
         },
         "children":["flex-layout.col#landing-custom-banner"]
     },
     "flex-layout.col#landing-custom-banner":{
         "props":{
-            "blockCLass":["landing-custom-banner"]
-        },
-        "children":["image#landing-banner"]
-    },
-    "flex-layout.row#landing-custom-text":{
-        "props":{
-            "blockCLass":["landing-custom-text"]
-        },
-        "children":["flex-layout.col#landing-custom-text"]
-    },
-    "flex-layout.col#landing-custom-text":{
-        "props":{
-            "blockCLass":["landing-custom-text"]
+            "blockClass":["landing-custom-banner"]
         },
         "children":[
-            "rich-text#landing-text"
+            "responsive-layout.mobile#landing-custom-banner",
+            "responsive-layout.desktop#landing-custom-banner"
+        ]
+    },
+    "flex-layout.row#landing-custom-title":{
+        "props":{
+            "blockClass":["landing-custom-content"]
+        },
+        "children":["flex-layout.col#landing-custom-title"]
+    },
+    "flex-layout.col#landing-custom-title":{
+        "props":{
+            "blockClass":["landing-custom-content"]
+        },
+        "children":[
+            "rich-text#landing-text",
+            "rich-text#landing-content",
+            "rich-text#landing-content-2"
         ]
     },
     "image#landing-banner": {
         "title": "Imagen",
         "props": {
-            "src": "https://placehold.jp/1920x130.png",
+            "src": "https://placehold.jp/1920x270.png",
             "alt": "Novedades Luz de Mar",
-            "blockClass": "popup-image"
+            "blockClass": "banner-landing"
+        }
+    },
+    "image#landing-banner-mobile": {
+        "title": "Imagen",
+        "props": {
+            "src": "https://placehold.jp/376x270.png",
+            "alt": "Novedades Luz de Mar",
+            "blockClass": "banner-landing"
         }
     },
     "rich-text#landing-text": {
         "props": {
           "text": "## Sucursales",
-          "blockClass":["stores-wrapper-title"]
+          "blockClass":["landing-title"]
+        }
+      },
+
+      "flex-layout.row#landing-custom-content":{
+        "props":{
+            "blockClass":["landing-custom-title"]
+        },
+        "children":["flex-layout.col#landing-custom-content"]
+    },
+    "flex-layout.col#landing-custom-content":{
+        "props":{
+            "blockClass":["landing-custom-title"]
+        },
+        "children":[
+            "rich-text#landing-content"
+        ]
+    },
+    "rich-text#landing-content": {
+        "props": {
+          "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+          "blockClass":["landing-content"]
+        }
+      },
+      "rich-text#landing-content-2": {
+        "props": {
+          "text": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of 'de Finibus Bonorum et Malorum' (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 'Lorem ipsum dolor sit amet..', comes from a line in section 1.10.32.",
+          "blockClass":["landing-content","landing-content-2"]
         }
       }
 }
