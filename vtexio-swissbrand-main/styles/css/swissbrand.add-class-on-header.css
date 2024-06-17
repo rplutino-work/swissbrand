@@ -51,8 +51,5 @@
     .headerFixed :global(.vtex-store-components-3-x-toggle-search-icon){
         filter: invert();
     }
-    :global(.vtex-store-components-3-x-toggle-search-icon) {
-        width: 18px;
-        height: 18px;
-    }
+   
 }
