@@ -1,6 +1,9 @@
 @media(min-width:1025px){
     .flexRow--product-main-content{
         margin-top: 4rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-top: 45px !important;
     }
 }
 
@@ -56,5 +59,13 @@
     }
     :global(.vtex-add-to-cart-button-0-x-buttonText){
         text-wrap:nowrap;
+    }
+}
+
+
+
+.flexRowContent--product-main-content-mobile{
+    :global(.vtex-store-components-3-x-productDescriptionContainer--product-description-pdp){
+        margin-top: 17px;
     }
 }

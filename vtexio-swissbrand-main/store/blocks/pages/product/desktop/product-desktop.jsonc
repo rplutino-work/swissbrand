@@ -80,8 +80,8 @@
             "flex-layout.row#product-name", //-> NOMBRE DEL PRODUCTO
             "flex-layout.row#product-prices", // -> PRECIO DEL PRODUCTO
             "product-description#pdp", // -> DESCRIPCION DEL PRODUCTO
-            // "sku-selector#pdp", // -> SKU SELECTOR
             "shelf.relatedProducts#sku-filter", // -> SKU SELECTOR
+            "sku-selector#pdp", // -> SKU SELECTOR
             "flex-layout.row#cart-button", // -> BOTON DE COMPRA
             "share#redes"// -> REDES PARA COMPARTIR
         ]
@@ -177,6 +177,7 @@
     "sku-selector#pdp":{
         "props": {
             "blockClass": ["pdp-custom-sku-selector"],
+            "visibleVariations": ["Tamaño"],
             // "thumbnailImage": ["color"],
             // "hideImpossibleCombinations": true,
             "maxItems": 40

@@ -4,6 +4,13 @@
     max-width: initial;
 }
 
+@media(min-width:992px){
+    .relatedProducts--productos-relacionados-pdp{
+        max-width: 1200px !important;
+        padding: 0px;
+    }
+}
+
 .title--productos-relacionados-pdp{
     font-size: 20px;
     padding-bottom: 20px;
@@ -25,6 +32,7 @@
         max-width: initial;
         background: #EFEFEF;
         margin-bottom: 0px;
+        margin-top: 20px;
     }
 
     .shelfContentContainer--productos-relacionados-pdp{
@@ -35,6 +43,13 @@
 
 
 /* variantes de producto como color */
+
+.relatedProducts--related-products-sku-filter::before{
+    content: "Selecciona tu color";
+    font-size: 12px;
+    display: block;
+    margin-bottom: 8px;
+}
 
 .relatedProducts--related-products-sku-filter{
     padding-left: 0px;

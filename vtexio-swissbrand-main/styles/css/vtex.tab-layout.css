@@ -92,7 +92,7 @@
 .listItem--product-specs :global(.vtex-button) :global(.vtex-button__label) {
     font-size: 13px;
     line-height: 15px;
-    font-weight: 600;
+    font-weight: 400;
     color: #999092 !important;
     padding: 0px;
     padding-bottom: 30px !important;
@@ -123,6 +123,16 @@
     color: #727273;
 }
 
+.contentItem--product-specs-01{
+    margin-top: 10px;
+}
+
+@media(max-width:991px){
+    .contentItem--product-specs-01{
+        padding: 0px 10px;
+    }
+}
+
 @media only screen and (max-width: 1025px) {
     .listItem--product-specs {
         width: 100%;
@@ -148,7 +158,9 @@
     
     .listContainer--product-specs {
         flex-direction: row;
-        padding: 0px 15px;
+        /* padding: 0px 15px; */
+        margin: 0px 20px;
+        width: auto;
     }
 
     .listItem--product-specs {
