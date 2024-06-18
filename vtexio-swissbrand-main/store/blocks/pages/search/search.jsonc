@@ -33,7 +33,7 @@
         //   "subhead": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
         //   "callToActionText": "VER MÁS",
         //   "callToActionUrl": "/sale/d",
-        //   "blockClass": "info-card-home",
+          "blockClass": "info-card-custom-search",
           "textMode": "rich-text"
         }
       },  
@@ -251,6 +251,7 @@
           "updateOnFilterSelectionOnMobile": false,
           "appliedFiltersOverview": "hide",
           "fullWidthOnMobile": true,
+          "drawerDirectionMobile":"drawerRight",
           "priceRangeLayout": "slider"
         //   "showClearByFilter": false
         }

@@ -15,8 +15,8 @@
                 "simulationBehavior": "skip",
                 "installmentCriteria": "MAX_WITHOUT_INTEREST",
                 "__unstableProductOriginVtex": true,
-                "queryField": "Sofa",
-                "mapField": "ft"
+                "queryField": "139",
+                "mapField": "productClusterIds"
             }
         },
         "blocks": [

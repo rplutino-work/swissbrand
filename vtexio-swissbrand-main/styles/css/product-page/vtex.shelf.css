@@ -50,6 +50,9 @@
     display: block;
     margin-bottom: 8px;
 }
+:global(.vtex-flex-layout-0-x-flexRow--shelf-product-bottom) .relatedProducts--related-products-sku-filter::before {
+    display: none;
+} 
 
 .relatedProducts--related-products-sku-filter{
     padding-left: 0px;

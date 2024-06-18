@@ -1490,6 +1490,30 @@
   }
 }
 
+/* INFOCARD CUSTOM SEARCH */
+
+.infoCardContainer--info-card-custom-search {
+    height: 263px;
+  }
+
+.infoCardCallActionContainer--info-card-custom-search {
+    display: none;
+}
+.paragraph--info-card-custom-search {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 48.76px;
+    color: #fff;
+}
+
+@media only screen and (max-width: 1025px){
+    .infoCardContainer--info-card-custom-search {
+        height: 275px;
+      }
+    .paragraph--info-card-custom-search {
+        font-size: 36px;
+    }
+  }
 
 
 

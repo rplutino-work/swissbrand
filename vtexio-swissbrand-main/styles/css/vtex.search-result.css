@@ -157,6 +157,12 @@
 
 @media only screen and (max-width: 1025px) {
     .searchResultContainer {
+        /* padding: 0 18px; */
+    }
+    .gallery {
+        padding: 0 18px;
+    }
+    .buttonShowMore--layout {
         padding: 0 18px;
     }
     .galleryItem :global(.vtex-shelf-1-x-relatedProducts--related-products-sku-filter) {
