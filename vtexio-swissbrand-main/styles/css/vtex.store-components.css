@@ -1568,3 +1568,6 @@
     width: 18px;
     height: 18px;
 }
+.imageElement--banner-landing {
+    width: 100%;
+}
