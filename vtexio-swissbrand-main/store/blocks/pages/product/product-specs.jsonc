@@ -57,13 +57,21 @@
 "tab-content.item#product-description": {
     "title": "Contenido descripción de producto",
     "children": [
-       "product-specification-group#pdp-description"
+    //    "product-specification-group#pdp-description"
+        "product-description#pdp"
     ],
     "props": {
         "tabId": "descripcion",
         "blockClass": ["product-specs", "product-specs-01"]
     }
 },
+    "product-description#pdp":{
+        "props":{
+            "blockClass":"",
+            "collapseContent":false,
+            "showTitle":false
+        }
+    },
 "tab-content.item#product-ficha-tecnica": {
     "title": "Contenido ficha técnica",
     "children": [

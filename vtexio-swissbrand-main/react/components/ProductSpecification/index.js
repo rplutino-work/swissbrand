@@ -5,11 +5,8 @@ import styles from "./style.css";
 function index() {
 
     const [tabla, setTabla] = useState([])
-
     const productContext = useProduct();
     const {product} = productContext
-
-    console.log('infoproduct',product)
 
     useEffect(()=>{
         if(product && product?.properties){
@@ -18,9 +15,6 @@ function index() {
             setTabla(JSON.parse(fichaTecnica))
         }
     },[product])
-
-    console.log({tabla})
-
 
   return (
     <div className={`${styles["fichaProperties"]}`}>
