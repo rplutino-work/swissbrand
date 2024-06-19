@@ -6,7 +6,7 @@
 }
 
 .caretIcon {
-    color: #BD202E;
+    color: #FFFFFF;
 }
 
 .paginationDotsContainer {
@@ -15,18 +15,18 @@
 }
 
 .paginationDot {
-    width: 12px !important;
-    height: 12px !important;
+    width: 10px !important;
+    height: 10px !important;
     margin: 0 3px;
     padding: 0;
-    background: #D9D9D9;
+    background: transparent;
+    border: 1px solid #FFFFFF;
 }
 
 .paginationDot--isActive {
-    width: 12px !important;
-    height: 12px !important;
-    border: 1px solid #E46262;
-    background: #E46262;
+    width: 10px !important;
+    height: 10px !important;
+    background: #FFFFFF;
 }
 
 /**/
@@ -516,4 +516,21 @@
   .sliderTrackContainer--menu-desktop-sale-discounts {
     max-width: 850px;
   }
+  }
+  .sliderLeftArrow--info-card-home {
+    left: 20px;
+  }
+  .sliderRightArrow--info-card-home {
+    right: 20px;
+  }
+  .paginationDotsContainer--info-card-home {
+    bottom: 20px;
+  }
+  @media (max-width: 1025px){
+    .sliderLeftArrow--info-card-home {
+        left: 6px;
+      }
+      .sliderRightArrow--info-card-home {
+        right: 6px;
+      }
   }

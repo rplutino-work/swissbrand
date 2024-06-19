@@ -3,8 +3,8 @@
     align-items: center;
     width: 100%;
     max-width: 1200px;
-    margin: 25px auto 15px;
-    padding: 0 15px;
+    margin: 33px auto 0;
+    padding: 0;
 }
 
 .container--pdp {
@@ -14,10 +14,9 @@
 .link,
 .term {
     padding: 0;
-    text-transform: uppercase;
-    line-height: 12px;
-    font-size: 10px;
-    color: #bebebe;
+    line-height: 19px;
+    font-size: 14px;
+    color: #999092;
 }
 
 .link:hover,
@@ -46,9 +45,18 @@
     color: #bebebe;
 }
 
+:global(.vtex-flex-layout-0-x-flexRow--breadcrumb-search) :global(.vtex-store-components-3-x-container) {
+    padding: 0;
+}
+
 @media only screen and (max-width: 1025px) {
     .container {
-        padding: 0 16px;
+        margin: 32px 18px 25px;
+    }
+    .link,
+    .term {
+        line-height: 13px;
+        font-size: 10px;
     }
     .term,
     .termArrow{

@@ -19,14 +19,18 @@
 .totalProducts--layout {
     padding: 0;
     border: none;
-    text-transform: uppercase;
-    line-height: 12px;
-    font-size: 10px;
-    color: #b8b8b8;
+    line-height: 16px;
+    font-size: 13px;
+    color: #231F20;
+    margin-left: 340px;
+    text-transform: none;
+    font-weight: 400;
 }
 
 .totalProductsMessage {
-    color: #b8b8b8;
+    color: #231F20;
+    text-transform: none;
+    font-weight: 400;
 }
 
 .orderByDropdown {
@@ -48,9 +52,9 @@
 
 .orderByText {
     /* margin-right: 16px; */
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 400;
-    line-height: 19.5px;
+    line-height: 16px;
     color: #231F20;
     text-transform: capitalize;
 }
@@ -195,19 +199,19 @@
     .orderByText {
         display: block;
         margin: 0;
-        font-size: 12px;
+        font-size: 10px;
         font-weight: 400;
-        line-height: 14.63px;
+        line-height: 13px;
     }
 
     .totalProducts--layout {
-        margin-bottom: 6px;
-        font-weight: normal;
-        color: #6a6a6b;
-    }
-
-    .totalProductsMessage {
-        color: #6a6a6b;
+        line-height: 13px;
+        font-size: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+        margin-bottom: 36px;
     }
 
     .notFound--layout {
@@ -509,9 +513,9 @@
     .filterPopupTitle {
         display: block;
         margin: 0;
-        font-size: 12px;
+        font-size: 10px;
         font-weight: 400;
-        line-height: 14.63px;
+        line-height: 13px;
         font-weight: normal;
         color: #434343;
         text-transform: capitalize;

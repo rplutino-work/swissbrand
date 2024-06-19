@@ -79,6 +79,7 @@
             "flex-layout.row#pdp-product-cucardas", // -> CUCARDAS
             "flex-layout.row#product-name", //-> NOMBRE DEL PRODUCTO
             "flex-layout.row#product-prices", // -> PRECIO DEL PRODUCTO
+            "vtex.product-highlights@2.x:product-highlights#envio-gratis",
             "product-description#pdp", // -> DESCRIPCION DEL PRODUCTO
             "shelf.relatedProducts#sku-filter", // -> SKU SELECTOR
             "sku-selector#pdp", // -> SKU SELECTOR

@@ -24,6 +24,13 @@
     border: none !important;
 }
 
+:global(.vtex-flex-layout-0-x-flexColChild--details-column) .productHighlightText--free-shipping{
+    justify-content: flex-start;
+    text-transform: uppercase;
+    width: auto !important;
+    margin-bottom: 10px;
+}
+
 @media only screen and (max-width: 1025px) {
     .productHighlightText--shelf-product {
         font-size: 9px;
@@ -33,6 +40,14 @@
     .productHighlightText--free-shipping {
         font-size: 8px;
         font-weight: 400;
+    }
+    :global(.vtex-flex-layout-0-x-flexColChild--details-column) .productHighlightText--free-shipping{
+        justify-content: flex-start;
+        text-transform: uppercase;
+        width: auto !important;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        font-size: 11px;
     }
 }
 

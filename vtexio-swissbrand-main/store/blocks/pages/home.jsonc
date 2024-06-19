@@ -6,7 +6,8 @@
 
         "blocks": [
             // "class-header",
-            "flex-layout.row#info-card-home",
+            // "flex-layout.row#info-card-home",
+            "slider-layout#info-card-home",
             // "list-context.image-list#main-gallery",
             // "flex-layout.row#category",
             "flex-layout.row#top-gallery",
@@ -106,6 +107,18 @@
         "textMode": "rich-text"
       }
     },  
+    "slider-layout#info-card-home": {
+        "props": {
+            "blockClass": "info-card-home",
+            "infinite": true,
+            "itemsPerPage": {
+                "desktop": 1,
+                "tablet": 1,
+                "phone": 1
+            }
+        },
+        "children": ["info-card#home", "info-card#home"]
+    },
     "list-context.info-card-list#demo": {
         "children": [
             "slider-layout#category-home"

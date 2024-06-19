@@ -541,7 +541,7 @@
     padding: 0 15px;
     margin: 0 auto;
     position: relative;
-    border-bottom: 0.5px solid #231F20;
+    /* border-bottom: 0.5px solid #231F20; */
     padding: 25px 0 10px;
     margin-top: 25px;
 }
@@ -563,7 +563,7 @@
 @media only screen and (max-width: 1025px) {
     .flexRow--mobile-buttons {
         margin-top: 65px;
-        margin: 65px 18px 20px;
+        margin: 0px 18px 20px;
         margin-bottom: 20px;
         border-bottom: 1px solid #231F20;
     }
