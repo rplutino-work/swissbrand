@@ -885,6 +885,9 @@
 }
 
 @media only screen and (max-width: 1025px) {
+    .buttonContainer--footer-newsletter :global(.vtex-button) {
+        width: 139px;
+    }
     .buttonContainer--footer-newsletter {
         width: initial;
     }

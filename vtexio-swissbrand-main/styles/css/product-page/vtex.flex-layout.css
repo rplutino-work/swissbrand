@@ -51,6 +51,7 @@
 :global(.vtex-add-to-cart-button-0-x-buttonText){
     font-size: 12px;
     color: #fff;
+    font-weight: 400;
 }
 
 @media(max-width:1025px){

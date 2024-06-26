@@ -11,10 +11,26 @@
 :global(.vtex-minicart-2-x-minicartSummary--minicart-summary-footer) :global(.vtex-checkout-summary-0-x-summaryItemContainer) :global(.vtex-checkout-summary-0-x-summaryItemLabel), :global(.vtex-checkout-summary-0-x-price){
     /* font-size: 13px !important;
     letter-spacing: 0.26px; */
+    
+}
+:global(.vtex-minicart-2-x-minicartSummary--minicart-summary-footer) :global(.vtex-checkout-summary-0-x-summaryItemContainer) :global(.vtex-checkout-summary-0-x-summaryItemLabel), :global(.vtex-checkout-summary-0-x-price){
+    /* font-size: 13px !important;
+    letter-spacing: 0.26px; */
+    font-weight: 400 !important;
+    font-size: 13px;
+    color: #A8A8A8;
 }
 
-:global(.vtex-minicart-2-x-minicartSummary--minicart-summary-footer) :global(.vtex-checkout-summary-0-x-summaryItemContainer) ~ :global(.vtex-checkout-summary-0-x-summaryItemContainer) :global(.vtex-checkout-summary-0-x-summaryItemLabel), :global(.vtex-checkout-summary-0-x-price){
+:global(.vtex-minicart-2-x-minicartSummary--minicart-summary-footer) :global(.vtex-checkout-summary-0-x-summaryItemContainer):last-child :global(.vtex-checkout-summary-0-x-summaryItemLabel), :global(.vtex-minicart-2-x-minicartSummary--minicart-summary-footer) :global(.vtex-checkout-summary-0-x-summaryItemContainer):last-child :global(.vtex-checkout-summary-0-x-price){
     /* font-size: 20px; */
     letter-spacing: 0.26px;
     font-weight: 400 !important;
+    font-size: 20px;
+    color: #000;
+}
+
+@media only screen and (max-width: 1025px) {
+    :global(.vtex-minicart-2-x-minicartSummary--minicart-summary-footer) :global(.vtex-checkout-summary-0-x-summaryItemContainer):last-child :global(.vtex-checkout-summary-0-x-summaryItemLabel), :global(.vtex-minicart-2-x-minicartSummary--minicart-summary-footer) :global(.vtex-checkout-summary-0-x-summaryItemContainer):last-child :global(.vtex-checkout-summary-0-x-price){
+        font-size: 19px;
+    }
 }

@@ -3,7 +3,8 @@
         "props": {
             "customPixelEventName": "addToCart",
             "blockClass": ["minicart"],
-            "MinicartIcon": "image#minicart-icon"
+            "MinicartIcon": "image#minicart-icon",
+            "maxDrawerWidth": 459
         },
         "children": ["minicart-base-content"]
     },
@@ -205,7 +206,7 @@
 
     "checkout-summary.compact#minicart": {
         "props": {
-            "totalizersToShow": ["Items", "Discounts"]
+            "totalizersToShow": ["Items", "Discounts", "discountsTotal", "discounts"]
         },
 
         "children": ["summary-totalizers#minicart"]

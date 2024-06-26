@@ -49,6 +49,7 @@
 
 .flexColChild--minicart-card-info :global(.vtex-add-to-cart-button-0-x-buttonText){
     color: #000;
+    font-weight: 400;
     text-decoration: underline;
     font-size: 12px;
     letter-spacing: 0.24px;

@@ -83,6 +83,7 @@
             "product-description#pdp", // -> DESCRIPCION DEL PRODUCTO
             "shelf.relatedProducts#sku-filter", // -> SKU SELECTOR
             "sku-selector#pdp", // -> SKU SELECTOR
+            "size-table",
             "flex-layout.row#cart-button", // -> BOTON DE COMPRA
             "share#redes"// -> REDES PARA COMPARTIR
         ]
@@ -219,7 +220,7 @@
         "blocks": ["product-summary.shelf#shelf-product"],
         "props": {
             "blockClass": ["productos-relacionados-pdp"],
-            "recommendation": "similars",
+            "recommendation": "view",
             "productList": {
                 "titleText": "PRODUCTOS RELACIONADOS",
                 "itemsPerPage": 4,

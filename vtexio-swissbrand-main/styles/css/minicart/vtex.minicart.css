@@ -100,7 +100,7 @@
 }
 
 .minicartCheckoutButton :global(.vtex-button) {
-    height: 42px;
+    height: 40px;
     border: none;
     border-radius: 0;
     outline: none;
