@@ -1,7 +1,7 @@
 {
   "vendor": "swissbrand",
   "name": "size-table",
-  "version": "0.0.80",
+  "version": "0.0.81",
   "title": "Size Table",
   "description": "A custom block that creates a size table for the product",
   "defaultLocale": "pt-BR",
