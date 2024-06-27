@@ -26,9 +26,9 @@
     justify-content: center;
 }
 
-.headerStickyRow--mobile-header-content .headerRowContentContainer--mobile-header-content {
+/* .headerStickyRow--mobile-header-content .headerRowContentContainer--mobile-header-content {
     border-bottom: 1px solid #b2b2b2;
-}
+} */
 .headerNotFixed :global(.vtex-store-header-2-x-headerRowContentContainer--mobile-header-content) {
     border-bottom: 0;
 }

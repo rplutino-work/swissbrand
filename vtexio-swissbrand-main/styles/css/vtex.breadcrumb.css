@@ -53,10 +53,20 @@
     .container {
         margin: 32px 18px 25px;
     }
+    :global(.vtex-flex-layout-0-x-flexRowContent--breadcrumb-pdp) .container {
+        margin: 8px 18px 25px;
+    }
     .link,
     .term {
         line-height: 13px;
         font-size: 10px;
+    }
+    .link{
+        width: max-content;
+    }
+    .caretIcon {
+        margin: 0 3px;
+        color: #bebebe;
     }
     .term,
     .termArrow{

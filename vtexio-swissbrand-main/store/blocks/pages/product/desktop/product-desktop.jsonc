@@ -1,14 +1,27 @@
 {
     "responsive-layout.desktop#product": {
         "children": [
-            
+          "flex-layout.row#breadcrumb-pdp",
             "flex-layout.row#product-main-content",
             "flex-layout.row#product-specs",
             // "flex-layout.row#related-products",
             "shelf.relatedProducts#related-products"
         ]
       },
+      "flex-layout.row#breadcrumb-pdp":{
+        "props": {
+            "blockClass": ["breadcrumb-search","breadcrumb-pdp"]
+        },
 
+        "children": [
+            "breadcrumb"
+            ]
+      },
+      "breadcrumb": {
+          "props": {
+              "showOnMobile": true
+          }
+      },
       //contenido de ficha
       "flex-layout.row#product-main-content": {
         "props": {
@@ -95,7 +108,7 @@
         },
         "children": [
           "vtex.product-highlights@2.x:product-highlights#nuevo",
-          "vtex.product-highlights@2.x:product-highlights#nuevo",
+          // "vtex.product-highlights@2.x:product-highlights#nuevo",
           "product-price-savings#badge"
         ]
       },

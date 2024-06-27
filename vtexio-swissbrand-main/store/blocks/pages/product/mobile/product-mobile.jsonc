@@ -1,6 +1,7 @@
 {
     "responsive-layout.phone#product": {
         "children": [
+            "flex-layout.row#breadcrumb-pdp",
             "flex-layout.row#product-main-content-mobile",
             "flex-layout.row#product-specs",
             "shelf.relatedProducts#related-products-mobile"
@@ -34,8 +35,10 @@
         "blocks": ["product-summary.shelf#shelf-product"],
         "props": {
             "blockClass": ["productos-relacionados-pdp"],
-            "recommendation": "similars",
+            "recommendation": "view",
+            "paginationDotsVisibility": "hidden",
             "productList": {
+                "paginationDotsVisibility": "hidden",
                 // "titleText": "PRODUCTOS RELACIONADOS",
                 "showTitle":false,
                 "itemsPerPage": 2,

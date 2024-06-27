@@ -43,7 +43,7 @@
       "colSizing": "auto"
     },
     "children": [
-      "vtex.product-highlights@2.x:product-highlights#nuevo",
+      // "vtex.product-highlights@2.x:product-highlights#nuevo",
       "vtex.product-highlights@2.x:product-highlights#nuevo"
     ]
   },
