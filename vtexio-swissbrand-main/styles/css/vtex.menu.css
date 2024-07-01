@@ -18,6 +18,7 @@
 
 .menuContainerNav--categories {
     margin-right: 30px;
+    width: auto !important;
 }
 
 .styledLinkContainer--custom-dropdown-submenu {
