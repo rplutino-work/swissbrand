@@ -66,8 +66,7 @@
                           {"name": "Especificações"},
                           {"name": "Descrição do produto"},
                           {"name": "Conteúdo da embalagem"},
-                          {"name": "Marca"},
-                          {"name": "Color"}
+                          {"name": "Marca"}
                      ]
                 }
            }
@@ -111,6 +110,7 @@
         },
 
         "children": [
+            "search-title.v2",
             "total-products.v2",
             "order-by.v2"
             ]
@@ -145,7 +145,7 @@
         },
 
         "children": [
-            "search-title.v2",
+            // "search-title.v2",
             "filter-navigator.v3"
             //  "luzdemararg.m3-custom-search-result:filter-navigator.v3"
             ]
@@ -158,7 +158,8 @@
           "fullWidthOnMobile": true,
           "priceRangeLayout": "slider",
           "showClearByFilter": true,
-          "truncateFilters": true
+        "truncateFilters": true,
+        "showOrderTitle": true
         }
       },
     // "luzdemararg.m3-custom-search-result:filter-navigator.v3": {
@@ -223,8 +224,7 @@
                           {"name": "Especificações"},
                           {"name": "Descrição do produto"},
                           {"name": "Conteúdo da embalagem"},
-                          {"name": "Marca"},
-                          {"name": "Color"}
+                          {"name": "Marca"}
                      ]
                 }
            }
@@ -235,6 +235,7 @@
             // "breadcrumb.search",
             // "search-title.v2",
             "flex-layout.row#breadcrumb-search",
+            "search-title.v2",
             "flex-layout.row#mobile-buttons",
             "flex-layout.row#total-products",
             // "total-products.v2",
@@ -271,7 +272,7 @@
           "scrollToTop": "auto",
           "initiallyCollapsed": false,
           "navigationTypeOnMobile": "collapsible",
-          "updateOnFilterSelectionOnMobile": false,
+          "updateOnFilterSelectionOnMobile": true,
           "appliedFiltersOverview": "hide",
           "fullWidthOnMobile": true,
           "drawerDirectionMobile":"drawerRight",

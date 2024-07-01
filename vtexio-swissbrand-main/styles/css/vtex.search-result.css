@@ -14,6 +14,7 @@
     font-size: 20px;
     font-weight: normal;
     color: #434343;
+    width: 340px !important;
 }
 
 .totalProducts--layout {
@@ -22,7 +23,6 @@
     line-height: 16px;
     font-size: 13px;
     color: #231F20;
-    margin-left: 340px;
     text-transform: none;
     font-weight: 400;
 }
@@ -177,9 +177,10 @@
         padding-left: 0px;
     }
     .galleryTitle--layout {
-        margin-bottom: 24px;
+        margin-bottom: 15px;
         padding: 0 16px;
         text-align: center;
+        width: auto;
     }
 
     .orderBy--layout {
@@ -222,9 +223,6 @@
 @media only screen and (min-width: 1026px) {
     .orderByOptionsContainer {
         top: 30px;
-    }
-    .galleryTitle--layout {
-       display: none;
     }
 }
 
@@ -425,6 +423,7 @@
 .filterItem :global(.vtex-checkbox__line-container) {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .filterItem :global(.vtex-checkbox__inner-container) {
@@ -575,6 +574,16 @@
     .filterAccordionItemBox--unisex {
         display: none;
     }
+    .sidebar .accordionFilterContent .accordionFilterItemTitle::after {
+        content: ":";
+    }
+    .sidebar .filterAccordionItemBox--sub-categoria .accordionFilterItemTitle::after {
+        content: 'Tipo de producto:' !important;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19.5px;
+        color: #231F20;
+    }
 
     .accordionFilterItem {
         border-bottom: 1px solid #a8a8a8;
@@ -588,6 +597,7 @@
     }
 
     .accordionFilterItemTitle {
+        order: 0;
         font-size: 16px;
         font-weight: 500;
         line-height: 19.5px;
@@ -626,15 +636,18 @@
     }
 
     .filterAccordionItemBox--sub-categoria .accordionFilterItemTitle::after {
-        content: 'Tipo de producto';
+        content: 'Tipo de producto:';
         font-size: 16px;
         font-weight: 500;
         line-height: 19.5px;
         color: #231F20;
     }
+    .accordionSelectedFilters {
+        order: 1;
+    }
 
     .accordionFilterItemTag :global(.vtex-tag) {
-        display: block;
+        display: none;
         padding: 2px 12px;
         border: 1px solid #dedede;
         font-size: 10px;
@@ -645,6 +658,7 @@
 
     .accordionFilterItemIcon {
         margin-left: auto;
+        order: 3;
         /* transform: rotate(-90deg); */
     }
 
@@ -742,4 +756,626 @@
   }
   :global(.vtex-flex-layout-0-x-flexCol--filters) .filterItem {
     padding: 8px 0;
+  }
+
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color {
+    cursor: auto;
+    border: none !important;
+    box-shadow: none !important;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--selectedFilters {
+    display: none;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color :global(.vtex-checkbox__container) {
+    display: none;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color :global(.vtex-checkbox__label) {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    border: 1px solid #dcdcdc;
+    /* border-radius: 50%; */
+    width: 18px;
+    height: 18px;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--selected {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-right: 8px !important;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--selected::before {
+    content: " ";
+    position: absolute;
+    border: 1px solid #000;
+    width: 22px;
+    height: 22px;
+    /* border-radius: 50%; */
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem {
+    width: 27px;
+    height: 27px;
+    padding: 3px 0;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--blanco :global(.vtex-checkbox__label) {
+    background-color: #ffffff;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--negro :global(.vtex-checkbox__label) {
+    background-color: #000000;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--gris-melange-claro :global(.vtex-checkbox__label) {
+    background-color: #cccccc;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--gris-melange-medio :global(.vtex-checkbox__label) {
+    background-color: #8c8a8c;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--gris-melange-oscuro :global(.vtex-checkbox__label) {
+    background-color: #8a8a8a;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--gris :global(.vtex-checkbox__label) {
+    background-color: #615c61;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--gris-claro :global(.vtex-checkbox__label) {
+    background-color: #e3e0e3;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--gris-medio :global(.vtex-checkbox__label) {
+    background-color: #a1a1a1;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--gris-oscuro :global(.vtex-checkbox__label) {
+    background-color: #424242;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--azul :global(.vtex-checkbox__label) {
+    background-color: #2035ab;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--azul-claro :global(.vtex-checkbox__label) {
+    background-color: #557efa;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--azul-oscuro :global(.vtex-checkbox__label) {
+    background-color: #0d00bd;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--azul-francia :global(.vtex-checkbox__label) {
+    background-color: #3c00ff;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--verde :global(.vtex-checkbox__label) {
+    background-color: #8aeb9e;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--verde-claro :global(.vtex-checkbox__label) {
+    background-color: #b7e6ac;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--verde-oscuro :global(.vtex-checkbox__label) {
+    background-color: #0a8f1a;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--verde-militar :global(.vtex-checkbox__label) {
+    background-color: #7c9909;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--rosa :global(.vtex-checkbox__label) {
+    background-color: #ffc9ff;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--rosa-claro :global(.vtex-checkbox__label) {
+    background-color: #ffcfcf;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--rosa-oscuro :global(.vtex-checkbox__label) {
+    background-color: #8f3967;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--fucsia :global(.vtex-checkbox__label) {
+    background-color: #ff75ff;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--rojo :global(.vtex-checkbox__label) {
+    background-color: #ff0000;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--rojo-claro :global(.vtex-checkbox__label) {
+    background-color: #ff3d3d;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--rojo-oscuro :global(.vtex-checkbox__label) {
+    background-color: #c70000;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--bordeaux :global(.vtex-checkbox__label) {
+    background-color: #a10303;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--nude :global(.vtex-checkbox__label) {
+    background-color: #fae1bb;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--crudo :global(.vtex-checkbox__label) {
+    background-color: #f5ecc1;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--off-white :global(.vtex-checkbox__label) {
+    background-color: #f7fbfc;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--vison :global(.vtex-checkbox__label) {
+    background-color: #dbdac3;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--celeste :global(.vtex-checkbox__label) {
+    background-color: #7ac9e6;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--violeta :global(.vtex-checkbox__label) {
+    background-color: #7d2c7d;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--topo :global(.vtex-checkbox__label) {
+    background-color: #3b3933;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--tostado :global(.vtex-checkbox__label) {
+    background-color: #968d6a;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--aqua :global(.vtex-checkbox__label) {
+    background-color: #afe6f5;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--turquesa :global(.vtex-checkbox__label) {
+    background-color: #00bcf5;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--rosa-melange :global(.vtex-checkbox__label) {
+    background-color: #fa7ffa;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--crudo-c-melange :global(.vtex-checkbox__label) {
+    background-color: #bdbdb6;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--crudo-c-rosa :global(.vtex-checkbox__label) {
+    background-color: #fad2fa;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--crudo-c-celeste :global(.vtex-checkbox__label) {
+    background-color: #9fdee6;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--crudo-c-negro :global(.vtex-checkbox__label) {
+    background-color: #4b4d3e;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--coral :global(.vtex-checkbox__label) {
+    background-color: #3c00ff;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--petroleo :global(.vtex-checkbox__label) {
+    background-color: #147fb8;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--nude-oscuro :global(.vtex-checkbox__label) {
+    background-color: #3c00ff;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--crudo-apto :global(.vtex-checkbox__label) {
+    background-color: #e6e8a7;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--beige :global(.vtex-checkbox__label) {
+    background-color: #d9b289;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--habano :global(.vtex-checkbox__label) {
+    background-color: #ab4228;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--bordo :global(.vtex-checkbox__label) {
+    background-color: #8f1e1e;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--marino :global(.vtex-checkbox__label) {
+    background-color: #052da6;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--blanco-sucio :global(.vtex-checkbox__label) {
+    background-color: #052da6;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--plata-vieja :global(.vtex-checkbox__label) {
+    background-color: #cccccc;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--niquel-mate :global(.vtex-checkbox__label) {
+    background-color: #b8b7ab;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--niquel :global(.vtex-checkbox__label) {
+    background-color: #737373;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--bronce :global(.vtex-checkbox__label) {
+    background-color: #c25004;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--plata :global(.vtex-checkbox__label) {
+    background-color: #848687;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--cobre :global(.vtex-checkbox__label) {
+    background-color: #8e402a;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--niquel :global(.vtex-checkbox__label) {
+    background-color: #737373;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--cobre-viejo :global(.vtex-checkbox__label) {
+    background-color: #96964f;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--rosa-viejo :global(.vtex-checkbox__label) {
+    background-color: #c2b4c2;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--uva :global(.vtex-checkbox__label) {
+    background-color: #7e15a1;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--lila :global(.vtex-checkbox__label) {
+    background-color: #af96ff;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--amarillo-claro :global(.vtex-checkbox__label) {
+    background-color: #fff654;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--amarillo-medio :global(.vtex-checkbox__label) {
+    background-color: #f0d84f;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--negro-c-azul :global(.vtex-checkbox__label) {
+    background-color: #060d4d;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--militar-c-rosa :global(.vtex-checkbox__label) {
+    background-color: #1c5409;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--militar-c-crudo :global(.vtex-checkbox__label) {
+    background-color: #064d00;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--camuflado :global(.vtex-checkbox__label) {
+    background-color: #1c6313;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--negro-c-gris :global(.vtex-checkbox__label) {
+    background-color: #4d4d4d;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--amarillo :global(.vtex-checkbox__label) {
+    background-color: #f0f011;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--crudo-melange :global(.vtex-checkbox__label) {
+    background-color: #e3d1dc;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--aero :global(.vtex-checkbox__label) {
+    background-color: #488dc9;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--camel :global(.vtex-checkbox__label) {
+    background-color: #bf701c;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--verde-ingles :global(.vtex-checkbox__label) {
+    background-color: #33780b;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--cobre-brillante :global(.vtex-checkbox__label) {
+    background-color: #c9631a;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--cobre-mate :global(.vtex-checkbox__label) {
+    background-color: #ba481a;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--negro-lurex :global(.vtex-checkbox__label) {
+    background-color: #2e2e2e;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--naranja :global(.vtex-checkbox__label) {
+    background-color: #ff9d00;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--metalico :global(.vtex-checkbox__label) {
+    background-color: #9ea1a3;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--marron :global(.vtex-checkbox__label) {
+    background-color: #9c8983;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--ladrillo-brick :global(.vtex-checkbox__label) {
+    background-color: #f0670c;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--celeste-claro :global(.vtex-checkbox__label) {
+    background-color: #91e9ff;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--oro-rosa :global(.vtex-checkbox__label) {
+    background-color: #d4b126;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--dorado :global(.vtex-checkbox__label) {
+    background-color: #e6aa29;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--peltre :global(.vtex-checkbox__label) {
+    background-color: #5e5d58;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--transparente :global(.vtex-checkbox__label) {
+    background-color: transparent;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--suela :global(.vtex-checkbox__label) {
+    background-color: #ab4b2e;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--blanco-c-plata :global(.vtex-checkbox__label) {
+    background-color: #ffffff;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--lavanda :global(.vtex-checkbox__label) {
+    background-color: #c963eb;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--negro-agrisado :global(.vtex-checkbox__label) {
+    background-color: #3d3d3d;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--salmon :global(.vtex-checkbox__label) {
+    background-color: #ff7c73;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--mostaza :global(.vtex-checkbox__label) {
+    background-color: #ccbc08;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--newbeige :global(.vtex-checkbox__label) {
+    background-color: #d6bfca;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--lila2 :global(.vtex-checkbox__label) {
+    background-color: #d98bd9;
+  }
+  /* :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--unico :global(.vtex-checkbox__label) {
+    background-image: url("assets/multicolor.png");
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--filters) .filter__container--color .filterItem--multicolor :global(.vtex-checkbox__label) {
+    background-image: url("assets/multicolor.png");
+  } */
+  .sidebar .accordionFilterOpen--color {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox {
+    width: 16.6%;
+    cursor: auto;
+    border: none !important;
+    box-shadow: none !important;
+    justify-content: center;
+    align-items: center;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox :global(.vtex-checkbox__container) {
+    display: none;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox :global(.vtex-checkbox__label) {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    border: 1px solid #dcdcdc;
+    /* border-radius: 50%; */
+    width: 32px;
+    height: 32px;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--blanco :global(.vtex-checkbox__label) {
+    background-color: #ffffff;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--negro :global(.vtex-checkbox__label) {
+    background-color: #000000;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--gris-melange-claro :global(.vtex-checkbox__label) {
+    background-color: #cccccc;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--gris-melange-medio :global(.vtex-checkbox__label) {
+    background-color: #8c8a8c;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--gris-melange-oscuro :global(.vtex-checkbox__label) {
+    background-color: #8a8a8a;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--gris :global(.vtex-checkbox__label) {
+    background-color: #615c61;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--gris-claro :global(.vtex-checkbox__label) {
+    background-color: #e3e0e3;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--gris-medio :global(.vtex-checkbox__label) {
+    background-color: #a1a1a1;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--gris-oscuro :global(.vtex-checkbox__label) {
+    background-color: #424242;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--azul :global(.vtex-checkbox__label) {
+    background-color: #2035ab;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--azul-claro :global(.vtex-checkbox__label) {
+    background-color: #557efa;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--azul-oscuro :global(.vtex-checkbox__label) {
+    background-color: #0d00bd;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--azul-francia :global(.vtex-checkbox__label) {
+    background-color: #3c00ff;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--verde :global(.vtex-checkbox__label) {
+    background-color: #8aeb9e;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--verde-claro :global(.vtex-checkbox__label) {
+    background-color: #b7e6ac;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--verde-oscuro :global(.vtex-checkbox__label) {
+    background-color: #0a8f1a;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--verde-militar :global(.vtex-checkbox__label) {
+    background-color: #7c9909;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--rosa :global(.vtex-checkbox__label) {
+    background-color: #ffc9ff;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--rosa-claro :global(.vtex-checkbox__label) {
+    background-color: #ffcfcf;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--rosa-oscuro :global(.vtex-checkbox__label) {
+    background-color: #8f3967;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--fucsia :global(.vtex-checkbox__label) {
+    background-color: #ff75ff;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--rojo :global(.vtex-checkbox__label) {
+    background-color: #ff0000;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--rojo-claro :global(.vtex-checkbox__label) {
+    background-color: #ff3d3d;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--rojo-oscuro :global(.vtex-checkbox__label) {
+    background-color: #c70000;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--bordeaux :global(.vtex-checkbox__label) {
+    background-color: #a10303;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--nude :global(.vtex-checkbox__label) {
+    background-color: #fae1bb;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--crudo :global(.vtex-checkbox__label) {
+    background-color: #f5ecc1;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--off-white :global(.vtex-checkbox__label) {
+    background-color: #f7fbfc;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--vison :global(.vtex-checkbox__label) {
+    background-color: #dbdac3;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--celeste :global(.vtex-checkbox__label) {
+    background-color: #7ac9e6;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--violeta :global(.vtex-checkbox__label) {
+    background-color: #7d2c7d;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--topo :global(.vtex-checkbox__label) {
+    background-color: #3b3933;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--tostado :global(.vtex-checkbox__label) {
+    background-color: #968d6a;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--aqua :global(.vtex-checkbox__label) {
+    background-color: #afe6f5;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--turquesa :global(.vtex-checkbox__label) {
+    background-color: #00bcf5;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--rosa-melange :global(.vtex-checkbox__label) {
+    background-color: #fa7ffa;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--crudo-c-melange :global(.vtex-checkbox__label) {
+    background-color: #bdbdb6;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--crudo-c-rosa :global(.vtex-checkbox__label) {
+    background-color: #fad2fa;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--crudo-c-celeste :global(.vtex-checkbox__label) {
+    background-color: #9fdee6;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--crudo-c-negro :global(.vtex-checkbox__label) {
+    background-color: #4b4d3e;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--coral :global(.vtex-checkbox__label) {
+    background-color: #3c00ff;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--petroleo :global(.vtex-checkbox__label) {
+    background-color: #147fb8;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--nude-oscuro :global(.vtex-checkbox__label) {
+    background-color: #3c00ff;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--crudo-apto :global(.vtex-checkbox__label) {
+    background-color: #e6e8a7;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--beige :global(.vtex-checkbox__label) {
+    background-color: #d9b289;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--habano :global(.vtex-checkbox__label) {
+    background-color: #ab4228;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--bordo :global(.vtex-checkbox__label) {
+    background-color: #8f1e1e;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--marino :global(.vtex-checkbox__label) {
+    background-color: #052da6;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--blanco-sucio :global(.vtex-checkbox__label) {
+    background-color: #052da6;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--plata-vieja :global(.vtex-checkbox__label) {
+    background-color: #cccccc;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--niquel-mate :global(.vtex-checkbox__label) {
+    background-color: #b8b7ab;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--niquel :global(.vtex-checkbox__label) {
+    background-color: #737373;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--bronce :global(.vtex-checkbox__label) {
+    background-color: #c25004;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--plata :global(.vtex-checkbox__label) {
+    background-color: #848687;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--cobre :global(.vtex-checkbox__label) {
+    background-color: #8e402a;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--niquel :global(.vtex-checkbox__label) {
+    background-color: #737373;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--cobre-viejo :global(.vtex-checkbox__label) {
+    background-color: #96964f;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--rosa-viejo :global(.vtex-checkbox__label) {
+    background-color: #c2b4c2;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--uva :global(.vtex-checkbox__label) {
+    background-color: #7e15a1;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--lila :global(.vtex-checkbox__label) {
+    background-color: #af96ff;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--amarillo-claro :global(.vtex-checkbox__label) {
+    background-color: #fff654;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--amarillo-medio :global(.vtex-checkbox__label) {
+    background-color: #f0d84f;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--negro-c-azul :global(.vtex-checkbox__label) {
+    background-color: #060d4d;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--militar-c-rosa :global(.vtex-checkbox__label) {
+    background-color: #1c5409;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--militar-c-crudo :global(.vtex-checkbox__label) {
+    background-color: #064d00;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--camuflado :global(.vtex-checkbox__label) {
+    background-color: #1c6313;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--negro-c-gris :global(.vtex-checkbox__label) {
+    background-color: #4d4d4d;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--amarillo :global(.vtex-checkbox__label) {
+    background-color: #f0f011;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--crudo-melange :global(.vtex-checkbox__label) {
+    background-color: #e3d1dc;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--aero :global(.vtex-checkbox__label) {
+    background-color: #488dc9;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--camel :global(.vtex-checkbox__label) {
+    background-color: #bf701c;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--verde-ingles :global(.vtex-checkbox__label) {
+    background-color: #33780b;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--cobre-brillante :global(.vtex-checkbox__label) {
+    background-color: #c9631a;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--cobre-mate :global(.vtex-checkbox__label) {
+    background-color: #ba481a;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--negro-lurex :global(.vtex-checkbox__label) {
+    background-color: #2e2e2e;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--naranja :global(.vtex-checkbox__label) {
+    background-color: #ff9d00;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--metalico :global(.vtex-checkbox__label) {
+    background-color: #9ea1a3;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--ladrillo-brick :global(.vtex-checkbox__label) {
+    background-color: #f0670c;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--celeste-claro :global(.vtex-checkbox__label) {
+    background-color: #91e9ff;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--oro-rosa :global(.vtex-checkbox__label) {
+    background-color: #d4b126;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--dorado :global(.vtex-checkbox__label) {
+    background-color: #e6aa29;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--peltre :global(.vtex-checkbox__label) {
+    background-color: #5e5d58;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--transparente :global(.vtex-checkbox__label) {
+    background-color: transparent;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--suela :global(.vtex-checkbox__label) {
+    background-color: #ab4b2e;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--blanco-c-plata :global(.vtex-checkbox__label) {
+    background-color: #ffffff;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--lavanda :global(.vtex-checkbox__label) {
+    background-color: #c963eb;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--negro-agrisado :global(.vtex-checkbox__label) {
+    background-color: #3d3d3d;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--salmon :global(.vtex-checkbox__label) {
+    background-color: #ff7c73;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--mostaza :global(.vtex-checkbox__label) {
+    background-color: #ccbc08;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--newbeige :global(.vtex-checkbox__label) {
+    background-color: #d6bfca;
+  }
+  .sidebar .accordionFilterOpen--color .filterAccordionItemBox--lila2 :global(.vtex-checkbox__label) {
+    background-color: #d98bd9;
   }

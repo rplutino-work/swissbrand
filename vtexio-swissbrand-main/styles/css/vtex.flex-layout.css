@@ -544,9 +544,13 @@
     /* border-bottom: 0.5px solid #231F20; */
     padding: 25px 0 10px;
     margin-top: 25px;
+    align-items: center;
 }
 .flexRowContent--order-by .stretchChildrenWidth {
     justify-content: flex-end;
+}
+.flexRowContent--order-by .stretchChildrenWidth:last-child {
+    margin-left: auto;
 }
 :global(.vtex-search-result-3-x-orderBy--layout) {
     display: flex;
