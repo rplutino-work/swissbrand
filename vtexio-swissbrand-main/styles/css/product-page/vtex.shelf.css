@@ -71,7 +71,7 @@
 :global(.vtex-flex-layout-0-x-flexRow--product-main-content) .sliderContainer--related-products-sku-filter :global(.vtex-slider-0-x-sliderFrame){
     justify-content: flex-start;
 }
-.sliderContainer--related-products-sku-filter .dotsContainer {
+.sliderContainer--related-products-sku-filter :global(.vtex-slider-0-x-dotsContainer) {
     display: none;
 }
 
