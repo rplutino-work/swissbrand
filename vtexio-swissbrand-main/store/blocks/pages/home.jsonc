@@ -7,7 +7,8 @@
         "blocks": [
             // "class-header",
             // "flex-layout.row#info-card-home",
-            "slider-layout#info-card-home",
+            // "slider-layout#info-card-home",
+            "list-context.info-card-list#demo",
             // "list-context.image-list#main-gallery",
             // "flex-layout.row#category",
             "flex-layout.row#top-gallery",
@@ -84,7 +85,7 @@
     },
     "flex-layout.row#info-card-home": {
       "children": [
-        "info-card#home"
+        "info-card#home-1"
           ],
       "props": {
           "blockClass": ["info-card-home"],
@@ -92,9 +93,9 @@
           "preserveLayoutOnMobile": false
       }
     },
-    "info-card#home": {
+    "info-card#home-1": {
       "props": {
-        "id": "info-card-home",
+        "id": "info-card-home-1",
         "isFullModeStyle": true,
         "textPosition": "center",
         "imageUrl": "assets/imgs/desktop/luz-de-mar-slider.jpg",
@@ -107,83 +108,165 @@
         "textMode": "rich-text"
       }
     },  
+    "info-card#home-2": {
+        "props": {
+          "id": "info-card-home-2",
+          "isFullModeStyle": true,
+          "textPosition": "center",
+          "imageUrl": "assets/imgs/desktop/luz-de-mar-slider.jpg",
+          "mobileImageUrl": "assets/imgs/mobile/luz-de-mar-slider.jpg",
+          "headline": "LOREM IPSUM TEXT",
+          "subhead": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+          "callToActionText": "VER MÁS",
+          "callToActionUrl": "/sale/d",
+          "blockClass": "info-card-home",
+          "textMode": "rich-text"
+        }
+      },
+      "info-card#home-3": {
+        "props": {
+          "id": "info-card-home-3",
+          "isFullModeStyle": true,
+          "textPosition": "center",
+          "imageUrl": "assets/imgs/desktop/luz-de-mar-slider.jpg",
+          "mobileImageUrl": "assets/imgs/mobile/luz-de-mar-slider.jpg",
+          "headline": "LOREM IPSUM TEXT",
+          "subhead": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+          "callToActionText": "VER MÁS",
+          "callToActionUrl": "/sale/d",
+          "blockClass": "info-card-home",
+          "textMode": "rich-text"
+        }
+      },
+      "info-card#home-4": {
+        "props": {
+          "id": "info-card-home-4",
+          "isFullModeStyle": true,
+          "textPosition": "center",
+          "imageUrl": "assets/imgs/desktop/luz-de-mar-slider.jpg",
+          "mobileImageUrl": "assets/imgs/mobile/luz-de-mar-slider.jpg",
+          "headline": "LOREM IPSUM TEXT",
+          "subhead": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+          "callToActionText": "VER MÁS",
+          "callToActionUrl": "/sale/d",
+          "blockClass": "info-card-home",
+          "textMode": "rich-text"
+        }
+      }, 
+      "info-card#home-5": {
+        "props": {
+          "id": "info-card-home-5",
+          "isFullModeStyle": true,
+          "textPosition": "center",
+          "imageUrl": "assets/imgs/desktop/luz-de-mar-slider.jpg",
+          "mobileImageUrl": "assets/imgs/mobile/luz-de-mar-slider.jpg",
+          "headline": "LOREM IPSUM TEXT",
+          "subhead": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+          "callToActionText": "VER MÁS",
+          "callToActionUrl": "/sale/d",
+          "blockClass": "info-card-home",
+          "textMode": "rich-text"
+        }
+      },
+      "info-card#home-6": {
+        "props": {
+          "id": "info-card-home-6",
+          "isFullModeStyle": true,
+          "textPosition": "center",
+          "imageUrl": "assets/imgs/desktop/luz-de-mar-slider.jpg",
+          "mobileImageUrl": "assets/imgs/mobile/luz-de-mar-slider.jpg",
+          "headline": "LOREM IPSUM TEXT",
+          "subhead": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+          "callToActionText": "VER MÁS",
+          "callToActionUrl": "/sale/d",
+          "blockClass": "info-card-home",
+          "textMode": "rich-text"
+        }
+      }, 
+      "info-card#home-7": {
+        "props": {
+          "id": "info-card-home-7",
+          "isFullModeStyle": true,
+          "textPosition": "center",
+          "imageUrl": "assets/imgs/desktop/luz-de-mar-slider.jpg",
+          "mobileImageUrl": "assets/imgs/mobile/luz-de-mar-slider.jpg",
+          "headline": "LOREM IPSUM TEXT",
+          "subhead": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+          "callToActionText": "VER MÁS",
+          "callToActionUrl": "/sale/d",
+          "blockClass": "info-card-home",
+          "textMode": "rich-text"
+        }
+      }, 
     "slider-layout#info-card-home": {
         "props": {
             "blockClass": "info-card-home",
-            "infinite": true,
+            "infinite": false,
             "itemsPerPage": {
                 "desktop": 1,
                 "tablet": 1,
                 "phone": 1
             }
-        },
-        "children": ["info-card#home", "info-card#home"]
+        }
     },
     "list-context.info-card-list#demo": {
         "children": [
-            "slider-layout#category-home"
+            // "slider-layout#category-home"
+            "slider-layout#info-card-home"
         ],
         "props": {
           "infoCards": [
             {
-                "blockClass":"category-home-item",
-                "isFullModeStyle": false,
-                "textPosition": "left",
-                "imageUrl": "assets/imgs/desktop/luz-de-mar-triangulos.jpg",
-                "mobileImageUrl": "assets/imgs/mobile/luz-de-mar-triangulos.jpg",
-                "callToActionText": "Triangulos",
-                "callToActionUrl": "/",
-                "textAlignment": "center"
+                "id": "info-card-home-1",
+                "isFullModeStyle": true,
+                "textPosition": "center",
+                "imageUrl": "assets/imgs/desktop/luz-de-mar-slider.jpg",
+                "mobileImageUrl": "assets/imgs/mobile/luz-de-mar-slider.jpg",
+                "headline": "LOREM IPSUM TEXT",
+                "subhead": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+                "callToActionText": "VER MÁS",
+                "callToActionUrl": "/sale/d",
+                "blockClass": "info-card-home",
+                "textMode": "rich-text"
             },
             {
-                "blockClass":"category-home-item",
-                "isFullModeStyle": false,
-                "textPosition": "left",
-                "imageUrl": "assets/imgs/desktop/luz-de-mar-trikinis.jpg",
-                "mobileImageUrl": "assets/imgs/mobile/luz-de-mar-trikinis.jpg",
-                "callToActionText": "Trikinis",
-                "callToActionUrl": "/",
-                "textAlignment": "center"
+                "id": "info-card-home-2",
+                "isFullModeStyle": true,
+                "textPosition": "center",
+                "imageUrl": "assets/imgs/desktop/luz-de-mar-slider.jpg",
+                "mobileImageUrl": "assets/imgs/mobile/luz-de-mar-slider.jpg",
+                "headline": "LOREM IPSUM TEXT",
+                "subhead": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+                "callToActionText": "VER MÁS",
+                "callToActionUrl": "/sale/d",
+                "blockClass": "info-card-home",
+                "textMode": "rich-text"
             },
             {
-                "blockClass":"category-home-item",
-                "isFullModeStyle": false,
-                "textPosition": "left",
-                "imageUrl": "assets/imgs/desktop/luz-de-mar-entera.jpg",
-                "mobileImageUrl": "assets/imgs/mobile/luz-de-mar-entera.jpg",
-                "callToActionText": "Enteras",
-                "callToActionUrl": "/",
-                "textAlignment": "center"
+                "id": "info-card-home-3",
+                "isFullModeStyle": true,
+                "textPosition": "center",
+                "imageUrl": "assets/imgs/desktop/luz-de-mar-slider.jpg",
+                "mobileImageUrl": "assets/imgs/mobile/luz-de-mar-slider.jpg",
+                "headline": "LOREM IPSUM TEXT",
+                "subhead": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+                "callToActionText": "VER MÁS",
+                "callToActionUrl": "/sale/d",
+                "blockClass": "info-card-home",
+                "textMode": "rich-text"
             },
             {
-                "blockClass":"category-home-item",
-                "isFullModeStyle": false,
-                "textPosition": "left",
-                "imageUrl": "assets/imgs/desktop/luz-de-mar-bendeau.jpg",
-                "mobileImageUrl": "assets/imgs/mobile/luz-de-mar-bendeau.jpg",
-                "callToActionText": "Bendeaus",
-                "callToActionUrl": "/",
-                "textAlignment": "center"
-            },
-            {
-                "blockClass":"category-home-item",
-                "isFullModeStyle": false,
-                "textPosition": "left",
-                "imageUrl": "assets/imgs/desktop/luz-de-mar-banner-lounge.jpg",
-                "mobileImageUrl": "assets/imgs/mobile/luz-de-mar-banner-lounge.jpg",
-                "callToActionText": "Lounges",
-                "callToActionUrl": "/",
-                "textAlignment": "center"
-            },
-            {
-                "blockClass":"category-home-item",
-                "isFullModeStyle": false,
-                "textPosition": "left",
-                "imageUrl": "assets/imgs/desktop/luz-de-mar-banner-culotte.jpg",
-                "mobileImageUrl": "assets/imgs/mobile/luz-de-mar-banner-culotte.jpg",
-                "callToActionText": "Culotte",
-                "callToActionUrl": "/",
-                "textAlignment": "center"
+                "id": "info-card-home-4",
+                "isFullModeStyle": true,
+                "textPosition": "center",
+                "imageUrl": "assets/imgs/desktop/luz-de-mar-slider.jpg",
+                "mobileImageUrl": "assets/imgs/mobile/luz-de-mar-slider.jpg",
+                "headline": "LOREM IPSUM TEXT",
+                "subhead": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+                "callToActionText": "VER MÁS",
+                "callToActionUrl": "/sale/d",
+                "blockClass": "info-card-home",
+                "textMode": "rich-text"
             }
           ]
         }
