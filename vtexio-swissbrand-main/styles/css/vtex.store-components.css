@@ -107,10 +107,13 @@
     overflow: hidden;
     border: 1px solid transparent;
 }
-
+.imageElementLink--submenu-banner {
+    width: auto !important;
+    margin-right: 40px;
+}
 .imageElement--submenu-banner {
     display: block;
-    width: 100%;
+    width: auto;
     height: 100%;
     object-fit: cover;
     transition: transform 0.2s ease-in-out;
