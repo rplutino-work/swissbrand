@@ -227,9 +227,9 @@
         margin: 0 auto;
         padding-bottom: 80px;
     }
-    .flexRow--banner-2-wrapper :global(.vtex-store-components-3-x-container) {
+    /* .flexRow--banner-2-wrapper :global(.vtex-store-components-3-x-container) {
         padding: 0 7px;
-    }
+    } */
 }
 
 

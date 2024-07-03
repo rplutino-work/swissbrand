@@ -1321,20 +1321,26 @@
 }
 
 /* INFOCARD BANNERS 1 */
-
-.infoCardContainer--info-card-banner-1 {
+:global(.vtex-slider-layout-0-x-sliderLayoutContainer--info-card-banner-1) {
+    margin-bottom: 45px;
+}
+:global(.vtex-slider-layout-0-x-sliderTrackContainer--info-card-banner-1) {
+    padding-top: 25px;
+}
+:global(.vtex-slider-layout-0-x-infoCardContainer--info-card-banner-1) {
     width: 574px !important;
     height: 430px;
+    flex-direction: row;
     justify-content: flex-start;
     align-items: flex-end;
 }
-.infoCardTextContainer--info-card-banner-1 {
+:global(.vtex-slider-layout-0-x-infoCardTextContainer--info-card-banner-1) {
     justify-content: flex-start;
     align-items: flex-start;
     width: auto;
     margin: 20px 30px;
 }
-.infoCardTextContainer--info-card-banner-1 .container--info-card-banner-1 .paragraph--info-card-banner-1 {
+:global(.vtex-slider-layout-0-x-infoCardTextContainer--info-card-banner-1) :global(.vtex-slider-layout-0-x-container--info-card-banner-1) :global(.vtex-slider-layout-0-x-paragraph--info-card-banner-1) {
     font-size: 25px;
     font-weight: 500;
     line-height: 30.48px;
@@ -1342,37 +1348,37 @@
     color: #FFFFFF;
     margin: 0 0 10px;
 }
-.infoCardCallActionContainer--info-card-banner-1 {
+:global(.vtex-slider-layout-0-x-infoCardCallActionContainer--info-card-banner-1) {
     margin: 0;
 }
-.infoCardCallActionContainer--info-card-banner-1 :global(.vtex-button) {
+:global(.vtex-slider-layout-0-x-infoCardCallActionContainer--info-card-banner-1) :global(.vtex-button) {
     background: #BD202E;
-    width: 253px;
+    width: 169px;
     height: 44px;
     border: none;
     border-radius: initial;
     transition: all 350ms ease-in-out;
 }
-.infoCardCallActionContainer--info-card-banner-1 :global(.vtex-button) :global(.vtex-button__label) {
+:global(.vtex-slider-layout-0-x-infoCardCallActionContainer--info-card-banner-1) :global(.vtex-button) :global(.vtex-button__label) {
     font-size: 16px;
     font-weight: 400;
     line-height: 16px;
     letter-spacing: 1px;
     color: #FFFFFF;
 }
-.infoCardCallActionContainer--info-card-banner-1 :global(.vtex-button):hover {
+:global(.vtex-slider-layout-0-x-infoCardCallActionContainer--info-card-banner-1) :global(.vtex-button):hover {
     background: #E46262;
 }
 
 @media only screen and (max-width: 1025px){
-  .infoCardContainer--info-card-banner-1 {
+    :global(.vtex-slider-layout-0-x-infoCardContainer--info-card-banner-1) {
       width: 354px !important;
       height: 259px;
   }
-  .infoCardCallActionContainer--info-card-banner-1 :global(.vtex-button) {
+  :global(.vtex-slider-layout-0-x-infoCardCallActionContainer--info-card-banner-1) :global(.vtex-button) {
       display: none;
   }
-  .infoCardTextContainer--info-card-banner-1 {
+  :global(.vtex-slider-layout-0-x-infoCardTextContainer--info-card-banner-1) {
       margin: 10px 25px;
   }
 }
@@ -1408,7 +1414,7 @@
 }
 .infoCardCallActionContainer--info-card-banner-2 :global(.vtex-button) {
     background: #BD202E;
-    width: 253px;
+    width: 169px;
     height: 44px;
     border: none;
     border-radius: initial;
@@ -1430,7 +1436,7 @@
     width: 100% !important;
     height: 160px;
   }
-  .infoCardTextContainer--info-card-banner-1 .container--info-card-banner-1 .paragraph--info-card-banner-1 {
+  :global(.vtex-slider-layout-0-x-infoCardTextContainer--info-card-banner-1) :global(.vtex-slider-layout-0-x-container--info-card-banner-1) :global(.vtex-slider-layout-0-x-paragraph--info-card-banner-1) {
     font-size: 18px;
     font-weight: 400;
     line-height: 21.94px;
@@ -1464,8 +1470,8 @@
 }
 .infoCardCallActionContainer--shelf-home-desktop-01-banner :global(.vtex-button) {
   background: #BD202E;
-  width: 213px;
-  height: 43px;
+  width: 169px;
+  height: 44px;
   border: none;
   border-radius: initial;
   transition: all 350ms ease-in-out;
@@ -1479,6 +1485,30 @@
 }
 .infoCardCallActionContainer--shelf-home-desktop-01-banner :global(.vtex-button):hover {
   background: #E46262;
+}
+
+.infoCardTextContainer--shelf-home-desktop-01-banner {
+    justify-content: flex-start;
+    align-items: center;
+    width: auto;
+    margin: 20px 30px;
+}
+:global(.vtex-flex-layout-0-x-flexRow--shelf-home-desktop-02) .infoCardTextContainer--shelf-home-desktop-01-banner {
+    justify-content: flex-start;
+    align-items: center;
+    width: auto;
+    margin: 20px 30px;
+}
+.infoCardTextContainer--shelf-home-desktop-01-banner .container--shelf-home-desktop-01-banner .paragraph--shelf-home-desktop-01-banner {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30.48px;
+    letter-spacing: 0.05em; 
+    color: #FFFFFF;
+    margin: 0 0 10px;
+}
+.infoCardCallActionContainer--shelf-home-desktop-01-banner {
+    margin-top: 0;
 }
 
 @media only screen and (max-width: 1025px){

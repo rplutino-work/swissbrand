@@ -339,7 +339,7 @@
     "image#kids-teens-banner": {
         "props": {
             "blockClass": "submenu-banner",
-            "src": "https://placehold.jp/331x206.png",
+            "src": "https://placehold.jp/434x206.png",
             "link": true
         }
     }

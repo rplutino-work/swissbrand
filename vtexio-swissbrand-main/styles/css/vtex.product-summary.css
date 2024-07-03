@@ -83,11 +83,11 @@
 .container--shelf-product .clearLink--shelf-product:first-child:hover{
     transition: all 250ms ease-in-out;
 }
-.container--shelf-product .clearLink--shelf-product:first-child:hover .element--shelf-product {
+/* .container--shelf-product .clearLink--shelf-product:first-child:hover .element--shelf-product {
     opacity: 0.6;
     transition: all 250ms ease-in-out;
-}
-.container--shelf-product .clearLink--shelf-product:first-child::before {
+} */
+/* .container--shelf-product .clearLink--shelf-product:first-child::before {
     content: "Ver más";
     background-color: #BD202E;
     color: white;
@@ -112,7 +112,7 @@
 .container--shelf-product .clearLink--shelf-product:first-child:hover::before {
     opacity: 1;
     transition: all 250ms ease-in-out;
-}
+} */
 
 @media only screen and (max-width: 1025px) {
     .image--shelf-product {

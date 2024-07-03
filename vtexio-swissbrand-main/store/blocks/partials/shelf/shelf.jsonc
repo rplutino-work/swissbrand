@@ -37,7 +37,7 @@
         "props": {
             "blockClass": "shelf",
             "usePagination": true,
-            "infinite": false,
+            "infinite": true,
             "showNavigationArrows": "always",
             "showPaginationDots": "never",
 
@@ -87,7 +87,7 @@
         "props": {
             "blockClass": "shelf",
             "usePagination": true,
-            "infinite": false,
+            "infinite": true,
             "showNavigationArrows": "always",
             "showPaginationDots": "never",
     
@@ -222,14 +222,24 @@
               "blockClass": [
                 "shelf-home-desktop-01"
               ],
-              "colSizing":"auto"
+              "colSizing":"auto",
+              "fullWidth": true
           },
           "children": [
             // "image#shelf-home-desktop-01-banner",
             "info-card#shelf-home-desktop-01-banner1",
-            "list-context.product-list#shelf-01"
+            "flex-layout.col#shelf-home-desktop-01-products"
           ]
         },
+        "flex-layout.col#shelf-home-desktop-01-products": {
+            "children": [
+                "list-context.product-list#shelf-01"
+            ],
+            "props": {
+              "width": "75%",
+              "preventVerticalStretch": true
+            }
+          },
         "info-card#shelf-home-desktop-01-banner1": {
             "props": {
               "id": "shelf-home-desktop-01-banner",
@@ -237,7 +247,7 @@
               "textPosition": "center",
               "imageUrl": "https://placehold.jp/271x411.png",
               "mobileImageUrl": "https://placehold.jp/354x411.png",
-            //   "headline": "LOREM IPSUM",
+              "headline": "LOREM IPSUM",
             //   "subhead": "Lorem Ipsum",
               "callToActionText": "VER MÁS",
               "callToActionUrl": "/sale/d",
@@ -329,9 +339,18 @@
                 "colSizing":"auto"
             },
             "children": [
-              "list-context.product-list#shelf-02",
+            "flex-layout.col#shelf-home-desktop-02-products",
             //   "image#shelf-home-desktop-02-banner"
             "info-card#shelf-home-desktop-02-banner1"
             ]
+          },
+          "flex-layout.col#shelf-home-desktop-02-products": {
+            "children": [
+                "list-context.product-list#shelf-02"
+            ],
+            "props": {
+              "width": "75%",
+              "preventVerticalStretch": true
+            }
           }
 }

@@ -303,13 +303,22 @@
 .sliderArrows--top-gallery{
     width: 16px;
 }
+.sliderArrows--info-card-banner-1{
+    width: 16px;
+}
 
 .caretIcon--top-gallery{
+    color: #434343;
+}
+.caretIcon--info-card-banner-1{
     color: #434343;
 }
 
 @media only screen and (min-width: 1025px) {
     .sliderTrackContainer--top-gallery {
+        padding-top: 60px;
+    }
+    .sliderTrackContainer--info-card-banner-1 {
         padding-top: 60px;
     }
     .sliderLayoutContainer--evento-main-gallery {
@@ -319,12 +328,22 @@
         max-width: 1200px;
         padding: 0;
     }
+    .sliderLayoutContainer--info-card-banner-1 {
+        max-width: 1200px;
+        padding: 0;
+    }
     
     .slide--top-gallery {
         padding: 0 12.5px;
     }
+    .slide--info-card-banner-1 {
+        padding: 0 12.5px;
+    }
 
     .sliderLayoutContainer--top-gallery {
+        margin-bottom: 25px;
+    }
+    .sliderLayoutContainer--info-card-banner-1 {
         margin-bottom: 25px;
     }
 }
