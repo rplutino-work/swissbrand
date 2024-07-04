@@ -38,6 +38,7 @@
 
 .drawerContent--minicart{
     /* padding: 0px 25px; */
+    /* overflow-y: inherit; */
 }
 
 .closeIconContainer--minicart {
@@ -81,16 +82,18 @@
 
 .minicartProductListContainer {
     padding: 0px 25px;
+    /* min-height: 50%;
+    overflow-y: scroll; */
 }
 
 
 .minicartContentContainer{
-    margin-top: 4rem;
+    /* margin-top: 4rem; */
 }
 
 @media(max-width:991px){
     .minicartContentContainer{
-        margin-top: 2rem;
+        /* margin-top: 2rem; */
     } 
 }
 

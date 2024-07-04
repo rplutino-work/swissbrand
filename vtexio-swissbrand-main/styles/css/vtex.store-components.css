@@ -645,18 +645,6 @@
     background-image: linear-gradient(to top right,transparent 44%,rgba(0,0,0,.3) 48%,currentColor 0,currentColor 52%,transparent 0);
 }
 
-.skuSelectorSubcontainer--talle .skuSelectorName::after {
-    content: 'Elegí tu talle';
-    font-size: 12px;
-}
-
-.skuSelectorContainer--pdp-custom-sku-selector .skuSelectorSubcontainer--talle .skuSelectorName::after {
-    content: 'Elegí tu talle';
-    font-size: 11px;
-    line-height: 16px;
-    font-weight: 600;
-}
-
 .productDescriptionTitle {
     display: none;
 }
@@ -696,11 +684,11 @@
         font-size: 11px;
         font-weight: 500;
     }
-    .skuSelectorSubcontainer--talle .skuSelectorName::after {
+    /* .skuSelectorSubcontainer--talle .skuSelectorName::after {
         content: 'Elegí tu talle';
         font-size: 11px;
         font-weight: 500;
-    }
+    } */
     .titleSimilar::after {
         content: 'Seleccioná tu color';
         font-size: 11px;
@@ -1182,32 +1170,28 @@
 }
 
 /* KITLOOK */
-.skuSelectorSubcontainer--color :global(.vtex-button),
-.skuSelectorSubcontainer--talle :global(.vtex-button) {
+.skuSelectorSubcontainer--color :global(.vtex-button){
     border: 0 !important;
     border-radius: 100%;
     width: 100%;
     background: transparent !important;
 }
 
-.skuSelectorSubcontainer--color :global(.vtex-button__label),
-.skuSelectorSubcontainer--talle :global(.vtex-button__label) {
+.skuSelectorSubcontainer--color :global(.vtex-button__label){
     font-size: 0;
     padding: 0;
     width: 10px;
     margin: 0 auto;
 }
 
-.skuSelectorSubcontainer--color :global(.vtex-button__label)::after,
-.skuSelectorSubcontainer--talle :global(.vtex-button__label)::after {
+.skuSelectorSubcontainer--color :global(.vtex-button__label)::after {
     font-size: 15px;
     content: '+';
     position: relative;
     top: -1px;
 }
 
-.skuSelectorSubcontainer--color .seeMoreButton,
-.skuSelectorSubcontainer--talle .seeMoreButton {
+.skuSelectorSubcontainer--color .seeMoreButton {
     width: 32px;
     height: 32px;
     margin: 0 6px 6px 0;
@@ -1266,7 +1250,7 @@
     justify-content: center;
 }
 :global(.vtex-slider-layout-0-x-infoCardTextContainer--info-card-home) :global(.vtex-slider-layout-0-x-container--info-card-home) :global(.vtex-slider-layout-0-x-paragraph--info-card-home) {
-    width: 55%;
+    width: 65%;
     font-size: 16px;
     font-weight: 400;
     line-height: 19.5px;
@@ -1556,7 +1540,23 @@
 
 /* selector de tamaños */
 
-.skuSelectorContainer--pdp-custom-sku-selector::before{
+/* .skuSelectorContainer--pdp-custom-sku-selector::before{
+    content: "Selecciona tamaño";
+    font-size: 12px;
+    color: #231F20;
+} */
+.skuSelectorSubcontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.skuSelectorSubcontainer--talle::before{
+    content: "Selecciona talle";
+    font-size: 12px;
+    color: #231F20;
+}
+
+.skuSelectorSubcontainer--tamano::before{
     content: "Selecciona tamaño";
     font-size: 12px;
     color: #231F20;
@@ -1571,6 +1571,10 @@
 }
 
 .skuSelectorSubcontainer--tamano .frameAround--pdp-custom-sku-selector, .skuSelectorInternalBox{
+    border-radius: initial !important;
+}
+
+.skuSelectorSubcontainer--talle .frameAround--pdp-custom-sku-selector, .skuSelectorInternalBox{
     border-radius: initial !important;
 }
 

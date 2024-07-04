@@ -203,19 +203,19 @@
         }
       },
       "checkout-summary.compact#minicart": {
-        "children": [
-          "summary-totalizers#minicart"
-        ],
         "props": {
-          "totalizersToShow": ["Items", "Discounts"]
-        }
-      },
-      "summary-totalizers#minicart": {
+            "totalizersToShow": ["Items", "Discounts"]
+        },
+
+        "children": ["summary-totalizers#minicart"]
+    },
+
+    "summary-totalizers#minicart": {
         "props": {
-          "showTotal": true,
-          "showDeliveryTotal": false
+            "showTotal": true,
+            "showDeliveryTotal": false
         }
-      },
+    },
 
     "product-list-content-mobile": {
         "children": ["flex-layout.row#minicart-list"]

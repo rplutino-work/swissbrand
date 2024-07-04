@@ -55,25 +55,10 @@
     height: 32px;
 }
 
-.kitlookDetails :global(.vtex-store-components-3-x-skuSelectorSubcontainer--color) :global(.vtex-store-components-3-x-skuSelectorName), 
-.kitlookDetails :global(.vtex-store-components-3-x-skuSelectorSubcontainer--talle) :global(.vtex-store-components-3-x-skuSelectorName ){
+.kitlookDetails :global(.vtex-store-components-3-x-skuSelectorSubcontainer--color) :global(.vtex-store-components-3-x-skuSelectorName){
     font-size: 0px;
     color: #434343;
     font-weight: 600;
-}
-
-.kitlookDetails :global(.vtex-store-components-3-x-skuSelectorSubcontainer--talle) {
-    margin: 15px 0;
-}
-
-.kitlookDetails :global(.vtex-store-components-3-x-skuSelectorSubcontainer--talle) :global(.vtex-store-components-3-x-skuSelectorName)::after {
-    font-size: 0;
-}
-
-.kitlookDetails :global(.vtex-store-components-3-x-skuSelectorSubcontainer--talle) :global(.vtex-store-components-3-x-skuSelectorName)::after {
-    font-size: 0;
-    content: "Selecciona tu talle";
-    font-size: 12px !important;
 }
 
 .kitlookName {

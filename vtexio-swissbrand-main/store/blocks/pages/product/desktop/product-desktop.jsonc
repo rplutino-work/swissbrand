@@ -192,7 +192,7 @@
     "sku-selector#pdp":{
         "props": {
             "blockClass": ["pdp-custom-sku-selector"],
-            "visibleVariations": ["Tamaño"],
+            "visibleVariations": ["Tamaño", "Talle"],
             // "thumbnailImage": ["color"],
             // "hideImpossibleCombinations": true,
             "maxItems": 40
