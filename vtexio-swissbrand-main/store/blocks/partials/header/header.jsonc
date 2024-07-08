@@ -127,6 +127,7 @@
     },
 
     "rich-text#top-bar": {
+      "title": "Topbar text",
       "props": {
         "blockClass": ["top-bar"],
         "font": "t-body",

@@ -1,8 +1,46 @@
-{
+{   "flex-layout.row#footer-newsletter": {
+    "props": {
+        "blockClass": "footer-newsletter",
+        "colSizing": "equal"
+    },
+
+    "children": [
+        "flex-layout.col#footer-newsletter-1",
+        "flex-layout.col#footer-newsletter-2"
+    ]
+    },
+    "flex-layout.col#footer-newsletter-1": {
+        "props": {
+            // "preventVerticalStretch": true
+        },
+
+        "children": ["rich-text#footer-newsletter-title", "rich-text#footer-newsletter-subtitle"]
+    },
+    "flex-layout.col#footer-newsletter-2": {
+        "props": {
+            // "preventVerticalStretch": true
+        },
+
+        "children": ["newsletter#footer-newsletter"]
+    },
+    "rich-text#footer-newsletter-title": {
+        "title": "Titulo newsletter",
+        "props": {
+            "text": "REGISTRATE",
+            "blockClass": "footer-newsletter-title"
+        }
+    },
+    "rich-text#footer-newsletter-subtitle": {
+        "title": "Subtitulo newsletter",
+        "props": {
+            "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+            "blockClass": "footer-newsletter-subtitle"
+        }
+    },
     "newsletter#footer-newsletter": {
         "props": {
             "blockClass": "footer-newsletter",
-            "label": "REGISTRATE",
+            "label": "",
             "placeholder": "Ingresá tu mail",
             "submit": "REGISTRATE"
         }

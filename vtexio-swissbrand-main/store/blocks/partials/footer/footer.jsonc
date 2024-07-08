@@ -5,7 +5,8 @@
 
     "footer-layout.desktop": {
         "children": ["flex-layout.row#deals",
-                    "newsletter#footer-newsletter",
+                    // "newsletter#footer-newsletter",
+                    "flex-layout.row#footer-newsletter",
                     "flex-layout.row#footer-links"
                     , "flex-layout.row#footer-bottom"
                     ]
@@ -284,7 +285,8 @@
 
     "footer-layout.mobile": {
         "children": ["flex-layout.row#deals",
-                    "newsletter#footer-newsletter",
+                    // "newsletter#footer-newsletter",
+                    "flex-layout.row#footer-newsletter",
                     "flex-layout.row#mobile-footer-links", 
                     "flex-layout.row#footer-bottom"]
     },

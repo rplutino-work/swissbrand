@@ -49,6 +49,7 @@
     },
 
     "rich-text#empty-minicart": {
+        "title": "Carrito vacio text",
         "props": {
             "text": "Tu carrito está vacío"
         }

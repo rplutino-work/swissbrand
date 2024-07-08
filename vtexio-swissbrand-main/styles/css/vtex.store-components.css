@@ -745,13 +745,44 @@
     height: 100%;
     top: 0;
 } */
-
+:global(.vtex-flex-layout-0-x-flexRow--footer-newsletter) {
+    background: #5E5E5E;
+}
+:global(.vtex-flex-layout-0-x-flexRow--footer-newsletter) .container {
+    padding: 0;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--footer-newsletter) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 85px 0;
+    /* background-size: cover; */
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+:global(.vtex-rich-text-0-x-paragraph--footer-newsletter-title) {
+    text-align: start;
+    font-size: 35px;
+    font-weight: 500;
+    color: #fff;
+    margin: 0;
+    width: 70%;
+}
+:global(.vtex-rich-text-0-x-paragraph--footer-newsletter-subtitle) {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.07px;
+    margin: 0;
+    width: 70%;
+}
 .newsletter--footer-newsletter {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
-    padding: 122px 0 38px;
-    background: #5E5E5E;
+    /* padding: 122px 0 38px; */
+    /* background: #5E5E5E; */
     /* background-size: cover; */
     position: relative;
 }
@@ -777,13 +808,13 @@
     color: #ffffff;
 }
 
-.label--footer-newsletter::after {
+/* .label--footer-newsletter::after {
     content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,";
     display: block;
     font-size: 14px;
     font-weight: 400;
     line-height: 17.07px;
-}
+} */
 
 .inputGroup--footer-newsletter {
     display: flex;
@@ -863,12 +894,19 @@
 }
 
 .confirmation--footer-newsletter{
-    padding: 144px 0 38px;
+    /* padding: 144px 0 38px; */
     color: #fff;
 }
-
-.confirmationText--footer-newsletter{
-    padding-bottom: 30px;
+.confirmationTitle--footer-newsletter{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 500;
+}
+.confirmationText--footer-newsletter {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.07px;
 }
 
 .buttonContainer--footer-newsletter :global(.vtex-button__label) {
@@ -876,6 +914,24 @@
 }
 
 @media only screen and (max-width: 1025px) {
+    :global(.vtex-flex-layout-0-x-flexRowContent--footer-newsletter) {
+        flex-direction: column;
+        padding: 71px 0;
+    }
+    :global(.vtex-rich-text-0-x-paragraph--footer-newsletter-title) {
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        text-align: left;
+        font-size: 20px;
+    }
+    :global(.vtex-rich-text-0-x-paragraph--footer-newsletter-subtitle) {
+        width: 100%;
+        font-size: 14px;
+        line-height: 20px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
     .buttonContainer--footer-newsletter :global(.vtex-button) {
         width: 139px;
     }
@@ -883,7 +939,7 @@
         width: initial;
     }
     .newsletter--footer-newsletter {
-        padding: 70px 0;
+        /* padding: 70px 0; */
         background-position: center center;
     }
 
@@ -931,22 +987,24 @@
 
 @media only screen and (min-width: 1026px) {
     .newsletter--footer-newsletter {
-        padding: 85px 0;
+        /* padding: 85px 0; */
         /* background: url("assets/imgs/desktop/luz-de-mar-temporada-2023.jpg") center no-repeat; */
     }
     .form--footer-newsletter {
         display: flex;
         max-width: 100%;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
     }
     .label--footer-newsletter {
-        width: 40%;
+        /* width: 40%; */
+        display: none;
     }
     .inputGroup--footer-newsletter {
-        width: 50%;
-        justify-content: flex-end;
+        width: 100%;
+        justify-content: center;
         /* max-width: 500px; */
-        margin: 20px 0 0;
+        margin: 0;
         padding: 0;
     }
     .container--footer-newsletter {
