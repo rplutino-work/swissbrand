@@ -747,6 +747,7 @@
 } */
 :global(.vtex-flex-layout-0-x-flexRow--footer-newsletter) {
     background: #5E5E5E;
+    position: relative;
 }
 :global(.vtex-flex-layout-0-x-flexRow--footer-newsletter) .container {
     padding: 0;
@@ -757,7 +758,6 @@
     justify-content: center;
     padding: 85px 0;
     /* background-size: cover; */
-    position: relative;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -890,12 +890,18 @@
     padding: 4px 16px;
     font-weight: 500;
     color: #ffffff;
-    background: #BD202E;
+    background: #7b151e;
 }
 
 .confirmation--footer-newsletter{
     /* padding: 144px 0 38px; */
     color: #fff;
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #5E5E5E;
 }
 .confirmationTitle--footer-newsletter{
     color: #fff;

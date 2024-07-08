@@ -4,7 +4,8 @@
             "flex-layout.row#breadcrumb-pdp",
             "flex-layout.row#product-main-content-mobile",
             "flex-layout.row#product-specs",
-            "shelf.relatedProducts#related-products-mobile"
+            // "shelf.relatedProducts#related-products-mobile"
+            "flex-layout.col#related-products-mobile"
         ]
     },
 
@@ -29,6 +30,12 @@
             // "product-images#desktop",
             "product-images#pdp",
             "flex-layout.row#product-page-badge-cyber"
+        ]
+    },
+    "flex-layout.col#related-products-mobile": {
+
+        "children": [
+            "shelf.relatedProducts#related-products-mobile"
         ]
     },
     "shelf.relatedProducts#related-products-mobile": {

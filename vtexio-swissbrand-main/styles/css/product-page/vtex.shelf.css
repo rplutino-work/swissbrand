@@ -25,10 +25,10 @@
     border-radius: 0px;
 }
 
-@media(max-width:991px){
+@media(max-width:1024px){
     .relatedProducts--productos-relacionados-pdp{
         margin-top: 0;
-        padding: 0px 18px;
+        padding: 0px 2rem;
         max-width: initial;
         background: #EFEFEF;
         margin-bottom: 0px;
