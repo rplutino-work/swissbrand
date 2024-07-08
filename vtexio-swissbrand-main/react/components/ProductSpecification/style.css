@@ -23,6 +23,7 @@
     font-size: 16px;
     color: #231F20;
     font-weight: 500;
+    align-content: center;
 }
 
 .fichaValues{
@@ -49,6 +50,7 @@
     font-weight: 500;
     font-size: 16px;
     height: 48px;
+    align-content: center;
 }
 
 @media(max-width:1024px){
