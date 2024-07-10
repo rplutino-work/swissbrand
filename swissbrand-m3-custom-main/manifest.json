@@ -3,7 +3,7 @@
   "name": "m3-custom",
   "version": "0.0.16",
   "title": "m3-custom",
-  "description": "Luz de mar custom",
+  "description": "Swissbrand custom",
   "defaultLocale": "pt-BR",
   "builders": {
     "messages": "1.x",
