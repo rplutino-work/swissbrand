@@ -1,7 +1,7 @@
 {
   "vendor": "swissbrand",
   "name": "user-auth",
-  "version": "0.0.80",
+  "version": "0.0.81",
   "title": "User auth for Swissbrand",
   "description": "Autenticação de usuário para a Swissbrand",
   "defaultLocale": "pt-BR",
