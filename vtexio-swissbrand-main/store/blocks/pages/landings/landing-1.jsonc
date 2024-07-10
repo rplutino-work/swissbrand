@@ -59,7 +59,7 @@
         "title": "Imagen",
         "props": {
             "src": "https://placehold.jp/1920x270.png",
-            "alt": "Novedades Luz de Mar",
+            "alt": "Novedades Swissbrand",
             "blockClass": "banner-landing"
         }
     },
@@ -67,7 +67,7 @@
         "title": "Imagen",
         "props": {
             "src": "https://placehold.jp/376x270.png",
-            "alt": "Novedades Luz de Mar",
+            "alt": "Novedades Swissbrand",
             "blockClass": "banner-landing"
         }
     },

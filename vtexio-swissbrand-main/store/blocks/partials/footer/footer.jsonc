@@ -30,7 +30,7 @@
     "image#footer-logo": {
         "props": {
             "src": "assets/svgs/swissbrand.svg",
-            "title": "Luz de mar"
+            "title": "Swissbrand"
         }
     },
 
@@ -80,11 +80,11 @@
     "image#logo-cace": {
         "props": {
             "src": "assets/svgs/luz-de-mar-footer-logo-cace.svg",
-            "title": "Cace Luz de Mar",
+            "title": "Cace Swissbrand",
             "blockClass": "logo-cace",
             "link": {
                 "url": "https://cace.org.ar/socio/luz-de-mar/",
-                "attributeTitle": "Cace Luz de Mar",
+                "attributeTitle": "Cace Swissbrand",
                 "openNewTab": true
             }
         }
@@ -93,11 +93,11 @@
     "image#logo-hotsale": {
         "props": {
             "src": "assets/imgs/hotsale-tienda-oficial.png",
-            "title": "Hotsale Luz de Mar",
+            "title": "Hotsale Swissbrand",
             "blockClass": "logo-hotsale",
             "link": {
                 "url": "https://www.hotsale.com.ar/luz-de-mar?k=Luz%20de%20Mar&cat=TiendaOficial",
-                "attributeTitle": "Hot Sale Luz de Mar",
+                "attributeTitle": "Hot Sale Swissbrand",
                 "openNewTab": true
             }
         }
@@ -106,11 +106,11 @@
     "image#logo-cybermonday": {
         "props": {
             "src": "assets/svgs/luz-de-mar-footer-logo-cyber-monday.svg",
-            "title": "Cybermonday Luz de Mar",
+            "title": "Cybermonday Swissbrand",
             "blockClass": "logo-cybermonday",
             "link": {
                 "url": "https://www.cybermonday.com.ar/luz-de-mar?k=Luz%20de%20Mar&cat=TiendaOficial",
-                "attributeTitle": "Cybermonday Luz de Mar",
+                "attributeTitle": "Cybermonday Swissbrand",
                 "openNewTab": true
             }
         }

@@ -27,7 +27,7 @@
       "rich-text#form-text": {
           "props": {
             "blockClass": "form-text",
-            "text": "Para contactarte con el equipo de Luz de Mar, te pedimos que completes el siguiente formulario con tu consulta y tus datos para poder contactarte.\n\nEn caso de querer cancelar una compra ya realizada, te pedimos que completes la siguiente [página de arrepentimiento](/arrepentimiento)"
+            "text": "Para contactarte con el equipo de Swissbrand, te pedimos que completes el siguiente formulario con tu consulta y tus datos para poder contactarte.\n\nEn caso de querer cancelar una compra ya realizada, te pedimos que completes la siguiente [página de arrepentimiento](/arrepentimiento)"
           }
         },
       "form#contacto-form": {
@@ -61,7 +61,7 @@
       "rich-text#success-submit-contacto": {
         "props": {
           "blockClass":["form-success"],
-          "text": "Gracias por contactarte con Luz de Mar. Te estaremos respondiendo tu consulta al email ingresado."
+          "text": "Gracias por contactarte con Swissbrand. Te estaremos respondiendo tu consulta al email ingresado."
         }
       },
       "form-input.text#name": {

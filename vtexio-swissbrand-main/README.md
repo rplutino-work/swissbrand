@@ -1,1 +1,1 @@
-# Tema VTEX IO de Luz de Mar
+# Tema VTEX IO de Swissbrand

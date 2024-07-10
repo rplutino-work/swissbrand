@@ -4,6 +4,6 @@ El envío se realiza a través de ANDREANI y el costo varía según la localidad
 \n\n
 En caso de elegir entrega en domicilio, el pedido será enviado a la dirección especificada por el cliente al momento de realizar la compra y puede ser recibido por cualquier persona mayor de 18 años. De no encontrarse nadie en el momento de la entrega, el correo dejará un aviso de visita.
 \n\n
-Para que el cliente pueda realizar el seguimiento, Luz de Mar enviará un e-mail al correo registrado por el usuario indicando el código de seguimiento. Con ese código alfanumérico se puede verificar el recorrido del pedido en [https://seguimiento.andreani.com](https://seguimiento.andreani.com)
+Para que el cliente pueda realizar el seguimiento, Swissbrand enviará un e-mail al correo registrado por el usuario indicando el código de seguimiento. Con ese código alfanumérico se puede verificar el recorrido del pedido en [https://seguimiento.andreani.com](https://seguimiento.andreani.com)
 \n\n
 La demora en la entrega varía según la localidad de destino y la confirmación de pago. El tiempo estipulado para C.A.B.A y Gran Buenos Aires es de 5 a 8 días hábiles una vez despachado el pedido, para el interior de Buenos Aires es de 5 a 10 días hábiles y el resto del País de 6 a 12 días, según localidad. Los productos serán entregados de lunes a viernes, con excepción de los feriados nacionales.
